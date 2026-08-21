@@ -26,6 +26,7 @@ SCOPE= load("data","db","measurement_scope.json")
 # Measurements whose value does not appear in the sentence it is attributed to.
 # The figure may still be somewhere in the paper, but we cannot show it as sourced,
 # so the number is withheld and only the statement is shown.
+DETAIL = load("data","db","comparison_detail.json")
 _AUD = load("data","db","measurement_audit.json") or []
 UNSUP = {(a["pmid"], a["index"]) for a in _AUD} if isinstance(_AUD, list) else set()
 for d in (os.path.join(OUT,"api","study"), os.path.join(OUT,"study")):
@@ -58,8 +59,15 @@ def meas(pm, ah_only=False):
     for i, x in enumerate(mm):
         x["_scope"] = sc.get(str(i), sc.get(i, "unscoped"))
         x["_unsupported"] = (pm, i) in UNSUP
-    return ([x for x in mm if x["_scope"] == "animal-vs-human" and not x["_unsupported"]]
-            if ah_only else mm)
+        det = (DETAIL.get(pm) or {})
+        d = det.get(str(i)) if "error" not in det else None
+        x["_detail"] = d
+        # A figure only counts as concordance evidence if it quantifies correspondence.
+        # Costs, timelines and publication counts mention animals and humans without
+        # measuring agreement between them.
+        x["_is_conc"] = bool(d and d.get("is_concordance_figure")) if d else None
+    return ([x for x in mm if x["_scope"] in ("animal-vs-human", "animal-result-by-human-outcome") and not x["_unsupported"]
+             and x["_is_conc"] is not False] if ah_only else mm)
 
 def sortkey(x):
     if x.get("_unsupported"): return (3, 0)
@@ -111,6 +119,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
 .quote{border-left:3px solid var(--accent);padding:.5rem .85rem;margin:.55rem 0;font-size:.9rem;background:var(--card)}
 .quote .t{display:block;color:var(--mut);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.2rem}
 .verb{color:var(--mut);font-size:.8rem;font-style:italic}
+.pair{margin:.35rem 0;padding:.35rem .5rem;background:var(--chip);border-radius:4px;font-size:.82rem;line-height:1.5}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--mut);font-size:.8rem}
 code{background:var(--chip);padding:.08rem .28rem;border-radius:3px;font-size:.85em}
 ul{padding-left:1.1rem}li{margin:.15rem 0}
@@ -199,12 +208,21 @@ for name,_ in FAM+[("Other reported figures",None)]:
     if not rows: continue
     b.append(f"<h2>{e(name)} <span class='tag'>{len(rows)}</span></h2>")
     b.append("<div class='scroll'><table><tr><th>Value</th><th>Statistic</th>"
-             "<th>What it measures</th><th>Compared</th><th>n</th><th>Study</th></tr>")
+             "<th>What it measures</th><th>Animal</th><th>Human</th><th>Endpoints</th><th>Study</th></tr>")
     for pm,x in sorted(rows,key=lambda r: sortkey(r[1])):
         nn=f'{x["n"]:,} {e(x["n_counts"] or "")}'.strip() if x.get("n") else "—"
+        d=x.get("_detail") or {}
+        a=d.get("animal") or {}; h=d.get("human") or {}
+        asp=", ".join(a.get("species") or []) or "—"
+        astr=a.get("strain_or_model") or a.get("how_disease_arose")
+        acell=f'{e(asp)}' + (f'<br><span class="verb">{e(astr[:44])}</span>' if astr else "")
+        hpop=h.get("population") or h.get("disease") or "—"
+        hn=f'{h["n"]:,} {e(h.get("n_unit") or "")}'.strip() if h.get("n") else ""
+        hcell=f'{e(str(hpop)[:52])}' + (f'<br><span class="verb">{hn}</span>' if hn else "")
+        em=d.get("endpoint_match") or "—"
         b.append(f'<tr><td class="num">{e(fmt(x))}</td><td>{e(x["statistic"])}</td>'
-                 f'<td>{e(x["measures"][:130])}</td><td>{e(x["compared"][:90])}</td>'
-                 f'<td>{nn}</td><td><a href="study/{pm}.html">{e(DB[pm]["title"][:46])}</a></td></tr>')
+                 f'<td>{e(x["measures"][:120])}</td><td>{acell}</td><td>{hcell}</td>'
+                 f'<td>{e(em)}</td><td><a href="study/{pm}.html">{e(DB[pm]["title"][:40])}</a></td></tr>')
     b.append("</table></div>")
 if PDXM_AH:
     b.append("<h2>Patient-derived xenografts <span class='tag'>%d</span></h2>" % len(PDXM_AH))
@@ -280,8 +298,8 @@ for pm,v in DB.items():
     if m.get("what_it_found"):
         body.append(f'<div class="card"><strong>What it found</strong><br>{e(m["what_it_found"])}</div>')
     mm_all=meas(pm)
-    ah=[x for x in mm_all if x.get("_scope")=="animal-vs-human"]
-    other=[x for x in mm_all if x.get("_scope")!="animal-vs-human"]
+    ah=[x for x in mm_all if x.get("_scope") in ("animal-vs-human", "animal-result-by-human-outcome")]
+    other=[x for x in mm_all if x.get("_scope") not in ("animal-vs-human", "animal-result-by-human-outcome")]
     def figtable(rows, heading, note=None):
         if not rows: return
         body.append(f"<h2>{heading} <span class='tag'>{len(rows)}</span></h2>")
@@ -290,8 +308,24 @@ for pm,v in DB.items():
                     "<th>What it measures</th><th>Compared</th><th>Species</th><th>n</th></tr>")
         for x in sorted(rows, key=sortkey):
             nn=f'{x["n"]:,} {e(x["n_counts"] or "")}'.strip() if x.get("n") else "—"
+            d=x.get("_detail") or {}
+            a=d.get("animal") or {}; h=d.get("human") or {}
+            def side(lbl, parts):
+                parts=[p for p in parts if p]
+                return f'<strong>{lbl}</strong> ' + " &middot; ".join(e(str(p)) for p in parts) if parts else ""
+            arow=side("Animal", [", ".join(a.get("species") or []), a.get("strain_or_model"),
+                                 a.get("how_disease_arose"),
+                                 f'n={a["n"]} {a.get("n_unit") or ""}'.strip() if a.get("n") else None,
+                                 a.get("endpoint"), a.get("sex"), a.get("age_or_stage")])
+            hrow=side("Human", [h.get("population"), h.get("disease"),
+                                f'n={h["n"]} {h.get("n_unit") or ""}'.strip() if h.get("n") else None,
+                                h.get("endpoint"), h.get("sex"), h.get("age_or_stage"), h.get("trial_phase")])
+            emrow=f'<strong>Endpoints</strong> {e(d.get("endpoint_match"))}' if d.get("endpoint_match") else ""
+            pair="<br>".join(p for p in (arow,hrow,emrow) if p)
             body.append(f'<tr><td class="num">{e(fmt(x))}</td><td>{e(x["statistic"])}</td>'
-                        f'<td>{e(x["measures"])}<br><span class="verb">&ldquo;{e(x["verbatim"][:200])}&rdquo;</span></td>'
+                        f'<td>{e(x["measures"])}'
+                        + (f'<div class="pair">{pair}</div>' if pair else "")
+                        + f'<br><span class="verb">&ldquo;{e(x["verbatim"][:200])}&rdquo;</span></td>'
                         f'<td>{e(x["compared"])}</td><td>{e(", ".join(x.get("species") or []))}</td><td>{nn}</td></tr>')
         body.append("</table></div>")
     figtable(ah, "Animal compared with human")

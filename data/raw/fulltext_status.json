@@ -204,10 +204,10 @@
   "pmcid": null,
   "doi": "10.21203/rs.3.rs-9783746/v1",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/42245789.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "15246820": {
   "pmid": "15246820",
@@ -244,10 +244,10 @@
   "pmcid": null,
   "doi": "10.1007/978-1-0716-3858-3_12",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/38676802.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "25814248": {
   "pmid": "25814248",
@@ -344,10 +344,10 @@
   "pmcid": null,
   "doi": "10.1016/j.clon.2022.06.002",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/35781406.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "32413492": {
   "pmid": "32413492",
@@ -484,10 +484,10 @@
   "pmcid": null,
   "doi": "10.1016/b978-0-444-62627-1.00012-3",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/26563791.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "33039464": {
   "pmid": "33039464",
@@ -614,10 +614,10 @@
   "pmcid": null,
   "doi": "10.1016/j.vascn.2024.107528",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": "cc by-nc"
+  "pdf": "data/raw/fulltext/38852684.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "40863351": {
   "pmid": "40863351",
@@ -664,10 +664,10 @@
   "pmcid": null,
   "doi": "10.1016/j.vascn.2021.107055",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/33813006.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "32735877": {
   "pmid": "32735877",
@@ -684,10 +684,10 @@
   "pmcid": null,
   "doi": "10.1093/toxsci/kfz035",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/30726989.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "26803853": {
   "pmid": "26803853",

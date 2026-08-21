@@ -72,6 +72,7 @@ fts = json.load(open(J("data","raw","fulltext_status.json")))
 meta = json.load(open(J("data","db","metadata.json")))
 outp = J("data","db","measurements.json")
 out = json.load(open(outp)) if os.path.exists(outp) else {}
+SRC_TAG=True
 
 def best_text(pm):
     s = fts.get(pm, {})

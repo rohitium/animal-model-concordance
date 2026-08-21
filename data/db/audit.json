@@ -1,5 +1,5 @@
 {
- "n_fulltext": 78,
+ "n_fulltext": 85,
  "out_of_range": [
   {
    "pmid": "29730448",
@@ -24,49 +24,49 @@
  "degenerate": [],
  "fill_rates": {
   "concordance_definition": {
-   "n": 73,
-   "of": 78,
-   "pct": 0.936
+   "n": 80,
+   "of": 85,
+   "pct": 0.941
   },
   "species_results": {
-   "n": 56,
-   "of": 78,
+   "n": 61,
+   "of": 85,
    "pct": 0.718
   },
   "key_numbers": {
-   "n": 78,
-   "of": 78,
+   "n": 85,
+   "of": 85,
    "pct": 1.0
   },
   "endpoints_animal": {
-   "n": 57,
-   "of": 78,
-   "pct": 0.731
+   "n": 64,
+   "of": 85,
+   "pct": 0.753
   },
   "endpoints_human": {
-   "n": 57,
-   "of": 78,
-   "pct": 0.731
+   "n": 64,
+   "of": 85,
+   "pct": 0.753
   },
   "limitations_stated": {
-   "n": 78,
-   "of": 78,
+   "n": 85,
+   "of": 85,
    "pct": 1.0
   },
   "n_pairs": {
-   "n": 9,
-   "of": 78,
-   "pct": 0.115
+   "n": 10,
+   "of": 85,
+   "pct": 0.118
   },
   "two_by_two": {
-   "n": 1,
-   "of": 78,
-   "pct": 0.013
+   "n": 2,
+   "of": 85,
+   "pct": 0.024
   },
   "sensitivity": {
    "n": 6,
-   "of": 78,
-   "pct": 0.077
+   "of": 85,
+   "pct": 0.071
   }
  },
  "n_percentages_checked": 178

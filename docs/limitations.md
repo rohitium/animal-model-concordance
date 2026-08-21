@@ -235,3 +235,35 @@ Clinical Neuroscience* publish Spanish and French translations in `<OtherAbstrac
 scoped to the primary `<Abstract>`. (b) Markup was stripped without unescaping, so numeric
 character entities (`&#xf3;`) reached the page as literal text and were copied into extracted
 quotes — 108 occurrences, now unescaped at source and in stored data.
+
+## Comparison detail (2026-08-21)
+
+**L36 — A cache keyed only on PMID kept abstract-derived data after full text arrived.**
+`20_measurements.py` skipped any study already cached, with no record of which source text
+produced the entry, so **85 of 100** studies retained measurements extracted from their
+abstracts even after full text was supplied. Re-extraction raised the total from 1,349 to
+2,079 figures. The dog pan-cancer preprint had zero measurements despite having full text,
+which is why Arm 4 appeared empty; it now yields 26. Caches are source-aware.
+
+**L37 — Figures are filtered for relevance, not just for mentioning both species.**
+The scope pass marked anything touching preclinical and clinical work as animal-vs-human,
+including "$330,000 to characterise a single drug" — a budget figure. Each figure is now
+tested for whether it quantifies correspondence; 84 of 655 were dropped as costs,
+timelines, publication counts, or bare tallies, each with a stated reason.
+
+**L38 — A missing category, not a missing paper: `animal-result-by-human-outcome`.**
+O'Collins 2006 (1,026 experimental treatments in acute stroke, 643 citations) was excluded
+three times because its central comparison — 31.3% average neuroprotection in drugs that
+reached the clinic versus 24.4% in drugs never taken forward — has animals on both sides.
+But the groups are defined by human clinical fate, which makes it concordance evidence of a
+direct kind. The taxonomy now carries this category; 23 figures across the corpus fall into
+it, and the study is included.
+
+**L39 — Both sides of each comparison are now characterised.** Species is recorded
+specifically (never "animal"), with strain or model where named, how the disease arose,
+n and what n counts, and the endpoint; the human side records population, disease, n,
+endpoint and trial phase. `endpoint_match` records whether the two endpoints are identical
+(404), analogous (139), non-analogous (27) or unstated (1) — without which a concordance
+figure cannot be interpreted, and PLAN §6.1's D1/D2/D3 recoding cannot be done. Coarse but
+genuine groupings such as Olson's "rodent" and "non-rodent" are kept as grouped labels
+rather than discarded: rodent 43% vs non-rodent 63% is that paper's headline result.
