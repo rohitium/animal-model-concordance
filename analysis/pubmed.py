@@ -41,3 +41,37 @@ def esummary(pmids):
                             "authors": [a["name"] for a in d.get("authors",[])][:3],
                             "type": d.get("pubtype",[])}
     return out
+
+def elink(pmids, linkname):
+    """linkname: pubmed_pubmed_citedin (forward) or pubmed_pubmed_refs (backward).
+
+    IDs must be sent as repeated id= parameters. Comma-joining them makes
+    E-utilities merge every seed into a single linkset, which silently destroys
+    the per-seed mapping."""
+    out = {}
+    for i in range(0, len(pmids), 40):
+        chunk = pmids[i:i+40]
+        params = [("dbfrom", "pubmed"), ("db", "pubmed"), ("retmode", "json"),
+                  ("linkname", linkname)] + [("id", p) for p in chunk] + list(TOOL.items())
+        q = urllib.parse.urlencode(params)
+        key = hashlib.sha1((linkname + q).encode()).hexdigest()[:20]
+        path = os.path.join(CACHE, f"elink_{key}.json")
+        if os.path.exists(path):
+            d = json.load(open(path))
+        else:
+            time.sleep(0.4)
+            req = urllib.request.Request(f"{BASE}/elink.fcgi", data=q.encode())
+            with urllib.request.urlopen(req, timeout=90) as r:
+                d = json.loads(r.read().decode())
+            json.dump(d, open(path, "w"))
+        for s_ in d.get("linksets", []):
+            ids = s_.get("ids", [])
+            if len(ids) != 1:
+                continue  # merged linkset -> unusable, skip rather than misattribute
+            src = str(ids[0])
+            got = []
+            for db in s_.get("linksetdbs", []):
+                if db.get("linkname") == linkname:
+                    got = [str(x) for x in db.get("links", [])]
+            out[src] = got
+    return out

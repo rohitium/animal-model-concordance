@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "0", "retstart": "0", "idlist": [], "translationset": [], "querytranslation": "\"nonclinical clinical safety\"[Title/Abstract:~10] AND 28893587[UID]"}}

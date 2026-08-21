@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "0", "retmax": "0", "retstart": "0", "idlist": [], "translationset": [], "querytranslation": "\"dog human cancer\"[Title/Abstract:~12] AND 11029269[UID]", "warninglist": {"phrasesignored": [], "quotedphrasesnotfound": [], "outputmessages": ["No items found."]}}}

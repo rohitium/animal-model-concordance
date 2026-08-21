@@ -1,0 +1,181 @@
+{
+ "query_only": 0.8275862068965517,
+ "citation_only": 0.7931034482758621,
+ "combined": 1.0,
+ "rows": [
+  {
+   "key": "hackam2006",
+   "pmid": "17032985",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "perel2007",
+   "pmid": "17175568",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "contopoulos2008",
+   "pmid": "18772421",
+   "query": false,
+   "citation": true
+  },
+  {
+   "key": "vanderworp2010",
+   "pmid": "20361020",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "pound2018",
+   "pmid": "30404629",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "leenaars2019",
+   "pmid": "31307492",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "bracken2009",
+   "pmid": "19297654",
+   "query": false,
+   "citation": true
+  },
+  {
+   "key": "wall2008",
+   "pmid": "17988725",
+   "query": false,
+   "citation": true
+  },
+  {
+   "key": "mak2014",
+   "pmid": "24489990",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "howells2010",
+   "pmid": "20485296",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "marshall2023",
+   "pmid": "36883244",
+   "query": true,
+   "citation": false
+  },
+  {
+   "key": "sena2010",
+   "pmid": "20361022",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "begley2012",
+   "pmid": "22460880",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "prinz2011",
+   "pmid": "21892149",
+   "query": false,
+   "citation": true
+  },
+  {
+   "key": "freedman2015",
+   "pmid": "25670378",
+   "query": true,
+   "citation": false
+  },
+  {
+   "key": "olson2000",
+   "pmid": "11029269",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "monticello2017",
+   "pmid": "28893587",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "clark2018",
+   "pmid": "29730448",
+   "query": true,
+   "citation": false
+  },
+  {
+   "key": "bailey2015",
+   "pmid": "26753942",
+   "query": true,
+   "citation": false
+  },
+  {
+   "key": "redfern2003",
+   "pmid": "12667944",
+   "query": true,
+   "citation": false
+  },
+  {
+   "key": "hay2014",
+   "pmid": "24406927",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "wong2019",
+   "pmid": "29394327",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "cummings2014",
+   "pmid": "25024750",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "seok2013",
+   "pmid": "23401516",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "takao2015",
+   "pmid": "25092317",
+   "query": false,
+   "citation": true
+  },
+  {
+   "key": "perrin2014",
+   "pmid": "24678540",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "paoloni_khanna2008",
+   "pmid": "18202698",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "kol2015",
+   "pmid": "26446953",
+   "query": true,
+   "citation": true
+  },
+  {
+   "key": "fan_khanna2015",
+   "pmid": "29061942",
+   "query": true,
+   "citation": false
+  }
+ ]
+}
