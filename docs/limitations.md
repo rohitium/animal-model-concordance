@@ -47,3 +47,30 @@ on small n and are reported as such, never absorbed into a headline number.
 **L11 — Veterinary trials are smaller and often single-arm.** SQ7 must not conflate "better
 model" with "weaker comparator"; Arm 4 comparisons are matched on `readout` and
 `therapeutic_area` and reported with this caveat attached.
+
+## Pilot slice (2026-08-20)
+
+**L12 — Abstract-only extraction.** Full texts require subscription access we do not have.
+2×2 tables, per-species breakdowns, and endpoint detail are usually in full text, so those
+fields are frequently `not stated in abstract`. This is missing data, not absent evidence.
+
+**L13 — Screening not human-verified.** Screening was LLM-assisted (gemini-2.5-flash-lite,
+rubric 2026-08-20.r2), validated on a 27-record gold set at 100% sensitivity (95% CI
+74.1–100%) and 62.5% specificity (95% CI 38.6–81.5%). The sensitivity CI is wide; n=27
+cannot exclude a true sensitivity near 75%. Gold labels are the author's own and unverified
+by a second reader.
+
+**L14 — Arm 4 is near-empty, and this is a finding.** A targeted veterinary-patient search
+returned 174 records; 1 met the inclusion rule. Well-cited comparative-oncology papers
+(e.g. Vail & MacEwen 2000, 213 citations) were excluded for advocating the model rather
+than measuring concordance. SQ7 is therefore not answerable from Track A, and the review
+reports the gap rather than filling it (user decision, 2026-08-20).
+
+**L15 — Slice is not a random sample.** Studies were selected by a recorded score
+(0.5×log-citations + 0.5×recency + source bonus) under per-strand diversity quotas.
+It is deliberately weighted toward authoritative and recent work and must not be treated
+as representative of the underlying literature.
+
+**L16 — Review is unregistered.** PROSPERO excludes preclinical and meta-research reviews;
+no registration was sought. Pre-specification rests on dated, version-controlled protocol
+files and `protocol/amendments.md`.

@@ -1,0 +1,3714 @@
+{
+ "23401516": {
+  "pmid": "23401516",
+  "arm": "toxicology",
+  "species": [
+   "human",
+   "mouse"
+  ],
+  "therapeutic_areas": [
+   "inflammatory diseases"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "R(2)",
+  "concordance_value": 0.05,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "The genomic responses in corresponding mouse models correlate poorly with human conditions and also, one another.",
+  "quantitative_claims": [
+   "R(2) between 0.0 and 0.1"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Genomic responses in mouse models poorly mimic human inflammatory diseases.",
+  "journal": "Proc Natl Acad Sci U S A",
+  "year": 2013,
+  "cited_by": 1614,
+  "authors": [
+   "Seok J",
+   "Warren HS",
+   "Cuenca AG"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a quantitative measure of agreement (R^2 between 0.0 and 0.1) between genomic responses in mouse models and human inflammatory diseases, which directly addresses the inclusion criteria."
+ },
+ "24406927": {
+  "pmid": "24406927",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Clinical development success rates for investigational drugs.",
+  "journal": "Nat Biotechnol",
+  "year": 2014,
+  "cited_by": 903,
+  "authors": [
+   "Hay M",
+   "Thomas DW",
+   "Craighead JL"
+  ],
+  "sources": [
+   "anchor"
+  ]
+ },
+ "36883244": {
+  "pmid": "36883244",
+  "arm": "unclear",
+  "species": [],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "failure rate",
+  "concordance_value": 0.92,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "narrative-review",
+  "key_finding": "The failure rate for the translation of drugs from animal testing to human treatments remains at over 92%.",
+  "quantitative_claims": [
+   "over 92%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Poor Translatability of Biomedical Research Using Animals - A Narrative Review.",
+  "journal": "Altern Lab Anim",
+  "year": 2023,
+  "cited_by": 64,
+  "authors": [
+   "Marshall LJ",
+   "Bailey J",
+   "Cassotta M"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a quantitative measure of agreement (failure rate of over 92% for drug translation from animal testing to human treatments) which aligns with the inclusion criteria for quantitative measures of agreement between non-human animal results and human clinical results."
+ },
+ "24489990": {
+  "pmid": "24489990",
+  "arm": "efficacy",
+  "species": [],
+  "therapeutic_areas": [
+   "cancer"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "successful translation",
+  "concordance_value": 0.08,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "narrative-review",
+  "key_finding": "The average rate of successful translation from animal models to clinical cancer trials is less than 8%.",
+  "quantitative_claims": [
+   "less than 8%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Lost in translation: animal models and clinical trials in cancer treatment.",
+  "journal": "Am J Transl Res",
+  "year": 2014,
+  "cited_by": 617,
+  "authors": [
+   "Mak IW",
+   "Evaniew N",
+   "Ghert M"
+  ],
+  "sources": [
+   "anchor",
+   "s1_proximity"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract explicitly states 'the average rate of successful translation from animal models to clinical cancer trials is less than 8%', which is a quantitative measure of agreement."
+ },
+ "22460880": {
+  "pmid": "22460880",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Drug development: Raise standards for preclinical cancer research.",
+  "journal": "Nature",
+  "year": 2012,
+  "cited_by": 1034,
+  "authors": [
+   "Begley CG",
+   "Ellis LM"
+  ],
+  "sources": [
+   "anchor"
+  ]
+ },
+ "31307492": {
+  "pmid": "31307492",
+  "arm": "unclear",
+  "species": [
+   "animal",
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "percentage",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "scoping-review",
+  "key_finding": "Translational success rates ranged from 0 to 100%, but the reliability of the cumulative evidence from current papers on this topic is insufficient.",
+  "quantitative_claims": [
+   "121 references",
+   "104",
+   "10",
+   "7",
+   "0 to 100%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Animal to human translation: a systematic scoping review of reported concordance rates.",
+  "journal": "J Transl Med",
+  "year": 2019,
+  "cited_by": 119,
+  "authors": [
+   "Leenaars CHC",
+   "Kouwenaar C",
+   "Stafleu FR"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a systematic scoping review of reported concordance rates (translational success rates) between animal and human results, explicitly mentioning various units of measurement for diagnostic statistics like percentages, predictive values, correlation/regression (r2), and meta-analyses. This directly aligns with the inclusion criteria for quantitative measures of agreement."
+ },
+ "25092317": {
+  "pmid": "25092317",
+  "arm": "unclear",
+  "species": [
+   "mouse",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "inflammatory diseases"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "Spearman's rank correlation coefficient, genes changed in the same direction",
+  "concordance_value": 0.43,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "meta-analysis",
+  "key_finding": "The gene expression levels in the mouse models showed extraordinarily significant correlations with those of the human conditions.",
+  "quantitative_claims": [
+   "0.43-0.68",
+   "77-93%",
+   "6.5 \u00d7 10(-11)",
+   "1.2 \u00d7 10(-35)"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Genomic responses in mouse models greatly mimic human inflammatory diseases.",
+  "journal": "Proc Natl Acad Sci U S A",
+  "year": 2015,
+  "cited_by": 301,
+  "authors": [
+   "Takao K",
+   "Miyakawa T"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement (Spearman's rank correlation coefficient, percentage of genes changed in the same direction) between mouse models and human inflammatory diseases, directly addressing the concordance between animal and human results."
+ },
+ "24678540": {
+  "pmid": "24678540",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Preclinical research: Make mouse studies work.",
+  "journal": "Nature",
+  "year": 2014,
+  "cited_by": 328,
+  "authors": [
+   "Perrin S"
+  ],
+  "sources": [
+   "anchor"
+  ]
+ },
+ "21892149": {
+  "pmid": "21892149",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Believe it or not: how much can we rely on published data on potential drug targets?",
+  "journal": "Nat Rev Drug Discov",
+  "year": 2011,
+  "cited_by": 678,
+  "authors": [
+   "Prinz F",
+   "Schlange T",
+   "Asadullah K"
+  ],
+  "sources": [
+   "anchor"
+  ]
+ },
+ "28893587": {
+  "pmid": "28893587",
+  "arm": "safety",
+  "species": [
+   "nonhuman primate",
+   "rodent",
+   "beagle dog"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "positive predictive value",
+  "concordance_value": 0.43,
+  "n_pairs": 182,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "The negative predictive value (NPV) was the stronger predictive performance measure across test species and target organs indicating that an absence of toxicity in animal studies strongly predicts a similar outcome in the clinic.",
+  "quantitative_claims": [
+   "182 molecules",
+   "Sensitivity was 48%",
+   "43% positive predictive value (PPV)",
+   "Specificity was 84%",
+   "86% negative predictive value (NPV)"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Current nonclinical testing paradigm enables safe entry to First-In-Human clinical trials: The IQ consortium nonclinical to clinical translational database.",
+  "journal": "Toxicol Appl Pharmacol",
+  "year": 2017,
+  "cited_by": 60,
+  "authors": [
+   "Monticello TM",
+   "Jones TW",
+   "Dambach DM"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports quantitative measures of agreement between non-human animal results and human clinical results, specifically sensitivity (48%), positive predictive value (PPV, 43%), specificity (84%), and negative predictive value (NPV, 86%). It analyzes a database of 182 molecules and uses a 2x2 contingency table for statistical analysis, directly addressing the concordance between animal toxicology data and clinical observations."
+ },
+ "20613859": {
+  "pmid": "20613859",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Improving bioscience research reporting: the ARRIVE guidelines for reporting animal research.",
+  "journal": "PLoS Biol",
+  "year": 2010,
+  "cited_by": 3862,
+  "authors": [
+   "Kilkenny C",
+   "Browne WJ",
+   "Cuthill IC"
+  ],
+  "sources": [
+   "citation_hub"
+  ]
+ },
+ "34874005": {
+  "pmid": "34874005",
+  "arm": "unclear",
+  "species": [],
+  "therapeutic_areas": [
+   "cancer biology"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "success rate",
+  "concordance_value": 0.46,
+  "n_pairs": 112,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "For positive effects, 40% of replications succeeded according to three or more of five binary methods, and for null effects 80% of replications were successful on this basis, with an overall success rate of 46% for combined positive and null effects.",
+  "quantitative_claims": [
+   "50 experiments",
+   "23 papers",
+   "158 effects",
+   "136",
+   "22",
+   "117",
+   "41",
+   "seven methods",
+   "85%",
+   "92%",
+   "40%",
+   "39/97",
+   "three",
+   "five",
+   "80%",
+   "12/15",
+   "46%",
+   "51/112"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Investigating the replicability of preclinical cancer biology.",
+  "journal": "Elife",
+  "year": 2021,
+  "cited_by": 136,
+  "authors": [
+   "Errington TM",
+   "Mathur M",
+   "Soderberg CK"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement (e.g., percentage of smaller effect sizes, success rates based on multiple methods) between original preclinical cancer biology experiments and their replications, which serves as a proxy for the reliability and potential translatability of these findings."
+ },
+ "31827124": {
+  "pmid": "31827124",
+  "arm": "auxiliary",
+  "species": [],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "Substituting genome wide association studies for preclinical studies as the major information source for drug target identification was estimated to reverse the probability of late stage failure.",
+  "quantitative_claims": [
+   "10,000 diseases",
+   "20,000 protein-coding genes",
+   "100 causal genes per disease",
+   "4000 genes encoding druggable targets",
+   "0.005",
+   "92.6%",
+   "96%",
+   "one in every 200 protein-disease pairings"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Improving the odds of drug development success through human genomics: modelling study.",
+  "journal": "Sci Rep",
+  "year": 2019,
+  "cited_by": 98,
+  "authors": [
+   "Hingorani AD",
+   "Kuan V",
+   "Finan C"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative estimates of the false discovery rate (FDR) in preclinical research and its impact on drug development success rates, and compares this to potential improvements using human genomics. This involves a quantitative comparison of the predictive value of preclinical models versus human genomics for drug development success, which aligns with the inclusion criteria."
+ },
+ "26795250": {
+  "pmid": "26795250",
+  "arm": "unclear",
+  "species": [
+   "human",
+   "mouse"
+  ],
+  "therapeutic_areas": [
+   "inflammation",
+   "sepsis"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "conserved patterns of gene expression",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "Sepsis triggered conserved patterns of gene expression in humans and mouse models, but a mitosis signature was specific to humans.",
+  "quantitative_claims": [
+   "~5,000 gene-sets"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Compendium of Immune Signatures Identifies Conserved and Species-Specific Biology in Response to Inflammation.",
+  "journal": "Immunity",
+  "year": 2016,
+  "cited_by": 190,
+  "authors": [
+   "Godec J",
+   "Tan Y",
+   "Liberzon A"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a comparison of gene expression signatures between human and mouse models in response to sepsis, identifying both conserved and species-specific biological processes. This suggests a quantitative comparison of biological responses, which aligns with the inclusion criteria for agreement measures."
+ },
+ "21350617": {
+  "pmid": "21350617",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Improving bioscience research reporting: The ARRIVE guidelines for reporting animal research.",
+  "journal": "J Pharmacol Pharmacother",
+  "year": 2010,
+  "cited_by": 451,
+  "authors": [
+   "Kilkenny C",
+   "Browne WJ",
+   "Cuthill IC"
+  ],
+  "sources": [
+   "citation_hub"
+  ]
+ },
+ "26863229": {
+  "pmid": "26863229",
+  "arm": "unclear",
+  "species": [],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "Changes in the predictive validity of screening and disease models can offset large changes in models' brute-force efficiency when searching for rare positives.",
+  "quantitative_claims": [
+   "60 years",
+   "nearly 100 fold",
+   "1950 and 2010",
+   "1970s",
+   "0.1 absolute change",
+   "10 fold",
+   "100 fold"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "When Quality Beats Quantity: Decision Theory, Drug Discovery, and the Reproducibility Crisis.",
+  "journal": "PLoS One",
+  "year": 2016,
+  "cited_by": 86,
+  "authors": [
+   "Scannell JW",
+   "Bosley J"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract discusses a quantitative decision-theoretic model of the R&D process and assesses the probability of correct R&D decisions. It explicitly mentions changes in the 'predictive validity of screening and disease models' and their correlation with 'clinical outcomes in man', and how these factors can offset changes in efficiency. This suggests a quantitative comparison of animal model performance against human clinical outcomes, which aligns with the inclusion criteria."
+ },
+ "28328898": {
+  "pmid": "28328898",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "More than 3Rs: the importance of scientific validity for harm-benefit analysis of animal research.",
+  "journal": "Lab Anim (NY)",
+  "year": 2017,
+  "cited_by": 56,
+  "authors": [
+   "W\u00fcrbel H"
+  ],
+  "sources": [
+   "citation_hub"
+  ]
+ },
+ "35167625": {
+  "pmid": "35167625",
+  "arm": "unclear",
+  "species": [
+   "human",
+   "rodent"
+  ],
+  "therapeutic_areas": [
+   "sepsis",
+   "inflammation"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "dissimilarity in patterns of IRAK3 mRNA and protein expression",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "systematic-review",
+  "key_finding": "Species differences in underlying biology affect the translatability of immune responses of animal models to human, as shown by the dissimilarity in patterns of IRAK3 mRNA and protein expression between humans and rodents following one challenge that are further influenced by variations in experimental procedures.",
+  "quantitative_claims": [
+   "7778",
+   "49"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A systematic review and meta-analyses of interleukin-1 receptor associated kinase 3 (IRAK3) action on inflammation in in vivo models for the study of sepsis.",
+  "journal": "PLoS One",
+  "year": 2022,
+  "cited_by": 14,
+  "authors": [
+   "Nguyen TH",
+   "Turek I",
+   "Meehan-Andrews T"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a comparison of IRAK3 expression and inflammatory markers between humans and rodents, noting species differences that affect translatability. It also mentions meta-analyses confirming effects and correlations, suggesting a quantitative comparison of animal vs. human results."
+ },
+ "34127759": {
+  "pmid": "34127759",
+  "arm": "unclear",
+  "species": [
+   "human",
+   "mouse",
+   "rat",
+   "sheep",
+   "horse"
+  ],
+  "therapeutic_areas": [
+   "tendon disease",
+   "tendon injury"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "not-stated",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "As no single animal model perfectly replicates the clinical condition and sufficiently emulates human tenocytes, fit-for-purpose selection of the model species for each specific research question and combination of data from multiple species will be essential to optimize translational predictive validity.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Species variations in&#xa0;tenocytes' response to inflammation require careful selection of animal models for tendon research.",
+  "journal": "Sci Rep",
+  "year": 2021,
+  "cited_by": 18,
+  "authors": [
+   "Oreff GL",
+   "Fenu M",
+   "Vogl C"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract describes a comparison of tenocyte responses to inflammation between humans and four animal models, evaluating how well the species simulate the clinical condition. It quantifies similarities across various aspects like proliferation, wound closure speed, gene expression, and marker expression, providing a basis for agreement assessment, even if not a single summary statistic is presented."
+ },
+ "34916915": {
+  "pmid": "34916915",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Combining Animal Welfare With Experimental Rigor to Improve Reproducibility in Behavioral Neuroscience.",
+  "journal": "Front Behav Neurosci",
+  "year": 2021,
+  "cited_by": 15,
+  "authors": [
+   "Loss CM",
+   "Melleu FF",
+   "Domingues K"
+  ],
+  "sources": [
+   "citation_hub"
+  ]
+ },
+ "42245789": {
+  "pmid": "42245789",
+  "arm": "toxicology",
+  "species": [
+   "human",
+   "dog"
+  ],
+  "therapeutic_areas": [
+   "cancer"
+  ],
+  "model_type": "spontaneous-veterinary",
+  "concordance_reported": true,
+  "concordance_metric": "transcriptomic similarities",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "Dogs are an excellent model for many human cancers and tend to be better models of adult cancers than pediatric cancers, with notable exceptions such as gliomas and sarcomas.",
+  "quantitative_claims": [
+   "5,875 samples",
+   "913 dogs",
+   "4,962 human samples",
+   "806 pediatric samples",
+   "11 tumor types"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Leveraging Dog Models to Uncover Human Cancer Insights.",
+  "journal": "Res Sq",
+  "year": 2026,
+  "cited_by": 0,
+  "authors": [
+   "Daluwatumulle G",
+   "Smith LA",
+   "Glen N"
+  ],
+  "sources": [
+   "s1_proximity"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract explicitly states they developed a formula to quantify transcriptomic similarities between human and dog cancers and that they show dogs are an excellent model for many human cancers. This indicates a quantitative measure of agreement between animal and human results."
+ },
+ "15246820": {
+  "pmid": "15246820",
+  "arm": "efficacy",
+  "species": [
+   "rabbit",
+   "rat"
+  ],
+  "therapeutic_areas": [
+   "neuroprotection"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "translational success",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "narrative-review",
+  "key_finding": "The rabbit model used to identify the efficacy of tissue plasminogen activator (tPA) treatment is the only model that was able to achieve laboratory to clinical translational success.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "opinion",
+  "title": "Lost in translation: taking neuroprotection from animal models to clinical trials.",
+  "journal": "Exp Neurol",
+  "year": 2004,
+  "cited_by": 27,
+  "authors": [
+   "Hoyte L",
+   "Kaur J",
+   "Buchan AM"
+  ],
+  "sources": [
+   "s1_proximity"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions a 'laboratory to clinical translational success' for one animal model (rabbit model for tPA treatment), implying a measure of agreement or success rate, even if not explicitly quantified with a specific statistic. It also discusses attempts to translate animal protocols to human trials and the outcomes, which suggests a comparison of results."
+ },
+ "20806453": {
+  "pmid": "20806453",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "",
+  "journal": "",
+  "year": 2007,
+  "cited_by": 0,
+  "authors": [
+   "Baba AI",
+   "C\u00e2toi C"
+  ],
+  "sources": [
+   "s1_proximity"
+  ]
+ },
+ "29143114": {
+  "pmid": "29143114",
+  "arm": "efficacy",
+  "species": [
+   "mice",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "prostate cancer",
+   "metastatic cancer"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "clinical benefit",
+  "concordance_value": 0.45,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "Cancer vaccines developed in mice were successfully translated to humans with promising early results.",
+  "quantitative_claims": [
+   "74%",
+   "0.0004",
+   "45%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Cancer vaccine strategies: translation from mice to human clinical trials.",
+  "journal": "Cancer Immunol Immunother",
+  "year": 2018,
+  "cited_by": 27,
+  "authors": [
+   "Berzofsky JA",
+   "Terabe M",
+   "Trepel JB"
+  ],
+  "sources": [
+   "s2_mesh_transl"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports on the translation of two cancer vaccine strategies from mice to human clinical trials. For the first strategy (TARP), it states that 74% of subjects had a decreased PSA slope at 1 year compared to their baseline. For the second strategy (HER2), it states that 45% of evaluable patients showed clinical benefit. These represent quantitative measures of success/response in human trials following preclinical animal studies, indicating a form of translational success rate."
+ },
+ "38676802": {
+  "pmid": "38676802",
+  "arm": "efficacy",
+  "species": [
+   "mouse",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "prostate cancer"
+  ],
+  "model_type": "xenograft",
+  "concordance_reported": true,
+  "concordance_metric": "correlated",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "narrative-review",
+  "key_finding": "PDX response to anticancer drugs in mice has been closely correlated to the original patient's susceptibility to these treatments in the clinic.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "opinion",
+  "title": "Patient-Derived Xenograft Models for Translational Prostate Cancer Research and Drug Development.",
+  "journal": "Methods Mol Biol",
+  "year": 2024,
+  "cited_by": 3,
+  "authors": [
+   "Philp LK"
+  ],
+  "sources": [
+   "s2_mesh_transl"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions that 'PDX response to anticancer drugs in mice has been closely correlated to the original patient's susceptibility to these treatments in the clinic.' This suggests a quantitative measure of agreement between animal and human results, even if not explicitly stated with a specific statistic like concordance rate or PPV. The paper discusses the use of PDXs as a platform for therapeutic proof-of-concept prior to clinical trials and their correlation with patient outcomes, which aligns with the inclusion criteria for quantitative agreement."
+ },
+ "25814248": {
+  "pmid": "25814248",
+  "arm": "efficacy",
+  "species": [
+   "mice"
+  ],
+  "therapeutic_areas": [
+   "kidney failure",
+   "acute kidney injury",
+   "chronic kidney disease",
+   "diabetic nephropathy",
+   "Alport syndrome",
+   "polycystic kidney disease",
+   "hemolytic uremic syndrome",
+   "lupus nephritis"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "clinical translation",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "narrative-review",
+  "key_finding": "Recent novel animal models hold promise for clinical translation, with some genetically modified mouse models providing clinical recommendations or clues for drug development.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "opinion",
+  "title": "Translational value of animal models of kidney failure.",
+  "journal": "Eur J Pharmacol",
+  "year": 2015,
+  "cited_by": 42,
+  "authors": [
+   "Ortiz A",
+   "Sanchez-Ni\u00f1o MD",
+   "Izquierdo MC"
+  ],
+  "sources": [
+   "s2_mesh_transl"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract discusses the translational value of animal models for kidney failure, mentioning specific examples where models have contributed to clinical translation (e.g., Alport syndrome, polycystic kidney disease leading to tolvaptan, C5 targeting in hemolytic uremic syndrome). While it doesn't provide a specific quantitative agreement statistic like a concordance rate, it discusses the 'contribution to clinical translation' and 'prospects for the future', implying a comparison of animal model outcomes to human clinical results. Given the instruction to include when uncertain, this paper likely reports on the success or failure of translation, which is a form of agreement measure."
+ },
+ "38867022": {
+  "pmid": "38867022",
+  "arm": "toxicology",
+  "species": [
+   "murine",
+   "rodents"
+  ],
+  "therapeutic_areas": [
+   "Metabolic dysfunction-associated steatotic liver disease (MASLD)",
+   "steatosis",
+   "metabolic dysfunction-associated steatohepatitis (MASH)",
+   "cirrhosis",
+   "hepatocellular carcinoma"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "human proximity score",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "scoping-review",
+  "key_finding": "Western diets align closely with human MASH, and high cholesterol content, extended study duration and/or genetic manipulation of disease-promoting pathways are required to intensify liver damage and accelerate significant (F2+) fibrosis development.",
+  "quantitative_claims": [
+   "F2+"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "An unbiased ranking of murine dietary models based on their proximity to human metabolic dysfunction-associated steatotic liver disease (MASLD).",
+  "journal": "Nat Metab",
+  "year": 2024,
+  "cited_by": 100,
+  "authors": [
+   "Vacca M",
+   "Kamzolas I",
+   "Harder LM"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a 'human proximity score' which is a quantitative measure of agreement between murine dietary models and human MASLD, aiming to define their metabolic relevance and ability to induce MASH-fibrosis. This aligns with the inclusion criteria of reporting a quantitative measure of agreement."
+ },
+ "26479923": {
+  "pmid": "26479923",
+  "arm": "efficacy",
+  "species": [
+   "mouse",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "cancer"
+  ],
+  "model_type": "xenograft",
+  "concordance_reported": true,
+  "concordance_metric": "clinical translatability",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "This experimental paradigm could potentially improve preclinical evaluation of treatment modalities and enhance our ability to predict clinical trial responses.",
+  "quantitative_claims": [
+   "~1,000 patient-derived tumor xenograft models",
+   "62 treatments"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "High-throughput screening using patient-derived tumor xenografts to predict clinical trial drug response.",
+  "journal": "Nat Med",
+  "year": 2015,
+  "cited_by": 771,
+  "authors": [
+   "Gao H",
+   "Korn JM",
+   "Ferretti S"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions 'clinical translatability of this approach by identifying associations between a genotype and drug response' and proposes that the 'PDX clinical trial' (PCT) approach could 'improve preclinical evaluation of treatment modalities and enhance our ability to predict clinical trial responses'. This suggests a quantitative comparison or measure of agreement between animal model results and human clinical outcomes, even if specific metrics like concordance rate are not explicitly stated. The focus on predicting clinical trial drug response from xenografts implies a quantitative assessment of translation."
+ },
+ "27261415": {
+  "pmid": "27261415",
+  "arm": "toxicology",
+  "species": [
+   "mice"
+  ],
+  "therapeutic_areas": [
+   "non-alcoholic fatty liver disease",
+   "hepatocellular cancer",
+   "non-alcoholic steatohepatitis"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "FDR",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "A diet-induced animal model of non-alcoholic fatty liver disease (DIAMOND) recapitulates the key physiological, metabolic, histologic, transcriptomic and cell-signaling changes seen in humans with progressive NASH.",
+  "quantitative_claims": [
+   "FDR 0.02",
+   "0.08",
+   "FDR 0.01"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A diet-induced animal model of non-alcoholic fatty liver disease and hepatocellular cancer.",
+  "journal": "J Hepatol",
+  "year": 2016,
+  "cited_by": 300,
+  "authors": [
+   "Asgharpour A",
+   "Cazanave SC",
+   "Pacana T"
+  ],
+  "sources": [
+   "s3_concordance",
+   "s5_vet"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a 'strong concordance between the pattern of pathway activation at a transcriptomic level between humans and mice with similar histological phenotypes' with reported FDR values, which is a quantitative measure of agreement between animal and human results."
+ },
+ "32631250": {
+  "pmid": "32631250",
+  "arm": "toxicology",
+  "species": [
+   "mouse",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "non-alcoholic steatohepatitis (NASH)"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "histopathological, transcriptional and metabolic aspects",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "The GAN DIO-NASH mouse model demonstrates good clinical translatability with respect to the histopathological, transcriptional and metabolic aspects of the human disease, highlighting the suitability of the GAN DIO-NASH mouse model for identifying therapeutic targets and characterizing novel drug therapies for NASH.",
+  "quantitative_claims": [
+   "40%",
+   "22%",
+   "2%",
+   "38"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Human translatability of the GAN diet-induced obese mouse model of non-alcoholic steatohepatitis.",
+  "journal": "BMC Gastroenterol",
+  "year": 2020,
+  "cited_by": 68,
+  "authors": [
+   "Hansen HH",
+   "\u00c6gidius HM",
+   "Or\u00f3 D"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a head-to-head comparison of histological and transcriptome changes between a mouse model and human patients, and states the model demonstrates 'good clinical translatability' with respect to histopathological, transcriptional, and metabolic aspects. This implies a quantitative or semi-quantitative assessment of agreement."
+ },
+ "29302222": {
+  "pmid": "29302222",
+  "arm": "efficacy",
+  "species": [
+   "rodents",
+   "humans"
+  ],
+  "therapeutic_areas": [
+   "addiction",
+   "psychiatric disorders",
+   "alcohol use disorder"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "predictive validity",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "narrative-review",
+  "key_finding": "Animal models of voluntary drug intake and addiction provide predictive validity for drug development and target identification.",
+  "quantitative_claims": [
+   "three"
+  ],
+  "evidence_vs_opinion": "opinion",
+  "title": "Animal models of addiction.",
+  "journal": "Dialogues Clin Neurosci",
+  "year": 2017,
+  "cited_by": 107,
+  "authors": [
+   "Spanagel R"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract discusses the translational value of animal models and specifically mentions that three approved medications for alcohol addiction (acamprosate, naltrexone, and nalmefene) were developed using animal models and successfully translated to clinical situations. This implies a quantitative measure of success or agreement in the translation process, even if not explicitly stated as a rate or statistic."
+ },
+ "27916279": {
+  "pmid": "27916279",
+  "arm": "efficacy",
+  "species": [
+   "not-stated"
+  ],
+  "therapeutic_areas": [
+   "drug addiction",
+   "substance-use disorders"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "concordant results",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "narrative-review",
+  "key_finding": "Preclinical drug versus food 'choice' procedures have produced increasingly concordant results with both human laboratory drug self-administration studies and double-blind placebo-controlled clinical trials.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "opinion",
+  "title": "Insights from Preclinical Choice Models on Treating Drug Addiction.",
+  "journal": "Trends Pharmacol Sci",
+  "year": 2017,
+  "cited_by": 102,
+  "authors": [
+   "Banks ML",
+   "Negus SS"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions 'increasingly concordant results' between preclinical choice procedures and human laboratory studies/clinical trials, suggesting a quantitative measure of agreement is reported, even if not explicitly detailed."
+ },
+ "37752535": {
+  "pmid": "37752535",
+  "arm": "toxicology",
+  "species": [
+   "mouse",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "heart disease",
+   "cardiac hypertrophy"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "similar diameters in health and extent of hypertrophy in disease",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "The semiautomated pipeline, HeartJ, enables rapid, objective, and quantitative histological analysis of cardiomyocyte size and capillary density in both preclinical and clinical heart samples, confirming the translatability of a murine cardiac hypertrophy model to human disease.",
+  "quantitative_claims": [
+   "1"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Semiautomated pipeline for quantitative analysis of heart histopathology.",
+  "journal": "J Transl Med",
+  "year": 2023,
+  "cited_by": 6,
+  "authors": [
+   "Droste P",
+   "Wong DWL",
+   "Hohl M"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions validating a pipeline in both animal models and human autopsy samples and explicitly states 'murine and human cardiomyocytes had similar diameters in health and extent of hypertrophy in disease confirming the translatability of our murine cardiac hypertrophy model.' This suggests a quantitative comparison of agreement between animal and human results."
+ },
+ "40558535": {
+  "pmid": "40558535",
+  "arm": "unclear",
+  "species": [
+   "rodents",
+   "pigs",
+   "non-human primates"
+  ],
+  "therapeutic_areas": [
+   "autism spectrum disorder"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "varying degree",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "narrative-review",
+  "key_finding": "Human stem cell-based models can circumvent limitations of traditional animal models by recapitulating human-specific features and enabling patient-relevant therapeutic testing.",
+  "quantitative_claims": [
+   "1-3%"
+  ],
+  "evidence_vs_opinion": "opinion",
+  "title": "The Evolving Landscape of Functional Models of Autism Spectrum Disorder.",
+  "journal": "Cells",
+  "year": 2025,
+  "cited_by": 3,
+  "authors": [
+   "Ranjan J",
+   "Bhattacharya A"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "screener error - auto-advance: Expecting property name enclosed in double quotes: line 4 column 3 (char 50)"
+ },
+ "35781406": {
+  "pmid": "35781406",
+  "arm": "efficacy",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [
+   "sarcoma"
+  ],
+  "model_type": "xenograft",
+  "concordance_reported": true,
+  "concordance_metric": "drug efficacy",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "PDTX is an ideal preclinical model for sarcomas because of its faithful preservation of the heterogeneity of the disease, a satisfactory engraftment rate and high accuracy in its prediction of drug efficacy.",
+  "quantitative_claims": [
+   "Forty-two cases",
+   "36 bone sarcomas",
+   "six soft-tissue sarcomas",
+   "73.8%",
+   "100%",
+   "17 regimens"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A Multicentre Clinical Study of Sarcoma Personalised Treatment Using Patient-Derived Tumour Xenografts.",
+  "journal": "Clin Oncol (R Coll Radiol)",
+  "year": 2023,
+  "cited_by": 4,
+  "authors": [
+   "Xu H",
+   "Zheng H",
+   "Zhang Q"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative measure of agreement between patient-derived tumor xenografts (PDTX) and human clinical results, specifically a 'complete concordance between the PDTX model and patients' responses in 17 regimens'. This directly addresses the criteria for inclusion by quantifying the predictive accuracy of the animal model for human outcomes."
+ },
+ "32413492": {
+  "pmid": "32413492",
+  "arm": "efficacy",
+  "species": [
+   "rodent"
+  ],
+  "therapeutic_areas": [
+   "diabetic kidney disease",
+   "end-stage renal disease",
+   "type 2 diabetes mellitus"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "treatment efficacy",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "narrative-review",
+  "key_finding": "The unmet clinical need is partly due to the lack of animal models that replicate clinical features of human DKD, which has raised concern about the utility of these models in preclinical drug discovery.",
+  "quantitative_claims": [
+   "25 years"
+  ],
+  "evidence_vs_opinion": "opinion",
+  "title": "Rodent models of diabetic kidney disease: human translatability and preclinical validity.",
+  "journal": "Drug Discov Today",
+  "year": 2021,
+  "cited_by": 7,
+  "authors": [
+   "Sembach FE",
+   "\u00d8stergaard MV",
+   "Vrang N"
+  ],
+  "sources": [
+   "s3_concordance"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract states that the review performed a comprehensive analysis of rodent models of DKD to compare treatment efficacy from preclinical testing with outcome from clinical trials and investigated whether rodent models are predictive for clinical outcomes of therapeutic agents in human DKD. This suggests a quantitative measure of agreement or predictive value is being reported."
+ },
+ "31694927": {
+  "pmid": "31694927",
+  "arm": "toxicology",
+  "species": [
+   "rat",
+   "dog",
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "A multispecies Liver-Chip may provide a useful platform for prediction of liver toxicity and inform human relevance of liver toxicities detected in animal studies to better determine safety and human risk.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Reproducing human and cross-species drug toxicities using a Liver-Chip.",
+  "journal": "Sci Transl Med",
+  "year": 2019,
+  "cited_by": 241,
+  "authors": [
+   "Jang KJ",
+   "Otieno MA",
+   "Ronxhi J"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions the potential of the Liver-Chip to 'inform human relevance of liver toxicities detected in animal studies', suggesting a comparison or agreement measure between animal and human results, even if not explicitly quantified in the abstract itself. The focus on predicting human toxicity from animal models warrants inclusion for further review."
+ },
+ "34558834": {
+  "pmid": "34558834",
+  "arm": "toxicology",
+  "species": [
+   "human",
+   "mouse"
+  ],
+  "therapeutic_areas": [
+   "chronic liver disease"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "recall and precision",
+  "concordance_value": 0.4,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "cross-sectional",
+  "key_finding": "Similarly regulated genes in human and mouse chronic liver diseases were identified.",
+  "quantitative_claims": [
+   "372 patients",
+   "227 mice",
+   "nine published gene sets",
+   "0.4",
+   "0.33",
+   "12-months",
+   "40%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Transcriptomic Cross-Species Analysis of Chronic Liver Disease Reveals Consistent Regulation Between Humans and Mice.",
+  "journal": "Hepatol Commun",
+  "year": 2022,
+  "cited_by": 32,
+  "authors": [
+   "Holland CH",
+   "Ramirez Flores RO",
+   "Myllys M"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study quantifies the similarity between mouse models and human chronic liver diseases using transcriptomic data, reporting specific measures of recall (0.4) and precision (0.33) for certain models. This directly addresses the criteria for including quantitative measures of agreement between animal and human results."
+ },
+ "32127577": {
+  "pmid": "32127577",
+  "arm": "unclear",
+  "species": [
+   "humans",
+   "baboons",
+   "rhesus monkeys",
+   "Yorkshire pigs",
+   "Sprague-Dawley rats",
+   "New Zealand White rabbits",
+   "Hartley guinea pigs"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "approximated",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "TG and PG parameters from baboon and rhesus macaque plasma approximated that of humans, while other species differed significantly.",
+  "quantitative_claims": [
+   "28 healthy humans",
+   "10 baboons",
+   "12 rhesus monkeys",
+   "20 Yorkshire pigs",
+   "20 Sprague-Dawley rats",
+   "10 New Zealand White rabbits",
+   "14 Hartley guinea pigs"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Interspecies comparison of simultaneous thrombin and plasmin generation.",
+  "journal": "Sci Rep",
+  "year": 2020,
+  "cited_by": 22,
+  "authors": [
+   "Tarandovskiy ID",
+   "Shin HKH",
+   "Baek JH"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study compares thrombin and plasmin generation parameters between humans and several animal species, providing data that could be used to assess the concordance or similarity of these hemostasis measures across species. While it doesn't explicitly state a quantitative agreement statistic like a concordance rate, it presents comparative data (e.g., 'TG and PG parameters from baboon and rhesus macaque plasma approximated that of humans') which is the basis for such calculations and aligns with the review's inclusion criteria for systematic comparisons of animal vs. human effect sizes."
+ },
+ "39255793": {
+  "pmid": "39255793",
+  "arm": "unclear",
+  "species": [
+   "mouse",
+   "human",
+   "mammalian"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "inferred",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "The majority of real P-sites in mice can be inferred from experimentally derived human P-sites with PTMoreR mapping.",
+  "quantitative_claims": [
+   "129"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "PTMoreR-enabled cross-species PTM mapping and comparative phosphoproteomics across mammals.",
+  "journal": "Cell Rep Methods",
+  "year": 2024,
+  "cited_by": 5,
+  "authors": [
+   "Wang S",
+   "Di Y",
+   "Yang Y"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions 'the majority of real P-sites in mice can be inferred from experimentally derived human P-sites with PTMoreR mapping', which suggests a quantitative measure of agreement or concordance between animal and human results."
+ },
+ "40418625": {
+  "pmid": "40418625",
+  "arm": "unclear",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "AUC predictions falling within two and threefold error ranges",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "The developed AI-PBPK modeling strategy adeptly addresses pivotal PK challenges in drug discovery and aligns with contemporary drug development processes.",
+  "quantitative_claims": [
+   "eight types of key properties",
+   "15 organs",
+   "71 intravenous",
+   "606 oral"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "An Integrated AI-PBPK Platform for Predicting Drug In Vivo Fate and Tissue Distribution in Human and Inter-Species Extrapolation.",
+  "journal": "Clin Pharmacol Ther",
+  "year": 2025,
+  "cited_by": 2,
+  "authors": [
+   "Wang W",
+   "Wang N",
+   "Wu Y"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract describes the validation of an AI-PBPK platform against human PK data, reporting that most AUC predictions fell within two and threefold error ranges. This represents a quantitative measure of agreement between predicted (animal model equivalent) and human results."
+ },
+ "40054526": {
+  "pmid": "40054526",
+  "arm": "veterinary",
+  "species": [
+   "rat",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "inflammation"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "Our full PBPK model was extrapolated from rats to humans using allometry from Model II and optimized producing excellent applications in healthy subjects and patients.",
+  "quantitative_claims": [
+   "7 species",
+   "10 literature sources",
+   "R2 > 0.96",
+   "1.15",
+   "0.94",
+   "1.18",
+   "8-fold higher"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Physiologically-based modeling of methylprednisolone pharmacokinetics across species with extrapolations to humans.",
+  "journal": "J Pharm Sci",
+  "year": 2025,
+  "cited_by": 2,
+  "authors": [
+   "Yu R",
+   "Jusko WJ"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract describes the development and extrapolation of physiologically-based pharmacokinetic (PBPK) models from animal species (rats) to humans for methylprednisolone. It mentions assessing interspecies plasma concentration datasets and extrapolating from rats to humans, implying a quantitative comparison of pharmacokinetic parameters across species, which aligns with the criteria for including studies that report quantitative measures of agreement or translation."
+ },
+ "40849367": {
+  "pmid": "40849367",
+  "arm": "unclear",
+  "species": [
+   "humans",
+   "rats"
+  ],
+  "therapeutic_areas": [
+   "neuropsychiatric disorders",
+   "cognitive flexibility"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "prediction error (PE) magnitude was significantly related to RewP amplitude",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "These findings reveal analogous neurophysiological markers associated with PEs in humans and rats using equivalent tasks and identical computational analyses.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Identification of conserved frontal neurophysiological markers of cognitive flexibility in humans and rats.",
+  "journal": "Commun Biol",
+  "year": 2025,
+  "cited_by": 1,
+  "authors": [
+   "Der-Avakian A",
+   "Barnes SA",
+   "Lees T"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a systematic cross-species comparison of neurophysiological markers (frontal reward positivity) associated with cognitive flexibility in humans and rats, using equivalent tasks and computational analyses. While it doesn't explicitly state a quantitative agreement statistic like concordance rate, it directly compares and finds analogous markers, which aligns with the spirit of 'systematic comparison of animal vs human effect sizes' and 'assessing neural mechanisms conserved across species'."
+ },
+ "39182537": {
+  "pmid": "39182537",
+  "arm": "unclear",
+  "species": [
+   "human",
+   "macaque"
+  ],
+  "therapeutic_areas": [
+   "pain"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "functional connectivity changes",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "The FC changes in the regions associated with emotion, memory, motivation, and reward are part of the underlying mechanisms of thalamic pain onset present in both human patients and model macaques.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Cross-Species Convergence of Functional Connectivity Changes in Thalamic Pain Across Human Patients and Model Macaques.",
+  "journal": "J Pain",
+  "year": 2024,
+  "cited_by": 1,
+  "authors": [
+   "Dong D",
+   "Hosomi K",
+   "Shimizu T"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a cross-species convergence of functional connectivity changes in thalamic pain between human patients and macaque models. While it doesn't explicitly state a quantitative agreement metric like concordance rate, it directly compares and finds similarities in specific functional connectivity patterns (e.g., amygdala-brainstem FC) between the two species, suggesting a degree of translational validity for the animal model in reflecting human disease mechanisms."
+ },
+ "38642821": {
+  "pmid": "38642821",
+  "arm": "toxicology",
+  "species": [
+   "rat",
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "comparable predictions",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "the permeability PBPK model could interpret age, sex, and species differences and it could improve the accuracy of human prediction.",
+  "quantitative_claims": [
+   "5 mg/kg"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Sex, age, and species differences of perfluorooctanoic acid modeled by flow- versus permeability-limited physiologically-based pharmacokinetic models.",
+  "journal": "Toxicology",
+  "year": 2024,
+  "cited_by": 1,
+  "authors": [
+   "Choi GW",
+   "Kang DW",
+   "Kim JH"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract describes the development and comparison of PBPK models for PFOA in rats and humans, aiming to predict human clinical outcomes from animal data. It explicitly mentions 'comparable predictions in the human clinical study' and that the permeability-limited model 'could improve the accuracy of human prediction', suggesting a quantitative comparison of agreement between animal and human results."
+ },
+ "38688826": {
+  "pmid": "38688826",
+  "arm": "toxicology",
+  "species": [
+   "human",
+   "mouse"
+  ],
+  "therapeutic_areas": [
+   "carcinogenesis"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "time shift per dose",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "primary-hard",
+  "study_design": "primary-research",
+  "key_finding": "The model appropriately fitted both human and mouse data and suggested a linear dose response for the time shift.",
+  "quantitative_claims": [
+   "0.72-",
+   "0.71-",
+   "7.8",
+   "0.046",
+   "two orders of magnitude",
+   "two orders of magnitude"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Human-mouse comparison of the multistage nature of radiation carcinogenesis in a mathematical model.",
+  "journal": "Int J Cancer",
+  "year": 2024,
+  "cited_by": 1,
+  "authors": [
+   "Imaoka T",
+   "Tanaka S",
+   "Tomita M"
+  ],
+  "sources": [
+   "s4_species_diff"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative comparison of radiation carcinogenesis between humans and mice using a mathematical model. It provides specific quantitative measures of agreement and differences, such as the 'time shift per dose' (7.8 years per Gy for humans vs. 0.046 years per Gy for mice) and the effect per dose on a per-lifespan basis (0.72-fold for humans vs. 0.71-fold for mice). This directly addresses the criteria for including records that report quantitative measures of agreement or comparison of effect sizes between animal and human results."
+ },
+ "25671556": {
+  "pmid": "25671556",
+  "arm": "efficacy",
+  "species": [
+   "dog",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "inherited retinal dystrophies",
+   "childhood blindness"
+  ],
+  "model_type": "spontaneous-veterinary",
+  "concordance_reported": true,
+  "concordance_metric": "not-stated",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "systematic-review",
+  "key_finding": "Studies in dogs have contributed to therapy development for inherited retinal dystrophies, with outcomes in human clinical trials compared and contrasted with preclinical dog trials.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Dog models for blinding inherited retinal dystrophies.",
+  "journal": "Hum Gene Ther Clin Dev",
+  "year": 2015,
+  "cited_by": 39,
+  "authors": [
+   "Petersen-Jones SM",
+   "Kom\u00e1romy AM"
+  ],
+  "sources": [
+   "s5_vet"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions comparing and contrasting outcomes in human clinical trials with preclinical dog trials, suggesting a quantitative comparison of agreement, even if the specific metric isn't detailed. This aligns with the inclusion criteria for comparing animal and human results."
+ },
+ "22303754": {
+  "pmid": "22303754",
+  "arm": "veterinary",
+  "species": [
+   "dog",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "osteoarthritis"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "Potential diagnostic biomarker candidates were identified for osteoarthritis.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Using animal models in osteoarthritis biomarker research.",
+  "journal": "J Knee Surg",
+  "year": 2011,
+  "cited_by": 30,
+  "authors": [
+   "Garner BC",
+   "Stoker AM",
+   "Kuroki K"
+  ],
+  "sources": [
+   "s5_vet"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports the calculation of sensitivities and specificities for potential biomarker candidates identified in animal models, which is a quantitative measure of agreement/utility that can be applied to human clinical results."
+ },
+ "26563791": {
+  "pmid": "26563791",
+  "arm": "toxicology",
+  "species": [
+   "mammalian (nonhuman)"
+  ],
+  "therapeutic_areas": [
+   "extrapyramidal system neurotoxicity"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "clinical signs, neurochemical changes, and neuropathology",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "narrative-review",
+  "key_finding": "The central focus of the chapter is on animal models, especially the concordance between clinical signs, neurochemical changes, and neuropathology between animals and people.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "opinion",
+  "title": "Extrapyramidal system neurotoxicity: animal models.",
+  "journal": "Handb Clin Neurol",
+  "year": 2015,
+  "cited_by": 1,
+  "authors": [
+   "Dorman D"
+  ],
+  "sources": [
+   "s5_vet"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions 'the concordance between clinical signs, neurochemical changes, and neuropathology between animals and people' which suggests a quantitative measure of agreement is reported, even if not explicitly stated as a rate or statistic. The focus on animal models for understanding toxicity and pathogenesis, with a comparison to human conditions, aligns with the inclusion criteria."
+ },
+ "33039464": {
+  "pmid": "33039464",
+  "arm": "toxicology",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [
+   "liver injury"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "predictive values",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "The human liver organoid (HLO)-based screening model demonstrated high predictive values for 238 marketed drugs at 4 different concentrations, with a sensitivity of 88.7% and a specificity of 88.9%.",
+  "quantitative_claims": [
+   "238 marketed drugs",
+   "4 different concentrations",
+   "Sensitivity: 88.7%",
+   "Specificity: 88.9%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "High-Fidelity Drug-Induced Liver Injury Screen Using Human Pluripotent Stem Cell-Derived Organoids.",
+  "journal": "Gastroenterology",
+  "year": 2021,
+  "cited_by": 175,
+  "authors": [
+   "Shinozawa T",
+   "Kimura M",
+   "Cai Y"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement (Sensitivity: 88.7%, Specificity: 88.9%) between their human liver organoid (HLO) model and marketed drugs, which is a measure of predictive value for drug-induced liver injury. This aligns with the inclusion criteria for quantitative agreement between non-human and human results."
+ },
+ "32868897": {
+  "pmid": "32868897",
+  "arm": "toxicology",
+  "species": [
+   "mouse",
+   "rat",
+   "dog",
+   "monkey"
+  ],
+  "therapeutic_areas": [
+   "oncology"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "median PPV and NPV",
+  "concordance_value": 0.65,
+  "n_pairs": 108,
+  "endpoint_class": "not-stated",
+  "study_design": "systematic-review",
+  "key_finding": "Overall, animal toxicity did not show strong correlation with human toxicity, with a median PPV of 0.65 and NPV of 0.50.",
+  "quantitative_claims": [
+   "108 drugs",
+   "median PPV of 0.65",
+   "NPV of 0.50"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Pre-clinical animal models are poor predictors of human toxicities in phase 1 oncology clinical trials.",
+  "journal": "Br J Cancer",
+  "year": 2020,
+  "cited_by": 51,
+  "authors": [
+   "Atkins JT",
+   "George GC",
+   "Hess K"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement (PPV, NPV, kappa statistics, MCC, Spearman correlation coefficients) between preclinical animal model toxicities and human clinical toxicities in oncology Phase 1 trials."
+ },
+ "11029269": {
+  "pmid": "11029269",
+  "arm": "toxicology",
+  "species": [
+   "rodent",
+   "nonrodent"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "true positive HT concordance rate",
+  "concordance_value": 0.71,
+  "n_pairs": 150,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "The survey results support the value of in vivo toxicology studies to predict for many significant human toxicities associated with pharmaceuticals.",
+  "quantitative_claims": [
+   "150 compounds",
+   "221 HT events",
+   "47 cases",
+   "71%",
+   "63%",
+   "43%",
+   "1 month or less"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Concordance of the toxicity of pharmaceuticals in humans and in animals.",
+  "journal": "Regul Toxicol Pharmacol",
+  "year": 2000,
+  "cited_by": 497,
+  "authors": [
+   "Olson H",
+   "Betton G",
+   "Robinson D"
+  ],
+  "sources": [
+   "anchor",
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a quantitative measure of agreement (true positive HT concordance rate of 71%) between animal toxicity studies and human clinical toxicity events across multiple compounds."
+ },
+ "28422076": {
+  "pmid": "28422076",
+  "arm": "toxicology",
+  "species": [
+   "zebrafish",
+   "rodents",
+   "larger mammals"
+  ],
+  "therapeutic_areas": [
+   "cardiotoxicity",
+   "neurotoxicity",
+   "hepatotoxicity"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "Specificity, Sensitivity, Accuracy",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "Zebrafish can bridge the gap between preclinical in vitro safety assays and rodent models in a fast and cost-effective manner.",
+  "quantitative_claims": [
+   "up to a third",
+   "89%",
+   "68%",
+   "78%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "ZeGlobalTox: An Innovative Approach to Address Organ Drug Toxicity Using Zebrafish.",
+  "journal": "Int J Mol Sci",
+  "year": 2017,
+  "cited_by": 40,
+  "authors": [
+   "Cornet C",
+   "Calzolari S",
+   "Mi\u00f1ana-Prieto R"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports quantitative measures of agreement between non-human animal results (zebrafish) and human clinical results, specifically mentioning Specificity (89%), Sensitivity (68%), and Accuracy (78%) for predicting human drug-induced liabilities."
+ },
+ "38910363": {
+  "pmid": "38910363",
+  "arm": "toxicology",
+  "species": [
+   "mice",
+   "rats",
+   "guinea pigs"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "accuracy",
+  "concordance_value": 0.77,
+  "n_pairs": null,
+  "endpoint_class": "primary-hard",
+  "study_design": "primary-research",
+  "key_finding": "Derek Nexus and the QSAR Toolbox can be usefully incorporated in the workflow of phototoxicity testing for pharmaceuticals and chemicals.",
+  "quantitative_claims": [
+   "6.1.0",
+   "2020 1.0",
+   "4.5",
+   "63%",
+   "93%",
+   "90%",
+   "69%",
+   "77%",
+   "78%",
+   "73%",
+   "85%",
+   "85%",
+   "74%",
+   "79%",
+   "79%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "In Silico Phototoxicity Prediction of Drugs and Chemicals by using Derek Nexus and QSAR Toolbox.",
+  "journal": "Altern Lab Anim",
+  "year": 2024,
+  "cited_by": 2,
+  "authors": [
+   "Ahuja V",
+   "Adiga Perdur G",
+   "Aj Z"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement (sensitivity, specificity, PPV, NPV, accuracy) between in silico predictions and actual phototoxicity, which is a form of comparison between predictive models and observed outcomes. While not directly comparing animal to human, it is a quantitative assessment of a predictive tool's performance, aligning with the spirit of evaluating translation/prediction accuracy."
+ },
+ "34968630": {
+  "pmid": "34968630",
+  "arm": "toxicology",
+  "species": [
+   "animal"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "All models showed very good performance for identifying non-toxic compounds, which would be useful for DG classification, developing or triaging new chemicals, prioritizing existing chemicals for more detailed and rigorous toxicity assessments, and assessing non-active pharmaceutical intermediates.",
+  "quantitative_claims": [
+   "375 substances",
+   "300 mg/kg",
+   "5%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Evaluation of the predictivity of Acute Oral Toxicity (AOT) structure-activity relationship models.",
+  "journal": "Regul Toxicol Pharmacol",
+  "year": 2022,
+  "cited_by": 4,
+  "authors": [
+   "Gromek K",
+   "Hawkins W",
+   "Dunn Z"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract describes an evaluation of the predictivity of structure-activity relationship models for acute oral toxicity, comparing their predictions to established classifications (GHS, DG) based on LD50 values. It reports on the performance of these models using an external validation dataset and discusses their predictive capacity, including limitations and potential for improvement. This suggests a quantitative assessment of agreement between model predictions (analogous to animal study outcomes) and established classifications."
+ },
+ "28543848": {
+  "pmid": "28543848",
+  "arm": "toxicology",
+  "species": [
+   "mouse",
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "non-sensitizer predictions correct",
+  "concordance_value": 0.85,
+  "n_pairs": 271,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "The most predictive approach for skin sensitization potential was to use both the DPRA and h-CLAT assays.",
+  "quantitative_claims": [
+   "271 chemicals",
+   "85%",
+   "93%",
+   "69%",
+   "79%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Non-animal assessment of skin sensitization hazard: Is an integrated testing strategy needed, and if so what should be integrated?",
+  "journal": "J Appl Toxicol",
+  "year": 2018,
+  "cited_by": 12,
+  "authors": [
+   "Roberts DW",
+   "Patlewicz G"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study evaluates the predictive performance of non-animal assays in comparison to animal (mouse LLNA) and human sensitization data, reporting specific percentages for correct non-sensitizer predictions (85% and 93% respectively). This represents a quantitative measure of agreement between non-animal methods and human/animal results."
+ },
+ "39093553": {
+  "pmid": "39093553",
+  "arm": "toxicology",
+  "species": [
+   "rat",
+   "rabbit"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "similar effects",
+  "concordance_value": 0.556,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "In many cases, the added value of conducting embryofetal development studies in two species is limited.",
+  "quantitative_claims": [
+   "369 compounds were included",
+   "55.6% of the compounds similar effects were observed",
+   "44.6% of compounds",
+   "6.2%, discordance could not be explained"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Evaluation of rat and rabbit embryofetal development studies with pharmaceuticals: the added value of a second species.",
+  "journal": "Crit Rev Toxicol",
+  "year": 2024,
+  "cited_by": 1,
+  "authors": [
+   "Roos P",
+   "Anggasta C",
+   "Piersma AH"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative measure of agreement (concordance rate of 55.6% and discordance rate of 44.6%) between animal (rat and rabbit) results and human clinical relevance for embryofetal development studies of pharmaceuticals. This directly addresses the criteria for inclusion."
+ },
+ "18468556": {
+  "pmid": "18468556",
+  "arm": "toxicology",
+  "species": [
+   "zebrafish",
+   "mammalian"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "toxicity profiles",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "narrative-review",
+  "key_finding": "numerous studies confirm that mammalian and zebrafish toxicity profiles are strikingly similar.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "opinion",
+  "title": "Zebrafish: a predictive model for assessing drug-induced toxicity.",
+  "journal": "Drug Discov Today",
+  "year": 2008,
+  "cited_by": 127,
+  "authors": [
+   "McGrath P",
+   "Li CQ"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract states that 'mammalian and zebrafish toxicity profiles are strikingly similar' and that zebrafish can be used to 'eliminate potentially unsafe compounds rapidly'. This suggests a quantitative comparison of agreement between animal and human results, even if specific metrics are not detailed."
+ },
+ "33085125": {
+  "pmid": "33085125",
+  "arm": "toxicology",
+  "species": [
+   "rat"
+  ],
+  "therapeutic_areas": [
+   "not-stated"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "correlation",
+  "concordance_value": null,
+  "n_pairs": 59,
+  "endpoint_class": "primary-hard",
+  "study_design": "primary-research",
+  "key_finding": "The submerged 2-D cell culture model may be used to predict in vivo acute inhalation toxicity for substances with a water solubility of >=1 g/L in SVOCs and NVOCs.",
+  "quantitative_claims": [
+   "59 substances",
+   "44 substances",
+   "24-h IC50",
+   "4-h LC50",
+   "16 substances",
+   "1 g/L",
+   "Categories 1-3",
+   "Category 4"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Prediction of acute inhalation toxicity using cytotoxicity data from human lung epithelial cell lines.",
+  "journal": "J Appl Toxicol",
+  "year": 2021,
+  "cited_by": 3,
+  "authors": [
+   "Lim SK",
+   "Yoo J",
+   "Kim H"
+  ],
+  "sources": [
+   "s6_tox_conc"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a correlation and predictive ability between in vitro cytotoxicity data from human lung epithelial cell lines (IC50) and in vivo rat inhalation toxicity data (LC50), which is a quantitative measure of agreement between non-human animal results and human clinical results (or a surrogate for human relevance)."
+ },
+ "35148401": {
+  "pmid": "35148401",
+  "arm": "safety",
+  "species": [
+   "animals"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "specificity and sensitivity",
+  "concordance_value": null,
+  "n_pairs": 150,
+  "endpoint_class": "mixed",
+  "study_design": "regulatory-dataset",
+  "key_finding": "Nonclinical repolarization assays demonstrated good specificity for predicting negative clinical QT prolongation but had relatively poor sensitivity for predicting positive clinical QT prolongation.",
+  "quantitative_claims": [
+   "150 anonymized drug candidates"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "The Challenges of Predicting Drug-Induced QTc Prolongation in Humans.",
+  "journal": "Toxicol Sci",
+  "year": 2022,
+  "cited_by": 16,
+  "authors": [
+   "Valentin JP",
+   "Hoffmann P",
+   "Ortemann-Renon C"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a retrospective analysis of 150 drug candidates comparing the performance of nonclinical assays with clinical findings, specifically evaluating concordance, sensitivity, and specificity for predicting drug-induced QTc prolongation. This directly addresses the criteria for quantitative agreement between animal and human results."
+ },
+ "23812503": {
+  "pmid": "23812503",
+  "arm": "safety",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [
+   "cardiac repolarization",
+   "Torsade de Pointes"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "discordance",
+  "concordance_value": 0.3,
+  "n_pairs": null,
+  "endpoint_class": "primary-hard",
+  "study_design": "primary-research",
+  "key_finding": "Logistic regression models using the MICE assay showed a significant reduction in false positives (Type 1 errors) and false negatives (Type 2 errors) when compared to the hERG assay.",
+  "quantitative_claims": [
+   "30%",
+   "32",
+   "23",
+   "1",
+   "2"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "MICE models: superior to the HERG model in predicting Torsade de Pointes.",
+  "journal": "Sci Rep",
+  "year": 2013,
+  "cited_by": 141,
+  "authors": [
+   "Kramer J",
+   "Obejero-Paz CA",
+   "Myatt G"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a comparison of the predictive accuracy of two models (MICE vs. hERG) for Torsade de Pointes, explicitly mentioning a reduction in false positives and false negatives for the MICE model compared to the hERG assay. This implies a quantitative measure of agreement or predictive performance is being assessed."
+ },
+ "38852684": {
+  "pmid": "38852684",
+  "arm": "safety",
+  "species": [
+   "non-human primates",
+   "canines"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "Utilizing a 0-24 h super-interval method illustrates a simple and effective method to address cardiovascular questions when preclinical drug exposures exceed clinical concentrations.",
+  "quantitative_claims": [
+   "n = 48",
+   "n = 8",
+   "10.9 \u00b1 0.06 ms",
+   "1.5x",
+   "10 ms",
+   "0-24 h",
+   "3x",
+   "1.7x",
+   "0.04 \u00b1 0.1 ms"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A simple accurate method for concentration-QTc analysis in preclinical animal models.",
+  "journal": "J Pharmacol Toxicol Methods",
+  "year": 2024,
+  "cited_by": 3,
+  "authors": [
+   "Sadko KJ",
+   "Leishman DJ",
+   "Bailie MB"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative comparison of drug concentrations in non-human primates and canines to human clinical concentrations, specifically in relation to QTc interval changes. It quantifies the drug concentration in animals at which a certain QTc change is observed relative to the concentration that causes a similar change in humans (e.g., '1.5x the moxifloxacin plasma concentration that causes a 10 ms QTc change in humans'). This represents a quantitative measure of agreement or translation between animal and human results."
+ },
+ "40863351": {
+  "pmid": "40863351",
+  "arm": "safety",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [
+   "cardiac"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "TdP risk",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "Nonclinical cardiac NAMs can recapitulate clinical outcomes, including detection of vanoxerine-induced delayed repolarization and proarrhythmic effects.",
+  "quantitative_claims": [
+   "99% vanoxerine loss",
+   "1.5 Hz"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Nonclinical Human Cardiac New Approach Methodologies (NAMs) Predict Vanoxerine-Induced Proarrhythmic Potential.",
+  "journal": "J Cardiovasc Dev Dis",
+  "year": 2025,
+  "cited_by": 1,
+  "authors": [
+   "Garcia MI",
+   "Bhardwaj B",
+   "Dame K"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports that nonclinical cardiac NAMs (New Approach Methodologies) recapitulated clinical outcomes for vanoxerine, specifically detecting delayed repolarization and proarrhythmic effects that were not observed in earlier animal models and Phase I-II clinical trials but were seen in a Phase III trial. This suggests a quantitative or qualitative agreement between the NAM results and human clinical results."
+ },
+ "28903488": {
+  "pmid": "28903488",
+  "arm": "safety",
+  "species": [
+   "human",
+   "dog"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "receiver operating characteristic area under the curve",
+  "concordance_value": 0.81,
+  "n_pairs": 24,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "cross-sectional",
+  "key_finding": "Safety margin between QTc effects in dogs and clinical peak free plasma exposure showed an area under the curve of 0.81.",
+  "quantitative_claims": [
+   "24 compounds",
+   "13 positives",
+   "11 negatives",
+   "0.5",
+   "1",
+   "0.78",
+   "0.80",
+   "0.81"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "An Analysis of the Relationship Between Preclinical and Clinical QT Interval-Related Data.",
+  "journal": "Toxicol Sci",
+  "year": 2017,
+  "cited_by": 15,
+  "authors": [
+   "Pollard CE",
+   "Skinner M",
+   "Lazic SE"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement (sensitivity, specificity, ROC AUC) between preclinical (hERG IC50, dog QTc) and clinical QT interval data for 24 compounds."
+ },
+ "20807552": {
+  "pmid": "20807552",
+  "arm": "safety",
+  "species": [],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "area under the receiver-operator curve",
+  "concordance_value": 0.72,
+  "n_pairs": 39,
+  "endpoint_class": "mixed",
+  "study_design": "regulatory-dataset",
+  "key_finding": "The overall limitations of hERG safety margins shown using these quantitative, evidence-based approaches highlight the need for additional preclinical assays and adaptive strategies throughout drug discovery to reliably mitigate QTc prolongation risk.",
+  "quantitative_claims": [
+   "39 drugs",
+   "9/10",
+   "45",
+   "0.64",
+   "0.88",
+   "0.72",
+   "5-7",
+   "1-30"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "An evaluation of hERG current assay performance: Translating preclinical safety studies to clinical QT prolongation.",
+  "journal": "Pharmacol Ther",
+  "year": 2011,
+  "cited_by": 77,
+  "authors": [
+   "Gintant G"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement between preclinical hERG assay results and human clinical QT prolongation, including sensitivity, specificity, and area under the receiver-operator curve, directly comparing animal model performance to human outcomes."
+ },
+ "33666192": {
+  "pmid": "33666192",
+  "arm": "safety",
+  "species": [
+   "zebrafish"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "concordance",
+  "concordance_value": 1.0,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "narrative-review",
+  "key_finding": "The use of zebrafish, a vertebrate screening model, for preclinical testing is increasing owing to the number of advantages and striking similarities with the mammal.",
+  "quantitative_claims": [
+   "96-120hpf"
+  ],
+  "evidence_vs_opinion": "opinion",
+  "title": "Zebrafish: An emerging whole-organism screening tool in safety pharmacology.",
+  "journal": "Indian J Pharmacol",
+  "year": 2020,
+  "cited_by": 5,
+  "authors": [
+   "Nikam VS",
+   "Singh D",
+   "Takawale R"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions 'Numbers of drugs and chemicals are screened using zebrafish embryos, and results were found to show 100% concordance with mammalian screening data.' This indicates a quantitative measure of agreement (concordance rate) between animal and human/mammalian results."
+ },
+ "33813006": {
+  "pmid": "33813006",
+  "arm": "safety",
+  "species": [
+   "rodent",
+   "non-rodent"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "Routine use of rodent central nervous system (CNS) and respiratory function studies appears to have limited utility, with only 21% and 28% of studies, respectively, giving findings of which none were identified as of obvious concern to moving the affected drugs into the clinic.",
+  "quantitative_claims": [
+   "over 20 years ago",
+   "105",
+   "21%",
+   "28%",
+   "about 10%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Core battery safety pharmacology testing - An assessment of its utility in early drug development.",
+  "journal": "J Pharmacol Toxicol Methods",
+  "year": 2021,
+  "cited_by": 3,
+  "authors": [
+   "Baldrick P"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports quantitative measures of utility for different safety pharmacology tests in predicting clinical outcomes. Specifically, it mentions that only 21% and 28% of rodent CNS and respiratory studies, respectively, yielded findings of concern for clinical progression. It also notes that telemetry studies had utility in identifying cardiovascular effects in about 10% of studies. These figures represent a quantitative assessment of agreement or predictive value between animal study findings and potential clinical impact."
+ },
+ "32735877": {
+  "pmid": "32735877",
+  "arm": "toxicology",
+  "species": [],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "other",
+  "key_finding": "Tests can be strategically combined to reach a desired level of predictive power, which is generally more easily achieved for negative predictive power given a low prevalence of the toxicity under scrutiny.",
+  "quantitative_claims": [
+   "10%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A Bayesian approach to toxicological testing.",
+  "journal": "J Pharmacol Toxicol Methods",
+  "year": 2020,
+  "cited_by": 3,
+  "authors": [
+   "Felli JC",
+   "Leishman DJ"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract discusses discriminatory power (sensitivity and specificity) and predictive power of toxicological tests, which are quantitative measures of agreement. It uses examples of tests for predicting cardiac arrhythmia liability and explores how these tests can be combined to achieve desired predictive power, implying a comparison or agreement metric between test results and actual toxicity."
+ },
+ "30726989": {
+  "pmid": "30726989",
+  "arm": "safety",
+  "species": [
+   "rat",
+   "dog",
+   "monkey",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "cardiovascular"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "sensitivity and specificity",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "scoping-review",
+  "key_finding": "Cardiovascular safety pharmacology studies are conducted to identify safety effects and understanding translation of heart rate and blood pressure endpoints across preclinical animal models and to the clinic is critical in developing a robust cardiovascular derisking strategy.",
+  "quantitative_claims": [
+   "83 compounds",
+   "79 compounds",
+   "84%",
+   "71%",
+   "78%",
+   "79%",
+   "0.3-3x",
+   "23%-26%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Preclinical to Clinical Translation of Hemodynamic Effects in Cardiovascular Safety Pharmacology Studies.",
+  "journal": "Toxicol Sci",
+  "year": 2019,
+  "cited_by": 3,
+  "authors": [
+   "Bhatt S",
+   "Northcott C",
+   "Wisialowski T"
+  ],
+  "sources": [
+   "s7_safetypharm"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports quantitative measures of agreement (sensitivity, specificity, predictive values) between preclinical animal models (rat and large animal) and human clinical results for cardiovascular endpoints (heart rate and blood pressure). It explicitly calculates concordance rates for both rat to large animal and large animal to human comparisons."
+ },
+ "26803853": {
+  "pmid": "26803853",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "",
+  "journal": "",
+  "year": 2015,
+  "cited_by": 0,
+  "authors": [
+   "National Cancer Policy Forum",
+   "Board on Health Care Services",
+   "Institute of Medicine"
+  ],
+  "sources": [
+   "s8_vet_targeted"
+  ]
+ },
+ "29730448": {
+  "pmid": "29730448",
+  "arm": "toxicology",
+  "species": [
+   "rat",
+   "dog",
+   "mouse",
+   "rabbit",
+   "cynomolgus monkey"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "likelihood ratios",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "The animal-human translation of many key observations is confirmed as being predictive, such as QT prolongation and arrhythmias in dog.",
+  "quantitative_claims": [
+   "3,290 approved drugs and formulations",
+   "1,637,449 adverse events",
+   "more than 70 years"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A big data approach to the concordance of the toxicity of pharmaceuticals in animals and humans.",
+  "journal": "Regul Toxicol Pharmacol",
+  "year": 2018,
+  "cited_by": 43,
+  "authors": [
+   "Clark M",
+   "Steger-Hartmann T"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative measure of agreement (diagnostic power computed using likelihood ratios) between animal and human toxicity observations for pharmaceuticals, using a large dataset of approved drugs and reported adverse events."
+ },
+ "17175568": {
+  "pmid": "17175568",
+  "arm": "efficacy",
+  "species": [],
+  "therapeutic_areas": [
+   "head injury",
+   "haemorrhage",
+   "acute ischaemic stroke",
+   "neonatal respiratory distress syndrome",
+   "osteoporosis"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "pooled odds ratio for adverse functional outcome",
+  "concordance_value": 0.58,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "systematic-review",
+  "key_finding": "Corticosteroids did not show any benefit in clinical trials of treatment for head injury but did show a benefit in animal models.",
+  "quantitative_claims": [
+   "0.58",
+   "0.41",
+   "0.83",
+   "24%",
+   "20%",
+   "28%",
+   "23%",
+   "17%",
+   "29%",
+   "29%",
+   "21%",
+   "37%",
+   "48%",
+   "29%",
+   "67%",
+   "4.2",
+   "0.85",
+   "20.9",
+   "11.0%",
+   "9.2%",
+   "12.9%",
+   "8.5%",
+   "5.8%",
+   "11.2%",
+   "1.7%",
+   "-1.4%",
+   "4.7%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Comparison of treatment effects between animal experiments and clinical trials: systematic review.",
+  "journal": "BMJ",
+  "year": 2007,
+  "cited_by": 307,
+  "authors": [
+   "Perel P",
+   "Roberts I",
+   "Sena E"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a systematic review examining concordance between treatment effects in animal experiments and clinical trials. It provides quantitative measures of treatment effects (e.g., odds ratios, percentage changes with confidence intervals) for several intervention-indication pairs, allowing for a comparison of effect sizes between animal models and human studies."
+ },
+ "19297654": {
+  "pmid": "19297654",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Why animal studies are often poor predictors of human reactions to exposure.",
+  "journal": "J R Soc Med",
+  "year": 2009,
+  "cited_by": 161,
+  "authors": [
+   "Bracken MB"
+  ],
+  "sources": [
+   "anchor"
+  ]
+ },
+ "17032985": {
+  "pmid": "17032985",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Translation of research evidence from animals to humans.",
+  "journal": "JAMA",
+  "year": 2006,
+  "cited_by": 312,
+  "authors": [
+   "Hackam DG",
+   "Redelmeier DA"
+  ],
+  "sources": [
+   "anchor"
+  ]
+ },
+ "32391273": {
+  "pmid": "32391273",
+  "arm": "efficacy",
+  "species": [
+   "human",
+   "murine"
+  ],
+  "therapeutic_areas": [
+   "lung cancer"
+  ],
+  "model_type": "xenograft",
+  "concordance_reported": true,
+  "concordance_metric": "odds of approval",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "primary-hard",
+  "study_design": "systematic-review",
+  "key_finding": "There does not appear to be a significant linear trend between preclinical success and drug approval, and therefore published preclinical data does not predict success of therapeutics in lung cancer.",
+  "quantitative_claims": [
+   "One hundred thirty-four failed lung cancer drugs",
+   "twenty seven successful lung cancer drugs",
+   "IC50 345.01-100,000 nM",
+   "P-trend 0.4",
+   "-0.3119 to 1.0000",
+   "0.5576-0.7600",
+   "0.7601-0.9364",
+   "0.9365-1.0000",
+   "-0.3119-0.5575"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A Systematic Review of the Efficacy of Preclinical Models of Lung Cancer Drugs.",
+  "journal": "Front Oncol",
+  "year": 2020,
+  "cited_by": 18,
+  "authors": [
+   "Pan E",
+   "Bogumil D",
+   "Cortessis V"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative comparison of preclinical drug efficacy measures (IC50, TGI) against drug approval status, using logistic regression to assess the odds of approval based on preclinical data quartiles. This represents a quantitative measure of agreement between preclinical results and clinical outcomes (drug approval)."
+ },
+ "26753942": {
+  "pmid": "26753942",
+  "arm": "toxicology",
+  "species": [
+   "humans",
+   "non-human primates",
+   "dogs",
+   "mice",
+   "rabbits",
+   "rats"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "Likelihood Ratios (LRs)",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "regulatory-dataset",
+  "key_finding": "Test results inferring an absence of toxicity in one species provide no evidential weight with regard to toxicity in any other species, even when data from NHPs and humans are compared.",
+  "quantitative_claims": [
+   "over 3,000 drugs"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Predicting human drug toxicity and safety via animal tests: can any one species predict drug toxicity in any other, and do monkeys help?",
+  "journal": "Altern Lab Anim",
+  "year": 2015,
+  "cited_by": 21,
+  "authors": [
+   "Bailey J",
+   "Thew M",
+   "Balls M"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract explicitly mentions calculating Likelihood Ratios (LRs) for over 3,000 drugs with both animal and human data to assess the predictive value of animal tests for human drug toxicity. This represents a quantitative measure of agreement (or lack thereof) between animal and human results."
+ },
+ "30364994": {
+  "pmid": "30364994",
+  "arm": "safety",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [
+   "gastrointestinal"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "predictivity for diarrhea-inducing drugs",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "This human 3D GI microtissue is the first in vitro assay with validated predictivity for diarrhea-inducing drugs.",
+  "quantitative_claims": [
+   "1-month"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Human 3D Gastrointestinal Microtissue Barrier Function As a Predictor of Drug-Induced Diarrhea.",
+  "journal": "Toxicol Sci",
+  "year": 2019,
+  "cited_by": 23,
+  "authors": [
+   "Peters MF",
+   "Landry T",
+   "Pin C"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports on the predictivity of human 3D gastrointestinal microtissues for drug-induced diarrhea, comparing in vitro results to human clinical outcomes. It mentions a threshold that distinguished drugs inducing clinical diarrhea from those that do not, and accurately predicted diarrhea for drugs whose development was limited by this side effect. This suggests a quantitative measure of agreement or predictive accuracy between the model and human results."
+ },
+ "27870924": {
+  "pmid": "27870924",
+  "arm": "efficacy",
+  "species": [],
+  "therapeutic_areas": [
+   "septic shock"
+  ],
+  "model_type": "infection",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "primary-hard",
+  "study_design": "meta-analysis",
+  "key_finding": "Meta-analysis demonstrated that MSC treatment of preclinical sepsis significantly reduced mortality over a range of experimental conditions.",
+  "quantitative_claims": [
+   "20 controlled comparison experiments",
+   "980 animals",
+   "18 publications",
+   "odds ratio 0.27",
+   "95% confidence interval 0.18-0.40",
+   "~30% overestimate of effect"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Evaluating mesenchymal stem cell therapy for sepsis with preclinical meta-analyses prior to initiating a first-in-human trial.",
+  "journal": "Elife",
+  "year": 2016,
+  "cited_by": 52,
+  "authors": [
+   "Lalu MM",
+   "Sullivan KJ",
+   "Mei SH"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative measure of agreement between preclinical animal results and human clinical results by performing a meta-analysis of preclinical data (odds ratio 0.27, 95% CI 0.18-0.40) in preparation for a first-in-human trial. This directly compares the effect size in animal models to what is expected in humans."
+ },
+ "23522086": {
+  "pmid": "23522086",
+  "arm": "toxicology",
+  "species": [],
+  "therapeutic_areas": [
+   "autism"
+  ],
+  "model_type": "induced",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "systematic-review",
+  "key_finding": "A review of the VPA literature showed that only 9% (3/34) of studies correctly determined that the experimental unit (n) was the litter and therefore made valid statistical inferences.",
+  "quantitative_claims": [
+   "9%",
+   "3/34",
+   "61%",
+   "p<0.001",
+   "12%",
+   "18%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Improving basic and translational science by accounting for litter-to-litter variation in animal models.",
+  "journal": "BMC Neurosci",
+  "year": 2013,
+  "cited_by": 114,
+  "authors": [
+   "Lazic SE",
+   "Essioux L"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a quantitative measure of agreement/concordance (9% of studies correctly determined the experimental unit) and discusses the impact of litter effects on the translation of preclinical findings. This aligns with the inclusion criteria for quantitative measures of agreement between animal models and the translation problem."
+ },
+ "12667944": {
+  "pmid": "12667944",
+  "arm": "safety",
+  "species": [
+   "dog",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "cardiac electrophysiology",
+   "antiarrhythmics"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "separation between C(max) and hERG IC(50)",
+  "concordance_value": null,
+  "n_pairs": 100,
+  "endpoint_class": "mixed",
+  "study_design": "systematic-review",
+  "key_finding": "The dataset confirms the widely-held belief that most drugs associated with TdP in humans are also associated with hERG K(+) channel block at concentrations close to or superimposed upon the free plasma concentrations found in clinical use.",
+  "quantitative_claims": [
+   "100 drugs",
+   "52 drugs",
+   "0.1- to 31-fold",
+   "0.31- to 13-fold",
+   "0.03- to 35-fold",
+   "0.13- to 35700-fold",
+   "35700-fold",
+   "1.7-fold",
+   ">30-fold",
+   "30-fold"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Relationships between preclinical cardiac electrophysiology, clinical QT interval prolongation and torsade de pointes for a broad range of drugs: evidence for a provisional safety margin in drug development.",
+  "journal": "Cardiovasc Res",
+  "year": 2003,
+  "cited_by": 459,
+  "authors": [
+   "Redfern WS",
+   "Carlsson L",
+   "Davis AS"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study compares preclinical cardiac electrophysiology data (in vitro and in vivo) with clinical QT interval prolongation and torsade de pointes for a large number of drugs. It quantifies relationships between drug concentrations and effects in animals versus humans, providing a measure of agreement and a basis for a safety margin in drug development."
+ },
+ "16453316": {
+  "pmid": "16453316",
+  "arm": "efficacy",
+  "species": [
+   "not-stated"
+  ],
+  "therapeutic_areas": [
+   "stroke"
+  ],
+  "model_type": "surgical",
+  "concordance_reported": true,
+  "concordance_metric": "not-stated",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "systematic-review",
+  "key_finding": "There was no evidence that drugs used clinically were more effective experimentally than those tested only in animal models.",
+  "quantitative_claims": [
+   "1,026 experimental treatments",
+   "114 drugs",
+   "912 drugs",
+   "31.3 +/- 16.7%",
+   "24.4 +/- 32.9%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "1,026 experimental treatments in acute stroke.",
+  "journal": "Ann Neurol",
+  "year": 2006,
+  "cited_by": 643,
+  "authors": [
+   "O'Collins VE",
+   "Macleod MR",
+   "Donnan GA"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a quantitative comparison of experimental efficacy between drugs used clinically and those tested only experimentally, including a statistical comparison of average improvement percentages (31.3% vs 24.4%) and a p-value, which indicates a measure of agreement or difference in outcomes between animal models and clinical translation."
+ },
+ "39379679": {
+  "pmid": "39379679",
+  "arm": "unclear",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "scoping-review",
+  "key_finding": "Only a small proportion of all human diseases have an approved drug treatment and less than half of all the diseases that are the subject of preclinical or clinical phase drug development have been investigated in genetic studies.",
+  "quantitative_claims": [
+   "612 of 11,158 diseases",
+   "1414 diseases",
+   "only 666",
+   "1914 human diseases",
+   "1121 have yet to be investigated"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Disease coverage of human genome-wide association studies and pharmaceutical research and development.",
+  "journal": "Commun Med (Lond)",
+  "year": 2024,
+  "cited_by": 4,
+  "authors": [
+   "Gordillo-Mara\u00f1\u00f3n M",
+   "Schmidt AF",
+   "Warwick A"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports quantitative measures of overlap between diseases investigated in GWAS and those with drug development efforts (e.g., 'only 612 of 11,158 diseases listed in Human Disease Ontology have an approved drug treatment', 'Of the 1414 diseases that are the subject of preclinical or clinical phase drug development, only 666 have been investigated in GWAS'). This represents a quantitative comparison of human research efforts, which aligns with the inclusion criteria for assessing coverage and overlap."
+ },
+ "35616311": {
+  "pmid": "35616311",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "The role of systematic reviews in identifying the limitations of preclinical animal research, 2000-2022: part 2.",
+  "journal": "J R Soc Med",
+  "year": 2022,
+  "cited_by": 7,
+  "authors": [
+   "Ritskes-Hoitinga M",
+   "Pound P"
+  ],
+  "sources": [
+   "citation_hub"
+  ]
+ },
+ "37712424": {
+  "pmid": "37712424",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Adding robustness to rigor and reproducibility for the three Rs of improving translational medical research.",
+  "journal": "J Clin Invest",
+  "year": 2023,
+  "cited_by": 5,
+  "authors": [
+   "McGill MP",
+   "Threadgill DW"
+  ],
+  "sources": [
+   "citation_hub"
+  ]
+ },
+ "29590200": {
+  "pmid": "29590200",
+  "arm": "unclear",
+  "species": [],
+  "therapeutic_areas": [
+   "haemorrhage",
+   "osteoporosis",
+   "brain injury",
+   "stroke",
+   "neonatal respiratory distress"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": false,
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "systematic-review",
+  "key_finding": "Less than 7% of the studies were permissible according to Bateson's Cube, with only the moderate bisphosphonate studies appearing to minimise harms to animals whilst being associated with benefit for humans.",
+  "quantitative_claims": [
+   "1%",
+   "a third",
+   "7%"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Retrospective harm benefit analysis of pre-clinical animal research for six treatment interventions.",
+  "journal": "PLoS One",
+  "year": 2018,
+  "cited_by": 20,
+  "authors": [
+   "Pound P",
+   "Nicol CJ"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports a quantitative measure of agreement between animal research and human clinical results by assessing the 'clinical relevance' of animal studies against human studies and then calculating that 'less than 7% of the studies were permissible' based on harms to animals versus benefits for humans. This is a form of concordance analysis."
+ },
+ "38736280": {
+  "pmid": "38736280",
+  "arm": "safety",
+  "species": [
+   "not-stated"
+  ],
+  "therapeutic_areas": [
+   "not-stated"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "similar performance metrics",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "We compared our predictions to animal models and demonstrated similar performance metrics, suggesting that protein-protein interaction models do not need perfect evaluation metrics to be useful.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Preclinical side effect prediction through pathway engineering of protein interaction network models.",
+  "journal": "CPT Pharmacometrics Syst Pharmacol",
+  "year": 2024,
+  "cited_by": 3,
+  "authors": [
+   "Alidoost M",
+   "Wilson JL"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions comparing predictions from protein-protein interaction models to animal models and demonstrating similar performance metrics. This suggests a quantitative comparison of agreement between non-human animal results and human clinical results (as the protein-protein interaction models are used to predict drug effects from drug labels, which are based on human clinical data)."
+ },
+ "30823899": {
+  "pmid": "30823899",
+  "arm": "toxicology",
+  "species": [
+   "rodents",
+   "dogs",
+   "monkeys"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "predictive nature",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "narrative-review",
+  "key_finding": "The data in these recent studies, as well as in our own studies, support the contention that tests on rodents, dogs and monkeys provide next to no evidential weight to the probability of there being a lack of human toxicity, when there is no apparent toxicity in the animals.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Recent efforts to elucidate the scientific validity of animal-based drug tests by the pharmaceutical industry, pro-testing lobby groups, and animal welfare organisations.",
+  "journal": "BMC Med Ethics",
+  "year": 2019,
+  "cited_by": 14,
+  "authors": [
+   "Bailey J",
+   "Balls M"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract discusses the lack of published data to validate animal use in preclinical drug testing and their predictive nature for human safety/toxicity and efficacy. It mentions that data from rodent, dog, and monkey tests provide 'next to no evidential weight' regarding human toxicity, which implies a quantitative assessment of agreement (or lack thereof) between animal and human results."
+ },
+ "18772421": {
+  "pmid": "18772421",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Medicine. Life cycle of translational research for medical interventions.",
+  "journal": "Science",
+  "year": 2008,
+  "cited_by": 84,
+  "authors": [
+   "Contopoulos-Ioannidis DG",
+   "Alexiou GA",
+   "Gouvias TC"
+  ],
+  "sources": [
+   "anchor"
+  ]
+ },
+ "23503654": {
+  "pmid": "23503654",
+  "arm": "toxicology",
+  "species": [
+   "mouse",
+   "human"
+  ],
+  "therapeutic_areas": [
+   "inflammation",
+   "neurodegeneration",
+   "stroke",
+   "sepsis"
+  ],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "predictivity",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "The low predictivity of animal experiments in research areas allowing direct comparisons of mouse versus human data puts strong doubt on the usefulness of animal data as key technology to predict human safety.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Inflammatory findings on species extrapolations: humans are definitely no 70-kg mice.",
+  "journal": "Arch Toxicol",
+  "year": 2013,
+  "cited_by": 65,
+  "authors": [
+   "Leist M",
+   "Hartung T"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions a study showing 'low predictivity of animal responses in the field of inflammation' and corroborates 'earlier findings from comparisons in the fields of neurodegeneration, stroke and sepsis'. This suggests a quantitative comparison of animal vs human data, even if specific metrics are not detailed in the abstract."
+ },
+ "32152206": {
+  "pmid": "32152206",
+  "arm": "efficacy",
+  "species": [
+   "rodents",
+   "humans"
+  ],
+  "therapeutic_areas": [
+   "glucose-responsive insulins"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "accuracy",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "PAMERAH constitutes a framework for predicting the therapeutic efficacy of a GRI candidate from its user-specified mechanism of action, kinetics, and dosage, which we show is accurate when checked against data from experiments and literature.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Connecting Rodent and Human Pharmacokinetic Models for the Design and Translation of Glucose-Responsive Insulin.",
+  "journal": "Diabetes",
+  "year": 2020,
+  "cited_by": 9,
+  "authors": [
+   "Yang JF",
+   "Gong X",
+   "Bakh NA"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract describes a framework (PAMERAH) that connects rodent and human pharmacokinetic models for glucose-responsive insulins. It explicitly mentions predicting therapeutic efficacy, identifying 'false positives' (promising in rodents but underperforming in humans) and 'false negatives' (optimal human dynamics not captured by rodent experiments), and condensing this information onto a 'translatability grid'. This indicates a quantitative comparison and agreement measure between animal and human results for intervention-indication pairs."
+ },
+ "32610529": {
+  "pmid": "32610529",
+  "arm": "efficacy",
+  "species": [
+   "human"
+  ],
+  "therapeutic_areas": [
+   "breast cancer"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "clinically effective concentrations",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "mixed",
+  "study_design": "primary-research",
+  "key_finding": "HuP3D is a feasible and efficacious platform for supporting the growth and expansion of BCa, allowing high-throughput drug screening and predicting clinically effective therapies better than current preclinical models.",
+  "quantitative_claims": [
+   "eight out of ten metrics"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Human Plasma-Derived 3D Cultures Model Breast Cancer Treatment Responses and Predict Clinically Effective Drug Treatment Concentrations.",
+  "journal": "Cancers (Basel)",
+  "year": 2020,
+  "cited_by": 9,
+  "authors": [
+   "Calar K",
+   "Plesselova S",
+   "Bhattacharya S"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports quantitative measures of agreement (correlations) between the HuP3D model's drug sensitivity metrics and clinically effective drug concentrations in patients. It also compares these correlations to those found in 2D and other 3D models, providing a direct quantitative comparison of predictive accuracy."
+ },
+ "36730203": {
+  "pmid": "36730203",
+  "arm": "unclear",
+  "species": [
+   "human",
+   "model organisms"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "transcriptomic response",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "CAMO assists researchers to numerically quantify congruence, to dissect true cross-species differences from unwanted biological or cohort variabilities, and to visually identify molecular mechanisms and pathway subnetworks that are best or least mimicked by model organisms.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Transcriptomic congruence analysis for evaluating model organisms.",
+  "journal": "Proc Natl Acad Sci U S A",
+  "year": 2023,
+  "cited_by": 3,
+  "authors": [
+   "Zong W",
+   "Rahman T",
+   "Zhu L"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract describes a framework (CAMO) for 'transcriptomic response analysis' that aims to 'numerically quantify congruence' between model organisms and humans. It mentions developing 'quantitative concordance/discordance scores' and assisting researchers to 'numerically quantify congruence'. This suggests a quantitative measure of agreement between animal and human results, which aligns with the inclusion criteria."
+ },
+ "28731442": {
+  "pmid": "28731442",
+  "arm": "efficacy",
+  "species": [
+   "human",
+   "mouse"
+  ],
+  "therapeutic_areas": [
+   "neurodegenerative diseases",
+   "neuroinflammation"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "not-stated",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "NDD drugs, which passed the efficacy test in mice, were repeatedly not successful in clinical trials.",
+  "quantitative_claims": [],
+  "evidence_vs_opinion": "data",
+  "title": "Of Mice and Men: Comparative Analysis of Neuro-Inflammatory Mechanisms in Human and Mouse Using Cause-and-Effect Models.",
+  "journal": "J Alzheimers Dis",
+  "year": 2017,
+  "cited_by": 16,
+  "authors": [
+   "Kodamullil AT",
+   "Iyappan A",
+   "Karki R"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract discusses a comparative analysis between human and mouse models of neuroinflammation and NDD, specifically investigating the failure of a drug in clinical trials based on comparative analyses between the two species. This suggests a quantitative comparison of agreement or translation success, even if the specific metric isn't detailed in the abstract."
+ },
+ "26460544": {
+  "pmid": "26460544",
+  "arm": "efficacy",
+  "species": [],
+  "therapeutic_areas": [
+   "malignancies"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "overestimate of effect size",
+  "concordance_value": 0.45,
+  "n_pairs": null,
+  "endpoint_class": "primary-hard",
+  "study_design": "meta-analysis",
+  "key_finding": "Pooled effect sizes for specific malignancies did not show apparent relationships with effect sizes in clinical trials, and we were unable to detect dose-response relationships.",
+  "quantitative_claims": [
+   "45% overestimate of effect size"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "A meta-analysis of threats to valid clinical inference in preclinical research of sunitinib.",
+  "journal": "Elife",
+  "year": 2015,
+  "cited_by": 25,
+  "authors": [
+   "Henderson VC",
+   "Demko N",
+   "Hakala A"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a quantitative measure of agreement (45% overestimate of effect size due to publication bias) and a comparison of preclinical effect sizes with clinical trial results, which aligns with the inclusion criteria."
+ },
+ "28335819": {
+  "pmid": "28335819",
+  "arm": "unclear",
+  "species": [
+   "human",
+   "non-human"
+  ],
+  "therapeutic_areas": [
+   "Parkinson's disease"
+  ],
+  "model_type": "mixed",
+  "concordance_reported": true,
+  "concordance_metric": "correlation",
+  "concordance_value": 0.05,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "meta-analysis",
+  "key_finding": "The observed clustering and concordance results suggest the existence of a 'characteristic' signal of Parkinson's disease found in significantly affected human tissues in humans.",
+  "quantitative_claims": [
+   "33 microarray studies",
+   "0.05",
+   "0.38"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Concordance analysis of microarray studies identifies representative gene expression changes in Parkinson's disease: a comparison of 33 human and animal studies.",
+  "journal": "BMC Neurol",
+  "year": 2017,
+  "cited_by": 14,
+  "authors": [
+   "Oerton E",
+   "Bender A"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study reports quantitative measures of agreement (correlation coefficients of 0.05 and 0.38) between gene expression signatures from human Parkinson's disease studies and animal models, directly addressing the concordance between non-human animal results and human clinical results."
+ },
+ "25677548": {
+  "pmid": "25677548",
+  "arm": "unclear",
+  "species": [
+   "rat",
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "species \u00d7 exercise interactions",
+  "concordance_value": 0.06666666666666667,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "The rat adequately mimics human responses to exercise in those basic blood biochemical parameters reported here.",
+  "quantitative_claims": [
+   "30 blood chemistry parameters",
+   "2/30 significant species \u00d7 exercise interactions",
+   "15/30 parameters",
+   "two parameters",
+   "P = 0.060",
+   "P = 0.058"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "The rat adequately reflects human responses to exercise in blood biochemical profile: a comparative study.",
+  "journal": "Physiol Rep",
+  "year": 2015,
+  "cited_by": 23,
+  "authors": [
+   "Goutianos G",
+   "Tzioura A",
+   "Kyparos A"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study compares the alteration patterns of 30 blood chemistry parameters between rats and humans after exercise, finding that almost all parameters followed a similar pattern. It quantifies the species x exercise interaction for 2 out of 30 parameters, indicating a high degree of similarity in response. This represents a quantitative measure of agreement between animal and human results."
+ },
+ "17988725": {
+  "pmid": "17988725",
+  "arm": "efficacy",
+  "species": [],
+  "therapeutic_areas": [],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "predictive value",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "narrative-review",
+  "key_finding": "On average, the extrapolated results from studies using tens of millions of animals fail to accurately predict human responses.",
+  "quantitative_claims": [
+   "tens of millions"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Are animal models as good as we think?",
+  "journal": "Theriogenology",
+  "year": 2008,
+  "cited_by": 46,
+  "authors": [
+   "Wall RJ",
+   "Shani M"
+  ],
+  "sources": [
+   "anchor"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract mentions 'The predictive value of those animal studies is carefully monitored, thus providing an ideal dataset for evaluating the efficacy of animal models.' and 'On average, the extrapolated results from studies using tens of millions of animals fail to accurately predict human responses.' This suggests a quantitative measure of agreement or predictive value is reported."
+ },
+ "22790876": {
+  "pmid": "22790876",
+  "arm": null,
+  "model_type": null,
+  "endpoint_class": null,
+  "extraction_source": "none",
+  "extraction_status": "no abstract available",
+  "title": "Can animal data predict human outcome? Problems and pitfalls of translational animal research.",
+  "journal": "Eur J Nucl Med Mol Imaging",
+  "year": 2012,
+  "cited_by": 49,
+  "authors": [
+   "Marti\u0107-Kehl MI",
+   "Schibli R",
+   "Schubiger PA"
+  ],
+  "sources": [
+   "citation_hub"
+  ]
+ },
+ "26856335": {
+  "pmid": "26856335",
+  "arm": "unclear",
+  "species": [
+   "rat",
+   "human"
+  ],
+  "therapeutic_areas": [],
+  "model_type": "induced",
+  "concordance_reported": true,
+  "concordance_metric": "species \u00d7 exercise interactions",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "secondary-biomarker",
+  "study_design": "primary-research",
+  "key_finding": "The rat adequately mimics human responses to exercise in basic blood redox/inflammatory profile, yet this is not the case after exercise combined with vitamin C administration.",
+  "quantitative_claims": [
+   "1/19",
+   "10/19",
+   "16 mg kg(-1)"
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "The rat closely mimics oxidative stress and inflammation in humans after exercise but not after exercise combined with vitamin C administration.",
+  "journal": "Eur J Appl Physiol",
+  "year": 2016,
+  "cited_by": 12,
+  "authors": [
+   "Veskoukis AS",
+   "Goutianos G",
+   "Paschalis V"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The abstract reports a comparison of oxidative stress and inflammation responses between rats and humans to exercise and vitamin C administration. It states 'There were only 1/19 significant species x exercise interactions (catalase), indicating similar responses to exercise between rats and humans in redox and inflammatory biomarkers.' and 'There were 10/19 significant species x vitamin C interactions, indicating that rats poorly mimic human oxidative stress and inflammatory responses to vitamin C administration.' This indicates a quantitative comparison of agreement/disagreement between animal and human results across multiple biomarkers."
+ },
+ "36859342": {
+  "pmid": "36859342",
+  "arm": "unclear",
+  "species": [
+   "not-stated"
+  ],
+  "therapeutic_areas": [
+   "central nervous system"
+  ],
+  "model_type": "not-stated",
+  "concordance_reported": true,
+  "concordance_metric": "pharmacologically active dose ranges and well-tolerated levels overlap",
+  "concordance_value": null,
+  "n_pairs": null,
+  "endpoint_class": "not-stated",
+  "study_design": "primary-research",
+  "key_finding": "Tolerable and pharmacologically active dose ranges in healthy volunteers can be reasonably well predicted from preclinical data with the IB-derisk tool.",
+  "quantitative_claims": [
+   "Twenty-five IBs were included."
+  ],
+  "evidence_vs_opinion": "data",
+  "title": "Translatability of preclinical to early clinical tolerable and pharmacologically active dose ranges for central nervous system active drugs.",
+  "journal": "Transl Psychiatry",
+  "year": 2023,
+  "cited_by": 1,
+  "authors": [
+   "Ferreira GS",
+   "Dijkstra FM",
+   "Veening-Griffioen DH"
+  ],
+  "sources": [
+   "citation_hub"
+  ],
+  "extraction_source": "abstract",
+  "extraction_status": "ok",
+  "rubric_version": "2026-08-20.r2",
+  "screen_reason": "The study assesses the translatability of preclinical to early clinical dose ranges for CNS drugs by calculating the overlap between pharmacologically active dose ranges and well-tolerated levels for three PK parameters (HED, Cmax, AUC). This represents a quantitative measure of agreement between animal and human results."
+ }
+}

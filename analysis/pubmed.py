@@ -15,17 +15,29 @@ def _get(endpoint, params):
         return json.load(open(path))
     time.sleep(0.4)
     # E-utilities caps GET URIs; long boolean queries must go by POST.
-    if len(url) > 1800:
-        req = urllib.request.Request(f"{BASE}/{endpoint}.fcgi", data=q.encode())
-    else:
-        req = urllib.request.Request(url)
-    with urllib.request.urlopen(req, timeout=90) as r:
-        data = json.loads(r.read().decode())
-    json.dump(data, open(path, "w"))
-    return data
+    def _mk():
+        if len(url) > 1800:
+            return urllib.request.Request(f"{BASE}/{endpoint}.fcgi", data=q.encode())
+        return urllib.request.Request(url)
+    last = None
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(_mk(), timeout=90) as r:
+                data = json.loads(r.read().decode())
+            json.dump(data, open(path, "w"))
+            return data
+        except Exception as e:  # NCBI returns transient 502/429 under load
+            last = e
+            time.sleep(2 ** attempt)
+    raise last
 
-def esearch(term, retmax=0):
-    r = _get("esearch", {"db": "pubmed", "retmode": "json", "retmax": retmax, "term": term})["esearchresult"]
+def esearch(term, retmax=0, sort=None):
+    """sort=None gives E-utilities' default (most recent PMID first). Pass
+    sort='relevance' when sampling a pool for review -- date order returns
+    brand-new, uncited records."""
+    q = {"db": "pubmed", "retmode": "json", "retmax": retmax, "term": term}
+    if sort: q["sort"] = sort
+    r = _get("esearch", q)["esearchresult"]
     return int(r["count"]), r.get("idlist", []), r.get("querytranslation", "")
 
 def esummary(pmids):

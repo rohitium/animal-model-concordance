@@ -18,7 +18,7 @@ def _key():
         raise RuntimeError("OPENROUTER_API_KEY not found (.env is gitignored; see .env.example)")
     return k
 
-def chat(model, messages, schema=None, temperature=0, max_tokens=400, retries=3):
+def chat(model, messages, schema=None, temperature=0, max_tokens=400, retries=5):
     body = {"model": model, "messages": messages, "temperature": temperature,
             "max_tokens": max_tokens}
     if schema:
@@ -38,11 +38,20 @@ def chat(model, messages, schema=None, temperature=0, max_tokens=400, retries=3)
             with urllib.request.urlopen(req, timeout=120) as r:
                 d = json.loads(r.read().decode())
             if "choices" not in d:
-                last = RuntimeError(f"no choices: {str(d)[:200]}"); time.sleep(2 * (a + 1)); continue
+                last = RuntimeError(f"no choices: {str(d)[:300]}")
+                time.sleep(3 * (a + 1)); continue
             json.dump(d, open(path, "w"))
             return d
+        except urllib.error.HTTPError as e:
+            detail = ""
+            try: detail = e.read().decode()[:300]
+            except Exception: pass
+            last = RuntimeError(f"HTTP {e.code}: {detail}")
+            # 429/402/5xx are transient or capacity-related; back off hard.
+            time.sleep(min(60, 5 * (2 ** a)))
         except Exception as e:
-            last = e; time.sleep(2 * (a + 1))
+            last = e
+            time.sleep(3 * (a + 1))
     raise last
 
 def content(d):

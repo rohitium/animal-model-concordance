@@ -6,6 +6,7 @@ stored explicitly in data/screening/gold_set.json rather than being implicit."""
 import sys, os, json, re, urllib.request
 sys.path.insert(0, os.path.dirname(__file__))
 import pubmed, openrouter as orr
+from rubric import RUBRIC, SCHEMA, RUBRIC_VERSION
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 
 # Gold labels, revision 2. Revision 1 conflated "landmark paper about translation"
@@ -43,36 +44,6 @@ GOLD = {
  "29061942":0,"18202698":0,  # comparative-oncology narrative reviews
  "17032985":1,  # Hackam 2006: original data on 76 studies (no abstract; see NOABS rule)
 }
-RUBRIC = """You are screening titles/abstracts for a systematic review.
-
-INCLUDE only if the record reports a QUANTITATIVE measure of agreement between
-non-human animal results and human clinical results - e.g. a concordance rate,
-translation/success rate, positive predictive value, sensitivity/specificity of
-animal models, or a systematic comparison of animal vs human effect sizes -
-across one or more intervention-indication pairs. Regulatory-dataset analyses
-and veterinary comparative-oncology concordance analyses count.
-
-EXCLUDE:
-- primary animal or human research reporting only its own results
-- individual clinical trial reports
-- methods/tools/guidelines/reporting checklists
-- opinion, editorial, commentary or narrative essay with NO original data and no
-  systematic re-analysis
-- in vitro / in silico only comparisons
-- records with no extractable numerator and denominator
-
-Being an influential paper ABOUT the translation problem is NOT sufficient. The
-record must itself report an agreement statistic. A review that only argues that
-animal models translate poorly, without measuring it, is EXCLUDE.
-
-When uncertain, INCLUDE (screening favours sensitivity over precision).
-
-Answer with JSON only."""
-SCHEMA = {"type":"object","additionalProperties":False,
- "properties":{"decision":{"type":"string","enum":["include","exclude"]},
-  "confidence":{"type":"number"},"reason":{"type":"string"}},
- "required":["decision","confidence","reason"]}
-
 def fetch(pmids):
     url = ("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id="
            + ",".join(pmids) + "&tool=animal-model-concordance&email=rsatija@stanford.edu")
