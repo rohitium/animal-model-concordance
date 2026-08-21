@@ -4,3 +4,8 @@ __pycache__/
 .venv/
 site/_build/
 data/raw/fulltext/
+
+# Secrets - never commit
+.env
+.env.*
+!.env.example
