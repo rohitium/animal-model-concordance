@@ -6,7 +6,7 @@ paper reporting more than one statistic: "recall and precision" collapsed to a b
 plain-language description of what it measures, what was compared, the species, the
 sample size AND what that size counts, plus the verbatim source sentence.
 """
-import sys, os, json, re, time, subprocess
+import sys, os, json, re, time, html as _html, subprocess
 sys.path.insert(0, os.path.dirname(__file__))
 import openrouter as orr
 ROOT = os.path.join(os.path.dirname(__file__), "..")
@@ -78,7 +78,7 @@ def best_text(pm):
     if s.get("xml"):
         t = open(J(s["xml"]), encoding="utf-8", errors="replace").read()
         b = re.search(r"<body[^>]*>(.*?)</body>", t, re.S)
-        t = re.sub(r"<[^>]+>", " ", b.group(1) if b else t)
+        t = _html.unescape(re.sub(r"<[^>]+>", " ", b.group(1)) if b else t)
         return re.sub(r"\s+", " ", t).strip()[:100000]
     if s.get("pdf"):
         try:

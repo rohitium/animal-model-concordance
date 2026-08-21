@@ -13,7 +13,7 @@ Three problems this fixes:
 
 Every classification must carry a verbatim supporting quote, so it is auditable.
 """
-import sys, os, json, re, time
+import sys, os, json, re, time, html as _html
 sys.path.insert(0, os.path.dirname(__file__))
 import openrouter as orr
 from rubric import RUBRIC, RUBRIC_VERSION
@@ -106,7 +106,7 @@ def best_text(pm):
         t = open(J(s["xml"]), encoding="utf-8", errors="replace").read()
         body = re.search(r"<body[^>]*>(.*?)</body>", t, re.S)
         t = body.group(1) if body else t
-        t = re.sub(r"<[^>]+>", " ", t)
+        t = _html.unescape(re.sub(r"<[^>]+>", " ", t))
         return re.sub(r"\s+", " ", t).strip()[:90000], "fulltext"
     if s.get("pdf"):
         import subprocess

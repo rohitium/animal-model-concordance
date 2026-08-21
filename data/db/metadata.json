@@ -123,6 +123,7 @@
   "abstract_sections": [],
   "title": "Genomic responses in mouse models poorly mimic human inflammatory diseases.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Proceedings of the National Academy of Sciences of the United States of America",
   "authors_full": [
    "Junhee Seok",
@@ -136,7 +137,7 @@
    "Hong Gao",
    "Laura Hennessy",
    "Celeste C Finnerty",
-   "Cecilia M L&#xf3;pez",
+   "Cecilia M L\u00f3pez",
    "Shari Honari",
    "Ernest E Moore",
    "Joseph P Minei",
@@ -184,7 +185,7 @@
     "term": "Drug Approval",
     "major": false,
     "qualifiers": [
-     "legislation &amp; jurisprudence"
+     "legislation & jurisprudence"
     ]
    },
    {
@@ -208,7 +209,7 @@
     "term": "United States Food and Drug Administration",
     "major": false,
     "qualifiers": [
-     "legislation &amp; jurisprudence"
+     "legislation & jurisprudence"
     ]
    }
   ],
@@ -222,6 +223,7 @@
   "abstract_sections": [],
   "title": "Clinical development success rates for investigational drugs.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Nature biotechnology",
   "authors_full": [
    "Michael Hay",
@@ -266,6 +268,7 @@
   "abstract_sections": [],
   "title": "Poor Translatability of Biomedical Research Using Animals - A Narrative Review.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Alternatives to laboratory animals : ATLA",
   "authors_full": [
    "Lindsay J Marshall",
@@ -289,6 +292,7 @@
   "abstract_sections": [],
   "title": "Lost in translation: animal models and clinical trials in cancer treatment.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "American journal of translational research",
   "authors_full": [
    "Isabella Wy Mak",
@@ -321,7 +325,7 @@
     "term": "Clinical Trials as Topic",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -358,7 +362,7 @@
     "term": "Research Design",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -371,7 +375,7 @@
     "major": false,
     "qualifiers": [
      "standards",
-     "statistics &amp; numerical data",
+     "statistics & numerical data",
      "trends"
     ]
    },
@@ -390,6 +394,7 @@
   "abstract_sections": [],
   "title": "Drug development: Raise standards for preclinical cancer research.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Nature",
   "authors_full": [
    "C Glenn Begley",
@@ -438,7 +443,7 @@
   ],
   "doi": "10.1186/s12967-019-1976-2",
   "pmcid": "PMC6631915",
-  "abstract": "Drug development is currently hampered by high attrition rates; many developed treatments fail during clinical testing. Part of the attrition may be due to low animal-to-human translational success rates; so-called \"translational failure\". As far as we know, no systematic overview of published translational success rates exists. The following research question was examined: \"What is the observed range of the animal-to-human translational success (and failure) rates within the currently available empirical evidence?\". We searched PubMed and Embase on 16 October 2017. We included reviews and all other types of \"umbrella\"-studies of meta-data quantitatively comparing the translational results of studies including at least two species with one being human. We supplemented our database searches with additional strategies. All abstracts and full-text papers were screened by two independent reviewers. Our scoping review comprises 121 references, with various units of measurement: compound or intervention (k&#x2009;=&#x2009;104), study/experiment (k&#x2009;=&#x2009;10), and symptom or event (k&#x2009;=&#x2009;7). Diagnostic statistics corresponded with binary and continuous definitions of successful translation. Binary definitions comprise percentages below twofold error, percentages accurately predicted, and predictive values. Quantitative definitions comprise correlation/regression (r2) and meta-analyses (percentage overlap of 95% confidence intervals). Translational success rates ranged from 0 to 100%. The wide range of translational success rates observed in our study might indicate that translational success is unpredictable; i.e. it might be unclear upfront if the results of primary animal studies will contribute to translational knowledge. However, the risk of bias of the included studies was high, and much of the included evidence is old, while newer models have become available. Therefore, the reliability of the cumulative evidence from current papers on this topic is insufficient. Further in-depth \"umbrella\"-studies of translational success rates are still warranted. These are needed to evaluate the probabilistic evidence for predictivity of animal studies for the human situation more reliably, and to determine which factors affect this process.",
+  "abstract": "Drug development is currently hampered by high attrition rates; many developed treatments fail during clinical testing. Part of the attrition may be due to low animal-to-human translational success rates; so-called \"translational failure\". As far as we know, no systematic overview of published translational success rates exists. The following research question was examined: \"What is the observed range of the animal-to-human translational success (and failure) rates within the currently available empirical evidence?\". We searched PubMed and Embase on 16 October 2017. We included reviews and all other types of \"umbrella\"-studies of meta-data quantitatively comparing the translational results of studies including at least two species with one being human. We supplemented our database searches with additional strategies. All abstracts and full-text papers were screened by two independent reviewers. Our scoping review comprises 121 references, with various units of measurement: compound or intervention (k = 104), study/experiment (k = 10), and symptom or event (k = 7). Diagnostic statistics corresponded with binary and continuous definitions of successful translation. Binary definitions comprise percentages below twofold error, percentages accurately predicted, and predictive values. Quantitative definitions comprise correlation/regression (r2) and meta-analyses (percentage overlap of 95% confidence intervals). Translational success rates ranged from 0 to 100%. The wide range of translational success rates observed in our study might indicate that translational success is unpredictable; i.e. it might be unclear upfront if the results of primary animal studies will contribute to translational knowledge. However, the risk of bias of the included studies was high, and much of the included evidence is old, while newer models have become available. Therefore, the reliability of the cumulative evidence from current papers on this topic is insufficient. Further in-depth \"umbrella\"-studies of translational success rates are still warranted. These are needed to evaluate the probabilistic evidence for predictivity of animal studies for the human situation more reliably, and to determine which factors affect this process.",
   "abstract_sections": [
    [
     "BACKGROUND",
@@ -446,7 +451,7 @@
    ],
    [
     "SYSTEMATIC SCOPING REVIEW",
-    "The following research question was examined: \"What is the observed range of the animal-to-human translational success (and failure) rates within the currently available empirical evidence?\". We searched PubMed and Embase on 16 October 2017. We included reviews and all other types of \"umbrella\"-studies of meta-data quantitatively comparing the translational results of studies including at least two species with one being human. We supplemented our database searches with additional strategies. All abstracts and full-text papers were screened by two independent reviewers. Our scoping review comprises 121 references, with various units of measurement: compound or intervention (k&#x2009;=&#x2009;104), study/experiment (k&#x2009;=&#x2009;10), and symptom or event (k&#x2009;=&#x2009;7). Diagnostic statistics corresponded with binary and continuous definitions of successful translation. Binary definitions comprise percentages below twofold error, percentages accurately predicted, and predictive values. Quantitative definitions comprise correlation/regression (r2) and meta-analyses (percentage overlap of 95% confidence intervals). Translational success rates ranged from 0 to 100%."
+    "The following research question was examined: \"What is the observed range of the animal-to-human translational success (and failure) rates within the currently available empirical evidence?\". We searched PubMed and Embase on 16 October 2017. We included reviews and all other types of \"umbrella\"-studies of meta-data quantitatively comparing the translational results of studies including at least two species with one being human. We supplemented our database searches with additional strategies. All abstracts and full-text papers were screened by two independent reviewers. Our scoping review comprises 121 references, with various units of measurement: compound or intervention (k = 104), study/experiment (k = 10), and symptom or event (k = 7). Diagnostic statistics corresponded with binary and continuous definitions of successful translation. Binary definitions comprise percentages below twofold error, percentages accurately predicted, and predictive values. Quantitative definitions comprise correlation/regression (r2) and meta-analyses (percentage overlap of 95% confidence intervals). Translational success rates ranged from 0 to 100%."
    ],
    [
     "CONCLUSION",
@@ -455,12 +460,13 @@
   ],
   "title": "Animal to human translation: a systematic scoping review of reported concordance rates.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of translational medicine",
   "authors_full": [
    "Cathalijn H C Leenaars",
    "Carien Kouwenaar",
    "Frans R Stafleu",
-   "Andr&#xe9; Bleich",
+   "Andr\u00e9 Bleich",
    "Merel Ritskes-Hoitinga",
    "Rob B M De Vries",
    "Franck L B Meijboom"
@@ -525,10 +531,11 @@
   ],
   "doi": "10.1073/pnas.1401965111",
   "pmcid": "PMC4313832",
-  "abstract": "The use of mice as animal models has long been considered essential in modern biomedical research, but the role of mouse models in research was challenged by a recent report that genomic responses in mouse models poorly mimic human inflammatory diseases. Here we reevaluated the same gene expression datasets used in the previous study by focusing on genes whose expression levels were significantly changed in both humans and mice. Contrary to the previous findings, the gene expression levels in the mouse models showed extraordinarily significant correlations with those of the human conditions (Spearman's rank correlation coefficient: 0.43-0.68; genes changed in the same direction: 77-93%; P = 6.5 &#xd7; 10(-11) to 1.2 &#xd7; 10(-35)). Moreover, meta-analysis of those datasets revealed a number of pathways/biogroups commonly regulated by multiple conditions in humans and mice. These findings demonstrate that gene expression patterns in mouse models closely recapitulate those in human inflammatory conditions and strongly argue for the utility of mice as animal models of human disorders.",
+  "abstract": "The use of mice as animal models has long been considered essential in modern biomedical research, but the role of mouse models in research was challenged by a recent report that genomic responses in mouse models poorly mimic human inflammatory diseases. Here we reevaluated the same gene expression datasets used in the previous study by focusing on genes whose expression levels were significantly changed in both humans and mice. Contrary to the previous findings, the gene expression levels in the mouse models showed extraordinarily significant correlations with those of the human conditions (Spearman's rank correlation coefficient: 0.43-0.68; genes changed in the same direction: 77-93%; P = 6.5 \u00d7 10(-11) to 1.2 \u00d7 10(-35)). Moreover, meta-analysis of those datasets revealed a number of pathways/biogroups commonly regulated by multiple conditions in humans and mice. These findings demonstrate that gene expression patterns in mouse models closely recapitulate those in human inflammatory conditions and strongly argue for the utility of mice as animal models of human disorders.",
   "abstract_sections": [],
   "title": "Genomic responses in mouse models greatly mimic human inflammatory diseases.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Proceedings of the National Academy of Sciences of the United States of America",
   "authors_full": [
    "Keizo Takao",
@@ -673,6 +680,7 @@
   "abstract_sections": [],
   "title": "Preclinical research: Make mouse studies work.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Nature",
   "authors_full": [
    "Steve Perrin"
@@ -686,7 +694,7 @@
     "term": "Clinical Trials, Phase II as Topic",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -698,7 +706,7 @@
     "term": "Drug Industry",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -717,6 +725,7 @@
   "abstract_sections": [],
   "title": "Believe it or not: how much can we rely on published data on potential drug targets?",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Nature reviews. Drug discovery",
   "authors_full": [
    "Florian Prinz",
@@ -779,10 +788,11 @@
   ],
   "doi": "10.1016/j.taap.2017.09.006",
   "pmcid": null,
-  "abstract": "The contribution of animal testing in drug development has been widely debated and challenged. An industry-wide nonclinical to clinical translational database was created to determine how safety assessments in animal models translate to First-In-Human clinical risk. The blinded database was composed of 182 molecules and contained animal toxicology data coupled with clinical observations from phase I human studies. Animal and clinical data were categorized by organ system and correlations determined. The 2&#xd7;2 contingency table (true positive, false positive, true negative, false negative) was used for statistical analysis. Sensitivity was 48% with a 43% positive predictive value (PPV). The nonhuman primate had the strongest performance in predicting adverse effects, especially for gastrointestinal and nervous system categories. When the same target organ was identified in both the rodent and nonrodent, the PPV increased. Specificity was 84% with an 86% negative predictive value (NPV). The beagle dog had the strongest performance in predicting an absence of clinical adverse effects. If no target organ toxicity was observed in either test species, the NPV increased. While nonclinical studies can demonstrate great value in the PPV for certain species and organ categories, the NPV was the stronger predictive performance measure across test species and target organs indicating that an absence of toxicity in animal studies strongly predicts a similar outcome in the clinic. These results support the current regulatory paradigm of animal testing in supporting safe entry to clinical trials and provide context for emerging alternate models.",
+  "abstract": "The contribution of animal testing in drug development has been widely debated and challenged. An industry-wide nonclinical to clinical translational database was created to determine how safety assessments in animal models translate to First-In-Human clinical risk. The blinded database was composed of 182 molecules and contained animal toxicology data coupled with clinical observations from phase I human studies. Animal and clinical data were categorized by organ system and correlations determined. The 2\u00d72 contingency table (true positive, false positive, true negative, false negative) was used for statistical analysis. Sensitivity was 48% with a 43% positive predictive value (PPV). The nonhuman primate had the strongest performance in predicting adverse effects, especially for gastrointestinal and nervous system categories. When the same target organ was identified in both the rodent and nonrodent, the PPV increased. Specificity was 84% with an 86% negative predictive value (NPV). The beagle dog had the strongest performance in predicting an absence of clinical adverse effects. If no target organ toxicity was observed in either test species, the NPV increased. While nonclinical studies can demonstrate great value in the PPV for certain species and organ categories, the NPV was the stronger predictive performance measure across test species and target organs indicating that an absence of toxicity in animal studies strongly predicts a similar outcome in the clinic. These results support the current regulatory paradigm of animal testing in supporting safe entry to clinical trials and provide context for emerging alternate models.",
   "abstract_sections": [],
   "title": "Current nonclinical testing paradigm enables safe entry to First-In-Human clinical trials: The IQ consortium nonclinical to clinical translational database.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Toxicology and applied pharmacology",
   "authors_full": [
    "Thomas M Monticello",
@@ -811,7 +821,7 @@
     "qualifiers": [
      "ethics",
      "standards",
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -872,6 +882,7 @@
   "abstract_sections": [],
   "title": "Improving bioscience research reporting: the ARRIVE guidelines for reporting animal research.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "PLoS biology",
   "authors_full": [
    "Carol Kilkenny",
@@ -933,6 +944,7 @@
   "abstract_sections": [],
   "title": "Investigating the replicability of preclinical cancer biology.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "eLife",
   "authors_full": [
    "Timothy M Errington",
@@ -975,10 +987,11 @@
   ],
   "doi": "10.1038/s41598-019-54849-w",
   "pmcid": "PMC6906499",
-  "abstract": "Lack of efficacy in the intended disease indication is the major cause of clinical phase drug development failure. Explanations could include the poor external validity of pre-clinical (cell, tissue, and animal) models of human disease and the high false discovery rate (FDR) in preclinical science. FDR is related to the proportion of true relationships available for discovery (&#x3b3;), and the type 1 (false-positive) and type 2 (false negative) error rates of the experiments designed to uncover them. We estimated the FDR in preclinical science, its effect on drug development success rates, and improvements expected from use of human genomics rather than preclinical studies as the primary source of evidence for drug target identification. Calculations were based on a sample space defined by all human diseases - the 'disease-ome' - represented as columns; and all protein coding genes - 'the protein-coding genome'- represented as rows, producing a matrix of unique gene- (or protein-) disease pairings. We parameterised the space based on 10,000 diseases, 20,000 protein-coding genes, 100 causal genes per disease and 4000 genes encoding druggable targets, examining the effect of varying the parameters and a range of underlying assumptions, on the inferences drawn. We estimated &#x3b3;, defined mathematical relationships between preclinical FDR and drug development success rates, and estimated improvements in success rates based on human genomics (rather than orthodox preclinical studies). Around one in every 200 protein-disease pairings was estimated to be causal (&#x3b3;&#x2009;=&#x2009;0.005) giving an FDR in preclinical research of 92.6%, which likely makes a major contribution to the reported drug development failure rate of 96%. Observed success rate was only slightly greater than expected for a random pick from the sample space. Values for &#x3b3; back-calculated from reported preclinical and clinical drug development success rates were also close to the a priori estimates. Substituting genome wide (or druggable genome wide) association studies for preclinical studies as the major information source for drug target identification was estimated to reverse the probability of late stage failure because of the more stringent type 1 error rate employed and the ability to interrogate every potential druggable target in the same experiment. Genetic studies conducted at much larger scale, with greater resolution of disease end-points, e.g. by connecting genomics and electronic health record data within healthcare systems has the potential to produce radical improvement in drug development success rate.",
+  "abstract": "Lack of efficacy in the intended disease indication is the major cause of clinical phase drug development failure. Explanations could include the poor external validity of pre-clinical (cell, tissue, and animal) models of human disease and the high false discovery rate (FDR) in preclinical science. FDR is related to the proportion of true relationships available for discovery (\u03b3), and the type 1 (false-positive) and type 2 (false negative) error rates of the experiments designed to uncover them. We estimated the FDR in preclinical science, its effect on drug development success rates, and improvements expected from use of human genomics rather than preclinical studies as the primary source of evidence for drug target identification. Calculations were based on a sample space defined by all human diseases - the 'disease-ome' - represented as columns; and all protein coding genes - 'the protein-coding genome'- represented as rows, producing a matrix of unique gene- (or protein-) disease pairings. We parameterised the space based on 10,000 diseases, 20,000 protein-coding genes, 100 causal genes per disease and 4000 genes encoding druggable targets, examining the effect of varying the parameters and a range of underlying assumptions, on the inferences drawn. We estimated \u03b3, defined mathematical relationships between preclinical FDR and drug development success rates, and estimated improvements in success rates based on human genomics (rather than orthodox preclinical studies). Around one in every 200 protein-disease pairings was estimated to be causal (\u03b3 = 0.005) giving an FDR in preclinical research of 92.6%, which likely makes a major contribution to the reported drug development failure rate of 96%. Observed success rate was only slightly greater than expected for a random pick from the sample space. Values for \u03b3 back-calculated from reported preclinical and clinical drug development success rates were also close to the a priori estimates. Substituting genome wide (or druggable genome wide) association studies for preclinical studies as the major information source for drug target identification was estimated to reverse the probability of late stage failure because of the more stringent type 1 error rate employed and the ability to interrogate every potential druggable target in the same experiment. Genetic studies conducted at much larger scale, with greater resolution of disease end-points, e.g. by connecting genomics and electronic health record data within healthcare systems has the potential to produce radical improvement in drug development success rate.",
   "abstract_sections": [],
   "title": "Improving the odds of drug development success through human genomics: modelling study.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Scientific reports",
   "authors_full": [
    "Aroon D Hingorani",
@@ -1052,10 +1065,11 @@
   ],
   "doi": "10.1016/j.immuni.2015.12.006",
   "pmcid": "PMC5330663",
-  "abstract": "Gene-expression profiling has become a mainstay in immunology, but subtle changes in gene networks related to biological processes are hard to discern when comparing various datasets. For instance, conservation of the transcriptional response to sepsis in mouse models and human disease remains controversial. To improve transcriptional analysis in immunology, we created ImmuneSigDB: a manually annotated compendium of &#x223c;5,000 gene-sets from diverse cell states, experimental manipulations, and genetic perturbations in immunology. Analysis using ImmuneSigDB identified signatures induced in activated myeloid cells and differentiating lymphocytes that were highly conserved between humans and mice. Sepsis triggered conserved patterns of gene expression in humans and mouse models. However, we also identified species-specific biological processes in the sepsis transcriptional response: although both species upregulated phagocytosis-related genes, a mitosis signature was specific to humans. ImmuneSigDB enables granular analysis of transcriptomic data to improve biological understanding of immune processes of the human and mouse immune systems.",
+  "abstract": "Gene-expression profiling has become a mainstay in immunology, but subtle changes in gene networks related to biological processes are hard to discern when comparing various datasets. For instance, conservation of the transcriptional response to sepsis in mouse models and human disease remains controversial. To improve transcriptional analysis in immunology, we created ImmuneSigDB: a manually annotated compendium of \u223c5,000 gene-sets from diverse cell states, experimental manipulations, and genetic perturbations in immunology. Analysis using ImmuneSigDB identified signatures induced in activated myeloid cells and differentiating lymphocytes that were highly conserved between humans and mice. Sepsis triggered conserved patterns of gene expression in humans and mouse models. However, we also identified species-specific biological processes in the sepsis transcriptional response: although both species upregulated phagocytosis-related genes, a mitosis signature was specific to humans. ImmuneSigDB enables granular analysis of transcriptomic data to improve biological understanding of immune processes of the human and mouse immune systems.",
   "abstract_sections": [],
   "title": "Compendium of Immune Signatures Identifies Conserved and Species-Specific Biology in Response to Inflammation.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Immunity",
   "authors_full": [
    "Jernej Godec",
@@ -1085,7 +1099,8 @@
   "abstract_sections": [],
   "title": "Improving bioscience research reporting: The ARRIVE guidelines for reporting animal research.",
   "is_book": false,
-  "journal_full": "Journal of pharmacology &amp; pharmacotherapeutics",
+  "other_languages": [],
+  "journal_full": "Journal of pharmacology & pharmacotherapeutics",
   "authors_full": [
    "Carol Kilkenny",
    "William J Browne",
@@ -1170,10 +1185,11 @@
   ],
   "doi": "10.1371/journal.pone.0147215",
   "pmcid": "PMC4749240",
-  "abstract": "A striking contrast runs through the last 60 years of biopharmaceutical discovery, research, and development. Huge scientific and technological gains should have increased the quality of academic science and raised industrial R&amp;D efficiency. However, academia faces a \"reproducibility crisis\"; inflation-adjusted industrial R&amp;D costs per novel drug increased nearly 100 fold between 1950 and 2010; and drugs are more likely to fail in clinical development today than in the 1970s. The contrast is explicable only if powerful headwinds reversed the gains and/or if many \"gains\" have proved illusory. However, discussions of reproducibility and R&amp;D productivity rarely address this point explicitly. The main objectives of the primary research in this paper are: (a) to provide quantitatively and historically plausible explanations of the contrast; and (b) identify factors to which R&amp;D efficiency is sensitive. We present a quantitative decision-theoretic model of the R&amp;D process. The model represents therapeutic candidates (e.g., putative drug targets, molecules in a screening library, etc.) within a \"measurement space\", with candidates' positions determined by their performance on a variety of assays (e.g., binding affinity, toxicity, in vivo efficacy, etc.) whose results correlate to a greater or lesser degree. We apply decision rules to segment the space, and assess the probability of correct R&amp;D decisions. We find that when searching for rare positives (e.g., candidates that will successfully complete clinical development), changes in the predictive validity of screening and disease models that many people working in drug discovery would regard as small and/or unknowable (i.e., an 0.1 absolute change in correlation coefficient between model output and clinical outcomes in man) can offset large (e.g., 10 fold, even 100 fold) changes in models' brute-force efficiency. We also show how validity and reproducibility correlate across a population of simulated screening and disease models. We hypothesize that screening and disease models with high predictive validity are more likely to yield good answers and good treatments, so tend to render themselves and their diseases academically and commercially redundant. Perhaps there has also been too much enthusiasm for reductionist molecular models which have insufficient predictive validity. Thus we hypothesize that the average predictive validity of the stock of academically and industrially \"interesting\" screening and disease models has declined over time, with even small falls able to offset large gains in scientific knowledge and brute-force efficiency. The rate of creation of valid screening and disease models may be the major constraint on R&amp;D productivity.",
+  "abstract": "A striking contrast runs through the last 60 years of biopharmaceutical discovery, research, and development. Huge scientific and technological gains should have increased the quality of academic science and raised industrial R&D efficiency. However, academia faces a \"reproducibility crisis\"; inflation-adjusted industrial R&D costs per novel drug increased nearly 100 fold between 1950 and 2010; and drugs are more likely to fail in clinical development today than in the 1970s. The contrast is explicable only if powerful headwinds reversed the gains and/or if many \"gains\" have proved illusory. However, discussions of reproducibility and R&D productivity rarely address this point explicitly. The main objectives of the primary research in this paper are: (a) to provide quantitatively and historically plausible explanations of the contrast; and (b) identify factors to which R&D efficiency is sensitive. We present a quantitative decision-theoretic model of the R&D process. The model represents therapeutic candidates (e.g., putative drug targets, molecules in a screening library, etc.) within a \"measurement space\", with candidates' positions determined by their performance on a variety of assays (e.g., binding affinity, toxicity, in vivo efficacy, etc.) whose results correlate to a greater or lesser degree. We apply decision rules to segment the space, and assess the probability of correct R&D decisions. We find that when searching for rare positives (e.g., candidates that will successfully complete clinical development), changes in the predictive validity of screening and disease models that many people working in drug discovery would regard as small and/or unknowable (i.e., an 0.1 absolute change in correlation coefficient between model output and clinical outcomes in man) can offset large (e.g., 10 fold, even 100 fold) changes in models' brute-force efficiency. We also show how validity and reproducibility correlate across a population of simulated screening and disease models. We hypothesize that screening and disease models with high predictive validity are more likely to yield good answers and good treatments, so tend to render themselves and their diseases academically and commercially redundant. Perhaps there has also been too much enthusiasm for reductionist molecular models which have insufficient predictive validity. Thus we hypothesize that the average predictive validity of the stock of academically and industrially \"interesting\" screening and disease models has declined over time, with even small falls able to offset large gains in scientific knowledge and brute-force efficiency. The rate of creation of valid screening and disease models may be the major constraint on R&D productivity.",
   "abstract_sections": [],
   "title": "When Quality Beats Quantity: Decision Theory, Drug Discovery, and the Reproducibility Crisis.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "PloS one",
   "authors_full": [
    "Jack W Scannell",
@@ -1215,9 +1231,10 @@
   "abstract_sections": [],
   "title": "More than 3Rs: the importance of scientific validity for harm-benefit analysis of animal research.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Lab animal",
   "authors_full": [
-   "Hanno W&#xfc;rbel"
+   "Hanno W\u00fcrbel"
   ],
   "grants": [
    "European Research Council"
@@ -1289,11 +1306,11 @@
   ],
   "doi": "10.1371/journal.pone.0263968",
   "pmcid": "PMC8846508",
-  "abstract": "Interleukin-1 receptor associated kinase 3 (IRAK3) is a critical modulator of inflammation and is associated with endotoxin tolerance and sepsis. Although IRAK3 is known as a negative regulator of inflammation, several studies have reported opposing functions, and the temporal actions of IRAK3 on inflammation remain unclear. A systematic review and meta-analyses were performed to investigate IRAK3 expression and its effects on inflammatory markers (TNF-&#x3b1; and IL-6) after one- or two-challenge interventions, which mimic the hyperinflammatory and immunosuppression phases of sepsis, respectively, using human or animal in vivo models. This systematic review and meta-analyses has been registered in the Open Science Framework (OSF) (Registration DOI: 10.17605/OSF.IO/V39UR). A systematic search was performed to identify in vivo studies reporting outcome measures of expression of IRAK3 and inflammatory markers. Meta-analyses were performed where sufficient data was available. The search identified 7778 studies for screening. After screening titles, abstracts and full texts, a total of 49 studies were included in the systematic review. The review identified significant increase of IRAK3 mRNA and protein expression at different times in humans compared to rodents following one-challenge, whereas the increases of IL-6 and TNF-&#x3b1; protein expression in humans were similar to rodent in vivo models. Meta-analyses confirmed the inhibitory effect of IRAK3 on TNF-&#x3b1; mRNA and protein expression after two challenges. A negative correlation between IRAK3 and TNF-&#x3b1; expression in rodents following two challenges demonstrates the association of IRAK3 in the immunosuppression phase of sepsis. Species differences in underlying biology affect the translatability of immune responses of animal models to human, as shown by the dissimilarity in patterns of IRAK3 mRNA and protein expression between humans and rodents following one challenge that are further influenced by variations in experimental procedures.",
+  "abstract": "Interleukin-1 receptor associated kinase 3 (IRAK3) is a critical modulator of inflammation and is associated with endotoxin tolerance and sepsis. Although IRAK3 is known as a negative regulator of inflammation, several studies have reported opposing functions, and the temporal actions of IRAK3 on inflammation remain unclear. A systematic review and meta-analyses were performed to investigate IRAK3 expression and its effects on inflammatory markers (TNF-\u03b1 and IL-6) after one- or two-challenge interventions, which mimic the hyperinflammatory and immunosuppression phases of sepsis, respectively, using human or animal in vivo models. This systematic review and meta-analyses has been registered in the Open Science Framework (OSF) (Registration DOI: 10.17605/OSF.IO/V39UR). A systematic search was performed to identify in vivo studies reporting outcome measures of expression of IRAK3 and inflammatory markers. Meta-analyses were performed where sufficient data was available. The search identified 7778 studies for screening. After screening titles, abstracts and full texts, a total of 49 studies were included in the systematic review. The review identified significant increase of IRAK3 mRNA and protein expression at different times in humans compared to rodents following one-challenge, whereas the increases of IL-6 and TNF-\u03b1 protein expression in humans were similar to rodent in vivo models. Meta-analyses confirmed the inhibitory effect of IRAK3 on TNF-\u03b1 mRNA and protein expression after two challenges. A negative correlation between IRAK3 and TNF-\u03b1 expression in rodents following two challenges demonstrates the association of IRAK3 in the immunosuppression phase of sepsis. Species differences in underlying biology affect the translatability of immune responses of animal models to human, as shown by the dissimilarity in patterns of IRAK3 mRNA and protein expression between humans and rodents following one challenge that are further influenced by variations in experimental procedures.",
   "abstract_sections": [
    [
     "BACKGROUND",
-    "Interleukin-1 receptor associated kinase 3 (IRAK3) is a critical modulator of inflammation and is associated with endotoxin tolerance and sepsis. Although IRAK3 is known as a negative regulator of inflammation, several studies have reported opposing functions, and the temporal actions of IRAK3 on inflammation remain unclear. A systematic review and meta-analyses were performed to investigate IRAK3 expression and its effects on inflammatory markers (TNF-&#x3b1; and IL-6) after one- or two-challenge interventions, which mimic the hyperinflammatory and immunosuppression phases of sepsis, respectively, using human or animal in vivo models."
+    "Interleukin-1 receptor associated kinase 3 (IRAK3) is a critical modulator of inflammation and is associated with endotoxin tolerance and sepsis. Although IRAK3 is known as a negative regulator of inflammation, several studies have reported opposing functions, and the temporal actions of IRAK3 on inflammation remain unclear. A systematic review and meta-analyses were performed to investigate IRAK3 expression and its effects on inflammatory markers (TNF-\u03b1 and IL-6) after one- or two-challenge interventions, which mimic the hyperinflammatory and immunosuppression phases of sepsis, respectively, using human or animal in vivo models."
    ],
    [
     "METHODS",
@@ -1301,15 +1318,16 @@
    ],
    [
     "RESULTS",
-    "The search identified 7778 studies for screening. After screening titles, abstracts and full texts, a total of 49 studies were included in the systematic review. The review identified significant increase of IRAK3 mRNA and protein expression at different times in humans compared to rodents following one-challenge, whereas the increases of IL-6 and TNF-&#x3b1; protein expression in humans were similar to rodent in vivo models. Meta-analyses confirmed the inhibitory effect of IRAK3 on TNF-&#x3b1; mRNA and protein expression after two challenges."
+    "The search identified 7778 studies for screening. After screening titles, abstracts and full texts, a total of 49 studies were included in the systematic review. The review identified significant increase of IRAK3 mRNA and protein expression at different times in humans compared to rodents following one-challenge, whereas the increases of IL-6 and TNF-\u03b1 protein expression in humans were similar to rodent in vivo models. Meta-analyses confirmed the inhibitory effect of IRAK3 on TNF-\u03b1 mRNA and protein expression after two challenges."
    ],
    [
     "CONCLUSIONS",
-    "A negative correlation between IRAK3 and TNF-&#x3b1; expression in rodents following two challenges demonstrates the association of IRAK3 in the immunosuppression phase of sepsis. Species differences in underlying biology affect the translatability of immune responses of animal models to human, as shown by the dissimilarity in patterns of IRAK3 mRNA and protein expression between humans and rodents following one challenge that are further influenced by variations in experimental procedures."
+    "A negative correlation between IRAK3 and TNF-\u03b1 expression in rodents following two challenges demonstrates the association of IRAK3 in the immunosuppression phase of sepsis. Species differences in underlying biology affect the translatability of immune responses of animal models to human, as shown by the dissimilarity in patterns of IRAK3 mRNA and protein expression between humans and rodents following one challenge that are further influenced by variations in experimental procedures."
    ]
   ],
   "title": "A systematic review and meta-analyses of interleukin-1 receptor associated kinase 3 (IRAK3) action on inflammation in in vivo models for the study of sepsis.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "PloS one",
   "authors_full": [
    "Trang H Nguyen",
@@ -1434,8 +1452,9 @@
   "pmcid": "PMC8203623",
   "abstract": "For research on tendon injury, many different animal models are utilized; however, the extent to which these species simulate the clinical condition and disease pathophysiology has not yet been critically evaluated. Considering the importance of inflammation in tendon disease, this study compared the cellular and molecular features of inflammation in tenocytes of humans and four common model species (mouse, rat, sheep, and horse). While mouse and rat tenocytes most closely equalled human tenocytes' low proliferation capacity and the negligible effect of inflammation on proliferation, the wound closure speed of humans was best approximated by rats and horses. The overall gene expression of human tenocytes was most similar to mice under healthy, to horses under transient and to sheep under constant inflammatory conditions. Humans were best matched by mice and horses in their tendon marker and collagen expression, by horses in extracellular matrix remodelling genes, and by rats in inflammatory mediators. As no single animal model perfectly replicates the clinical condition and sufficiently emulates human tenocytes, fit-for-purpose selection of the model species for each specific research question and combination of data from multiple species will be essential to optimize translational predictive validity.",
   "abstract_sections": [],
-  "title": "Species variations in&#xa0;tenocytes' response to inflammation require careful selection of animal models for tendon research.",
+  "title": "Species variations in tenocytes' response to inflammation require careful selection of animal models for tendon research.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Scientific reports",
   "authors_full": [
    "Gil Lola Oreff",
@@ -1459,9 +1478,10 @@
   "abstract_sections": [],
   "title": "Combining Animal Welfare With Experimental Rigor to Improve Reproducibility in Behavioral Neuroscience.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Frontiers in behavioral neuroscience",
   "authors_full": [
-   "C&#xe1;ssio Morais Loss",
+   "C\u00e1ssio Morais Loss",
    "Fernando Falkenburger Melleu",
    "Karolina Domingues",
    "Cilene Lino-de-Oliveira",
@@ -1499,6 +1519,7 @@
   ],
   "title": "Leveraging Dog Models to Uncover Human Cancer Insights.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Research square",
   "authors_full": [
    "Geesa Daluwatumulle",
@@ -1540,7 +1561,7 @@
     "major": false,
     "qualifiers": [
      "chemically induced",
-     "prevention &amp; control"
+     "prevention & control"
     ]
    },
    {
@@ -1612,6 +1633,7 @@
   "abstract_sections": [],
   "title": "Lost in translation: taking neuroprotection from animal models to clinical trials.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Experimental neurology",
   "authors_full": [
    "L Hoyte",
@@ -1639,7 +1661,7 @@
     "term": "Biomarkers, Tumor",
     "major": false,
     "qualifiers": [
-     "antagonists &amp; inhibitors",
+     "antagonists & inhibitors",
      "immunology"
     ]
    },
@@ -1723,10 +1745,11 @@
   ],
   "doi": "10.1007/s00262-017-2084-x",
   "pmcid": "PMC6759211",
-  "abstract": "We translated two cancer vaccine strategies from mice into human clinical trials. (1) In preclinical studies on TARP, an antigen expressed in most prostate cancers, we mapped epitopes presented by HLA-A*0201, modified them to increase affinity and immunogenicity in HLA transgenic mice, and induced human T cells that killed human cancer cells (\"epitope enhancement\"). In a clinical trial, HLA-A2+ prostate cancer patients with PSA biochemical recurrence (Stage D0) were vaccinated with two peptides either in Montanide-ISA51 or on autologous dendritic cells (DCs). In stage D0, the Prostate-Specific Antigen (PSA) slope is prognostic of time to radiographic evidence of metastases and death. With no difference between arms, 74% of combined subjects had a decreased PSA slope at 1&#xa0;year compared to their own baseline slopes (p&#xa0;=&#xa0;0.0004). For patients vaccinated with DCs, response inversely correlated with a tolerogenic DC signature. A randomized placebo-controlled phase II trial is underway. (2) HER2 is a driver surface oncogene product expressed in multiple tumors. We made an adenoviral vector vaccine expressing the extracellular and transmembrane domains of HER2 and cured mice with large established HER2+ tumors, dependent on antibodies to HER2, not T cells. The mechanism differed from that of trastuzumab. We tested a human version in advanced metastatic cancer patients na&#xef;ve to HER2-directed therapies. At the second and third dose levels, 45% of evaluable patients showed clinical benefit. Circulating tumor cells also declined in some vaccinated patients. Thus, cancer vaccines developed in mice were successfully translated to humans with promising early results.",
+  "abstract": "We translated two cancer vaccine strategies from mice into human clinical trials. (1) In preclinical studies on TARP, an antigen expressed in most prostate cancers, we mapped epitopes presented by HLA-A*0201, modified them to increase affinity and immunogenicity in HLA transgenic mice, and induced human T cells that killed human cancer cells (\"epitope enhancement\"). In a clinical trial, HLA-A2+ prostate cancer patients with PSA biochemical recurrence (Stage D0) were vaccinated with two peptides either in Montanide-ISA51 or on autologous dendritic cells (DCs). In stage D0, the Prostate-Specific Antigen (PSA) slope is prognostic of time to radiographic evidence of metastases and death. With no difference between arms, 74% of combined subjects had a decreased PSA slope at 1 year compared to their own baseline slopes (p = 0.0004). For patients vaccinated with DCs, response inversely correlated with a tolerogenic DC signature. A randomized placebo-controlled phase II trial is underway. (2) HER2 is a driver surface oncogene product expressed in multiple tumors. We made an adenoviral vector vaccine expressing the extracellular and transmembrane domains of HER2 and cured mice with large established HER2+ tumors, dependent on antibodies to HER2, not T cells. The mechanism differed from that of trastuzumab. We tested a human version in advanced metastatic cancer patients na\u00efve to HER2-directed therapies. At the second and third dose levels, 45% of evaluable patients showed clinical benefit. Circulating tumor cells also declined in some vaccinated patients. Thus, cancer vaccines developed in mice were successfully translated to humans with promising early results.",
   "abstract_sections": [],
   "title": "Cancer vaccine strategies: translation from mice to human clinical trials.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Cancer immunology, immunotherapy : CII",
   "authors_full": [
    "Jay A Berzofsky",
@@ -1823,6 +1846,7 @@
   "abstract_sections": [],
   "title": "Patient-Derived Xenograft Models for Translational Prostate Cancer Research and Drug Development.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Methods in molecular biology (Clifton, N.J.)",
   "authors_full": [
    "Lisa Kate Philp"
@@ -1893,10 +1917,11 @@
   "abstract_sections": [],
   "title": "Translational value of animal models of kidney failure.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "European journal of pharmacology",
   "authors_full": [
    "Alberto Ortiz",
-   "Maria D Sanchez-Ni&#xf1;o",
+   "Maria D Sanchez-Ni\u00f1o",
    "Maria C Izquierdo",
    "Catalina Martin-Cleary",
    "Laura Garcia-Bermejo",
@@ -1994,11 +2019,12 @@
   "abstract_sections": [],
   "title": "An unbiased ranking of murine dietary models based on their proximity to human metabolic dysfunction-associated steatotic liver disease (MASLD).",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Nature metabolism",
   "authors_full": [
    "Michele Vacca",
    "Ioannis Kamzolas",
-   "Lea M&#xf8;rch Harder",
+   "Lea M\u00f8rch Harder",
    "Fiona Oakley",
    "Christian Trautwein",
    "Maximilian Hatting",
@@ -2007,13 +2033,13 @@
    "Anouk Oldenburger",
    "Sara Toftegaard Hjuler",
    "Iwona Ksiazek",
-   "Daniel Lind&#xe9;n",
+   "Daniel Lind\u00e9n",
    "Detlef Schuppan",
    "Sergio Rodriguez-Cuenca",
    "Maria Manuela Tonini",
-   "Tamara R Casta&#xf1;eda",
+   "Tamara R Casta\u00f1eda",
    "Aimo Kannt",
-   "Cec&#xed;lia M P Rodrigues",
+   "Cec\u00edlia M P Rodrigues",
    "Simon Cockell",
    "Olivier Govaere",
    "Ann K Daly",
@@ -2022,7 +2048,7 @@
    "Yong Ook Kim",
    "Anna Lindblom",
    "Stephanie Oldham",
-   "Anne-Christine Andr&#xe9;asson",
+   "Anne-Christine Andr\u00e9asson",
    "Franklin Schlerman",
    "Jonathon Marioneaux",
    "Arun Sanyal",
@@ -2033,7 +2059,7 @@
    "Shuang Wang",
    "Dipankar Bhattacharya",
    "Eric Simon",
-   "Val&#xe9;rie Paradis",
+   "Val\u00e9rie Paradis",
    "Alastair Burt",
    "Ioanna Maria Grypari"
   ],
@@ -2194,15 +2220,16 @@
   ],
   "doi": "10.1038/nm.3954",
   "pmcid": null,
-  "abstract": "Profiling candidate therapeutics with limited cancer models during preclinical development hinders predictions of clinical efficacy and identifying factors that underlie heterogeneous patient responses for patient-selection strategies. We established &#x223c;1,000 patient-derived tumor xenograft models (PDXs) with a diverse set of driver mutations. With these PDXs, we performed in vivo compound screens using a 1 &#xd7; 1 &#xd7; 1 experimental design (PDX clinical trial or PCT) to assess the population responses to 62 treatments across six indications. We demonstrate both the reproducibility and the clinical translatability of this approach by identifying associations between a genotype and drug response, and established mechanisms of resistance. In addition, our results suggest that PCTs may represent a more accurate approach than cell line models for assessing the clinical potential of some therapeutic modalities. We therefore propose that this experimental paradigm could potentially improve preclinical evaluation of treatment modalities and enhance our ability to predict clinical trial responses.",
+  "abstract": "Profiling candidate therapeutics with limited cancer models during preclinical development hinders predictions of clinical efficacy and identifying factors that underlie heterogeneous patient responses for patient-selection strategies. We established \u223c1,000 patient-derived tumor xenograft models (PDXs) with a diverse set of driver mutations. With these PDXs, we performed in vivo compound screens using a 1 \u00d7 1 \u00d7 1 experimental design (PDX clinical trial or PCT) to assess the population responses to 62 treatments across six indications. We demonstrate both the reproducibility and the clinical translatability of this approach by identifying associations between a genotype and drug response, and established mechanisms of resistance. In addition, our results suggest that PCTs may represent a more accurate approach than cell line models for assessing the clinical potential of some therapeutic modalities. We therefore propose that this experimental paradigm could potentially improve preclinical evaluation of treatment modalities and enhance our ability to predict clinical trial responses.",
   "abstract_sections": [],
   "title": "High-throughput screening using patient-derived tumor xenografts to predict clinical trial drug response.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Nature medicine",
   "authors_full": [
    "Hui Gao",
    "Joshua M Korn",
-   "St&#xe9;phane Ferretti",
+   "St\u00e9phane Ferretti",
    "John E Monahan",
    "Youzhen Wang",
    "Mallika Singh",
@@ -2211,7 +2238,7 @@
    "Guizhi Yang",
    "Yun Zhang",
    "O Alejandro Balbin",
-   "St&#xe9;phanie Barbe",
+   "St\u00e9phanie Barbe",
    "Hongbo Cai",
    "Fergal Casey",
    "Susmita Chatterjee",
@@ -2237,7 +2264,7 @@
    "Tara L Naylor",
    "Montesa Patawaran",
    "Anupama Reddy",
-   "Claudia R&#xf6;elli",
+   "Claudia R\u00f6elli",
    "David A Ruddy",
    "Fernando Salangsang"
   ],
@@ -2305,7 +2332,7 @@
   "abstract": "The lack of a preclinical model of progressive non-alcoholic steatohepatitis (NASH) that recapitulates human disease is a barrier to therapeutic development. A stable isogenic cross between C57BL/6J (B6) and 129S1/SvImJ (S129) mice were fed a high fat diet with ad libitum consumption of glucose and fructose in physiologically relevant concentrations and compared to mice fed a chow diet and also to both parent strains. Following initiation of the obesogenic diet, B6/129 mice developed obesity, insulin resistance, hypertriglyceridemia and increased LDL-cholesterol. They sequentially also developed steatosis (4-8weeks), steatohepatitis (16-24weeks), progressive fibrosis (16weeks onwards) and spontaneous hepatocellular cancer (HCC). There was a strong concordance between the pattern of pathway activation at a transcriptomic level between humans and mice with similar histological phenotypes (FDR 0.02 for early and 0.08 for late time points). Lipogenic, inflammatory and apoptotic signaling pathways activated in human NASH were also activated in these mice. The HCC gene signature resembled the S1 and S2 human subclasses of HCC (FDR 0.01 for both). Only the B6/129 mouse but not the parent strains recapitulated all of these aspects of human NAFLD. We here describe a diet-induced animal model of non-alcoholic fatty liver disease (DIAMOND) that recapitulates the key physiological, metabolic, histologic, transcriptomic and cell-signaling changes seen in humans with progressive NASH. We have developed a diet-induced mouse model of non-alcoholic steatohepatitis (NASH) and hepatic cancers in a cross between two mouse strains (129S1/SvImJ and C57Bl/6J). This model mimics all the physiological, metabolic, histological, transcriptomic gene signature and clinical endpoints of human NASH and can facilitate preclinical development of therapeutic targets for NASH.",
   "abstract_sections": [
    [
-    "BACKGROUND &amp; AIMS",
+    "BACKGROUND & AIMS",
     "The lack of a preclinical model of progressive non-alcoholic steatohepatitis (NASH) that recapitulates human disease is a barrier to therapeutic development."
    ],
    [
@@ -2327,6 +2354,7 @@
   ],
   "title": "A diet-induced animal model of non-alcoholic fatty liver disease and hepatocellular cancer.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of hepatology",
   "authors_full": [
    "Amon Asgharpour",
@@ -2419,7 +2447,7 @@
   ],
   "doi": "10.1186/s12876-020-01356-2",
   "pmcid": "PMC7336447",
-  "abstract": "Animal models of non-alcoholic steatohepatitis (NASH) are important tools in preclinical research and drug discovery. Gubra-Amylin NASH (GAN) diet-induced obese (DIO) mice represent a model of fibrosing NASH. The present study directly assessed the clinical translatability of the model by head-to-head comparison of liver biopsy histological and transcriptome changes in GAN DIO-NASH mouse and human NASH patients. C57Bl/6&#x2009;J mice were fed chow or the GAN diet rich in saturated fat (40%), fructose (22%) and cholesterol (2%) for &#x2265;38&#x2009;weeks. Metabolic parameters as well as plasma and liver biomarkers were assessed. Liver biopsy histology and transcriptome signatures were compared to samples from human lean individuals and patients diagnosed with NASH. Liver lesions in GAN DIO-NASH mice showed similar morphological characteristics compared to the NASH patient validation set, including macrosteatosis, lobular inflammation, hepatocyte ballooning degeneration and periportal/perisinusoidal fibrosis. Histomorphometric analysis indicated comparable increases in markers of hepatic lipid accumulation, inflammation and collagen deposition in GAN DIO-NASH mice and NASH patient samples. Liver biopsies from GAN DIO-NASH mice and NASH patients showed comparable dynamics in several gene expression pathways involved in NASH pathogenesis. Consistent with the clinical features of NASH, GAN DIO-NASH mice demonstrated key components of the metabolic syndrome, including obesity and impaired glucose tolerance. The GAN DIO-NASH mouse model demonstrates good clinical translatability with respect to the histopathological, transcriptional and metabolic aspects of the human disease, highlighting the suitability of the GAN DIO-NASH mouse model for identifying therapeutic targets and characterizing novel drug therapies for NASH.",
+  "abstract": "Animal models of non-alcoholic steatohepatitis (NASH) are important tools in preclinical research and drug discovery. Gubra-Amylin NASH (GAN) diet-induced obese (DIO) mice represent a model of fibrosing NASH. The present study directly assessed the clinical translatability of the model by head-to-head comparison of liver biopsy histological and transcriptome changes in GAN DIO-NASH mouse and human NASH patients. C57Bl/6 J mice were fed chow or the GAN diet rich in saturated fat (40%), fructose (22%) and cholesterol (2%) for \u226538 weeks. Metabolic parameters as well as plasma and liver biomarkers were assessed. Liver biopsy histology and transcriptome signatures were compared to samples from human lean individuals and patients diagnosed with NASH. Liver lesions in GAN DIO-NASH mice showed similar morphological characteristics compared to the NASH patient validation set, including macrosteatosis, lobular inflammation, hepatocyte ballooning degeneration and periportal/perisinusoidal fibrosis. Histomorphometric analysis indicated comparable increases in markers of hepatic lipid accumulation, inflammation and collagen deposition in GAN DIO-NASH mice and NASH patient samples. Liver biopsies from GAN DIO-NASH mice and NASH patients showed comparable dynamics in several gene expression pathways involved in NASH pathogenesis. Consistent with the clinical features of NASH, GAN DIO-NASH mice demonstrated key components of the metabolic syndrome, including obesity and impaired glucose tolerance. The GAN DIO-NASH mouse model demonstrates good clinical translatability with respect to the histopathological, transcriptional and metabolic aspects of the human disease, highlighting the suitability of the GAN DIO-NASH mouse model for identifying therapeutic targets and characterizing novel drug therapies for NASH.",
   "abstract_sections": [
    [
     "BACKGROUND",
@@ -2427,7 +2455,7 @@
    ],
    [
     "METHODS",
-    "C57Bl/6&#x2009;J mice were fed chow or the GAN diet rich in saturated fat (40%), fructose (22%) and cholesterol (2%) for &#x2265;38&#x2009;weeks. Metabolic parameters as well as plasma and liver biomarkers were assessed. Liver biopsy histology and transcriptome signatures were compared to samples from human lean individuals and patients diagnosed with NASH."
+    "C57Bl/6 J mice were fed chow or the GAN diet rich in saturated fat (40%), fructose (22%) and cholesterol (2%) for \u226538 weeks. Metabolic parameters as well as plasma and liver biomarkers were assessed. Liver biopsy histology and transcriptome signatures were compared to samples from human lean individuals and patients diagnosed with NASH."
    ],
    [
     "RESULTS",
@@ -2440,13 +2468,14 @@
   ],
   "title": "Human translatability of the GAN diet-induced obese mouse model of non-alcoholic steatohepatitis.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "BMC gastroenterology",
   "authors_full": [
    "Henrik H Hansen",
-   "Helene M &#xc6;gidius",
-   "Denise Or&#xf3;",
+   "Helene M \u00c6gidius",
+   "Denise Or\u00f3",
    "Simon S Evers",
-   "Sara Heeb&#xf8;ll",
+   "Sara Heeb\u00f8ll",
    "Peter Lykke Eriksen",
    "Karen Louise Thomsen",
    "Anja Bengtsson",
@@ -2454,7 +2483,7 @@
    "Michel Feigh",
    "Malte P Suppli",
    "Filip K Knop",
-   "Henning Gr&#xf8;nb&#xe6;k",
+   "Henning Gr\u00f8nb\u00e6k",
    "Diego Miranda",
    "James L Trevaskis",
    "Niels Vrang",
@@ -2501,10 +2530,14 @@
   ],
   "doi": "10.31887/DCNS.2017.19.3/rspanagel",
   "pmcid": "PMC5741108",
-  "abstract": "In recent years, animal models in psychiatric research have been criticized for their limited translational value to the clinical situation. Failures in clinical trials have thus often been attributed to the lack of predictive power of preclinical animal models. Here, I argue that animal models of voluntary drug intake-under nonoperant and operant conditions-and addiction models based on the Diagnostic and Statistical Manual of Mental Disorders are crucial and informative tools for the identification of pathological mechanisms, target identification, and drug development. These models provide excellent face validity, and it is assumed that the neurochemical and neuroanatomical substrates involved in drug-intake behavior are similar in laboratory rodents and humans. Consequently, animal models of drug consumption and addiction provide predictive validity. This predictive power is best illustrated in alcohol research, in which three approved medications-acamprosate, naltrexone, and nalmefene-were developed by means of animal models and then successfully translated into the clinical situation. Los modelos animales en investigaci&#xf3;n psiqui&#xe1;trica han sido criticados en los &#xfa;ltimos a&#xf1;os por su limitado valor para ser trasladados a la situaci&#xf3;n cl&#xed;nica. Las fallas en los ensayos cl&#xed;nicos a menudo han sido atribuidas a la falta de poder predictivo de los modelos animales precl&#xed;nicos. En este art&#xed;culo se argumenta que los modelos animales de ingesta voluntaria de drogas&#x2014;bajo condiciones operantes y no operantes&#x2014;y los modelos de adicciones basados en el Manual Diagn&#xf3;stico y Estad&#xed;stico de los Trastornos Mentales constituyen herramientas cruciales e informativas para la identificaci&#xf3;n de mecanismos patol&#xf3;gicos, identificaci&#xf3;n de blancos y desarrollo de f&#xe1;rmacos. Estos modelos aportan una excelente validez aparente y se asume que los sustratos neuroqu&#xed;micos y neuroanat&#xf3;micos involucrados en la conducta de ingesta de drogas son similares en los roedores de laboratorio y en los humanos. En consecuencia, los modelos animales de consumo de drogas y adicciones aportan validez predictiva. Este poder predictivo est&#xe1; mejor ilustrado en la investigaci&#xf3;n con alcohol, en la cual tres medicamentos aprobados (acamprosate, naltrexona y nalmefene) fueron desarrollados a partir de modelos animales y luego trasladados exitosamente a las situaciones cl&#xed;nicas. Ces derni&#xe8;res ann&#xe9;es, les mod&#xe8;les animaux en recherche psychiatrique ont &#xe9;t&#xe9; critiqu&#xe9;s pour leur valeur translationnelle limit&#xe9;e en situation clinique. Les &#xe9;checs des &#xe9;tudes cliniques ont donc souvent &#xe9;t&#xe9; attribu&#xe9;s au manque de puissance pr&#xe9;dictive des mod&#xe8;les pr&#xe9;cliniques animaux. Pour ma part j'estime que les mod&#xe8;les animaux de prise volontaire de substances &#x2014;sous conditions op&#xe9;ratoires et non op&#xe9;ratoires&#x2014; et les mod&#xe8;les d'addiction bas&#xe9;s sur le DSM (Diagnostic and Statistical Manual of Mental Disorders) sont des outils essentiels et informatifs pour identifier les m&#xe9;canismes pathologiques et les cibles th&#xe9;rapeutiques et pour d&#xe9;velopper les m&#xe9;dicaments. La validit&#xe9; apparente de ces mod&#xe8;les est excellente et on consid&#xe8;re que les substrats neuro-chimiques et neuro-anatomiques impliqu&#xe9;s dans le comportement de prise de substance sont similaires chez les rongeurs de laboratoire et les humains. Les mod&#xe8;les animaux de consommation de substances et d'addiction ont donc une validit&#xe9; pr&#xe9;dictive. C'est dans la recherche sur l'alcool que cette puissance pr&#xe9;dictive s'illustre le mieux, trois m&#xe9;dicaments autoris&#xe9;s (acamprosate, nal-trexone et nalm&#xe9;f&#xe8;ne) ayant &#xe9;t&#xe9; d&#xe9;velopp&#xe9;s gr&#xe2;ce aux mod&#xe8;les animaux et transf&#xe9;r&#xe9;s ensuite avec succ&#xe8;s en situation clinique.",
+  "abstract": "In recent years, animal models in psychiatric research have been criticized for their limited translational value to the clinical situation. Failures in clinical trials have thus often been attributed to the lack of predictive power of preclinical animal models. Here, I argue that animal models of voluntary drug intake-under nonoperant and operant conditions-and addiction models based on the Diagnostic and Statistical Manual of Mental Disorders are crucial and informative tools for the identification of pathological mechanisms, target identification, and drug development. These models provide excellent face validity, and it is assumed that the neurochemical and neuroanatomical substrates involved in drug-intake behavior are similar in laboratory rodents and humans. Consequently, animal models of drug consumption and addiction provide predictive validity. This predictive power is best illustrated in alcohol research, in which three approved medications-acamprosate, naltrexone, and nalmefene-were developed by means of animal models and then successfully translated into the clinical situation.",
   "abstract_sections": [],
   "title": "Animal models of addiction.",
   "is_book": false,
+  "other_languages": [
+   "spa",
+   "fre"
+  ],
   "journal_full": "Dialogues in clinical neuroscience",
   "authors_full": [
    "Rainer Spanagel"
@@ -2553,7 +2586,7 @@
     "term": "Receptors, Opioid, kappa",
     "major": false,
     "qualifiers": [
-     "antagonists &amp; inhibitors"
+     "antagonists & inhibitors"
     ]
    },
    {
@@ -2584,6 +2617,7 @@
   "abstract_sections": [],
   "title": "Insights from Preclinical Choice Models on Treating Drug Addiction.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Trends in pharmacological sciences",
   "authors_full": [
    "Matthew L Banks",
@@ -2664,6 +2698,7 @@
   ],
   "title": "Semiautomated pipeline for quantitative analysis of heart histopathology.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of translational medicine",
   "authors_full": [
    "Patrick Droste",
@@ -2719,10 +2754,11 @@
   ],
   "doi": "10.3390/cells14120908",
   "pmcid": "PMC12190894",
-  "abstract": "Autism spectrum disorder (ASD) is a neurodevelopmental disorder affecting 1-3% of the population globally. Owing to its multifactorial origin, complex genetics, and heterogeneity in clinical phenotypes, it is difficult to faithfully model ASD. In essence, ASD is an umbrella term for a group of individually rare disorders, each risk gene accounting for &lt;1% of cases, threaded by a set of overlapping behavioral or molecular phenotypes. Validated behavioral tests are considered a gold standard for ASD diagnosis, and several animal models (rodents, pigs, and non-human primates) have traditionally been used to study its molecular basis. These models recapitulate the human phenotype to a varying degree and have been indispensable to preclinical research, but they cannot be used to study human-specific features such as protracted neuronal maturation and cell-intrinsic attributes, posing serious limitations to translatability. Human stem cell-based models, both as monolayer 2D cultures and 3D organoids and assembloids, can circumvent these limitations. Generated from a patient's own reprogrammed cells, these can be used for testing therapeutic interventions that are more condition and patient relevant, targeting developmental windows where the intervention would be most effective. We discuss some of these advancements by comparing traditional and recent models of ASD.",
+  "abstract": "Autism spectrum disorder (ASD) is a neurodevelopmental disorder affecting 1-3% of the population globally. Owing to its multifactorial origin, complex genetics, and heterogeneity in clinical phenotypes, it is difficult to faithfully model ASD. In essence, ASD is an umbrella term for a group of individually rare disorders, each risk gene accounting for <1% of cases, threaded by a set of overlapping behavioral or molecular phenotypes. Validated behavioral tests are considered a gold standard for ASD diagnosis, and several animal models (rodents, pigs, and non-human primates) have traditionally been used to study its molecular basis. These models recapitulate the human phenotype to a varying degree and have been indispensable to preclinical research, but they cannot be used to study human-specific features such as protracted neuronal maturation and cell-intrinsic attributes, posing serious limitations to translatability. Human stem cell-based models, both as monolayer 2D cultures and 3D organoids and assembloids, can circumvent these limitations. Generated from a patient's own reprogrammed cells, these can be used for testing therapeutic interventions that are more condition and patient relevant, targeting developmental windows where the intervention would be most effective. We discuss some of these advancements by comparing traditional and recent models of ASD.",
   "abstract_sections": [],
   "title": "The Evolving Landscape of Functional Models of Autism Spectrum Disorder.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Cells",
   "authors_full": [
    "Jai Ranjan",
@@ -2807,6 +2843,7 @@
   ],
   "title": "A Multicentre Clinical Study of Sarcoma Personalised Treatment Using Patient-Derived Tumour Xenografts.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Clinical oncology (Royal College of Radiologists (Great Britain))",
   "authors_full": [
    "H Xu",
@@ -2847,7 +2884,7 @@
     "major": false,
     "qualifiers": [
      "etiology",
-     "prevention &amp; control"
+     "prevention & control"
     ]
    },
    {
@@ -2904,10 +2941,11 @@
   "abstract_sections": [],
   "title": "Rodent models of diabetic kidney disease: human translatability and preclinical validity.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Drug discovery today",
   "authors_full": [
    "Frederikke E Sembach",
-   "Mette V &#xd8;stergaard",
+   "Mette V \u00d8stergaard",
    "Niels Vrang",
    "Bo Feldt-Rasmussen",
    "Keld Fosgerau",
@@ -3019,6 +3057,7 @@
   "abstract_sections": [],
   "title": "Reproducing human and cross-species drug toxicities using a Liver-Chip.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Science translational medicine",
   "authors_full": [
    "Kyung-Jin Jang",
@@ -3126,6 +3165,7 @@
   "abstract_sections": [],
   "title": "Transcriptomic Cross-Species Analysis of Chronic Liver Disease Reveals Consistent Regulation Between Humans and Mice.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Hepatology communications",
   "authors_full": [
    "Christian H Holland",
@@ -3136,7 +3176,7 @@
    "Ute Hofmann",
    "Rosemarie Marchan",
    "Cristina Cadenas",
-   "J&#xf6;rg Reinders",
+   "J\u00f6rg Reinders",
    "Stefan Hoehme",
    "Abdel-Latif Seddek",
    "Steven Dooley",
@@ -3217,6 +3257,7 @@
   "abstract_sections": [],
   "title": "Interspecies comparison of simultaneous thrombin and plasmin generation.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Scientific reports",
   "authors_full": [
    "Ivan D Tarandovskiy",
@@ -3315,6 +3356,7 @@
   "abstract_sections": [],
   "title": "PTMoreR-enabled cross-species PTM mapping and comparative phosphoproteomics across mammals.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Cell reports methods",
   "authors_full": [
    "Shisheng Wang",
@@ -3368,7 +3410,7 @@
     "major": false,
     "qualifiers": [
      "metabolism",
-     "administration &amp; dosage"
+     "administration & dosage"
     ]
    },
    {
@@ -3414,6 +3456,7 @@
   "abstract_sections": [],
   "title": "An Integrated AI-PBPK Platform for Predicting Drug In Vivo Fate and Tissue Distribution in Human and Inter-Species Extrapolation.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Clinical pharmacology and therapeutics",
   "authors_full": [
    "Wei Wang",
@@ -3425,7 +3468,7 @@
    "Defang Ouyang"
   ],
   "grants": [
-   "Fundo para o Desenvolvimento das Ci&#xea;ncias e da Tecnologia (Science and Technology Development Fund)",
+   "Fundo para o Desenvolvimento das Ci\u00eancias e da Tecnologia (Science and Technology Development Fund)",
    "Macao Polytechnic University",
    "University of Macau Multi-Year Research Grant",
    "University of Macau UM Talent Programme"
@@ -3488,10 +3531,11 @@
   ],
   "doi": "10.1016/j.xphs.2025.103719",
   "pmcid": "PMC13491550",
-  "abstract": "Methylprednisolone (MPL) is widely used in clinical and veterinary medicine to manage inflammation. Plasma profiles and PK parameters in 7 species were digitized from 10 literature sources along with our recent PBPK results in rats. Basic allometric scaling provided reported clearance (CL) and distribution volume (Vd) from noncompartmental analysis highly correlated with body weights (R2 &gt; 0.96), although rat CL deviated from the linear trend. A basic nonlinear minimal physiologically-based pharmacokinetic model (mPBPK) (Model I), an intermediate reversible-metabolism mPBPK model (Model II) accounting for MPL and methylprednisone interconversion, and a full highly complex PBPK model were used to assess the interspecies plasma concentration datasets. The MPL PK profiles were reasonably captured by Model I and II, yielding allometric exponents for CL of 1.15 and 0.94, consistent with basic allometry, 1.18. Rat PK informed the presence of nonlinear tissue binding and required an adjustment factor approximately 8-fold higher for its CL. Our full PBPK model was extrapolated from rats to humans using allometry from Model II and optimized producing excellent applications in healthy subjects and patients. This study, based on conserved tissue binding properties, provided three allometric translational PBPK models for MPL, facilitating reasonable PK assessment and interpretation for various species.",
+  "abstract": "Methylprednisolone (MPL) is widely used in clinical and veterinary medicine to manage inflammation. Plasma profiles and PK parameters in 7 species were digitized from 10 literature sources along with our recent PBPK results in rats. Basic allometric scaling provided reported clearance (CL) and distribution volume (Vd) from noncompartmental analysis highly correlated with body weights (R2 > 0.96), although rat CL deviated from the linear trend. A basic nonlinear minimal physiologically-based pharmacokinetic model (mPBPK) (Model I), an intermediate reversible-metabolism mPBPK model (Model II) accounting for MPL and methylprednisone interconversion, and a full highly complex PBPK model were used to assess the interspecies plasma concentration datasets. The MPL PK profiles were reasonably captured by Model I and II, yielding allometric exponents for CL of 1.15 and 0.94, consistent with basic allometry, 1.18. Rat PK informed the presence of nonlinear tissue binding and required an adjustment factor approximately 8-fold higher for its CL. Our full PBPK model was extrapolated from rats to humans using allometry from Model II and optimized producing excellent applications in healthy subjects and patients. This study, based on conserved tissue binding properties, provided three allometric translational PBPK models for MPL, facilitating reasonable PK assessment and interpretation for various species.",
   "abstract_sections": [],
   "title": "Physiologically-based modeling of methylprednisolone pharmacokinetics across species with extrapolations to humans.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of pharmaceutical sciences",
   "authors_full": [
    "Ruihong Yu",
@@ -3604,6 +3648,7 @@
   "abstract_sections": [],
   "title": "Identification of conserved frontal neurophysiological markers of cognitive flexibility in humans and rats.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Communications biology",
   "authors_full": [
    "Andre Der-Avakian",
@@ -3618,7 +3663,7 @@
    "Ann M Iturra-Mena",
    "Rachel Lobien",
    "Sarah Perlo",
-   "Emilia F C&#xe1;rdenas",
+   "Emilia F C\u00e1rdenas",
    "Genevieve P Nowicki",
    "Zeyun Wu",
    "Hongyi Pan",
@@ -3732,6 +3777,7 @@
   "abstract_sections": [],
   "title": "Cross-Species Convergence of Functional Connectivity Changes in Thalamic Pain Across Human Patients and Model Macaques.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "The journal of pain",
   "authors_full": [
    "Dong Dong",
@@ -3837,10 +3883,11 @@
   ],
   "doi": "10.1016/j.tox.2024.153806",
   "pmcid": null,
-  "abstract": "This study aimed to investigate sex, age, and species differences of perfluorooctanoic acid (PFOA) using physiologically-based pharmacokinetic (PBPK) models in rats and humans. PBPK models were generally developed as either flow- or permeability-limited models. The flow-limited model is cost-effective and allows for human PK prediction through simple allometric scaling, while the permeability-limited model can incorporate detailed information on the disposition process through in vitro-in vivo extrapolation (IVIVE). PFOA was administered via oral or intravenous administration with 5&#x202f;mg/kg in male and female rats of different ages and the data was used to develop the PBPK models. Our results showed that both models successfully captured sex differences in rats, while only the flow-limited model with male rats and the permeability-limited model with both male and female rats provided comparable predictions in the human clinical study. More than the flow-limited model, the permeability-limited model effectively explained sex differences in rats and species differences through IVIVE. Additionally, the ontogeny-based mechanistic description of PFOA disposition enabled the interpretation of age- and sex-dependent pharmacokinetics. Although the flow-limited PBPK model lacked mechanistic interpretability compared to the permeability-limited model, it demonstrated reliable human prediction through simple allometric scaling. In conclusion, the permeability PBPK model could interpret age, sex, and species differences and it could improve the accuracy of human prediction.",
+  "abstract": "This study aimed to investigate sex, age, and species differences of perfluorooctanoic acid (PFOA) using physiologically-based pharmacokinetic (PBPK) models in rats and humans. PBPK models were generally developed as either flow- or permeability-limited models. The flow-limited model is cost-effective and allows for human PK prediction through simple allometric scaling, while the permeability-limited model can incorporate detailed information on the disposition process through in vitro-in vivo extrapolation (IVIVE). PFOA was administered via oral or intravenous administration with 5 mg/kg in male and female rats of different ages and the data was used to develop the PBPK models. Our results showed that both models successfully captured sex differences in rats, while only the flow-limited model with male rats and the permeability-limited model with both male and female rats provided comparable predictions in the human clinical study. More than the flow-limited model, the permeability-limited model effectively explained sex differences in rats and species differences through IVIVE. Additionally, the ontogeny-based mechanistic description of PFOA disposition enabled the interpretation of age- and sex-dependent pharmacokinetics. Although the flow-limited PBPK model lacked mechanistic interpretability compared to the permeability-limited model, it demonstrated reliable human prediction through simple allometric scaling. In conclusion, the permeability PBPK model could interpret age, sex, and species differences and it could improve the accuracy of human prediction.",
   "abstract_sections": [],
   "title": "Sex, age, and species differences of perfluorooctanoic acid modeled by flow- versus permeability-limited physiologically-based pharmacokinetic models.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Toxicology",
   "authors_full": [
    "Go-Wun Choi",
@@ -3935,10 +3982,11 @@
   ],
   "doi": "10.1002/ijc.34987",
   "pmcid": null,
-  "abstract": "Mouse models are vital for assessing risk from environmental carcinogens, including ionizing radiation, yet the interspecies difference in the dose response precludes direct application of experimental evidence to humans. Herein, we take a mathematical approach to delineate the mechanism underlying the human-mouse difference in radiation-related cancer risk. We used a multistage carcinogenesis model assuming a mutational action of radiation to analyze previous data on cancer mortality in the Japanese atomic bomb survivors and in lifespan mouse experiments. Theoretically, the model predicted that exposure will chronologically shift the age-related increase in cancer risk forward by a period corresponding to the time in which the spontaneous mutational process generates the same mutational burden as that the exposure generates. This model appropriately fitted both human and mouse data and suggested a linear dose response for the time shift. The effect per dose decreased with increasing age at exposure similarly between humans and mice on a per-lifespan basis (0.72- and 0.71-fold, respectively, for every tenth lifetime). The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046&#x2009;years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime). The difference was mostly explained by the two orders of magnitude difference in spontaneous somatic mutation rates between the species plus the species-independent radiation-induced mutation rate. Thus, the findings delineate the mechanism underlying the interspecies difference in radiation-associated cancer mortality and may lead to the use of experimental evidence for risk prediction in humans.",
+  "abstract": "Mouse models are vital for assessing risk from environmental carcinogens, including ionizing radiation, yet the interspecies difference in the dose response precludes direct application of experimental evidence to humans. Herein, we take a mathematical approach to delineate the mechanism underlying the human-mouse difference in radiation-related cancer risk. We used a multistage carcinogenesis model assuming a mutational action of radiation to analyze previous data on cancer mortality in the Japanese atomic bomb survivors and in lifespan mouse experiments. Theoretically, the model predicted that exposure will chronologically shift the age-related increase in cancer risk forward by a period corresponding to the time in which the spontaneous mutational process generates the same mutational burden as that the exposure generates. This model appropriately fitted both human and mouse data and suggested a linear dose response for the time shift. The effect per dose decreased with increasing age at exposure similarly between humans and mice on a per-lifespan basis (0.72- and 0.71-fold, respectively, for every tenth lifetime). The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046 years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime). The difference was mostly explained by the two orders of magnitude difference in spontaneous somatic mutation rates between the species plus the species-independent radiation-induced mutation rate. Thus, the findings delineate the mechanism underlying the interspecies difference in radiation-associated cancer mortality and may lead to the use of experimental evidence for risk prediction in humans.",
   "abstract_sections": [],
   "title": "Human-mouse comparison of the multistage nature of radiation carcinogenesis in a mathematical model.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "International journal of cancer",
   "authors_full": [
    "Tatsuhiko Imaoka",
@@ -4046,10 +4094,11 @@
   "abstract_sections": [],
   "title": "Dog models for blinding inherited retinal dystrophies.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Human gene therapy. Clinical development",
   "authors_full": [
    "Simon M Petersen-Jones",
-   "Andr&#xe1;s M Kom&#xe1;romy"
+   "Andr\u00e1s M Kom\u00e1romy"
   ],
   "grants": [
    "NEI NIH HHS",
@@ -4181,6 +4230,7 @@
   "abstract_sections": [],
   "title": "Using animal models in osteoarthritis biomarker research.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "The journal of knee surgery",
   "authors_full": [
    "Bridget C Garner",
@@ -4235,6 +4285,7 @@
   "abstract_sections": [],
   "title": "Extrapyramidal system neurotoxicity: animal models.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Handbook of clinical neurology",
   "authors_full": [
    "David Dorman"
@@ -4323,10 +4374,10 @@
   ],
   "doi": "10.1053/j.gastro.2020.10.002",
   "pmcid": "PMC7878295",
-  "abstract": "Preclinical identification of compounds at risk of causing drug induced liver injury (DILI) remains a significant challenge in drug development, highlighting a need for a predictive human system to study complicated DILI mechanism and susceptibility to individual drug. Here, we established a human liver organoid (HLO)-based screening model for analyzing DILI pathology at organoid resolution. We first developed a reproducible method to generate HLO from storable foregut progenitors from pluripotent stem cell (PSC) lines with reproducible bile transport function. The qRT-PCR and single cell RNA-seq determined hepatocyte transcriptomic state in cells of HLO relative to primary hepatocytes. Histological and ultrastructural analyses were performed to evaluate micro-anatomical architecture. HLO based drug-induced liver injury assays were transformed into a 384 well based high-speed live imaging platform. HLO, generated from 10 different pluripotent stem cell lines, contain polarized immature hepatocytes with bile canaliculi-like architecture, establishing the unidirectional bile acid transport pathway. Single cell RNA-seq profiling identified diverse and zonal hepatocytic populations that in part emulate primary adult hepatocytes. The accumulation of fluorescent bile acid into organoid was impaired by CRISPR-Cas9-based gene editing and transporter inhibitor treatment with BSEP. Furthermore, we successfully developed an organoid based assay with multiplexed readouts measuring viability, cholestatic and/or mitochondrial toxicity with high predictive values for 238 marketed drugs at 4 different concentrations (Sensitivity: 88.7%, Specificity: 88.9%). LoT positively predicts genomic predisposition (CYP2C9&#x2217;2) for Bosentan-induced cholestasis. Liver organoid-based Toxicity screen (LoT) is a potential assay system for liver toxicology studies, facilitating compound optimization, mechanistic study, and precision medicine as well as drug screening applications.",
+  "abstract": "Preclinical identification of compounds at risk of causing drug induced liver injury (DILI) remains a significant challenge in drug development, highlighting a need for a predictive human system to study complicated DILI mechanism and susceptibility to individual drug. Here, we established a human liver organoid (HLO)-based screening model for analyzing DILI pathology at organoid resolution. We first developed a reproducible method to generate HLO from storable foregut progenitors from pluripotent stem cell (PSC) lines with reproducible bile transport function. The qRT-PCR and single cell RNA-seq determined hepatocyte transcriptomic state in cells of HLO relative to primary hepatocytes. Histological and ultrastructural analyses were performed to evaluate micro-anatomical architecture. HLO based drug-induced liver injury assays were transformed into a 384 well based high-speed live imaging platform. HLO, generated from 10 different pluripotent stem cell lines, contain polarized immature hepatocytes with bile canaliculi-like architecture, establishing the unidirectional bile acid transport pathway. Single cell RNA-seq profiling identified diverse and zonal hepatocytic populations that in part emulate primary adult hepatocytes. The accumulation of fluorescent bile acid into organoid was impaired by CRISPR-Cas9-based gene editing and transporter inhibitor treatment with BSEP. Furthermore, we successfully developed an organoid based assay with multiplexed readouts measuring viability, cholestatic and/or mitochondrial toxicity with high predictive values for 238 marketed drugs at 4 different concentrations (Sensitivity: 88.7%, Specificity: 88.9%). LoT positively predicts genomic predisposition (CYP2C9\u22172) for Bosentan-induced cholestasis. Liver organoid-based Toxicity screen (LoT) is a potential assay system for liver toxicology studies, facilitating compound optimization, mechanistic study, and precision medicine as well as drug screening applications.",
   "abstract_sections": [
    [
-    "BACKGROUND &amp; AIMS",
+    "BACKGROUND & AIMS",
     "Preclinical identification of compounds at risk of causing drug induced liver injury (DILI) remains a significant challenge in drug development, highlighting a need for a predictive human system to study complicated DILI mechanism and susceptibility to individual drug. Here, we established a human liver organoid (HLO)-based screening model for analyzing DILI pathology at organoid resolution."
    ],
    [
@@ -4335,7 +4386,7 @@
    ],
    [
     "RESULTS",
-    "HLO, generated from 10 different pluripotent stem cell lines, contain polarized immature hepatocytes with bile canaliculi-like architecture, establishing the unidirectional bile acid transport pathway. Single cell RNA-seq profiling identified diverse and zonal hepatocytic populations that in part emulate primary adult hepatocytes. The accumulation of fluorescent bile acid into organoid was impaired by CRISPR-Cas9-based gene editing and transporter inhibitor treatment with BSEP. Furthermore, we successfully developed an organoid based assay with multiplexed readouts measuring viability, cholestatic and/or mitochondrial toxicity with high predictive values for 238 marketed drugs at 4 different concentrations (Sensitivity: 88.7%, Specificity: 88.9%). LoT positively predicts genomic predisposition (CYP2C9&#x2217;2) for Bosentan-induced cholestasis."
+    "HLO, generated from 10 different pluripotent stem cell lines, contain polarized immature hepatocytes with bile canaliculi-like architecture, establishing the unidirectional bile acid transport pathway. Single cell RNA-seq profiling identified diverse and zonal hepatocytic populations that in part emulate primary adult hepatocytes. The accumulation of fluorescent bile acid into organoid was impaired by CRISPR-Cas9-based gene editing and transporter inhibitor treatment with BSEP. Furthermore, we successfully developed an organoid based assay with multiplexed readouts measuring viability, cholestatic and/or mitochondrial toxicity with high predictive values for 238 marketed drugs at 4 different concentrations (Sensitivity: 88.7%, Specificity: 88.9%). LoT positively predicts genomic predisposition (CYP2C9\u22172) for Bosentan-induced cholestasis."
    ],
    [
     "CONCLUSIONS",
@@ -4344,6 +4395,7 @@
   ],
   "title": "High-Fidelity Drug-Induced Liver Injury Screen Using Human Pluripotent Stem Cell-Derived Organoids.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Gastroenterology",
   "authors_full": [
    "Tadahiro Shinozawa",
@@ -4379,7 +4431,7 @@
     "term": "Antineoplastic Agents",
     "major": false,
     "qualifiers": [
-     "administration &amp; dosage",
+     "administration & dosage",
      "adverse effects"
     ]
    },
@@ -4388,7 +4440,7 @@
     "major": false,
     "qualifiers": [
      "standards",
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -4406,7 +4458,7 @@
     "major": false,
     "qualifiers": [
      "standards",
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -4480,6 +4532,7 @@
   ],
   "title": "Pre-clinical animal models are poor predictors of human toxicities in phase 1 oncology clinical trials.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "British journal of cancer",
   "authors_full": [
    "Johnique T Atkins",
@@ -4548,6 +4601,7 @@
   "abstract_sections": [],
   "title": "Concordance of the toxicity of pharmaceuticals in humans and in animals.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Regulatory toxicology and pharmacology : RTP",
   "authors_full": [
    "H Olson",
@@ -4645,11 +4699,12 @@
   "abstract_sections": [],
   "title": "ZeGlobalTox: An Innovative Approach to Address Organ Drug Toxicity Using Zebrafish.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "International journal of molecular sciences",
   "authors_full": [
    "Carles Cornet",
    "Simone Calzolari",
-   "Rafael Mi&#xf1;ana-Prieto",
+   "Rafael Mi\u00f1ana-Prieto",
    "Sylvia Dyballa",
    "Els van Doornmalen",
    "Helma Rutjes",
@@ -4726,6 +4781,7 @@
   "abstract_sections": [],
   "title": "In Silico Phototoxicity Prediction of Drugs and Chemicals by using Derek Nexus and QSAR Toolbox.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Alternatives to laboratory animals : ATLA",
   "authors_full": [
    "Varun Ahuja",
@@ -4793,10 +4849,11 @@
   ],
   "doi": "10.1016/j.yrtph.2021.105109",
   "pmcid": null,
-  "abstract": "Several public efforts are aimed at discovering patterns or classifiers in the high-dimensional bioactivity space that predict tissue, organ or whole animal toxicological endpoints. The current study sought to assess and compare the predictions of the Globally Harmonized System (GHS) categories and Dangerous Goods (DG) classifications based on Lethal Dose (LD50) from several available tools (ACD/Labs, Leadscope, T.E.S.T., CATMoS, CaseUltra). External validation was done using dataset of 375 substances to demonstrate their predictive capacity. All models showed very good performance for identifying non-toxic compounds, which would be useful for DG classification, developing or triaging new chemicals, prioritizing existing chemicals for more detailed and rigorous toxicity assessments, and assessing non-active pharmaceutical intermediates. This would ultimately reduce animal use and improve risk assessments. Category-to-category prediction was not optimal, mainly due to the tendency to overpredict the outcome and the general limitations of acute oral toxicity (AOT) in vivo studies. Overprediction does not specifically pose a risk to human health, it can impact transport and material packaging requirements. Performance for compounds with LD50&#xa0;&#x2264;&#xa0;300&#xa0;mg/kg (approx. 5% of the dataset) was the poorest among all groups and could be potentially improved by including expert review and read-across to similar substances.",
+  "abstract": "Several public efforts are aimed at discovering patterns or classifiers in the high-dimensional bioactivity space that predict tissue, organ or whole animal toxicological endpoints. The current study sought to assess and compare the predictions of the Globally Harmonized System (GHS) categories and Dangerous Goods (DG) classifications based on Lethal Dose (LD50) from several available tools (ACD/Labs, Leadscope, T.E.S.T., CATMoS, CaseUltra). External validation was done using dataset of 375 substances to demonstrate their predictive capacity. All models showed very good performance for identifying non-toxic compounds, which would be useful for DG classification, developing or triaging new chemicals, prioritizing existing chemicals for more detailed and rigorous toxicity assessments, and assessing non-active pharmaceutical intermediates. This would ultimately reduce animal use and improve risk assessments. Category-to-category prediction was not optimal, mainly due to the tendency to overpredict the outcome and the general limitations of acute oral toxicity (AOT) in vivo studies. Overprediction does not specifically pose a risk to human health, it can impact transport and material packaging requirements. Performance for compounds with LD50 \u2264 300 mg/kg (approx. 5% of the dataset) was the poorest among all groups and could be potentially improved by including expert review and read-across to similar substances.",
   "abstract_sections": [],
   "title": "Evaluation of the predictivity of Acute Oral Toxicity (AOT) structure-activity relationship models.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Regulatory toxicology and pharmacology : RTP",
   "authors_full": [
    "Kamila Gromek",
@@ -4882,10 +4939,11 @@
   ],
   "doi": "10.1002/jat.3479",
   "pmcid": null,
-  "abstract": "There is an expectation that to meet regulatory requirements, and avoid or minimize animal testing, integrated approaches to testing and assessment will be needed that rely on assays representing key events (KEs) in the skin sensitization adverse outcome pathway. Three non-animal assays have been formally validated and regulatory adopted: the direct peptide reactivity assay (DPRA), the KeratinoSens&#x2122; assay and the human cell line activation test (h-CLAT). There have been many efforts to develop integrated approaches to testing and assessment with the \"two out of three\" approach attracting much attention. Here a set of 271 chemicals with mouse, human and non-animal sensitization test data was evaluated to compare the predictive performances of the three individual non-animal assays, their binary combinations and the \"two out of three\" approach in predicting skin sensitization potential. The most predictive approach was to use both the DPRA and h-CLAT as follows: (1) perform DPRA - if positive, classify as sensitizing, and (2) if negative, perform h-CLAT - a positive outcome denotes a sensitizer, a negative, a non-sensitizer. With this approach, 85% (local lymph node assay) and 93% (human) of non-sensitizer predictions were correct, whereas the \"two out of three\" approach had 69% (local lymph node assay) and 79% (human) of non-sensitizer predictions correct. The findings are consistent with the argument, supported by published quantitative mechanistic models that only the first KE needs to be modeled. All three assays model this KE to an extent. The value of using more than one assay depends on how the different assays compensate for each other's technical limitations. Copyright &#xa9; 2017 John Wiley &amp; Sons, Ltd.",
+  "abstract": "There is an expectation that to meet regulatory requirements, and avoid or minimize animal testing, integrated approaches to testing and assessment will be needed that rely on assays representing key events (KEs) in the skin sensitization adverse outcome pathway. Three non-animal assays have been formally validated and regulatory adopted: the direct peptide reactivity assay (DPRA), the KeratinoSens\u2122 assay and the human cell line activation test (h-CLAT). There have been many efforts to develop integrated approaches to testing and assessment with the \"two out of three\" approach attracting much attention. Here a set of 271 chemicals with mouse, human and non-animal sensitization test data was evaluated to compare the predictive performances of the three individual non-animal assays, their binary combinations and the \"two out of three\" approach in predicting skin sensitization potential. The most predictive approach was to use both the DPRA and h-CLAT as follows: (1) perform DPRA - if positive, classify as sensitizing, and (2) if negative, perform h-CLAT - a positive outcome denotes a sensitizer, a negative, a non-sensitizer. With this approach, 85% (local lymph node assay) and 93% (human) of non-sensitizer predictions were correct, whereas the \"two out of three\" approach had 69% (local lymph node assay) and 79% (human) of non-sensitizer predictions correct. The findings are consistent with the argument, supported by published quantitative mechanistic models that only the first KE needs to be modeled. All three assays model this KE to an extent. The value of using more than one assay depends on how the different assays compensate for each other's technical limitations. Copyright \u00a9 2017 John Wiley & Sons, Ltd.",
   "abstract_sections": [],
   "title": "Non-animal assessment of skin sensitization hazard: Is an integrated testing strategy needed, and if so what should be integrated?",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of applied toxicology : JAT",
   "authors_full": [
    "David W Roberts",
@@ -4973,6 +5031,7 @@
   "abstract_sections": [],
   "title": "Evaluation of rat and rabbit embryofetal development studies with pharmaceuticals: the added value of a second species.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Critical reviews in toxicology",
   "authors_full": [
    "Puck Roos",
@@ -5048,6 +5107,7 @@
   "abstract_sections": [],
   "title": "Zebrafish: a predictive model for assessing drug-induced toxicity.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Drug discovery today",
   "authors_full": [
    "Patricia McGrath",
@@ -5131,10 +5191,11 @@
   ],
   "doi": "10.1002/jat.4090",
   "pmcid": null,
-  "abstract": "Recent research on in vitro systems has focused on mimicking the in vivo situation of cells within the respiratory system. However, few studies have predicted inhalation toxicity using conventional and simple submerged two-dimensional (2D) cell culture models. We investigated the conventional submerged 2-D cell culture model as a method for the prediction of acute inhalation toxicity. Median lethal concentration (LC50 ) (rat, inhalation, 4 h) and half maximal inhibitory concentration (IC50 ) (lung or bronchial cell, 24 h) data for 59 substances were obtained from the literature and by experiments. Cytotoxicity assays were performed on 44 substances with reported LC50 , but without IC50 , data to obtain the IC50 values. A weak correlation was observed between the IC50 and LC50 of all substances. Semi-volatile organic compounds (SVOCs) and non-VOCs (NVOCs) (16 substances) with a water solubility of &#x2265;1 g/L were strongly correlated between 24-h IC50 and 4-h LC50 , and this had an excellent predictive ability to distinguish between Categories 1-3 and 4 (Globally Harmonized System classification for acute inhalation toxicity). Our results suggest that the submerged 2-D cell culture model may be used to predict in vivo acute inhalation toxicity for substances with a water solubility of &#x2265;1 g/L in SVOCs and NVOCs.",
+  "abstract": "Recent research on in vitro systems has focused on mimicking the in vivo situation of cells within the respiratory system. However, few studies have predicted inhalation toxicity using conventional and simple submerged two-dimensional (2D) cell culture models. We investigated the conventional submerged 2-D cell culture model as a method for the prediction of acute inhalation toxicity. Median lethal concentration (LC50 ) (rat, inhalation, 4 h) and half maximal inhibitory concentration (IC50 ) (lung or bronchial cell, 24 h) data for 59 substances were obtained from the literature and by experiments. Cytotoxicity assays were performed on 44 substances with reported LC50 , but without IC50 , data to obtain the IC50 values. A weak correlation was observed between the IC50 and LC50 of all substances. Semi-volatile organic compounds (SVOCs) and non-VOCs (NVOCs) (16 substances) with a water solubility of \u22651 g/L were strongly correlated between 24-h IC50 and 4-h LC50 , and this had an excellent predictive ability to distinguish between Categories 1-3 and 4 (Globally Harmonized System classification for acute inhalation toxicity). Our results suggest that the submerged 2-D cell culture model may be used to predict in vivo acute inhalation toxicity for substances with a water solubility of \u22651 g/L in SVOCs and NVOCs.",
   "abstract_sections": [],
   "title": "Prediction of acute inhalation toxicity using cytotoxicity data from human lung epithelial cell lines.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of applied toxicology : JAT",
   "authors_full": [
    "Seong Kwang Lim",
@@ -5207,6 +5268,7 @@
   "abstract_sections": [],
   "title": "The Challenges of Predicting Drug-Induced QTc Prolongation in Humans.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Toxicological sciences : an official journal of the Society of Toxicology",
   "authors_full": [
    "Jean-Pierre Valentin",
@@ -5274,10 +5336,11 @@
   ],
   "doi": "10.1038/srep02100",
   "pmcid": "PMC3696896",
-  "abstract": "Drug-induced block of the cardiac hERG (human Ether-&#xe0;-go-go-Related Gene) potassium channel delays cardiac repolarization and increases the risk of Torsade de Pointes (TdP), a potentially lethal arrhythmia. A positive hERG assay has been embraced by regulators as a non-clinical predictor of TdP despite a discordance of about 30%. To test whether assaying concomitant block of multiple ion channels (Multiple Ion Channel Effects or MICE) improves predictivity we measured the concentration-responses of hERG, Nav1.5 and Cav1.2 currents for 32 torsadogenic and 23 non-torsadogenic drugs from multiple classes. We used automated gigaseal patch clamp instruments to provide higher throughput along with accuracy and reproducibility. Logistic regression models using the MICE assay showed a significant reduction in false positives (Type 1 errors) and false negatives (Type 2 errors) when compared to the hERG assay. The best MICE model only required a comparison of the blocking potencies between hERG and Cav1.2.",
+  "abstract": "Drug-induced block of the cardiac hERG (human Ether-\u00e0-go-go-Related Gene) potassium channel delays cardiac repolarization and increases the risk of Torsade de Pointes (TdP), a potentially lethal arrhythmia. A positive hERG assay has been embraced by regulators as a non-clinical predictor of TdP despite a discordance of about 30%. To test whether assaying concomitant block of multiple ion channels (Multiple Ion Channel Effects or MICE) improves predictivity we measured the concentration-responses of hERG, Nav1.5 and Cav1.2 currents for 32 torsadogenic and 23 non-torsadogenic drugs from multiple classes. We used automated gigaseal patch clamp instruments to provide higher throughput along with accuracy and reproducibility. Logistic regression models using the MICE assay showed a significant reduction in false positives (Type 1 errors) and false negatives (Type 2 errors) when compared to the hERG assay. The best MICE model only required a comparison of the blocking potencies between hERG and Cav1.2.",
   "abstract_sections": [],
   "title": "MICE models: superior to the HERG model in predicting Torsade de Pointes.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Scientific reports",
   "authors_full": [
    "James Kramer",
@@ -5310,7 +5373,7 @@
     "major": false,
     "qualifiers": [
      "pharmacokinetics",
-     "administration &amp; dosage"
+     "administration & dosage"
     ]
    },
    {
@@ -5347,7 +5410,7 @@
     "major": false,
     "qualifiers": [
      "pharmacokinetics",
-     "administration &amp; dosage"
+     "administration & dosage"
     ]
    },
    {
@@ -5383,7 +5446,7 @@
   ],
   "doi": "10.1016/j.vascn.2024.107528",
   "pmcid": null,
-  "abstract": "In preclinical cardiovascular safety pharmacology studies, statistical analysis of the rate corrected QT interval (QTc) is the focus for predicting QTc interval changes in the clinic. Modeling of a concentration/QTc relationship, common clinically, is limited due to minimal pharmacokinetic (PK) data in nonclinical testing. It is possible, however, to relate the average drug plasma concentration from sparse PK samples over specific times to the mean corrected QTc. We hypothesize that averaging drug plasma concentration and the QTc-rate relationship over time provides a simple, accurate concentration-QTc relationship bridging statistical and concentration/QTc modeling. Cardiovascular telemetry studies were conducted in non-human primates (NHP; n&#xa0;=&#xa0;48) and canines (n&#xa0;=&#xa0;8). Pharmacokinetic samples were collected on separate study days in both species. Average plasma concentrations for specific intervals (CAverage0-X) were calculated for moxifloxacin in canines and NHP using times corresponding to super-intervals for the QTc data statistical analysis. The QTc effect was calculated for each super-interval using a linear regression correction incorporating QT and HR data from the whole super-interval. The concentration QTc effects were then modeled. In NHP, a 10.9&#xa0;&#xb1;&#xa0;0.06&#xa0;ms (mean&#xa0;&#xb1;&#xa0;95% CI) change in QTc was detected at approximately 1.5&#xd7; the moxifloxacin plasma concentration that causes a 10&#xa0;ms QTc change in humans, based on a 0-24&#xa0;h super-interval. When simulating a drug without QT effects, mock, no effect on QTc was detected at up to 3&#xd7; the clinical concentration. Similarly, in canines, a 16.6&#xa0;&#xb1;&#xa0;0.1&#xa0;ms change was detected at 1.7&#xd7; critical clinical moxifloxacin concentration, and a 0.04&#xa0;&#xb1;&#xa0;0.1&#xa0;ms change was seen for mock. While simultaneous PK and QTc data points are preferred, practical constraints and the need for QTc averaging did not prevent concentration-QTc analyses. Utilizing a 0-24&#xa0;h super-interval method illustrates a simple and effective method to address cardiovascular questions when preclinical drug exposures exceed clinical concentrations.",
+  "abstract": "In preclinical cardiovascular safety pharmacology studies, statistical analysis of the rate corrected QT interval (QTc) is the focus for predicting QTc interval changes in the clinic. Modeling of a concentration/QTc relationship, common clinically, is limited due to minimal pharmacokinetic (PK) data in nonclinical testing. It is possible, however, to relate the average drug plasma concentration from sparse PK samples over specific times to the mean corrected QTc. We hypothesize that averaging drug plasma concentration and the QTc-rate relationship over time provides a simple, accurate concentration-QTc relationship bridging statistical and concentration/QTc modeling. Cardiovascular telemetry studies were conducted in non-human primates (NHP; n = 48) and canines (n = 8). Pharmacokinetic samples were collected on separate study days in both species. Average plasma concentrations for specific intervals (CAverage0-X) were calculated for moxifloxacin in canines and NHP using times corresponding to super-intervals for the QTc data statistical analysis. The QTc effect was calculated for each super-interval using a linear regression correction incorporating QT and HR data from the whole super-interval. The concentration QTc effects were then modeled. In NHP, a 10.9 \u00b1 0.06 ms (mean \u00b1 95% CI) change in QTc was detected at approximately 1.5\u00d7 the moxifloxacin plasma concentration that causes a 10 ms QTc change in humans, based on a 0-24 h super-interval. When simulating a drug without QT effects, mock, no effect on QTc was detected at up to 3\u00d7 the clinical concentration. Similarly, in canines, a 16.6 \u00b1 0.1 ms change was detected at 1.7\u00d7 critical clinical moxifloxacin concentration, and a 0.04 \u00b1 0.1 ms change was seen for mock. While simultaneous PK and QTc data points are preferred, practical constraints and the need for QTc averaging did not prevent concentration-QTc analyses. Utilizing a 0-24 h super-interval method illustrates a simple and effective method to address cardiovascular questions when preclinical drug exposures exceed clinical concentrations.",
   "abstract_sections": [
    [
     "INTRODUCTION",
@@ -5391,19 +5454,20 @@
    ],
    [
     "METHODS",
-    "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n&#xa0;=&#xa0;48) and canines (n&#xa0;=&#xa0;8). Pharmacokinetic samples were collected on separate study days in both species. Average plasma concentrations for specific intervals (CAverage0-X) were calculated for moxifloxacin in canines and NHP using times corresponding to super-intervals for the QTc data statistical analysis. The QTc effect was calculated for each super-interval using a linear regression correction incorporating QT and HR data from the whole super-interval. The concentration QTc effects were then modeled."
+    "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n = 48) and canines (n = 8). Pharmacokinetic samples were collected on separate study days in both species. Average plasma concentrations for specific intervals (CAverage0-X) were calculated for moxifloxacin in canines and NHP using times corresponding to super-intervals for the QTc data statistical analysis. The QTc effect was calculated for each super-interval using a linear regression correction incorporating QT and HR data from the whole super-interval. The concentration QTc effects were then modeled."
    ],
    [
     "RESULTS",
-    "In NHP, a 10.9&#xa0;&#xb1;&#xa0;0.06&#xa0;ms (mean&#xa0;&#xb1;&#xa0;95% CI) change in QTc was detected at approximately 1.5&#xd7; the moxifloxacin plasma concentration that causes a 10&#xa0;ms QTc change in humans, based on a 0-24&#xa0;h super-interval. When simulating a drug without QT effects, mock, no effect on QTc was detected at up to 3&#xd7; the clinical concentration. Similarly, in canines, a 16.6&#xa0;&#xb1;&#xa0;0.1&#xa0;ms change was detected at 1.7&#xd7; critical clinical moxifloxacin concentration, and a 0.04&#xa0;&#xb1;&#xa0;0.1&#xa0;ms change was seen for mock."
+    "In NHP, a 10.9 \u00b1 0.06 ms (mean \u00b1 95% CI) change in QTc was detected at approximately 1.5\u00d7 the moxifloxacin plasma concentration that causes a 10 ms QTc change in humans, based on a 0-24 h super-interval. When simulating a drug without QT effects, mock, no effect on QTc was detected at up to 3\u00d7 the clinical concentration. Similarly, in canines, a 16.6 \u00b1 0.1 ms change was detected at 1.7\u00d7 critical clinical moxifloxacin concentration, and a 0.04 \u00b1 0.1 ms change was seen for mock."
    ],
    [
     "CONCLUSIONS",
-    "While simultaneous PK and QTc data points are preferred, practical constraints and the need for QTc averaging did not prevent concentration-QTc analyses. Utilizing a 0-24&#xa0;h super-interval method illustrates a simple and effective method to address cardiovascular questions when preclinical drug exposures exceed clinical concentrations."
+    "While simultaneous PK and QTc data points are preferred, practical constraints and the need for QTc averaging did not prevent concentration-QTc analyses. Utilizing a 0-24 h super-interval method illustrates a simple and effective method to address cardiovascular questions when preclinical drug exposures exceed clinical concentrations."
    ]
   ],
   "title": "A simple accurate method for concentration-QTc analysis in preclinical animal models.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of pharmacological and toxicological methods",
   "authors_full": [
    "Kamila J Sadko",
@@ -5425,6 +5489,7 @@
   "abstract_sections": [],
   "title": "Nonclinical Human Cardiac New Approach Methodologies (NAMs) Predict Vanoxerine-Induced Proarrhythmic Potential.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of cardiovascular development and disease",
   "authors_full": [
    "M Iveth Garcia",
@@ -5501,6 +5566,7 @@
   "abstract_sections": [],
   "title": "An Analysis of the Relationship Between Preclinical and Clinical QT Interval-Related Data.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Toxicological sciences : an official journal of the Society of Toxicology",
   "authors_full": [
    "Christopher E Pollard",
@@ -5584,11 +5650,12 @@
   ],
   "doi": "10.1016/j.pharmthera.2010.08.008",
   "pmcid": null,
-  "abstract": "Block of delayed rectifier current (I(Kr), Kv11.1 encoding the hERG gene) is associated with delayed cardiac repolarization (QTc prolongation), a surrogate marker of proarrhythmia. Despite its recognized role in assessing QTc prolongation risk, a quantitative analysis of the utility and limitations of the hERG current assay has not been reported. To benchmark hERG assay performance, this retrospective study compared hERG block potency with drug-induced QTc prolongation assessed during rigorous thorough QT (TQT) clinical studies for 39 drugs from multiple classes. To place block in context, hERG safety margins (IC(50) values for block/mean maximal plasma drug concentrations during TQT studies) were compared to QTc prolongation (QTc increase&#x2265;5ms). Most (9/10) drugs eliciting essentially no hERG block at maximal concentrations demonstrate no QTc prolongation despite representing a wide hERG safety margin range. Based on receiver-operator characteristics, a hERG safety margin of 45 provided optimal overall performance linking safety margins to QTc prolongation (sensitivity (true positive rate)=0.64, specificity (true negative rate)=0.88); the area under the receiver-operator curve (0.72) is indicative of moderate overall concordance. Likelihood ratios calculated from multitier contingency tables suggest that QTc prolonging drugs are only 5-7 times as likely to demonstrate low safety margins (1-30 range) compared to drugs that do not prolong QTc. Paradoxically, higher safety margins demonstrate lesser confidence predicting prolongation. The overall limitations of hERG safety margins shown using these quantitative, evidence-based approaches highlight the need for additional preclinical assays and adaptive strategies throughout drug discovery to reliably mitigate QTc prolongation risk.",
+  "abstract": "Block of delayed rectifier current (I(Kr), Kv11.1 encoding the hERG gene) is associated with delayed cardiac repolarization (QTc prolongation), a surrogate marker of proarrhythmia. Despite its recognized role in assessing QTc prolongation risk, a quantitative analysis of the utility and limitations of the hERG current assay has not been reported. To benchmark hERG assay performance, this retrospective study compared hERG block potency with drug-induced QTc prolongation assessed during rigorous thorough QT (TQT) clinical studies for 39 drugs from multiple classes. To place block in context, hERG safety margins (IC(50) values for block/mean maximal plasma drug concentrations during TQT studies) were compared to QTc prolongation (QTc increase\u22655ms). Most (9/10) drugs eliciting essentially no hERG block at maximal concentrations demonstrate no QTc prolongation despite representing a wide hERG safety margin range. Based on receiver-operator characteristics, a hERG safety margin of 45 provided optimal overall performance linking safety margins to QTc prolongation (sensitivity (true positive rate)=0.64, specificity (true negative rate)=0.88); the area under the receiver-operator curve (0.72) is indicative of moderate overall concordance. Likelihood ratios calculated from multitier contingency tables suggest that QTc prolonging drugs are only 5-7 times as likely to demonstrate low safety margins (1-30 range) compared to drugs that do not prolong QTc. Paradoxically, higher safety margins demonstrate lesser confidence predicting prolongation. The overall limitations of hERG safety margins shown using these quantitative, evidence-based approaches highlight the need for additional preclinical assays and adaptive strategies throughout drug discovery to reliably mitigate QTc prolongation risk.",
   "abstract_sections": [],
   "title": "An evaluation of hERG current assay performance: Translating preclinical safety studies to clinical QT prolongation.",
   "is_book": false,
-  "journal_full": "Pharmacology &amp; therapeutics",
+  "other_languages": [],
+  "journal_full": "Pharmacology & therapeutics",
   "authors_full": [
    "Gary Gintant"
   ],
@@ -5643,6 +5710,7 @@
   "abstract_sections": [],
   "title": "Zebrafish: An emerging whole-organism screening tool in safety pharmacology.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Indian journal of pharmacology",
   "authors_full": [
    "Vandana S Nikam",
@@ -5692,10 +5760,11 @@
   ],
   "doi": "10.1016/j.vascn.2021.107055",
   "pmcid": null,
-  "abstract": "Requirements for safety pharmacology testing have been in place since the issue of initial regulatory guidance over 20&#xa0;years ago. An evaluation of such testing, supporting first clinical entry of 105 small molecule drug candidates over the last decade, showed that a \"core battery\" of in vitro electrophysiological (hERG), conscious non-rodent telemetry cardiovascular, rodent central nervous system (CNS) (modified Irwin's or functional observational battery [FOB] test) and respiratory function (plethysmography) studies was performed. Routine use of the latter 2 studies appears to have limited utility, with only 21% and 28% of studies, respectively, giving findings of which none were identified as of obvious concern to moving the affected drugs into the clinic. The use of a stand-alone hERG assay does not appear to be particular sensitive in predicting proarrythmic risk as a tool by itself. Telemetry study testing had utility especially for identifying effects on QTc interval (about 10% of studies), resulting on some occasions in a lower clinical starting dose and/or increased awareness for potential effects on the cardiovascular system in the Phase I study. Overall, this investigation provides information supporting an overhaul of the current \"box ticking\" core battery approach used for safety pharmacology testing. However, in order to achieve a more focused examination to investigate potential undesirable pharmacodynamic effects of a new candidate drug and also support 3Rs (Replacement, Reduction and Refinement) thinking in performing unnecessary studies, there will not only need to be a sea change by drug developers but also a change in current regulatory guidance.",
+  "abstract": "Requirements for safety pharmacology testing have been in place since the issue of initial regulatory guidance over 20 years ago. An evaluation of such testing, supporting first clinical entry of 105 small molecule drug candidates over the last decade, showed that a \"core battery\" of in vitro electrophysiological (hERG), conscious non-rodent telemetry cardiovascular, rodent central nervous system (CNS) (modified Irwin's or functional observational battery [FOB] test) and respiratory function (plethysmography) studies was performed. Routine use of the latter 2 studies appears to have limited utility, with only 21% and 28% of studies, respectively, giving findings of which none were identified as of obvious concern to moving the affected drugs into the clinic. The use of a stand-alone hERG assay does not appear to be particular sensitive in predicting proarrythmic risk as a tool by itself. Telemetry study testing had utility especially for identifying effects on QTc interval (about 10% of studies), resulting on some occasions in a lower clinical starting dose and/or increased awareness for potential effects on the cardiovascular system in the Phase I study. Overall, this investigation provides information supporting an overhaul of the current \"box ticking\" core battery approach used for safety pharmacology testing. However, in order to achieve a more focused examination to investigate potential undesirable pharmacodynamic effects of a new candidate drug and also support 3Rs (Replacement, Reduction and Refinement) thinking in performing unnecessary studies, there will not only need to be a sea change by drug developers but also a change in current regulatory guidance.",
   "abstract_sections": [],
   "title": "Core battery safety pharmacology testing - An assessment of its utility in early drug development.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of pharmacological and toxicological methods",
   "authors_full": [
    "Paul Baldrick"
@@ -5778,6 +5847,7 @@
   ],
   "title": "A Bayesian approach to toxicological testing.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of pharmacological and toxicological methods",
   "authors_full": [
    "James C Felli",
@@ -5886,10 +5956,11 @@
   ],
   "doi": "10.1093/toxsci/kfz035",
   "pmcid": null,
-  "abstract": "Cardiovascular (CV) safety-related attrition is an important contributor to the loss of promising drug candidates during development. CV safety pharmacology studies are conducted to identify these safety effects. Understanding translation of CV endpoints (specifically, heart rate [HR], and blood pressure [BP]) across preclinical animal models and to the clinic is critical in developing a robust CV derisking strategy. To this end, we investigated translation of HR and BP endpoints using data from 83 compounds that were tested in telemetry studies in rat and large animal (LA; dog or monkey) and 79 compounds that were tested in LA telemetry studies and human phase I clinical trials. Sensitivity, specificity as well as predictive values were calculated for rat to LA model comparison and for LA to human studies comparison. The rat CV model showed good concordance (sensitivity = 84% and specificity = 71%) for LA BP and HR changes. Similarly, LA CV measures of HR and BP showed good concordance (sensitivity = 78% and specificity = 79%) to clinical changes. The CV effects generally occurred within 0.3-3&#xd7; free plasma concentration across species. Directionality of BP and HR change was conserved between LA to humans. However, for rat to LA comparisons the directionality of change was opposite for 23%-26% compounds. In conclusion, these data establish the translation of HR and BP from preclinical to clinical studies and emphasize the importance of preclinical animal models in the examination of CV safety of drugs.",
+  "abstract": "Cardiovascular (CV) safety-related attrition is an important contributor to the loss of promising drug candidates during development. CV safety pharmacology studies are conducted to identify these safety effects. Understanding translation of CV endpoints (specifically, heart rate [HR], and blood pressure [BP]) across preclinical animal models and to the clinic is critical in developing a robust CV derisking strategy. To this end, we investigated translation of HR and BP endpoints using data from 83 compounds that were tested in telemetry studies in rat and large animal (LA; dog or monkey) and 79 compounds that were tested in LA telemetry studies and human phase I clinical trials. Sensitivity, specificity as well as predictive values were calculated for rat to LA model comparison and for LA to human studies comparison. The rat CV model showed good concordance (sensitivity = 84% and specificity = 71%) for LA BP and HR changes. Similarly, LA CV measures of HR and BP showed good concordance (sensitivity = 78% and specificity = 79%) to clinical changes. The CV effects generally occurred within 0.3-3\u00d7 free plasma concentration across species. Directionality of BP and HR change was conserved between LA to humans. However, for rat to LA comparisons the directionality of change was opposite for 23%-26% compounds. In conclusion, these data establish the translation of HR and BP from preclinical to clinical studies and emphasize the importance of preclinical animal models in the examination of CV safety of drugs.",
   "abstract_sections": [],
   "title": "Preclinical to Clinical Translation of Hemodynamic Effects in Cardiovascular Safety Pharmacology Studies.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Toxicological sciences : an official journal of the Society of Toxicology",
   "authors_full": [
    "Siddhartha Bhatt",
@@ -5965,6 +6036,7 @@
   "abstract_sections": [],
   "title": "A big data approach to the concordance of the toxicity of pharmaceuticals in animals and humans.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Regulatory toxicology and pharmacology : RTP",
   "authors_full": [
    "Matthew Clark",
@@ -6053,6 +6125,7 @@
   ],
   "title": "Comparison of treatment effects between animal experiments and clinical trials: systematic review.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "BMJ (Clinical research ed.)",
   "authors_full": [
    "Pablo Perel",
@@ -6111,6 +6184,7 @@
   "abstract_sections": [],
   "title": "Why animal studies are often poor predictors of human reactions to exposure.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of the Royal Society of Medicine",
   "authors_full": [
    "Michael B Bracken"
@@ -6162,6 +6236,7 @@
   "abstract_sections": [],
   "title": "Translation of research evidence from animals to humans.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "JAMA",
   "authors_full": [
    "Daniel G Hackam",
@@ -6182,6 +6257,7 @@
   "abstract_sections": [],
   "title": "A Systematic Review of the Efficacy of Preclinical Models of Lung Cancer Drugs.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Frontiers in oncology",
   "authors_full": [
    "Elizabeth Pan",
@@ -6238,6 +6314,7 @@
   "abstract_sections": [],
   "title": "Predicting human drug toxicity and safety via animal tests: can any one species predict drug toxicity in any other, and do monkeys help?",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Alternatives to laboratory animals : ATLA",
   "authors_full": [
    "Jarrod Bailey",
@@ -6318,6 +6395,7 @@
   "abstract_sections": [],
   "title": "Human 3D Gastrointestinal Microtissue Barrier Function As a Predictor of Drug-Induced Diarrhea.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Toxicological sciences : an official journal of the Society of Toxicology",
   "authors_full": [
    "Matthew F Peters",
@@ -6386,6 +6464,7 @@
   "abstract_sections": [],
   "title": "Evaluating mesenchymal stem cell therapy for sepsis with preclinical meta-analyses prior to initiating a first-in-human trial.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "eLife",
   "authors_full": [
    "Manoj M Lalu",
@@ -6431,7 +6510,7 @@
     "term": "Databases, Factual",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -6501,7 +6580,7 @@
   ],
   "doi": "10.1186/1471-2202-14-37",
   "pmcid": "PMC3661356",
-  "abstract": "Animals from the same litter are often more alike compared with animals from different litters. This litter-to-litter variation, or \"litter effects\", can influence the results in addition to the experimental factors of interest. Furthermore, sometimes an experimental treatment can only be applied to whole litters rather than to individual offspring. An example is the valproic acid (VPA) model of autism, where VPA is administered to pregnant females thereby inducing the disease phenotype in the offspring. With this type of experiment the sample size is the number of litters and not the total number of offspring. If such experiments are not appropriately designed and analysed, the results can be severely biased as well as extremely underpowered. A review of the VPA literature showed that only 9% (3/34) of studies correctly determined that the experimental unit (n) was the litter and therefore made valid statistical inferences. In addition, litter effects accounted for up to 61% (p&lt;0.001) of the variation in behavioural outcomes, which was larger than the treatment effects. In addition, few studies reported using randomisation (12%) or blinding (18%), and none indicated that a sample size calculation or power analysis had been conducted. Litter effects are common, large, and ignoring them can make replication of findings difficult and can contribute to the low rate of translating preclinical in vivo studies into successful therapies. Only a minority of studies reported using rigorous experimental methods, which is consistent with much of the preclinical in vivo literature.",
+  "abstract": "Animals from the same litter are often more alike compared with animals from different litters. This litter-to-litter variation, or \"litter effects\", can influence the results in addition to the experimental factors of interest. Furthermore, sometimes an experimental treatment can only be applied to whole litters rather than to individual offspring. An example is the valproic acid (VPA) model of autism, where VPA is administered to pregnant females thereby inducing the disease phenotype in the offspring. With this type of experiment the sample size is the number of litters and not the total number of offspring. If such experiments are not appropriately designed and analysed, the results can be severely biased as well as extremely underpowered. A review of the VPA literature showed that only 9% (3/34) of studies correctly determined that the experimental unit (n) was the litter and therefore made valid statistical inferences. In addition, litter effects accounted for up to 61% (p<0.001) of the variation in behavioural outcomes, which was larger than the treatment effects. In addition, few studies reported using randomisation (12%) or blinding (18%), and none indicated that a sample size calculation or power analysis had been conducted. Litter effects are common, large, and ignoring them can make replication of findings difficult and can contribute to the low rate of translating preclinical in vivo studies into successful therapies. Only a minority of studies reported using rigorous experimental methods, which is consistent with much of the preclinical in vivo literature.",
   "abstract_sections": [
    [
     "BACKGROUND",
@@ -6509,7 +6588,7 @@
    ],
    [
     "RESULTS",
-    "A review of the VPA literature showed that only 9% (3/34) of studies correctly determined that the experimental unit (n) was the litter and therefore made valid statistical inferences. In addition, litter effects accounted for up to 61% (p&lt;0.001) of the variation in behavioural outcomes, which was larger than the treatment effects. In addition, few studies reported using randomisation (12%) or blinding (18%), and none indicated that a sample size calculation or power analysis had been conducted."
+    "A review of the VPA literature showed that only 9% (3/34) of studies correctly determined that the experimental unit (n) was the litter and therefore made valid statistical inferences. In addition, litter effects accounted for up to 61% (p<0.001) of the variation in behavioural outcomes, which was larger than the treatment effects. In addition, few studies reported using randomisation (12%) or blinding (18%), and none indicated that a sample size calculation or power analysis had been conducted."
    ],
    [
     "CONCLUSIONS",
@@ -6518,6 +6597,7 @@
   ],
   "title": "Improving basic and translational science by accounting for litter-to-litter variation in animal models.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "BMC neuroscience",
   "authors_full": [
    "Stanley E Lazic",
@@ -6622,7 +6702,7 @@
   ],
   "doi": "10.1016/s0008-6363(02)00846-5",
   "pmcid": null,
-  "abstract": "To attempt to determine the relative value of preclinical cardiac electrophysiology data (in vitro and in vivo) for predicting risk of torsade de pointes (TdP) in clinical use. Published data on hERG (or I(Kr)) activity, cardiac action potential duration (at 90% repolarisation; APD(90)), and QT prolongation in dogs were compared against QT effects and reports of TdP in humans for 100 drugs. These data were set against the free plasma concentrations attained during clinical use (effective therapeutic plasma concentrations; ETPC(unbound)). The drugs were divided into five categories: (1) Class Ia and III antiarrhythmics; (2) Withdrawn from market due to TdP; (3) Measurable incidence/numerous reports of TdP in humans; (4) Isolated reports of TdP in humans; (5) No reports of TdP in humans. Data from hERG (or I(Kr)) assays in addition to ETPC(unbound) data were available for 52 drugs. For Category 1 drugs, data for hERG/I(Kr) IC(50), APD(90), QTc in animals and QTc in humans were generally close to or superimposed on the ETPC(unbound) values. This relationship was uncoupled in the other categories, with more complex relationships between the data. In Category 1 (except amiodarone), the ratios between hERG/I(Kr) IC(50) and ETPC(unbound) (max) ranged from 0.1- to 31-fold. Similar ranges were obtained for drugs in Category 2 (0.31- to 13-fold) and Category 3 (0.03- to 35-fold). A large spread was found for Category 4 drugs (0.13- to 35700-fold); this category embraced an assortment of mechanisms ranging from drugs which may well be affecting I(Kr) currents in clinical use (e.g. sparfloxacin) to others such as nifedipine (35700-fold) where channel block is not involved. Finally, for the majority of Category 5 drugs there was a &gt;30-fold separation between hERG/I(Kr) activity and ETPC(unbound) values, with the notable exception of verapamil (1.7-fold), which is free from QT prolongation in man; this is probably explained by its multiple interactions with cardiac ion channels. The dataset confirms the widely-held belief that most drugs associated with TdP in humans are also associated with hERG K(+) channel block at concentrations close to or superimposed upon the free plasma concentrations found in clinical use. A 30-fold margin between C(max) and hERG IC(50) may suffice for drugs currently undergoing clinical evaluation, but for future drug discovery programmes, pharmaceutical companies should consider increasing this margin, particularly for drugs aimed at non-debilitating diseases. However, interactions with multiple cardiac ion channels can either mitigate or exacerbate the prolongation of APD and QT that would ensue from block of I(Kr) currents alone, and delay of repolarisation per se is not necessarily torsadogenic. Clearly, an integrated assessment of in vitro and in vivo data is required in order to predict the torsadogenic risk of a new candidate drug in humans.",
+  "abstract": "To attempt to determine the relative value of preclinical cardiac electrophysiology data (in vitro and in vivo) for predicting risk of torsade de pointes (TdP) in clinical use. Published data on hERG (or I(Kr)) activity, cardiac action potential duration (at 90% repolarisation; APD(90)), and QT prolongation in dogs were compared against QT effects and reports of TdP in humans for 100 drugs. These data were set against the free plasma concentrations attained during clinical use (effective therapeutic plasma concentrations; ETPC(unbound)). The drugs were divided into five categories: (1) Class Ia and III antiarrhythmics; (2) Withdrawn from market due to TdP; (3) Measurable incidence/numerous reports of TdP in humans; (4) Isolated reports of TdP in humans; (5) No reports of TdP in humans. Data from hERG (or I(Kr)) assays in addition to ETPC(unbound) data were available for 52 drugs. For Category 1 drugs, data for hERG/I(Kr) IC(50), APD(90), QTc in animals and QTc in humans were generally close to or superimposed on the ETPC(unbound) values. This relationship was uncoupled in the other categories, with more complex relationships between the data. In Category 1 (except amiodarone), the ratios between hERG/I(Kr) IC(50) and ETPC(unbound) (max) ranged from 0.1- to 31-fold. Similar ranges were obtained for drugs in Category 2 (0.31- to 13-fold) and Category 3 (0.03- to 35-fold). A large spread was found for Category 4 drugs (0.13- to 35700-fold); this category embraced an assortment of mechanisms ranging from drugs which may well be affecting I(Kr) currents in clinical use (e.g. sparfloxacin) to others such as nifedipine (35700-fold) where channel block is not involved. Finally, for the majority of Category 5 drugs there was a >30-fold separation between hERG/I(Kr) activity and ETPC(unbound) values, with the notable exception of verapamil (1.7-fold), which is free from QT prolongation in man; this is probably explained by its multiple interactions with cardiac ion channels. The dataset confirms the widely-held belief that most drugs associated with TdP in humans are also associated with hERG K(+) channel block at concentrations close to or superimposed upon the free plasma concentrations found in clinical use. A 30-fold margin between C(max) and hERG IC(50) may suffice for drugs currently undergoing clinical evaluation, but for future drug discovery programmes, pharmaceutical companies should consider increasing this margin, particularly for drugs aimed at non-debilitating diseases. However, interactions with multiple cardiac ion channels can either mitigate or exacerbate the prolongation of APD and QT that would ensue from block of I(Kr) currents alone, and delay of repolarisation per se is not necessarily torsadogenic. Clearly, an integrated assessment of in vitro and in vivo data is required in order to predict the torsadogenic risk of a new candidate drug in humans.",
   "abstract_sections": [
    [
     "OBJECTIVE",
@@ -6634,7 +6714,7 @@
    ],
    [
     "RESULTS",
-    "Data from hERG (or I(Kr)) assays in addition to ETPC(unbound) data were available for 52 drugs. For Category 1 drugs, data for hERG/I(Kr) IC(50), APD(90), QTc in animals and QTc in humans were generally close to or superimposed on the ETPC(unbound) values. This relationship was uncoupled in the other categories, with more complex relationships between the data. In Category 1 (except amiodarone), the ratios between hERG/I(Kr) IC(50) and ETPC(unbound) (max) ranged from 0.1- to 31-fold. Similar ranges were obtained for drugs in Category 2 (0.31- to 13-fold) and Category 3 (0.03- to 35-fold). A large spread was found for Category 4 drugs (0.13- to 35700-fold); this category embraced an assortment of mechanisms ranging from drugs which may well be affecting I(Kr) currents in clinical use (e.g. sparfloxacin) to others such as nifedipine (35700-fold) where channel block is not involved. Finally, for the majority of Category 5 drugs there was a &gt;30-fold separation between hERG/I(Kr) activity and ETPC(unbound) values, with the notable exception of verapamil (1.7-fold), which is free from QT prolongation in man; this is probably explained by its multiple interactions with cardiac ion channels."
+    "Data from hERG (or I(Kr)) assays in addition to ETPC(unbound) data were available for 52 drugs. For Category 1 drugs, data for hERG/I(Kr) IC(50), APD(90), QTc in animals and QTc in humans were generally close to or superimposed on the ETPC(unbound) values. This relationship was uncoupled in the other categories, with more complex relationships between the data. In Category 1 (except amiodarone), the ratios between hERG/I(Kr) IC(50) and ETPC(unbound) (max) ranged from 0.1- to 31-fold. Similar ranges were obtained for drugs in Category 2 (0.31- to 13-fold) and Category 3 (0.03- to 35-fold). A large spread was found for Category 4 drugs (0.13- to 35700-fold); this category embraced an assortment of mechanisms ranging from drugs which may well be affecting I(Kr) currents in clinical use (e.g. sparfloxacin) to others such as nifedipine (35700-fold) where channel block is not involved. Finally, for the majority of Category 5 drugs there was a >30-fold separation between hERG/I(Kr) activity and ETPC(unbound) values, with the notable exception of verapamil (1.7-fold), which is free from QT prolongation in man; this is probably explained by its multiple interactions with cardiac ion channels."
    ],
    [
     "CONCLUSIONS",
@@ -6643,6 +6723,7 @@
   ],
   "title": "Relationships between preclinical cardiac electrophysiology, clinical QT interval prolongation and torsade de pointes for a broad range of drugs: evidence for a provisional safety margin in drug development.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Cardiovascular research",
   "authors_full": [
    "W S Redfern",
@@ -6706,7 +6787,7 @@
     "term": "PubMed",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -6735,7 +6816,7 @@
   ],
   "doi": "10.1002/ana.20741",
   "pmcid": null,
-  "abstract": "Preclinical evaluation of neuroprotectants fostered high expectations of clinical efficacy. When not matched, the question arises whether experiments are poor indicators of clinical outcome or whether the best drugs were not taken forward to clinical trial. Therefore, we endeavored to contrast experimental efficacy and scope of testing of drugs used clinically and those tested only experimentally. We identified neuroprotectants and reports of experimental efficacy via a systematic search. Controlled in vivo and in vitro experiments using functional or histological end points were selected for analysis. Relationships between outcome, drug mechanism, scope of testing, and clinical trial status were assessed statistically. There was no evidence that drugs used clinically (114 drugs) were more effective experimentally than those tested only in animal models (912 drugs), for example, improvement in focal models averaged 31.3 +/- 16.7% versus 24.4 +/- 32.9%, p &gt; 0.05, respectively. Scope of testing using Stroke Therapy Academic Industry Roundtable (STAIR) criteria was highly variable, and no relationship was found between mechanism and efficacy. The results question whether the most efficacious drugs are being selected for stroke clinical trials. This may partially explain the slow progress in developing treatments. Greater rigor in the conduct, reporting, and analysis of animal data will improve the transition of scientific advances from bench to bedside.",
+  "abstract": "Preclinical evaluation of neuroprotectants fostered high expectations of clinical efficacy. When not matched, the question arises whether experiments are poor indicators of clinical outcome or whether the best drugs were not taken forward to clinical trial. Therefore, we endeavored to contrast experimental efficacy and scope of testing of drugs used clinically and those tested only experimentally. We identified neuroprotectants and reports of experimental efficacy via a systematic search. Controlled in vivo and in vitro experiments using functional or histological end points were selected for analysis. Relationships between outcome, drug mechanism, scope of testing, and clinical trial status were assessed statistically. There was no evidence that drugs used clinically (114 drugs) were more effective experimentally than those tested only in animal models (912 drugs), for example, improvement in focal models averaged 31.3 +/- 16.7% versus 24.4 +/- 32.9%, p > 0.05, respectively. Scope of testing using Stroke Therapy Academic Industry Roundtable (STAIR) criteria was highly variable, and no relationship was found between mechanism and efficacy. The results question whether the most efficacious drugs are being selected for stroke clinical trials. This may partially explain the slow progress in developing treatments. Greater rigor in the conduct, reporting, and analysis of animal data will improve the transition of scientific advances from bench to bedside.",
   "abstract_sections": [
    [
     "OBJECTIVE",
@@ -6747,7 +6828,7 @@
    ],
    [
     "RESULTS",
-    "There was no evidence that drugs used clinically (114 drugs) were more effective experimentally than those tested only in animal models (912 drugs), for example, improvement in focal models averaged 31.3 +/- 16.7% versus 24.4 +/- 32.9%, p &gt; 0.05, respectively. Scope of testing using Stroke Therapy Academic Industry Roundtable (STAIR) criteria was highly variable, and no relationship was found between mechanism and efficacy."
+    "There was no evidence that drugs used clinically (114 drugs) were more effective experimentally than those tested only in animal models (912 drugs), for example, improvement in focal models averaged 31.3 +/- 16.7% versus 24.4 +/- 32.9%, p > 0.05, respectively. Scope of testing using Stroke Therapy Academic Industry Roundtable (STAIR) criteria was highly variable, and no relationship was found between mechanism and efficacy."
    ],
    [
     "INTERPRETATION",
@@ -6756,6 +6837,7 @@
   ],
   "title": "1,026 experimental treatments in acute stroke.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Annals of neurology",
   "authors_full": [
    "Victoria E O'Collins",
@@ -6775,7 +6857,7 @@
   ],
   "doi": "10.1038/s43856-024-00625-5",
   "pmcid": "PMC11461613",
-  "abstract": "Despite the growing interest in the use of human genomic data for drug target identification and validation, the extent to which the spectrum of human disease has been addressed by genome-wide association studies (GWAS), or by drug development, and the degree to which these efforts overlap remain unclear. In this study we harmonize and integrate different data sources to create a sample space of all the human drug targets and diseases and identify points of convergence or divergence of GWAS and drug development efforts. We show that only 612 of 11,158 diseases listed in Human Disease Ontology have an&#xa0;approved drug treatment in at least one region of the world. Of the 1414 diseases that are the subject of preclinical or clinical phase drug development, only 666 have been investigated in GWAS. Conversely, of the 1914 human diseases that have been the subject of GWAS, 1121 have yet to be investigated in drug development. We produce target-disease indication lists to help the pharmaceutical industry to prioritize future drug development efforts based on genetic evidence, academia to prioritize future GWAS for diseases without effective treatments, and both sectors to harness genetic evidence to expand the indications for licensed drugs or to identify repurposing opportunities for clinical candidates that failed in their originally intended indication. The pharma industry has shown growing interest in the use of human genomic data to support drug development and reduce the risk of clinical-stage failure. We investigate the extent to which human diseases have been the subject of genetic studies, of pharmaceutical research and development, or both. We show that only a small proportion of all human diseases have an approved drug treatment and that less than half of all the diseases that are the subject of preclinical or clinical phase drug development have been investigated in genetic studies. In addition, approximately two-thirds of the diseases covered in genetic studies have yet to be investigated in drug development. These findings could help prioritize drug development efforts or genetic studies for diseases without effective treatments.",
+  "abstract": "Despite the growing interest in the use of human genomic data for drug target identification and validation, the extent to which the spectrum of human disease has been addressed by genome-wide association studies (GWAS), or by drug development, and the degree to which these efforts overlap remain unclear. In this study we harmonize and integrate different data sources to create a sample space of all the human drug targets and diseases and identify points of convergence or divergence of GWAS and drug development efforts. We show that only 612 of 11,158 diseases listed in Human Disease Ontology have an approved drug treatment in at least one region of the world. Of the 1414 diseases that are the subject of preclinical or clinical phase drug development, only 666 have been investigated in GWAS. Conversely, of the 1914 human diseases that have been the subject of GWAS, 1121 have yet to be investigated in drug development. We produce target-disease indication lists to help the pharmaceutical industry to prioritize future drug development efforts based on genetic evidence, academia to prioritize future GWAS for diseases without effective treatments, and both sectors to harness genetic evidence to expand the indications for licensed drugs or to identify repurposing opportunities for clinical candidates that failed in their originally intended indication.",
   "abstract_sections": [
    [
     "BACKGROUND",
@@ -6787,7 +6869,7 @@
    ],
    [
     "RESULTS",
-    "We show that only 612 of 11,158 diseases listed in Human Disease Ontology have an&#xa0;approved drug treatment in at least one region of the world. Of the 1414 diseases that are the subject of preclinical or clinical phase drug development, only 666 have been investigated in GWAS. Conversely, of the 1914 human diseases that have been the subject of GWAS, 1121 have yet to be investigated in drug development."
+    "We show that only 612 of 11,158 diseases listed in Human Disease Ontology have an approved drug treatment in at least one region of the world. Of the 1414 diseases that are the subject of preclinical or clinical phase drug development, only 666 have been investigated in GWAS. Conversely, of the 1914 human diseases that have been the subject of GWAS, 1121 have yet to be investigated in drug development."
    ],
    [
     "CONCLUSIONS",
@@ -6796,9 +6878,12 @@
   ],
   "title": "Disease coverage of human genome-wide association studies and pharmaceutical research and development.",
   "is_book": false,
+  "other_languages": [
+   "eng"
+  ],
   "journal_full": "Communications medicine",
   "authors_full": [
-   "Mar&#xed;a Gordillo-Mara&#xf1;&#xf3;n",
+   "Mar\u00eda Gordillo-Mara\u00f1\u00f3n",
    "Amand F Schmidt",
    "Alasdair Warwick",
    "Chris Tomlinson",
@@ -6859,6 +6944,7 @@
   "abstract_sections": [],
   "title": "The role of systematic reviews in identifying the limitations of preclinical animal research, 2000-2022: part 2.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of the Royal Society of Medicine",
   "authors_full": [
    "Merel Ritskes-Hoitinga",
@@ -6889,6 +6975,7 @@
   "abstract_sections": [],
   "title": "Adding robustness to rigor and reproducibility for the three Rs of improving translational medical research.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "The Journal of clinical investigation",
   "authors_full": [
    "Michael P McGill",
@@ -6927,7 +7014,7 @@
     "term": "Hemorrhage",
     "major": false,
     "qualifiers": [
-     "prevention &amp; control"
+     "prevention & control"
     ]
    },
    {
@@ -6977,6 +7064,7 @@
   ],
   "title": "Retrospective harm benefit analysis of pre-clinical animal research for six treatment interventions.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "PloS one",
   "authors_full": [
    "Pandora Pound",
@@ -7006,7 +7094,7 @@
     "term": "Drug-Related Side Effects and Adverse Reactions",
     "major": false,
     "qualifiers": [
-     "prevention &amp; control"
+     "prevention & control"
     ]
    },
    {
@@ -7026,7 +7114,8 @@
   "abstract_sections": [],
   "title": "Preclinical side effect prediction through pathway engineering of protein interaction network models.",
   "is_book": false,
-  "journal_full": "CPT: pharmacometrics &amp; systems pharmacology",
+  "other_languages": [],
+  "journal_full": "CPT: pharmacometrics & systems pharmacology",
   "authors_full": [
    "Mohammadali Alidoost",
    "Jennifer L Wilson"
@@ -7148,6 +7237,7 @@
   ],
   "title": "Recent efforts to elucidate the scientific validity of animal-based drug tests by the pharmaceutical industry, pro-testing lobby groups, and animal welfare organisations.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "BMC medical ethics",
   "authors_full": [
    "Jarrod Bailey",
@@ -7213,6 +7303,7 @@
   "abstract_sections": [],
   "title": "Medicine. Life cycle of translational research for medical interventions.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Science (New York, N.Y.)",
   "authors_full": [
    "Despina G Contopoulos-Ioannidis",
@@ -7280,6 +7371,7 @@
   "abstract_sections": [],
   "title": "Inflammatory findings on species extrapolations: humans are definitely no 70-kg mice.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Archives of toxicology",
   "authors_full": [
    "Marcel Leist",
@@ -7345,6 +7437,7 @@
   "abstract_sections": [],
   "title": "Connecting Rodent and Human Pharmacokinetic Models for the Design and Translation of Glucose-Responsive Insulin.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Diabetes",
   "authors_full": [
    "Jing Fan Yang",
@@ -7372,6 +7465,7 @@
   "abstract_sections": [],
   "title": "Human Plasma-Derived 3D Cultures Model Breast Cancer Treatment Responses and Predict Clinically Effective Drug Treatment Concentrations.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Cancers",
   "authors_full": [
    "Kristin Calar",
@@ -7435,6 +7529,7 @@
   "abstract_sections": [],
   "title": "Transcriptomic congruence analysis for evaluating model organisms.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Proceedings of the National Academy of Sciences of the United States of America",
   "authors_full": [
    "Wei Zong",
@@ -7536,6 +7631,7 @@
   "abstract_sections": [],
   "title": "Of Mice and Men: Comparative Analysis of Neuro-Inflammatory Mechanisms in Human and Mouse Using Cause-and-Effect Models.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Journal of Alzheimer's disease : JAD",
   "authors_full": [
    "Alpha Tom Kodamullil",
@@ -7629,6 +7725,7 @@
   "abstract_sections": [],
   "title": "A meta-analysis of threats to valid clinical inference in preclinical research of sunitinib.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "eLife",
   "authors_full": [
    "Valerie C Henderson",
@@ -7660,7 +7757,7 @@
     "term": "Gene Expression Profiling",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -7677,7 +7774,7 @@
     "term": "Microarray Analysis",
     "major": false,
     "qualifiers": [
-     "statistics &amp; numerical data"
+     "statistics & numerical data"
     ]
    },
    {
@@ -7721,6 +7818,7 @@
   ],
   "title": "Concordance analysis of microarray studies identifies representative gene expression changes in Parkinson's disease: a comparison of 33 human and animal studies.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "BMC neurology",
   "authors_full": [
    "Erin Oerton",
@@ -7736,10 +7834,11 @@
   ],
   "doi": "10.14814/phy2.12293",
   "pmcid": "PMC4393201",
-  "abstract": "Animal models are widely used in biology and the findings of animal research are traditionally projected to humans. However, recent publications have raised concerns with regard to what extent animals and humans respond similar to physiological stimuli. Original data on direct in vivo comparison between animals and humans are scarce and no study has addressed this issue after exercise. We aimed to compare side by side in the same experimental setup rat and human responses to an acute exercise bout of matched intensity and duration. Rats and humans ran on a treadmill at 86% of maximal velocity until exhaustion. Pre and post exercise we measured 30 blood chemistry parameters, which evaluate iron status, lipid profile, glucose regulation, protein metabolism, liver, and renal function. ANOVA indicated that almost all biochemical parameters followed a similar alteration pattern post exercise in rats and humans. In fact, there were only 2/30 significant species &#xd7; exercise interactions (in testosterone and globulins), indicating different responses to exercise between rats and humans. On the contrary, the main effect of exercise was significant in 15/30 parameters and marginally nonsignificant in other two parameters (copper, P = 0.060 and apolipoprotein B, P = 0.058). Our major finding is that the rat adequately mimics human responses to exercise in those basic blood biochemical parameters reported here. The physiological resemblance of rat and human blood responses after exercise to exhaustion on a treadmill indicates that the use of blood chemistry in rats for exercise physiology research is justified.",
+  "abstract": "Animal models are widely used in biology and the findings of animal research are traditionally projected to humans. However, recent publications have raised concerns with regard to what extent animals and humans respond similar to physiological stimuli. Original data on direct in vivo comparison between animals and humans are scarce and no study has addressed this issue after exercise. We aimed to compare side by side in the same experimental setup rat and human responses to an acute exercise bout of matched intensity and duration. Rats and humans ran on a treadmill at 86% of maximal velocity until exhaustion. Pre and post exercise we measured 30 blood chemistry parameters, which evaluate iron status, lipid profile, glucose regulation, protein metabolism, liver, and renal function. ANOVA indicated that almost all biochemical parameters followed a similar alteration pattern post exercise in rats and humans. In fact, there were only 2/30 significant species \u00d7 exercise interactions (in testosterone and globulins), indicating different responses to exercise between rats and humans. On the contrary, the main effect of exercise was significant in 15/30 parameters and marginally nonsignificant in other two parameters (copper, P = 0.060 and apolipoprotein B, P = 0.058). Our major finding is that the rat adequately mimics human responses to exercise in those basic blood biochemical parameters reported here. The physiological resemblance of rat and human blood responses after exercise to exhaustion on a treadmill indicates that the use of blood chemistry in rats for exercise physiology research is justified.",
   "abstract_sections": [],
   "title": "The rat adequately reflects human responses to exercise in blood biochemical profile: a comparative study.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Physiological reports",
   "authors_full": [
    "Georgios Goutianos",
@@ -7792,6 +7891,7 @@
   "abstract_sections": [],
   "title": "Are animal models as good as we think?",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Theriogenology",
   "authors_full": [
    "R J Wall",
@@ -7850,9 +7950,10 @@
   "abstract_sections": [],
   "title": "Can animal data predict human outcome? Problems and pitfalls of translational animal research.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "European journal of nuclear medicine and molecular imaging",
   "authors_full": [
-   "Marianne I Marti&#x107;-Kehl",
+   "Marianne I Marti\u0107-Kehl",
    "Roger Schibli",
    "P August Schubiger"
   ],
@@ -7875,7 +7976,7 @@
     "term": "Ascorbic Acid",
     "major": false,
     "qualifiers": [
-     "administration &amp; dosage",
+     "administration & dosage",
      "pharmacology",
      "therapeutic use"
     ]
@@ -7904,7 +8005,7 @@
     "term": "Inflammation",
     "major": false,
     "qualifiers": [
-     "prevention &amp; control"
+     "prevention & control"
     ]
    },
    {
@@ -7948,7 +8049,7 @@
     "term": "Vitamins",
     "major": false,
     "qualifiers": [
-     "administration &amp; dosage",
+     "administration & dosage",
      "pharmacology",
      "therapeutic use"
     ]
@@ -7959,7 +8060,7 @@
   ],
   "doi": "10.1007/s00421-016-3336-8",
   "pmcid": null,
-  "abstract": "The purpose of the present study was to directly compare oxidative stress and inflammation responses between rats and humans. We contrasted rat and human oxidative stress and inflammatory responses to exercise (pro-oxidant stimulus) and/or vitamin C (anti-oxidant stimulus) administration. Vitamin C was administered orally in both species (16 mg kg(-1) of body weight). Twelve redox biomarkers and seven inflammatory biomarkers were determined in plasma and erythrocytes pre- and post-exercise or pre- and post-exercise combined with vitamin C administration. Exercise increased oxidative stress and induced an inflammatory state in rats and humans. There were only 1/19 significant species &#xd7; exercise interactions (catalase), indicating similar responses to exercise between rats and humans in redox and inflammatory biomarkers. Vitamin C decreased oxidative stress and increased antioxidant capacity only in humans and did not affect the redox state of rats. In contrast, vitamin C induced an anti-inflammatory state only in rats and did not affect the inflammatory state of humans. There were 10/19 significant species &#xd7; vitamin C interactions, indicating that rats poorly mimic human oxidative stress and inflammatory responses to vitamin C administration. Exercise after acute vitamin C administration altered redox state only in humans and did not affect the redox state of rats. On the contrary, inflammation biomarkers changed similarly after exercise combined with vitamin C in both rats and humans. The rat adequately mimics human responses to exercise in basic blood redox/inflammatory profile, yet this is not the case after exercise combined with vitamin C administration.",
+  "abstract": "The purpose of the present study was to directly compare oxidative stress and inflammation responses between rats and humans. We contrasted rat and human oxidative stress and inflammatory responses to exercise (pro-oxidant stimulus) and/or vitamin C (anti-oxidant stimulus) administration. Vitamin C was administered orally in both species (16 mg kg(-1) of body weight). Twelve redox biomarkers and seven inflammatory biomarkers were determined in plasma and erythrocytes pre- and post-exercise or pre- and post-exercise combined with vitamin C administration. Exercise increased oxidative stress and induced an inflammatory state in rats and humans. There were only 1/19 significant species \u00d7 exercise interactions (catalase), indicating similar responses to exercise between rats and humans in redox and inflammatory biomarkers. Vitamin C decreased oxidative stress and increased antioxidant capacity only in humans and did not affect the redox state of rats. In contrast, vitamin C induced an anti-inflammatory state only in rats and did not affect the inflammatory state of humans. There were 10/19 significant species \u00d7 vitamin C interactions, indicating that rats poorly mimic human oxidative stress and inflammatory responses to vitamin C administration. Exercise after acute vitamin C administration altered redox state only in humans and did not affect the redox state of rats. On the contrary, inflammation biomarkers changed similarly after exercise combined with vitamin C in both rats and humans. The rat adequately mimics human responses to exercise in basic blood redox/inflammatory profile, yet this is not the case after exercise combined with vitamin C administration.",
   "abstract_sections": [
    [
     "PURPOSE",
@@ -7971,7 +8072,7 @@
    ],
    [
     "RESULTS",
-    "Exercise increased oxidative stress and induced an inflammatory state in rats and humans. There were only 1/19 significant species &#xd7; exercise interactions (catalase), indicating similar responses to exercise between rats and humans in redox and inflammatory biomarkers. Vitamin C decreased oxidative stress and increased antioxidant capacity only in humans and did not affect the redox state of rats. In contrast, vitamin C induced an anti-inflammatory state only in rats and did not affect the inflammatory state of humans. There were 10/19 significant species &#xd7; vitamin C interactions, indicating that rats poorly mimic human oxidative stress and inflammatory responses to vitamin C administration. Exercise after acute vitamin C administration altered redox state only in humans and did not affect the redox state of rats. On the contrary, inflammation biomarkers changed similarly after exercise combined with vitamin C in both rats and humans."
+    "Exercise increased oxidative stress and induced an inflammatory state in rats and humans. There were only 1/19 significant species \u00d7 exercise interactions (catalase), indicating similar responses to exercise between rats and humans in redox and inflammatory biomarkers. Vitamin C decreased oxidative stress and increased antioxidant capacity only in humans and did not affect the redox state of rats. In contrast, vitamin C induced an anti-inflammatory state only in rats and did not affect the inflammatory state of humans. There were 10/19 significant species \u00d7 vitamin C interactions, indicating that rats poorly mimic human oxidative stress and inflammatory responses to vitamin C administration. Exercise after acute vitamin C administration altered redox state only in humans and did not affect the redox state of rats. On the contrary, inflammation biomarkers changed similarly after exercise combined with vitamin C in both rats and humans."
    ],
    [
     "CONCLUSIONS",
@@ -7980,6 +8081,7 @@
   ],
   "title": "The rat closely mimics oxidative stress and inflammation in humans after exercise but not after exercise combined with vitamin C administration.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "European journal of applied physiology",
   "authors_full": [
    "Aristidis S Veskoukis",
@@ -8036,11 +8138,12 @@
   "abstract_sections": [],
   "title": "Translatability of preclinical to early clinical tolerable and pharmacologically active dose ranges for central nervous system active drugs.",
   "is_book": false,
+  "other_languages": [],
   "journal_full": "Translational psychiatry",
   "authors_full": [
    "Guilherme S Ferreira",
    "Francis M Dijkstra",
-   "D&#xe9;sir&#xe9;e H Veening-Griffioen",
+   "D\u00e9sir\u00e9e H Veening-Griffioen",
    "Wouter P C Boon",
    "Huub Schellekens",
    "Ellen H M Moors",
@@ -8062,10 +8165,11 @@
   "abstract_sections": [],
   "title": "Comparative Oncology",
   "is_book": true,
+  "other_languages": [],
   "journal_full": "The Publishing House of the Romanian Academy",
   "authors_full": [
    "Alecsandru Ioan Baba",
-   "Cornel C&#xe2;toi"
+   "Cornel C\u00e2toi"
   ],
   "grants": [],
   "country": null
@@ -8077,10 +8181,11 @@
   ],
   "doi": "10.17226/21830",
   "pmcid": null,
-  "abstract": "Traditional preclinical mouse models of cancer have been very useful for studying the biology of cancer, however they often lack key characteristics of human cancers. As a result, many novel drug candidates fail in human clinical trials despite evidence of drug efficacy in those preclinical models. Thus, researchers are seeking new approaches to augment preclinical knowledge before undertaking clinical trials for human patients. Recently, there has been renewed interest in comparative oncology &#x2013; the study of naturally developing cancers in animals as models for human disease &#x2013; as one way to improve cancer drug development and reduce attrition of investigational agents. Tumors that spontaneously develop in pet dogs and other companion animals as a result of normal aging share many characteristics with human cancers, such as histological appearance, tumor genetics, biological behavior, molecular targets, and therapeutic response. In June 2015 the Institute of Medicine hosted a workshop to examine the rationale and potential for integrating clinical trials for pet patients with naturally occurring cancers into translational cancer research and development. Participants discussed the research needs, strategies, and resources to support greater integration of clinical trials for pets with cancer into translational research pathways, and challenges and potential solutions for facilitating that integration. This report summarizes the presentations and discussions from the workshop.",
+  "abstract": "Traditional preclinical mouse models of cancer have been very useful for studying the biology of cancer, however they often lack key characteristics of human cancers. As a result, many novel drug candidates fail in human clinical trials despite evidence of drug efficacy in those preclinical models. Thus, researchers are seeking new approaches to augment preclinical knowledge before undertaking clinical trials for human patients. Recently, there has been renewed interest in comparative oncology \u2013 the study of naturally developing cancers in animals as models for human disease \u2013 as one way to improve cancer drug development and reduce attrition of investigational agents. Tumors that spontaneously develop in pet dogs and other companion animals as a result of normal aging share many characteristics with human cancers, such as histological appearance, tumor genetics, biological behavior, molecular targets, and therapeutic response. In June 2015 the Institute of Medicine hosted a workshop to examine the rationale and potential for integrating clinical trials for pet patients with naturally occurring cancers into translational cancer research and development. Participants discussed the research needs, strategies, and resources to support greater integration of clinical trials for pets with cancer into translational research pathways, and challenges and potential solutions for facilitating that integration. This report summarizes the presentations and discussions from the workshop.",
   "abstract_sections": [],
   "title": "The Role of Clinical Studies for Pets with Naturally Occurring Tumors in Translational Cancer Research: Workshop Summary",
   "is_book": true,
+  "other_languages": [],
   "journal_full": "National Academies Press (US)",
   "authors_full": [],
   "grants": [],

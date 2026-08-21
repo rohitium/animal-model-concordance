@@ -23,12 +23,25 @@ CLS  = load("data","db","classification.json")
 FTS  = load("data","raw","fulltext_status.json")
 XS   = load("data","db","crossspecies.json")
 SCOPE= load("data","db","measurement_scope.json")
+# Measurements whose value does not appear in the sentence it is attributed to.
+# The figure may still be somewhere in the paper, but we cannot show it as sourced,
+# so the number is withheld and only the statement is shown.
+_AUD = load("data","db","measurement_audit.json") or []
+UNSUP = {(a["pmid"], a["index"]) for a in _AUD} if isinstance(_AUD, list) else set()
 for d in (os.path.join(OUT,"api","study"), os.path.join(OUT,"study")):
     os.makedirs(d, exist_ok=True)
 e = lambda s: html.escape(str(s if s is not None else ""))
 BUILT = datetime.date.today().isoformat()
 
 ELIG = {pm: v for pm, v in DB.items() if v.get("eligible")}
+# Patient-derived xenografts test the PATIENT'S OWN human tumour tissue in a mouse
+# host. The question they answer -- does this patient's tumour, grown in a mouse,
+# predict this patient's response -- is not the question this review asks, which is
+# whether ANOTHER SPECIES' biology predicts human outcomes. They report very high
+# agreement on small samples, so pooling them with animal-model concordance would
+# inflate it. Kept, reported separately, never mixed into the aggregates.
+PDX  = {pm: v for pm, v in ELIG.items() if v.get("substrate") == "human-tissue-in-animal-host"}
+CORE = {pm: v for pm, v in ELIG.items() if pm not in PDX}
 EXCL = {pm: v for pm, v in DB.items() if v.get("eligible") is False}
 def cls(pm, k, d=None):
     c = CLS.get(pm) or {}
@@ -44,9 +57,12 @@ def meas(pm, ah_only=False):
     if "error" in sc: sc = {}
     for i, x in enumerate(mm):
         x["_scope"] = sc.get(str(i), sc.get(i, "unscoped"))
-    return [x for x in mm if x["_scope"] == "animal-vs-human"] if ah_only else mm
+        x["_unsupported"] = (pm, i) in UNSUP
+    return ([x for x in mm if x["_scope"] == "animal-vs-human" and not x["_unsupported"]]
+            if ah_only else mm)
 
 def sortkey(x):
+    if x.get("_unsupported"): return (3, 0)
     """Rank only within comparable units. A count of 4,418 genes is not 'bigger' than
     94%, so counts and unitless values sort after the proportional ones."""
     v, u = x.get("value"), x.get("unit")
@@ -58,6 +74,7 @@ def sortkey(x):
 
 def fmt(x):
     v, u = x.get("value"), x.get("unit")
+    if x.get("_unsupported"): return "not stated"
     if v is None: return "—"
     if u == "percent":    return f"{v:g}%"
     if u == "proportion": return f"{v:g}" if v > 1 else f"{v*100:g}%"
@@ -116,12 +133,13 @@ def page(title, body, depth=0):
 def xsp(pm):
     v = XS.get(pm) or {}
     return v.get("has_animal_human_comparison") is True
-ALLM   = [(pm, x) for pm in ELIG for x in meas(pm)]
-ALLM_AH= [(pm, x) for pm in ELIG for x in meas(pm, ah_only=True)]
+ALLM   = [(pm, x) for pm in CORE for x in meas(pm)]
+ALLM_AH= [(pm, x) for pm in CORE for x in meas(pm, ah_only=True)]
+PDXM_AH= [(pm, x) for pm in PDX  for x in meas(pm, ah_only=True)]
 
-def facet_counts(key):
+def facet_counts(key, pool=None):
     c = collections.Counter()
-    for pm in ELIG:
+    for pm in (pool if pool is not None else CORE):
         val = cls(pm, key)
         for x in (val if isinstance(val, list) else [val]):
             if x: c[x] += 1
@@ -146,9 +164,9 @@ b=["<h1>Animal Model Concordance with Human Clinical Outcomes</h1>",
    'animals correspond to results in humans. Every number below is one a study reported; '
    'nothing is pooled or averaged across studies.</p>',
    '<div class="grid">',
-   f'<div class="stat"><div class="n">{len(ELIG)}</div><div class="l">studies</div></div>',
+   f'<div class="stat"><div class="n">{len(CORE)}</div><div class="l">studies</div></div>',
    f'<div class="stat"><div class="n">{len(ALLM_AH)}</div><div class="l">animal–human figures</div></div>',
-   f'<div class="stat"><div class="n">{sum(1 for pm in ELIG if meas(pm, ah_only=True))}</div>'
+   f'<div class="stat"><div class="n">{sum(1 for pm in CORE if meas(pm, ah_only=True))}</div>'
    f'<div class="l">studies reporting one</div></div>',
    f'<div class="stat"><div class="n">{len(facet_counts("species"))}</div><div class="l">species</div></div>',
    f'<div class="stat"><div class="n">{min(yrs)}–{max(yrs)}</div><div class="l">years</div></div>',
@@ -188,6 +206,22 @@ for name,_ in FAM+[("Other reported figures",None)]:
                  f'<td>{e(x["measures"][:130])}</td><td>{e(x["compared"][:90])}</td>'
                  f'<td>{nn}</td><td><a href="study/{pm}.html">{e(DB[pm]["title"][:46])}</a></td></tr>')
     b.append("</table></div>")
+if PDXM_AH:
+    b.append("<h2>Patient-derived xenografts <span class='tag'>%d</span></h2>" % len(PDXM_AH))
+    b.append('<p class="sub">Reported separately and <strong>not</strong> included in the figures '
+             'above. A patient-derived xenograft grows the patient&rsquo;s own human tumour tissue in '
+             'a mouse host, so these studies ask whether a patient&rsquo;s tumour predicts that same '
+             'patient&rsquo;s response &mdash; not whether another species&rsquo; biology predicts human '
+             'outcomes. They report high agreement on small samples; mixing them with the figures '
+             'above would inflate apparent concordance.</p>')
+    b.append("<div class='scroll'><table><tr><th>Value</th><th>Statistic</th>"
+             "<th>What it measures</th><th>n</th><th>Study</th></tr>")
+    for pm,x in sorted(PDXM_AH,key=lambda r: sortkey(r[1])):
+        nn=f'{x["n"]:,} {e(x["n_counts"] or "")}'.strip() if x.get("n") else "&mdash;"
+        b.append(f'<tr><td class="num">{e(fmt(x))}</td><td>{e(x["statistic"])}</td>'
+                 f'<td>{e(x["measures"][:130])}</td><td>{nn}</td>'
+                 f'<td><a href="study/{pm}.html">{e(DB[pm]["title"][:46])}</a></td></tr>')
+    b.append("</table></div>")
 open(os.path.join(OUT,"findings.html"),"w").write(page("Findings","".join(b)))
 
 # ---------------- studies ----------------
@@ -195,6 +229,7 @@ b=["<h1>Studies</h1>",'<p class="sub">All studies that report a quantitative com
    'animal and human results.</p>','<div class="scroll"><table>'
    "<tr><th>Year</th><th>Study</th><th>Arm</th><th>Species</th><th>Figures</th><th>Cited by</th></tr>"]
 for pm,v in sorted(ELIG.items(),key=lambda kv:(-(kv[1].get("year") or 0),kv[1].get("title",""))):
+    pdxtag = ' <span class="tag">PDX</span>' if pm in PDX else ""
     sp=", ".join(cls(pm,"species") or [])
     b.append(f'<tr><td>{e(v.get("year"))}</td><td><a href="study/{pm}.html">{e(v.get("title","")[:88])}</a><br>'
              f'<span class="tag">{e(v.get("journal"))}</span></td><td>{e(cls(pm,"arm"))}</td>'
@@ -208,7 +243,7 @@ def facet(key,title,fname):
     bb.append(f'<p class="sub">{len(c)} {title.lower()} across {len(ELIG)} studies. '
               'Figures shown are those the studies reported.</p>')
     for k,n in c.most_common():
-        pms=[pm for pm in ELIG if k in ((cls(pm,key) or []) if isinstance(cls(pm,key),list) else [cls(pm,key)])]
+        pms=[pm for pm in CORE if k in ((cls(pm,key) or []) if isinstance(cls(pm,key),list) else [cls(pm,key)])]
         bb.append(f'<h3 id="{e(k)}">{e(k)} <span class="tag">{n} studies</span></h3>')
         rows=[(pm,x) for pm in pms for x in meas(pm, ah_only=True)]
         if rows:
@@ -331,7 +366,7 @@ b=["<h1>Methods</h1>",
  "with no defensible meaning.</p>"]
 open(os.path.join(OUT,"methods.html"),"w").write(page("Methods","".join(b)))
 
-json.dump({"updated":BUILT,"studies":len(ELIG),"excluded":len(EXCL),
+json.dump({"updated":BUILT,"studies":len(CORE),"pdx_separate":len(PDX),"excluded":len(EXCL),
   "reported_figures":len(ALLM),"arms":dict(facet_counts("arm")),
   "species":dict(facet_counts("species")),"areas":dict(facet_counts("therapeutic_areas"))},
   open(os.path.join(OUT,"api","summary.json"),"w"),indent=1)

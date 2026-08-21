@@ -1,0 +1,1298 @@
+[
+ {
+  "pmid": "36883244",
+  "index": 2,
+  "statistic": "improvement",
+  "value": 90.0,
+  "unit": "percent",
+  "verbatim": "However, only 32% of human trials showed any clinical improvement.88 This analysis reviewed the experimental details of the preclinical studies and re",
+  "title": "Poor Translatability of Biomedical Research Using Anima"
+ },
+ {
+  "pmid": "36883244",
+  "index": 3,
+  "statistic": "improvement",
+  "value": 95.0,
+  "unit": "percent",
+  "verbatim": "However, only 32% of human trials showed any clinical improvement.88 This analysis reviewed the experimental details of the preclinical studies and re",
+  "title": "Poor Translatability of Biomedical Research Using Anima"
+ },
+ {
+  "pmid": "36883244",
+  "index": 4,
+  "statistic": "improvement",
+  "value": 67.0,
+  "unit": "percent",
+  "verbatim": "However, only 32% of human trials showed any clinical improvement.88 This analysis reviewed the experimental details of the preclinical studies and re",
+  "title": "Poor Translatability of Biomedical Research Using Anima"
+ },
+ {
+  "pmid": "36883244",
+  "index": 5,
+  "statistic": "improvement",
+  "value": 80.0,
+  "unit": "percent",
+  "verbatim": "However, only 32% of human trials showed any clinical improvement.88 This analysis reviewed the experimental details of the preclinical studies and re",
+  "title": "Poor Translatability of Biomedical Research Using Anima"
+ },
+ {
+  "pmid": "24489990",
+  "index": 9,
+  "statistic": "approved MMP inhibitors",
+  "value": 1.0,
+  "unit": "count",
+  "verbatim": "Among the more-than 16 MMPIs that progressed to clinical testing, only Periostat (doxycycline hyclate, a nonspecific MMPI) has been approved for clini",
+  "title": "Lost in translation: animal models and clinical trials "
+ },
+ {
+  "pmid": "24678540",
+  "index": 4,
+  "statistic": "failure rate",
+  "value": 100.0,
+  "unit": "percent",
+  "verbatim": "Eight of these compounds ultimately failed in clinical trials, which together involved thousands of people.",
+  "title": "Preclinical research: Make mouse studies work."
+ },
+ {
+  "pmid": "24678540",
+  "index": 8,
+  "statistic": "survival extension",
+  "value": 30.0,
+  "unit": "other",
+  "verbatim": "A small clinical trial showed that it also extended life in people with ALS8.",
+  "title": "Preclinical research: Make mouse studies work."
+ },
+ {
+  "pmid": "24678540",
+  "index": 9,
+  "statistic": "failure rate",
+  "value": 100.0,
+  "unit": "percent",
+  "verbatim": "None of the three trials showed any therapeutic benefit9\u201311.",
+  "title": "Preclinical research: Make mouse studies work."
+ },
+ {
+  "pmid": "24678540",
+  "index": 10,
+  "statistic": "cost",
+  "value": 100000000.0,
+  "unit": "other",
+  "verbatim": "These enrolled hundreds of patients with a total cost of well over US$100 million.",
+  "title": "Preclinical research: Make mouse studies work."
+ },
+ {
+  "pmid": "26863229",
+  "index": 0,
+  "statistic": "Pearson correlation coefficient",
+  "value": 0.95,
+  "unit": "correlation",
+  "verbatim": "The correlation parameter, \u03c1 Y , R , ( Fig 2 , Eq 8 ) operationalises the concept of the predictive validity (PV) of the reference variable.",
+  "title": "When Quality Beats Quantity: Decision Theory, Drug Disc"
+ },
+ {
+  "pmid": "26863229",
+  "index": 1,
+  "statistic": "Pearson correlation coefficient",
+  "value": 0.4,
+  "unit": "correlation",
+  "verbatim": "Fig 3 shows that stringency tends to raise PPV (and lower FDR ), but setting a high decision threshold may not, in practical terms at least, rescue th",
+  "title": "When Quality Beats Quantity: Decision Theory, Drug Disc"
+ },
+ {
+  "pmid": "26863229",
+  "index": 22,
+  "statistic": "number of candidates screened per TP",
+  "value": 14,
+  "unit": "count",
+  "verbatim": "When the correlation coefficients are 0.9, a four step process would screen 22 candidates per TP , and the FDR would be a mere 9% ( PPV = 91%).",
+  "title": "When Quality Beats Quantity: Decision Theory, Drug Disc"
+ },
+ {
+  "pmid": "15246820",
+  "index": 0,
+  "statistic": "translational success",
+  "value": 1,
+  "unit": "other",
+  "verbatim": "To date, this is the only model that was able to achieve laboratory to clinical translational success.",
+  "title": "Lost in translation: taking neuroprotection from animal"
+ },
+ {
+  "pmid": "27261415",
+  "index": 8,
+  "statistic": "concordance",
+  "value": 0.01,
+  "unit": "proportion",
+  "verbatim": "A strong concordance of the mouse gene expression patterns at 8 and 52 weeks to the human NASH transcriptome was observed (FDR 0.02 and 0.08, respecti",
+  "title": "A diet-induced animal model of non-alcoholic fatty live"
+ },
+ {
+  "pmid": "29302222",
+  "index": 0,
+  "statistic": "concordance",
+  "value": 100,
+  "unit": "percent",
+  "verbatim": "It is remarkable that the incubation phenomenon of drug seeking was first discovered in laboratory rats and later also demonstrated to occur in smoker",
+  "title": "Animal models of addiction."
+ },
+ {
+  "pmid": "29302222",
+  "index": 1,
+  "statistic": "concordance",
+  "value": 100,
+  "unit": "percent",
+  "verbatim": "For example, glutamate spectroscopy in alcohol-dependent rats and alcohol-dependent humans has yielded identical results: during withdrawal, both rats",
+  "title": "Animal models of addiction."
+ },
+ {
+  "pmid": "40558535",
+  "index": 17,
+  "statistic": "percent",
+  "value": 4,
+  "unit": "percent",
+  "verbatim": "While animal models may not model the full spectrum of prenatal, perinatal, or postnatal ASD-related behavior or display species-specific differences ",
+  "title": "The Evolving Landscape of Functional Models of Autism S"
+ },
+ {
+  "pmid": "40558535",
+  "index": 25,
+  "statistic": "percent",
+  "value": 4,
+  "unit": "percent",
+  "verbatim": "While animal models may not model the full spectrum of prenatal, perinatal, or postnatal ASD-related behavior or display species-specific differences ",
+  "title": "The Evolving Landscape of Functional Models of Autism S"
+ },
+ {
+  "pmid": "35781406",
+  "index": 2,
+  "statistic": "concordance",
+  "value": 100.0,
+  "unit": "percent",
+  "verbatim": "A drug efficacy test showed complete concordance between the PDTX model and patients' responses in 17 regimens.",
+  "title": "A Multicentre Clinical Study of Sarcoma Personalised Tr"
+ },
+ {
+  "pmid": "34558834",
+  "index": 12,
+  "statistic": "recall",
+  "value": 0.33,
+  "unit": "proportion",
+  "verbatim": "Although the recall was generally smaller for the down\u2010regulated than the up\u2010regulated genes, the same basic observations were made with respect to ti",
+  "title": "Transcriptomic Cross-Species Analysis of Chronic Liver "
+ },
+ {
+  "pmid": "34558834",
+  "index": 13,
+  "statistic": "recall",
+  "value": 0.33,
+  "unit": "proportion",
+  "verbatim": "Although the recall was generally smaller for the down\u2010regulated than the up\u2010regulated genes, the same basic observations were made with respect to ti",
+  "title": "Transcriptomic Cross-Species Analysis of Chronic Liver "
+ },
+ {
+  "pmid": "34558834",
+  "index": 14,
+  "statistic": "recall",
+  "value": 0.33,
+  "unit": "proportion",
+  "verbatim": "Although the recall was generally smaller for the down\u2010regulated than the up\u2010regulated genes, the same basic observations were made with respect to ti",
+  "title": "Transcriptomic Cross-Species Analysis of Chronic Liver "
+ },
+ {
+  "pmid": "34558834",
+  "index": 15,
+  "statistic": "recall",
+  "value": 0.33,
+  "unit": "proportion",
+  "verbatim": "Although the recall was generally smaller for the down\u2010regulated than the up\u2010regulated genes, the same basic observations were made with respect to ti",
+  "title": "Transcriptomic Cross-Species Analysis of Chronic Liver "
+ },
+ {
+  "pmid": "34558834",
+  "index": 16,
+  "statistic": "recall",
+  "value": 0.33,
+  "unit": "proportion",
+  "verbatim": "Although the recall was generally smaller for the down\u2010regulated than the up\u2010regulated genes, the same basic observations were made with respect to ti",
+  "title": "Transcriptomic Cross-Species Analysis of Chronic Liver "
+ },
+ {
+  "pmid": "34558834",
+  "index": 21,
+  "statistic": "recall",
+  "value": 0.4,
+  "unit": "proportion",
+  "verbatim": "The common mouse genes showed the highest similarity with CLD in patients, particularly for NAFLD and NASH.",
+  "title": "Transcriptomic Cross-Species Analysis of Chronic Liver "
+ },
+ {
+  "pmid": "38688826",
+  "index": 4,
+  "statistic": "difference in time shift per dose",
+  "value": 100,
+  "unit": "ratio",
+  "verbatim": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046\u2009years per Gy for humans and mice, respectively, when exposed at",
+  "title": "Human-mouse comparison of the multistage nature of radi"
+ },
+ {
+  "pmid": "11029269",
+  "index": 31,
+  "statistic": "concordance rate",
+  "value": 5,
+  "unit": "percent",
+  "verbatim": "In one report only 4 of 24 cases were predictable from animal data; in the other report, only 6 of 114 clinical toxicities had animal correlates.",
+  "title": "Concordance of the toxicity of pharmaceuticals in human"
+ },
+ {
+  "pmid": "40863351",
+  "index": 1,
+  "statistic": "drug loss",
+  "value": 0,
+  "unit": "percent",
+  "verbatim": "For comparison, sotalol, which is thought not to have significant plasma binding, displayed negligible drug loss.",
+  "title": "Nonclinical Human Cardiac New Approach Methodologies (N"
+ },
+ {
+  "pmid": "33666192",
+  "index": 4,
+  "statistic": "concordance",
+  "value": 100,
+  "unit": "percent",
+  "verbatim": "There is a high concordance in results obtained with cardiotoxic and noncardiotoxic drugs tested in humans and zebrafish.[ 26 27 28 ]",
+  "title": "Zebrafish: An emerging whole-organism screening tool in"
+ },
+ {
+  "pmid": "19297654",
+  "index": 0,
+  "statistic": "concordance rate",
+  "value": 50.0,
+  "unit": "percent",
+  "verbatim": "In three of the research areas the animal studies and human trials were substantially discordant; in three others the results were essentially similar",
+  "title": "Why animal studies are often poor predictors of human r"
+ },
+ {
+  "pmid": "19297654",
+  "index": 1,
+  "statistic": "concordance rate",
+  "value": 50.0,
+  "unit": "percent",
+  "verbatim": "In three of the research areas the animal studies and human trials were substantially discordant; in three others the results were essentially similar",
+  "title": "Why animal studies are often poor predictors of human r"
+ },
+ {
+  "pmid": "19297654",
+  "index": 3,
+  "statistic": "quality criteria met",
+  "value": 70.0,
+  "unit": "percent",
+  "verbatim": "None of the 29 studies met all 10 quality criteria applied by the reviewers (one study met no criteria; the highest score was 7).",
+  "title": "Why animal studies are often poor predictors of human r"
+ },
+ {
+  "pmid": "26753942",
+  "index": 2,
+  "statistic": "evidential weight",
+  "value": 0,
+  "unit": "other",
+  "verbatim": "and also show in particular that test results inferring an absence of toxicity in one species provide no evidential weight with regard to toxicity in ",
+  "title": "Predicting human drug toxicity and safety via animal te"
+ },
+ {
+  "pmid": "27870924",
+  "index": 22,
+  "statistic": "percentage of experiments reporting randomization",
+  "value": 45,
+  "unit": "percent",
+  "verbatim": "Forty-five percent of experiments reported that the animals were randomized, none described methods of sequence generation or how allocation concealme",
+  "title": "Evaluating mesenchymal stem cell therapy for sepsis wit"
+ },
+ {
+  "pmid": "27870924",
+  "index": 23,
+  "statistic": "percentage of experiments reporting blinding of outcome assessors for mortality",
+  "value": 0,
+  "unit": "percent",
+  "verbatim": "Similarly, no studies described blinding of personnel performing the experiments. One study did not blind assessors for the outcome of mortality, whic",
+  "title": "Evaluating mesenchymal stem cell therapy for sepsis wit"
+ },
+ {
+  "pmid": "27870924",
+  "index": 26,
+  "statistic": "percentage of studies reporting appropriate sample size calculation rationale",
+  "value": 0,
+  "unit": "percent",
+  "verbatim": "No studies reported an appropriate rationale for selection of study sample size (where appropriate rationale included a correctly calculated sample si",
+  "title": "Evaluating mesenchymal stem cell therapy for sepsis wit"
+ },
+ {
+  "pmid": "39379679",
+  "index": 12,
+  "statistic": "overlap",
+  "value": 47.0,
+  "unit": "percent",
+  "verbatim": "However, of the 1401 disease indications being evaluated in clinical development, only 661 have previously been the subject of a GWAS.",
+  "title": "Disease coverage of human genome-wide association studi"
+ },
+ {
+  "pmid": "29590200",
+  "index": 0,
+  "statistic": "concordance rate",
+  "value": 33.3,
+  "unit": "percent",
+  "verbatim": "Comparing the results from the systematic reviews of animal studies with the systematic reviews of clinical studies they found that two interventions ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 1,
+  "statistic": "concordance rate",
+  "value": 16.7,
+  "unit": "percent",
+  "verbatim": "Comparing the results from the systematic reviews of animal studies with the systematic reviews of clinical studies they found that two interventions ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 2,
+  "statistic": "concordance rate",
+  "value": 50.0,
+  "unit": "percent",
+  "verbatim": "Comparing the results from the systematic reviews of animal studies with the systematic reviews of clinical studies they found that two interventions ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 6,
+  "statistic": "studies failing to report use of anaesthesia",
+  "value": 13.0,
+  "unit": "percent",
+  "verbatim": "Thirteen percent of studies (n = 27) failed to report use of anaesthesia and 97% (n = 206) did not report analgesia use.",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 8,
+  "statistic": "studies failing to report welfare information",
+  "value": 70.0,
+  "unit": "percent",
+  "verbatim": "Seventy percent (n = 148) failed to report any welfare information and only 3 studies reported post-operative care (one simply mentioned that animals ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 9,
+  "statistic": "studies failing to report how animals were killed",
+  "value": 32.0,
+  "unit": "percent",
+  "verbatim": "Thirty two percent of all studies (n = 69) failed to report how animals were killed and 10% (n = 21) did not report when they were killed.",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 15,
+  "statistic": "average citation score",
+  "value": 36.0,
+  "unit": "other",
+  "verbatim": "The average citation scores for the studies ranged from 10 for antifibrinolytics to 76 for bisphosphonates ( Table 8 ), with 50 being the average for ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 16,
+  "statistic": "average citation score",
+  "value": 45.0,
+  "unit": "other",
+  "verbatim": "The average citation scores for the studies ranged from 10 for antifibrinolytics to 76 for bisphosphonates ( Table 8 ), with 50 being the average for ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 17,
+  "statistic": "average citation score",
+  "value": 44.0,
+  "unit": "other",
+  "verbatim": "The average citation scores for the studies ranged from 10 for antifibrinolytics to 76 for bisphosphonates ( Table 8 ), with 50 being the average for ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 18,
+  "statistic": "average citation score",
+  "value": 55.0,
+  "unit": "other",
+  "verbatim": "The average citation scores for the studies ranged from 10 for antifibrinolytics to 76 for bisphosphonates ( Table 8 ), with 50 being the average for ",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "29590200",
+  "index": 28,
+  "statistic": "studies with pharmaceutical company involvement",
+  "value": 5.5,
+  "unit": "percent",
+  "verbatim": "Germany 7; USA 7; UK 1; Canada 1; Sweden 1; South Korea 1; Japan 1; Switzerland 1; Turkey 1 Universities 14; hospital 1; hospital / university collabo",
+  "title": "Retrospective harm benefit analysis of pre-clinical ani"
+ },
+ {
+  "pmid": "23503654",
+  "index": 0,
+  "statistic": "correlation",
+  "value": 0.0,
+  "unit": "correlation",
+  "verbatim": "The result was surprising, almost shocking: the correlation was not only poor, it was virtually absent for the main study areas: burns, trauma, endoto",
+  "title": "Inflammatory findings on species extrapolations: humans"
+ },
+ {
+  "pmid": "23503654",
+  "index": 3,
+  "statistic": "sensitivity",
+  "value": 1000000.0,
+  "unit": "fold",
+  "verbatim": "For instance, man is about 1000-fold more sensitive to inhibition of the Na/K ATPase by the cardiac glycoside ouabain than mice (Kent et al. 1987 ), a",
+  "title": "Inflammatory findings on species extrapolations: humans"
+ },
+ {
+  "pmid": "26460544",
+  "index": 0,
+  "statistic": "SMD",
+  "value": -1.8,
+  "unit": "other",
+  "verbatim": "The overall pooled SMD for all extracted experiments across all malignancies was \u22121.8 [\u22122.1, \u22121.6] ( Figure 2\u2014figure supplement 1 ).",
+  "title": "A meta-analysis of threats to valid clinical inference "
+ },
+ {
+  "pmid": "26460544",
+  "index": 1,
+  "statistic": "SMD",
+  "value": -2.2,
+  "unit": "other",
+  "verbatim": "However, sunitinib effect sizes were significantly greater when active drug comparators were present in an experiment compared to when they were not (",
+  "title": "A meta-analysis of threats to valid clinical inference "
+ },
+ {
+  "pmid": "26460544",
+  "index": 2,
+  "statistic": "SMD",
+  "value": -1.4,
+  "unit": "other",
+  "verbatim": "However, sunitinib effect sizes were significantly greater when active drug comparators were present in an experiment compared to when they were not (",
+  "title": "A meta-analysis of threats to valid clinical inference "
+ },
+ {
+  "pmid": "28335819",
+  "index": 6,
+  "statistic": "concordance",
+  "value": -0.04,
+  "unit": "correlation",
+  "verbatim": "and average concordance within the three rat studies is actually negative. [...] Species Rat models 4 -0.04",
+  "title": "Concordance analysis of microarray studies identifies r"
+ },
+ {
+  "pmid": "28335819",
+  "index": 10,
+  "statistic": "concordance",
+  "value": -0.03,
+  "unit": "correlation",
+  "verbatim": "although there is still disagreement between studies in the 6-OHDA group (Table 1 ). [...] Disease model 6-OHDA 4 -0.03",
+  "title": "Concordance analysis of microarray studies identifies r"
+ },
+ {
+  "pmid": "17988725",
+  "index": 0,
+  "statistic": "failure rate",
+  "value": 100,
+  "unit": "percent",
+  "verbatim": "On average, the extrapolated results from studies using tens of millions of animals fail to accurately predict human responses.",
+  "title": "Are animal models as good as we think?"
+ },
+ {
+  "pmid": "22790876",
+  "index": 2,
+  "statistic": "positive effect rate in animal models vs. convincing effect in patients",
+  "value": 0.61,
+  "unit": "ratio",
+  "verbatim": "Sena and colleagues reported only three interventions for acute ischaemic stroke treatment with a convincing effect in patients out of 494 interventio",
+  "title": "Can animal data predict human outcome? Problems and pit"
+ },
+ {
+  "pmid": "36859342",
+  "index": 3,
+  "statistic": "overlap",
+  "value": 72.0,
+  "unit": "percent",
+  "verbatim": "The results demonstrate that tolerable and pharmacologically active dose ranges in clinical studies can be reasonably well predicted from preclinical ",
+  "title": "Translatability of preclinical to early clinical tolera"
+ },
+ {
+  "pmid": "36859342",
+  "index": 4,
+  "statistic": "overlap",
+  "value": 60.0,
+  "unit": "percent",
+  "verbatim": "The results demonstrate that tolerable and pharmacologically active dose ranges in clinical studies can be reasonably well predicted from preclinical ",
+  "title": "Translatability of preclinical to early clinical tolera"
+ },
+ {
+  "pmid": "36859342",
+  "index": 5,
+  "statistic": "overlap",
+  "value": 83.0,
+  "unit": "percent",
+  "verbatim": "The results demonstrate that tolerable and pharmacologically active dose ranges in clinical studies can be reasonably well predicted from preclinical ",
+  "title": "Translatability of preclinical to early clinical tolera"
+ },
+ {
+  "pmid": "36859342",
+  "index": 36,
+  "statistic": "percentage of studies",
+  "value": 100.0,
+  "unit": "percent",
+  "verbatim": "For the three other compounds, the therapeutic effective ranges were lower than the preclinical pharmacologically active range, but they corresponded ",
+  "title": "Translatability of preclinical to early clinical tolera"
+ },
+ {
+  "pmid": "24406927",
+  "index": 45,
+  "statistic": "Phase 3 suspensions",
+  "value": 35.0,
+  "unit": "percent",
+  "verbatim": "We found that over half of the 359 suspensions were attributable to some measure of efficacy.",
+  "title": "Clinical development success rates for investigational "
+ },
+ {
+  "pmid": "25092317",
+  "index": 4,
+  "statistic": "P value",
+  "value": 6.5e-11,
+  "unit": "other",
+  "verbatim": "Contrary to the previous findings, the gene expression levels in the mouse models showed extraordinarily significant correlations with those of the hu",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 5,
+  "statistic": "P value",
+  "value": 1.2e-35,
+  "unit": "other",
+  "verbatim": "Contrary to the previous findings, the gene expression levels in the mouse models showed extraordinarily significant correlations with those of the hu",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 12,
+  "statistic": "overlap P value",
+  "value": 3.9e-34,
+  "unit": "other",
+  "verbatim": "Genes whose expression levels were changed in human burns significantly overlapped with those in the condition of mouse burn (A, overlap P value = 3.9",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 13,
+  "statistic": "overlap P value",
+  "value": 6.3e-13,
+  "unit": "other",
+  "verbatim": "Genes whose expression levels were changed in human burns significantly overlapped with those in the condition of mouse burn (A, overlap P value = 3.9",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 14,
+  "statistic": "overlap P value",
+  "value": 1.2e-35,
+  "unit": "other",
+  "verbatim": "Genes whose expression levels were changed in human burns significantly overlapped with those in the condition of mouse burn (A, overlap P value = 3.9",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 15,
+  "statistic": "overlap P value",
+  "value": 6.5e-11,
+  "unit": "other",
+  "verbatim": "Genes whose expression levels were changed in human burns significantly overlapped with those in the condition of mouse burn (A, overlap P value = 3.9",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 16,
+  "statistic": "overlap P value",
+  "value": 3.4e-35,
+  "unit": "other",
+  "verbatim": "Genes whose expression levels were changed in human burns significantly overlapped with those in the condition of mouse burn (A, overlap P value = 3.9",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 28,
+  "statistic": "P value",
+  "value": 6.3e-24,
+  "unit": "other",
+  "verbatim": "There was significant overlap between genes annotated in GO as \u201cinnate immune response\u201d and the genes up-regulated in the mouse models of burn (Fig. 4",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 29,
+  "statistic": "P value",
+  "value": 4.6e-33,
+  "unit": "other",
+  "verbatim": "There was significant overlap between genes annotated in GO as \u201cinnate immune response\u201d and the genes up-regulated in the mouse models of burn (Fig. 4",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 30,
+  "statistic": "P value",
+  "value": 1.3e-16,
+  "unit": "other",
+  "verbatim": "There was significant overlap between genes annotated in GO as \u201cinnate immune response\u201d and the genes up-regulated in the mouse models of burn (Fig. 4",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 31,
+  "statistic": "P value",
+  "value": 5e-51,
+  "unit": "other",
+  "verbatim": "There was significant overlap between genes annotated in GO as \u201cinnate immune response\u201d and the genes up-regulated in the mouse models of burn (Fig. 4",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 32,
+  "statistic": "P value",
+  "value": 4.1e-90,
+  "unit": "other",
+  "verbatim": "There was significant overlap between genes annotated in GO as \u201cinnate immune response\u201d and the genes up-regulated in the mouse models of burn (Fig. 4",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 33,
+  "statistic": "P value",
+  "value": 6.3e-21,
+  "unit": "other",
+  "verbatim": "There was significant overlap between genes annotated in GO as \u201cinnate immune response\u201d and the genes up-regulated in the mouse models of burn (Fig. 4",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 34,
+  "statistic": "P value",
+  "value": 4e-36,
+  "unit": "other",
+  "verbatim": "Significant overlap was also detected between \u201cgenes involved in cytokine signaling in immune system (canonical pathways, Broad MSigDB)\u201d and genes up-",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 35,
+  "statistic": "P value",
+  "value": 1.6e-11,
+  "unit": "other",
+  "verbatim": "Significant overlap was also detected between \u201cgenes involved in cytokine signaling in immune system (canonical pathways, Broad MSigDB)\u201d and genes up-",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 36,
+  "statistic": "P value",
+  "value": 1.3e-08,
+  "unit": "other",
+  "verbatim": "Significant overlap was also detected between \u201cgenes involved in cytokine signaling in immune system (canonical pathways, Broad MSigDB)\u201d and genes up-",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 37,
+  "statistic": "P value",
+  "value": 5.5e-28,
+  "unit": "other",
+  "verbatim": "Significant overlap was also detected between \u201cgenes involved in cytokine signaling in immune system (canonical pathways, Broad MSigDB)\u201d and genes up-",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 38,
+  "statistic": "P value",
+  "value": 6.5e-52,
+  "unit": "other",
+  "verbatim": "Significant overlap was also detected between \u201cgenes involved in cytokine signaling in immune system (canonical pathways, Broad MSigDB)\u201d and genes up-",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 39,
+  "statistic": "P value",
+  "value": 3.2e-12,
+  "unit": "other",
+  "verbatim": "Significant overlap was also detected between \u201cgenes involved in cytokine signaling in immune system (canonical pathways, Broad MSigDB)\u201d and genes up-",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 40,
+  "statistic": "P value",
+  "value": 2.2e-08,
+  "unit": "other",
+  "verbatim": "Genes annotated \u201clymphocyte differentiation (GO)\u201d and genes down-regulated in the mouse models of burn (Fig. 4C, P = 2.2 \u00d7 10\u22128), trauma (P = 1.4 \u00d7 10",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 41,
+  "statistic": "P value",
+  "value": 1.4e-15,
+  "unit": "other",
+  "verbatim": "Genes annotated \u201clymphocyte differentiation (GO)\u201d and genes down-regulated in the mouse models of burn (Fig. 4C, P = 2.2 \u00d7 10\u22128), trauma (P = 1.4 \u00d7 10",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 42,
+  "statistic": "P value",
+  "value": 4.2e-20,
+  "unit": "other",
+  "verbatim": "Genes annotated \u201clymphocyte differentiation (GO)\u201d and genes down-regulated in the mouse models of burn (Fig. 4C, P = 2.2 \u00d7 10\u22128), trauma (P = 1.4 \u00d7 10",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 43,
+  "statistic": "P value",
+  "value": 1.3e-18,
+  "unit": "other",
+  "verbatim": "Genes annotated \u201clymphocyte differentiation (GO)\u201d and genes down-regulated in the mouse models of burn (Fig. 4C, P = 2.2 \u00d7 10\u22128), trauma (P = 1.4 \u00d7 10",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 44,
+  "statistic": "P value",
+  "value": 1.7e-18,
+  "unit": "other",
+  "verbatim": "Genes annotated \u201clymphocyte differentiation (GO)\u201d and genes down-regulated in the mouse models of burn (Fig. 4C, P = 2.2 \u00d7 10\u22128), trauma (P = 1.4 \u00d7 10",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 45,
+  "statistic": "P value",
+  "value": 5.6e-12,
+  "unit": "other",
+  "verbatim": "Genes annotated \u201clymphocyte differentiation (GO)\u201d and genes down-regulated in the mouse models of burn (Fig. 4C, P = 2.2 \u00d7 10\u22128), trauma (P = 1.4 \u00d7 10",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 46,
+  "statistic": "P value",
+  "value": 3.3e-30,
+  "unit": "other",
+  "verbatim": "Genes annotated \u201clymphocyte differentiation (GO)\u201d and genes down-regulated in the mouse models of burn (Fig. 4C, P = 2.2 \u00d7 10\u22128), trauma (P = 1.4 \u00d7 10",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 54,
+  "statistic": "P value",
+  "value": 6.5e-11,
+  "unit": "other",
+  "verbatim": "Use of this method demonstrated highly significant similarities between human and mouse conditions (P value = 6.5 \u00d7 10\u221211 to 1.2 \u00d7 10\u221235).",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 55,
+  "statistic": "P value",
+  "value": 1.2e-35,
+  "unit": "other",
+  "verbatim": "Use of this method demonstrated highly significant similarities between human and mouse conditions (P value = 6.5 \u00d7 10\u221211 to 1.2 \u00d7 10\u221235).",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 60,
+  "statistic": "overlap P value",
+  "value": 8.7e-08,
+  "unit": "other",
+  "verbatim": "The overlap P values with the human burn dataset vary from 8.7 \u00d7 10\u22128 (C57BL6J, 2 h after infection) to 1.2 \u00d7 10\u221235 (C57BL6J, 6 h after infection).",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 61,
+  "statistic": "overlap P value",
+  "value": 1.2e-35,
+  "unit": "other",
+  "verbatim": "The overlap P values with the human burn dataset vary from 8.7 \u00d7 10\u22128 (C57BL6J, 2 h after infection) to 1.2 \u00d7 10\u221235 (C57BL6J, 6 h after infection).",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 62,
+  "statistic": "percentage of genes changed",
+  "value": 100,
+  "unit": "percent",
+  "verbatim": "For example, 13,586 and 3,116 genes are changed (P < 0.05 and fold change >1.2) in human burn conditions and mouse models of infection, respectively, ",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "25092317",
+  "index": 63,
+  "statistic": "percentage of genes changed",
+  "value": 100,
+  "unit": "percent",
+  "verbatim": "For example, 13,586 and 3,116 genes are changed (P < 0.05 and fold change >1.2) in human burn conditions and mouse models of infection, respectively, ",
+  "title": "Genomic responses in mouse models greatly mimic human i"
+ },
+ {
+  "pmid": "26479923",
+  "index": 25,
+  "statistic": "response rate",
+  "value": 55,
+  "unit": "percent",
+  "verbatim": "Contrary to what was observed in vitro, the combination of LFW527 with binimetinib did not improve the response rate (Fig. 5d), or improve PFS when co",
+  "title": "High-throughput screening using patient-derived tumor x"
+ },
+ {
+  "pmid": "26479923",
+  "index": 58,
+  "statistic": "response rate",
+  "value": 55,
+  "unit": "percent",
+  "verbatim": "Contrary to what was observed in vitro, the combination of LFW527 with binimetinib did not improve the response rate (Fig. 5d), or improve PFS when co",
+  "title": "High-throughput screening using patient-derived tumor x"
+ },
+ {
+  "pmid": "31694927",
+  "index": 21,
+  "statistic": "IC50",
+  "value": 10.0,
+  "unit": "other",
+  "verbatim": "In addition, the model was more sensitive in detecting bosentan toxicity compared to sandwich monoculture plates (Fig. 1B), which failed to demonstrat",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 30,
+  "statistic": "albumin secretion",
+  "value": 1.0,
+  "unit": "other",
+  "verbatim": "Decreases in albumin were observed but did not reach significance (Fig. 5D); there was also no effect on hepatocyte function after 4 days of treatment",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 31,
+  "statistic": "albumin secretion",
+  "value": 1.0,
+  "unit": "other",
+  "verbatim": "Decreases in albumin were observed but did not reach significance (Fig. 5D); there was also no effect on hepatocyte function after 4 days of treatment",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 32,
+  "statistic": "albumin secretion",
+  "value": 10.0,
+  "unit": "other",
+  "verbatim": "There was also a concomitant dose-dependent decline in albumin secretion at concentration of \u22651 \uf06dM and release of liver injury markers including miR12",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 33,
+  "statistic": "albumin secretion",
+  "value": 1.0,
+  "unit": "other",
+  "verbatim": "In contrast, there were no effects on lipid accumulation or hepatocyte function after treatment in the rat Liver-Chip with FIAU at the same concentrat",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 35,
+  "statistic": "albumin secretion",
+  "value": 10.0,
+  "unit": "fold",
+  "verbatim": "These studies revealed that all three species-specific chips maintained substantially higher (3- to 14-fold greater, P < 0.0001) amounts of albumin se",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 38,
+  "statistic": "albumin secretion",
+  "value": 1.0,
+  "unit": "other",
+  "verbatim": "Decreases in albumin were observed but did not reach significance (Fig. 5D); there was also no effect on hepatocyte function after 4 days of treatment",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 39,
+  "statistic": "albumin secretion",
+  "value": 1.0,
+  "unit": "other",
+  "verbatim": "Decreases in albumin were observed but did not reach significance (Fig. 5D); there was also no effect on hepatocyte function after 4 days of treatment",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "31694927",
+  "index": 41,
+  "statistic": "albumin secretion",
+  "value": 1.0,
+  "unit": "other",
+  "verbatim": "In contrast, there were no effects on lipid accumulation or hepatocyte function after treatment in the rat Liver-Chip with FIAU at the same concentrat",
+  "title": "Reproducing human and cross-species drug toxicities usi"
+ },
+ {
+  "pmid": "32127577",
+  "index": 0,
+  "statistic": "correlation",
+  "value": 0.7,
+  "unit": "correlation",
+  "verbatim": "In human samples the thrombin PH and PR values showed a significant correlation, however, the plasmin PH and PR values did not correlate.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 1,
+  "statistic": "correlation",
+  "value": -0.37,
+  "unit": "correlation",
+  "verbatim": "In human samples the thrombin PH and PR values showed a significant correlation, however, the plasmin PH and PR values did not correlate.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 2,
+  "statistic": "correlation",
+  "value": 0.37,
+  "unit": "correlation",
+  "verbatim": "In human samples the thrombin PH and PR values showed a significant correlation, however, the plasmin PH and PR values did not correlate.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 3,
+  "statistic": "correlation",
+  "value": 0.84,
+  "unit": "correlation",
+  "verbatim": "Opposite effects were observed in baboons where no correlation between thrombin PH and PR occurred, while significant correlation between PG parameter",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 4,
+  "statistic": "correlation",
+  "value": 0.71,
+  "unit": "correlation",
+  "verbatim": "Rhesus macaque samples demonstrated correlations in both TG and PG parameters.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 5,
+  "statistic": "correlation",
+  "value": 0.96,
+  "unit": "correlation",
+  "verbatim": "Rhesus macaque samples demonstrated correlations in both TG and PG parameters.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 6,
+  "statistic": "correlation",
+  "value": -0.33,
+  "unit": "correlation",
+  "verbatim": "In rat plasmas, TG parameters did not correlate while plasmin PH significantly correlated to plasmin PR.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 7,
+  "statistic": "correlation",
+  "value": 0.82,
+  "unit": "correlation",
+  "verbatim": "In rat plasmas, TG parameters did not correlate while plasmin PH significantly correlated to plasmin PR.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 8,
+  "statistic": "correlation",
+  "value": 0.96,
+  "unit": "correlation",
+  "verbatim": "In rabbits, significant correlations in both TG and PG parameters were observed.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 9,
+  "statistic": "correlation",
+  "value": 0.99,
+  "unit": "correlation",
+  "verbatim": "In rabbits, significant correlations in both TG and PG parameters were observed.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 10,
+  "statistic": "correlation",
+  "value": 0.97,
+  "unit": "correlation",
+  "verbatim": "Guinea pig samples showed significant correlation between TG and PG parameters as well.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 11,
+  "statistic": "correlation",
+  "value": 0.61,
+  "unit": "correlation",
+  "verbatim": "Guinea pig samples showed significant correlation between TG and PG parameters as well.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 12,
+  "statistic": "correlation",
+  "value": 0.87,
+  "unit": "correlation",
+  "verbatim": "In swine, thrombin PH and PR values also significantly correlated.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 39,
+  "statistic": "concordance rate",
+  "value": 10,
+  "unit": "percent",
+  "verbatim": "Results are frequently extrapolated to humans; however, data obtained from animal models often falls short of accurate predictions in human response 2",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "32127577",
+  "index": 40,
+  "statistic": "concordance rate",
+  "value": 10,
+  "unit": "percent",
+  "verbatim": "Data obtained from animal models often falls short of accurate predictions in human response.",
+  "title": "Interspecies comparison of simultaneous thrombin and pl"
+ },
+ {
+  "pmid": "18468556",
+  "index": 7,
+  "statistic": "concordance rate",
+  "value": 95.65,
+  "unit": "percent",
+  "verbatim": "One hundred small molecules were recently tested and results showed that 22 of 23 drugs that cause QT prolongation in humans con- sistently caused bra",
+  "title": "Zebrafish: a predictive model for assessing drug-induce"
+ },
+ {
+  "pmid": "20807552",
+  "index": 19,
+  "statistic": "sensitivity",
+  "value": 0.64,
+  "unit": "proportion",
+  "verbatim": "These values demonstrate that the free hERG safety index is less reliable in regard to true positive compared to true negative determinations at the o",
+  "title": "An evaluation of hERG current assay performance: Transl"
+ },
+ {
+  "pmid": "20807552",
+  "index": 20,
+  "statistic": "specificity",
+  "value": 0.88,
+  "unit": "proportion",
+  "verbatim": "These values demonstrate that the free hERG safety index is less reliable in regard to true positive compared to true negative determinations at the o",
+  "title": "An evaluation of hERG current assay performance: Transl"
+ },
+ {
+  "pmid": "20807552",
+  "index": 22,
+  "statistic": "likelihood ratio",
+  "value": 0.21,
+  "unit": "ratio",
+  "verbatim": "For safety margin ranges greater than 30, likelihood values less than 1 are obtained, consistent with the expectation of no prolongation.",
+  "title": "An evaluation of hERG current assay performance: Transl"
+ },
+ {
+  "pmid": "20807552",
+  "index": 35,
+  "statistic": "sensitivity",
+  "value": 0.64,
+  "unit": "proportion",
+  "verbatim": "These results provide a strategy for supplementing hERG current assay results with additional preclinical assays early in drug discovery to avoid unwa",
+  "title": "An evaluation of hERG current assay performance: Transl"
+ },
+ {
+  "pmid": "20807552",
+  "index": 36,
+  "statistic": "specificity",
+  "value": 0.88,
+  "unit": "proportion",
+  "verbatim": "These results provide a strategy for supplementing hERG current assay results with additional preclinical assays early in drug discovery to avoid unwa",
+  "title": "An evaluation of hERG current assay performance: Transl"
+ },
+ {
+  "pmid": "12667944",
+  "index": 6,
+  "statistic": "ratio",
+  "value": 35700.0,
+  "unit": "fold",
+  "verbatim": "For drugs in Category 4 (\u2018isolated reports of TdP\u2019), there was a wide range of margins, from 0.13-fold (sparfloxacin) to 35 700-fold (nifedipine).",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 18,
+  "statistic": "ratio",
+  "value": 35700.0,
+  "unit": "fold",
+  "verbatim": "A large spread was found for Category 4 drugs (0.13- to 35 700-fold); this category embraced an assortment of mechanisms ranging from drugs which may ",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 27,
+  "statistic": "ratio",
+  "value": 35700.0,
+  "unit": "fold",
+  "verbatim": "For drugs in Category 4 (\u2018isolated reports of TdP\u2019), there was a wide range of margins, from 0.13-fold (sparfloxacin) to 35 700-fold (nifedipine).",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 32,
+  "statistic": "ratio",
+  "value": 106.0,
+  "unit": "fold",
+  "verbatim": "Conversely, the margin for verapamil is less than twofold, yet this drug does not prolong QT, let alone induce TdP, and ketoconazole also has a small ",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 33,
+  "statistic": "ratio",
+  "value": 35700.0,
+  "unit": "fold",
+  "verbatim": "Conversely, the margin for verapamil is less than twofold, yet this drug does not prolong QT, let alone induce TdP, and ketoconazole also has a small ",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 35,
+  "statistic": "ratio",
+  "value": 183.0,
+  "unit": "fold",
+  "verbatim": "There has been only one report of TdP with fluoxetine since its launch in the mid-1980s, in an elderly female patient [36].",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 36,
+  "statistic": "ratio",
+  "value": 880.0,
+  "unit": "fold",
+  "verbatim": "The incidence of TdP with ciprofloxacin is extremely low (0.3 cases per 10 million prescriptions), this value based on two reports as part of a histor",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 37,
+  "statistic": "ratio",
+  "value": 35700.0,
+  "unit": "fold",
+  "verbatim": "Perhaps the largest anomaly of all is the huge margin for nifedipine.",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 40,
+  "statistic": "ratio",
+  "value": 10.0,
+  "unit": "fold",
+  "verbatim": "The same margin has been proposed previously based on opinion [65], and has also been suggested on the basis of a smaller dataset of drugs [72].",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "12667944",
+  "index": 44,
+  "statistic": "ratio",
+  "value": 10.0,
+  "unit": "fold",
+  "verbatim": "We would recommend that this margin is acceptable for all drugs currently undergoing clinical development.",
+  "title": "Relationships between preclinical cardiac electrophysio"
+ },
+ {
+  "pmid": "38736280",
+  "index": 36,
+  "statistic": "sensitivity",
+  "value": 0.54,
+  "unit": "proportion",
+  "verbatim": "For cardiovascular side effects, regarding sensitivity, the dog outperformed other animal models and our pathway predictions.",
+  "title": "Preclinical side effect prediction through pathway engi"
+ },
+ {
+  "pmid": "38736280",
+  "index": 37,
+  "statistic": "sensitivity",
+  "value": 0.07,
+  "unit": "proportion",
+  "verbatim": "pancreatitis (sensitivity: 0.51 (TP:142 and FP:235) vs. 0.39 (TP:109 and FP:227), Tables S1 , S8 , and Figure S4 ).",
+  "title": "Preclinical side effect prediction through pathway engi"
+ },
+ {
+  "pmid": "30823899",
+  "index": 0,
+  "statistic": "probability increase",
+  "value": 4,
+  "unit": "percent",
+  "verbatim": "Quantitatively, if, for example, a new drug has (based on prior information, such as similarity to other drugs, data from in vitro or in silico tests,",
+  "title": "Recent efforts to elucidate the scientific validity of "
+ },
+ {
+  "pmid": "30823899",
+  "index": 1,
+  "statistic": "probability increase",
+  "value": 2,
+  "unit": "percent",
+  "verbatim": "The most controversial species, dogs and monkeys \u2014 the use of which, as opinion polls show, the general public object to particularly strongly \u2014 were ",
+  "title": "Recent efforts to elucidate the scientific validity of "
+ },
+ {
+  "pmid": "30823899",
+  "index": 2,
+  "statistic": "probability increase",
+  "value": 0.4,
+  "unit": "percent",
+  "verbatim": "The most controversial species, dogs and monkeys \u2014 the use of which, as opinion polls show, the general public object to particularly strongly \u2014 were ",
+  "title": "Recent efforts to elucidate the scientific validity of "
+ },
+ {
+  "pmid": "36730203",
+  "index": 24,
+  "statistic": "genome-wide c-scores",
+  "value": 0,
+  "unit": "proportion",
+  "verbatim": "In SI Appendix , Fig. S5 B , HS has high genome-wide c-scores with all four independent studies and even higher in the three selected KEGG pathways, s",
+  "title": "Transcriptomic congruence analysis for evaluating model"
+ },
+ {
+  "pmid": "36730203",
+  "index": 25,
+  "statistic": "pathway-specific c-scores",
+  "value": 0,
+  "unit": "proportion",
+  "verbatim": "In SI Appendix , Fig. S5 B , HS has high genome-wide c-scores with all four independent studies and even higher in the three selected KEGG pathways, s",
+  "title": "Transcriptomic congruence analysis for evaluating model"
+ },
+ {
+  "pmid": "36730203",
+  "index": 28,
+  "statistic": "d-scores",
+  "value": -0.3,
+  "unit": "proportion",
+  "verbatim": "When HS is compared to the four human validation studies, the d-scores dropped to ~\u22120.3, which is likely an impact of high congruence (large c-scores)",
+  "title": "Transcriptomic congruence analysis for evaluating model"
+ }
+]

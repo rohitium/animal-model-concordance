@@ -208,3 +208,30 @@ each study page, labelled, for completeness.
 **L32 — Values are ranked only within comparable units.** A count of 4,418 genes is not
 "larger" than 94%. Sorting groups percentages and proportions together, correlations next,
 and counts last.
+
+## Extraction integrity (2026-08-21)
+
+**L33 — 12.1% of numeric values are not supported by the sentence they are attributed to.**
+`analysis/26_audit_measurements.py` checks every measurement carrying a value against its
+own verbatim quote (number words such as "fivefold" and "a third" count as stated). 144 of
+1,187 fail. Some are inferences the model made rather than figures the paper reported — an
+ALS review saying "eight of these compounds ultimately failed" was stored as
+`failure rate = 100%`; a narrative claim that a phenomenon was "first discovered in rats
+and later demonstrated in smokers" was stored as `concordance = 100%`. Others have the
+right number attached to the wrong sentence. Since we cannot show them as sourced, the
+value is withheld on study pages (shown as "not stated") and the measurement is excluded
+from all aggregate pages. The statement and its quote remain visible.
+
+**L34 — Patient-derived xenografts are reported separately.** A PDX grows the patient's own
+human tumour tissue in a mouse host, so a PDX concordance study asks whether a patient's
+tumour predicts that patient's response — not whether another species' biology predicts
+human outcomes. The 4 PDX studies report very high agreement (100%, on 17 regimens) on small
+samples; pooling them with animal-model concordance would inflate it. They appear in their
+own section, excluded from every aggregate.
+
+**L35 — Two parser defects corrupted displayed text.** (a) Journals such as *Dialogues in
+Clinical Neuroscience* publish Spanish and French translations in `<OtherAbstract>`; matching
+`<AbstractText>` anywhere concatenated all three languages into one abstract. Parsing is now
+scoped to the primary `<Abstract>`. (b) Markup was stripped without unescaping, so numeric
+character entities (`&#xf3;`) reached the page as literal text and were copied into extracted
+quotes — 108 occurrences, now unescaped at source and in stored data.

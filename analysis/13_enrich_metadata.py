@@ -1,11 +1,15 @@
 """Enrich each study with full PubMed metadata: MeSH terms, publication types,
 DOI, abstract, funding, and author list. All from efetch XML, no inference."""
-import sys, os, json, re, time, urllib.request
+import sys, os, json, re, time, urllib.request, html as _html
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 db = json.load(open(os.path.join(ROOT, "data", "db", "studies.json")))
 pmids = list(db)
 
-def txt(s): return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", s or "")).strip()
+def txt(s):
+    """Strip markup then UNESCAPE. PubMed encodes accented characters as numeric
+    entities (&#xf3;); leaving them escaped puts raw entity codes on the page."""
+    t = re.sub(r"<[^>]+>", "", s or "")
+    return re.sub(r"\s+", " ", _html.unescape(t)).strip()
 
 out = {}
 for i in range(0, len(pmids), 100):
@@ -34,10 +38,16 @@ for i in range(0, len(pmids), 100):
             if not d: continue
             quals = [txt(q) for q in re.findall(r"<QualifierName[^>]*>(.*?)</QualifierName>", blk, re.S)]
             mesh.append({"term": txt(d.group(2)), "major": bool(d.group(1)), "qualifiers": quals})
-        abst = " ".join(f"{re.search(chr(60)+'AbstractText([^>]*)>', a0).group(1) if False else ''}{txt(a0)}"
-                        for a0 in re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S))
+        # Only the primary <Abstract>. Journals such as Dialogues in Clinical
+        # Neuroscience publish Spanish and French translations in <OtherAbstract>;
+        # matching <AbstractText> anywhere concatenated all three languages.
+        _main = re.search(r"<Abstract>(.*?)</Abstract>", art, re.S)
+        _scope = _main.group(1) if _main else ""
+        abst = " ".join(txt(a0) for a0 in
+                        re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", _scope, re.S))
         secs = [(txt(lbl), txt(body)) for lbl, body in
-                re.findall(r'<AbstractText[^>]*Label="([^"]+)"[^>]*>(.*?)</AbstractText>', art, re.S)]
+                re.findall(r'<AbstractText[^>]*Label="([^"]+)"[^>]*>(.*?)</AbstractText>', _scope, re.S)]
+        _other = re.findall(r'<OtherAbstract[^>]*Language="([^"]+)"', art)
         doi = re.search(r'<ArticleId IdType="doi">(.*?)</ArticleId>', art, re.S)
         pmc = re.search(r'<ArticleId IdType="pmc">(.*?)</ArticleId>', art, re.S)
         ti = (re.search(r"<ArticleTitle[^>]*>(.*?)</ArticleTitle>", art, re.S)
@@ -51,6 +61,7 @@ for i in range(0, len(pmids), 100):
             "abstract_sections": secs,
             "title": txt(ti.group(1)) if ti else "",
             "is_book": "<BookTitle" in art,
+            "other_languages": _other,
             "journal_full": (txt((re.search(r"<Title>(.*?)</Title>", art, re.S) or [None, ""])[1])
                              if re.search(r"<Title>(.*?)</Title>", art, re.S)
                              else txt((re.search(r"<PublisherName[^>]*>(.*?)</PublisherName>", art, re.S) or [None,""])[1])

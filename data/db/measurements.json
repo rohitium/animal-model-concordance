@@ -1644,7 +1644,7 @@
     "species": [],
     "n": null,
     "n_counts": null,
-    "verbatim": "PPV is an important measure of decision quality in drug R&amp;D because the unit costs per surviving therapeutic candidate tend to rise through the R&amp;D process [ 21 ]."
+    "verbatim": "PPV is an important measure of decision quality in drug R&D because the unit costs per surviving therapeutic candidate tend to rise through the R&D process [ 21 ]."
    },
    {
     "statistic": "PPV",
@@ -2555,7 +2555,7 @@
     ],
     "n": null,
     "n_counts": "subjects",
-    "verbatim": "With no difference between arms, 74% of combined subjects had a decreased PSA slope at 1&#xa0;year compared to their own baseline slopes (p&#xa0;=&#xa0;0.0004)."
+    "verbatim": "With no difference between arms, 74% of combined subjects had a decreased PSA slope at 1\u00a0year compared to their own baseline slopes (p\u00a0=\u00a00.0004)."
    },
    {
     "statistic": "percent",
@@ -2580,7 +2580,7 @@
     "topic": "TARP Epitope Enhancement"
    },
    {
-    "quote": "With no difference between arms, 74% of combined subjects had a decreased PSA slope at 1&#xa0;year compared to their own baseline slopes (p&#xa0;=&#xa0;0.0004).",
+    "quote": "With no difference between arms, 74% of combined subjects had a decreased PSA slope at 1\u00a0year compared to their own baseline slopes (p\u00a0=\u00a00.0004).",
     "topic": "PSA Slope Decrease"
    },
    {
@@ -2732,7 +2732,7 @@
     ],
     "n": null,
     "n_counts": "models",
-    "verbatim": "Despite these similarities, very few models (mainly HFD, WD and HFD/WD2%-AMLD and LDLR-CDHFHCD) closely recapitulated (with &gt;90% agreement) the burden of \u2018early disease development\u2019 (metabolic) DRP changes observed in human subjects."
+    "verbatim": "Despite these similarities, very few models (mainly HFD, WD and HFD/WD2%-AMLD and LDLR-CDHFHCD) closely recapitulated (with >90% agreement) the burden of \u2018early disease development\u2019 (metabolic) DRP changes observed in human subjects."
    },
    {
     "statistic": "congruence rate",
@@ -5370,7 +5370,7 @@
     ],
     "n": null,
     "n_counts": "P-sites",
-    "verbatim": "We found that S&lt;&gt;S (73.08%), T&lt;&gt;T (19.14%), and Y&lt;&gt;Y (5.65%) ranked in the top three, followed by S&lt;&gt;T (2.01%), and S/T&lt;&gt;Y (0.15%)."
+    "verbatim": "We found that S<>S (73.08%), T<>T (19.14%), and Y<>Y (5.65%) ranked in the top three, followed by S<>T (2.01%), and S/T<>Y (0.15%)."
    },
    {
     "statistic": "T<>T match",
@@ -5383,7 +5383,7 @@
     ],
     "n": null,
     "n_counts": "P-sites",
-    "verbatim": "We found that S&lt;&gt;S (73.08%), T&lt;&gt;T (19.14%), and Y&lt;&gt;Y (5.65%) ranked in the top three, followed by S&lt;&gt;T (2.01%), and S/T&lt;&gt;Y (0.15%)."
+    "verbatim": "We found that S<>S (73.08%), T<>T (19.14%), and Y<>Y (5.65%) ranked in the top three, followed by S<>T (2.01%), and S/T<>Y (0.15%)."
    },
    {
     "statistic": "Y<>Y match",
@@ -5396,7 +5396,7 @@
     ],
     "n": null,
     "n_counts": "P-sites",
-    "verbatim": "We found that S&lt;&gt;S (73.08%), T&lt;&gt;T (19.14%), and Y&lt;&gt;Y (5.65%) ranked in the top three, followed by S&lt;&gt;T (2.01%), and S/T&lt;&gt;Y (0.15%)."
+    "verbatim": "We found that S<>S (73.08%), T<>T (19.14%), and Y<>Y (5.65%) ranked in the top three, followed by S<>T (2.01%), and S/T<>Y (0.15%)."
    },
    {
     "statistic": "S<>T match",
@@ -5409,7 +5409,7 @@
     ],
     "n": null,
     "n_counts": "P-sites",
-    "verbatim": "We found that S&lt;&gt;S (73.08%), T&lt;&gt;T (19.14%), and Y&lt;&gt;Y (5.65%) ranked in the top three, followed by S&lt;&gt;T (2.01%), and S/T&lt;&gt;Y (0.15%)."
+    "verbatim": "We found that S<>S (73.08%), T<>T (19.14%), and Y<>Y (5.65%) ranked in the top three, followed by S<>T (2.01%), and S/T<>Y (0.15%)."
    },
    {
     "statistic": "S/T<>Y match",
@@ -5422,7 +5422,7 @@
     ],
     "n": null,
     "n_counts": "P-sites",
-    "verbatim": "We found that S&lt;&gt;S (73.08%), T&lt;&gt;T (19.14%), and Y&lt;&gt;Y (5.65%) ranked in the top three, followed by S&lt;&gt;T (2.01%), and S/T&lt;&gt;Y (0.15%)."
+    "verbatim": "We found that S<>S (73.08%), T<>T (19.14%), and Y<>Y (5.65%) ranked in the top three, followed by S<>T (2.01%), and S/T<>Y (0.15%)."
    },
    {
     "statistic": "correlation coefficient",
@@ -6440,7 +6440,7 @@
     ],
     "n": null,
     "n_counts": null,
-    "verbatim": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046&#x2009;years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime)."
+    "verbatim": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046\u2009years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime)."
    },
    {
     "statistic": "time shift per dose",
@@ -6454,7 +6454,7 @@
     ],
     "n": null,
     "n_counts": null,
-    "verbatim": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046&#x2009;years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime)."
+    "verbatim": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046\u2009years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime)."
    },
    {
     "statistic": "difference in time shift per dose",
@@ -6468,7 +6468,7 @@
     ],
     "n": null,
     "n_counts": null,
-    "verbatim": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046&#x2009;years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime)."
+    "verbatim": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046\u2009years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime)."
    }
   ],
   "headline_index": null,
@@ -6480,7 +6480,7 @@
     "topic": "Dose-response similarity"
    },
    {
-    "quote": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046&#x2009;years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime).",
+    "quote": "The time shift per dose was larger by two orders of magnitude in humans (7.8 and 0.046\u2009years per Gy for humans and mice, respectively, when exposed at ~35% of their lifetime).",
     "topic": "Time shift difference"
    },
    {
@@ -7728,7 +7728,7 @@
     "species": [],
     "n": null,
     "n_counts": "compounds",
-    "verbatim": "Performance for compounds with LD50&#xa0;\u2264&#x200b;300&#xa0;mg/kg (approx. 5% of the dataset) was the poorest among all groups and could be potentially improved by including expert review and read-across to similar substances."
+    "verbatim": "Performance for compounds with LD50\u00a0\u2264\u200b300\u00a0mg/kg (approx. 5% of the dataset) was the poorest among all groups and could be potentially improved by including expert review and read-across to similar substances."
    }
   ],
   "headline_index": null,
@@ -7748,7 +7748,7 @@
     "topic": "Overprediction impact"
    },
    {
-    "quote": "Performance for compounds with LD50&#xa0;\u2264&#x200b;300&#xa0;mg/kg (approx. 5% of the dataset) was the poorest among all groups and could be potentially improved by including expert review and read-across to similar substances.",
+    "quote": "Performance for compounds with LD50\u00a0\u2264\u200b300\u00a0mg/kg (approx. 5% of the dataset) was the poorest among all groups and could be potentially improved by including expert review and read-across to similar substances.",
     "topic": "Poorest performance group"
    }
   ]
@@ -9073,7 +9073,7 @@
     "species": [],
     "n": 323,
     "n_counts": "cell culture experiments",
-    "verbatim": "Accordingly, estimated areas under the ROC (AUC) values were only slightly &gt;0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60)."
+    "verbatim": "Accordingly, estimated areas under the ROC (AUC) values were only slightly >0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60)."
    },
    {
     "statistic": "AUC",
@@ -9084,7 +9084,7 @@
     "species": [],
     "n": null,
     "n_counts": "cell line experiments",
-    "verbatim": "Accordingly, estimated areas under the ROC (AUC) values were only slightly &gt;0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60)."
+    "verbatim": "Accordingly, estimated areas under the ROC (AUC) values were only slightly >0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60)."
    },
    {
     "statistic": "AUC",
@@ -9095,7 +9095,7 @@
     "species": [],
     "n": null,
     "n_counts": "cell line experiments",
-    "verbatim": "Accordingly, estimated areas under the ROC (AUC) values were only slightly &gt;0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60)."
+    "verbatim": "Accordingly, estimated areas under the ROC (AUC) values were only slightly >0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60)."
    },
    {
     "statistic": "Odds Ratio",
@@ -9181,7 +9181,7 @@
     "topic": "Translation failure"
    },
    {
-    "quote": "Accordingly, estimated areas under the ROC (AUC) values were only slightly &gt;0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60).",
+    "quote": "Accordingly, estimated areas under the ROC (AUC) values were only slightly >0.5, consistent with IC50 predicting success barely better than chance, whether the ROC represented data from all preclinical cell experiments (AUC = 0.59, Figure 2A ) or from subsets ( Figure 2B ) defined by whether the cell line originated from lung cancer (LCLine, AUC = 0.56) or some other source (non-LCLine, AUC = 0.60).",
     "topic": "IC50 predictive value"
    },
    {
@@ -10519,7 +10519,7 @@
   "what_it_found": "Drugs used clinically were not found to be more effective experimentally than those tested only in animal models, and the average level of neuroprotection in focal ischemia models was not significantly different between these two groups.",
   "key_quotes": [
    {
-    "quote": "There was no evidence that drugs used clinically (114 drugs) were more effective experimentally than those tested only in animal models (912 drugs), for example, improvement in focal models averaged 31.3 &amp; 16.7% versus 24.4 &amp; 32.9%, p > 0.05, respectively.",
+    "quote": "There was no evidence that drugs used clinically (114 drugs) were more effective experimentally than those tested only in animal models (912 drugs), for example, improvement in focal models averaged 31.3 & 16.7% versus 24.4 & 32.9%, p > 0.05, respectively.",
     "topic": "Clinical vs. Experimental Efficacy"
    },
    {
@@ -11960,7 +11960,7 @@
     ],
     "n": null,
     "n_counts": "genes",
-    "verbatim": "17% of genes were identified to be inconsistent (same gene is shown as up- and downregulated) within the species and 7% of genes showed to have contradictions between the species. 12% of genes were found to be statistically non-significant ( p -value &gt;0.05) in both species ( Supplementary Table 6 )."
+    "verbatim": "17% of genes were identified to be inconsistent (same gene is shown as up- and downregulated) within the species and 7% of genes showed to have contradictions between the species. 12% of genes were found to be statistically non-significant ( p -value >0.05) in both species ( Supplementary Table 6 )."
    },
    {
     "statistic": "contradictions between species",
@@ -11974,7 +11974,7 @@
     ],
     "n": null,
     "n_counts": "genes",
-    "verbatim": "17% of genes were identified to be inconsistent (same gene is shown as up- and downregulated) within the species and 7% of genes showed to have contradictions between the species. 12% of genes were found to be statistically non-significant ( p -value &gt;0.05) in both species ( Supplementary Table 6 )."
+    "verbatim": "17% of genes were identified to be inconsistent (same gene is shown as up- and downregulated) within the species and 7% of genes showed to have contradictions between the species. 12% of genes were found to be statistically non-significant ( p -value >0.05) in both species ( Supplementary Table 6 )."
    },
    {
     "statistic": "statistically non-significant",
@@ -11988,7 +11988,7 @@
     ],
     "n": null,
     "n_counts": "genes",
-    "verbatim": "17% of genes were identified to be inconsistent (same gene is shown as up- and downregulated) within the species and 7% of genes showed to have contradictions between the species. 12% of genes were found to be statistically non-significant ( p -value &gt;0.05) in both species ( Supplementary Table 6 )."
+    "verbatim": "17% of genes were identified to be inconsistent (same gene is shown as up- and downregulated) within the species and 7% of genes showed to have contradictions between the species. 12% of genes were found to be statistically non-significant ( p -value >0.05) in both species ( Supplementary Table 6 )."
    }
   ],
   "headline_index": 0,
@@ -12043,7 +12043,7 @@
     "species": [],
     "n": null,
     "n_counts": null,
-    "verbatim": "However, sunitinib effect sizes were significantly greater when active drug comparators were present in an experiment compared to when they were not (\u22122.2 [\u22122.5, \u22121.9] vs \u22121.4 [\u22121.7, \u22121.1], p-value &lt;0.001)."
+    "verbatim": "However, sunitinib effect sizes were significantly greater when active drug comparators were present in an experiment compared to when they were not (\u22122.2 [\u22122.5, \u22121.9] vs \u22121.4 [\u22121.7, \u22121.1], p-value <0.001)."
    },
    {
     "statistic": "SMD",
@@ -12054,7 +12054,7 @@
     "species": [],
     "n": null,
     "n_counts": null,
-    "verbatim": "However, sunitinib effect sizes were significantly greater when active drug comparators were present in an experiment compared to when they were not (\u22122.2 [\u22122.5, \u22121.9] vs \u22121.4 [\u22121.7, \u22121.1], p-value &lt;0.001)."
+    "verbatim": "However, sunitinib effect sizes were significantly greater when active drug comparators were present in an experiment compared to when they were not (\u22122.2 [\u22122.5, \u22121.9] vs \u22121.4 [\u22121.7, \u22121.1], p-value <0.001)."
    },
    {
     "statistic": "overestimation of effect size",
@@ -12098,7 +12098,7 @@
     "species": [],
     "n": 158,
     "n_counts": "individual experiments",
-    "verbatim": "For the 158 individual experiments, 65.8% showed statistically significant activity at the experiment level (p &lt; 0.05, Figure 2\u2014figure supplement 1 ), with an average sample size of 8.03 animals per treatment arm and 8.39 animals per control arm."
+    "verbatim": "For the 158 individual experiments, 65.8% showed statistically significant activity at the experiment level (p < 0.05, Figure 2\u2014figure supplement 1 ), with an average sample size of 8.03 animals per treatment arm and 8.39 animals per control arm."
    },
    {
     "statistic": "replication success rate",
@@ -12125,7 +12125,7 @@
     "topic": "Internal validity"
    },
    {
-    "quote": "For external validity ( Figure 3C ), malignancies tested in more and diverse experimental systems tended to show less extreme effect sizes (p &lt; 0.001).",
+    "quote": "For external validity ( Figure 3C ), malignancies tested in more and diverse experimental systems tended to show less extreme effect sizes (p < 0.001).",
     "topic": "External validity"
    },
    {
@@ -18691,7 +18691,7 @@
     "species": [],
     "n": null,
     "n_counts": "36 possible results",
-    "verbatim": "In short, in many ways, they actually repeat and reinforce our findings, in accordance with their statement in section 2.7 of their Methods, that, \u201cAs a general rule, a test is considered \u2018diagnostic\u2019 in predicting a positive outcome when the LR+ is &gt;10 or for predicting a negative outcome when the iLR- is &gt; 10.\u201d Of their 36 possible results, only two PLRs/LR+ met the authors\u2019 acknowledged \u2018diagnostic\u2019 definition of a value of &gt; = 10, and none of the iNLRs/iLR- did so."
+    "verbatim": "In short, in many ways, they actually repeat and reinforce our findings, in accordance with their statement in section 2.7 of their Methods, that, \u201cAs a general rule, a test is considered \u2018diagnostic\u2019 in predicting a positive outcome when the LR+ is >10 or for predicting a negative outcome when the iLR- is > 10.\u201d Of their 36 possible results, only two PLRs/LR+ met the authors\u2019 acknowledged \u2018diagnostic\u2019 definition of a value of > = 10, and none of the iNLRs/iLR- did so."
    },
    {
     "statistic": "inverse Negative LR (iNLR)",
@@ -18702,7 +18702,7 @@
     "species": [],
     "n": null,
     "n_counts": "36 possible results",
-    "verbatim": "In short, in many ways, they actually repeat and reinforce our findings, in accordance with their statement in section 2.7 of their Methods, that, \u201cAs a general rule, a test is considered \u2018diagnostic\u2019 in predicting a positive outcome when the LR+ is &gt;10 or for predicting a negative outcome when the iLR- is &gt; 10.\u201d Of their 36 possible results, only two PLRs/LR+ met the authors\u2019 acknowledged \u2018diagnostic\u2019 definition of a value of &gt; = 10, and none of the iNLRs/iLR- did so."
+    "verbatim": "In short, in many ways, they actually repeat and reinforce our findings, in accordance with their statement in section 2.7 of their Methods, that, \u201cAs a general rule, a test is considered \u2018diagnostic\u2019 in predicting a positive outcome when the LR+ is >10 or for predicting a negative outcome when the iLR- is > 10.\u201d Of their 36 possible results, only two PLRs/LR+ met the authors\u2019 acknowledged \u2018diagnostic\u2019 definition of a value of > = 10, and none of the iNLRs/iLR- did so."
    },
    {
     "statistic": "Positive LR (PLR)",
@@ -18713,7 +18713,7 @@
     "species": [],
     "n": null,
     "n_counts": "36 possible results",
-    "verbatim": "Of their 36 possible results, only two PLRs/LR+ met the authors\u2019 acknowledged \u2018diagnostic\u2019 definition of a value of &gt; = 10, and none of the iNLRs/iLR- did so."
+    "verbatim": "Of their 36 possible results, only two PLRs/LR+ met the authors\u2019 acknowledged \u2018diagnostic\u2019 definition of a value of > = 10, and none of the iNLRs/iLR- did so."
    },
    {
     "statistic": "inverse Negative LR (iNLR)",
@@ -18724,7 +18724,7 @@
     "species": [],
     "n": null,
     "n_counts": "30 of the iLR- values",
-    "verbatim": "In fact, 30 of the iLR- values were &lt; =2, with most of these in or around unity; i.e. they provided no evidential weight at all."
+    "verbatim": "In fact, 30 of the iLR- values were < =2, with most of these in or around unity; i.e. they provided no evidential weight at all."
    },
    {
     "statistic": "concordance rate",

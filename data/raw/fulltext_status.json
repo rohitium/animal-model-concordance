@@ -94,10 +94,10 @@
   "pmcid": null,
   "doi": "10.1016/j.taap.2017.09.006",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/28893587.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "20613859": {
   "pmid": "20613859",
@@ -214,10 +214,10 @@
   "pmcid": null,
   "doi": "10.1016/j.expneurol.2004.05.008",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/15246820.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "20806453": {
   "pmid": "20806453",
@@ -234,10 +234,10 @@
   "pmcid": "PMC6759211",
   "doi": "10.1007/s00262-017-2084-x",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/29143114.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "38676802": {
   "pmid": "38676802",
@@ -254,10 +254,10 @@
   "pmcid": null,
   "doi": "10.1016/j.ejphar.2015.03.026",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/25814248.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "38867022": {
   "pmid": "38867022",
@@ -354,10 +354,10 @@
   "pmcid": null,
   "doi": "10.1016/j.drudis.2020.05.004",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/32413492.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "31694927": {
   "pmid": "31694927",
@@ -464,10 +464,10 @@
   "pmcid": "PMC4442585",
   "doi": "10.1089/humc.2014.155",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/25671556.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "22303754": {
   "pmid": "22303754",
@@ -634,10 +634,10 @@
   "pmcid": null,
   "doi": "10.1093/toxsci/kfx125",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/28903488.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "20807552": {
   "pmid": "20807552",
@@ -704,10 +704,10 @@
   "pmcid": null,
   "doi": "10.1016/j.yrtph.2018.04.018",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": "cc by-nc-nd"
+  "pdf": "data/raw/fulltext/29730448.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "17175568": {
   "pmid": "17175568",
@@ -754,10 +754,10 @@
   "pmcid": null,
   "doi": "10.1177/026119291504300607",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/26753942.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "30364994": {
   "pmid": "30364994",
@@ -824,10 +824,10 @@
   "pmcid": "PMC9158443",
   "doi": "10.1177/01410768221100970",
   "oa": true,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/35616311.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "37712424": {
   "pmid": "37712424",
@@ -964,10 +964,10 @@
   "pmcid": null,
   "doi": "10.1016/j.theriogenology.2007.09.030",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/17988725.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "22790876": {
   "pmid": "22790876",
@@ -984,10 +984,10 @@
   "pmcid": null,
   "doi": "10.1007/s00421-016-3336-8",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/26856335.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "36859342": {
   "pmid": "36859342",

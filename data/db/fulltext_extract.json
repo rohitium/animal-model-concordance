@@ -4944,5 +4944,1935 @@
   ],
   "chars": 48817,
   "route": "user_supplied"
+ },
+ "36883244": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "mouse",
+    "metric": "improvement in preclinical studies",
+    "value": 0.9,
+    "n": null
+   },
+   {
+    "species": "rat",
+    "metric": "improvement in preclinical studies",
+    "value": 0.95,
+    "n": null
+   },
+   {
+    "species": "non-human primate",
+    "metric": "improvement in preclinical studies",
+    "value": 0.67,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "motor deficits",
+   "neuroinflammation",
+   "nigrostriatal dopaminergic neuron degeneration",
+   "alpha-synuclein accumulation",
+   "motor and non-motor deficits",
+   "dopamine homeostasis",
+   "progressive motor deficits",
+   "reduced striatal dopamine",
+   "age-related degeneration of nigrostriatal dopaminergic neurons"
+  ],
+  "endpoints_human": [
+   "resting tremor",
+   "slowness of movement",
+   "muscle rigidity",
+   "postural instability",
+   "dementia",
+   "gait disorders",
+   "behavioral disorders",
+   "cognitive disorders"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper does not explicitly define concordance but discusses the lack of concordance between animal and human responses to treatment.",
+  "limitations_stated": [
+   "Animal models often fail to recapitulate the chronic, progressive nature of human diseases.",
+   "Animal models may not reflect comorbidities typically associated with human diseases.",
+   "Interspecies differences in metabolism, gut microbiome, immune system, and epigenetics impact external validity.",
+   "Animal models may not reflect the multifactorial etiology of human diseases.",
+   "Animal models of familial/gene-based early-onset AD do not recapitulate the genetics nor the onset and progression of late-onset sporadic AD.",
+   "Propensity to neglect relevant aspects during preclinical drug assessment (efficacy, target selectivity, pharmacodynamic and pharmacokinetic properties).",
+   "Limited construction or predictive validity of animal models.",
+   "Animal models often do not exhibit substantial loss of neurons despite amyloid deposits.",
+   "Reliance on models not relevant for humans may generate false negative results.",
+   "Species differences between non-human primates and humans, and between HIV and SIV viruses."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "The failure rate for the translation of drugs from animal testing to human treatments remains at over 92%.",
+   "99% of trials in Alzheimer's disease (AD) showing no drug\u2013placebo difference.",
+   "Since 1995, only six drugs have been approved by the FDA for AD treatment.",
+   "155 interventional clinical trials aimed at testing drugs for AD have been terminated (as of 5 July 2022).",
+   "For 266 studies of potentially disease-modifying interventions for Parkinson's disease (PD), improvement was apparent for 90% of studies on mice, 95% of studies on rats, and 67\u201380% of trials on non-human primates.",
+   "Only 32% of human trials for PD showed any clinical improvement.",
+   "About 40% of patients treated with TNF-\u03b1 blockers for rheumatoid arthritis (RA) remain refractory to treatment.",
+   "Up to 50% of primary responders to TNF-\u03b1 blockers for RA lose their response within 12 months of starting therapy.",
+   "85 different vaccine products showing encouraging results in NHPs (both chimpanzees and macaques) had led to 197 clinical trials for HIV/AIDS, but they did not lead to a successful human vaccine.",
+   "In 2020, the HIV Vaccine Trials Network (hvtn.org) listed 19 ongoing vaccine trials under its auspices, involving almost 12,000 participants.",
+   "RV144 is the only HIV efficacy trial to date that showed even modest efficacy, of 31.2%."
+  ],
+  "chars": 151044,
+  "route": "user_supplied"
+ },
+ "24489990": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "mouse",
+    "metric": "survival increase",
+    "value": 5.0,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "safety",
+   "efficacy",
+   "toxicity",
+   "pharmacokinetics",
+   "survival"
+  ],
+  "endpoints_human": [
+   "safety",
+   "efficacy",
+   "toxicity",
+   "pharmacokinetics"
+  ],
+  "endpoint_class": "not-stated",
+  "concordance_definition": "The paper does not explicitly define a concordance definition but discusses the translation of findings from animal models to human clinical trials.",
+  "limitations_stated": [
+   "Animal models are limited in their ability to mimic complex human carcinogenesis, physiology, and progression.",
+   "Genetic, molecular, and physiological differences between humans and mice prevent effective cancer cure seeking.",
+   "Transcription factor binding sites differ between humans and mice in 41% to 89% of cases.",
+   "Mouse models often replicate specific processes but not the whole spectrum of human disease physiological changes.",
+   "No best-practice standards exist for animal testing.",
+   "Laboratory environment (e.g., stress in caged mice) can affect experimental results.",
+   "Poor selectivity of MMPIs.",
+   "Poor target validation for targeted therapy.",
+   "Poorly defined predictive preclinical animal models for safety and efficacy.",
+   "Elevated levels of circulating immunosuppressive cytokines and immunological checkpoints in humans may not be present in rodents."
+  ],
+  "funding_conflict": "None.",
+  "key_numbers": [
+   "Average rate of successful translation from animal models to clinical cancer trials is less than 8%.",
+   "85% of early clinical trials for novel drugs fail.",
+   "Of those that survive through to phase III, only half become approved for clinical use.",
+   "Fewer than one in five cancer clinical trials find their way to the peer-reviewed literature.",
+   "Animal studies seem to overestimate by about 30% the likelihood that a treatment will be effective.",
+   "Little more than a third of highly cited animal research is tested later in human trials.",
+   "Of the one-third that enter into clinical trials, as little as 8% of drugs pass Phase I successfully.",
+   "IPI-926 treated mice with advanced brain tumors gained a fivefold increase in survival.",
+   "Among the more-than 16 MMPIs that progressed to clinical testing, only Periostat (doxycycline hyclate) has been approved for clinical use.",
+   "Out of 23 Phase II/III clinical trials testing 17 distinct therapeutic anticancer vaccines, 18 of these studies had failed.",
+   "Approximately one-quarter of the molecules entering clinical trials fail due to pharmacological issues."
+  ],
+  "chars": 22368,
+  "route": "user_supplied"
+ },
+ "24678540": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "mouse",
+    "metric": "survival benefit",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "survival",
+   "symptom progression",
+   "physical traits",
+   "biochemical traits",
+   "gait",
+   "grip strength",
+   "bowel obstruction",
+   "motor neuron loss",
+   "protein aggregation",
+   "muscle atrophy"
+  ],
+  "endpoints_human": [
+   "survival",
+   "symptom progression"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper does not explicitly define concordance but discusses the failure of animal studies to predict human clinical outcomes, implying a lack of agreement.",
+  "limitations_stated": [
+   "Preclinical experiments were not rigorously designed.",
+   "Animal models are frequently condemned as poor predictors.",
+   "Initial physiological descriptions of animal models rarely encompass all salient features.",
+   "Models are often inadequate for studying how a drug affects various aspects of disease.",
+   "Existing TDP43-mutant mice may be useful for studying drugs' effects on certain disease mechanisms, but a drug's ability to extend survival would most probably be irrelevant to people.",
+   "Failure to exclude animals whose deaths are unrelated to the disease being studied.",
+   "Failing to split littermates between control and treatment groups.",
+   "Not taking gender into account.",
+   "Genes introduced to induce disease are often not inherited reliably.",
+   "Inconsistent phenotype in breeding colonies."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "More than 80% of potential therapeutics fail when tested in people.",
+   "About a dozen experimental treatments for ALS had been shown to ameliorate disease in an animal model; all but one failed in the clinic.",
+   "ALS TDI has tested more than 100 potential drugs in a mouse model of ALS.",
+   "Eight of these compounds ultimately failed in clinical trials, which together involved thousands of people.",
+   "Almost 90% of the mice had an average lifespan of 134 days, give or take 10 days.",
+   "Male SOD1 mice show symptoms as much as a week before females and die about a week earlier.",
+   "A week is a 4% variability in survival.",
+   "When first described in 2010, all TDP43-mutant mice died within 200 days.",
+   "When ordering mice from a breeding colony, the mice lived for up to 400 days without showing signs of disease.",
+   "Lithium can boost survival of SOD1 mice by 30 days.",
+   "A small clinical trial showed that lithium also extended life in people with ALS.",
+   "Three separate phase III clinical trials for lithium enrolled hundreds of patients with a total cost of well over US$100 million.",
+   "The median survival time of untreated animals was 20 days shorter than that observed elsewhere.",
+   "Highly variable animal models could require hundreds of animals per group.",
+   "Homogeneous animal models require as many as ten animals per group.",
+   "It takes about $30,000 and 6\u20139 months to characterize the toxicity of a molecule and assess whether enough reaches the relevant tissue and has a sufficient half life.",
+   "Experiments to test whether a drug can extend an animal\u2019s survival will cost about $100,000 per dose and take around 12 months.",
+   "An investment of $330,000 is necessary just to determine whether a single drug has reasonable potential to treat disease in humans."
+  ],
+  "chars": 18256,
+  "route": "user_supplied"
+ },
+ "21892149": {
+  "concordance_metric": "reproducibility of published data",
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [],
+  "endpoint_class": "not-stated",
+  "concordance_definition": "The study defines concordance as the relationship between published data and in-house data, categorizing outcomes as 'completely in line', 'main set was reproducible', 'some results were reproducible', or 'data showed inconsistencies that led to project termination'.",
+  "limitations_stated": [
+   "Data set is rather small and its statistical significance can be questioned.",
+   "Own experimental results might also be irreproducible in other laboratories.",
+   "The study does not report fraud, but a lack of reproducibility."
+  ],
+  "funding_conflict": "The authors are employees of Bayer Healthcare.",
+  "key_numbers": [
+   "Success rates for new development projects in Phase II trials have fallen from 28% to 18%.",
+   "23 scientists provided input for the analysis.",
+   "Data were collected from 67 projects.",
+   "47 projects were from the field of oncology.",
+   "Only in ~20-25% of projects were published data completely in line with in-house findings.",
+   "In almost two-thirds of projects, there were inconsistencies between published and in-house data.",
+   "Intra- and interscreen reproducibility of two genome-scale small interfering RNA screens ranged from 32-99%.",
+   "An unspoken rule among early-stage venture capital firms states that 'at least 50% of published studies... can\u2019t be repeated with the same conclusions by an industrial lab'."
+  ],
+  "chars": 14240,
+  "route": "user_supplied"
+ },
+ "28893587": {
+  "concordance_metric": "overall",
+  "concordance_value": null,
+  "n_pairs": 182,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "Rodent",
+    "metric": "PPV",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Dog",
+    "metric": "PPV",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "NHP",
+    "metric": "PPV",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Rodent",
+    "metric": "NPV",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Dog",
+    "metric": "NPV",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "NHP",
+    "metric": "NPV",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Rodent",
+    "metric": "LR+",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Dog",
+    "metric": "LR+",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "NHP",
+    "metric": "LR+",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Rodent",
+    "metric": "iLR-",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Dog",
+    "metric": "iLR-",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "NHP",
+    "metric": "iLR-",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Rodent",
+    "metric": "Sensitivity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Dog",
+    "metric": "Sensitivity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "NHP",
+    "metric": "Sensitivity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Rodent",
+    "metric": "Specificity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "Dog",
+    "metric": "Specificity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "NHP",
+    "metric": "Specificity",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": 0.48,
+  "specificity": 0.84,
+  "ppv": 0.43,
+  "npv": 0.86,
+  "endpoints_animal": [
+   "general toxicology",
+   "in vivo safety pharmacology"
+  ],
+  "endpoints_human": [
+   "adverse events",
+   "other findings"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "A true positive finding was recorded when effects were reported in both the nonclinical species and human involving the same target organ category.",
+  "limitations_stated": [
+   "Data from the reproductive category was collected but not analyzed as the clinical outcome in phase I was not reported.",
+   "The 'other' organ system category, which generally consisted of subjective constitutional adverse events, had a very low PPV and NPV.",
+   "Animal models would not be expected to predict subjective constitutional clinical signs.",
+   "Reporting of adverse events in oncology trials is suboptimal and characterized by substantial selectivity and heterogeneity resulting from concurrent disease in the oncology clinical trial population.",
+   "Oncology agents are commonly administered to maximum tolerated doses in the clinic and more likely to have a clinical positive outcome (e.g. higher outcome prevalence) that could skew the performance measures.",
+   "Phase I trials may not always dose humans to exposures equal to the exposures obtained in the animal studies at which effects were observed.",
+   "The definition of a positive nonclinical signal of concern was any adverse effect as determined by the sponsor, that was significant enough to be included in the IB.",
+   "No specific criteria were established for the sponsors in their reporting of abnormal findings or clinical symptoms, nor the requirement for an adjudication process for the clinical data submitted from the phase I studies.",
+   "The clinical event data can be subjective.",
+   "The use of three species (rodent, dog and NHP) for a particular molecule was rare."
+  ],
+  "funding_conflict": "All authors declare no conflict of interest.",
+  "key_numbers": [
+   "Database composed of 182 molecules.",
+   "Sensitivity was 48%.",
+   "Positive predictive value (PPV) was 43%.",
+   "Specificity was 84%.",
+   "Negative predictive value (NPV) was 86%.",
+   "Nonhuman primate had the strongest performance in predicting adverse effects.",
+   "When the same target organ was identified in both the rodent and nonrodent, the PPV increased.",
+   "Beagle dog had the strongest performance in predicting an absence of clinical adverse effects.",
+   "If no target organ toxicity was observed in either test species, the NPV increased.",
+   "Absence of toxicity in animal studies strongly predicts a similar outcome in the clinic.",
+   "Clinical positive prevalence for the database was 21%.",
+   "PPV for NHP in nervous system and gastrointestinal organ categories was > 80%.",
+   "LR+ values considered 'diagnostic' were observed in the dog for the cutaneous organ category, and in the NHP for the nervous system and gastrointestinal organ categories.",
+   "All organ categories across all test species, in general, had a very high NPV.",
+   "The NPV is the stronger predictive performance measure.",
+   "Majority of false positive liver signals, across species, occurred at much higher exposures (> 5-fold) than those achieved in the clinic.",
+   "When combining results using 'and', PPV increased to 62% with a LR+ value of 8.5 for liver effects.",
+   "The 'or' view maximizes the prediction of safety (NPV) at 92% when no liver effect is observed in either nonclinical species.",
+   "Concordance parameters excluding the 'other' category: Sensitivity 52%, Specificity 86%, PPV 36%, NPV 92%, Clinical positive prevalence 14%, LR+ 3.6."
+  ],
+  "chars": 48584,
+  "route": "user_supplied"
+ },
+ "26795250": {
+  "concordance_metric": "gene set enrichment similarity",
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": 254,
+  "n_human_studies": 135,
+  "species_results": [
+   {
+    "species": "mouse",
+    "metric": "gene set enrichment similarity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "gene set enrichment similarity",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "sepsis response"
+  ],
+  "endpoints_human": [
+   "sepsis response"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The study defines concordance based on the similarity of gene set enrichment between human and mouse datasets, particularly focusing on shared or distinct biological processes identified through methods like Leading Edge Metagene (LEM) analysis. High overlap in gene sets or metagenes between species indicates concordance.",
+  "limitations_stated": [
+   "The degree to which mouse models can recapitulate events occurring in immunologic disease states in humans remains controversial.",
+   "Contradictory findings have been reported in the comparison of gene expression across a range of human and mouse tissues.",
+   "Whether the observed differences in transcriptional signatures are due to inherent biological differences between species remains unclear.",
+   "The exact timing of the initiation of activation of immune cells in humans with sepsis is not precisely known and might be more variable compared to tightly controlled, narrow window of induction of sepsis in mouse models."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "ImmuneSigDB: Collection of ~5,000 gene sets derived from ~400 immunological studies",
+   "ImmuneSigDB included data from healthy human subjects, patients with immune or non-immune diseases, and mouse models.",
+   "Mapped orthologous genes to a common identifier allowed inclusion of both human (n = 135) and mouse (n = 254) studies.",
+   "From these studies, 2,436 meaningful comparisons and extracted 4,872 gene sets of up- or downregulated genes comprising the ImmuneSigDB.",
+   "Analysis of sepsis response in human (six comparisons) and mouse (four comparisons) datasets found coordinate upregulation of metagenes involved in interferon-response and phagocytic processes.",
+   "Mitosis metagene was much more specific to human datasets with no significant overlap in mouse studies.",
+   "Phagocytic vesicle metagene was present or strongly overlapped with a metagene present in every dataset, both mouse and human.",
+   "Analysis of 389 published studies of mouse and human immune cells to generate a collection of curated gene signatures.",
+   "A small subset of gene sets in ImmuneSigDB and MSigDB were highly similar (0.64% of gene sets with p < 10-8).",
+   "1.46% of gene sets with p < 10-8 had significant overlap within ImmuneSigDB.",
+   "Only a small fraction of ImmuneSigDB gene sets significantly overlapped with Chaussabel (0.06%) or Li (0.18%) collections.",
+   "Marked similarity in ImmuneSigDB gene sets enriched in human and mouse sepsis response (p = 5.01 x 10^-69).",
+   "Leading edges of gene sets enriched in both species were similar (Spearman r = 0.857, p < 0.0001).",
+   "LEM analysis of human sepsis (316 gene sets) and mouse sepsis (974 gene sets) identified three metagenes in each.",
+   "Phagocytic vesicle metagene correlated with both human and mouse sepsis response (hypergeometric test p = 1.09 x 10^-31).",
+   "Inflammatory response metagene in human dataset and TRIF-mediated TLR signaling in mouse model showed significant overlap (p = 2.79 x 10^-23)."
+  ],
+  "chars": 64863,
+  "route": "user_supplied"
+ },
+ "15246820": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "rabbit",
+    "metric": "hemorrhage incidence",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "neuronal cell death",
+   "infarct volume reduction",
+   "behavioral changes",
+   "clot load needed to affect 50% of animals"
+  ],
+  "endpoints_human": [
+   "clinical outcomes"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper does not explicitly define a concordance definition but implies it through the discussion of translational success, where an agent successfully moves from animal models to clinical trials.",
+  "limitations_stated": [
+   "Variability among animal stroke models in type and extent of injury.",
+   "Differences in patency of posterior communicating arteries in mice.",
+   "Mice are more delicate than rats and frequently succumb to stress.",
+   "Physiology of rodents must be carefully controlled.",
+   "Rat and mice are lissencephalic and have little white matter compared to humans.",
+   "Neuroprotection in animal models is often judged early, postponing injury maturation.",
+   "Human trials assess outcomes at longer time points (FDA standard is 3 months).",
+   "Lack of adherence to experimental paradigms in human trials.",
+   "Rodent studies are conducted to obtain consistent, homogeneous results, unlike heterogeneous human populations.",
+   "Human studies often assess all types of ischemic stroke, while animal studies assess one particular type."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "tPA is the only agent that has been successfully translated from animal models to clinical trials.",
+   "FDA standard for human trials is 3 months for outcome assessment.",
+   "Caffeinol alone did not show neuroprotective effect in rabbits.",
+   "Caffeinol combined with rtPA in rabbits increased risk of hemorrhage.",
+   "Vasodilation alone has never been shown to work in human trials."
+  ],
+  "chars": 29746,
+  "route": "user_supplied"
+ },
+ "29143114": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "mice",
+    "metric": "tumor regression",
+    "value": 1.0,
+    "n": null
+   },
+   {
+    "species": "mice",
+    "metric": "tumor regression",
+    "value": 1.0,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "tumor regression",
+   "tumor regression"
+  ],
+  "endpoints_human": [
+   "decreased PSA slope",
+   "clinical benefit"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper describes two distinct strategies translated from mice to human clinical trials, with promising early results reported for both. For the TARP vaccine, the primary endpoint was a decreased PSA slope, with 74.2% of patients showing this at 48 weeks. For the HER2 vaccine, clinical benefit (complete response, partial response, or stable disease lasting >= 6 months) was observed in 5/11 evaluable patients at higher dose levels.",
+  "limitations_stated": [
+   "The magnitude of T cell response did not correlate with clinical response in the TARP vaccine trial.",
+   "A mechanistic correlate of clinical activity has not yet been identified for the TARP vaccine.",
+   "T cells from TARP-immunized patients have not yet been tested for lytic activity.",
+   "The HER2 vaccine trial in Part I was designed to treat patients na\u00efve to HER2-directed therapies to avoid cardiotoxicity concerns.",
+   "Antibody responses for later dose groups in the HER2 vaccine trial are pending.",
+   "T cell responses in the HER2 vaccine trial are pending."
+  ],
+  "funding_conflict": "The authors declare they have no conflict of interest.",
+  "key_numbers": [
+   "74% of combined subjects had a decreased PSA slope at 1 year compared to their own baseline slopes (p = 0.0004).",
+   "45% of evaluable patients showed clinical benefit at the second and third dose levels of the HER2 vaccine.",
+   "77.5% of patients made a new T cell response not present at baseline to the TARP vaccine peptides.",
+   "5/11 evaluable patients showed evidence of clinical benefit with the HER2 vaccine at 10 and 20 million DCs.",
+   "The tumor growth rate constant fell in half (p = 0.003) in TARP vaccine recipients.",
+   "85% power to discriminate among PSA responders vs non-responders using DC properties.",
+   "98% power to discriminate among immunological responders and non-responders using DC properties."
+  ],
+  "chars": 34775,
+  "route": "user_supplied"
+ },
+ "25814248": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [],
+  "endpoint_class": "not-stated",
+  "concordance_definition": null,
+  "limitations_stated": [
+   "Some longstanding animal models have failed to result in therapeutic advances in the clinical setting.",
+   "most models for diabetic nephropathy are unsatisfactory in that they do not evolve to renal failure.",
+   "Satisfactory models for additional nephropathies are needed.",
+   "Limitations of the model include the need for two surgical interventions, the second one having a high mortality rate, especially in mice, and requiring technical expertise.",
+   "In addition, it is irreversible and the amount of kidney left to study is small and may be distorted by the surgical procedure.",
+   "None of the many animal models perfectly replicate the human disease.",
+   "However, since it is unilateral, no increased serum creatinine is observed, although the injured kidney develops all features of CKD: interstitial in\ufb02ammation, tubular cell injury, and \ufb01brosis.",
+   "However, the lack of the important component of bacterial proliferation in the LPS model led to the use of cecal-puncture and ligation, a more complex, less reproducible model, where bacteria are released into the peritoneum.",
+   "No experimental treatment successfully tested in murine LPS models has demonstrated ef\ufb01cacy in humans.",
+   "Preeclampsia is thought to occur spontaneously only in women.",
+   "Animal models of preeclampsia have obvious limitations.",
+   "Mouse models are useful for genetic manipulation, but they are less useful for studying several key aspects of the pathogenesis of preeclampsia.",
+   "These limitations also apply to many pharmacologically-induced models of preeclampsia.",
+   "Furthermore, most models of preeclampsia do not include the complete spectrum of pathophysiological changes observed in humans.",
+   "In most of these models, renal failure does not appear or it has not been assessed."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "Around 15% of patients suffering AKI progress to CKD",
+   "Over 80% of patients with CKD have hypertension",
+   "A progressive increase in albuminuria, progressive loss in renal function, severe glomerulosclerosis and interstitial \ufb01brosis, hypertension, cardiac \ufb01brosis, and anemia was observed by 4 weeks in CD-1 mice and by 12 weeks in 129S3 mice.",
+   "After 16 weeks, the C57BL/6 mice had increased albuminuria without increased blood pressure and without developing progressive CKD or cardiac \ufb01brosis.",
+   "In mice 0.3% adenine mixed with food for 10 days followed by 0.15\u20130.20% for maintenance has been recommended to avoid deaths.",
+   "Later lowering adenine from 0.2% to 0.15% resulted in amelioration of renal function, although no formal reversibility studies were performed.",
+   "In transgenic rats speci\ufb01cally expressing the human diphtheria toxin receptor in podocytes, diphtheria toxin dose-dependently caused podocyte depletion.",
+   "Loss of up to 20% of podocytes caused transient proteinuria.",
+   "A greater (21\u201340%) loss of podocytes caused focal segmental glomerulosclerosis with sustained mild proteinuria but normal renal function.",
+   "Over 40% podocyte depletion caused full-blown focal segmental glomerulosclerosis, severe proteinuria and reduced renal function."
+  ],
+  "chars": 109670,
+  "route": "user_supplied"
+ },
+ "26479923": {
+  "concordance_metric": "response rate",
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": 277,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "mouse",
+    "metric": "response rate (mCR + mPR + mSD)",
+    "value": 0.48,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "response rate (mCR + mPR + mSD)",
+    "value": 0.54,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "response rate (mCR + mPR)",
+    "value": 0.42,
+    "n": 33
+   },
+   {
+    "species": "mouse",
+    "metric": "response rate (mCR + mPR)",
+    "value": 0.72,
+    "n": 33
+   },
+   {
+    "species": "mouse",
+    "metric": "response rate (mCR + mPR)",
+    "value": 0.87,
+    "n": 15
+   },
+   {
+    "species": "mouse",
+    "metric": "response rate (mCR + mPR + mSD)",
+    "value": 0.55,
+    "n": 43
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "tumor volume change",
+   "progression-free survival (PFS)",
+   "response categories (mCR, mPR, mSD, mPD)"
+  ],
+  "endpoints_human": [
+   "clinical trial response rates",
+   "progression-free survival (PFS)"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The translatability of the 1 \u00d7 1 \u00d7 1 PCT concept was assessed by comparing the responses of targeted therapies observed in PDXs to clinical outcomes in cancer patients.",
+  "limitations_stated": [
+   "lack of an intact immune system",
+   "differential influences of mouse stroma versus human stroma",
+   "underrepresentation of very specific genotypes and specific lineage subtypes"
+  ],
+  "funding_conflict": "The authors declare competing financial interests: details are available in the online version of the paper.",
+  "key_numbers": [
+   "1,075 PDX models established",
+   "62 treatments across six indications tested",
+   "277 PDXs used in PCT study",
+   "67% of BRAF-mutated PDXs responded to encorafenib",
+   "42% of BRAF-mutated PDXs showed mCR or mPR to encorafenib",
+   "100% response rate for encorafenib + binimetinib in BRAF-mutated PDXs",
+   "72% of BRAF-mutated PDXs showed mCR or mPR to encorafenib + binimetinib",
+   "80% of DR5 signature-positive models responded to TAS266",
+   "67% of PDXs with PIK3CA mutations and wild-type PTEN responded to BYL719",
+   "11% of wild-type PIK3CA and PTEN-mutated PDXs responded to BYL719",
+   "30% response rate for single agents across PDXE population",
+   "64% response rate for combinations across PDXE population",
+   "22 d median PFS for single agents",
+   "55 d median PFS for combinations",
+   "100% response rate for encorafenib + LEE011 in melanoma PDXs",
+   "87% mPR and mCR for encorafenib + LEE011 in melanoma PDXs",
+   "55% response rate for binimetinib in CRC PDXs",
+   "23/44 (52%) of PDXE models are hypermutators",
+   "13/49 (27%) of CCLE cell lines are hypermutators",
+   "R = 0.94 correlation between PDX and patient tumor median mutation rate",
+   "R = 0.96 correlation between PDX and patient tumor s.d. of mutation rate",
+   "R = 0.53 correlation between cell lines and PDXs mutation rate",
+   "R = 0.60 correlation between cell lines and PDXs s.d. of mutation rate",
+   "2,138 single-animal response data collected",
+   "440 unique treatment models evaluated for reproducibility",
+   "95% consistency of single-mouse response with majority response",
+   "48% response rate for BKM120",
+   "54% response rate for CLR457",
+   "Hazard ratio 0.28 for BKM120 PFS",
+   "Hazard ratio 0.28 for CLR457 PFS"
+  ],
+  "chars": 73133,
+  "route": "user_supplied"
+ },
+ "27916279": {
+  "concordance_metric": "translationally relevant and concordant results",
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "rhesus monkeys",
+    "metric": "cocaine versus food choice",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "rats",
+    "metric": "cocaine versus food choice",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "rhesus monkeys",
+    "metric": "methamphetamine versus food choice",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "rats",
+    "metric": "methamphetamine versus food choice",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "chimpanzees",
+    "metric": "morphine versus bananas choice",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "rats",
+    "metric": "morphine versus water choice",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "behavioral allocation (percent drug choice)",
+   "behavioral rate (overall rates of operant responding)"
+  ],
+  "endpoints_human": [
+   "drug self-administration",
+   "choice between drug and money"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "Preclinical drug versus food choice procedures evaluating the efficacy of both nonpharmacological and pharmacological treatment strategies have produced translationally relevant and concordant results with both human laboratory studies and clinical trials.",
+  "limitations_stated": [
+   "Whether differential KOR antagonist treatment effects represent procedural differences or species differences remains an outstanding question.",
+   "The effectiveness of 'agonist-like' pharmacotherapy approaches does not completely translate to other substance-use disorders.",
+   "The effectiveness of 'agonist-like' pharmacotherapy approaches on preclinical nicotine versus nondrug choice is unknown.",
+   "Buspirone treatment effects appear to depend upon the schedule of reinforcement.",
+   "Dopamine D3 treatment effects may also depend upon social hierarchy and corresponding dopamine D2-like receptor levels.",
+   "The degree to which biological variables impact the environmental or pharmacological determinants of behavioral allocation between drug and nondrug reinforcers remains relatively unexplored.",
+   "The degree to which sex differences exist in the potency of other drugs to function as reinforcers under different schedules of reinforcement remains an outstanding question."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "246 million adults aged 15-64 have used at least one illicit drug within the past year.",
+   "Since 2008, the number of individuals using illicit drugs has increased year on year."
+  ],
+  "chars": 63975,
+  "route": "user_supplied"
+ },
+ "32413492": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "mouse",
+    "metric": "albuminuria",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "rat",
+    "metric": "albuminuria",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "GFR",
+   "Albuminuria",
+   "Plasma urea",
+   "BP",
+   "Glomerular pathology",
+   "Tubulointerstitial inflammation",
+   "Tubulointerstitial fibrosis",
+   "Oxidative stress"
+  ],
+  "endpoints_human": [
+   "Albuminuria",
+   "eGFR",
+   "Doubling of serum creatinine",
+   "ESRD",
+   "Death from renal causes",
+   "Cardiovascular events"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper aims to compare treatment efficacy from preclinical testing with outcome from clinical trials and investigate whether rodent models are predictive for clinical outcomes of therapeutic agents in human DKD.",
+  "limitations_stated": [
+   "Most rodent models only exhibit early features of human DKD.",
+   "The db/db mouse model is limited by the pathology reflecting early-stage DKD in humans.",
+   "Interlaboratory variability potentially caused by dosing, treatment duration, or environmental factors.",
+   "Preclinical studies were primarily conducted in T1DM rodent models, whereas clinical trials were performed in patients with T2DM.",
+   "The predictive value of an animal model is limited to the disease this model represents.",
+   "Similar end-point measurements need to be explored between preclinical studies and clinical trials.",
+   "The selection of a preclinical model should also be based on the mechanism of action of the current drug.",
+   "The ZDF rat presented with mild proteinuria and mild to moderate glomerular changes, suggesting that the lack of transient beneficial effects of bardoxolone methyl was because the ZDF rats do not display a severe disease phenotype.",
+   "The effects of fenofibrate therapy in DKD showed contrasting results depending on whether fenofibrate was tested in a T1DM or a T2DM model of DKD."
+  ],
+  "funding_conflict": "F.S.E., M.V.\u00d8., K.F., and L.N.F. are employees of Gubra ApS; N.V. and J.J. are owners of Gubra ApS.",
+  "key_numbers": [
+   "700 million people projected to have diabetes by year 2045.",
+   "Approximately 50% and 25% of patients with ESRD in need of dialysis or kidney transplantation have diabetes in the USA and EU, respectively.",
+   "The prevalence of diabetes has reached world-wide epidemic proportions.",
+   "DKD is the leading cause of end-stage renal disease (ESRD).",
+   "The main renal outcomes of a subset of these clinical trials are summarized in Table 3, with comparison to corresponding data from preclinical studies in rodent models of DKD.",
+   "Four recent clinical trials (EMPA-REG OUTCOME, CANVAS, CREDENCE, and DECLARE-TIMI 58) showed that treatment with empaglifozin, canagliflozin, and dapagliflozin, respectively, consistently reduces adverse renal outcomes as well as cardiovascular events.",
+   "The best-characterized and most intensively used models are the STZ rat and the db/db mouse, although both models display varying degree of translatability to human disease.",
+   "Pharmacological studies in the KK-Akita mouse and KK-Ay mouse have shown translatability to clinical trials.",
+   "Patients given bardoxolone methyl had a mean increase in eGFR of 5.5 mL/min/1.73 m2 from a mean baseline eGFR of 22.4 mL/min/1.73 m2.",
+   "Patients in the placebo group experienced a decline in mean eGFR of \u20130.9 mL/min/1.73 m2 from baseline after 48 weeks of treatment."
+  ],
+  "chars": 77911,
+  "route": "user_supplied"
+ },
+ "31694927": {
+  "concordance_metric": "prediction of toxicities",
+  "concordance_value": 0.71,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "rat",
+    "metric": "prediction of DILI",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "dog",
+    "metric": "prediction of DILI",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "prediction of DILI",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "gastrointestinal toxicities",
+   "hematological toxicities",
+   "cardiovascular toxicities",
+   "drug-induced liver injury (DILI)",
+   "transaminase elevations",
+   "bile acid increases",
+   "liver fibrosis",
+   "chronic inflammation of portal areas",
+   "decreases in albumin",
+   "steatosis",
+   "stellate cell hypertrophy",
+   "fibrosis",
+   "hepatocellular necrosis",
+   "portal fibrosis",
+   "biliary hyperplasia",
+   "elevations of alanine aminotransferase (ALT)",
+   "elevations of aspartate aminotransferase (AST)"
+  ],
+  "endpoints_human": [
+   "adverse events",
+   "drug-induced liver injury (DILI)",
+   "gastrointestinal toxicities",
+   "hematological toxicities",
+   "cardiovascular toxicities",
+   "hepatocellular necrosis",
+   "steatosis",
+   "cholestasis",
+   "liver failure",
+   "transaminase elevations",
+   "serious DILI",
+   "steatosis",
+   "biliary hyperplasia",
+   "hepatocellular injury",
+   "cholestasis",
+   "steatosis",
+   "Kupffer cell depletion",
+   "stellate cell activation",
+   "mitochondrial dysfunction",
+   "oxidative stress",
+   "lipid droplet accumulation",
+   "innate immune response (cytokine release)"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper does not explicitly define concordance but discusses the ability of animal models to correctly predict human toxicities.",
+  "limitations_stated": [
+   "The Liver-Chip is currently not capable of detecting toxicities of the bile duct because this cell type has not yet been included in the design.",
+   "The model would need robust qualification with a specific context of use to convince regulatory agencies to make a decision with regard to the lack of human relevance of the rat findings.",
+   "Ongoing research on DILI ranges from basic understanding of adverse pathways and mechanisms by which some compounds cause DILI to clinical research aimed at identifying predictive DILI biomarkers.",
+   "Key gaps remain that need to be addressed in vitro models that predict DILI.",
+   "Dense 3D constructs often suffer from limited oxygen and nutrient transport.",
+   "In spheroids, it is difficult to visualize dynamic changes in cell position, morphology, or function within these large, disorganized, and multicellular structures.",
+   "Although the enzymatic activities in the human Liver-Chip were robust, some activities were lower or higher in comparison to fresh human hepatocytes, which most likely reflect donor-to-donor variability.",
+   "The CYP enzyme activities in rat chips were similar to those measured in fresh rat hepatocytes when a single substrate was used, but they were higher when a cocktail of CYP substrates were used, which suggests potential for interactions among these substrates in the cocktail approach."
+  ],
+  "funding_conflict": "D.E.I. holds equity interest in Emulate Inc. and chairs its scientific advisory board. D.E.I. is an inventor on a patent application (PCT/US2009/050830) submitted by Harvard University that covers \u201cOrgan mimic device with microchannels and methods of use and manufacturing thereof.\u201d K.-J.J, J.R., K.R.K., D.B.P., G.K., J.E.R., J.N., D.C., R.B., J.S., K.K., and G.A.H. are current or former employees of and hold equity interests or options to obtain equity interests in Emulate Inc. D.E.I., G.A.H., K.-J.J., S.H., and A.H. are inventors on a patent application (PCT/US16/64661) submitted by Harvard University that covers \u201cDevices for simulating a function of a liver tissue and methods of use and manufacturing thereof\u201d and G.A.H., K.-J.J., S.H., J.R., K.R.K., H.P., J.S., D.B.P., and M.A.O. are inventors on a patent application (PCT/US2016/064795) submitted by Emulate Inc. that covers \u201cDevices and methods for simulating a function of a liver tissue.\u201d",
+  "key_numbers": [
+   "An analysis of 150 drugs that caused adverse events in humans found that regulatory testing in rats and dogs correctly predicted just 71% of toxicities in humans.",
+   "The quantitative range of albumin production we measured in the human Liver-Chip between days 7 and 14 (~20 to 70 \uf06dg day\u22121 per million cells) was very similar to that estimated for humans in vivo (50 \uf06dg day\u22121 per million cells).",
+   "In the microengineered Liver-Chip, the underlying vascular channel containing LSECs also displayed the multifunctional scavenger receptor stabilin-1.",
+   "Albumin secretion in human, dog, and rat chips after bosentan administration showed IC50 of 10, 30, and >100 \uf06dM, respectively.",
+   "The concentration in the human Liver-Chip at which we observed toxicity approximated to the plasma concentration of bosentan (Cmax = 7.4 \uf06dM) that has been associated with DILI in humans.",
+   "Cotreatment of bosentan (30 \uf06dM) with cholyl-lysyl-fluorescein (CLF), a BSEP substrate, inhibited efflux of CLF by 50%.",
+   "Metabolism of APAP using the Liver-Chip was confirmed by detection of notable amounts of APAP glucuronide in both the parenchymal and vascular channels after daily administration of 3 mM APAP for 20 days.",
+   "Kupffer cell depletion was detected by decreased number of CD68-positive cells in human Liver-Chip after administration of JNJ-1 at 3 \uf06dM, concentrations that approach human clinical Cmax (~2 \uf06dM).",
+   "Daily administration of MTX at 1, 10, or 30 \uf06dM for 7 days resulted in microscopic evidence of lipid accumulation.",
+   "Daily administration of FIAU at 1, 10, or 30 \uf06dM for 10 days in the human Liver-Chip resulted in a dose-dependent increase in lipid accumulation.",
+   "Daily oral administration of JNJ-2 (150 mg/kg; Cmax = 11.6 \uf06dg/ml; 24 \uf06dM) for 2 weeks resulted in liver fibrosis in rats.",
+   "Daily treatment of JNJ-2 at 3, 10, or 30 \uf06dM in rat quadruple-cell Liver-Chip for 4 days resulted in a dose-dependent increase in expression of \uf061-SMA.",
+   "JNJ-3 was administered to dog and human chips for 4 days, after which the study was stopped because of damage to hepatocytes at the highest concentrations tested.",
+   "Administration of JNJ-3 significantly decreased (P < 0.0001) albumin secretion at \u22651 \uf06dM in dog chips and at \u226510 \uf06dM in human chips.",
+   "Daily administration of TAK-875 at 10 \uf06dM (equivalent to human Cmax) in the human quadruple-cell Liver-Chip for about 2 weeks resulted in formation of the oxidative metabolite (M-1) (6.4% of parent).",
+   "Daily administration of TAK-875 at 3, 10, or 30 \uf06dM in the Liver-Chip resulted in a dose-dependent decrease in biliary efflux of the MRP2 substrate CDFDA.",
+   "Treatment with TAK-875 caused a biphasic release of the inflammatory cytokines MCP-1 and IL-6 at 10 \uf06dM (human equivalent Cmax) but not at 30 \uf06dM.",
+   "The human Liver-Chip can be used to study diverse mechanisms of responses in the liver with compounds that target parenchymal and NPCs and that these responses occur at clinically relevant concentrations that bridge plasma concentrations where effects were observed in humans.",
+   "Human-specific sensitivities to toxicity by bosentan and FIAU were also confirmed in the human Liver-Chip compared to the companion animal Liver-Chip, demonstrating species-specific in vivo\u2013in vitro correlation.",
+   "The rat Liver-Chip was very sensitive to treatment with JNJ-2, whereas no toxicity was observed in the human Liver-Chip at the same concentrations up to 14 days of daily treatment."
+  ],
+  "chars": 78466,
+  "route": "user_supplied"
+ },
+ "25671556": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "dog",
+    "metric": "ERG amplitude restoration",
+    "value": 1.0,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "ERG amplitude restoration",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "electroretinogram (ERG)",
+   "vision testing (obstacle course)",
+   "pupillary light reflexes",
+   "nystagmus",
+   "visual evoked cortical activity",
+   "rod-mediated ERGs",
+   "dim light vision testing",
+   "retinal morphology",
+   "cone ERG responses",
+   "rod electroretinographic responses",
+   "daytime vision (maze negotiation)",
+   "cone function (ERG)",
+   "daytime vision (maze negotiation)",
+   "cone function (ERG)",
+   "retinal structure preservation",
+   "electroretinographic functional preservation"
+  ],
+  "endpoints_human": [
+   "improved visual function",
+   "ability to perceive light (full-field sensitivity, microperimetry)",
+   "visual acuity",
+   "ability to negotiate an obstacle course",
+   "eye movements and fixation",
+   "pupillometry",
+   "electrophysiological testing",
+   "functional MRI",
+   "pupillary responses",
+   "visual cortex responses",
+   "ability to negotiate obstacles",
+   "rod sensitivity",
+   "cone recovery speed",
+   "ERG responses",
+   "vision",
+   "multifocal ERG"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper does not explicitly define concordance but compares outcomes between dog models and human clinical trials, noting differences in the degree of rescue achieved.",
+  "limitations_stated": [
+   "Species differences exist, meaning extrapolation of successes between mouse, dog, and human should not be assumed.",
+   "The degree of rescue achieved in human patients has been nowhere near that achieved in the preclinical Rpe65-mutant dog trials.",
+   "Human patients have a much faster relative decline in photoreceptor numbers compared with dogs and invariably already have a marked loss of photoreceptors when treated.",
+   "Once established photoreceptor loss continued in human patients despite restoration of function.",
+   "Long-term photoreceptor preservation was not achieved in older dogs with established retinal degeneration.",
+   "A resistive barrier may have slowed the transport or diffusion of 11-cis retinal from the RPE to the photoreceptors in humans.",
+   "Markedly slow regeneration of rods in humans was an indication of incomplete restoration of the visual cycle.",
+   "Photoreceptor rosette formation and associated patches of retinal thinning were deleterious effects observed in one dog model.",
+   "The cause of rosette formation requires further investigation.",
+   "The success rate of gene therapy in dogs older than about 1 year of age was reduced."
+  ],
+  "funding_conflict": "No competing financial interests exist.",
+  "key_numbers": [
+   "RPE65 mutations account for about 6% of LCA cases.",
+   "Incidence of LCA reported to be between 3 in 100,000 and 1 in 81,000.",
+   "PDE6A and PDE6B mutations are responsible for 3\u20134% and 4\u20135% of human autosomal recessive RP cases, respectively.",
+   "Gene therapy trials performed on eight Pde6b mutant dogs.",
+   "Two dog models with RP GTPase regulator (Rpgr) mutations have been used in gene therapy trials.",
+   "Two canine achromatopsia models resulting from different mutations involving the cone cyclic-nucleotide gated channel beta subunit gene, Cngb3, have been used in gene therapy trials.",
+   "A dog with successful treatment had restored daytime vision as assessed by ability to negotiate a maze.",
+   "The therapy was reported to reverse lesions and to have no adverse effects in cmr-affected dogs."
+  ],
+  "chars": 65440,
+  "route": "user_supplied"
+ },
+ "33039464": {
+  "concordance_metric": "Sensitivity and Specificity of HLO-based DILI prediction",
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "Human",
+    "metric": "Sensitivity",
+    "value": 0.887,
+    "n": null
+   },
+   {
+    "species": "Human",
+    "metric": "Specificity",
+    "value": 0.889,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": 0.887,
+  "specificity": 0.889,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [
+   "Drug-induced liver injury (DILI)",
+   "Cholestasis",
+   "Mitochondrial toxicity",
+   "Bile transport inhibition",
+   "Genomic predisposition for DILI"
+  ],
+  "endpoint_class": "secondary-biomarker",
+  "concordance_definition": "The study established a human liver organoid (HLO)-based screening model for analyzing DILI pathology at organoid resolution. The model was validated using 238 marketed drugs, assessing viability, cholestatic, and/or mitochondrial toxicity. The predictive values for these outcomes were reported as sensitivity and specificity.",
+  "limitations_stated": [
+   "Study performed at a single institution.",
+   "Limited compound numbers.",
+   "LoT system lacks adaptive immune components.",
+   "Need for validation in multiple independent institutions with blinded compound testing.",
+   "Interpretation of genotype-dependence vs. donor-dependence for CYP2C9*2 variation needs further investigation with isogenic editing."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "238 marketed drugs tested",
+   "4 different concentrations used for testing",
+   "Sensitivity: 88.7%",
+   "Specificity: 88.9%",
+   "10 different pluripotent stem cell lines used",
+   "27.91% of hepatocyte-like 1 cells were in the pericentral primary hepatocyte population",
+   "88.99% of hepatocyte-like 2 cells were in the periportal primary hepatocyte population",
+   "Total bile acid pool of intraluminal fluid was 26.7 mg/d per 10^6 cells",
+   "CLF excretion into HLOs was severely impaired (positive rate: CC, 17.1% of positive; CT, 70.8% of positive) by bosentan in CY2C9*2 carrier HLOs but not in 3 different iPSC-derived HLOs without CYP2C9*2"
+  ],
+  "chars": 86805,
+  "route": "user_supplied"
+ },
+ "18468556": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "zebrafish",
+    "metric": "sensitivity",
+    "value": 0.8,
+    "n": null
+   },
+   {
+    "species": "zebrafish",
+    "metric": "specificity",
+    "value": 0.7,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "cardiotoxicity",
+   "hepatotoxicity",
+   "neurotoxicity",
+   "developmental toxicity"
+  ],
+  "endpoints_human": [
+   "cardiotoxicity",
+   "hepatotoxicity",
+   "neurotoxicity",
+   "developmental toxicity"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper states that \"zebrafish can be used to eliminate potentially unsafe compounds rapidly in the early stages of drug development and to prioritize compounds for further preclinical and clinical studies.\" and \"zebrafish pharmacologic responses to well-characterized cardiotoxins are strikingly similar to responses in humans\". For developmental toxicity, it states \"assay predictivity and accuracy were assessed\" and \"this assay format presented a 75% success rate in identifying nonteratogenic compounds and a 100% success rate in identifying teratogens\".",
+  "limitations_stated": [
+   "Full validation will require assessment of a large number of compounds from diverse classes.",
+   "Although zebrafish and mammalian hearts differ in structure and zebrafish lack a pulmonary system, they exhibit similar functional characteristics.",
+   "It is unclear how ADME after drug delivery in fish water compares to ADME after delivery by other routes of administration.",
+   "Reported results show that inter- and intra-laboratory standards vary widely, confounding interpretation of drug-induced toxicity and limiting wider acceptance of this model organism."
+  ],
+  "funding_conflict": "Both authors are employees of Phylonix. Ms McGrath is also an inventor of patents assigned to Phylonix.",
+  "key_numbers": [
+   "A single zebrafish spawning produces 100-200 eggs.",
+   "Adult zebrafish are 3-cm long.",
+   "Larvae are 1-4-mm long.",
+   "Zebrafish ERG and human ERG are 99% conserved.",
+   "One hundred small molecules were tested for QT prolongation; 22 of 23 drugs that cause QT prolongation in humans consistently caused bradycardia and blocked AV conduction in zebrafish.",
+   "Cost of ECG testing: $1.00 per zebrafish versus $100 per rodent, and >$1000 per dog.",
+   "CYP3A4 was upregulated in zebrafish treated with dexamethasone, similar to the CYP3A4 response in humans.",
+   "GFAP level increased more than twofold in zebrafish treated with TCDD.",
+   "The assay for developmental toxicity presented a 75% success rate in identifying nonteratogenic compounds and a 100% success rate in identifying teratogens.",
+   "The assay was ranked good (>70% <80%) for specificity and excellent (>80%) for sensitivity for developmental toxicity."
+  ],
+  "chars": 39352,
+  "route": "user_supplied"
+ },
+ "28903488": {
+  "concordance_metric": "ROC AUC",
+  "concordance_value": 0.81,
+  "n_pairs": 24,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "dog",
+    "metric": "ROC AUC",
+    "value": 0.81,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "hERG IC50",
+   "safety margin (hERG IC50 / clinical Cmax free)",
+   "safety margin (dog QTc effect / clinical Cmax free)"
+  ],
+  "endpoints_human": [
+   "QTc interval prolongation"
+  ],
+  "endpoint_class": "secondary-biomarker",
+  "concordance_definition": "Concordance was assessed by calculating sensitivity and specificity across a range of decision thresholds, thus yielding receiver operating characteristic curves of sensitivity versus (1-specificity). The area under the curve of ROC curves (for which 0.5 and 1 indicate chance and perfect concordance, respectively) was used to summarize concordance.",
+  "limitations_stated": [
+   "Ideal compound set would be larger than 24.",
+   "Ideal compound set would contain data from studies conducted using the same protocol.",
+   "Data span 15 years, during which QT risk assessment strategies, technology, study design, and regulatory guidance have evolved.",
+   "Dog study dataset is limited, with a lack of data around the clinical free Cmax reference point for some studies.",
+   "Number of data points for dog studies varied across exposure multiples (11-17)."
+  ],
+  "funding_conflict": "This work was supported by AstraZeneca.",
+  "key_numbers": [
+   "13 compounds prolonged QTc in clinical studies.",
+   "11 compounds did not prolong QTc in clinical studies.",
+   "Absolute hERG IC50 ROC AUC: 0.78.",
+   "Safety margin (hERG IC50 / clinical Cmax free) ROC AUC: 0.80.",
+   "Safety margin (dog QTc effect / clinical Cmax free) ROC AUC: 0.81.",
+   "Optimal hERG IC50 threshold for sensitivity/specificity balance: 10 mM.",
+   "Optimal hERG IC50/clinical Cmax free ratio threshold: 30-fold.",
+   "Optimal dog Cmax free/clinical Cmax free ratio threshold: 10-fold.",
+   "Prevalence estimate of positive clinical QT studies: 0.22.",
+   "PPV for absolute hERG IC50 at 10 mM threshold: 0.63.",
+   "NPV for absolute hERG IC50 at 10 mM threshold: 0.87."
+  ],
+  "chars": 44634,
+  "route": "user_supplied"
+ },
+ "20807552": {
+  "concordance_metric": "area under the receiver\u2013operator curve (AUC)",
+  "concordance_value": 0.72,
+  "n_pairs": 39,
+  "n_animal_studies": null,
+  "n_human_studies": 39,
+  "species_results": [],
+  "two_by_two": null,
+  "sensitivity": 0.64,
+  "specificity": 0.88,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "hERG current block potency (IC50)",
+   "hERG safety margins (IC50/Cmax or IC50/free Cmax)"
+  ],
+  "endpoints_human": [
+   "QTc prolongation (mean increase \u2265 5 ms)"
+  ],
+  "endpoint_class": "secondary-biomarker",
+  "concordance_definition": "The study defined concordance by evaluating the performance of hERG safety margins in relation to clinically measured delayed repolarization. Receiver-operator curves (ROCs) were used, plotting sensitivity (true positive rate) against (1-specificity) (true negative rate). The area under the ROC curve (AUC) summarized diagnostic accuracy. Optimal performance was identified at the point closest to the upper-left corner of the ROC graph.",
+  "limitations_stated": [
+   "IC50 values were not measured in a single central laboratory; experimental conditions were not standardized.",
+   "Details of assay conditions were not always provided.",
+   "Variability in bath exposures might not have been fully controlled.",
+   "The possible role of electrophysiologically active metabolites in vivo was not considered.",
+   "Effects of drugs on hERG channel trafficking to the sarcolemmal membrane were not considered.",
+   "The number of drugs for which hERG block potency has been reported is relatively small.",
+   "TQT studies are designed to detect small levels of QTc prolongation, and not all TQT studies followed the same protocol."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "39 drugs compared for hERG block potency and clinical QTc prolongation.",
+   "A hERG safety margin of 45 provided optimal overall performance linking safety margins to QTc prolongation.",
+   "Sensitivity (true positive rate) = 0.64, specificity (true negative rate) = 0.88 at a safety margin of 45.",
+   "Area under the receiver\u2013operator curve (AUC) = 0.72, indicative of moderate overall concordance.",
+   "QTc prolonging drugs are 5\u20137 times as likely to demonstrate low safety margins (1\u201330 range) compared to drugs that do not prolong QTc.",
+   "Most (9/10) drugs eliciting essentially no hERG block at maximal concentrations demonstrated no QTc prolongation.",
+   "A mean increase in baseline-corrected, time-matched, placebo-controlled, QTc interval of 5 ms is recognized as an indication of concern.",
+   "Average plasma protein binding value of the 39 drugs was 74.7 \u00b1 31.4 (s.d.).",
+   "For 34 drugs, the average peak QTc prolongation with moxifloxacin was 11.14\u00b12.82 ms.",
+   "The optimal decision threshold for the free hERG safety margin was obtained with a decision threshold of ~45.",
+   "Assay sensitivity was 0.69 and specificity was 0.81 for the standard dataset (n=29) at the optimal cut-off of 45.",
+   "Assay sensitivity was 0.64 and specificity was 0.88 for the extended dataset (n=39) at the optimal cut-off of 45.",
+   "The highest likelihood ratio of 7.14 is obtained using the free hERG safety margin range of 1\u201330.",
+   "Drugs with safety margins ranging from 1 to 30 demonstrated moderately increased probability of QTc prolongation (88%)."
+  ],
+  "chars": 73343,
+  "route": "user_supplied"
+ },
+ "29730448": {
+  "concordance_metric": "positive likelihood ratio (LR+)",
+  "concordance_value": 10,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "dog",
+    "metric": "LR+",
+    "value": 10,
+    "n": null
+   },
+   {
+    "species": "rabbit",
+    "metric": "LR+",
+    "value": 10,
+    "n": null
+   },
+   {
+    "species": "rat",
+    "metric": "LR+",
+    "value": 10,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "LR+",
+    "value": 10,
+    "n": null
+   },
+   {
+    "species": "cynomolgus monkey",
+    "metric": "LR+",
+    "value": 10,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "QT prolongation",
+   "arrhythmia",
+   "alanine aminotransferase (ALT) increased",
+   "constipation",
+   "drug specific antibodies present",
+   "conjunctival hyperaemia",
+   "mydriasis",
+   "injection site erythema",
+   "injection site reaction",
+   "somnolence",
+   "skin disorders",
+   "pain",
+   "nausea",
+   "dizziness",
+   "fatigue"
+  ],
+  "endpoints_human": [
+   "QT prolongation",
+   "arrhythmia",
+   "alanine aminotransferase (ALT) increased",
+   "constipation",
+   "drug specific antibodies present",
+   "conjunctival hyperaemia",
+   "mydriasis",
+   "injection site erythema",
+   "injection site reaction",
+   "somnolence",
+   "skin disorders",
+   "pain",
+   "nausea",
+   "dizziness",
+   "fatigue"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "Animal-human concordance relationships were evaluated via 2 by 2 contingency tables for each species-observation pair. We treated the animal observation as a diagnostic test for the clinical observation and used the statistical methods developed for evaluation of the efficacy of diagnostic tests. In this study, we use LR+ 10 or greater as a cut-off for strong concordance.",
+  "limitations_stated": [
+   "Interpretation of animal behaviors and assignment of a MedDRA preferred term can be difficult.",
+   "PharmaPendium uses determinations of the authors of the report, or the curators assigned an observation from the reported symptoms.",
+   "The used MedDRA vocabulary is designed for human observations and diseases, which do not necessarily match with animal observations.",
+   "There are observations in animals which rarely are investigated in humans.",
+   "Assignment of MedDRA terms in the original reports can be subjective.",
+   "The methodology relies heavily on manual curation of regulatory reports and interpretation of data in reports.",
+   "The agnostic big data approach is agnostic with regard to the pharmacological relevance of the chosen nonclinical species.",
+   "Concordance analyses within different time periods will result in different contingency values.",
+   "Different publications on concordance analyses come to partly contradictory conclusions due to the selected data set.",
+   "Post-marketing data collected from pharmacovigilance reports underlay the risk of over-reporting of human toxicities and confounders of co-morbidity."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "3,290 approved drugs and formulations analyzed",
+   "1,637,449 adverse events reported for humans and animals",
+   "Data spans over 70 years",
+   "Five species analyzed: rat, dog, mouse, rabbit, and cynomolgus monkey",
+   "LR+ 10 or greater used as a cut-off for strong concordance",
+   "90% chance of predicting QT findings in humans through a relevant non-rodent model (Vargas et al., 2015)",
+   "Overall sum of true positive adverse events grouped by MedDRA system organ class and species",
+   "25% of all rabbit TP observations fall into the administration site reaction organ class",
+   "23% of TP observations in dogs are gastrointestinal disorders, and 17% are cardiac",
+   "341 separate reported preferred terms combined in the statistical analysis for the high-level group term cardiac and vascular investigations",
+   "196 statistically significant relations (p < 0.01) for rat-human concordance at LR+ > 10",
+   "152 statistically significant relations (p < 0.01) for dog-human concordance at LR+ > 10",
+   "112 statistically significant relations (p < 0.01) for mouse-human concordance at LR+ > 10",
+   "76 statistically significant relations (p < 0.01) for rabbit-human concordance at LR+ > 10",
+   "102 statistically significant relations (p < 0.01) for cynomolgus monkey-human concordance at LR+ > 10",
+   "283 statistically significant relations (p < 0.01) for all species combined at LR+ > 10",
+   "69 drugs with 'Electrocardiogram QT prolonged' observed in animal and human with LR+ of 10.7",
+   "341 separate reported preferred terms combined in the statistical analysis for the high-level group term cardiac and vascular investigations",
+   "LR+ of 4.29 for the high-level group term 'Cardiac and vascular investigations (excl enzyme tests)'",
+   "Somnolence in monkeys is considered predictive for humans",
+   "Skin disorders observed in monkeys often occur in humans",
+   "Arrhythmia shows high concordance in dog and rabbit",
+   "Drug specific antibodies present shows strong concordance between mouse and monkey",
+   "Topical effects on eye and skin show high concordance in rabbit",
+   "Constipation is among the most prevalent and predictive observations common among rodents and humans",
+   "Vomiting and diarrhea in dog and monkey have moderate risk (LR+ 5.4 to 7.8)",
+   "Alanine aminotransferase (ALT) increase has moderate likelihood in rat, mouse, and rabbit",
+   "ALT increase is impactful for cynomolgus monkey with LR+ of 16.3",
+   "Olson study reported 90% sensitivity for liver disorders, this study reports 16%",
+   "Monticello study reported 48% sensitivity",
+   "QT interval data from non-rodent models has 90% chance of predicting QT findings in humans (Vargas et al., 2015)",
+   "Post-test odds for dog are 60% for QT interval, rabbit 83%, rat 15%",
+   "Lack of animal observation does not generally predict safety in humans (LR- close to 1)",
+   "1,637,449 adverse event reports for 3920 drugs and formulations analyzed",
+   "LR+ 10 or greater used as a cut-off for strong concordance",
+   "QT investigations reported in approval documents were virtually inexistent before 1976 and peaked around 2011"
+  ],
+  "chars": 59257,
+  "route": "user_supplied"
+ },
+ "19297654": {
+  "concordance_metric": "discordant/similar",
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "rabbits and monkeys",
+    "metric": "teratogenicity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "mice",
+    "metric": "teratogenicity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "rats",
+    "metric": "teratogenicity",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "non-human primates",
+    "metric": "TGN 1412 response",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "humans",
+    "metric": "TGN 1412 response",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [],
+  "endpoint_class": "mixed",
+  "concordance_definition": "In three of the research areas the animal studies and human trials were substantially discordant; in three others the results were essentially similar.",
+  "limitations_stated": [
+   "Many animal experiments are poorly designed, conducted and analysed.",
+   "Reviews and summaries of evidence from animal research are methodologically inadequate.",
+   "Major methodological limitations of the animal research.",
+   "Evidence of widespread publication bias.",
+   "Disparate animal species and strains, with a variety of metabolic pathways and drug metabolites, leading to variation in efficacy and toxicity.",
+   "Different models for inducing illness or injury, with varying similarity to the human condition.",
+   "Variations in drug dosing schedules and regimens of uncertain relevance to the human condition.",
+   "Variability in animals for study, methods of randomization, choice of comparison therapy.",
+   "Small experimental groups with inadequate statistical power; simple statistical analyses that do not account for confounding; and failure to follow intention-to-treat principles.",
+   "Nuances in laboratory technique that may influence results, for example, methods for blinding investigators, being neither recognized nor reported.",
+   "Selection of outcome measures, which being surrogates or precursors of disease, are of uncertain relevance to the human clinical condition.",
+   "Variable duration of follow-up, which may not correspond to disease latency in humans."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "Only 1/10,000 Medline records of animal studies were tagged as being meta-analyses compared with 1/1000 human studies.",
+   "Only 25 systematic reviews of animal research were found in a comprehensive search of Medline.",
+   "30 and 57 systematic reviews of any type of animal research were found in other recent studies.",
+   "In one systematic review of FK506, 29 animal studies were found.",
+   "Only one of the 29 FK506 animal studies had blinded investigators.",
+   "Only two of the 29 FK506 animal studies had blinded observers during outcome assessment.",
+   "None of the 29 FK506 animal studies met all 10 quality criteria applied by the reviewers.",
+   "The highest score for FK506 animal studies was 7 out of 10 quality criteria.",
+   "Meta-analysis of FK506 studies demonstrated a strong trend for the methodologically weakest studies to show the strongest protective effects.",
+   "Methodologically strongest FK506 studies showed either no or weak protective effects."
+  ],
+  "chars": 11269,
+  "route": "user_supplied"
+ },
+ "26753942": {
+  "concordance_metric": "Likelihood Ratios (LRs)",
+  "concordance_value": null,
+  "n_pairs": 12,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "NHP-human",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 9.39,
+    "n": 3027
+   },
+   {
+    "species": "NHP-human",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.02,
+    "n": 3027
+   },
+   {
+    "species": "NHP-dog",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 11.97,
+    "n": 96
+   },
+   {
+    "species": "NHP-dog",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.06,
+    "n": 96
+   },
+   {
+    "species": "Dog-NHP",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 8.81,
+    "n": 60
+   },
+   {
+    "species": "Dog-NHP",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.17,
+    "n": 60
+   },
+   {
+    "species": "NHP-rat",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 13.4,
+    "n": 56
+   },
+   {
+    "species": "NHP-rat",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.04,
+    "n": 56
+   },
+   {
+    "species": "Rat-NHP",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 6.28,
+    "n": 173
+   },
+   {
+    "species": "Rat-NHP",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.94,
+    "n": 173
+   },
+   {
+    "species": "NHP-mouse",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 13.81,
+    "n": 173
+   },
+   {
+    "species": "NHP-mouse",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.07,
+    "n": 173
+   },
+   {
+    "species": "Mouse-NHP",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 11.11,
+    "n": 173
+   },
+   {
+    "species": "Mouse-NHP",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.35,
+    "n": 173
+   },
+   {
+    "species": "Dog-rat",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 15.9,
+    "n": 173
+   },
+   {
+    "species": "Dog-rat",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.1,
+    "n": 173
+   },
+   {
+    "species": "Rat-dog",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 11.83,
+    "n": 129
+   },
+   {
+    "species": "Rat-dog",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.32,
+    "n": 129
+   },
+   {
+    "species": "Dog-mouse",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 11.64,
+    "n": 146
+   },
+   {
+    "species": "Dog-mouse",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.11,
+    "n": 146
+   },
+   {
+    "species": "Mouse-dog",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 11.23,
+    "n": 480
+   },
+   {
+    "species": "Mouse-dog",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.13,
+    "n": 480
+   },
+   {
+    "species": "Rat-mouse",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 39.43,
+    "n": 472
+   },
+   {
+    "species": "Rat-mouse",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.66,
+    "n": 472
+   },
+   {
+    "species": "Mouse-rat",
+    "metric": "Median PLR (< 5 rare events removed)",
+    "value": 50.3,
+    "n": 472
+   },
+   {
+    "species": "Mouse-rat",
+    "metric": "Median iNLR (< 5 rare events removed)",
+    "value": 1.27,
+    "n": 472
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "toxicity",
+   "absence of toxicity"
+  ],
+  "endpoints_human": [
+   "toxicity",
+   "absence of toxicity"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "Likelihood Ratios (LRs) are used to measure the evidential weight provided by a test in one species for or against the toxicity of a given compound in another species. A PLR/iNLR statistically significantly higher than 1.0 indicates the animal species contributes some degree of evidential weight.",
+  "limitations_stated": [
+   "Data set is affected by selection bias/effect, as highly toxic drugs in rodents are unlikely to advance to tests in dogs, NHPs, and humans, leading to under-representation.",
+   "The precautionary principle is an inherent aspect of the testing protocol, making it virtually impossible to gauge the actual contribution of animal data to human toxicology.",
+   "A large proportion of the data reflected adverse events that are rare, potentially compromising reliability.",
+   "Low numbers of observations in one or more species for NHP-human pair.",
+   "Difficulty in accessing NHP toxicology data, with little publicly available.",
+   "High ranges of PLRs with no obvious pattern of toxicity suggest reliability cannot be generalised or regarded with confidence.",
+   "Use of a different total data set for NHP iNLR may account for it being the lowest.",
+   "Analyses are necessarily based on relatively limited publicly-available data."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "Over 3,000 drugs with both animal and human data were analyzed.",
+   "Absence of toxicity in animals provides little or virtually no evidential weight for absence of toxicity in humans.",
+   "Toxicity in one species may sometimes add evidential weight for risk of toxicity in another, but LRs are extremely inconsistent.",
+   "NHP-human PLR values are among the lowest for PLRs and the lowest for iNLRs.",
+   "Median iNLRs were substantially lower than PLRs, supporting the view that absence of toxicity in one species provides essentially no evidential weight for lack of toxicity in any other species.",
+   "Hypothetical rat-rat PLR was 898; dog-dog PLR was 845.",
+   "Hypothetical rat-rat iNLR was 17.3; dog-dog iNLR was 6.6.",
+   "Tests in all five preclinical species (dogs, mice, NHPs, rabbits, rats) provide little to no evidential weight for predicting lack of toxicity in humans.",
+   "Median iNLR for NHPs is the lowest of all five preclinical species.",
+   "Poor iNLRs mean that toxic compounds are progressing to testing in humans, only to fail in clinical trials or soon after approval."
+  ],
+  "chars": 37375,
+  "route": "user_supplied"
+ },
+ "35616311": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "animal",
+    "metric": "translation rate",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "translation rate",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [],
+  "endpoint_class": "not-stated",
+  "concordance_definition": "The paper does not explicitly define concordance. It discusses the ability of animal studies to translate to human benefits and the reliability of animal findings for human application.",
+  "limitations_stated": [
+   "Poor quality of animal studies",
+   "Low rates of random allocation, allocation concealment, and blinded outcome assessment",
+   "Overstated benefits of experimental interventions",
+   "Small animal sample sizes leading to underpowered and unreliable studies",
+   "Selective analysis and biased outcome reporting",
+   "Incomplete reporting (e.g., number of animals used, attrition)",
+   "Publication bias",
+   "Citation bias",
+   "Irreproducibility of data",
+   "Species differences making translation unreliable"
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "163 preclinical systematic reviews published between 2005 and 2010",
+   "246 preclinical systematic reviews identified between 2009 and 2013",
+   "6% of preclinical animal studies referenced in investigator brochures reported an outcome demonstrating no effect",
+   "82% of preclinical animal studies referenced in investigator brochures reported positive findings",
+   "Over half of 255 animal experiment protocols reviewed by AstraZeneca needed amending",
+   "Fewer than 7% of 212 animal studies scrutinized were permissible (based on harm-benefit analysis)",
+   "Animal testing could be reduced by 80% (stated opinion)",
+   "Animal testing could be reduced by 90% (stated opinion)",
+   "Only 1 of 80 authors advocated a focus on human-relevant research instead of animal models of stroke",
+   "European Parliament voted 667 to 4 to develop a coordinated plan to replace animal experiments"
+  ],
+  "chars": 25996,
+  "route": "user_supplied"
+ },
+ "18772421": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [],
+  "endpoint_class": "not-stated",
+  "concordance_definition": "The study evaluated the life cycle of translational research for medical interventions, focusing on the time from initial discovery to a highly cited clinical study showing effectiveness. It assessed whether these highly cited interventions were later replicated, remained unchallenged, contradicted, or found to have initially stronger effects in subsequent studies.",
+  "limitations_stated": [
+   "Highly cited status does not necessarily mean that these interventions continue to be considered as effective as proposed in the original highly cited papers.",
+   "Several blockbusters may go through an industrial discovery-testing-production process that does not involve any particular highly cited paper in the peer-reviewed literature.",
+   "Claims for large benefits from old interventions require extra caution as they are likely to be exaggerated.",
+   "New drug discovery is probably essential for common diseases where the existing drug armamentarium has been already extensively screened.",
+   "For uncommon and neglected diseases, the existing drug options may remain largely untested, and old drugs may find interesting new uses."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "Of 101 very promising claims of new discoveries with clear clinical potential made between 1979 and 1983, only five resulted in interventions with licensed clinical use by 2003 and only one had extensive clinical use.",
+   "Median translation lag was 24 years (IQR, 14 to 44 years) between first description and earliest highly cited article.",
+   "Median translation lag was 44 years for refuted interventions vs. 17 years for nonrefuted ones (P = 0.004).",
+   "Median translation lag was 27 years (IQR, 21 to 50 years) when considering the wider class of agents.",
+   "For 18 nonrefuted interventions with a highly cited randomized trial, median translation lag was 16.5 years (range 4 to 50 years).",
+   "Indinavir and abciximab had the fastest successful translation, taking 4 years from patenting to publication of a highly cited randomized trial.",
+   "Range for time from first discovery to first human use was 0 to 28 years.",
+   "Range for time from first discovery to first specific human use was 0 to 221 years.",
+   "By the end of 2006, effectiveness of 19 interventions had been replicated (n=14) or remained unchallenged (n=5).",
+   "13 interventions had been contradicted (n=5) or found to have initially stronger effects (n=8)."
+  ],
+  "chars": 13478,
+  "route": "user_supplied"
+ },
+ "17988725": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [],
+  "endpoint_class": "not-stated",
+  "concordance_definition": "The paper does not explicitly define concordance but discusses the predictive value of animal studies for human outcomes.",
+  "limitations_stated": [
+   "Inadequacies in experimental designs",
+   "Unexpected variation in genome organization and regulation",
+   "Lack of homology between model animals and target animals at molecular resolution",
+   "Differences in gene regulation between species",
+   "Differences in life span between model animals and target species",
+   "Differences in heart rate and metabolic rates",
+   "Differences in mutation rates",
+   "Outbred vs. inbred populations",
+   "Caged vs. natural environments",
+   "Differences in cis-regulatory regions"
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "On average, the extrapolated results from studies using tens of millions of animals fail to accurately predict human responses.",
+   "In 1986 the U.S. Congress Office of Technology Assessment (OTA) reported estimates for animal model usage, by various special interest groups, ranged from 10 million to 100 million per year. OTA\u2019s own estimate was around 20 million annually.",
+   "A recent publication by the FDA indicates that the rate of success for a new medical compound entering Phase 1 clinical testing to reach the market is not greater than 8%.",
+   "In a toxicology meta-analysis of 150 compounds rodent experiments correctly predicted organ toxicity in humans in 43% of the studies and non-rodent animal models correctly predicted toxicity 63% of the time.",
+   "Based on SNP comparisons, it was concluded that there is merely 1.23% difference between chimpanzee and human genomes.",
+   "Nearly all (99%) of the sequence encoding proteins in the human genome align with homologous genes in mouse, and over 80% are clear 1:1 orthologs.",
+   "The surprising finding from the first map of copy number variation (CNV) in the human genome estimates that humans differ from one another by 12%.",
+   "As many as 2900 genes, or about 10% of known genes, are duplicated one or more times."
+  ],
+  "chars": 41004,
+  "route": "user_supplied"
+ },
+ "26856335": {
+  "concordance_metric": "species x exercise interaction",
+  "concordance_value": 1,
+  "n_pairs": null,
+  "n_animal_studies": 1,
+  "n_human_studies": 1,
+  "species_results": [
+   {
+    "species": "rat",
+    "metric": "exercise x species interaction (catalase)",
+    "value": null,
+    "n": 1
+   },
+   {
+    "species": "rat",
+    "metric": "vitamin C x species interaction",
+    "value": null,
+    "n": 10
+   },
+   {
+    "species": "rat",
+    "metric": "exercise + vitamin C x species interaction (inflammation biomarkers)",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "oxidative stress biomarkers",
+   "inflammatory biomarkers"
+  ],
+  "endpoints_human": [
+   "oxidative stress biomarkers",
+   "inflammatory biomarkers"
+  ],
+  "endpoint_class": "secondary-biomarker",
+  "concordance_definition": "The rat adequately mimics human responses to exercise in basic blood redox/inflammatory profile, yet this is not the case after vitamin C administration without exercise or their combination.",
+  "limitations_stated": [
+   "Vitamin C dosage calculation based on body weight rather than body surface area may have led to different results.",
+   "Rats are vitamin C-synthesizing species, whereas humans are not.",
+   "Rats appear to poorly absorb vitamin C from the diet.",
+   "Genetically variant strains incapable of synthesizing vitamin C do not fully recapitulate vitamin C metabolism or effects of depletion/repletion observed in humans.",
+   "Guinea pigs may be a more appropriate model for studying in vivo effects of vitamin C supplementation.",
+   "Laboratory rodents serving as controls are metabolically morbid and exhibit increased levels of inflammatory cytokines."
+  ],
+  "funding_conflict": "Authors state that there is no conflict of interest.",
+  "key_numbers": [
+   "1/19 significant species \u00d7 exercise interactions (catalase)",
+   "10/19 significant species \u00d7 vitamin C interactions",
+   "Exercise increased oxidative stress and induced an inflammatory state in rats and humans.",
+   "Vitamin C decreased oxidative stress and increased antioxidant capacity only in humans.",
+   "Vitamin C induced an anti-inflammatory state only in rats.",
+   "Exercise after vitamin C administration altered redox state only in humans.",
+   "Inflammation biomarkers changed similarly after exercise combined with vitamin C in both rats and humans.",
+   "Magnitude of all perturbations after exercise was similar (14% in rats and 16% in humans).",
+   "Vitamin C plasma levels increased by 92% in humans vs. 41% in rats.",
+   "Resting values of inflammatory molecules were considerably higher in rats compared to humans."
+  ],
+  "chars": 60943,
+  "route": "user_supplied"
  }
 }

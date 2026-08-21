@@ -589,11 +589,11 @@
   ],
   "areas_evidence": "Profiling candidate therapeutics with limited cancer models during preclinical development hinders predictions of clinical efficacy",
   "model_type": "xenograft-pdx",
-  "model_evidence": "We established &#x223c;1,000 patient-derived tumor xenograft models (PDXs) with a diverse set of driver mutations.",
+  "model_evidence": "We established \u223c1,000 patient-derived tumor xenograft models (PDXs) with a diverse set of driver mutations.",
   "species": [
    "mouse"
   ],
-  "species_evidence": "We established &#x223c;1,000 patient-derived tumor xenograft models (PDXs) with a diverse set of driver mutations.",
+  "species_evidence": "We established \u223c1,000 patient-derived tumor xenograft models (PDXs) with a diverse set of driver mutations.",
   "endpoint_class": "secondary-biomarker",
   "endpoint_evidence": "We demonstrate both the reproducibility and the clinical translatability of this approach by identifying associations between a genotype and drug response",
   "source_tier": "abstract",
@@ -1310,14 +1310,14 @@
   ],
   "areas_evidence": "In preclinical cardiovascular safety pharmacology studies, statistical analysis of the rate corrected QT interval (QTc) is the focus for predicting QTc interval changes in the clinic.",
   "model_type": "across-multiple-models",
-  "model_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n&#xa0;=&#xa0;48) and canines (n&#xa0;=&#xa0;8).",
+  "model_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n\u00a0=\u00a048) and canines (n\u00a0=\u00a08).",
   "species": [
    "non-human-primate",
    "dog"
   ],
-  "species_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n&#xa0;=&#xa0;48) and canines (n&#xa0;=&#xa0;8).",
+  "species_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n\u00a0=\u00a048) and canines (n\u00a0=\u00a08).",
   "endpoint_class": "mixed",
-  "endpoint_evidence": "In NHP, a 10.9 &#xb1;&#xa0;0.06&#xa0;ms (mean&#xa0;&#xb1;&#xa0;95% CI) change in QTc was detected at approximately 1.5&#xd7; the moxifloxacin plasma concentration that causes a 10&#xa0;ms QTc change in humans.",
+  "endpoint_evidence": "In NHP, a 10.9 \u00b1\u00a00.06\u00a0ms (mean\u00a0\u00b1\u00a095% CI) change in QTc was detected at approximately 1.5\u00d7 the moxifloxacin plasma concentration that causes a 10\u00a0ms QTc change in humans.",
   "source_tier": "abstract",
   "rubric_version": "2026-08-20.r2"
  },

@@ -4,7 +4,7 @@ Abstract-only extraction leaves 2x2 tables, per-species results, endpoint detail
 sample sizes unpopulated. This pass reads the OA full text and fills those fields,
 recording extraction_source='fulltext' so the two tiers stay distinguishable on the
 site. Abstract-derived records are never overwritten by a failed full-text pass."""
-import sys, os, json, re, time
+import sys, os, json, re, time, html as _html
 sys.path.insert(0, os.path.dirname(__file__))
 import openrouter as orr
 ROOT = os.path.join(os.path.dirname(__file__), "..")
@@ -21,7 +21,7 @@ def xml_text(p):
     s = body.group(1) if body else s
     s = re.sub(r"<(table-wrap|table)\b", r"\n<\1", s)     # keep table boundaries visible
     s = re.sub(r"</(sec|p|title|tr|table)>", r"\n", s)
-    s = re.sub(r"<[^>]+>", " ", s)
+    s = _html.unescape(re.sub(r"<[^>]+>", " ", s))
     return re.sub(r"[ \t]+", " ", re.sub(r"\n{3,}", "\n\n", s)).strip()
 
 def pdf_text(p):

@@ -5,7 +5,7 @@ The earlier rubric restated PLAN 6.3's exclusion of in vitro / in silico work to
 weakly, and the model_type vocabulary made it worse by offering
 'in-vitro-or-in-silico-comparator' as if it were a kind of animal model. This pass
 decides each study on what its PREDICTOR actually is."""
-import sys, os, json, re, time, subprocess
+import sys, os, json, re, time, html as _html, subprocess
 sys.path.insert(0, os.path.dirname(__file__))
 import openrouter as orr
 from rubric import RUBRIC, RUBRIC_VERSION
