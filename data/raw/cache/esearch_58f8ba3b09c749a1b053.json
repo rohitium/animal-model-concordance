@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "62", "retmax": "5", "retstart": "0", "idlist": ["42613071", "42525883", "42400110", "42002308", "41910421"], "translationset": [], "querytranslation": "\"VCOG-CTCAE\"[Title/Abstract] OR (\"veterinary cooperative oncology group\"[Title/Abstract] AND \"adverse event*\"[Title/Abstract])"}}

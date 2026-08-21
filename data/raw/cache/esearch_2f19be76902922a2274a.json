@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "1", "retstart": "0", "idlist": ["17175568"], "translationset": [{"from": "Perel P[au]", "to": "perel p[Author]"}], "querytranslation": "perel p[Author] AND 2007/01/01:2007/12/31[Date - Publication] AND \"animal\"[Title/Abstract]"}}

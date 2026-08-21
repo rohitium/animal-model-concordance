@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "32", "retmax": "4", "retstart": "0", "idlist": ["36450205", "36103843", "32189222", "31604676"], "translationset": [], "querytranslation": "\"RPE65\"[Title/Abstract] AND (\"dog\"[Title/Abstract] OR \"canine\"[Title/Abstract] OR \"Briard\"[Title/Abstract]) AND \"gene therapy\"[Title/Abstract]"}}

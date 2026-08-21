@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "1", "retstart": "0", "idlist": ["6617406"], "translationset": [{"from": "Bailey J[au]", "to": "bailey j[Author]"}], "querytranslation": "bailey j[Author] AND (\"non human primate\"[Title/Abstract] OR \"nonhuman primate\"[Title/Abstract]) AND \"predict*\"[Title/Abstract]"}}

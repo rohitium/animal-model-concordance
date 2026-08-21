@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "5", "retmax": "5", "retstart": "0", "idlist": ["21097827", "20485296", "20361022", "20361020", "20354545"], "translationset": [], "querytranslation": "\"van der Worp HB\"[Author] AND 2010/01/01:2010/12/31[Date - Publication] AND \"animal\"[Title/Abstract]"}}

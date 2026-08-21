@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "1", "retstart": "0", "idlist": ["24489990"], "translationset": [{"from": "Mak IW[au]", "to": "Mak, Iw[Full Author Name] OR mak iw[Author]"}], "querytranslation": "(mak, iw[Author] OR mak iw[Author]) AND 2014/01/01:2014/12/31[Date - Publication] AND \"animal\"[Title/Abstract]"}}

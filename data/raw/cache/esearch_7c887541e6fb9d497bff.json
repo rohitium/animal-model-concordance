@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "22", "retmax": "4", "retstart": "0", "idlist": ["42138810", "40854594", "39953515", "37359514"], "translationset": [], "querytranslation": "\"bovine respiratory syncytial virus\"[Title/Abstract] AND (\"model\"[Title/Abstract] AND \"human\"[Title/Abstract])"}}

@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "63", "retmax": "4", "retstart": "0", "idlist": ["42520340", "42084503", "42083737", "41867900"], "translationset": [], "querytranslation": "\"degenerative myelopathy\"[Title/Abstract] AND \"SOD1\"[Title/Abstract] AND (\"dog\"[Title/Abstract] OR \"canine\"[Title/Abstract])"}}

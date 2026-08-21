@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "1", "retstart": "0", "idlist": ["23401516"], "translationset": [{"from": "Seok J[au]", "to": "seok j[Author]"}], "querytranslation": "seok j[Author] AND 2013/01/01:2013/12/31[Date - Publication] AND (\"genomic responses\"[Title/Abstract] OR \"inflammatory diseases\"[Title/Abstract])"}}

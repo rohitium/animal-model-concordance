@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "1", "retstart": "0", "idlist": ["28893587"], "translationset": [{"from": "Monticello TM[au]", "to": "Monticello, Tm[Full Author Name] OR monticello tm[Author]"}], "querytranslation": "(monticello, tm[Author] OR monticello tm[Author]) AND 2017/01/01:2017/12/31[Date - Publication]"}}

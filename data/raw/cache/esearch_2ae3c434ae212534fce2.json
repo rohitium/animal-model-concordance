@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "1", "retstart": "0", "idlist": ["18202698"], "translationset": [{"from": "Paoloni M[au]", "to": "paoloni m[Author]"}, {"from": "Khanna C[au]", "to": "khanna c[Author]"}], "querytranslation": "paoloni m[Author] AND khanna c[Author] AND \"Nat Rev Cancer\"[Journal]"}}

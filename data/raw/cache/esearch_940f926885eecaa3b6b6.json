@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "2", "retmax": "2", "retstart": "0", "idlist": ["17687131", "16467546"], "translationset": [{"from": "Lees KR[au]", "to": "Lees, Kr[Full Author Name] OR lees kr[Author]"}], "querytranslation": "(lees, kr[Author] OR lees kr[Author]) AND \"NXY-059\"[Title/Abstract] AND \"N Engl J Med\"[Journal]"}}

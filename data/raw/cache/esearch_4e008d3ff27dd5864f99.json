@@ -1,0 +1,1 @@
+{"header": {"type": "esearch", "version": "0.3"}, "esearchresult": {"count": "1", "retmax": "1", "retstart": "0", "idlist": ["11029269"], "translationset": [{"from": "Olson H[au]", "to": "olson h[Author]"}], "querytranslation": "olson h[Author] AND 2000/01/01:2000/12/31[Date - Publication] AND (\"concordance\"[Title/Abstract] OR \"toxicity\"[Title/Abstract])"}}

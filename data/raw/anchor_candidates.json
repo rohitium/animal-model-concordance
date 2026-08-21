@@ -1,0 +1,1338 @@
+[
+ {
+  "key": "hackam2006",
+  "category": "efficacy",
+  "query": "Hackam DG[au] AND 2006[dp] AND animal[tiab]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "16554249",
+    "title": "Statins: panacea for sepsis?",
+    "journal": "Lancet Infect Dis",
+    "year": "2006",
+    "authors": [
+     "Terblanche M",
+     "Almog Y",
+     "Rosenson RS"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "perel2007",
+  "category": "efficacy",
+  "query": "Perel P[au] AND 2007[dp] AND animal[tiab]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "17175568",
+    "title": "Comparison of treatment effects between animal experiments and clinical trials: systematic review.",
+    "journal": "BMJ",
+    "year": "2007",
+    "authors": [
+     "Perel P",
+     "Roberts I",
+     "Sena E"
+    ],
+    "type": [
+     "Comparative Study",
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Systematic Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "contopoulos2008",
+  "category": "efficacy",
+  "query": "Contopoulos-Ioannidis DG[au] AND 2008[dp] AND (translation[tiab] OR promises[tiab])",
+  "n_hits": 0,
+  "candidates": []
+ },
+ {
+  "key": "vanderworp2010",
+  "category": "efficacy",
+  "query": "\"van der Worp HB\"[au] AND 2010[dp] AND animal[tiab]",
+  "n_hits": 5,
+  "candidates": [
+   {
+    "pmid": "21097827",
+    "title": "Animal models of neurological disease: are there any babies in the bathwater?",
+    "journal": "Pract Neurol",
+    "year": "2010",
+    "authors": [
+     "Macleod M",
+     "van der Worp HB"
+    ],
+    "type": [
+     "Editorial"
+    ]
+   },
+   {
+    "pmid": "20485296",
+    "title": "Different strokes for different folks: the rich diversity of animal models of focal cerebral ischemia.",
+    "journal": "J Cereb Blood Flow Metab",
+    "year": "2010",
+    "authors": [
+     "Howells DW",
+     "Porritt MJ",
+     "Rewell SS"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Review"
+    ]
+   },
+   {
+    "pmid": "20361022",
+    "title": "Publication bias in reports of animal stroke studies leads to major overstatement of efficacy.",
+    "journal": "PLoS Biol",
+    "year": "2010",
+    "authors": [
+     "Sena ES",
+     "van der Worp HB",
+     "Bath PM"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "20361020",
+    "title": "Can animal models of disease reliably inform human studies?",
+    "journal": "PLoS Med",
+    "year": "2010",
+    "authors": [
+     "van der Worp HB",
+     "Howells DW",
+     "Sena ES"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "20354545",
+    "title": "Therapeutic hypothermia for acute ischemic stroke: ready to start large randomized trials?",
+    "journal": "J Cereb Blood Flow Metab",
+    "year": "2010",
+    "authors": [
+     "van der Worp HB",
+     "Macleod MR",
+     "Kollmar R"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pound2018",
+  "category": "efficacy",
+  "query": "Pound P[au] AND Ritskes-Hoitinga M[au] AND 2018[dp]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "30404629",
+    "title": "Is it possible to overcome issues of external validity in preclinical animal research? Why most animal models are bound to fail.",
+    "journal": "J Transl Med",
+    "year": "2018",
+    "authors": [
+     "Pound P",
+     "Ritskes-Hoitinga M"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "leenaars2019",
+  "category": "efficacy",
+  "query": "Leenaars CHC[au] AND 2019[dp] AND translational[tiab]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "31307492",
+    "title": "Animal to human translation: a systematic scoping review of reported concordance rates.",
+    "journal": "J Transl Med",
+    "year": "2019",
+    "authors": [
+     "Leenaars CHC",
+     "Kouwenaar C",
+     "Stafleu FR"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Scoping Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bracken2009",
+  "category": "efficacy",
+  "query": "Bracken MB[au] AND 2009[dp] AND animal[tiab]",
+  "n_hits": 2,
+  "candidates": [
+   {
+    "pmid": "19297654",
+    "title": "Why animal studies are often poor predictors of human reactions to exposure.",
+    "journal": "J R Soc Med",
+    "year": "2009",
+    "authors": [
+     "Bracken MB"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "19217006",
+    "title": "Why are so many epidemiology associations inflated or wrong? Does poorly conducted animal research suggest implausible hypotheses?",
+    "journal": "Ann Epidemiol",
+    "year": "2009",
+    "authors": [
+     "Bracken MB"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "wall2008",
+  "category": "efficacy",
+  "query": "Wall RJ[au] AND Shani M[au] AND 2008[dp]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "17988725",
+    "title": "Are animal models as good as we think?",
+    "journal": "Theriogenology",
+    "year": "2008",
+    "authors": [
+     "Wall RJ",
+     "Shani M"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sena2010",
+  "category": "bias",
+  "query": "Sena ES[au] AND 2010[dp] AND publication bias[tiab]",
+  "n_hits": 2,
+  "candidates": [
+   {
+    "pmid": "20648038",
+    "title": "Factors affecting the apparent efficacy and safety of tissue plasminogen activator in thrombotic occlusion models of stroke: systematic review and meta-analysis.",
+    "journal": "J Cereb Blood Flow Metab",
+    "year": "2010",
+    "authors": [
+     "Sena ES",
+     "Briscoe CL",
+     "Howells DW"
+    ],
+    "type": [
+     "Journal Article",
+     "Meta-Analysis",
+     "Research Support, Non-U.S. Gov't",
+     "Systematic Review"
+    ]
+   },
+   {
+    "pmid": "20361022",
+    "title": "Publication bias in reports of animal stroke studies leads to major overstatement of efficacy.",
+    "journal": "PLoS Biol",
+    "year": "2010",
+    "authors": [
+     "Sena ES",
+     "van der Worp HB",
+     "Bath PM"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "begley2012",
+  "category": "bias",
+  "query": "Begley CG[au] AND Ellis LM[au] AND 2012[dp]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "22460880",
+    "title": "Drug development: Raise standards for preclinical cancer research.",
+    "journal": "Nature",
+    "year": "2012",
+    "authors": [
+     "Begley CG",
+     "Ellis LM"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "prinz2011",
+  "category": "bias",
+  "query": "Prinz F[au] AND 2011[dp] AND (Believe it or not[ti] OR drug target[tiab])",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "21892149",
+    "title": "Believe it or not: how much can we rely on published data on potential drug targets?",
+    "journal": "Nat Rev Drug Discov",
+    "year": "2011",
+    "authors": [
+     "Prinz F",
+     "Schlange T",
+     "Asadullah K"
+    ],
+    "type": [
+     "Letter",
+     "Comment"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "freedman2015",
+  "category": "bias",
+  "query": "Freedman LP[au] AND 2015[dp] AND reproducibility[tiab]",
+  "n_hits": 5,
+  "candidates": [
+   {
+    "pmid": "26458546",
+    "title": "The culture of cell culture practices and authentication--Results from a 2015 Survey.",
+    "journal": "Biotechniques",
+    "year": "2015",
+    "authors": [
+     "Freedman LP",
+     "Gibson MC",
+     "Wisman R"
+    ],
+    "type": [
+     "Letter"
+    ]
+   },
+   {
+    "pmid": "26136474",
+    "title": "Know Thy Cells: Improving Biomedical Research Reproducibility.",
+    "journal": "Sci Transl Med",
+    "year": "2015",
+    "authors": [
+     "Freedman LP"
+    ],
+    "type": [
+     "Editorial"
+    ]
+   },
+   {
+    "pmid": "26057340",
+    "title": "The Economics of Reproducibility in Preclinical Research.",
+    "journal": "PLoS Biol",
+    "year": "2015",
+    "authors": [
+     "Freedman LP",
+     "Cockburn IM",
+     "Simcoe TS"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "26020501",
+    "title": "Reproducibility: changing the policies and culture of cell line authentication.",
+    "journal": "Nat Methods",
+    "year": "2015",
+    "authors": [
+     "Freedman LP",
+     "Gibson MC",
+     "Ethier SP"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "25670378",
+    "title": "The impact of preclinical irreproducibility on drug development.",
+    "journal": "Clin Pharmacol Ther",
+    "year": "2015",
+    "authors": [
+     "Freedman LP",
+     "Gibson MC"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "olson2000",
+  "category": "tox",
+  "query": "Olson H[au] AND 2000[dp] AND (concordance[tiab] OR toxicity[tiab])",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "11029269",
+    "title": "Concordance of the toxicity of pharmaceuticals in humans and in animals.",
+    "journal": "Regul Toxicol Pharmacol",
+    "year": "2000",
+    "authors": [
+     "Olson H",
+     "Betton G",
+     "Robinson D"
+    ],
+    "type": [
+     "Comparative Study",
+     "Evaluation Study",
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "monticello2017",
+  "category": "tox",
+  "query": "Monticello TM[au] AND 2017[dp]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "28893587",
+    "title": "Current nonclinical testing paradigm enables safe entry to First-In-Human clinical trials: The IQ consortium nonclinical to clinical translational database.",
+    "journal": "Toxicol Appl Pharmacol",
+    "year": "2017",
+    "authors": [
+     "Monticello TM",
+     "Jones TW",
+     "Dambach DM"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "clark2018",
+  "category": "tox",
+  "query": "Clark M[au] AND Steger-Hartmann T[au] AND 2018[dp]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "29730448",
+    "title": "A big data approach to the concordance of the toxicity of pharmaceuticals in animals and humans.",
+    "journal": "Regul Toxicol Pharmacol",
+    "year": "2018",
+    "authors": [
+     "Clark M",
+     "Steger-Hartmann T"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bailey_nhp",
+  "category": "tox",
+  "query": "Bailey J[au] AND (non-human primate[tiab] OR nonhuman primate[tiab]) AND predict*[tiab]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "6617406",
+    "title": "Maternal, fetal, and neonatal elimination of ethanol in nonhuman primates.",
+    "journal": "Dev Pharmacol Ther",
+    "year": "1983",
+    "authors": [
+     "Hill DE",
+     "Slikker W Jr",
+     "Goad PT"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "redfern_safetypharm",
+  "category": "tox",
+  "query": "Redfern WS[au] AND (safety pharmacology[tiab] OR QT[tiab])",
+  "n_hits": 24,
+  "candidates": [
+   {
+    "pmid": "39577752",
+    "title": "Predicting clinical outcomes from off-target receptor interactions using Secondary Intelligence\u2122.",
+    "journal": "J Pharmacol Toxicol Methods",
+    "year": "2025",
+    "authors": [
+     "Redfern WS",
+     "Pollard CE",
+     "Holbrook M"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "33768524",
+    "title": "Functional brain imaging in larval zebrafish for characterising the effects of seizurogenic compounds acting via a range of pharmacological mechanisms.",
+    "journal": "Br J Pharmacol",
+    "year": "2021",
+    "authors": [
+     "Winter MJ",
+     "Pinion J",
+     "Tochwin A"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "33620150",
+    "title": "Applying the CiPA approach to evaluate cardiac proarrhythmia risk of some antimalarials used off-label in the first wave of COVID-19.",
+    "journal": "Clin Transl Sci",
+    "year": "2021",
+    "authors": [
+     "Delaunois A",
+     "Abernathy M",
+     "Anderson WD"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "32406289",
+    "title": "An Industry Survey With Focus on Cardiovascular Safety Pharmacology Study Design and Data Interpretation.",
+    "journal": "Int J Toxicol",
+    "year": "2020",
+    "authors": [
+     "Authier S",
+     "Abernathy MM",
+     "Correll K"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "31146025",
+    "title": "The functional observational battery and modified Irwin test as global neurobehavioral assessments in the rat: Pharmacological validation data and a comparison of methods.",
+    "journal": "J Pharmacol Toxicol Methods",
+    "year": "2019",
+    "authors": [
+     "Redfern WS",
+     "Dymond A",
+     "Strang I"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "hay2014",
+  "category": "attrition",
+  "query": "Hay M[au] AND 2014[dp] AND clinical development success[tiab]",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "24406927",
+    "title": "Clinical development success rates for investigational drugs.",
+    "journal": "Nat Biotechnol",
+    "year": "2014",
+    "authors": [
+     "Hay M",
+     "Thomas DW",
+     "Craighead JL"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "wong2019",
+  "category": "attrition",
+  "query": "Wong CH[au] AND Lo AW[au] AND (2018[dp] OR 2019[dp])",
+  "n_hits": 3,
+  "candidates": [
+   {
+    "pmid": "31539267",
+    "title": "Machine-Learning and Stochastic Tumor Growth Models for Predicting Outcomes in Patients With Advanced Non-Small-Cell Lung Cancer.",
+    "journal": "JCO Clin Cancer Inform",
+    "year": "2019",
+    "authors": [
+     "Siah KW",
+     "Khozin S",
+     "Wong CH"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "30445524",
+    "title": "Corrigendum: Estimation of clinical trial success rates and related parameters.",
+    "journal": "Biostatistics",
+    "year": "2019",
+    "authors": [
+     "Wong CH",
+     "Siah KW",
+     "Lo AW"
+    ],
+    "type": [
+     "Journal Article",
+     "Published Erratum"
+    ]
+   },
+   {
+    "pmid": "29394327",
+    "title": "Estimation of clinical trial success rates and related parameters.",
+    "journal": "Biostatistics",
+    "year": "2019",
+    "authors": [
+     "Wong CH",
+     "Siah KW",
+     "Lo AW"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cummings_ad",
+  "category": "attrition",
+  "query": "Cummings JL[au] AND Alzheimer[tiab] AND (drug development pipeline[tiab] OR failures[tiab])",
+  "n_hits": 7,
+  "candidates": [
+   {
+    "pmid": "42095064",
+    "title": "Alzheimer's disease drug development pipeline: 2026.",
+    "journal": "Alzheimers Dement (N Y)",
+    "year": "2026",
+    "authors": [
+     "Cummings JL",
+     "Zhou Y",
+     "Yang Y"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   },
+   {
+    "pmid": "40555627",
+    "title": "Globalization of Alzheimer's disease clinical trials: Current characteristics and future goals.",
+    "journal": "Int Psychogeriatr",
+    "year": "2025",
+    "authors": [
+     "Cummings JL",
+     "Lindle J",
+     "Dalla I"
+    ],
+    "type": [
+     "Journal Article",
+     "Review",
+     "Research Support, Non-U.S. Gov't",
+     "Research Support, N.I.H., Extramural"
+    ]
+   },
+   {
+    "pmid": "40463637",
+    "title": "Alzheimer's disease drug development pipeline: 2025.",
+    "journal": "Alzheimers Dement (N Y)",
+    "year": "2025",
+    "authors": [
+     "Cummings JL",
+     "Zhou Y",
+     "Lee G"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   },
+   {
+    "pmid": "37728864",
+    "title": "Alzheimer's Disease: Novel Targets and Investigational Drugs for Disease Modification.",
+    "journal": "Drugs",
+    "year": "2023",
+    "authors": [
+     "Cummings JL",
+     "Osse AML",
+     "Kinney JW"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   },
+   {
+    "pmid": "32512572",
+    "title": "Translational Scoring of Candidate Treatments for Alzheimer's Disease: A Systematic Approach.",
+    "journal": "Dement Geriatr Cogn Disord",
+    "year": "2020",
+    "authors": [
+     "Cummings JL"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "seok2013",
+  "category": "contested",
+  "query": "Seok J[au] AND 2013[dp] AND (genomic responses[tiab] OR inflammatory diseases[tiab])",
+  "n_hits": 1,
+  "candidates": [
+   {
+    "pmid": "23401516",
+    "title": "Genomic responses in mouse models poorly mimic human inflammatory diseases.",
+    "journal": "Proc Natl Acad Sci U S A",
+    "year": "2013",
+    "authors": [
+     "Seok J",
+     "Warren HS",
+     "Cuenca AG"
+    ],
+    "type": [
+     "Clinical Trial",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Research Support, U.S. Gov't, Non-P.H.S."
+    ]
+   }
+  ]
+ },
+ {
+  "key": "takao2015",
+  "category": "contested",
+  "query": "Takao K[au] AND Miyakawa T[au] AND 2015[dp]",
+  "n_hits": 3,
+  "candidates": [
+   {
+    "pmid": "26250433",
+    "title": "TRPV4 activation at the physiological temperature is a critical determinant of neuronal excitability and behavior.",
+    "journal": "Pflugers Arch",
+    "year": "2015",
+    "authors": [
+     "Shibasaki K",
+     "Sugio S",
+     "Takao K"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "25540421",
+    "title": "Reply to Warren et al. and Shay et al.: Commonalities across species do exist and are potentially important.",
+    "journal": "Proc Natl Acad Sci U S A",
+    "year": "2015",
+    "authors": [
+     "Takao K",
+     "Hagihara H",
+     "Miyakawa T"
+    ],
+    "type": [
+     "Letter",
+     "Comment"
+    ]
+   },
+   {
+    "pmid": "25092317",
+    "title": "Genomic responses in mouse models greatly mimic human inflammatory diseases.",
+    "journal": "Proc Natl Acad Sci U S A",
+    "year": "2015",
+    "authors": [
+     "Takao K",
+     "Miyakawa T"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "perrin2014",
+  "category": "contested",
+  "query": "Perrin S[au] AND 2014[dp] AND (Preclinical research[ti] OR ALS[tiab])",
+  "n_hits": 3,
+  "candidates": [
+   {
+    "pmid": "25526593",
+    "title": "Dexpramipexole is ineffective in two models of ALS related neurodegeneration.",
+    "journal": "PLoS One",
+    "year": "2014",
+    "authors": [
+     "Vieira FG",
+     "LaDow E",
+     "Moreno A"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "24678540",
+    "title": "Preclinical research: Make mouse studies work.",
+    "journal": "Nature",
+    "year": "2014",
+    "authors": [
+     "Perrin S"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "24141148",
+    "title": "C57BL/6J congenic Prp-TDP43A315T mice develop progressive neurodegeneration in the myenteric plexus of the colon without exhibiting key features of ALS.",
+    "journal": "Brain Res",
+    "year": "2014",
+    "authors": [
+     "Hatzipetros T",
+     "Bogdanik LP",
+     "Tassinari VR"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "stair_nxy059",
+  "category": "contested",
+  "query": "(NXY-059[tiab] AND (SAINT[tiab] OR stroke[tiab]))",
+  "n_hits": 87,
+  "candidates": [
+   {
+    "pmid": "40760789",
+    "title": "Current Advancement and Patient Outcomes in Reperfusion Brain Injuries After Stroke: A Comparative Analysis of Thrombolysis and Thrombectomy.",
+    "journal": "Brain Behav",
+    "year": "2025",
+    "authors": [
+     "Ayomide OT",
+     "Chavda V",
+     "Chaurasia B"
+    ],
+    "type": [
+     "Journal Article",
+     "Comparative Study",
+     "Systematic Review"
+    ]
+   },
+   {
+    "pmid": "36277357",
+    "title": "Neuroprotective efficacy of N-t-butylhydroxylamine (NtBHA) in transient focal ischemia in rats.",
+    "journal": "Toxicol Res",
+    "year": "2022",
+    "authors": [
+     "Kim ES",
+     "Shin Y",
+     "Kim EH"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "35628192",
+    "title": "Quest for Quality in Translational Stroke Research-A New Dawn for Neuroprotection?",
+    "journal": "Int J Mol Sci",
+    "year": "2022",
+    "authors": [
+     "Haupt M",
+     "Gerner ST",
+     "B\u00e4hr M"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   },
+   {
+    "pmid": "29673616",
+    "title": "NXY-059, a Failed Stroke Neuroprotectant, Offers No Protection to Stem Cell-Derived Human Neurons.",
+    "journal": "J Stroke Cerebrovasc Dis",
+    "year": "2018",
+    "authors": [
+     "Antonic A",
+     "Dottori M",
+     "Macleod MR"
+    ],
+    "type": [
+     "Journal Article",
+     "Randomized Controlled Trial"
+    ]
+   },
+   {
+    "pmid": "23419732",
+    "title": "Nitrone-based therapeutics for neurodegenerative diseases: their use alone or in combination with lanthionines.",
+    "journal": "Free Radic Biol Med",
+    "year": "2013",
+    "authors": [
+     "Floyd RA",
+     "Castro Faria Neto HC",
+     "Zimmerman GA"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Research Support, Non-U.S. Gov't",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paoloni_khanna",
+  "category": "vet",
+  "query": "Paoloni M[au] AND Khanna C[au] AND comparative oncology[tiab]",
+  "n_hits": 9,
+  "candidates": [
+   {
+    "pmid": "30061364",
+    "title": "NCI Comparative Oncology Program Testing of Non-Camptothecin Indenoisoquinoline Topoisomerase I Inhibitors in Naturally Occurring Canine Lymphoma.",
+    "journal": "Clin Cancer Res",
+    "year": "2018",
+    "authors": [
+     "Burton JH",
+     "Mazcko C",
+     "LeBlanc A"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "26866698",
+    "title": "A Comparative Oncology Study of Iniparib Defines Its Pharmacokinetic Profile and Biological Activity in a Naturally-Occurring Canine Cancer Model.",
+    "journal": "PLoS One",
+    "year": "2016",
+    "authors": [
+     "Saba C",
+     "Paoloni M",
+     "Mazcko C"
+    ],
+    "type": [
+     "Clinical Trial",
+     "Comparative Study",
+     "Journal Article",
+     "Multicenter Study",
+     "Research Support, N.I.H., Intramural"
+    ]
+   },
+   {
+    "pmid": "26091536",
+    "title": "Defining the Pharmacodynamic Profile and Therapeutic Index of NHS-IL12 Immunocytokine in Dogs with Malignant Melanoma.",
+    "journal": "PLoS One",
+    "year": "2015",
+    "authors": [
+     "Paoloni M",
+     "Mazcko C",
+     "Selting K"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, N.I.H., Intramural",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   {
+    "pmid": "24637659",
+    "title": "Prospective molecular profiling of canine cancers provides a clinically relevant comparative model for evaluating personalized medicine (PMed) trials.",
+    "journal": "PLoS One",
+    "year": "2014",
+    "authors": [
+     "Paoloni M",
+     "Webb C",
+     "Mazcko C"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ]
+   },
+   {
+    "pmid": "20543980",
+    "title": "Rapamycin pharmacokinetic and pharmacodynamic relationships in osteosarcoma: a comparative oncology study in dogs.",
+    "journal": "PLoS One",
+    "year": "2010",
+    "authors": [
+     "Paoloni MC",
+     "Mazcko C",
+     "Fox E"
+    ],
+    "type": [
+     "Comparative Study",
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "leblanc_cotc",
+  "category": "vet",
+  "query": "LeBlanc AK[au] AND (comparative oncology[tiab] OR Comparative Oncology Trials Consortium[tiab])",
+  "n_hits": 15,
+  "candidates": [
+   {
+    "pmid": "42527083",
+    "title": "Near-infrared Photoimmunotherapy Targeting Canine Mammary Tumors: Comparative Oncology for Overcoming Human Breast Cancer.",
+    "journal": "Anticancer Res",
+    "year": "2026",
+    "authors": [
+     "Suzuki M",
+     "Furusawa A",
+     "Yamamoto H"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "41654847",
+    "title": "Spatial resolution of the metastatic osteosarcoma tumor microenvironment using immunolabeling across murine, canine and human lung.",
+    "journal": "J Transl Med",
+    "year": "2026",
+    "authors": [
+     "Beck JA",
+     "Pereira JS",
+     "Silver KI"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "40325876",
+    "title": "Comparative pathology boards facilitate the translation of knowledge between canine and human cancer patients.",
+    "journal": "Brain Pathol",
+    "year": "2025",
+    "authors": [
+     "Beck JA",
+     "Mazcko C",
+     "Belluco S"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "35876604",
+    "title": "Comparative Oncology Assessment of a Novel Inhibitor of Valosin-Containing Protein in Tumor-Bearing Dogs.",
+    "journal": "Mol Cancer Ther",
+    "year": "2022",
+    "authors": [
+     "LeBlanc AK",
+     "Mazcko CN",
+     "Fan TM"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "33427378",
+    "title": "Veterinary Cooperative Oncology Group-Common Terminology Criteria for Adverse Events (VCOG-CTCAE v2) following investigational therapy in dogs and cats.",
+    "journal": "Vet Comp Oncol",
+    "year": "2021",
+    "authors": [
+     "LeBlanc AK",
+     "Atherton M",
+     "Bentley RT"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kol2015",
+  "category": "vet",
+  "query": "Kol A[au] AND (companion animal*[tiab] OR veterinary[tiab]) AND translational[tiab]",
+  "n_hits": 4,
+  "candidates": [
+   {
+    "pmid": "40659357",
+    "title": "Mesenchymal stem/stromal cell therapy improves immune recovery in a feline model of severe coronavirus infection.",
+    "journal": "Stem Cells Transl Med",
+    "year": "2025",
+    "authors": [
+     "Wanakumjorn P",
+     "Kimura K",
+     "Castillo D"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Research Support, N.I.H., Extramural"
+    ]
+   },
+   {
+    "pmid": "38255775",
+    "title": "Adult Animal Stem Cell-Derived Organoids in Biomedical Research and the One Health Paradigm.",
+    "journal": "Int J Mol Sci",
+    "year": "2024",
+    "authors": [
+     "Gabriel V",
+     "Zdyrski C",
+     "Sahoo DK"
+    ],
+    "type": [
+     "Journal Article",
+     "Review"
+    ]
+   },
+   {
+    "pmid": "34917671",
+    "title": "Cell Therapy in Veterinary Medicine as a Proof-of-Concept for Human Therapies: Perspectives From the North American Veterinary Regenerative Medicine Association.",
+    "journal": "Front Vet Sci",
+    "year": "2021",
+    "authors": [
+     "Arzi B",
+     "Webb TL",
+     "Koch TG"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "26446953",
+    "title": "Companion animals: Translational scientist's new best friends.",
+    "journal": "Sci Transl Med",
+    "year": "2015",
+    "authors": [
+     "Kol A",
+     "Arzi B",
+     "Athanasiou KA"
+    ],
+    "type": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Research Support, Non-U.S. Gov't",
+     "Review"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "vcog_ctcae",
+  "category": "vet",
+  "query": "VCOG-CTCAE[tiab] OR (veterinary cooperative oncology group[tiab] AND adverse event*[tiab])",
+  "n_hits": 62,
+  "candidates": [
+   {
+    "pmid": "42613071",
+    "title": "Toxicity of Cytarabine Intravenous Constant Rate Infusion in Cats With Lymphoma.",
+    "journal": "Vet Comp Oncol",
+    "year": "2026",
+    "authors": [
+     "Hanford R",
+     "Skorupski KA",
+     "Rebhun RB"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "42525883",
+    "title": "Survival outcomes of dogs with multicentric lymphoma treated with sequential half-body radiotherapy and L-CHOP without maintenance chemotherapy.",
+    "journal": "J Vet Intern Med",
+    "year": "2026",
+    "authors": [
+     "Colosi J",
+     "Kent MS",
+     "Close NC"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "42400110",
+    "title": "Long-Term Outcome of Electrochemotherapy in the Treatment of Advanced Stages (T(3)-T(4)) of Feline Nasal Planum Squamous Cell Carcinoma.",
+    "journal": "Vet Comp Oncol",
+    "year": "2026",
+    "authors": [
+     "Franchini D",
+     "Laino I",
+     "Perrone C"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "42002308",
+    "title": "Retrospective Analysis of Survival and Adverse Effects Associated With Stereotactic Body Radiation Therapy in 12 Dogs With Hepatocellular Carcinoma.",
+    "journal": "Vet Comp Oncol",
+    "year": "2026",
+    "authors": [
+     "Newberry VL",
+     "Boss MK",
+     "Leary D"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "41910421",
+    "title": "Adverse events in small dogs treated with a single dose of vinblastine.",
+    "journal": "J Vet Intern Med",
+    "year": "2026",
+    "authors": [
+     "Matsuyama F",
+     "Harada K",
+     "Ichimata M"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "recist_vet",
+  "category": "vet",
+  "query": "(RECIST[tiab] AND (canine[tiab] OR dog*[tiab]) AND (solid tumo*[tiab] OR response evaluation[tiab]))",
+  "n_hits": 12,
+  "candidates": [
+   {
+    "pmid": "42363651",
+    "title": "Fluorescent Light Energy (FLE) as an Adjunctive Therapy in Canine Cutaneous Epitheliotropic Lymphoma (CTCL).",
+    "journal": "Vet Dermatol",
+    "year": "2026",
+    "authors": [
+     "Nowell S",
+     "Fantini O",
+     "Roman A"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "40559759",
+    "title": "Effect of Nanoemulsions of Betulinic Acid on the Development of Canine Mammary Tumors.",
+    "journal": "Vet Sci",
+    "year": "2025",
+    "authors": [
+     "Amoros-Cer\u00f3n ZY",
+     "Pinos-Rodr\u00edguez JM",
+     "Garc\u00eda HS"
+    ],
+    "type": [
+     "Case Reports",
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "40439882",
+    "title": "Phase 1 studies of the indenoisoquinolines LMP776 and LMP744 in patients with solid tumors and lymphomas.",
+    "journal": "Cancer Chemother Pharmacol",
+    "year": "2025",
+    "authors": [
+     "O'Sullivan Coyne G",
+     "Kummar S",
+     "Rubinstein LV"
+    ],
+    "type": [
+     "Clinical Trial, Phase I",
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "36439338",
+    "title": "Palliative repeated electroporations of oral tumours in dogs: A case series.",
+    "journal": "Front Vet Sci",
+    "year": "2022",
+    "authors": [
+     "Moretti G",
+     "Dentini A",
+     "Beccati F"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   },
+   {
+    "pmid": "34828058",
+    "title": "A Retrospective Study of Clinical and Histopathological Features of 81 Cases of Canine Apocrine Gland Adenocarcinoma of the Anal Sac: Independent Clinical and Histopathological Risk Factors Associated with Outcome.",
+    "journal": "Animals (Basel)",
+    "year": "2021",
+    "authors": [
+     "Wong H",
+     "Byrne S",
+     "Rasotto R"
+    ],
+    "type": [
+     "Journal Article"
+    ]
+   }
+  ]
+ }
+]

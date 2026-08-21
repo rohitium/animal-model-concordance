@@ -1,0 +1,392 @@
+{
+ "run_date": "2026-08-20",
+ "queries": {
+  "arm1_efficacy": "((\"Models, Animal\"[Mesh] OR \"Disease Models, Animal\"[Mesh] OR \"animal model\"[tiab]  OR \"animal models\"[tiab] OR \"animal experiment\"[tiab] OR \"animal experiments\"[tiab]  OR \"animal studies\"[tiab] OR \"animal study\"[tiab] OR \"animal research\"[tiab]  OR \"animal data\"[tiab] OR \"animal test\"[tiab] OR \"animal tests\"[tiab] OR \"animal testing\"[tiab]  OR preclinical[tiab] OR \"pre-clinical\"[tiab] OR nonclinical[tiab] OR \"non-clinical\"[tiab]  OR mouse[tiab] OR mice[tiab] OR murine[tiab] OR rat[tiab] OR rats[tiab] OR rodent*[tiab]  OR canine[tiab] OR dog[tiab] OR dogs[tiab] OR feline[tiab] OR cat[tiab] OR cats[tiab]  OR porcine[tiab] OR pig[tiab] OR pigs[tiab] OR swine[tiab] OR minipig*[tiab]  OR equine[tiab] OR horse[tiab] OR horses[tiab] OR bovine[tiab] OR cattle[tiab]  OR ovine[tiab] OR sheep[tiab] OR caprine[tiab] OR goat[tiab] OR goats[tiab]  OR chicken*[tiab] OR hen[tiab] OR hens[tiab] OR avian[tiab] OR rabbit*[tiab]  OR ferret*[tiab] OR \"guinea pig\"[tiab] OR \"guinea pigs\"[tiab]  OR primate*[tiab] OR macaque*[tiab] OR rhesus[tiab] OR cynomolgus[tiab]  OR marmoset*[tiab] OR baboon*[tiab] OR chimpanzee*[tiab] OR zebrafish[tiab]  OR \"Animals\"[Mesh] OR \"Animal Experimentation\"[Mesh] OR \"Drug Evaluation, Preclinical\"[Mesh]  OR \"Toxicity Tests\"[Mesh] OR \"Species Specificity\"[Mesh])) AND ((concordan*[tiab] OR discordan*[tiab] OR predict*[tiab] OR translat*[tiab] OR \"bench to bedside\"[tiab]  OR extrapolat*[tiab] OR replicat*[tiab] OR reproducib*[tiab] OR agreement[tiab]  OR \"cross-species\"[tiab] OR interspecies[tiab] OR \"species differences\"[tiab]  OR \"species difference\"[tiab] OR correlat*[tiab]  OR \"Translational Research, Biomedical\"[Mesh] OR \"Reproducibility of Results\"[Mesh]  OR \"Predictive Value of Tests\"[Mesh] OR \"Treatment Failure\"[Mesh] OR \"Publication Bias\"[Mesh])) AND ((\"Clinical Trials as Topic\"[Mesh] OR \"randomized controlled trial\"[pt]  OR \"clinical trial\"[tiab] OR \"clinical trials\"[tiab] OR human[tiab] OR humans[tiab]  OR \"phase II\"[tiab] OR \"phase III\"[tiab] OR \"first-in-human\"[tiab] OR patient[tiab]  OR patients[tiab] OR clinical[tiab] OR \"Humans\"[Mesh])) AND ((\"systematic review\"[tiab] OR \"systematic review\"[pt] OR meta-analy*[tiab]  OR \"meta analysis\"[pt] OR \"cross-sectional\"[tiab] OR \"retrospective analysis\"[tiab]  OR \"success rate\"[tiab] OR \"success rates\"[tiab] OR attrition[tiab]  OR \"failure rate\"[tiab] OR \"failure rates\"[tiab] OR \"predictive value\"[tiab]  OR sensitivity[tiab] OR specificity[tiab] OR \"scoping review\"[tiab] OR review[pt]  OR \"Biomedical Research\"[Mesh] OR \"Research Design\"[Mesh] OR \"Evaluation Studies\"[pt])) AND (\"1980\"[dp] : \"3000\"[dp])",
+  "arm2_safety": "((\"Models, Animal\"[Mesh] OR \"Disease Models, Animal\"[Mesh] OR \"animal model\"[tiab]  OR \"animal models\"[tiab] OR \"animal experiment\"[tiab] OR \"animal experiments\"[tiab]  OR \"animal studies\"[tiab] OR \"animal study\"[tiab] OR \"animal research\"[tiab]  OR \"animal data\"[tiab] OR \"animal test\"[tiab] OR \"animal tests\"[tiab] OR \"animal testing\"[tiab]  OR preclinical[tiab] OR \"pre-clinical\"[tiab] OR nonclinical[tiab] OR \"non-clinical\"[tiab]  OR mouse[tiab] OR mice[tiab] OR murine[tiab] OR rat[tiab] OR rats[tiab] OR rodent*[tiab]  OR canine[tiab] OR dog[tiab] OR dogs[tiab] OR feline[tiab] OR cat[tiab] OR cats[tiab]  OR porcine[tiab] OR pig[tiab] OR pigs[tiab] OR swine[tiab] OR minipig*[tiab]  OR equine[tiab] OR horse[tiab] OR horses[tiab] OR bovine[tiab] OR cattle[tiab]  OR ovine[tiab] OR sheep[tiab] OR caprine[tiab] OR goat[tiab] OR goats[tiab]  OR chicken*[tiab] OR hen[tiab] OR hens[tiab] OR avian[tiab] OR rabbit*[tiab]  OR ferret*[tiab] OR \"guinea pig\"[tiab] OR \"guinea pigs\"[tiab]  OR primate*[tiab] OR macaque*[tiab] OR rhesus[tiab] OR cynomolgus[tiab]  OR marmoset*[tiab] OR baboon*[tiab] OR chimpanzee*[tiab] OR zebrafish[tiab]  OR \"Animals\"[Mesh] OR \"Animal Experimentation\"[Mesh] OR \"Drug Evaluation, Preclinical\"[Mesh]  OR \"Toxicity Tests\"[Mesh] OR \"Species Specificity\"[Mesh])) AND ((\"Clinical Trials as Topic\"[Mesh] OR \"randomized controlled trial\"[pt]  OR \"clinical trial\"[tiab] OR \"clinical trials\"[tiab] OR human[tiab] OR humans[tiab]  OR \"phase II\"[tiab] OR \"phase III\"[tiab] OR \"first-in-human\"[tiab] OR patient[tiab]  OR patients[tiab] OR clinical[tiab] OR \"Humans\"[Mesh])) AND ((\"safety pharmacology\"[tiab] OR \"ICH S7\"[tiab] OR hERG[tiab] OR \"QT interval\"[tiab]  OR \"QT prolongation\"[tiab] OR torsade*[tiab] OR \"adverse event\"[tiab] OR \"adverse events\"[tiab]  OR \"adverse drug reaction*\"[tiab] OR \"drug withdrawal\"[tiab] OR \"market withdrawal\"[tiab]  OR \"black box warning\"[tiab] OR \"boxed warning\"[tiab])) AND (((concordan*[tiab] OR discordan*[tiab] OR predict*[tiab] OR translat*[tiab] OR \"bench to bedside\"[tiab]  OR extrapolat*[tiab] OR replicat*[tiab] OR reproducib*[tiab] OR agreement[tiab]  OR \"cross-species\"[tiab] OR interspecies[tiab] OR \"species differences\"[tiab]  OR \"species difference\"[tiab] OR correlat*[tiab]  OR \"Translational Research, Biomedical\"[Mesh] OR \"Reproducibility of Results\"[Mesh]  OR \"Predictive Value of Tests\"[Mesh] OR \"Treatment Failure\"[Mesh] OR \"Publication Bias\"[Mesh]) OR (\"systematic review\"[tiab] OR \"systematic review\"[pt] OR meta-analy*[tiab]  OR \"meta analysis\"[pt] OR \"cross-sectional\"[tiab] OR \"retrospective analysis\"[tiab]  OR \"success rate\"[tiab] OR \"success rates\"[tiab] OR attrition[tiab]  OR \"failure rate\"[tiab] OR \"failure rates\"[tiab] OR \"predictive value\"[tiab]  OR sensitivity[tiab] OR specificity[tiab] OR \"scoping review\"[tiab] OR review[pt]  OR \"Biomedical Research\"[Mesh] OR \"Research Design\"[Mesh] OR \"Evaluation Studies\"[pt]))) AND (\"1980\"[dp] : \"3000\"[dp])",
+  "arm3_tox": "((\"Models, Animal\"[Mesh] OR \"Disease Models, Animal\"[Mesh] OR \"animal model\"[tiab]  OR \"animal models\"[tiab] OR \"animal experiment\"[tiab] OR \"animal experiments\"[tiab]  OR \"animal studies\"[tiab] OR \"animal study\"[tiab] OR \"animal research\"[tiab]  OR \"animal data\"[tiab] OR \"animal test\"[tiab] OR \"animal tests\"[tiab] OR \"animal testing\"[tiab]  OR preclinical[tiab] OR \"pre-clinical\"[tiab] OR nonclinical[tiab] OR \"non-clinical\"[tiab]  OR mouse[tiab] OR mice[tiab] OR murine[tiab] OR rat[tiab] OR rats[tiab] OR rodent*[tiab]  OR canine[tiab] OR dog[tiab] OR dogs[tiab] OR feline[tiab] OR cat[tiab] OR cats[tiab]  OR porcine[tiab] OR pig[tiab] OR pigs[tiab] OR swine[tiab] OR minipig*[tiab]  OR equine[tiab] OR horse[tiab] OR horses[tiab] OR bovine[tiab] OR cattle[tiab]  OR ovine[tiab] OR sheep[tiab] OR caprine[tiab] OR goat[tiab] OR goats[tiab]  OR chicken*[tiab] OR hen[tiab] OR hens[tiab] OR avian[tiab] OR rabbit*[tiab]  OR ferret*[tiab] OR \"guinea pig\"[tiab] OR \"guinea pigs\"[tiab]  OR primate*[tiab] OR macaque*[tiab] OR rhesus[tiab] OR cynomolgus[tiab]  OR marmoset*[tiab] OR baboon*[tiab] OR chimpanzee*[tiab] OR zebrafish[tiab]  OR \"Animals\"[Mesh] OR \"Animal Experimentation\"[Mesh] OR \"Drug Evaluation, Preclinical\"[Mesh]  OR \"Toxicity Tests\"[Mesh] OR \"Species Specificity\"[Mesh])) AND ((\"Clinical Trials as Topic\"[Mesh] OR \"randomized controlled trial\"[pt]  OR \"clinical trial\"[tiab] OR \"clinical trials\"[tiab] OR human[tiab] OR humans[tiab]  OR \"phase II\"[tiab] OR \"phase III\"[tiab] OR \"first-in-human\"[tiab] OR patient[tiab]  OR patients[tiab] OR clinical[tiab] OR \"Humans\"[Mesh])) AND ((toxicolog*[tiab] OR toxicity[tiab] OR \"repeat-dose\"[tiab] OR \"repeat dose\"[tiab]  OR carcinogenic*[tiab] OR genotoxic*[tiab] OR teratogen*[tiab] OR hepatotoxic*[tiab]  OR nephrotoxic*[tiab] OR \"target organ toxicity\"[tiab] OR \"no observed adverse effect\"[tiab]  OR \"drug-induced liver injury\"[tiab] OR \"safety assessment\"[tiab])) AND (((concordan*[tiab] OR discordan*[tiab] OR predict*[tiab] OR translat*[tiab] OR \"bench to bedside\"[tiab]  OR extrapolat*[tiab] OR replicat*[tiab] OR reproducib*[tiab] OR agreement[tiab]  OR \"cross-species\"[tiab] OR interspecies[tiab] OR \"species differences\"[tiab]  OR \"species difference\"[tiab] OR correlat*[tiab]  OR \"Translational Research, Biomedical\"[Mesh] OR \"Reproducibility of Results\"[Mesh]  OR \"Predictive Value of Tests\"[Mesh] OR \"Treatment Failure\"[Mesh] OR \"Publication Bias\"[Mesh]) OR (\"systematic review\"[tiab] OR \"systematic review\"[pt] OR meta-analy*[tiab]  OR \"meta analysis\"[pt] OR \"cross-sectional\"[tiab] OR \"retrospective analysis\"[tiab]  OR \"success rate\"[tiab] OR \"success rates\"[tiab] OR attrition[tiab]  OR \"failure rate\"[tiab] OR \"failure rates\"[tiab] OR \"predictive value\"[tiab]  OR sensitivity[tiab] OR specificity[tiab] OR \"scoping review\"[tiab] OR review[pt]  OR \"Biomedical Research\"[Mesh] OR \"Research Design\"[Mesh] OR \"Evaluation Studies\"[pt]))) AND (\"1980\"[dp] : \"3000\"[dp])",
+  "arm4_vet": "((\"comparative oncology\"[tiab] OR \"naturally occurring\"[tiab] OR \"naturally-occurring\"[tiab]  OR spontaneous[tiab] OR \"companion animal\"[tiab] OR \"companion animals\"[tiab]  OR \"client-owned\"[tiab] OR \"client owned\"[tiab] OR \"veterinary clinical trial\"[tiab]  OR \"veterinary clinical trials\"[tiab] OR \"pet dog\"[tiab] OR \"pet dogs\"[tiab]  OR \"pet cat\"[tiab] OR \"pet cats\"[tiab] OR \"One Health\"[tiab] OR \"veterinary patients\"[tiab])) AND ((\"Clinical Trials as Topic\"[Mesh] OR \"randomized controlled trial\"[pt]  OR \"clinical trial\"[tiab] OR \"clinical trials\"[tiab] OR human[tiab] OR humans[tiab]  OR \"phase II\"[tiab] OR \"phase III\"[tiab] OR \"first-in-human\"[tiab] OR patient[tiab]  OR patients[tiab] OR clinical[tiab] OR \"Humans\"[Mesh])) AND (((concordan*[tiab] OR discordan*[tiab] OR predict*[tiab] OR translat*[tiab] OR \"bench to bedside\"[tiab]  OR extrapolat*[tiab] OR replicat*[tiab] OR reproducib*[tiab] OR agreement[tiab]  OR \"cross-species\"[tiab] OR interspecies[tiab] OR \"species differences\"[tiab]  OR \"species difference\"[tiab] OR correlat*[tiab]  OR \"Translational Research, Biomedical\"[Mesh] OR \"Reproducibility of Results\"[Mesh]  OR \"Predictive Value of Tests\"[Mesh] OR \"Treatment Failure\"[Mesh] OR \"Publication Bias\"[Mesh]) OR (\"systematic review\"[tiab] OR \"systematic review\"[pt] OR meta-analy*[tiab]  OR \"meta analysis\"[pt] OR \"cross-sectional\"[tiab] OR \"retrospective analysis\"[tiab]  OR \"success rate\"[tiab] OR \"success rates\"[tiab] OR attrition[tiab]  OR \"failure rate\"[tiab] OR \"failure rates\"[tiab] OR \"predictive value\"[tiab]  OR sensitivity[tiab] OR specificity[tiab] OR \"scoping review\"[tiab] OR review[pt]  OR \"Biomedical Research\"[Mesh] OR \"Research Design\"[Mesh] OR \"Evaluation Studies\"[pt]))) AND ((\"Models, Animal\"[Mesh] OR \"Disease Models, Animal\"[Mesh] OR \"animal model\"[tiab]  OR \"animal models\"[tiab] OR \"animal experiment\"[tiab] OR \"animal experiments\"[tiab]  OR \"animal studies\"[tiab] OR \"animal study\"[tiab] OR \"animal research\"[tiab]  OR \"animal data\"[tiab] OR \"animal test\"[tiab] OR \"animal tests\"[tiab] OR \"animal testing\"[tiab]  OR preclinical[tiab] OR \"pre-clinical\"[tiab] OR nonclinical[tiab] OR \"non-clinical\"[tiab]  OR mouse[tiab] OR mice[tiab] OR murine[tiab] OR rat[tiab] OR rats[tiab] OR rodent*[tiab]  OR canine[tiab] OR dog[tiab] OR dogs[tiab] OR feline[tiab] OR cat[tiab] OR cats[tiab]  OR porcine[tiab] OR pig[tiab] OR pigs[tiab] OR swine[tiab] OR minipig*[tiab]  OR equine[tiab] OR horse[tiab] OR horses[tiab] OR bovine[tiab] OR cattle[tiab]  OR ovine[tiab] OR sheep[tiab] OR caprine[tiab] OR goat[tiab] OR goats[tiab]  OR chicken*[tiab] OR hen[tiab] OR hens[tiab] OR avian[tiab] OR rabbit*[tiab]  OR ferret*[tiab] OR \"guinea pig\"[tiab] OR \"guinea pigs\"[tiab]  OR primate*[tiab] OR macaque*[tiab] OR rhesus[tiab] OR cynomolgus[tiab]  OR marmoset*[tiab] OR baboon*[tiab] OR chimpanzee*[tiab] OR zebrafish[tiab]  OR \"Animals\"[Mesh] OR \"Animal Experimentation\"[Mesh] OR \"Drug Evaluation, Preclinical\"[Mesh]  OR \"Toxicity Tests\"[Mesh] OR \"Species Specificity\"[Mesh])) AND (\"1980\"[dp] : \"3000\"[dp])",
+  "aux_bias": "((\"Publication Bias\"[Mesh] OR \"Reproducibility of Results\"[Mesh]  OR \"publication bias\"[tiab] OR reproducib*[tiab] OR replicat*[tiab] OR irreproducib*[tiab]  OR \"research waste\"[tiab] OR \"questionable research practices\"[tiab] OR \"risk of bias\"[tiab])  AND (preclinical[tiab] OR \"pre-clinical\"[tiab] OR nonclinical[tiab] OR animal*[tiab]  OR laborator*[tiab] OR \"Drug Evaluation, Preclinical\"[Mesh] OR \"Animal Experimentation\"[Mesh]  OR \"Disease Models, Animal\"[Mesh] OR \"Biomedical Research\"[Mesh] OR \"Drug Industry\"[Mesh])) AND (\"1980\"[dp] : \"3000\"[dp])",
+  "aux_attrition": "((\"success rate\"[tiab] OR \"success rates\"[tiab] OR attrition[tiab]  OR \"failure rate\"[tiab] OR \"failure rates\"[tiab] OR pipeline[tiab] OR \"probability of success\"[tiab]  OR \"approval rate\"[tiab] OR \"approval rates\"[tiab] OR \"clinical development\"[tiab]  OR \"drug development\"[tiab] OR \"development success\"[tiab])  AND (\"Drug Development\"[Mesh] OR \"Drug Discovery\"[Mesh] OR \"Drug Industry\"[Mesh]  OR \"Clinical Trials as Topic\"[Mesh] OR \"Drug Approval\"[Mesh] OR investigational[tiab]  OR \"new drug\"[tiab] OR \"phase II\"[tiab] OR \"phase III\"[tiab] OR \"clinical trial\"[tiab]  OR \"clinical trials\"[tiab])) AND (\"1980\"[dp] : \"3000\"[dp])"
+ },
+ "counts": {
+  "arm1_efficacy": 1179161,
+  "arm2_safety": 140329,
+  "arm3_tox": 193501,
+  "arm4_vet": 96759,
+  "aux_bias": 141595,
+  "aux_attrition": 50080,
+  "union_all_arms": 1671757
+ },
+ "anchors": [
+  {
+   "key": "hackam2006",
+   "pmid": "17032985",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "perel2007",
+   "pmid": "17175568",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "contopoulos2008",
+   "pmid": "18772421",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "vanderworp2010",
+   "pmid": "20361020",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "aux_bias"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "pound2018",
+   "pmid": "30404629",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "aux_bias"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "leenaars2019",
+   "pmid": "31307492",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "aux_bias"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "bracken2009",
+   "pmid": "19297654",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "wall2008",
+   "pmid": "17988725",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "mak2014",
+   "pmid": "24489990",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "macleod2010",
+   "pmid": "21097827",
+   "category": "context-editorial",
+   "recall_test": false,
+   "retrieved_by": [],
+   "retrieved": false
+  },
+  {
+   "key": "howells2010",
+   "pmid": "20485296",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "marshall2023",
+   "pmid": "36883244",
+   "category": "efficacy",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm3_tox",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "sena2010",
+   "pmid": "20361022",
+   "category": "bias",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "aux_bias"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "begley2012",
+   "pmid": "22460880",
+   "category": "bias",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "aux_bias",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "prinz2011",
+   "pmid": "21892149",
+   "category": "bias",
+   "recall_test": true,
+   "retrieved_by": [],
+   "retrieved": false
+  },
+  {
+   "key": "freedman2015",
+   "pmid": "25670378",
+   "category": "bias",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "aux_bias",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "olson2000",
+   "pmid": "11029269",
+   "category": "tox",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm3_tox"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "monticello2017",
+   "pmid": "28893587",
+   "category": "tox",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm3_tox",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "clark2018",
+   "pmid": "29730448",
+   "category": "tox",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm2_safety",
+    "arm3_tox",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "bailey2015",
+   "pmid": "26753942",
+   "category": "tox",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm2_safety",
+    "arm3_tox",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "redfern2003",
+   "pmid": "12667944",
+   "category": "tox",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm2_safety",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "hay2014",
+   "pmid": "24406927",
+   "category": "attrition",
+   "recall_test": true,
+   "retrieved_by": [
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "wong2019",
+   "pmid": "29394327",
+   "category": "attrition",
+   "recall_test": true,
+   "retrieved_by": [
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "cummings2014",
+   "pmid": "25024750",
+   "category": "attrition",
+   "recall_test": true,
+   "retrieved_by": [
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "seok2013",
+   "pmid": "23401516",
+   "category": "contested",
+   "recall_test": true,
+   "retrieved_by": [],
+   "retrieved": false
+  },
+  {
+   "key": "takao2015",
+   "pmid": "25092317",
+   "category": "contested",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "perrin2014",
+   "pmid": "24678540",
+   "category": "contested",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "aux_bias"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "paoloni_khanna2008",
+   "pmid": "18202698",
+   "category": "vet",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm4_vet"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "kol2015",
+   "pmid": "26446953",
+   "category": "vet",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm4_vet",
+    "aux_attrition"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "fan_khanna2015",
+   "pmid": "29061942",
+   "category": "vet",
+   "recall_test": true,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm4_vet"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "lees2006_saint1",
+   "pmid": "16467546",
+   "category": "context",
+   "recall_test": false,
+   "retrieved_by": [
+    "arm2_safety"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "shuaib2007_saint2",
+   "pmid": "17687131",
+   "category": "context",
+   "recall_test": false,
+   "retrieved_by": [
+    "arm1_efficacy",
+    "arm2_safety"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "nguyen2015_recistvet",
+   "pmid": "23534501",
+   "category": "context",
+   "recall_test": false,
+   "retrieved_by": [
+    "arm4_vet"
+   ],
+   "retrieved": true
+  },
+  {
+   "key": "vcog_ctcae_v2",
+   "pmid": "33427378",
+   "category": "context",
+   "recall_test": false,
+   "retrieved_by": [],
+   "retrieved": false
+  },
+  {
+   "key": "arrive2020",
+   "pmid": "34095516",
+   "category": "context",
+   "recall_test": false,
+   "retrieved_by": [
+    "aux_bias"
+   ],
+   "retrieved": true
+  }
+ ],
+ "recall": 0.9310344827586207
+}
