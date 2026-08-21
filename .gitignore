@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+site/_build/
+data/raw/fulltext/
