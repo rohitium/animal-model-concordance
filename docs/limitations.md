@@ -74,3 +74,31 @@ as representative of the underlying literature.
 **L16 — Review is unregistered.** PROSPERO excludes preclinical and meta-research reviews;
 no registration was sought. Pre-specification rests on dated, version-controlled protocol
 files and `protocol/amendments.md`.
+
+## Full-text pass (2026-08-20)
+
+**L17 — No study in the slice publishes an explicit 2×2 table.** Of 46 full texts
+extracted, 0 report the underlying TP/FP/FN/TN cell counts; papers give derived
+statistics (concordance rates, PPV) instead. This is an independent route to the same
+constraint as the denominator problem (PLAN §6.3): sensitivity and specificity cannot be
+recomputed from published data, so §7.2's diagnostic framing depends on the handful of
+studies that report those statistics directly (2 of 46 here).
+
+**L18 — Open-access coverage is 46/100 and non-random.** Retrieval used only openly
+licensed sources (Europe PMC XML, PMC, Unpaywall); no paywall was circumvented. Coverage
+skews to recent and to OA-friendly journals, so older toxicology and veterinary titles are
+under-represented — the same direction as the PMC-deposition bias in L2. Abstract-only
+records therefore under-report exactly the fields (2×2, per-species, endpoint detail) that
+Arms 3 and 4 most need.
+
+**L19 — Metrics are not comparable across studies.** Extracted values include agreement-type
+metrics (concordance, PPV, replication rate) and disagreement-type metrics (failure rate,
+effect-size overestimation). They point in opposite directions and are grouped, never
+co-ranked, on the site. Even within a group, definitions differ; recoding onto the D1/D2/D3
+scale (PLAN §6.1) is a prerequisite to any pooling. 42 of 46 full texts state their own
+concordance definition, which is the raw material for that recoding.
+
+**L20 — Extraction is LLM-derived and only spot-checked.** Models were instructed to return
+null rather than infer. Checks against known values passed (Olson 2000 → 71%, n=150;
+Monticello 2017 → PPV 43%/sens 48%/spec 84%/NPV 86%, n=182; Perel 2007 → 6 pairs; Clark 2018
+→ correctly null). No systematic accuracy audit has been run.

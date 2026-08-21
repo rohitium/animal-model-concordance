@@ -1,0 +1,1002 @@
+{
+ "23401516": {
+  "pmid": "23401516",
+  "pmcid": "PMC3587220",
+  "doi": "10.1073/pnas.1222878110",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "24406927": {
+  "pmid": "24406927",
+  "pmcid": null,
+  "doi": "10.1038/nbt.2786",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "36883244": {
+  "pmid": "36883244",
+  "pmcid": null,
+  "doi": "10.1177/02611929231157756",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": "cc by-nc"
+ },
+ "24489990": {
+  "pmid": "24489990",
+  "pmcid": "PMC3902221",
+  "doi": null,
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "22460880": {
+  "pmid": "22460880",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": null,
+  "pdf": "data/raw/fulltext/22460880.pdf",
+  "license": null
+ },
+ "31307492": {
+  "pmid": "31307492",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/31307492.xml",
+  "pdf": null,
+  "license": null
+ },
+ "25092317": {
+  "pmid": "25092317",
+  "pmcid": "PMC4313832",
+  "doi": "10.1073/pnas.1401965111",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "24678540": {
+  "pmid": "24678540",
+  "pmcid": null,
+  "doi": "10.1038/507423a",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "21892149": {
+  "pmid": "21892149",
+  "pmcid": null,
+  "doi": "10.1038/nrd3439-c1",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "28893587": {
+  "pmid": "28893587",
+  "pmcid": null,
+  "doi": "10.1016/j.taap.2017.09.006",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "20613859": {
+  "pmid": "20613859",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/20613859.xml",
+  "pdf": null,
+  "license": null
+ },
+ "34874005": {
+  "pmid": "34874005",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/34874005.xml",
+  "pdf": null,
+  "license": null
+ },
+ "31827124": {
+  "pmid": "31827124",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/31827124.xml",
+  "pdf": null,
+  "license": null
+ },
+ "26795250": {
+  "pmid": "26795250",
+  "pmcid": "PMC5330663",
+  "doi": "10.1016/j.immuni.2015.12.006",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "21350617": {
+  "pmid": "21350617",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/21350617.xml",
+  "pdf": null,
+  "license": null
+ },
+ "26863229": {
+  "pmid": "26863229",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/26863229.xml",
+  "pdf": null,
+  "license": null
+ },
+ "28328898": {
+  "pmid": "28328898",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": null,
+  "pdf": "data/raw/fulltext/28328898.pdf",
+  "license": null
+ },
+ "35167625": {
+  "pmid": "35167625",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/35167625.xml",
+  "pdf": null,
+  "license": null
+ },
+ "34127759": {
+  "pmid": "34127759",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/34127759.xml",
+  "pdf": null,
+  "license": null
+ },
+ "34916915": {
+  "pmid": "34916915",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/34916915.xml",
+  "pdf": null,
+  "license": null
+ },
+ "42245789": {
+  "pmid": "42245789",
+  "pmcid": null,
+  "doi": "10.21203/rs.3.rs-9783746/v1",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "15246820": {
+  "pmid": "15246820",
+  "pmcid": null,
+  "doi": "10.1016/j.expneurol.2004.05.008",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "20806453": {
+  "pmid": "20806453",
+  "pmcid": null,
+  "doi": null,
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "29143114": {
+  "pmid": "29143114",
+  "pmcid": "PMC6759211",
+  "doi": "10.1007/s00262-017-2084-x",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "38676802": {
+  "pmid": "38676802",
+  "pmcid": null,
+  "doi": "10.1007/978-1-0716-3858-3_12",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "25814248": {
+  "pmid": "25814248",
+  "pmcid": null,
+  "doi": "10.1016/j.ejphar.2015.03.026",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "38867022": {
+  "pmid": "38867022",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/38867022.xml",
+  "pdf": null,
+  "license": null
+ },
+ "26479923": {
+  "pmid": "26479923",
+  "pmcid": null,
+  "doi": "10.1038/nm.3954",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "27261415": {
+  "pmid": "27261415",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/27261415.xml",
+  "pdf": null,
+  "license": null
+ },
+ "32631250": {
+  "pmid": "32631250",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/32631250.xml",
+  "pdf": null,
+  "license": null
+ },
+ "29302222": {
+  "pmid": "29302222",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/29302222.xml",
+  "pdf": null,
+  "license": null
+ },
+ "27916279": {
+  "pmid": "27916279",
+  "pmcid": "PMC5258826",
+  "doi": "10.1016/j.tips.2016.11.002",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "37752535": {
+  "pmid": "37752535",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/37752535.xml",
+  "pdf": null,
+  "license": null
+ },
+ "40558535": {
+  "pmid": "40558535",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/40558535.xml",
+  "pdf": null,
+  "license": null
+ },
+ "35781406": {
+  "pmid": "35781406",
+  "pmcid": null,
+  "doi": "10.1016/j.clon.2022.06.002",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "32413492": {
+  "pmid": "32413492",
+  "pmcid": null,
+  "doi": "10.1016/j.drudis.2020.05.004",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "31694927": {
+  "pmid": "31694927",
+  "pmcid": null,
+  "doi": "10.1126/scitranslmed.aax5516",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "34558834": {
+  "pmid": "34558834",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/34558834.xml",
+  "pdf": null,
+  "license": null
+ },
+ "32127577": {
+  "pmid": "32127577",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/32127577.xml",
+  "pdf": null,
+  "license": null
+ },
+ "39255793": {
+  "pmid": "39255793",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/39255793.xml",
+  "pdf": null,
+  "license": null
+ },
+ "40418625": {
+  "pmid": "40418625",
+  "pmcid": null,
+  "doi": "10.1002/cpt.3732",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "40054526": {
+  "pmid": "40054526",
+  "pmcid": null,
+  "doi": "10.1016/j.xphs.2025.103719",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "40849367": {
+  "pmid": "40849367",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/40849367.xml",
+  "pdf": null,
+  "license": null
+ },
+ "39182537": {
+  "pmid": "39182537",
+  "pmcid": null,
+  "doi": "10.1016/j.jpain.2024.104661",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": "cc by-nc-nd"
+ },
+ "38642821": {
+  "pmid": "38642821",
+  "pmcid": null,
+  "doi": "10.1016/j.tox.2024.153806",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "38688826": {
+  "pmid": "38688826",
+  "pmcid": null,
+  "doi": "10.1002/ijc.34987",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "25671556": {
+  "pmid": "25671556",
+  "pmcid": "PMC4442585",
+  "doi": "10.1089/humc.2014.155",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "22303754": {
+  "pmid": "22303754",
+  "pmcid": null,
+  "doi": "10.1055/s-0031-1297361",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "26563791": {
+  "pmid": "26563791",
+  "pmcid": null,
+  "doi": "10.1016/b978-0-444-62627-1.00012-3",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "33039464": {
+  "pmid": "33039464",
+  "pmcid": "PMC7878295",
+  "doi": "10.1053/j.gastro.2020.10.002",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": "cc by-nc-nd"
+ },
+ "32868897": {
+  "pmid": "32868897",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/32868897.xml",
+  "pdf": null,
+  "license": null
+ },
+ "11029269": {
+  "pmid": "11029269",
+  "pmcid": null,
+  "doi": "10.1006/rtph.2000.1399",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "28422076": {
+  "pmid": "28422076",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/28422076.xml",
+  "pdf": null,
+  "license": null
+ },
+ "38910363": {
+  "pmid": "38910363",
+  "pmcid": null,
+  "doi": "10.1177/02611929241256040",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": "cc by-nc"
+ },
+ "34968630": {
+  "pmid": "34968630",
+  "pmcid": null,
+  "doi": "10.1016/j.yrtph.2021.105109",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "28543848": {
+  "pmid": "28543848",
+  "pmcid": null,
+  "doi": "10.1002/jat.3479",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "39093553": {
+  "pmid": "39093553",
+  "pmcid": null,
+  "doi": "10.1080/10408444.2024.2374281",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": "cc by-nc-nd"
+ },
+ "18468556": {
+  "pmid": "18468556",
+  "pmcid": null,
+  "doi": "10.1016/j.drudis.2008.03.002",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "33085125": {
+  "pmid": "33085125",
+  "pmcid": null,
+  "doi": "10.1002/jat.4090",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "35148401": {
+  "pmid": "35148401",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/35148401.xml",
+  "pdf": null,
+  "license": null
+ },
+ "23812503": {
+  "pmid": "23812503",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/23812503.xml",
+  "pdf": null,
+  "license": null
+ },
+ "38852684": {
+  "pmid": "38852684",
+  "pmcid": null,
+  "doi": "10.1016/j.vascn.2024.107528",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": "cc by-nc"
+ },
+ "40863351": {
+  "pmid": "40863351",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/40863351.xml",
+  "pdf": null,
+  "license": null
+ },
+ "28903488": {
+  "pmid": "28903488",
+  "pmcid": null,
+  "doi": "10.1093/toxsci/kfx125",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "20807552": {
+  "pmid": "20807552",
+  "pmcid": null,
+  "doi": "10.1016/j.pharmthera.2010.08.008",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "33666192": {
+  "pmid": "33666192",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/33666192.xml",
+  "pdf": null,
+  "license": null
+ },
+ "33813006": {
+  "pmid": "33813006",
+  "pmcid": null,
+  "doi": "10.1016/j.vascn.2021.107055",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "32735877": {
+  "pmid": "32735877",
+  "pmcid": null,
+  "doi": "10.1016/j.vascn.2020.106898",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "30726989": {
+  "pmid": "30726989",
+  "pmcid": null,
+  "doi": "10.1093/toxsci/kfz035",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "26803853": {
+  "pmid": "26803853",
+  "pmcid": null,
+  "doi": null,
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "29730448": {
+  "pmid": "29730448",
+  "pmcid": null,
+  "doi": "10.1016/j.yrtph.2018.04.018",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": "cc by-nc-nd"
+ },
+ "17175568": {
+  "pmid": "17175568",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": null,
+  "pdf": "data/raw/fulltext/17175568.pdf",
+  "license": null
+ },
+ "19297654": {
+  "pmid": "19297654",
+  "pmcid": "PMC2746847",
+  "doi": "10.1258/jrsm.2008.08k033",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "17032985": {
+  "pmid": "17032985",
+  "pmcid": null,
+  "doi": "10.1001/jama.296.14.1731",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "32391273": {
+  "pmid": "32391273",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/32391273.xml",
+  "pdf": null,
+  "license": null
+ },
+ "26753942": {
+  "pmid": "26753942",
+  "pmcid": null,
+  "doi": "10.1177/026119291504300607",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "30364994": {
+  "pmid": "30364994",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/30364994.xml",
+  "pdf": null,
+  "license": null
+ },
+ "27870924": {
+  "pmid": "27870924",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/27870924.xml",
+  "pdf": null,
+  "license": null
+ },
+ "23522086": {
+  "pmid": "23522086",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/23522086.xml",
+  "pdf": null,
+  "license": null
+ },
+ "12667944": {
+  "pmid": "12667944",
+  "pmcid": null,
+  "doi": "10.1016/s0008-6363(02)00846-5",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "16453316": {
+  "pmid": "16453316",
+  "pmcid": null,
+  "doi": "10.1002/ana.20741",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "39379679": {
+  "pmid": "39379679",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/39379679.xml",
+  "pdf": null,
+  "license": null
+ },
+ "35616311": {
+  "pmid": "35616311",
+  "pmcid": "PMC9158443",
+  "doi": "10.1177/01410768221100970",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "37712424": {
+  "pmid": "37712424",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/37712424.xml",
+  "pdf": null,
+  "license": null
+ },
+ "29590200": {
+  "pmid": "29590200",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/29590200.xml",
+  "pdf": null,
+  "license": null
+ },
+ "38736280": {
+  "pmid": "38736280",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/38736280.xml",
+  "pdf": null,
+  "license": null
+ },
+ "30823899": {
+  "pmid": "30823899",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/30823899.xml",
+  "pdf": null,
+  "license": null
+ },
+ "18772421": {
+  "pmid": "18772421",
+  "pmcid": null,
+  "doi": "10.1126/science.1160622",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "23503654": {
+  "pmid": "23503654",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/23503654.xml",
+  "pdf": null,
+  "license": null
+ },
+ "32152206": {
+  "pmid": "32152206",
+  "pmcid": "PMC8176262",
+  "doi": "10.2337/db19-0879",
+  "oa": true,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "32610529": {
+  "pmid": "32610529",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/32610529.xml",
+  "pdf": null,
+  "license": null
+ },
+ "36730203": {
+  "pmid": "36730203",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/36730203.xml",
+  "pdf": null,
+  "license": null
+ },
+ "28731442": {
+  "pmid": "28731442",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/28731442.xml",
+  "pdf": null,
+  "license": null
+ },
+ "26460544": {
+  "pmid": "26460544",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/26460544.xml",
+  "pdf": null,
+  "license": null
+ },
+ "28335819": {
+  "pmid": "28335819",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/28335819.xml",
+  "pdf": null,
+  "license": null
+ },
+ "25677548": {
+  "pmid": "25677548",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/25677548.xml",
+  "pdf": null,
+  "license": null
+ },
+ "17988725": {
+  "pmid": "17988725",
+  "pmcid": null,
+  "doi": "10.1016/j.theriogenology.2007.09.030",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "22790876": {
+  "pmid": "22790876",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/22790876.xml",
+  "pdf": null,
+  "license": null
+ },
+ "26856335": {
+  "pmid": "26856335",
+  "pmcid": null,
+  "doi": "10.1007/s00421-016-3336-8",
+  "oa": false,
+  "route": null,
+  "xml": null,
+  "pdf": null,
+  "license": null
+ },
+ "36859342": {
+  "pmid": "36859342",
+  "pmcid": null,
+  "doi": null,
+  "oa": true,
+  "route": "recovered_from_disk",
+  "xml": "data/raw/fulltext/36859342.xml",
+  "pdf": null,
+  "license": null
+ }
+}

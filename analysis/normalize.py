@@ -86,3 +86,30 @@ def areas(raw):
     for x in out:
         if x not in seen: seen.add(x); res.append(x)
     return res
+
+
+# --- metric polarity -------------------------------------------------------
+# Source studies report metrics that point in opposite directions: a high
+# "concordance rate" means the model predicted well; a high "failure rate" means
+# the opposite. Displaying them in one value-sorted table implies a comparison
+# that does not exist, so metrics are grouped by family and never co-sorted.
+METRIC_FAMILIES = [
+ ("agreement",  "higher = animal and human agreed more",
+  ["concordan","agreement","similar effect","reproducib","replicat","accuracy","correct",
+   "translat","mimic","predictive value","ppv","npv","sensitivity","specificity","auc",
+   "receiver","correlation","clinical benefit","success"]),
+ ("disagreement","higher = animal and human diverged more",
+  ["failure","discordan","overestimat","false positive","false negative","attrition",
+   "poor predict","not replicat","irreproducib","threat"]),
+]
+def metric_family(metric):
+    t = str(metric or "").lower()
+    for fam, _, keys in METRIC_FAMILIES:
+        for k in keys:
+            if k in t:
+                return fam
+    return "unclassified"
+def family_note(fam):
+    for f, note, _ in METRIC_FAMILIES:
+        if f == fam: return note
+    return "direction not determined from the reported metric name"
