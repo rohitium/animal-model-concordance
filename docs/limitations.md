@@ -133,3 +133,29 @@ genes; Takao 2015 reports Spearman ρ 0.43–0.68 restricted to genes significan
 statistic and gene-selection rule side by side and offers no adjudication. This is the clearest
 demonstration in the slice of why concordance values cannot be pooled across studies without
 first recoding onto a common definition (PLAN §6.1).
+
+## Reclassification (2026-08-21)
+
+**L25 — "Unclear/unspecified" buckets were missing categories, not unknowable studies.**
+Re-classification (`analysis/19_reclassify.py`) uses closed vocabularies with no escape
+hatch, adding the categories that were absent: `methods-and-bias` as an arm (reproducibility,
+publication bias, attrition), `cross-cutting` as a therapeutic area (real for toxicology and
+safety pharmacology, which are not disease-specific), and `multiple-aggregated` for species
+where a study reports pooled groups such as "rodent vs non-rodent". `not-species-specific`
+remains only for studies about research methodology that analyse no species. Every
+classification carries a verbatim supporting quote so it is auditable; forcing a choice
+without evidence would convert honest gaps into confident-looking fabrications.
+
+**L26 — Classification now uses full text where available.** 53 of 100 studies were classified
+from full text, 39 from abstract, 6 from title only. Species coverage rose from 10 to 16
+categories and therapeutic areas from 14 to 18 once methods sections were readable — the
+earlier gaps were abstract omissions, not missing information.
+
+**L27 — A protocol violation was introduced and caught.** The first re-screening pass excluded
+6 records on title alone, contradicting the auto-advance rule (L13): Hackam 2006 (312 cites,
+original data on 76 animal studies), Prinz 2011, Perrin 2014, Bracken 2009, Contopoulos 2008,
+and one other. All are abstract-less. The rule is now enforced in code — a title-only record
+cannot be excluded, and the model's title-only reading is retained alongside the forced
+advance. Re-screening from full text moved includes from 100 to 90 of 98; the 8 genuine
+exclusions are methods papers (ARRIVE guidelines, litter effects, a histopathology pipeline)
+that report no agreement statistic.

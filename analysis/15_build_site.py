@@ -28,13 +28,31 @@ DB   = load(("data","db","studies.json"))
 META = load(("data","db","metadata.json"))
 FT   = load(("data","db","fulltext_extract.json"))
 FTS  = load(("data","raw","fulltext_status.json"))
+CLS  = load(("data","db","classification.json"))
 for d in (os.path.join(OUT,"api","study"), os.path.join(OUT,"study")):
     os.makedirs(d, exist_ok=True)
 e = lambda s: html.escape(str(s if s is not None else ""))
 ok = {k:v for k,v in DB.items() if v.get("extraction_status")=="ok"}
-for v in DB.values():
-    v["species_norm"] = normalize.species(v.get("species"))
-    v["areas_norm"] = normalize.areas(v.get("therapeutic_areas"))
+for pm, v in DB.items():
+    c = CLS.get(pm) or {}
+    if "error" not in c and c:
+        # Classification (19_reclassify) is derived from the best available text and
+        # uses closed vocabularies with no "unclear" bucket. It supersedes the
+        # abstract-only extraction for these fields; raw values stay for audit.
+        v["arm"] = c.get("arm", v.get("arm"))
+        v["species_norm"] = c.get("species") or []
+        v["areas_norm"] = c.get("therapeutic_areas") or []
+        v["model_type"] = c.get("model_type", v.get("model_type"))
+        v["endpoint_class"] = c.get("endpoint_class", v.get("endpoint_class"))
+        v["screen_reason"] = c.get("screen_rationale", v.get("screen_reason",""))
+        v["classified_from"] = c.get("source_tier")
+        v["evidence"] = {k: c.get(k) for k in
+            ("arm_evidence","areas_evidence","model_evidence","species_evidence","endpoint_evidence")}
+        v["auto_advanced"] = c.get("auto_advanced", False)
+    else:
+        v["species_norm"] = normalize.species(v.get("species"))
+        v["areas_norm"] = normalize.areas(v.get("therapeutic_areas"))
+        v["classified_from"] = "not classified"
 ftok = {k:v for k,v in FT.items() if "error" not in v}
 BUILT = datetime.date.today().isoformat()
 
@@ -66,6 +84,7 @@ th{color:var(--mut);font-weight:600;font-size:.75rem;text-transform:uppercase;le
 .tag{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:3px;padding:.06rem .38rem;font-size:.75rem;color:var(--mut);margin:0 .18rem .18rem 0}
 .tag.maj{color:var(--fg);font-weight:600}
 .null{color:var(--mut);font-style:italic}
+.quote{color:var(--mut);font-size:.82rem;font-style:italic;padding-left:.4rem;border-left:2px solid var(--line)}
 .src{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;padding:.03rem .3rem;border-radius:3px;border:1px solid var(--line);color:var(--mut);margin-left:.35rem}
 .src.ft{color:var(--good);border-color:var(--good)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem;margin:.65rem 0}
@@ -259,11 +278,20 @@ for pm,v in DB.items():
             rows.append(f'<tr><th>{e(lbl)}</th><td>'+"".join(f'<span class="tag">{e(x)}</span>' for x in val)+tagm+"</td></tr>")
         else:
             rows.append(f'<tr><th>{e(lbl)}</th><td>{e(val)}{tagm}</td></tr>')
-    row("Arm",v.get("arm"),"ab"); row("Species",v.get("species_norm"),"ab")
-    row("Species (as stated)",v.get("species"))
-    row("Therapeutic areas",v.get("areas_norm"),"ab")
-    row("Model type",v.get("model_type")); row("Study design",v.get("study_design"))
-    row("Endpoint class",f.get("endpoint_class") or v.get("endpoint_class"),"ft" if f.get("endpoint_class") else "ab")
+    ev = v.get("evidence") or {}
+    ctag = "ft" if v.get("classified_from") == "fulltext" else "ab"
+    def crow(lbl, val, key):
+        row(lbl, val, ctag)
+        q = ev.get(key)
+        if q:
+            rows.append(f'<tr><th></th><td class="quote">&ldquo;{e(q[:260])}&rdquo;</td></tr>')
+    crow("Arm", v.get("arm"), "arm_evidence")
+    crow("Species", v.get("species_norm"), "species_evidence")
+    crow("Therapeutic areas", v.get("areas_norm"), "areas_evidence")
+    crow("Model type", v.get("model_type"), "model_evidence")
+    row("Species (as extracted from abstract)", v.get("species"))
+    row("Study design", v.get("study_design"))
+    crow("Endpoint class", v.get("endpoint_class"), "endpoint_evidence")
     row("Concordance metric",f.get("concordance_metric") or v.get("concordance_metric"),"ft" if f.get("concordance_metric") else "ab")
     cv = f.get("concordance_value") if f.get("concordance_value") is not None else v.get("concordance_value")
     row("Concordance value",pct(cv) if cv is not None else None,"ft" if f.get("concordance_value") is not None else "ab")
@@ -329,7 +357,8 @@ for pm,v in DB.items():
           f'<tr><th>Open access</th><td>{"yes &mdash; "+e(route_label(fs, f)) if (fs.get("xml") or fs.get("pdf")) else "not retrievable"}'
           + (f' &middot; licence {e(fs.get("license"))}' if fs.get("license") else "")+"</td></tr>",
           f'<tr><th>Extraction</th><td>{"full text + abstract" if pm in ftok else "abstract only"}</td></tr>',
-          f'<tr><th>Screening decision</th><td>{e(v.get("screen_reason",""))[:400]}</td></tr>']
+          f'<tr><th>Classified from</th><td>{e(v.get("classified_from"))}{" &middot; auto-advanced (no abstract)" if v.get("auto_advanced") else ""}</td></tr>',
+          f'<tr><th>Screening decision</th><td>{e(v.get("screen_reason",""))[:500]}</td></tr>']
     body.append("<h2>Provenance</h2><div class='scroll'><table>"+"".join(prov)+"</table></div>")
     open(os.path.join(OUT,"study",f"{pm}.html"),"w").write(page(v.get("title","Study")[:60],"".join(body),depth=1))
     json.dump({**v,"metadata":m,"fulltext_extract":f,"fulltext_status":fs},
