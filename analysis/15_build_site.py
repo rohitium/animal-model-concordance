@@ -194,6 +194,30 @@ if sp:
                      f'<td>{pct(r.get("value")) if isinstance(r.get("value"),(int,float)) else "&mdash;"}</td>'
                      f'<td>{e(r.get("n")) or "&mdash;"}</td></tr>')
     b.append("</table></div>")
+PAIRS = [("Do mouse models mimic human inflammatory disease?",
+          [("23401516","Seok 2013 — \u201cpoorly mimic\u201d"),
+           ("25092317","Takao 2015 — \u201cgreatly mimic\u201d")])]
+shown = [(t, [(pm, lbl) for pm, lbl in ps if pm in ftok]) for t, ps in PAIRS]
+shown = [(t, ps) for t, ps in shown if len(ps) > 1]
+if shown:
+    b.append("<h2>Contested cases</h2>")
+    b.append('<p class="sub">Where the literature disagrees, both sides are shown together with '
+             'the method each used. No adjudication is offered.</p>')
+    for title, ps in shown:
+        b.append(f'<div class="card"><strong>{e(title)}</strong>'
+                 "<div class='scroll'><table><tr><th></th>"
+                 + "".join(f'<th><a href="study/{pm}.html">{e(lbl)}</a></th>' for pm, lbl in ps) + "</tr>")
+        for lbl, key in [("Statistic","concordance_metric"),("Value","concordance_value"),
+                         ("Gene set analysed","concordance_definition")]:
+            cells = []
+            for pm, _ in ps:
+                x = ftok[pm].get(key)
+                if key == "concordance_value" and isinstance(x,(int,float)):
+                    x = f"{x}"
+                cells.append(f"<td>{e(x) if x not in (None,'') else '<span class=null>&mdash;</span>'}</td>")
+            b.append(f"<tr><th>{e(lbl)}</th>" + "".join(cells) + "</tr>")
+        cites = "".join(f'<td>{e(DB[pm].get("cited_by"))}</td>' for pm, _ in ps)
+        b.append(f"<tr><th>Cited by</th>{cites}</tr></table></div></div>")
 open(os.path.join(OUT,"findings.html"),"w").write(page("Findings","".join(b)))
 
 # ---------------- studies list ----------------
@@ -243,11 +267,14 @@ for pm,v in DB.items():
     row("Concordance metric",f.get("concordance_metric") or v.get("concordance_metric"),"ft" if f.get("concordance_metric") else "ab")
     cv = f.get("concordance_value") if f.get("concordance_value") is not None else v.get("concordance_value")
     row("Concordance value",pct(cv) if cv is not None else None,"ft" if f.get("concordance_value") is not None else "ab")
-    np_ = nonprop(v, f)
-    if np_ is not None:
+    if f.get("reported_quantity") is not None:
         row("Reported quantity (not a proportion)",
-            f'{np_} — {f.get("concordance_metric") or v.get("concordance_metric") or "unit not stated"}',
-            "ft" if f.get("concordance_value") is not None else "ab")
+            f'{f["reported_quantity"]} — {f.get("reported_quantity_unit") or "unit not stated"}', "ft")
+    else:
+        np_ = nonprop(v, f)
+        if np_ is not None:
+            row("Reported quantity (not a proportion)",
+                f'{np_} — {f.get("concordance_metric") or v.get("concordance_metric") or "unit not stated"}', "ab")
     for lbl,k in [("Sensitivity","sensitivity"),("Specificity","specificity"),("PPV","ppv"),("NPV","npv")]:
         if f.get(k) is not None: row(lbl,pct(f[k]),"ft")
     tt=f.get("two_by_two") or {}

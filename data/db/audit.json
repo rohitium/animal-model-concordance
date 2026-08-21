@@ -1,12 +1,6 @@
 {
- "n_fulltext": 52,
- "out_of_range": [
-  {
-   "pmid": "12667944",
-   "field": "concordance_value",
-   "value": 30
-  }
- ],
+ "n_fulltext": 53,
+ "out_of_range": [],
  "unmatched_percentages": [
   {
    "pmid": "32631250",
@@ -24,49 +18,49 @@
  "degenerate": [],
  "fill_rates": {
   "concordance_definition": {
-   "n": 48,
-   "of": 52,
-   "pct": 0.923
+   "n": 49,
+   "of": 53,
+   "pct": 0.925
   },
   "species_results": {
-   "n": 35,
-   "of": 52,
-   "pct": 0.673
+   "n": 36,
+   "of": 53,
+   "pct": 0.679
   },
   "key_numbers": {
-   "n": 52,
-   "of": 52,
+   "n": 53,
+   "of": 53,
    "pct": 1.0
   },
   "endpoints_animal": {
-   "n": 38,
-   "of": 52,
-   "pct": 0.731
+   "n": 39,
+   "of": 53,
+   "pct": 0.736
   },
   "endpoints_human": {
-   "n": 37,
-   "of": 52,
-   "pct": 0.712
+   "n": 38,
+   "of": 53,
+   "pct": 0.717
   },
   "limitations_stated": {
-   "n": 52,
-   "of": 52,
+   "n": 53,
+   "of": 53,
    "pct": 1.0
   },
   "n_pairs": {
    "n": 5,
-   "of": 52,
-   "pct": 0.096
+   "of": 53,
+   "pct": 0.094
   },
   "two_by_two": {
    "n": 1,
-   "of": 52,
+   "of": 53,
    "pct": 0.019
   },
   "sensitivity": {
    "n": 3,
-   "of": 52,
-   "pct": 0.058
+   "of": 53,
+   "pct": 0.057
   }
  },
  "n_percentages_checked": 178

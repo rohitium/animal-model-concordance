@@ -64,10 +64,10 @@
   "pmcid": "PMC4313832",
   "doi": "10.1073/pnas.1401965111",
   "oa": true,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/25092317.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "24678540": {
   "pmid": "24678540",

@@ -118,3 +118,18 @@ reports a 30-fold hERG safety margin; extraction placed `30` in `concordance_val
 the site would have rendered as "3000%". The audit now fails on any value outside 0–1, and
 such quantities render as a labelled reported quantity rather than a percentage. One
 occurrence found and corrected in 52 extractions.
+
+## 2026-08-21 (continued)
+
+**L23 — Non-proportional values are relocated, not deleted.** `analysis/18_sanitize.py` moves
+any value outside 0–1 from a proportion field into `reported_quantity` with its unit, so the
+figure survives with its meaning intact and the audit is not permanently red. One occurrence
+(Redfern 2003, 30-fold hERG margin) across 53 full texts.
+
+**L24 — The Seok/Takao disagreement is a methods difference, not a data difference.** Both
+papers analyse the same datasets. Seok 2013 reports Pearson R² ≈ 0.09 across orthologous
+genes; Takao 2015 reports Spearman ρ 0.43–0.68 restricted to genes significantly changed in
+*both* species, with 77–93% changing in the same direction. The site presents both with their
+statistic and gene-selection rule side by side and offers no adjudication. This is the clearest
+demonstration in the slice of why concordance values cannot be pooled across studies without
+first recoding onto a common definition (PLAN §6.1).

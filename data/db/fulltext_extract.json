@@ -4598,7 +4598,7 @@
  },
  "12667944": {
   "concordance_metric": "margin between hERG IC50 and ETPC unbound",
-  "concordance_value": 30,
+  "concordance_value": null,
   "n_pairs": 52,
   "n_animal_studies": null,
   "n_human_studies": null,
@@ -4652,7 +4652,10 @@
    "Nifedipine had a margin of 35,700-fold."
   ],
   "chars": 66844,
-  "route": "user_supplied"
+  "route": "user_supplied",
+  "reported_quantity": 30,
+  "reported_quantity_unit": "margin between hERG IC50 and ETPC unbound",
+  "reported_quantity_note": "moved from concordance_value: not a proportion"
  },
  "16453316": {
   "concordance_metric": "average level of neuroprotection in focal ischemia models",
@@ -4729,6 +4732,217 @@
    "Stroke kills 5.5 million people each year."
   ],
   "chars": 51927,
+  "route": "user_supplied"
+ },
+ "25092317": {
+  "concordance_metric": "Spearman's rank correlation coefficient",
+  "concordance_value": 0.43,
+  "n_pairs": null,
+  "n_animal_studies": 4,
+  "n_human_studies": 3,
+  "species_results": [
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.43,
+    "n": 13225
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.57,
+    "n": 13224
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.5,
+    "n": 13224
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.57,
+    "n": 13210
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.47,
+    "n": 13224
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.54,
+    "n": 13224
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.57,
+    "n": 13212
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.5,
+    "n": 13224
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.51,
+    "n": 13211
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.56,
+    "n": 13223
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.48,
+    "n": 13216
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.48,
+    "n": 13224
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.52,
+    "n": 13215
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.72,
+    "n": 12566
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.63,
+    "n": 13212
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.5,
+    "n": 13210
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.54,
+    "n": 13215
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.51,
+    "n": 13219
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.88,
+    "n": 13225
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.82,
+    "n": 9149
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.68,
+    "n": 13223
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.43,
+    "n": 9145
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.57,
+    "n": 13222
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.51,
+    "n": 13222
+   },
+   {
+    "species": "mouse",
+    "metric": "Spearman's rank correlation coefficient",
+    "value": 0.51,
+    "n": 13222
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "gene expression changes in response to sepsis",
+   "gene expression changes in response to burn",
+   "gene expression changes in response to trauma",
+   "gene expression changes in response to infection"
+  ],
+  "endpoints_human": [
+   "gene expression changes in response to sepsis",
+   "gene expression changes in response to burn",
+   "gene expression changes in response to trauma"
+  ],
+  "endpoint_class": "secondary-biomarker",
+  "concordance_definition": "focusing on genes whose expression levels were significantly changed in both humans and mice",
+  "limitations_stated": [
+   "mouse models mimic only partial aspects of human disorders",
+   "need to find optimal conditions (time course, dose, age, induction protocol, organ, strain) that recapitulate human gene expression for each disease condition",
+   "heterogeneity of human patients",
+   "clinical trials focused solely on mortality may miss effects on non-lethal clinical or biological events",
+   "some failed drugs may target genes with distinctly different responses between humans and mice",
+   "immunosuppression may be a major contributor to sepsis conditions, and therapies focused on attenuating the proinflammatory response may be inadequate",
+   "some mouse strains may mimic human disorders better than others"
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "Spearman\u2019s rank correlation coefficient: 0.43\u20130.68",
+   "genes changed in the same direction: 77\u201393%",
+   "P = 6.5 \u00d7 10\u221211 to 1.2 \u00d7 10\u221235",
+   "overlap P value for human burns vs. mouse burn: 3.9 \u00d7 10\u221234",
+   "overlap P value for human burns vs. mouse sepsis (GSE19668): 1.2 \u00d7 10\u221235",
+   "overlap P value for human burns vs. mouse sepsis (GSE26472): 6.5 \u00d7 10\u221211",
+   "overlap P value for human burns vs. mouse infection: 3.4 \u00d7 10\u221235",
+   "Pearson\u2019s correlation R: 0.26\u20130.51",
+   "percentage of genes changed in the same direction: 48.1\u201386.2%",
+   "Pearson\u2019s correlation R (more stringent criteria): 0.36\u20130.59",
+   "percentage of genes changed in the same direction (more stringent criteria): 74.4\u201393.2%",
+   "313 pathways/biogroups with significant enrichment in human burn also showed significant enrichment in mouse burn",
+   "163 pathways/biogroups with significant enrichment in human burn also showed significant enrichment in mouse trauma",
+   "345 pathways/biogroups with significant enrichment in human burn also showed significant enrichment in mouse sepsis",
+   "114 pathways/biogroups with significant enrichment in human burn also showed significant enrichment in mouse infection",
+   "Significant enrichment of up-regulated genes in six pathways/biogroups was detected across all conditions (three human and four mouse models)",
+   "Significant overlap between \"innate immune response\" and genes up-regulated in mouse burn (P = 6.3 \u00d7 10\u221224)",
+   "Significant overlap between \"genes involved in cytokine signaling in immune system\" and genes up-regulated in mouse sepsis (P = 4.0 \u00d7 10\u221236)",
+   "Significant overlap between \"lymphocyte differentiation\" and genes down-regulated in mouse burn (P = 2.2 \u00d7 10\u22128)",
+   "Significant overlap between \"genes involved in Translocation of ZAP-70 to immunological synapse\" and genes down-regulated in mouse burn (P = 0.0003)"
+  ],
+  "chars": 48817,
   "route": "user_supplied"
  }
 }
