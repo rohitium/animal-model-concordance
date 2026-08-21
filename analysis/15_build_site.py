@@ -337,6 +337,13 @@ b=["<h1>Methods</h1>",BANNER,
  "Models were instructed to return null rather than infer; spot-checks against known values "
  "(Olson 2000 &rarr; 71%, n=150; Monticello 2017 &rarr; PPV 43%, sensitivity 48%, specificity 84%, "
  "NPV 86%, n=182) matched the sources.</p>",
+ "<h2>Extraction audit</h2><p>A reproducible check (<code>analysis/17_audit.py</code>) verifies "
+ "the failure mode that matters most here: numbers that are not in the source. Across 47 full "
+ "texts and 178 extracted percentages &mdash; 0 values outside a valid 0&ndash;1 range, 0 degenerate "
+ "extractions, 0 figures absent from the source article. Two were flagged and resolved as formatting "
+ "artefacts, where the source wrote <code>24.2 &plusmn; 2.6 vs. 2.9 &plusmn; 0.4%</code> and the "
+ "extraction attached the percent sign to the first number. Field fill rates: concordance definition "
+ "43/47, per-species results 31/47, author-stated limitations 47/47, explicit 2&times;2 tables 0/47.</p>",
  "<h2>Deliberately absent</h2><p>No pooled estimates, no meta-analysis, no conclusions. Source studies "
  "use incompatible definitions of concordance; pooling them before recoding onto a common scale would "
  "produce a number with no defensible meaning.</p>"]

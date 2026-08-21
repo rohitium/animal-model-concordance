@@ -4159,5 +4159,88 @@
   ],
   "chars": 48529,
   "route": "recovered_from_disk"
+ },
+ "39182537": {
+  "concordance_metric": "functional connectivity (FC) changes",
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": 1,
+  "n_human_studies": 1,
+  "species_results": [
+   {
+    "species": "human",
+    "metric": "higher FC between amygdala (nonaffected side) and brainstem",
+    "value": null,
+    "n": 14
+   },
+   {
+    "species": "human",
+    "metric": "higher FC between BLA (nonaffected side) and VTA",
+    "value": null,
+    "n": 14
+   },
+   {
+    "species": "human",
+    "metric": "higher FC between amygdala (nonaffected side) and MD (bilateral)",
+    "value": null,
+    "n": 14
+   },
+   {
+    "species": "human",
+    "metric": "higher FC between BLA (nonaffected side) and MD (nonaffected side)",
+    "value": null,
+    "n": 14
+   },
+   {
+    "species": "macaque",
+    "metric": "higher FC between amygdala (nonaffected side) and brainstem",
+    "value": null,
+    "n": 2
+   },
+   {
+    "species": "macaque",
+    "metric": "higher FC between BLA (nonaffected side) and midbrain",
+    "value": null,
+    "n": 2
+   },
+   {
+    "species": "macaque",
+    "metric": "higher FC between amygdala (affected side) and MD (affected side)",
+    "value": null,
+    "n": 2
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "functional connectivity (FC) changes in thalamic pain model"
+  ],
+  "endpoints_human": [
+   "functional connectivity (FC) changes in patients with thalamic pain"
+  ],
+  "endpoint_class": "secondary-biomarker",
+  "concordance_definition": "The study aimed to identify cross-species convergence of FC changes associated with thalamic pain, meaning that similar FC changes were observed in both human patients and model macaques.",
+  "limitations_stated": [
+   "Findings may encompass pain-related phenomena and stroke lesion phenomena.",
+   "Imbalance in biological sex between human patient and control groups.",
+   "Differences in MRI scanners (3T vs 7T) and anesthesia conditions (awake vs light anesthesia).",
+   "Unclear if macaque model exhibited spontaneous/persistent pain.",
+   "Unclear if FC changes were the cause or effect of pain."
+  ],
+  "funding_conflict": "The funders had no role in study design; the collection, analysis, and interpretation of data; writing of this report; or the decision to submit the article for publication. The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+  "key_numbers": [
+   "14 patients with thalamic pain and 15 age-matched healthy controls.",
+   "FC between amygdala (nonaffected side) and brainstem significantly higher in patients (t[26] = 5.30, p-FDR = .019).",
+   "FC between BLA (nonaffected side) and VTA significantly higher in patients (t[26] = 2.07, uncorrected P = .048).",
+   "FC values between BLA (nonaffected side) and VTA correlated with VAS score (r = .72, pFDR = .005).",
+   "FC between amygdala (nonaffected side) and brainstem significantly higher in macaques post-pain (t[16] = 2.40, uncorrected P = .029).",
+   "FC between amygdala (affected side) and MD (affected side) significantly higher in macaques post-pain (t[16] = 5.92, p-FDR = .029).",
+   "Human patients showed increased FC between amygdala (nonaffected side) and bilateral MD (MD affected side: t[26] = 2.67, uncorrected P = .013; MD nonaffected side: t[26] = 3.06, uncorrected P = .005)."
+  ],
+  "chars": 56659,
+  "route": "openalex_s2_pdf"
  }
 }

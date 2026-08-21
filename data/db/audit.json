@@ -1,0 +1,67 @@
+{
+ "n_fulltext": 47,
+ "out_of_range": [],
+ "unmatched_percentages": [
+  {
+   "pmid": "32631250",
+   "token": "2.6%",
+   "claim": "NASH patients (n=11) demonstrated 8-fold increase in fractional area of liver fat (24.2 \u00b1 2.6%)",
+   "verdict": "formatting artefact"
+  },
+  {
+   "pmid": "30823899",
+   "token": "72%",
+   "claim": "Dogs and monkeys were the least predictive species, raising the probability from 70% to just 72% and 70.4% respectively.",
+   "verdict": "formatting artefact"
+  }
+ ],
+ "degenerate": [],
+ "fill_rates": {
+  "concordance_definition": {
+   "n": 43,
+   "of": 47,
+   "pct": 0.915
+  },
+  "species_results": {
+   "n": 31,
+   "of": 47,
+   "pct": 0.66
+  },
+  "key_numbers": {
+   "n": 47,
+   "of": 47,
+   "pct": 1.0
+  },
+  "endpoints_animal": {
+   "n": 34,
+   "of": 47,
+   "pct": 0.723
+  },
+  "endpoints_human": {
+   "n": 33,
+   "of": 47,
+   "pct": 0.702
+  },
+  "limitations_stated": {
+   "n": 47,
+   "of": 47,
+   "pct": 1.0
+  },
+  "n_pairs": {
+   "n": 4,
+   "of": 47,
+   "pct": 0.085
+  },
+  "two_by_two": {
+   "n": 1,
+   "of": 47,
+   "pct": 0.021
+  },
+  "sensitivity": {
+   "n": 2,
+   "of": 47,
+   "pct": 0.043
+  }
+ },
+ "n_percentages_checked": 178
+}
