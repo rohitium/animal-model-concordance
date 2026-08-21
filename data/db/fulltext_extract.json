@@ -4242,5 +4242,493 @@
   ],
   "chars": 56659,
   "route": "openalex_s2_pdf"
+ },
+ "23401516": {
+  "concordance_metric": "Pearson correlation (R2) of gene expression changes",
+  "concordance_value": 0.09,
+  "n_pairs": null,
+  "n_animal_studies": 3,
+  "n_human_studies": 3,
+  "species_results": [
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.91,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.47,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.13,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.08,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.05,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.0,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.59,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.55,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.76,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.64,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.61,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.63,
+    "n": null
+   },
+   {
+    "species": "human",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.5,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.08,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.05,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.0,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.0,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": -0.01,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.03,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.02,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.05,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.02,
+    "n": null
+   },
+   {
+    "species": "mouse",
+    "metric": "Pearson correlation (R2) of gene expression changes",
+    "value": 0.08,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "gene expression changes",
+   "temporal gene response patterns",
+   "pathway activation/suppression"
+  ],
+  "endpoints_human": [
+   "gene expression changes",
+   "temporal gene response patterns",
+   "pathway activation/suppression"
+  ],
+  "endpoint_class": "secondary-biomarker",
+  "concordance_definition": "The study compared correlations of gene expression changes, temporal gene response patterns, and pathway regulation between human inflammatory diseases and their corresponding mouse models.",
+  "limitations_stated": [
+   "Patient heterogeneity existed in demographics, injury severity, blood transfusion amounts, and clinical outcomes.",
+   "Late events related to clinical care of patients (fluids, drugs, surgery, life support) may alter genomic responses not captured in murine models.",
+   "The TBSA of burns in patients was, on average, higher than in the murine model.",
+   "Currently, no existing murine model with intensive care support allows consistent survival of mice with substantially greater than 25% TBSA burn injury."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "R2 between 0.0 and 0.1 for murine orthologs matching human counterparts.",
+   "R2 = 0.91 for gene expression correlation between human trauma and human burns.",
+   "R2 = 0.47 for gene expression correlation between human endotoxemia and human injuries.",
+   "R2 <= 0.09 for gene expression correlation between human conditions and their mouse orthologs.",
+   "R2 <= 0.13 for gene expression correlation among three murine models.",
+   "Genomic disturbances recovered in murine models within hours to 4 d, but lasted 1-6 months or more in patients.",
+   "Among 4,918 genes, 5,544 genes were identified as significant in human conditions.",
+   "167 patients up to 28 d after severe blunt trauma.",
+   "244 patients up to 1 y after burn injury.",
+   "4 healthy humans for 24 h after administration of low-dose bacterial endotoxin.",
+   "16 treated and 16 controls per mouse model.",
+   "Human endotoxemia had much higher similarity to human injury than mouse models in pathway comparisons.",
+   "Median correlations for pathways: 0.16 (mouse burns), 0.03 (mouse trauma), 0.00 (mouse endotoxemia).",
+   "In humans, correlations of 0.91 (trauma), 0.55 (ARDS), 0.50 (infection) with mouse models showing correlations between 0 and 0.08.",
+   "Percentage of genes changing in the same direction: ~47-63% for mouse orthologs vs. human conditions.",
+   "Percentage of genes changing in the same direction: 97% for human trauma vs. human burns.",
+   "Percentage of genes changing in the same direction: 88% for human endotoxemia vs. human injuries.",
+   "Percentage of genes changing in the same direction: ~39%-63% among murine models.",
+   "Percentage of genes changing in the same direction: 83-97% for human conditions compared to human burns.",
+   "Percentage of genes changing in the same direction: 47-61% for mouse models compared to human burns."
+  ],
+  "chars": 40525,
+  "route": "user_supplied"
+ },
+ "24406927": {
+  "concordance_metric": null,
+  "concordance_value": null,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [],
+  "endpoints_human": [],
+  "endpoint_class": "not-stated",
+  "concordance_definition": "The study defines success rates based on the probability of a drug advancing through clinical phases and ultimately gaining FDA approval. It differentiates between 'Phase Success' (transition to the next phase) and 'Likelihood of Approval' (LOA) from a given phase to FDA approval. The study emphasizes evaluating all indications ('development paths') rather than just the lead indication to more accurately reflect R&D productivity.",
+  "limitations_stated": [
+   "Direct comparison of data and methodology on a year-by-year or decade-by-decade basis is difficult due to the timing of annotating suspended indications.",
+   "Real-time data collection started in 2003, preventing direct comparison with prior decades using these data.",
+   "The lead indication success rate is higher due to selection bias.",
+   "Small sample sizes limit further analysis of failures by lead or nonlead indication, disease, modality, and company type.",
+   "Public information is not always available to assess the degree of communication with regulators, adherence to recommendations, changes to prior standards, and input from phase 2 data for phase 3 study design.",
+   "It was difficult to objectively determine if a phase 3 study did not reach an endpoint due to poor study design or the drug\u2019s biological activity.",
+   "The degree to which regulatory uncertainty factored into commercial decisions to not file for approval is unknown.",
+   "The timing of annotating suspended indications and drugs is not precise enough to analyze yearly changes in success rates."
+  ],
+  "funding_conflict": "The authors declare competing financial interests: details are available in the online version of the paper.",
+  "key_numbers": [
+   "10.4% of all indication development paths in phase 1 were approved by FDA.",
+   "Phase I success (transition to phase 2) was 64.5%.",
+   "Phase 2 success (transition to phase 3) was 32.4%.",
+   "Phase 3 success (transition to NDA/BLA) was 60.1%.",
+   "Probability of FDA approval after NDA/BLA submission was 83.2%.",
+   "Lead indications had a LOA from phase 1 of 15.3%.",
+   "Oncology drugs had the lowest LOA from phase 1 at 6.7%.",
+   "Non-NMEs had the highest LOA from phase 1 of 20.0%.",
+   "Biologics had nearly twice the LOA from phase 1 (14.6%) as NMEs (7.5%) for all indications.",
+   "56.9% of all applications were approved on the first NDA/BLA submission.",
+   "86.2% of applications were approved by the third submission.",
+   "LOA from phase 1 for nonlead indications was 4.9%.",
+   "835 companies and 7,372 independent drug development paths were analyzed from 2003 to 2011.",
+   "The study analyzed 5,820 phase transitions."
+  ],
+  "chars": 73226,
+  "route": "user_supplied"
+ },
+ "11029269": {
+  "concordance_metric": "true positive concordance rate",
+  "concordance_value": 0.71,
+  "n_pairs": null,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "nonrodent",
+    "metric": "predictive for HTs",
+    "value": 0.63,
+    "n": null
+   },
+   {
+    "species": "rodent",
+    "metric": "predictive for HTs",
+    "value": 0.43,
+    "n": null
+   },
+   {
+    "species": "nonrodent",
+    "metric": "concordance",
+    "value": 0.63,
+    "n": null
+   },
+   {
+    "species": "rodent",
+    "metric": "concordance",
+    "value": 0.43,
+    "n": null
+   },
+   {
+    "species": "dog",
+    "metric": "concordance",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "primate",
+    "metric": "concordance",
+    "value": null,
+    "n": null
+   },
+   {
+    "species": "rabbit",
+    "metric": "concordance",
+    "value": null,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": 0.7,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "target organ toxicity"
+  ],
+  "endpoints_human": [
+   "human toxicity (HT)"
+  ],
+  "endpoint_class": "primary-hard",
+  "concordance_definition": "A toxicity correlation was considered to be positive if the same target organ was involved in humans and in animals in the judgment of the company clinicians and the toxicologists.",
+  "limitations_stated": [
+   "Data could not answer completely how well animal studies predict overall human responses.",
+   "Database only contains compounds studied in humans (true positives and false negatives).",
+   "Database lacked specific detail regarding the exact nature of the HT, including incidence, severity, and time to onset.",
+   "Uncertainties in nomenclature and application of COSTART terminology.",
+   "Failure to distinguish between toxic signs and symptoms, especially subjective neurologic HTs.",
+   "Hypersensitivity tests rarely included in preclinical toxicology packages.",
+   "Few compounds applied via the dermal route for hypersensitivity HTs.",
+   "Design did not include 'false positive' and 'true negative' outcomes.",
+   "Unevenness of study designs over time may have influenced outcomes.",
+   "Database may not be fully representative of all drug types under development and marketed worldwide."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "150 compounds with 221 HT events reported.",
+   "71% true positive HT concordance rate for rodent and nonrodent species.",
+   "63% of HTs predicted by nonrodent species alone.",
+   "43% of HTs predicted by rodent species alone.",
+   "94% of concordant animal toxicities first observed in studies of 1 month or less.",
+   "30% of HTs had no relationship between toxicities seen in animals and observed in humans (false negatives).",
+   "73% of false negative cases had animal studies of 2 months or more duration.",
+   "91% of rodent false negative studies performed at limiting doses.",
+   "90% of nonrodent false negative studies performed at limiting doses.",
+   "86% of false negative cases correlated animal metabolism profiles with man.",
+   "63% of false negative cases were considered pharmacologically responsive in animal species.",
+   "37% of compounds were terminated due to HT.",
+   "64% termination rate for cutaneous HTs.",
+   "55% termination rate for cardiovascular HTs.",
+   "50% termination rate for endocrine HTs.",
+   "47% termination rate for respiratory HTs.",
+   "40% of HTs were evaluated as being pharmacology-related.",
+   "80% concordance for cardiovascular HTs.",
+   "91% concordance for hematologic HTs.",
+   "85% concordance for gastrointestinal HTs.",
+   "64% termination rate for hypersensitivity HTs.",
+   "57 (38%) of relevant toxicities observed on Day 1.",
+   "91% of hematologic HTs correlated with animal findings.",
+   "85% of gastrointestinal HTs correlated well with animal findings.",
+   "80% concordance for cardiovascular HTs.",
+   "22% of HTs were neurologic.",
+   "17% of neurologic drugs terminated due to neurologic HTs.",
+   "45% of nonneurologic drugs terminated due to neurologic HTs.",
+   "13/148 cases of concordant HTs were from nonstandard studies.",
+   "39% of HTs first observed in Phase I clinical trials.",
+   "28% of HTs seen following single-dose administration to man."
+  ],
+  "chars": 56066,
+  "route": "user_supplied"
+ },
+ "12667944": {
+  "concordance_metric": "margin between hERG IC50 and ETPC unbound",
+  "concordance_value": 30,
+  "n_pairs": 52,
+  "n_animal_studies": null,
+  "n_human_studies": null,
+  "species_results": [
+   {
+    "species": "dog",
+    "metric": "QTc prolongation",
+    "value": 0.1,
+    "n": null
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "hERG /IKr IC50",
+   "APD 90",
+   "QTc in vivo"
+  ],
+  "endpoints_human": [
+   "QTc in humans",
+   "Torsade de Pointes (TdP)"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The study defines concordance based on the margin between the effective free therapeutic plasma concentration (ETPC unbound) and the hERG/IKr IC50. A margin of 30-fold is suggested as a provisional safety margin.",
+  "limitations_stated": [
+   "Dataset restricted to drugs that have reached market or late-stage development.",
+   "Difficulty in judging relative torsadogenic propensity within categories.",
+   "Estimates of free plasma concentrations depend on accuracy of published data.",
+   "Dataset not intended for retrospective re-assessment of torsadogenic risk.",
+   "New non-clinical findings on marketed drugs should not change risk assessment if used safely for years.",
+   "Species differences in action potential data.",
+   "Biphasic concentration-response curves.",
+   "Imprecise or incomplete data for APD90 and QTc margins.",
+   "Potential for accumulation in myocytes.",
+   "Inter-laboratory variability in hERG IC50 data."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "52 drugs had data on both ETPC unbound and hERG /IKr.",
+   "Category 1 drugs (antiarrhythmics) had margins of 0.1- to 31-fold.",
+   "Category 2 drugs (withdrawn) had margins of 0.01- to 13-fold.",
+   "Category 3 drugs (measurable TdP) had margins of 0.03- to 35-fold.",
+   "Category 4 drugs (isolated TdP) had margins from 0.13- to 35,700-fold.",
+   "Category 5 drugs (no TdP) had margins from 1.7- to 3311-fold.",
+   "A 30-fold margin between Cmax and hERG IC50 may suffice for drugs undergoing clinical evaluation.",
+   "Amiodarone had a margin of 1400-fold.",
+   "Verapamil had a margin of 1.7-fold.",
+   "Nifedipine had a margin of 35,700-fold."
+  ],
+  "chars": 66844,
+  "route": "user_supplied"
+ },
+ "16453316": {
+  "concordance_metric": "average level of neuroprotection in focal ischemia models",
+  "concordance_value": 0.25,
+  "n_pairs": null,
+  "n_animal_studies": 7554,
+  "n_human_studies": 114,
+  "species_results": [
+   {
+    "species": "hamster",
+    "metric": "increase in damage",
+    "value": 1250,
+    "n": 1
+   },
+   {
+    "species": "hamster",
+    "metric": "increase in damage",
+    "value": 2500,
+    "n": 1
+   }
+  ],
+  "two_by_two": null,
+  "sensitivity": null,
+  "specificity": null,
+  "ppv": null,
+  "npv": null,
+  "endpoints_animal": [
+   "functional (behavioral)",
+   "histological",
+   "survival",
+   "electrophysiological",
+   "imaging",
+   "infarct volume",
+   "behavioral score",
+   "cell death",
+   "electroencephalogram"
+  ],
+  "endpoints_human": [
+   "brain function",
+   "behavior"
+  ],
+  "endpoint_class": "mixed",
+  "concordance_definition": "The paper does not explicitly define concordance but compares experimental efficacy of drugs used clinically versus those tested only experimentally.",
+  "limitations_stated": [
+   "Search strategy was broad but not deep.",
+   "Potential publication bias in favor of positive results.",
+   "Emphasis on focal ischemia models may mask utility in other patient subclasses.",
+   "Assessing past experiments using current standards.",
+   "STAIR standards may change.",
+   "Paucity of positive clinical results hinders model validation.",
+   "Drug mechanism categorization may be too broad.",
+   "Infarct volume may be compromised as a measure of damage.",
+   "Behavioral outcomes and neurological assessments were not included in quantitative aspects.",
+   "Model specificity: different models may be needed for different patient subgroups."
+  ],
+  "funding_conflict": null,
+  "key_numbers": [
+   "1,026 candidate stroke drugs analyzed.",
+   "912 drugs tested in animal models only.",
+   "97 drugs tested in both animal models and clinical trials.",
+   "17 drugs tested only in humans.",
+   "Average level of neuroprotection in focal ischemia models was not significantly different between experimental and clinical drugs.",
+   "Experimental agents: mean 24.4% protection (SD 32.9%).",
+   "Clinical agents: mean 31.35% protection (SD 16.7%).",
+   "7,554 experimental results analyzed from models of focal, global ischemia, and culture.",
+   "59% of agents tested in focal ischemia models.",
+   "25% of agents tested in both focal and global ischemia models.",
+   "2% of agents tested in focal, global, and cell culture models.",
+   "62% of focal ischemia experimental results showed superior neuroprotection.",
+   "70% of global ischemia experimental results showed superior neuroprotection.",
+   "74% of culture model experimental results showed superior neuroprotection.",
+   "Average level of neuroprotection tended to regress toward the overall mean of approximately 25% as scope of testing increased.",
+   "NXY-059 and hypothermia showed superior efficacy and broad testing.",
+   "Stroke kills 5.5 million people each year."
+  ],
+  "chars": 51927,
+  "route": "user_supplied"
  }
 }

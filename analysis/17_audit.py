@@ -49,4 +49,9 @@ print(f"degenerate extractions  : {len(report['degenerate'])}")
 print(f"formatting artefacts    : {len(report['unmatched_percentages']) - len(fab)}")
 print(f"NOT FOUND IN SOURCE     : {len(fab)}")
 for u in fab: print("  !", u["pmid"], u["token"], "|", u["claim"][:110])
-sys.exit(1 if fab else 0)
+bad = fab or report["out_of_range"]
+if report["out_of_range"]:
+    print("  ! out-of-range values are type errors: a quantity that is not a "
+          "proportion has been stored in a proportion field.")
+    for o in report["out_of_range"]: print("   ", o)
+sys.exit(1 if bad else 0)

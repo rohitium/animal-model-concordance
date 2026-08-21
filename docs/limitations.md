@@ -102,3 +102,19 @@ concordance definition, which is the raw material for that recoding.
 null rather than infer. Checks against known values passed (Olson 2000 → 71%, n=150;
 Monticello 2017 → PPV 43%/sens 48%/spec 84%/NPV 86%, n=182; Perel 2007 → 6 pairs; Clark 2018
 → correctly null). No systematic accuracy audit has been run.
+
+## User-supplied full texts (2026-08-21)
+
+**L21 — Five full texts were supplied from the user's institutional access.** Recorded in
+`fulltext_status.json` with `route: user_supplied` and licence
+`not open access - user supplied, do not redistribute`. They sit in the gitignored
+`data/raw/fulltext/` and must never be committed or published; only extracted structured
+data enters the site. This raises full-text coverage from 47 to 52 of 100 and adds
+per-species results for Olson 2000 (rodent 43%, non-rodent 63%) and Seok 2013 (R²=0.09
+across 23 comparisons) — figures that no abstract states.
+
+**L22 — Non-proportional quantities must not be stored in proportion fields.** Redfern 2003
+reports a 30-fold hERG safety margin; extraction placed `30` in `concordance_value`, which
+the site would have rendered as "3000%". The audit now fails on any value outside 0–1, and
+such quantities render as a labelled reported quantity rather than a percentage. One
+occurrence found and corrected in 52 extractions.

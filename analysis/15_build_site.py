@@ -106,12 +106,21 @@ def counter(field):
                 if x: c[str(x).strip().lower()] += 1
         elif val: c[str(val)] += 1
     return c
-def pct(x): return f"{x*100:.0f}%" if isinstance(x,(int,float)) else None
+def pct(x):
+    """Format only genuine proportions. Some papers report quantities that are not
+    proportions at all (Redfern 2003: a 30-fold hERG safety margin); rendering those
+    as '3000%' would be a fabricated statistic."""
+    return f"{x*100:.0f}%" if isinstance(x,(int,float)) and 0 <= x <= 1 else None
+def is_prop(x): return isinstance(x,(int,float)) and 0 <= x <= 1
+def nonprop(v, f):
+    x = (f or {}).get("concordance_value")
+    if x is None: x = (v or {}).get("concordance_value")
+    return None if (x is None or is_prop(x)) else x
 
 # ---------------- overview ----------------
 arms = counter("arm"); yrs=[v["year"] for v in DB.values() if v.get("year")]
 metrics = [(pm,v) for pm,v in ftok.items() if v.get("sensitivity") is not None or v.get("ppv") is not None]
-withval = [v for v in ok.values() if v.get("concordance_value") is not None]
+withval = [v for v in ok.values() if is_prop(v.get("concordance_value"))]
 b=[ "<h1>Animal Model Concordance with Human Clinical Outcomes</h1>",
  '<p class="sub">A structured, citation-anchored database of studies measuring how well animal models predict human clinical outcomes.</p>',
  BANNER,'<div class="grid">',
@@ -123,7 +132,7 @@ b=[ "<h1>Animal Model Concordance with Human Clinical Outcomes</h1>",
  f'<div class="stat"><div class="n">{min(yrs)}&ndash;{max(yrs)}</div><div class="l">years</div></div>','</div>',
  "<h2>Studies by arm</h2>",'<div class="scroll"><table><tr><th>Arm</th><th>Studies</th><th>With concordance value</th><th>With full text</th></tr>']
 for a,n in arms.most_common():
-    wv=sum(1 for v in ok.values() if v.get("arm")==a and v.get("concordance_value") is not None)
+    wv=sum(1 for v in ok.values() if v.get("arm")==a and is_prop(v.get("concordance_value")))
     wf=sum(1 for pm,v in ok.items() if v.get("arm")==a and pm in ftok)
     b.append(f'<tr><td><a href="arms.html#{e(a)}">{e(a)}</a></td><td>{n}</td><td>{wv}</td><td>{wf}</td></tr>')
 b.append("</table></div>")
@@ -234,6 +243,11 @@ for pm,v in DB.items():
     row("Concordance metric",f.get("concordance_metric") or v.get("concordance_metric"),"ft" if f.get("concordance_metric") else "ab")
     cv = f.get("concordance_value") if f.get("concordance_value") is not None else v.get("concordance_value")
     row("Concordance value",pct(cv) if cv is not None else None,"ft" if f.get("concordance_value") is not None else "ab")
+    np_ = nonprop(v, f)
+    if np_ is not None:
+        row("Reported quantity (not a proportion)",
+            f'{np_} — {f.get("concordance_metric") or v.get("concordance_metric") or "unit not stated"}',
+            "ft" if f.get("concordance_value") is not None else "ab")
     for lbl,k in [("Sensitivity","sensitivity"),("Specificity","specificity"),("PPV","ppv"),("NPV","npv")]:
         if f.get(k) is not None: row(lbl,pct(f[k]),"ft")
     tt=f.get("two_by_two") or {}

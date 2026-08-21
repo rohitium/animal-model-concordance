@@ -4,20 +4,20 @@
   "pmcid": "PMC3587220",
   "doi": "10.1073/pnas.1222878110",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/23401516.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "24406927": {
   "pmid": "24406927",
   "pmcid": null,
   "doi": "10.1038/nbt.2786",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/24406927.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "36883244": {
   "pmid": "36883244",
@@ -514,10 +514,10 @@
   "pmcid": null,
   "doi": "10.1006/rtph.2000.1399",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/11029269.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "28422076": {
   "pmid": "28422076",
@@ -794,20 +794,20 @@
   "pmcid": null,
   "doi": "10.1016/s0008-6363(02)00846-5",
   "oa": true,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/12667944.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "16453316": {
   "pmid": "16453316",
   "pmcid": null,
   "doi": "10.1002/ana.20741",
   "oa": false,
-  "route": null,
+  "route": "user_supplied",
   "xml": null,
-  "pdf": null,
-  "license": null
+  "pdf": "data/raw/fulltext/16453316.pdf",
+  "license": "not open access - user supplied, do not redistribute"
  },
  "39379679": {
   "pmid": "39379679",
