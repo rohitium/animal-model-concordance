@@ -1,0 +1,422 @@
+{
+ "23401516": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "36883244": {
+  "has_animal_human_comparison": true,
+  "evidence": "improvement: 67.0 percent | measures: share of trials on non-human primates that showed improvement for potentially disease-modifying interventions | compared: non-human primate trials vs human trials for Parkinson's disease drug treatments | species: non-human primate",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study compares the improvement seen in non-human primate trials for Parkinson's disease drug treatments against human trials for the same treatments."
+ },
+ "24489990": {
+  "has_animal_human_comparison": true,
+  "evidence": "differences in transcription factor binding sites: 41.0 percent | measures: minimum share of transcription factor binding sites that differ between humans and mice | compared: transcription factor binding sites in humans and mice | species: human,mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a comparison of transcription factor binding sites between humans and mice, which is a direct comparison between an animal result (mice) and a human result."
+ },
+ "31307492": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "25092317": {
+  "has_animal_human_comparison": true,
+  "evidence": "Spearman\u2019s rank correlation coefficient: 0.43 correlation | measures: correlation of gene expression levels between mouse models and human conditions | compared: mouse models vs. human conditions | species: mouse,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports multiple quantitative comparisons of gene expression levels and changes between mouse models and human conditions, such as Spearman's rank correlation coefficients and percentages of genes changed in the same direction. These directly compare animal results with human results."
+ },
+ "24678540": {
+  "has_animal_human_comparison": true,
+  "evidence": "failure rate: 80.0 percent | measures: share of potential therapeutics that fail when tested in people after animal studies suggest they will be safe and effective | compared: animal studies vs human testing | species: human,animal",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a failure rate comparing animal studies to human testing, indicating that therapeutics that appear safe and effective in animals often fail in humans."
+ },
+ "28893587": {
+  "has_animal_human_comparison": true,
+  "evidence": "sensitivity: 48.0 percent | measures: share of human toxicities that were also seen in at least one animal species | compared: animal toxicology data vs clinical observations | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study compares animal toxicology data with human clinical observations, specifically assessing the sensitivity of animal models in predicting human toxicities. This directly aligns with the definition of an animal-vs-human comparison."
+ },
+ "34874005": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "26795250": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance: 0.857 correlation | measures: the similarity of genes driving the enrichment of shared gene sets in human and mouse sepsis. | compared: leading edge genes in human sepsis vs. mouse sepsis | species: human,mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study directly compares gene expression patterns and gene set enrichment between human and mouse sepsis models, indicating a quantitative comparison between animal and human results."
+ },
+ "34127759": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "42245789": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "15246820": {
+  "has_animal_human_comparison": true,
+  "evidence": "the rabbit model achieved laboratory to clinical translational success for tissue plasminogen activator (tPA) treatment.",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a comparison between a rabbit model's success with tPA treatment and human trials, which is a direct animal-vs-human comparison."
+ },
+ "38676802": {
+  "has_animal_human_comparison": true,
+  "evidence": "PDX response to anticancer drugs in mice corresponds to the original patient's susceptibility to these treatments in the clinic.",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a correlation between PDX response in mice and the original patient's susceptibility to treatments, which is a direct comparison between an animal model result and a human outcome."
+ },
+ "25814248": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "38867022": {
+  "has_animal_human_comparison": true,
+  "evidence": "agreement rate: 50 percent | measures: the proportion of differentially expressed genes between murine models and human data that were statistically modulated and in the same direction. | compared: murine models vs human data | species: mouse,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study directly compares gene expression data from murine models to human data, assessing the agreement rate in the direction of modulation. This is a direct comparison between an animal model and human results."
+ },
+ "26479923": {
+  "has_animal_human_comparison": true,
+  "evidence": "correlation: 0.56 correlation | measures: correlation between individual patient response rates and PDX response rates to PI3K inhibitors | compared: individual patient response rate vs. PDX response rate | species: human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a correlation between individual patient response rates and PDX response rates to PI3K inhibitors, which is a direct comparison between a human outcome (patient response rate) and an animal model outcome (PDX response rate)."
+ },
+ "27261415": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance: 0.02 proportion | measures: similarity in gene expression patterns between mouse and human NASH transcriptomes | compared: mouse (8 weeks) transcriptome vs human NASH transcriptome | species: mouse,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports multiple comparisons of gene expression patterns between mouse models and human transcriptomes for NASH, cirrhosis, and HCC, which directly compares animal results to human results."
+ },
+ "32631250": {
+  "has_animal_human_comparison": true,
+  "evidence": "overlap: 4418 count | measures: number of differentially expressed genes (DEGs) | compared: GAN DIO-NASH mice vs. NASH patients | species: mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study directly compares the number of differentially expressed genes (DEGs) between GAN DIO-NASH mice and human NASH patients, which is a direct comparison between an animal model result and a human result."
+ },
+ "29302222": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance: 100 percent | measures: the incubation phenomenon of drug seeking occurring in laboratory rats and humans | compared: laboratory rats and humans | species: rat,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports concordance between the incubation phenomenon of drug seeking in laboratory rats and humans, which is a direct comparison between an animal result and a human result."
+ },
+ "27916279": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordant results: None other | measures: pharmacological treatment results in preclinical drug versus food choice procedures align with pharmacological treatment results in the clinical setting. | compared: pharmacological treatment results in preclinical drug versus food choice procedures vs pharmacological treatment results in the clinical setting | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports that pharmacological treatment results in preclinical drug versus food choice procedures align with pharmacological treatment results in the clinical setting. This indicates a comparison between animal (preclinical) and human (clinical) results."
+ },
+ "35781406": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance: 100.0 percent | measures: the proportion of drug efficacy tests where the outcome in the PDTX model matched the patient's response. | compared: PDTX model vs patients' responses | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study compared the outcome of drug efficacy tests in the PDTX model (animal) with the patients' responses (human)."
+ },
+ "32413492": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "31694927": {
+  "has_animal_human_comparison": true,
+  "evidence": "prediction rate: 71.0 percent | measures: share of human toxicities that were also seen in at least one animal species | compared: dog and rat toxicity testing vs human toxicities | species: rat,dog,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a prediction rate comparing dog and rat toxicity testing against human toxicities, which is a direct animal-vs-human comparison."
+ },
+ "34558834": {
+  "has_animal_human_comparison": true,
+  "evidence": "recall: 0.38 proportion | measures: share of up-regulated genes in human NAFLD that were also up-regulated in the 12-month CCl 4 mouse model. | compared: 12-month CCl 4 mouse model vs. human NAFLD | species: human,mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports multiple quantitative comparisons where a mouse model result (e.g., '12-month CCl 4 mouse model') is directly compared with human disease data (e.g., 'human NAFLD', 'human NASH', 'human HCV', 'human PBC', 'human PSC', 'human liver diseases'). These comparisons assess the overlap or similarity of gene expression patterns between the animal model and human conditions."
+ },
+ "32127577": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance rate: 10 percent | measures: the share of human toxicities that were also seen in at least one animal species | compared: animal models vs human response | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a concordance rate of 10%, which measures the share of human toxicities observed in at least one animal species, directly comparing animal models to human response."
+ },
+ "39255793": {
+  "has_animal_human_comparison": true,
+  "evidence": "P-sites mapped: 87716 count | measures: experimentally identified P-sites in human that were successfully mapped to corresponding sites in mouse sequence | compared: human P-sites to mouse sequence | species: human,mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study directly compares experimentally identified P-sites in humans to corresponding sites in mouse sequences, which is a direct animal-vs-human comparison of biological data."
+ },
+ "40849367": {
+  "has_animal_human_comparison": true,
+  "evidence": "reversals per 100 trials: 4.4 count | measures: the number of times participants switched their choice after a series of correct responses, per 100 trials. | compared: humans vs rats | species: humans,rats",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study directly compares the number of reversals per 100 trials between humans and rats, which is a quantitative comparison between an animal result (rats) and a human result."
+ },
+ "25671556": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "26563791": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "32868897": {
+  "has_animal_human_comparison": true,
+  "evidence": "positive predictive value (PPV) for all toxicity grades: 0.67 proportion | measures: the probability that human Phase 1 studies will show a particular toxicity given that animal data show that toxicity | compared: dog toxicity vs human toxicity | species: dog",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly compares toxicity observed in animal models (dogs, monkeys, mice, rats) with toxicities observed in human clinical trials, using metrics like positive predictive value (PPV) and negative predictive value (NPV). This directly fits the definition of an animal-vs-human comparison."
+ },
+ "11029269": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance rate: 70 percent | measures: share of human toxicities that were also seen in at least one animal species | compared: animal models vs human toxicities | species: rodent,nonrodent",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly compares 'animal models vs human toxicities' by calculating the 'share of human toxicities that were also seen in at least one animal species'."
+ },
+ "28422076": {
+  "has_animal_human_comparison": true,
+  "evidence": "specificity: 89.0 percent | measures: share of human toxicities that were correctly identified as toxic by the assay | compared: zebrafish experimental data with known human toxicity outputs | species: zebrafish,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports specificity, sensitivity, and accuracy metrics that compare zebrafish experimental data with known human toxicity outputs, directly qualifying as an animal-vs-human comparison."
+ },
+ "18468556": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance: 22 count | measures: drugs that cause QT prolongation in humans also caused bradycardia and blocked AV conduction in zebrafish | compared: drug-induced QT prolongation in humans vs. zebrafish response | species: human,zebrafish",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a concordance of 22 counts where drugs causing QT prolongation in humans also caused bradycardia and blocked AV conduction in zebrafish, directly comparing a human outcome with a zebrafish response."
+ },
+ "35148401": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "38852684": {
+  "has_animal_human_comparison": true,
+  "evidence": "change in QTc: 10.9 other | measures: the change in QTc interval in non-human primates at a specific concentration. | compared: non-human primate QTc change vs. human QTc change threshold | species: non-human primate",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study compares the change in QTc interval in non-human primates to a human QTc change threshold."
+ },
+ "28903488": {
+  "has_animal_human_comparison": true,
+  "evidence": "receiver operating characteristic area under the curve: 0.81 other | measures: concordance between safety margin (QTc effects in dogs and clinical peak free plasma exposure) and clinical outcome | compared: safety margin between QTc effects in dogs and clinical peak free plasma exposure vs clinical outcome | species: dog",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a comparison of the safety margin derived from QTc effects in dogs (an animal result) against clinical peak free plasma exposure and clinical outcome (human results)."
+ },
+ "33666192": {
+  "has_animal_human_comparison": true,
+  "evidence": "QT intervals: 231 other | measures: the duration of ventricular depolarization and repolarization in zebrafish | compared: zebrafish vs humans | species: zebrafish,humans",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a comparison of QT intervals between zebrafish and humans."
+ },
+ "33813006": {
+  "has_animal_human_comparison": true,
+  "evidence": "utility: 21 percent | measures: share of studies giving findings of obvious concern to moving drugs into the clinic | compared: rodent central nervous system (CNS) studies vs clinical concerns | species: rodent",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study compares rodent central nervous system (CNS) studies with clinical concerns, which represents a comparison between an animal result (rodent CNS studies) and a human outcome (clinical concerns)."
+ },
+ "30726989": {
+  "has_animal_human_comparison": true,
+  "evidence": "sensitivity: 78.0 percent | measures: share of clinical blood pressure and heart rate changes that were also seen in large animal models. | compared: large animal CV measures vs clinical changes | species: dog,monkey,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports sensitivity of large animal cardiovascular measures compared to clinical changes in humans, which is a direct animal-vs-human comparison."
+ },
+ "29730448": {
+  "has_animal_human_comparison": true,
+  "evidence": "the diagnostic power of animal events for human events was computed using likelihood ratios",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study computed the diagnostic power of animal events for human events, which is a direct comparison between animal and human outcomes."
+ },
+ "17175568": {
+  "has_animal_human_comparison": true,
+  "evidence": "pooled odds ratio: 0.58 proportion | measures: share of adverse functional outcomes in animal models treated with corticosteroids compared to control. | compared: corticosteroids in animal models vs. human clinical trials for head injury | species: mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a comparison of 'corticosteroids in animal models vs. human clinical trials for head injury', which directly compares an animal result (adverse functional outcomes in mouse models) with a human outcome (clinical trials)."
+ },
+ "17032985": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "32391273": {
+  "has_animal_human_comparison": true,
+  "evidence": "AUC: 0.45 correlation | measures: the accuracy of TGI value as a predictor of drug approval. | compared: TGI value vs. drug approval status in murine models | species: mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study compares the TGI value in murine models (animal) against drug approval status (human outcome)."
+ },
+ "26753942": {
+  "has_animal_human_comparison": true,
+  "evidence": "Likelihood Ratios (LRs): None other | measures: the evidential weight that adverse drug reactions will be absent in humans when toxicity is absent in animals | compared: absence of toxicity in animals vs absence of adverse drug reactions in humans | species: human,animal",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly compares the absence of toxicity in animals with the absence of adverse drug reactions in humans, which is a direct animal-vs-human comparison."
+ },
+ "30364994": {
+  "has_animal_human_comparison": true,
+  "evidence": "clinical concordance: 46.0 percent | measures: share of compounds with preclinical gastrointestinal toxicities that were also seen in humans | compared: rodent preclinical GI toxicity vs human clinical GI toxicity | species: rodent",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a comparison between rodent preclinical GI toxicity and human clinical GI toxicity, which is an animal-vs-human comparison."
+ },
+ "35616311": {
+  "has_animal_human_comparison": null,
+  "comparison_type": "no-measurements",
+  "reason": "No measurements extracted (usually no full text yet); not judged.",
+  "evidence": ""
+ },
+ "29590200": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance rate: 33.3 percent | measures: the proportion of interventions for which findings from animal studies agreed with findings from human studies. | compared: animal studies vs human studies | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly compares findings from animal studies with findings from human studies, indicating an animal-vs-human comparison."
+ },
+ "30823899": {
+  "has_animal_human_comparison": true,
+  "evidence": "probability increase: 4 percent | measures: the increase in the probability of a drug not being toxic in humans, given a negative test in any of five animal species. | compared: negative animal test vs. human toxicity | species: dogs,rats,mice,rabbits,monkeys",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a 'probability increase' comparing 'negative animal test vs. human toxicity', which directly compares an animal test result against a human outcome."
+ },
+ "23503654": {
+  "has_animal_human_comparison": true,
+  "evidence": "correlation: 0.0 correlation | measures: the correlation of genomic responses between mouse models and human inflammatory diseases. | compared: mouse models vs human inflammatory diseases | species: mouse,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports a correlation of genomic responses between mouse models and human inflammatory diseases, which is a direct comparison between an animal result (mouse models) and a human outcome (human inflammatory diseases)."
+ },
+ "36730203": {
+  "has_animal_human_comparison": true,
+  "evidence": "genome-wide c-scores: 0.081 proportion | measures: concordance between mouse inflammatory studies and human inflammatory studies | compared: mouse inflammatory studies vs. human inflammatory studies | species: mouse,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports multiple quantitative comparisons where one side is a mouse result and the other side is a human result, specifically measuring the concordance between mouse and human inflammatory studies."
+ },
+ "28731442": {
+  "has_animal_human_comparison": true,
+  "evidence": "- mimicked: 12.0 percent | measures: share of genes deregulated in human conditions that were mimicked in mouse models. | compared: mouse models vs human conditions | species: mouse,human\n- similar: 27.0 percent | measures: share of cytokine interactions that are similar in both species. | compared: cytokine interactions in human vs mouse | species: human,mouse\n- contradictory: 15.0 percent | measures: share of cytokine interactions in mouse that were contradictory (opposite direction) to human. | compared: cytokine interactions in mouse vs human | species: mouse,human\n- found only in human: 58.0 percent | measures: share of human cytokine interactions that were not proven with mouse experiments. | compared: human cytokine interactions vs mouse experiments | species: human,mouse\n- similar: 62.0 percent | measures: share of interactions at the cellular level (among cell types, bioprocesses, and proteins) that were similar between human and mouse. | compared: cellular level interactions in human vs mouse | species: human,mouse\n- found only in human: 28.0 percent | measures: share of interactions at the cellular level (among cell types, bioprocesses, and proteins) that were found only in human. | compared: cellular level interactions in human vs mouse | species: human,mouse\n- contradicting: 10.0 percent | measures: share of interactions at the cellular level (among cell types, bioprocesses, and proteins) that were contradicting in human and mouse. | compared: cellular level interactions in human vs mouse | species: human,mouse\n- same: 31.0 percent | measures: share of genes with the same expression patterns in both species, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse\n- significantly expressed only in human: 14.0 percent | measures: share of genes that were significantly expressed only in human, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse\n- expressed only in mouse: 19.0 percent | measures: share of genes that were expressed only in mouse, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse\n- contradictions between species: 7.0 percent | measures: share of genes that showed contradictions between species, excluding tissue specificity. | compared: gene expression patterns between species | species: human,mouse\n- statistically non-significant: 12.0 percent | measures: share of genes found to be statistically non-significant (p-value > 0.05) in both species, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly compares gene deregulation, cytokine interactions, and gene expression patterns between mouse models and human conditions, fulfilling the criteria for an animal-vs-human comparison."
+ },
+ "28335819": {
+  "has_animal_human_comparison": true,
+  "evidence": "overlap: 35 percent | measures: share of differentially expressed genes that overlap between a mouse model of colorectal liver metastasis and human specimens | compared: mouse model of colorectal liver metastasis vs. human specimens | species: mouse,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports an overlap measurement comparing a mouse model of colorectal liver metastasis with human specimens, which is a direct comparison between an animal result and a human result."
+ },
+ "25677548": {
+  "has_animal_human_comparison": true,
+  "evidence": "species \u00d7 exercise interaction: 2 count | measures: the number of biochemical parameters that showed a different pattern of alteration post exercise between rats and humans | compared: rat vs. human biochemical parameter alterations post-exercise | species: rat,human",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study directly compares biochemical parameter alterations post-exercise between rats and humans, which is a direct animal-vs-human comparison."
+ },
+ "17988725": {
+  "has_animal_human_comparison": true,
+  "evidence": "failure rate: 100 percent | measures: share of human responses that were accurately predicted by animal models | compared: animal model predictions vs human responses | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly compares animal model predictions against human responses to evaluate predictive accuracy."
+ },
+ "22790876": {
+  "has_animal_human_comparison": true,
+  "evidence": "prediction failure rate: 100.0 percent | measures: prediction failure of chimpanzee and macaque models for vaccination development against acquired immunodeficiency syndrome (AIDS) | compared: chimpanzee and macaque models vs human AIDS outcomes | species: chimpanzee,macaque",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study reports the prediction failure rate of chimpanzee and macaque models for AIDS vaccination development compared to human AIDS outcomes, which is a direct animal-vs-human comparison."
+ },
+ "26856335": {
+  "error": "Invalid control character at: line 3 column 36 (char 76)"
+ },
+ "22460880": {
+  "has_animal_human_comparison": false,
+  "evidence": "none",
+  "comparison_type": "none-found",
+  "reason": "The study describes the reproducibility of preclinical cancer studies and industry validation rates. However, it does not report any quantitative comparison between animal results and human results. The comparisons made are between landmark preclinical studies and confirmation attempts, and between published preclinical studies and validation attempts, all within the realm of preclinical research."
+ },
+ "35167625": {
+  "error": "Unterminated string starting at: line 3 column 15 (char 55)"
+ },
+ "29143114": {
+  "has_animal_human_comparison": true,
+  "evidence": "The study translated two cancer vaccine strategies from mice into human clinical trials.",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly mentions translating strategies from mice (animal) to human clinical trials, indicating a comparison between animal model results and human outcomes."
+ },
+ "37752535": {
+  "has_animal_human_comparison": false,
+  "evidence": "The study developed and validated a semiautomated pipeline called HeartJ for the quantitative analysis of cardiac histology in both human and murine samples.",
+  "comparison_type": "none-found",
+  "reason": "The study describes the analysis of human samples and murine samples separately. There are no direct quantitative comparisons reported between the results obtained from the animal models and the human samples."
+ },
+ "40558535": {
+  "has_animal_human_comparison": false,
+  "evidence": "The study reviews genetic and environmental risk factors for ASD and how they are modeled in animals and human pluripotent stem cell-derived models, highlighting the strengths and weaknesses of each. However, the provided measurements only include comparisons within humans or within animals, not between them.",
+  "comparison_type": "none-found",
+  "reason": "The study description mentions modeling in animals and human stem cells, but the listed measurements do not contain any direct quantitative comparisons between animal results and human results. The comparisons are either within human data (e.g., males vs. females affected by ASD) or within animal data (e.g., VPA dose in pigs vs. monkeys, neocortex proportion in rodents vs. primates)."
+ },
+ "39182537": {
+  "has_animal_human_comparison": false,
+  "evidence": "The study reports functional connectivity changes in human patients with thalamic pain and in macaques with induced thalamic pain. However, it does not report any direct quantitative comparison between the results from the human patients and the macaque model. The comparisons made are either within humans (patients vs. controls) or within macaques (before vs. after induction).",
+  "comparison_type": "none-found",
+  "reason": "The study describes separate analyses for human patients and macaque models of thalamic pain. While both groups exhibit functional connectivity changes, there is no reported quantitative comparison between the human data and the macaque data. The listed measurements are either within-human comparisons or within-animal comparisons."
+ },
+ "22303754": {
+  "has_animal_human_comparison": false,
+  "evidence": "None other",
+  "comparison_type": "within-animal-only",
+  "reason": "The study only compares measurements within dogs, specifically comparing different biomarkers (IL8, MCP1, MMPs) against the diagnosis of osteoarthritis in dogs. There is no comparison made to human results."
+ },
+ "39093553": {
+  "has_animal_human_comparison": false,
+  "evidence": "none",
+  "comparison_type": "within-animal-only",
+  "reason": "The study compares rat embryofetal development studies with rabbit embryofetal development studies. There is no mention of comparing these animal results to any human outcomes or data."
+ },
+ "19297654": {
+  "has_animal_human_comparison": true,
+  "evidence": "concordance rate: 50.0 percent | measures: share of research areas where animal studies and human trials had substantially similar results | compared: animal studies vs human trials | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly compares 'animal studies' with 'human trials' in terms of concordance rates, indicating a direct comparison between animal model results and human outcomes."
+ },
+ "27870924": {
+  "has_animal_human_comparison": false,
+  "evidence": "The study systematically reviewed preclinical animal models of sepsis to evaluate the efficacy of mesenchymal stem cell (MSC) therapy prior to initiating a first-in-human trial. All reported measurements are within-animal comparisons (e.g., MSC therapy vs. control treatment in preclinical animal models of sepsis). There are no direct comparisons between animal results and human outcomes.",
+  "comparison_type": "within-animal-only",
+  "reason": "The study focuses exclusively on preclinical animal models and does not report any direct quantitative comparisons between animal results and human outcomes. While the stated goal is to inform a first-in-human trial, the reported measurements are all confined to the animal studies themselves."
+ },
+ "12667944": {
+  "has_animal_human_comparison": true,
+  "evidence": "The study compared preclinical cardiac electrophysiology data (in vitro and in vivo) with clinical QT interval prolongation and torsade de pointes (TdP) risk for 100 drugs.",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study explicitly states it compared 'preclinical cardiac electrophysiology data (in vitro and in vivo)' with 'clinical QT interval prolongation and torsade de pointes (TdP) risk'. This indicates a comparison between animal/in vitro data (preclinical) and human outcomes (clinical)."
+ },
+ "16453316": {
+  "has_animal_human_comparison": false,
+  "evidence": "The study aimed to contrast the experimental efficacy and scope of testing of drugs used clinically with those tested only experimentally in acute stroke models.",
+  "comparison_type": "none-found",
+  "reason": "The study compares drugs used clinically with drugs tested only in animal models, but it does not report a direct quantitative comparison between animal results and human results. The comparisons made are between different categories of drugs (clinically used vs. experimentally tested) within the context of animal models, or between experimental results and control conditions within animal models."
+ },
+ "37712424": {
+  "has_animal_human_comparison": false,
+  "evidence": "The study discusses improving translation from animal models to human patients, but does not report a quantitative comparison between animal and human results.",
+  "comparison_type": "none-found",
+  "reason": "The study describes a general approach to improve translational research but does not present specific quantitative comparisons between animal and human outcomes. The provided measurements are either within-animal comparisons (genetic variation vs environmental variation in mice) or human-only comparisons (landmark findings vs clinical trial validation)."
+ },
+ "26460544": {
+  "has_animal_human_comparison": false,
+  "evidence": "The study reports on preclinical efficacy studies of sunitinib, but all comparisons are within the preclinical domain (e.g., preclinical experiments vs control, preclinical studies vs in-house replication). There is no mention of comparing these preclinical results to human clinical outcomes or patient data.",
+  "comparison_type": "within-animal-only",
+  "reason": "The study focuses exclusively on preclinical research and does not include any comparisons with human results."
+ },
+ "36859342": {
+  "has_animal_human_comparison": true,
+  "evidence": "overlap: 84.0 percent | measures: overlap between preclinical and clinical pharmacologically active dose ranges based on human equivalent dose (HED) | compared: preclinical pharmacologically active dose range vs. clinical pharmacologically active dose range | species: none",
+  "comparison_type": "animal-vs-human",
+  "reason": "The study compares preclinical data (from animal models) with clinical study results (in humans) to assess the translatability of dose ranges. Specifically, it quantifies the overlap between preclinical and clinical pharmacologically active dose ranges, which is a direct comparison between animal-derived predictions and human outcomes."
+ }
+}

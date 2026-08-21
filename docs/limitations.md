@@ -180,3 +180,31 @@ rather than being deleted, so the exclusion is auditable.
 
 Hay 2014 (drug attrition) was excluded as `human-only`: it supplies the base rate for the
 PPV curve (PLAN §7.2) and belongs to the auxiliary set, not to an arm.
+
+## Measurement scoping (2026-08-21)
+
+**L29 — Rubric r4: the comparison must have an animal on one side and a human on the other.**
+r3 required the index test to be a live animal but not what it was compared with, so
+within-species work qualified: a paper computing sensitivity/specificity for diagnosing
+osteoarthritis *in dogs* satisfied "reports a quantitative measure of agreement" with no
+human data at all. r4 judges each study against its own extracted measurements. 10 studies
+excluded (within-animal, within-human, or no comparison found), leaving 61 eligible.
+
+**L30 — A judging step read a gap in our data as a finding about the literature.** The first
+r4 run excluded Redfern 2003, Bracken 2009 and two others because the `species` field on
+their measurements was empty — an extraction gap, not evidence of no cross-species
+comparison. Redfern 2003 is an Arm 2 anchor and one of only three studies reporting
+sensitivity/specificity. The prompt now states explicitly that an empty species field is a
+gap in our data and directs judgment to the comparison text. Failures fell from 15 to 10.
+
+**L31 — Study-level scoping was the wrong granularity.** An included study reports many
+figures and most are not animal-to-human. Of 1,344 extracted figures, only **379 (28%)**
+compare an animal with a human; 336 are within-animal (including cross-species animal
+comparisons such as zebrafish vs mammal), 269 within-human, 147 about research conduct
+(e.g. inter-rater agreement between data extractors), 147 animal vs non-animal method, and
+66 bare counts. Aggregate pages show only the animal-vs-human figures; the rest remain on
+each study page, labelled, for completeness.
+
+**L32 — Values are ranked only within comparable units.** A count of 4,418 genes is not
+"larger" than 94%. Sorting groups percentages and proportions together, correlations next,
+and counts last.

@@ -102,7 +102,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The majority of these failures are due to unexpected toxicity \u2014 that is, safety issues revealed in human trials that were not apparent in animal tests \u2014 or lack of ef\ufb01cacy. However, the use of more innovative tools, such as organs-on-chips, in the preclinical pipeline for drug testing, has revealed that these tools are more able to predict unexpected safety events prior to clinical trials and so can be used for this, as well as for ef\ufb01cacy testing. Here, we review several disease areas, and consider how the use of animal models has failed to offer effective new treatments.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "improvement: 67.0 percent | measures: share of trials on non-human primates that showed improvement for potentially disease-modifying interventions | compared: non-human primate trials vs human trials for Parkinson's disease drug treatments | species: non-human primate"
  },
  "24489990": {
   "pmid": "24489990",
@@ -143,7 +145,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "In vitro (test tube or cell culture) and in vivo (animal experiments) studies examine preliminary efficacy, toxicity and pharmacokinetics.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "differences in transcription factor binding sites: 41.0 percent | measures: minimum share of transcription factor binding sites that differ between humans and mice | compared: transcription factor binding sites in humans and mice | species: human,mouse"
  },
  "22460880": {
   "pmid": "22460880",
@@ -165,8 +169,9 @@
   ],
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Many landmark findings in preclinical oncology research are not reproducible, in part because of inadequate cell lines and animal models.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: none-found \u2014 The study describes the reproducibility of preclinical cancer studies and industry validation rates. However, it does not report any quantitative comparison between animal results and human results. The comparisons made ",
+  "r4_comparison_type": "none-found"
  },
  "31307492": {
   "pmid": "31307492",
@@ -256,7 +261,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The use of mice as animal models has long been considered essential in modern biomedical research, but the role of mouse models in research was challenged by a recent report that genomic responses in mouse models poorly mimic human inflammatory diseases. Here we reevaluated the same gene expression datasets used in the previous study by focusing on genes whose expression levels were significantly changed in both humans and mice.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "Spearman\u2019s rank correlation coefficient: 0.43 correlation | measures: correlation of gene expression levels between mouse models and human conditions | compared: mouse models vs. human conditions | species: mouse,human"
  },
  "24678540": {
   "pmid": "24678540",
@@ -278,7 +285,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "At the ALS Therapy Development Institute (TDI) in Cambridge, Massachusetts, we have tested more than 100 potential drugs in an established mouse model of this disease (mostly unpublished work).",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "failure rate: 80.0 percent | measures: share of potential therapeutics that fail when tested in people after animal studies suggest they will be safe and effective | compared: animal studies vs human testing | species: human,animal"
  },
  "21892149": {
   "pmid": "21892149",
@@ -348,7 +357,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The blinded database was composed of 182 molecules and contained animal toxicology data coupled with clinical observations from phase I human studies.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "sensitivity: 48.0 percent | measures: share of human toxicities that were also seen in at least one animal species | compared: animal toxicology data vs clinical observations | species: none"
  },
  "20613859": {
   "pmid": "20613859",
@@ -518,7 +529,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "ImmuneSigDB included data from healthy human subjects, patients with immune or non-immune diseases, and mouse models.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance: 0.857 correlation | measures: the similarity of genes driving the enrichment of shared gene sets in human and mouse sepsis. | compared: leading edge genes in human sepsis vs. mouse sepsis | species: human,mouse"
  },
  "21350617": {
   "pmid": "21350617",
@@ -809,7 +822,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The accompanying paper discusses the rabbit model that was used to identify the efficacy of tissue plasminogen activator (tPA) treatment. Use of caffeinol as a cytoprotective agent in rat models yielded exciting results, which led to clinical trials.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "the rabbit model achieved laboratory to clinical translational success for tissue plasminogen activator (tPA) treatment."
  },
  "20806453": {
   "pmid": "20806453",
@@ -878,7 +893,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "We translated two cancer vaccine strategies from mice into human clinical trials.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "The study translated two cancer vaccine strategies from mice into human clinical trials."
  },
  "38676802": {
   "pmid": "38676802",
@@ -917,7 +934,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "PDXs are a valuable preclinical research platform generated through transplantation of a patient's resected tumor into an immunodeficient or humanized mouse.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "PDX response to anticancer drugs in mice corresponds to the original patient's susceptibility to these treatments in the clinic."
  },
  "25814248": {
   "pmid": "25814248",
@@ -1011,7 +1030,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "In this study, we collected retrospective information from 598 animals (509 WT/GA mice, 89 WT/GA rats): 336 animals subjected to treatment (MASLD-inducing conditions: 315 animals; or CCl 4 : 21 animals) and 262 animals as controls for MASLD-inducing conditions (247 animals) or CCl 4 (15 animals), returning 39 models (that is, study designs) aimed at modeling MASLD, and two time points for CCl 4 (positive controls of MASLD-independent fibrosis).",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "agreement rate: 50 percent | measures: the proportion of differentially expressed genes between murine models and human data that were statistically modulated and in the same direction. | compared: murine models vs human data | species: mouse,human"
  },
  "26479923": {
   "pmid": "26479923",
@@ -1055,7 +1076,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "With these PDXs, we performed in vivo compound screens using a 1 \u00d7 1 \u00d7 1 experimental design (PDX clinical trial or PCT) to assess the population responses to 62 treatments across six indications.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "correlation: 0.56 correlation | measures: correlation between individual patient response rates and PDX response rates to PI3K inhibitors | compared: individual patient response rate vs. PDX response rate | species: human"
  },
  "27261415": {
   "pmid": "27261415",
@@ -1102,7 +1125,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "We here report a d iet- i nduced a nimal m odel o f non-alcoholic fatty liver d isease (DIAMOND) using an isogenic strain derived from a cross of two common mouse strains, 129S1/SvImJ and C57BL/6J where a simple high fat diet accompanied by ad libitum consumption of water with a high fructose and glucose content (Western diet sugar water (WD SW)) sequentially induces steatosis, steatohepatitis, progressive fibrosis and HCC.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance: 0.02 proportion | measures: similarity in gene expression patterns between mouse and human NASH transcriptomes | compared: mouse (8 weeks) transcriptome vs human NASH transcriptome | species: mouse,human"
  },
  "32631250": {
   "pmid": "32631250",
@@ -1148,7 +1173,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The present study aimed to further validate the clinical translatability of GAN diet-induced liver lesions by comparing liver biopsy histopathological and transcriptome characteristics in GAN DIO-NASH mice and human NASH patients.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "overlap: 4418 count | measures: number of differentially expressed genes (DEGs) | compared: GAN DIO-NASH mice vs. NASH patients | species: mouse"
  },
  "29302222": {
   "pmid": "29302222",
@@ -1191,7 +1218,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "As explained, these models have excellent face validity, and it is assumed that the neurochemical and neuroanatomical substrates involved in drug-intake behavior are similar in laboratory rodents and humans 8 , 9 (which is often defined as construct validity). Consequently, self-administration-based animal models are helpful in unraveling the molecular and neurobiological mechanisms of drug-related behaviors and therefore critical in identifying strategies useful in the intervention of human drug consumption; ie, they provide predictive validity.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance: 100 percent | measures: the incubation phenomenon of drug seeking occurring in laboratory rats and humans | compared: laboratory rats and humans | species: rat,human"
  },
  "27916279": {
   "pmid": "27916279",
@@ -1231,7 +1260,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Preclinical drug versus food choice procedures have produced increasingly concordant results with both human laboratory drug self-administration studies and double-blind placebo-controlled clinical trials.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordant results: None other | measures: pharmacological treatment results in preclinical drug versus food choice procedures align with pharmacological treatment results in the clinical setting. | compared: pharmacological treatment results in preclinical drug versus food choice procedures vs pharmacological treatment results in the clinical setting | species: none"
  },
  "37752535": {
   "pmid": "37752535",
@@ -1274,8 +1305,9 @@
   "screen_reason": "The abstract mentions validating a pipeline in both animal models and human autopsy samples and explicitly states 'murine and human cardiomyocytes had similar diameters in health and extent of hypertrophy in disease confirming the translatability of our murine cardiac hypertrophy model.' This suggests a quantitative comparison of agreement between animal and human results.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Mice The animal study was performed following German law for the protection of animals. The investigation conforms to the guide for the Care and Use of Laboratory Animals published by the United States National Institutes of Health (Eighth edition; revised 2011). The study was approved by the regional Animal Welfare Inspectorate (Saarl\u00e4ndisches Landesamt f\u00fcr Verbraucherschutz No21/2014). Transverse-aortic constriction (TAC) was performed in five weeks old C57BL/6N mice (Charles River, Germany). C57/BL/6N mice were anesthetized with a 1:10 dilution of 100 mg/kg ketamine and 10 mg/kg xylazine and connected to a volume-cycled rodent ventilator (Harvard Apparatus) using a 20 gauge catheter. Constriction of the aorta was performed by tying a 7\u20130 nylon suture ligature against a 27 gauge needle yielding a transverse aortic constriction of 65\u201370%. Control mice underwent a sham operation in which the nylon suture was placed, but not pulled tied. After 6 weeks, animals were euthanized by injecting an overdose of a mixture of ketamine hydrochloride (100 mg/kg body weight) and xylazine hydrochloride (10 mg/kg body weight). Hearts were rapidly excised and processed for further experiments.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: none-found \u2014 The study describes the analysis of human samples and murine samples separately. There are no direct quantitative comparisons reported between the results obtained from the animal models and the human samples.",
+  "r4_comparison_type": "none-found"
  },
  "40558535": {
   "pmid": "40558535",
@@ -1317,8 +1349,9 @@
   "screen_reason": "screener error - auto-advance: Expecting property name enclosed in double quotes: line 4 column 3 (char 50)",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Animals such as rats and mice have traditionally been used to model ASD phenotypes like hyperactivity, aggression, repetitive behaviors, deficits in memory and sociability (in terms of behavioral modalities), as well as microcephaly and myelination deficits (in terms of brain morphology).",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: none-found \u2014 The study description mentions modeling in animals and human stem cells, but the listed measurements do not contain any direct quantitative comparisons between animal results and human results. The comparisons are either",
+  "r4_comparison_type": "none-found"
  },
  "35781406": {
   "pmid": "35781406",
@@ -1365,7 +1398,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Patient-derived tumour xenografts (PDTX) are a promising solution for developing new therapies and real-time personalised medicine because of their highly effective prediction of drug efficacy.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance: 100.0 percent | measures: the proportion of drug efficacy tests where the outcome in the PDTX model matched the patient's response. | compared: PDTX model vs patients' responses | species: none"
  },
  "32413492": {
   "pmid": "32413492",
@@ -1449,7 +1484,9 @@
   "index_test": "mixed-animal-and-nonanimal",
   "index_test_evidence": "The U.S. Food and Drug Administration (FDA) and European Medicines Agency generally require the safety of new drug candidates to be evaluated in both rodent and nonrodent animal models, frequently rat and dog, before moving the new chemical entity into human clinical trials. An analysis of 150 drugs that caused adverse events in humans found that regulatory testing in rats and dogs correctly predicted just 71% of toxicities in humans (1).",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "prediction rate: 71.0 percent | measures: share of human toxicities that were also seen in at least one animal species | compared: dog and rat toxicity testing vs human toxicities | species: rat,dog,human"
  },
  "34558834": {
   "pmid": "34558834",
@@ -1498,7 +1535,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Mouse Models and Human Data Sets A description of the mouse and human tissues and experimental procedures is available in the Supporting Information. The present analysis included transcriptome data from seven mouse models (one with chronic and six with acute liver damage) consisting of 227 mice (Table 1 ; Supporting Fig. S1 A) and five studies of human CLD with a total of 372 patients (Table 1 ; Supporting Fig. S1 B).",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "recall: 0.38 proportion | measures: share of up-regulated genes in human NAFLD that were also up-regulated in the 12-month CCl 4 mouse model. | compared: 12-month CCl 4 mouse model vs. human NAFLD | species: human,mouse"
  },
  "32127577": {
   "pmid": "32127577",
@@ -1550,7 +1589,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Here we performed a simultaneous TG and PG assay (STPGA) to compare human response to a range of species (baboon, Rhesus macaque, swine, rat, rabbit and guinea pig) that are widely evaluated as animal models in hemostasis research and therapeutics development.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance rate: 10 percent | measures: the share of human toxicities that were also seen in at least one animal species | compared: animal models vs human response | species: none"
  },
  "39255793": {
   "pmid": "39255793",
@@ -1592,7 +1633,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "For example, due to the short reproduction time, high reproducibility, and cost efficiency offered by mouse-based experiments, the mouse is the most widely used animal model for human drug development.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "P-sites mapped: 87716 count | measures: experimentally identified P-sites in human that were successfully mapped to corresponding sites in mouse sequence | compared: human P-sites to mouse sequence | species: human,mouse"
  },
  "40418625": {
   "pmid": "40418625",
@@ -1725,7 +1768,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "To study this phenomenon in non-human animals, rodent versions of the PRL task have been developed 40 , 41 . While human and non-human versions of the task are conceptually similar and may yield comparable behavioral results, to our knowledge, a systematic cross-species comparison of behavioral, computational, and neurophysiological markers of cognitive flexibility has not been reported.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "reversals per 100 trials: 4.4 count | measures: the number of times participants switched their choice after a series of correct responses, per 100 trials. | compared: humans vs rats | species: humans,rats"
  },
  "39182537": {
   "pmid": "39182537",
@@ -1765,8 +1810,9 @@
   "screen_reason": "The study reports a cross-species convergence of functional connectivity changes in thalamic pain between human patients and macaque models. While it doesn't explicitly state a quantitative agreement metric like concordance rate, it directly compares and finds similarities in specific functional connectivity patterns (e.g., amygdala-brainstem FC) between the two species, suggesting a degree of translational validity for the animal model in reflecting human disease mechanisms.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "In humans, resting-state FC was compared between patients with thalamic pain and healthy individuals. Furthermore, resting-state FC was compared in macaques, before and after the induction of thalamic pain in the same individuals.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: none-found \u2014 The study describes separate analyses for human patients and macaque models of thalamic pain. While both groups exhibit functional connectivity changes, there is no reported quantitative comparison between the human data",
+  "r4_comparison_type": "none-found"
  },
  "38642821": {
   "pmid": "38642821",
@@ -1936,8 +1982,9 @@
   "screen_reason": "The abstract reports the calculation of sensitivities and specificities for potential biomarker candidates identified in animal models, which is a quantitative measure of agreement/utility that can be applied to human clinical results.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The cytokine, chemokine, and matrix metalloprotease (MMP) profiles of synovial fluid, serum, and urine from dogs with surgically induced and naturally occurring OA were compared with dogs without OA using xMAP technology (Qiagen Inc., Valencia, CA).",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: within-animal-only \u2014 The study only compares measurements within dogs, specifically comparing different biomarkers (IL8, MCP1, MMPs) against the diagnosis of osteoarthritis in dogs. There is no comparison made to human results.",
+  "r4_comparison_type": "within-animal-only"
  },
  "26563791": {
   "pmid": "26563791",
@@ -2067,7 +2114,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "In the current study, we sought to determine the ability of preclinical animal models to predict toxicities seen in Phase 1 clinical trials of oncology drugs.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "positive predictive value (PPV) for all toxicity grades: 0.67 proportion | measures: the probability that human Phase 1 studies will show a particular toxicity given that animal data show that toxicity | compared: dog toxicity vs human toxicity | species: dog"
  },
  "11029269": {
   "pmid": "11029269",
@@ -2115,7 +2164,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The main aim of this project was to examine the strengths and weaknesses of animal studies to predict human toxicity (HT). The database was developed from a survey which covered only those compounds where HTs were identified during clinical development of new pharmaceuticals, determining whether animal toxicity studies identified concordant target organ toxicities in humans.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance rate: 70 percent | measures: share of human toxicities that were also seen in at least one animal species | compared: animal models vs human toxicities | species: rodent,nonrodent"
  },
  "28422076": {
   "pmid": "28422076",
@@ -2164,7 +2215,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The ZeGlobalTox assay, an innovative experimental procedure that addresses organ-specific toxicity of different drugs on zebrafish larvae (up to 5 dpf). Thus, the proposed approach allows the independent analysis of cardio-, neuro-, and hepatotoxicity effects in the same animal ( Figure 1 A,B), as a proxy to predict their possible impact in human organs.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "specificity: 89.0 percent | measures: share of human toxicities that were correctly identified as toxic by the assay | compared: zebrafish experimental data with known human toxicity outputs | species: zebrafish,human"
  },
  "38910363": {
   "pmid": "38910363",
@@ -2349,8 +2402,9 @@
   "screen_reason": "The study reports a quantitative measure of agreement (concordance rate of 55.6% and discordance rate of 44.6%) between animal (rat and rabbit) results and human clinical relevance for embryofetal development studies of pharmaceuticals. This directly addresses the criteria for inclusion.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "In this study, rat and rabbit EFD studies were evaluated to analyze the added value of a second species.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: within-animal-only \u2014 The study compares rat embryofetal development studies with rabbit embryofetal development studies. There is no mention of comparing these animal results to any human outcomes or data.",
+  "r4_comparison_type": "within-animal-only"
  },
  "18468556": {
   "pmid": "18468556",
@@ -2388,7 +2442,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The zebrafish model organism is increasingly used for assessing drug toxicity and safety and numerous studies confirm that mammalian and zebrafish toxicity profiles are strikingly similar.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance: 22 count | measures: drugs that cause QT prolongation in humans also caused bradycardia and blocked AV conduction in zebrafish | compared: drug-induced QT prolongation in humans vs. zebrafish response | species: human,zebrafish"
  },
  "33085125": {
   "pmid": "33085125",
@@ -2573,7 +2629,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n&#xa0;=&#xa0;48) and canines (n&#xa0;=&#xa0;8).",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "change in QTc: 10.9 other | measures: the change in QTc interval in non-human primates at a specific concentration. | compared: non-human primate QTc change vs. human QTc change threshold | species: non-human primate"
  },
  "40863351": {
   "pmid": "40863351",
@@ -2664,7 +2722,9 @@
   "index_test": "mixed-animal-and-nonanimal",
   "index_test_evidence": "Clinical, heart rate-corrected QT interval (QTc) data on 24 compounds (13 positives; 11 negatives) were compared with their effect on dog QTc and the concentration of compound causing 50% inhibition (IC50) of hERG current.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "receiver operating characteristic area under the curve: 0.81 other | measures: concordance between safety margin (QTc effects in dogs and clinical peak free plasma exposure) and clinical outcome | compared: safety margin between QTc effects in dogs and clinical peak free plasma exposure vs clinical outcome | species: dog"
  },
  "20807552": {
   "pmid": "20807552",
@@ -2747,7 +2807,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Zebrafish-A Whole-organism Screening Model Zebrafish ( Danio rerio ) belonging to the family Cyprinidae, is a freshwater fish native to northern India, arose in the Ganges region and can be commonly found in countries including India, Bangladesh, Nepal, Myanmar, and Pakistan.[ 5 6 ] The interest in zebrafish as an in vivo model system has increased exponentially due to several characteristics of zebrafish. It is found that zebrafish resembles mammalian models.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "QT intervals: 231 other | measures: the duration of ventricular depolarization and repolarization in zebrafish | compared: zebrafish vs humans | species: zebrafish,humans"
  },
  "33813006": {
   "pmid": "33813006",
@@ -2790,7 +2852,9 @@
   "index_test": "mixed-animal-and-nonanimal",
   "index_test_evidence": "An evaluation of such testing, supporting first clinical entry of 105 small molecule drug candidates over the last decade, showed that a \"core battery\" of in vitro electrophysiological (hERG), conscious non-rodent telemetry cardiovascular, rodent central nervous system (CNS) (modified Irwin's or functional observational battery [FOB] test) and respiratory function (plethysmography) studies was performed.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "utility: 21 percent | measures: share of studies giving findings of obvious concern to moving drugs into the clinic | compared: rodent central nervous system (CNS) studies vs clinical concerns | species: rodent"
  },
  "32735877": {
   "pmid": "32735877",
@@ -2879,7 +2943,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "To this end, we investigated translation of HR and BP endpoints using data from 83 compounds that were tested in telemetry studies in rat and large animal (LA; dog or monkey) and 79 compounds that were tested in LA telemetry studies and human phase I clinical trials.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "sensitivity: 78.0 percent | measures: share of clinical blood pressure and heart rate changes that were also seen in large animal models. | compared: large animal CV measures vs clinical changes | species: dog,monkey,human"
  },
  "26803853": {
   "pmid": "26803853",
@@ -2948,7 +3014,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The events reported in five species - rat, dog, mouse, rabbit, and cynomolgus monkey - were treated as diagnostic tests for human events and the diagnostic power was computed for each event/species pair using likelihood ratios.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "the diagnostic power of animal events for human events was computed using likelihood ratios"
  },
  "17175568": {
   "pmid": "17175568",
@@ -3018,7 +3086,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Study selection Animal studies for interventions with unambiguous evidence of a treatment effect (benefit or harm) in clinical trials: head injury, antifibrinolytics in haemorrhage, thrombolysis in acute ischaemic stroke, tirilazad in acute ischaemic stroke, antenatal corticosteroids to prevent neonatal respiratory distress syndrome, and bisphosphonates to treat osteoporosis. Review methods Data were extracted on study design, allocation concealment, number of randomised animals, type of model, intervention, and outcome.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "pooled odds ratio: 0.58 proportion | measures: share of adverse functional outcomes in animal models treated with corticosteroids compared to control. | compared: corticosteroids in animal models vs. human clinical trials for head injury | species: mouse"
  },
  "19297654": {
   "pmid": "19297654",
@@ -3040,7 +3110,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The concept that animal research, particularly that relating to pharmaceuticals and environmental agents, may be a poor predictor of human experience is not new. A thousand years ago, Ibn Sina commented on the need to study humans rather than animals,1 and Alexander Pope\u2019s dictum \u2018The proper study of mankind is man\u2019 is well known and has been widely cited.2 Pharmacologists, in particular, have long recognized the difficulties inherent in extrapolating drug data from animals to man.3,4 Given the large number of animal studies conducted, it would be expected that some animal experiments do predict human reactions. For example, penicillin was observed to protect both mice and humans from staphylococcal infections,5 and isotretinoin (\u2018Acutane\u2019) causes birth defects in rabbits and monkeys as well as in humans (although not in mice or rats).6 By contrast, corticosteroids are widely teratogenic in animals but not in humans,7 and thalidomide is not a teratogen in many animal species but it is in humans.8 Recent experience in a phase 1 study of the monoclonal antibody TGN 1412 resulted in life-threatening morbidity in all six healthy volunteers, reflecting inadequate prediction even in non-human primates of the human response.9",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance rate: 50.0 percent | measures: share of research areas where animal studies and human trials had substantially similar results | compared: animal studies vs human trials | species: none"
  },
  "17032985": {
   "pmid": "17032985",
@@ -3114,7 +3186,9 @@
   "index_test": "mixed-animal-and-nonanimal",
   "index_test_evidence": "The search identified reports on preclinical studies of 155 drugs that had been carried forward to human testing as part of the FDA approval process. Of these, 27 had been approved as monotherapy for lung cancer, but 128 had failed at some stage of human testing. Preclinical Cell Models Our search identified reports on 378 cell culture experiments ( Supplemental Table 2 ) reported from 308 data sources from peer-reviewed articles and public drug libraries ( Supplemental Figure 1 ). IC50 values were not reported for 55 of these, precluding their use in the analyses. Table 1 summarizes the remaining 323 experiments according to type of drug and cell line used, and provides of IC50 values that define each quartile of this variable for failed and approved drugs. The search identified 144 preclinical studies using murine models of lung cancer drugs that satisfied inclusion criteria, with all published reports providing sufficient experimental data to use in our analyses ( Supplemental Table 2 ).",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "AUC: 0.45 correlation | measures: the accuracy of TGI value as a predictor of drug approval. | compared: TGI value vs. drug approval status in murine models | species: mouse"
  },
  "26753942": {
   "pmid": "26753942",
@@ -3159,7 +3233,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Animals are still widely used in drug development and safety tests, despite evidence for their lack of predictive value. In this regard, we recently showed, by producing Likelihood Ratios (LRs) for an extensive data set of over 3,000 drugs with both animal and human data, that the absence of toxicity in animals provides little or virtually no evidential weight that adverse drug reactions will also be absent in humans.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "Likelihood Ratios (LRs): None other | measures: the evidential weight that adverse drug reactions will be absent in humans when toxicity is absent in animals | compared: absence of toxicity in animals vs absence of adverse drug reactions in humans | species: human,animal"
  },
  "30364994": {
   "pmid": "30364994",
@@ -3201,7 +3277,9 @@
   "index_test": "mixed-animal-and-nonanimal",
   "index_test_evidence": "Current preclinical GI safety assessment depends on in vivo tests in higher-order species to achieve translational accuracy. Retrospective evaluation of compounds with clinical GI toxicity (100% prevalence), revealed that GIT in rodents had only 46% clinical concordance compared with 83% in nonrodents ( Olson et al. , 2000 ). Conversely, when compounds with preclinical GIT were followed prospectively through the completion of Phase 1 trials, the diagnostic value of different species revealed a proportionate reduction in uncertainty of 15% and 28% in rat and dog respectively compared with 87% in primate studies ( Monticello et al. , 2017 ).",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "clinical concordance: 46.0 percent | measures: share of compounds with preclinical gastrointestinal toxicities that were also seen in humans | compared: rodent preclinical GI toxicity vs human clinical GI toxicity | species: rodent"
  },
  "27870924": {
   "pmid": "27870924",
@@ -3245,8 +3323,9 @@
   "screen_reason": "The study reports a quantitative measure of agreement between preclinical animal results and human clinical results by performing a meta-analysis of preclinical data (odds ratio 0.27, 95% CI 0.18-0.40) in preparation for a first-in-human trial. This directly compares the effect size in animal models to what is expected in humans.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Our systematic review demonstrates that MSC therapy reduces the odds of death in preclinical animal sepsis models.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: within-animal-only \u2014 The study focuses exclusively on preclinical animal models and does not report any direct quantitative comparisons between animal results and human outcomes. While the stated goal is to inform a first-in-human trial, the",
+  "r4_comparison_type": "within-animal-only"
  },
  "23522086": {
   "pmid": "23522086",
@@ -3343,7 +3422,9 @@
   "index_test": "mixed-animal-and-nonanimal",
   "index_test_evidence": "These data were set against the free plasma concentrations attained during clinical use (effective therapeutic plasma concentrations; ETPC unbound ). The drugs were divided into five categories: (1) Class Ia and III antiarrhythmics; (2) Withdrawn from market due to TdP; (3) Measurable incidence / numerous reports of TdP in humans; (4) Isolated reports of TdP in humans; (5) No reports of TdP in humans. Results: Data from hERG (or IKr ) assays in addition to ETPC unbound data were available for 52 drugs. For Category 1 drugs, data for hERG /IKr IC 50 , APD 90 , QTc in animals and QTc in humans were generally close to or superimposed on the ETPC unbound values.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "The study compared preclinical cardiac electrophysiology data (in vitro and in vivo) with clinical QT interval prolongation and torsade de pointes (TdP) risk for 100 drugs."
  },
  "16453316": {
   "pmid": "16453316",
@@ -3388,8 +3469,9 @@
   "screen_reason": "The abstract reports a quantitative comparison of experimental efficacy between drugs used clinically and those tested only experimentally, including a statistical comparison of average improvement percentages (31.3% vs 24.4%) and a p-value, which indicates a measure of agreement or difference in outcomes between animal models and clinical translation.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Controlled in vivo and in vitro experiments using functional or histological end points were selected for analysis.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: none-found \u2014 The study compares drugs used clinically with drugs tested only in animal models, but it does not report a direct quantitative comparison between animal results and human results. The comparisons made are between differe",
+  "r4_comparison_type": "none-found"
  },
  "39379679": {
   "pmid": "39379679",
@@ -3478,8 +3560,9 @@
   ],
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The relative ease with which results can be gathered using a single model often leads researchers to discount the possibility that the results may not be representative of more diverse genetic backgrounds, reducing the translational potential for humans. To improve translation, we propose as one solution that a robustness test should be considered to confirm that results are \u201crobust across heterogeneous genetic contexts,\u201d thereby improving prediction of likely responses in heterogeneous patient populations. Furthermore, robustness approaches could be leveraged to identify biomarkers that prognosticate likely responders, heightening public health outcomes and alleviating financial burden. This general concept pertains to all genetically homogeneous preclinical models as well as large, genetically ill-defined outbred animals used in small numbers for safety testing, but mice will be used as the exemplar given their extensive use in modeling therapeutic efficacy in human diseases.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: none-found \u2014 The study describes a general approach to improve translational research but does not present specific quantitative comparisons between animal and human outcomes. The provided measurements are either within-animal compar",
+  "r4_comparison_type": "none-found"
  },
  "29590200": {
   "pmid": "29590200",
@@ -3524,7 +3607,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The authors identified and systematically reviewed 228 animal studies relating to the 6 interventions.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "concordance rate: 33.3 percent | measures: the proportion of interventions for which findings from animal studies agreed with findings from human studies. | compared: animal studies vs human studies | species: none"
  },
  "38736280": {
   "pmid": "38736280",
@@ -3602,7 +3687,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Background Animal testing has been central to pre-clinical drug development for several decades, yet there remains no substantial, robust, published evidence that this has a scientific basis\u2014i.e. that these tests are reliably predictive of human responses, both with respect to efficacy and toxicity/safety.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "probability increase: 4 percent | measures: the increase in the probability of a drug not being toxic in humans, given a negative test in any of five animal species. | compared: negative animal test vs. human toxicity | species: dogs,rats,mice,rabbits,monkeys"
  },
  "18772421": {
   "pmid": "18772421",
@@ -3669,7 +3756,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Animal experiments are to date the most important source of such data.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "correlation: 0.0 correlation | measures: the correlation of genomic responses between mouse models and human inflammatory diseases. | compared: mouse models vs human inflammatory diseases | species: mouse,human"
  },
  "32152206": {
   "pmid": "32152206",
@@ -3791,7 +3880,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "As human studies often encounter numerous constraints, including larger biological heterogeneity, hidden confounding factors, greater cost and time, and potential ethical concerns, model organisms have played an indispensable role in preclinical research to understand the pathogenesis of human diseases at the behavioral, cellular, and molecular levels.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "genome-wide c-scores: 0.081 proportion | measures: concordance between mouse inflammatory studies and human inflammatory studies | compared: mouse inflammatory studies vs. human inflammatory studies | species: mouse,human"
  },
  "28731442": {
   "pmid": "28731442",
@@ -3833,7 +3924,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Modulation of neuroinflammation for drug target- or biomarker identification requires extensive use of rodent models of AD to study molecular drivers of inflammation and various disease phenotypes associated to it [ 5 ].",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "- mimicked: 12.0 percent | measures: share of genes deregulated in human conditions that were mimicked in mouse models. | compared: mouse models vs human conditions | species: mouse,human\n- similar: 27.0 percent | measures: share of cytokine interactions that are similar in both species. | compared: cytokine interactions in human vs mouse | species: human,mouse\n- contradictory: 15.0 percent | measures: share of cytokine interactions in mouse that were contradictory (opposite direction) to human. | compared: cytokine interactions in mouse vs human | species: mouse,human\n- found only in human: 58.0 percent | measures: share of human cytokine interactions that were not proven with mouse experiments. | compared: human cytokine interactions vs mouse experiments | species: human,mouse\n- similar: 62.0 percent | measures: share of interactions at the cellular level (among cell types, bioprocesses, and proteins) that were similar between human and mouse. | compared: cellular level interactions in human vs mouse | species: human,mouse\n- found only in human: 28.0 percent | measures: share of interactions at the cellular level (among cell types, bioprocesses, and proteins) that were found only in human. | compared: cellular level interactions in human vs mouse | species: human,mouse\n- contradicting: 10.0 percent | measures: share of interactions at the cellular level (among cell types, bioprocesses, and proteins) that were contradicting in human and mouse. | compared: cellular level interactions in human vs mouse | species: human,mouse\n- same: 31.0 percent | measures: share of genes with the same expression patterns in both species, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse\n- significantly expressed only in human: 14.0 percent | measures: share of genes that were significantly expressed only in human, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse\n- expressed only in mouse: 19.0 percent | measures: share of genes that were expressed only in mouse, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse\n- contradictions between species: 7.0 percent | measures: share of genes that showed contradictions between species, excluding tissue specificity. | compared: gene expression patterns between species | species: human,mouse\n- statistically non-significant: 12.0 percent | measures: share of genes found to be statistically non-significant (p-value > 0.05) in both species, excluding tissue specificity. | compared: gene expression patterns in human vs mouse | species: human,mouse"
  },
  "26460544": {
   "pmid": "26460544",
@@ -3872,8 +3965,9 @@
   "screen_reason": "The abstract reports a quantitative measure of agreement (45% overestimate of effect size due to publication bias) and a comparison of preclinical effect sizes with clinical trial results, which aligns with the inclusion criteria.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Our screen from database and reference searches captured 74 studies eligible for extraction, corresponding to 332 unique experiments investigating tumor volume response ( Figure 1 , Table 1 , Table 1\u2014source data 1E ). Effect sizes (standardized mean difference [SMD] using Hedges' g) could not be computed for 174 experiments (52%) due to inadequate reporting (e.g., sample size not provided, effect size reported as a median, lack of error bars, Figure 1\u2014figure supplement 1 ). Overall, 158 experiments, involving 2716 animals, were eligible for meta-analysis.",
-  "eligible": true,
-  "exclusion_reason": null
+  "eligible": false,
+  "exclusion_reason": "r4: within-animal-only \u2014 The study focuses exclusively on preclinical research and does not include any comparisons with human results.",
+  "r4_comparison_type": "within-animal-only"
  },
  "28335819": {
   "pmid": "28335819",
@@ -3917,7 +4011,9 @@
   "index_test": "mixed-animal-and-nonanimal",
   "index_test_evidence": "The study analysed gene expression in both human patients and animal models (mouse and rat models) to compare concordance with human clinical results.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "overlap: 35 percent | measures: share of differentially expressed genes that overlap between a mouse model of colorectal liver metastasis and human specimens | compared: mouse model of colorectal liver metastasis vs. human specimens | species: mouse,human"
  },
  "25677548": {
   "pmid": "25677548",
@@ -3963,7 +4059,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Therefore, the aim of this study was to address this issue by directly comparing side by side in the same experimental setup rat and human responses to an acute submaximal exercise bout to exhaustion of matched intensity and duration on a treadmill.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "species \u00d7 exercise interaction: 2 count | measures: the number of biochemical parameters that showed a different pattern of alteration post exercise between rats and humans | compared: rat vs. human biochemical parameter alterations post-exercise | species: rat,human"
  },
  "17988725": {
   "pmid": "17988725",
@@ -4000,7 +4098,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The vast majority of animals used as models are used in biomedical preclinical trials. The predictive value of those animal studies is carefully monitored, thus providing an ideal dataset for evaluating the efficacy of animal models.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "failure rate: 100 percent | measures: share of human responses that were accurately predicted by animal models | compared: animal model predictions vs human responses | species: none"
  },
  "22790876": {
   "pmid": "22790876",
@@ -4024,7 +4124,9 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "While LD 50 studies of drug candidates have always been performed in animals like rodents or dogs, efficacy and adverse effect studies using animals as a model for humans were prompted only in the late 1950s, as a consequence of the thalidomide scandal, where thousands of babies were born with severe extremity deformations. In the last 10\u201315 years, preclinical research methodologies have increased crucially regarding measurement of sensitivity and specificity. Adapted and improved for dedicated use in animal research, positron emission tomography (PET) and single photon emission computed tomography (SPECT) are good examples of such methodologies. It seems to us that increased measurement precision in animal research has somewhat raised expectations regarding human outcome prediction of preclinical data.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "prediction failure rate: 100.0 percent | measures: prediction failure of chimpanzee and macaque models for vaccination development against acquired immunodeficiency syndrome (AIDS) | compared: chimpanzee and macaque models vs human AIDS outcomes | species: chimpanzee,macaque"
  },
  "26856335": {
   "pmid": "26856335",
@@ -4109,6 +4211,8 @@
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "Preclinical in vitro studies were not taken into account as we aimed to investigate the predictivity of in vivo pharmacology experiments in animals.",
   "eligible": true,
-  "exclusion_reason": null
+  "exclusion_reason": null,
+  "r4_comparison_type": "animal-vs-human",
+  "r4_evidence": "overlap: 84.0 percent | measures: overlap between preclinical and clinical pharmacologically active dose ranges based on human equivalent dose (HED) | compared: preclinical pharmacologically active dose range vs. clinical pharmacologically active dose range | species: none"
  }
 }

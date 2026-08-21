@@ -60,6 +60,10 @@ what_the_study_did / what_it_found: one factual sentence each, no interpretation
 key_quotes: up to 6 short verbatim quotes (<300 chars) stating findings or limitations,
 each with a 2-4 word topic label.
 
+At most 40 measurements. If the paper reports more, keep those that compare a
+NON-HUMAN ANIMAL result with a HUMAN result first -- those are the point of this
+review -- then the study's headline figures. Keep `verbatim` under 220 characters.
+
 Use ONLY the text. Never infer or compute. Answer with JSON only."""
 
 db = json.load(open(J("data","db","studies.json")))
@@ -96,7 +100,7 @@ for i, pm in enumerate(db, 1):
     try:
         d = orr.chat(MODEL, [{"role":"system","content":PROMPT},
              {"role":"user","content":f"TITLE: {title}\n\nTEXT:\n{txt}"}],
-             schema=SCHEMA, max_tokens=9000)
+             schema=SCHEMA, max_tokens=16000)
         c = orr.content(d)
         if not c: raise RuntimeError("null content")
         out[pm] = json.loads(c); cost += orr.usd(d)
