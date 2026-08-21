@@ -159,3 +159,24 @@ cannot be excluded, and the model's title-only reading is retained alongside the
 advance. Re-screening from full text moved includes from 100 to 90 of 98; the 8 genuine
 exclusions are methods papers (ARRIVE guidelines, litter effects, a histopathology pipeline)
 that report no agreement statistic.
+
+## Scope correction (2026-08-21)
+
+**L28 — Non-animal studies had entered the slice, and the vocabulary encouraged it.**
+PLAN §6.3 excludes in vitro-only and in silico-only comparisons, but rubric r2 restated this
+too weakly, and the classification vocabulary offered `in-vitro-or-in-silico-comparator` as
+a *model type* — turning a protocol violation into a supported category (17 studies).
+Rubric r3 requires the index test to be a whole, live non-human animal, and names the
+excluded methods explicitly (cell lines, organoids, organ-on-chip, isolated ion-channel
+assays, 3D cultures, QSAR, PBPK, AI/ML, mathematical models, NAMs). Isolated tissue taken
+from an animal counts as in vitro. Studies evaluating both whole-animal and non-animal
+predictors are retained, since the animal arm is in scope.
+
+Re-screening all 100 with `index_test` recorded and quoted: 29 excluded — 8 in-silico-only,
+7 in-vitro-only, 3 human-only, 5 unclear, 6 whole-animal studies reporting no agreement
+statistic (ARRIVE guidelines, litter effects, welfare/rigor methodology). **71 remain
+eligible.** Excluded records stay in the database with their reason and evidence quote
+rather than being deleted, so the exclusion is auditable.
+
+Hay 2014 (drug attrition) was excluded as `human-only`: it supplies the base rate for the
+PPV curve (PLAN §7.2) and belongs to the auxiliary set, not to an arm.

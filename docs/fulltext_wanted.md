@@ -1,29 +1,22 @@
 # Full texts still needed
 
-47 of 100 studies lack full text. Save each as `data/raw/fulltext/<PMID>.pdf` (or `.xml`), then run:
+**34 of 100** studies lack full text (66 held).
+
+Save each as `data/raw/fulltext/<PMID>.pdf` (or `.xml`), then run:
 
 ```bash
-python3 analysis/14_extract_fulltext.py && python3 analysis/15_build_site.py
+python3 analysis/14_extract_fulltext.py
+python3 analysis/20_measurements.py
+python3 analysis/19_reclassify.py
+python3 analysis/21_wanted_list.py
+python3 analysis/15_build_site.py
 ```
 
-Files are gitignored and are never published; only extracted data reaches the site.
+Files are gitignored and never published; only extracted data reaches the site.
 
 | PMID | Cites | Year | Journal | Title | DOI |
 |---|---|---|---|---|---|
-| [26479923](https://pubmed.ncbi.nlm.nih.gov/26479923/) | 771 | 2015 | Nat Med | High-throughput screening using patient-derived tumor xenografts to predict clinical trial drug response. | [10.1038/nm.3954](https://doi.org/10.1038/nm.3954) |
-| [21892149](https://pubmed.ncbi.nlm.nih.gov/21892149/) | 678 | 2011 | Nat Rev Drug Discov | Believe it or not: how much can we rely on published data on potential drug targets? | [10.1038/nrd3439-c1](https://doi.org/10.1038/nrd3439-c1) |
-| [24489990](https://pubmed.ncbi.nlm.nih.gov/24489990/) | 617 | 2014 | Am J Transl Res | Lost in translation: animal models and clinical trials in cancer treatment. | — |
-| [24678540](https://pubmed.ncbi.nlm.nih.gov/24678540/) | 328 | 2014 | Nature | Preclinical research: Make mouse studies work. | [10.1038/507423a](https://doi.org/10.1038/507423a) |
 | [17032985](https://pubmed.ncbi.nlm.nih.gov/17032985/) | 312 | 2006 | JAMA | Translation of research evidence from animals to humans. | [10.1001/jama.296.14.1731](https://doi.org/10.1001/jama.296.14.1731) |
-| [31694927](https://pubmed.ncbi.nlm.nih.gov/31694927/) | 241 | 2019 | Sci Transl Med | Reproducing human and cross-species drug toxicities using a Liver-Chip. | [10.1126/scitranslmed.aax5516](https://doi.org/10.1126/scitranslmed.aax5516) |
-| [26795250](https://pubmed.ncbi.nlm.nih.gov/26795250/) | 190 | 2016 | Immunity | Compendium of Immune Signatures Identifies Conserved and Species-Specific Biology in Response to Inflammation. | [10.1016/j.immuni.2015.12.006](https://doi.org/10.1016/j.immuni.2015.12.006) |
-| [33039464](https://pubmed.ncbi.nlm.nih.gov/33039464/) | 175 | 2021 | Gastroenterology | High-Fidelity Drug-Induced Liver Injury Screen Using Human Pluripotent Stem Cell-Derived Organoids. | [10.1053/j.gastro.2020.10.002](https://doi.org/10.1053/j.gastro.2020.10.002) |
-| [19297654](https://pubmed.ncbi.nlm.nih.gov/19297654/) | 161 | 2009 | J R Soc Med | Why animal studies are often poor predictors of human reactions to exposure. | [10.1258/jrsm.2008.08k033](https://doi.org/10.1258/jrsm.2008.08k033) |
-| [18468556](https://pubmed.ncbi.nlm.nih.gov/18468556/) | 127 | 2008 | Drug Discov Today | Zebrafish: a predictive model for assessing drug-induced toxicity. | [10.1016/j.drudis.2008.03.002](https://doi.org/10.1016/j.drudis.2008.03.002) |
-| [27916279](https://pubmed.ncbi.nlm.nih.gov/27916279/) | 102 | 2017 | Trends Pharmacol Sci | Insights from Preclinical Choice Models on Treating Drug Addiction. | [10.1016/j.tips.2016.11.002](https://doi.org/10.1016/j.tips.2016.11.002) |
-| [18772421](https://pubmed.ncbi.nlm.nih.gov/18772421/) | 84 | 2008 | Science | Medicine. Life cycle of translational research for medical interventions. | [10.1126/science.1160622](https://doi.org/10.1126/science.1160622) |
-| [20807552](https://pubmed.ncbi.nlm.nih.gov/20807552/) | 77 | 2011 | Pharmacol Ther | An evaluation of hERG current assay performance: Translating preclinical safety studies to clinical QT prolongation. | [10.1016/j.pharmthera.2010.08.008](https://doi.org/10.1016/j.pharmthera.2010.08.008) |
-| [36883244](https://pubmed.ncbi.nlm.nih.gov/36883244/) | 64 | 2023 | Altern Lab Anim | Poor Translatability of Biomedical Research Using Animals - A Narrative Review. | [10.1177/02611929231157756](https://doi.org/10.1177/02611929231157756) |
 | [28893587](https://pubmed.ncbi.nlm.nih.gov/28893587/) | 60 | 2017 | Toxicol Appl Pharmacol | Current nonclinical testing paradigm enables safe entry to First-In-Human clinical trials: The IQ consortium nonclinical to clinical translational database. | [10.1016/j.taap.2017.09.006](https://doi.org/10.1016/j.taap.2017.09.006) |
 | [17988725](https://pubmed.ncbi.nlm.nih.gov/17988725/) | 46 | 2008 | Theriogenology | Are animal models as good as we think? | [10.1016/j.theriogenology.2007.09.030](https://doi.org/10.1016/j.theriogenology.2007.09.030) |
 | [29730448](https://pubmed.ncbi.nlm.nih.gov/29730448/) | 43 | 2018 | Regul Toxicol Pharmacol | A big data approach to the concordance of the toxicity of pharmaceuticals in animals and humans. | [10.1016/j.yrtph.2018.04.018](https://doi.org/10.1016/j.yrtph.2018.04.018) |
@@ -55,5 +48,5 @@ Files are gitignored and are never published; only extracted data reaches the si
 | [38642821](https://pubmed.ncbi.nlm.nih.gov/38642821/) | 1 | 2024 | Toxicology | Sex, age, and species differences of perfluorooctanoic acid modeled by flow- versus permeability-limited physiologically-based pharmacokinetic models. | [10.1016/j.tox.2024.153806](https://doi.org/10.1016/j.tox.2024.153806) |
 | [26563791](https://pubmed.ncbi.nlm.nih.gov/26563791/) | 1 | 2015 | Handb Clin Neurol | Extrapyramidal system neurotoxicity: animal models. | [10.1016/B978-0-444-62627-1.00012-3](https://doi.org/10.1016/B978-0-444-62627-1.00012-3) |
 | [42245789](https://pubmed.ncbi.nlm.nih.gov/42245789/) | 0 | 2026 | Res Sq | Leveraging Dog Models to Uncover Human Cancer Insights. | [10.21203/rs.3.rs-9783746/v1](https://doi.org/10.21203/rs.3.rs-9783746/v1) |
-| [26803853](https://pubmed.ncbi.nlm.nih.gov/26803853/) | 0 | 2015 |  |  | — |
-| [20806453](https://pubmed.ncbi.nlm.nih.gov/20806453/) | 0 | 2007 |  |  | — |
+| [26803853](https://pubmed.ncbi.nlm.nih.gov/26803853/) | 0 | 2015 | National Academies Press (US) | The Role of Clinical Studies for Pets with Naturally Occurring Tumors in Translational Cancer Research: Workshop Summary | [10.17226/21830](https://doi.org/10.17226/21830) |
+| [20806453](https://pubmed.ncbi.nlm.nih.gov/20806453/) | 0 | 2007 | The Publishing House of the Romanian Academy | Comparative Oncology | — |

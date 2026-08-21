@@ -771,28 +771,6 @@
   "source_tier": "abstract",
   "rubric_version": "2026-08-20.r2"
  },
- "31694927": {
-  "screen_decision": "include",
-  "screen_rationale": "The study compares the ability of animal models (rodent and nonrodent) and a Liver-Chip to predict human drug toxicities, implying a quantitative measure of agreement or predictive value for human relevance.",
-  "arm": "toxicology",
-  "arm_evidence": "Nonclinical rodent and nonrodent toxicity models used to support clinical trials of candidate drugs may produce discordant results or fail to predict complications in humans",
-  "therapeutic_areas": [
-   "hepatic",
-   "cross-cutting"
-  ],
-  "areas_evidence": "The Liver-Chip detected diverse phenotypes of liver toxicity, including hepatocellular injury, steatosis, cholestasis, and fibrosis",
-  "model_type": "in-vitro-or-in-silico-comparator",
-  "model_evidence": "Here, we applied microengineered Organs-on-Chips technology to design a rat, dog, and human Liver-Chip",
-  "species": [
-   "rat",
-   "dog"
-  ],
-  "species_evidence": "Here, we applied microengineered Organs-on-Chips technology to design a rat, dog, and human Liver-Chip",
-  "endpoint_class": "secondary-biomarker",
-  "endpoint_evidence": "The Liver-Chip detected diverse phenotypes of liver toxicity, including hepatocellular injury, steatosis, cholestasis, and fibrosis",
-  "source_tier": "abstract",
-  "rubric_version": "2026-08-20.r2"
- },
  "34558834": {
   "screen_decision": "include",
   "screen_rationale": "The study quantifies the concordance between mouse models and human clinical outcomes for chronic liver disease by analyzing gene expression patterns and calculating recall and precision metrics. It directly compares animal model results to human data, fulfilling the inclusion criteria.",
@@ -1636,30 +1614,6 @@
   "source_tier": "abstract",
   "rubric_version": "2026-08-20.r2"
  },
- "30364994": {
-  "screen_decision": "include",
-  "screen_rationale": "The study reports quantitative measures of agreement between an in vitro human GI microtissue model and human clinical outcomes for drug-induced diarrhea, including predictive accuracy (84%) and sensitivity (79%). It compares the predictive performance of the microtissue assay to Caco-2 cells and discusses translation from preclinical animal studies.",
-  "arm": "toxicology",
-  "arm_evidence": "The study focuses on gastrointestinal toxicities (GITs) and drug-induced diarrhea as adverse events, which falls under toxicology.",
-  "therapeutic_areas": [
-   "oncology",
-   "cross-cutting"
-  ],
-  "areas_evidence": "The study mentions oncology drugs and their GI toxicities, and also discusses general drug safety testing applicable across therapeutic areas.",
-  "model_type": "in-vitro-or-in-silico-comparator",
-  "model_evidence": "The study develops and validates a human 3D gastrointestinal microtissue model and compares its predictive performance to Caco-2 cells.",
-  "species": [
-   "mouse",
-   "rat",
-   "dog",
-   "non-human-primate"
-  ],
-  "species_evidence": "The study references preclinical data from rat and dog studies, and discusses non-human primate studies in the context of predicting clinical outcomes.",
-  "endpoint_class": "mixed",
-  "endpoint_evidence": "The study uses both TEER (a measure of barrier function, secondary biomarker) and clinical diarrhea incidence (a hard outcome, primary-hard) to assess predictive accuracy.",
-  "source_tier": "fulltext",
-  "rubric_version": "2026-08-20.r2"
- },
  "27870924": {
   "screen_decision": "include",
   "screen_rationale": "The study performs a meta-analysis of preclinical animal model data (sepsis) and quantifies the agreement (odds ratio for mortality reduction) between animal results and the potential for human clinical benefit, supporting inclusion.",
@@ -1702,26 +1656,6 @@
   "species_evidence": "The text explicitly mentions \"typically rodent\" and later refers to \"pregnant female C57BL/6 mice\" and \"rat valproate-induced autism model\".",
   "endpoint_class": "mixed",
   "endpoint_evidence": "The study discusses various outcomes including \"locomotor activity\", \"body weight\", \"marbles buried\", \"anxiety (open field)\", and \"grooming\", which are behavioral and physiological measures.",
-  "source_tier": "fulltext",
-  "rubric_version": "2026-08-20.r2"
- },
- "12667944": {
-  "screen_decision": "include",
-  "screen_rationale": "The study compares preclinical cardiac electrophysiology data (in vitro and in vivo) against clinical QT effects and torsade de pointes reports for 100 drugs, calculating margins between therapeutic plasma concentrations and hERG IC50 values. This directly quantifies the agreement between animal model predictions and human clinical outcomes.",
-  "arm": "safety-pharmacology",
-  "arm_evidence": "Published data on hERG (or IKr ) activity, cardiac action potential duration (at 90% repolarisation; APD 90 ), and QT prolongation in dogs were compared against QT effects and reports of TdP in humans for 100 drugs.",
-  "therapeutic_areas": [
-   "cardiovascular"
-  ],
-  "areas_evidence": "The study focuses on cardiac electrophysiology, QT interval prolongation, and torsade de pointes, all of which are cardiovascular endpoints.",
-  "model_type": "in-vitro-or-in-silico-comparator",
-  "model_evidence": "Published data on hERG (or IKr ) activity, cardiac action potential duration (at 90% repolarisation; APD 90 ), and QT prolongation in dogs were compared against QT effects and reports of TdP in humans for 100 drugs.",
-  "species": [
-   "dog"
-  ],
-  "species_evidence": "QT prolongation in dogs were compared against QT effects and reports of TdP in humans for 100 drugs.",
-  "endpoint_class": "mixed",
-  "endpoint_evidence": "The study compares preclinical data (hERG activity, APD90, QT prolongation in dogs) with clinical outcomes (QT effects, TdP reports in humans), encompassing both biomarker-like measures (QT prolongation) and hard outcomes (torsade de pointes).",
   "source_tier": "fulltext",
   "rubric_version": "2026-08-20.r2"
  },
@@ -2180,5 +2114,69 @@
   "endpoint_evidence": "Data analysis Two separate analyses were performed to determine the predictability of preclinical findings in humans: one for tolerability and another for pharmacologic activity.",
   "source_tier": "fulltext",
   "rubric_version": "2026-08-20.r2"
+ },
+ "31694927": {
+  "screen_decision": "include",
+  "screen_rationale": "The study compares the predictive accuracy of animal models (rat, dog) and a human Liver-Chip for drug-induced liver injury (DILI), reporting quantitative measures of concordance and species-specific differences in toxicity prediction. It directly addresses the concordance between animal model results and human clinical outcomes for DILI.",
+  "arm": "toxicology",
+  "arm_evidence": "The study investigates drug-induced liver injury (DILI) and its prediction across species, which falls under toxicology.",
+  "therapeutic_areas": [
+   "hepatic"
+  ],
+  "areas_evidence": "The study focuses exclusively on liver toxicity and drug-induced liver injury (DILI).",
+  "model_type": "across-multiple-models",
+  "model_evidence": "The study utilizes rat, dog, and human Liver-Chips, comparing results across these different species-specific models.",
+  "species": [
+   "rat",
+   "dog"
+  ],
+  "species_evidence": "The study explicitly uses rat and dog Liver-Chips to compare with human outcomes.",
+  "endpoint_class": "mixed",
+  "endpoint_evidence": "The study measures both functional outcomes like albumin secretion and biomarkers such as transaminases, GSH, ATP, and gene expression.",
+  "source_tier": "fulltext",
+  "rubric_version": "2026-08-21.r3"
+ },
+ "30364994": {
+  "screen_decision": "include",
+  "screen_rationale": "The study evaluates the predictive potential of changes in microtissue barrier function to screen drugs associated with clinical diarrhea, reporting predictive accuracy metrics (84% and 83%) and sensitivity (50%) for MTT assay, and accuracy (77%) and sensitivity (57%) for Caco-2 TEER assay. It quantifies agreement between in vitro assay results and human clinical outcomes for a panel of drugs.",
+  "arm": "toxicology",
+  "arm_evidence": "The study assesses gastrointestinal toxicities (GITs) as adverse events (AE) and evaluates the predictive potential of microtissue barrier function to screen drugs associated with clinical diarrhea.",
+  "therapeutic_areas": [
+   "oncology",
+   "cross-cutting"
+  ],
+  "areas_evidence": "The study mentions oncology drugs and discusses gastrointestinal toxicities (GITs) as common adverse events, which can be considered cross-cutting.",
+  "model_type": "across-multiple-models",
+  "model_evidence": "The study uses human 3D gastrointestinal microtissues and Caco-2 cells, and also references preclinical animal studies (rodents and non-rodents) for comparison.",
+  "species": [
+   "mouse",
+   "rat",
+   "non-human-primate"
+  ],
+  "species_evidence": "The study references preclinical animal studies in rodents (rat) and non-rodents, and mentions primate studies for comparison of concordance rates.",
+  "endpoint_class": "mixed",
+  "endpoint_evidence": "The study uses TEER (Transepithelial Electrical Resistance) as a measure of barrier function and also reports MTT viability assay results, correlating these with clinical diarrhea incidence.",
+  "source_tier": "fulltext",
+  "rubric_version": "2026-08-21.r3"
+ },
+ "12667944": {
+  "screen_decision": "include",
+  "screen_rationale": "The study quantifies the agreement between preclinical electrophysiology data (in vitro and in vivo) and clinical QT interval prolongation and torsade de pointes for a broad range of drugs, providing a measure of predictive value and safety margins.",
+  "arm": "safety-pharmacology",
+  "arm_evidence": "Objective: To attempt to determine the relative value of preclinical cardiac electrophysiology data (in vitro and in vivo) for predicting risk of torsade de pointes (TdP) in clinical use.",
+  "therapeutic_areas": [
+   "cardiovascular"
+  ],
+  "areas_evidence": "The study focuses on cardiac electrophysiology, QT interval prolongation, and torsade de pointes, which are all cardiovascular endpoints.",
+  "model_type": "across-multiple-models",
+  "model_evidence": "The study compares data from in vitro assays (hERG, APD90) with in vivo data in dogs, and then correlates these with human clinical outcomes.",
+  "species": [
+   "dog"
+  ],
+  "species_evidence": "Data on effects on QTc in animals (lowest published values for doses associated with 10\u201320% QTc prolongation in beagle dogs, or other species if dog data were unavailable).",
+  "endpoint_class": "mixed",
+  "endpoint_evidence": "The study compares preclinical electrophysiology data (hERG IC50, APD90, QTc in dogs) with clinical outcomes (QTc prolongation, TdP), which includes both biomarker-like measures (QTc) and hard clinical outcomes (TdP).",
+  "source_tier": "fulltext",
+  "rubric_version": "2026-08-21.r3"
  }
 }

@@ -36,7 +36,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a quantitative measure of agreement (R^2 between 0.0 and 0.1) between genomic responses in mouse models and human inflammatory diseases, which directly addresses the inclusion criteria."
+  "screen_reason": "The abstract reports a quantitative measure of agreement (R^2 between 0.0 and 0.1) between genomic responses in mouse models and human inflammatory diseases, which directly addresses the inclusion criteria.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Genomic responses in mouse models poorly mimic human in\ufb02ammatory diseases. A cornerstone of modern biomedical research is the use of mouse models to explore basic pathophysiological mechanisms, evaluate new therapeutic approaches, and make go or no-go decisions to carry new drug candidates forward into clinical trials. Systematic studies evaluating how well murine models mimic human in\ufb02ammatory diseases are nonexistent. Here, we show that, although acute in\ufb02ammatory stresses from different etiologies result in highly similar genomic responses in humans, the responses in corresponding mouse models correlate poorly with the human conditions and also, one another. Among genes changed signi\ufb01cantly in humans, the murine orthologs are close to random in matching their human counterparts (e.g., R2 between 0.0 and 0.1).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "24406927": {
   "pmid": "24406927",
@@ -56,7 +60,11 @@
   ],
   "sources": [
    "anchor"
-  ]
+  ],
+  "index_test": "human-only",
+  "index_test_evidence": "This article aims to measure clinical development success rates across the industry with a view to strengthening benchmarking metrics for drug development. The study is the largest and most recent of its kind, examining success rates of 835 drug developers, including biotech companies as well as specialty and large pharmaceutical firms. Success rates for over 7,300 independent drug development paths are analyzed by clinical phase, molecule type, disease area and lead versus nonlead indication status.",
+  "eligible": false,
+  "exclusion_reason": "The study analyzes clinical development success rates for investigational drugs but does not report any quantitative measure of agreement between non-human animal results and human clinical results. The index test is human-only data."
  },
  "36883244": {
   "pmid": "36883244",
@@ -90,7 +98,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a quantitative measure of agreement (failure rate of over 92% for drug translation from animal testing to human treatments) which aligns with the inclusion criteria for quantitative measures of agreement between non-human animal results and human clinical results."
+  "screen_reason": "The abstract reports a quantitative measure of agreement (failure rate of over 92% for drug translation from animal testing to human treatments) which aligns with the inclusion criteria for quantitative measures of agreement between non-human animal results and human clinical results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The majority of these failures are due to unexpected toxicity \u2014 that is, safety issues revealed in human trials that were not apparent in animal tests \u2014 or lack of ef\ufb01cacy. However, the use of more innovative tools, such as organs-on-chips, in the preclinical pipeline for drug testing, has revealed that these tools are more able to predict unexpected safety events prior to clinical trials and so can be used for this, as well as for ef\ufb01cacy testing. Here, we review several disease areas, and consider how the use of animal models has failed to offer effective new treatments.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "24489990": {
   "pmid": "24489990",
@@ -127,7 +139,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract explicitly states 'the average rate of successful translation from animal models to clinical cancer trials is less than 8%', which is a quantitative measure of agreement."
+  "screen_reason": "The abstract explicitly states 'the average rate of successful translation from animal models to clinical cancer trials is less than 8%', which is a quantitative measure of agreement.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "In vitro (test tube or cell culture) and in vivo (animal experiments) studies examine preliminary efficacy, toxicity and pharmacokinetics.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "22460880": {
   "pmid": "22460880",
@@ -146,7 +162,11 @@
   ],
   "sources": [
    "anchor"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Many landmark findings in preclinical oncology research are not reproducible, in part because of inadequate cell lines and animal models.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "31307492": {
   "pmid": "31307492",
@@ -187,7 +207,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a systematic scoping review of reported concordance rates (translational success rates) between animal and human results, explicitly mentioning various units of measurement for diagnostic statistics like percentages, predictive values, correlation/regression (r2), and meta-analyses. This directly aligns with the inclusion criteria for quantitative measures of agreement."
+  "screen_reason": "The study reports a systematic scoping review of reported concordance rates (translational success rates) between animal and human results, explicitly mentioning various units of measurement for diagnostic statistics like percentages, predictive values, correlation/regression (r2), and meta-analyses. This directly aligns with the inclusion criteria for quantitative measures of agreement.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "We included studies and reviews quantitatively comparing the results of studies including at least 2 species with one being human.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "25092317": {
   "pmid": "25092317",
@@ -228,7 +252,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement (Spearman's rank correlation coefficient, percentage of genes changed in the same direction) between mouse models and human inflammatory diseases, directly addressing the concordance between animal and human results."
+  "screen_reason": "The study reports quantitative measures of agreement (Spearman's rank correlation coefficient, percentage of genes changed in the same direction) between mouse models and human inflammatory diseases, directly addressing the concordance between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The use of mice as animal models has long been considered essential in modern biomedical research, but the role of mouse models in research was challenged by a recent report that genomic responses in mouse models poorly mimic human inflammatory diseases. Here we reevaluated the same gene expression datasets used in the previous study by focusing on genes whose expression levels were significantly changed in both humans and mice.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "24678540": {
   "pmid": "24678540",
@@ -246,7 +274,11 @@
   ],
   "sources": [
    "anchor"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "At the ALS Therapy Development Institute (TDI) in Cambridge, Massachusetts, we have tested more than 100 potential drugs in an established mouse model of this disease (mostly unpublished work).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "21892149": {
   "pmid": "21892149",
@@ -266,7 +298,11 @@
   ],
   "sources": [
    "anchor"
-  ]
+  ],
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The text mentions 'animal testing' in the context of investments to be made after target validation, but does not explicitly state that whole-animal in vivo studies were used as the index test for predicting human outcomes in this specific analysis. The focus appears to be on the reproducibility of published data, which may have involved various models, including potentially animal models, but this is not clearly defined as the primary index test for concordance.",
+  "eligible": false,
+  "exclusion_reason": "The study focuses on the reproducibility of published data in drug target identification and validation, rather than reporting a quantitative measure of agreement between non-human animal results and human clinical results. While animal testing is mentioned as a future investment, the study's methodology and reported outcomes do not clearly define whole-animal in vivo studies as the index test for predicting human outcomes or provide a concordance statistic."
  },
  "28893587": {
   "pmid": "28893587",
@@ -308,7 +344,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports quantitative measures of agreement between non-human animal results and human clinical results, specifically sensitivity (48%), positive predictive value (PPV, 43%), specificity (84%), and negative predictive value (NPV, 86%). It analyzes a database of 182 molecules and uses a 2x2 contingency table for statistical analysis, directly addressing the concordance between animal toxicology data and clinical observations."
+  "screen_reason": "The abstract reports quantitative measures of agreement between non-human animal results and human clinical results, specifically sensitivity (48%), positive predictive value (PPV, 43%), specificity (84%), and negative predictive value (NPV, 86%). It analyzes a database of 182 molecules and uses a 2x2 contingency table for statistical analysis, directly addressing the concordance between animal toxicology data and clinical observations.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The blinded database was composed of 182 molecules and contained animal toxicology data coupled with clinical observations from phase I human studies.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "20613859": {
   "pmid": "20613859",
@@ -328,7 +368,11 @@
   ],
   "sources": [
    "citation_hub"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The guidelines, referred to as ARRIVE (Animals in Research: Reporting In Vivo Experiments), have been developed using the CONSORT Statement as their foundation [24] , [25] . The ARRIVE guidelines consist of a checklist of 20 items describing the minimum information that all scientific publications reporting research using animals should include, such as the number and specific characteristics of animals used (including species, strain, sex, and genetic background); details of housing and husbandry; and the experimental, statistical, and analytical methods (including details of methods used to reduce bias such as randomisation and blinding).",
+  "eligible": false,
+  "exclusion_reason": "The study describes guidelines for reporting animal research (ARRIVE) but does not report any quantitative measure of agreement between animal results and human clinical results. It focuses on improving the quality and completeness of reporting of animal studies, not on comparing their predictive accuracy."
  },
  "34874005": {
   "pmid": "34874005",
@@ -381,7 +425,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement (e.g., percentage of smaller effect sizes, success rates based on multiple methods) between original preclinical cancer biology experiments and their replications, which serves as a proxy for the reliability and potential translatability of these findings."
+  "screen_reason": "The study reports quantitative measures of agreement (e.g., percentage of smaller effect sizes, success rates based on multiple methods) between original preclinical cancer biology experiments and their replications, which serves as a proxy for the reliability and potential translatability of these findings.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "In the biomedical sciences, the ALS Therapy Development Institute observed no effectiveness of more than 100 potential drugs in a mouse model in which prior research reported effectiveness in slowing down disease, and eight of those compounds were tried and failed in clinical trials costing millions and involving thousands of participants ( Perrin, 2014 ). Of 12 replications of preclinical spinal cord injury research in the FORE-SCI program, only two clearly replicated the original findings \u2013 one under constrained conditions of the injury and the other much more weakly than the original ( Steward et al., 2012 ). And, in cancer biology and related fields, two drug companies (Bayer and Amgen) reported failures to replicate findings from promising studies that could have led to new therapies ( Prinz et al., 2011 ; Begley and Ellis, 2012 ). Their success rates (25% for the Bayer report, and 11% for the Amgen report) provided disquieting initial evidence that preclinical research may be much less replicable than recognized.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "31827124": {
   "pmid": "31827124",
@@ -422,7 +470,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative estimates of the false discovery rate (FDR) in preclinical research and its impact on drug development success rates, and compares this to potential improvements using human genomics. This involves a quantitative comparison of the predictive value of preclinical models versus human genomics for drug development success, which aligns with the inclusion criteria."
+  "screen_reason": "The study reports quantitative estimates of the false discovery rate (FDR) in preclinical research and its impact on drug development success rates, and compares this to potential improvements using human genomics. This involves a quantitative comparison of the predictive value of preclinical models versus human genomics for drug development success, which aligns with the inclusion criteria.",
+  "index_test": "human-only",
+  "index_test_evidence": "The paper focuses on human genomics, specifically genome-wide association studies (GWAS), as a method for drug target identification and validation. It contrasts this approach with traditional preclinical studies, which often involve animal models, but the primary index test discussed for predicting human outcomes is human genetic data.",
+  "eligible": false,
+  "exclusion_reason": "The study's primary index test is human genomics (GWAS), not whole-animal in vivo studies. While it discusses animal models as a traditional method, it does not report quantitative agreement statistics between animal results and human clinical results. The focus is on the predictive power of human genetic data."
  },
  "26795250": {
   "pmid": "26795250",
@@ -462,7 +514,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a comparison of gene expression signatures between human and mouse models in response to sepsis, identifying both conserved and species-specific biological processes. This suggests a quantitative comparison of biological responses, which aligns with the inclusion criteria for agreement measures."
+  "screen_reason": "The abstract reports a comparison of gene expression signatures between human and mouse models in response to sepsis, identifying both conserved and species-specific biological processes. This suggests a quantitative comparison of biological responses, which aligns with the inclusion criteria for agreement measures.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "ImmuneSigDB included data from healthy human subjects, patients with immune or non-immune diseases, and mouse models.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "21350617": {
   "pmid": "21350617",
@@ -482,7 +538,11 @@
   ],
   "sources": [
    "citation_hub"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The guidelines, referred to as ARRIVE (Animals in Research: Reporting In vivo Experiments), have been developed using the CONSORT Statement as their foundation.",
+  "eligible": false,
+  "exclusion_reason": "This paper describes guidelines for reporting animal research (ARRIVE guidelines) and does not report a quantitative measure of agreement between non-human animal results and human clinical results."
  },
  "26863229": {
   "pmid": "26863229",
@@ -521,7 +581,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract discusses a quantitative decision-theoretic model of the R&D process and assesses the probability of correct R&D decisions. It explicitly mentions changes in the 'predictive validity of screening and disease models' and their correlation with 'clinical outcomes in man', and how these factors can offset changes in efficiency. This suggests a quantitative comparison of animal model performance against human clinical outcomes, which aligns with the inclusion criteria."
+  "screen_reason": "The abstract discusses a quantitative decision-theoretic model of the R&D process and assesses the probability of correct R&D decisions. It explicitly mentions changes in the 'predictive validity of screening and disease models' and their correlation with 'clinical outcomes in man', and how these factors can offset changes in efficiency. This suggests a quantitative comparison of animal model performance against human clinical outcomes, which aligns with the inclusion criteria.",
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The text mentions 'transgenic mice' as an example of new inventions and discusses 'animal efficacy studies' as a predictor of clinical activity in man, but it does not explicitly state that whole, live non-human animals were used as the index test in a quantitative comparison against human clinical results within this specific study. The focus is on a decision-theoretic model of drug discovery and development, discussing concepts like predictive validity and the performance of predictive models in general, rather than reporting on a specific study that performed such a comparison.",
+  "eligible": false,
+  "exclusion_reason": "The study presents a theoretical framework and quantitative model for drug discovery and development, discussing the concept of predictive validity and the performance of predictive models. While it mentions animal models and their role in predicting clinical activity, it does not report on a specific quantitative measure of agreement between non-human animal results and human clinical results from a conducted study. The focus is on modeling and conceptualizing the translation problem rather than presenting empirical data from an animal model concordance study."
  },
  "28328898": {
   "pmid": "28328898",
@@ -539,7 +603,11 @@
   ],
   "sources": [
    "citation_hub"
-  ]
+  ],
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The text discusses the scientific validity of animal models and their predictive validity for human conditions, but it does not explicitly state that whole, live non-human animals are used as the index test to predict human outcomes. Instead, it focuses on the methodology and validity of research involving animals.",
+  "eligible": false,
+  "exclusion_reason": "This is a commentary discussing the scientific validity and reproducibility of animal research and the harm-benefit analysis framework. It does not report quantitative measures of agreement between animal results and human clinical results, nor does it describe an index test using whole, live non-human animals to predict human outcomes."
  },
  "35167625": {
   "pmid": "35167625",
@@ -580,7 +648,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a comparison of IRAK3 expression and inflammatory markers between humans and rodents, noting species differences that affect translatability. It also mentions meta-analyses confirming effects and correlations, suggesting a quantitative comparison of animal vs. human results."
+  "screen_reason": "The abstract reports a comparison of IRAK3 expression and inflammatory markers between humans and rodents, noting species differences that affect translatability. It also mentions meta-analyses confirming effects and correlations, suggesting a quantitative comparison of animal vs. human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The effect of IRAK3 in sepsis has been investigated widely using cell culture [ 26 , 31 \u2013 33 ], clinical samples [ 20 , 21 , 34 , 35 ], and in vivo animal [ 32 , 36 \u2013 44 ] and human [ 45 ] models.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "34127759": {
   "pmid": "34127759",
@@ -621,7 +693,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract describes a comparison of tenocyte responses to inflammation between humans and four animal models, evaluating how well the species simulate the clinical condition. It quantifies similarities across various aspects like proliferation, wound closure speed, gene expression, and marker expression, providing a basis for agreement assessment, even if not a single summary statistic is presented."
+  "screen_reason": "The abstract describes a comparison of tenocyte responses to inflammation between humans and four animal models, evaluating how well the species simulate the clinical condition. It quantifies similarities across various aspects like proliferation, wound closure speed, gene expression, and marker expression, providing a basis for agreement assessment, even if not a single summary statistic is presented.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Tenocytes of four mammalian species (mouse, rat, sheep, horse) were compared with human tenocytes (n = 3 donors, i.e., biological replicates, per species). All methods and experimental protocols in this study were carried out in accordance and compliance with relevant institutional and national guidelines and regulations. Tenocyte isolation from animals All animals were euthanized for reasons unrelated to this study.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "34916915": {
   "pmid": "34916915",
@@ -641,7 +717,11 @@
   ],
   "sources": [
    "citation_hub"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Neuroscientists commonly employ in vivo animal models, aimed to simulate physiological, genetic, or anatomical features observed in humans (as is the case with studies of disease) or replicate natural situations under controlled laboratory conditions (van der Staay, 2006; Maximino and van der Staay, 2019).",
+  "eligible": false,
+  "exclusion_reason": "The study discusses the importance of animal models and experimental rigor in behavioral neuroscience but does not report any quantitative measure of agreement between animal results and human clinical results. It focuses on improving reproducibility and research quality rather than comparing predictive accuracy."
  },
  "42245789": {
   "pmid": "42245789",
@@ -684,7 +764,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract explicitly states they developed a formula to quantify transcriptomic similarities between human and dog cancers and that they show dogs are an excellent model for many human cancers. This indicates a quantitative measure of agreement between animal and human results."
+  "screen_reason": "The abstract explicitly states they developed a formula to quantify transcriptomic similarities between human and dog cancers and that they show dogs are an excellent model for many human cancers. This indicates a quantitative measure of agreement between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Dogs develop spontaneous tumors that closely resemble human tumors, have a high tumor incidence rate, and their popularity as pets ensures the wide availability of samples for scientific studies.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "15246820": {
   "pmid": "15246820",
@@ -721,7 +805,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions a 'laboratory to clinical translational success' for one animal model (rabbit model for tPA treatment), implying a measure of agreement or success rate, even if not explicitly quantified with a specific statistic. It also discusses attempts to translate animal protocols to human trials and the outcomes, which suggests a comparison of results."
+  "screen_reason": "The abstract mentions a 'laboratory to clinical translational success' for one animal model (rabbit model for tPA treatment), implying a measure of agreement or success rate, even if not explicitly quantified with a specific statistic. It also discusses attempts to translate animal protocols to human trials and the outcomes, which suggests a comparison of results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The accompanying paper discusses the rabbit model that was used to identify the efficacy of tissue plasminogen activator (tPA) treatment. Use of caffeinol as a cytoprotective agent in rat models yielded exciting results, which led to clinical trials.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "20806453": {
   "pmid": "20806453",
@@ -730,8 +818,8 @@
   "endpoint_class": null,
   "extraction_source": "none",
   "extraction_status": "no abstract available",
-  "title": "",
-  "journal": "",
+  "title": "Comparative Oncology",
+  "journal": "The Publishing House of the Romanian Academy",
   "year": 2007,
   "cited_by": 0,
   "authors": [
@@ -740,7 +828,11 @@
   ],
   "sources": [
    "s1_proximity"
-  ]
+  ],
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The abstract mentions comparative oncology but does not specify the index test used to predict human outcomes.",
+  "eligible": false,
+  "exclusion_reason": "The abstract does not report any quantitative measure of agreement between non-human animal results and human clinical results, nor does it clearly state the index test used."
  },
  "29143114": {
   "pmid": "29143114",
@@ -782,7 +874,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports on the translation of two cancer vaccine strategies from mice to human clinical trials. For the first strategy (TARP), it states that 74% of subjects had a decreased PSA slope at 1 year compared to their baseline. For the second strategy (HER2), it states that 45% of evaluable patients showed clinical benefit. These represent quantitative measures of success/response in human trials following preclinical animal studies, indicating a form of translational success rate."
+  "screen_reason": "The abstract reports on the translation of two cancer vaccine strategies from mice to human clinical trials. For the first strategy (TARP), it states that 74% of subjects had a decreased PSA slope at 1 year compared to their baseline. For the second strategy (HER2), it states that 45% of evaluable patients showed clinical benefit. These represent quantitative measures of success/response in human trials following preclinical animal studies, indicating a form of translational success rate.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "We translated two cancer vaccine strategies from mice into human clinical trials.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "38676802": {
   "pmid": "38676802",
@@ -817,7 +913,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions that 'PDX response to anticancer drugs in mice has been closely correlated to the original patient's susceptibility to these treatments in the clinic.' This suggests a quantitative measure of agreement between animal and human results, even if not explicitly stated with a specific statistic like concordance rate or PPV. The paper discusses the use of PDXs as a platform for therapeutic proof-of-concept prior to clinical trials and their correlation with patient outcomes, which aligns with the inclusion criteria for quantitative agreement."
+  "screen_reason": "The abstract mentions that 'PDX response to anticancer drugs in mice has been closely correlated to the original patient's susceptibility to these treatments in the clinic.' This suggests a quantitative measure of agreement between animal and human results, even if not explicitly stated with a specific statistic like concordance rate or PPV. The paper discusses the use of PDXs as a platform for therapeutic proof-of-concept prior to clinical trials and their correlation with patient outcomes, which aligns with the inclusion criteria for quantitative agreement.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "PDXs are a valuable preclinical research platform generated through transplantation of a patient's resected tumor into an immunodeficient or humanized mouse.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "25814248": {
   "pmid": "25814248",
@@ -860,7 +960,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract discusses the translational value of animal models for kidney failure, mentioning specific examples where models have contributed to clinical translation (e.g., Alport syndrome, polycystic kidney disease leading to tolvaptan, C5 targeting in hemolytic uremic syndrome). While it doesn't provide a specific quantitative agreement statistic like a concordance rate, it discusses the 'contribution to clinical translation' and 'prospects for the future', implying a comparison of animal model outcomes to human clinical results. Given the instruction to include when uncertain, this paper likely reports on the success or failure of translation, which is a form of agreement measure."
+  "screen_reason": "The abstract discusses the translational value of animal models for kidney failure, mentioning specific examples where models have contributed to clinical translation (e.g., Alport syndrome, polycystic kidney disease leading to tolvaptan, C5 targeting in hemolytic uremic syndrome). While it doesn't provide a specific quantitative agreement statistic like a concordance rate, it discusses the 'contribution to clinical translation' and 'prospects for the future', implying a comparison of animal model outcomes to human clinical results. Given the instruction to include when uncertain, this paper likely reports on the success or failure of translation, which is a form of agreement measure.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "We now review animal models reproducing diverse, genetic and acquired, causes of AKI and CKD evolving to kidney failure and discuss the contribution to clinical translation and prospects for the future.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "38867022": {
   "pmid": "38867022",
@@ -903,7 +1007,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a 'human proximity score' which is a quantitative measure of agreement between murine dietary models and human MASLD, aiming to define their metabolic relevance and ability to induce MASH-fibrosis. This aligns with the inclusion criteria of reporting a quantitative measure of agreement."
+  "screen_reason": "The study reports a 'human proximity score' which is a quantitative measure of agreement between murine dietary models and human MASLD, aiming to define their metabolic relevance and ability to induce MASH-fibrosis. This aligns with the inclusion criteria of reporting a quantitative measure of agreement.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "In this study, we collected retrospective information from 598 animals (509 WT/GA mice, 89 WT/GA rats): 336 animals subjected to treatment (MASLD-inducing conditions: 315 animals; or CCl 4 : 21 animals) and 262 animals as controls for MASLD-inducing conditions (247 animals) or CCl 4 (15 animals), returning 39 models (that is, study designs) aimed at modeling MASLD, and two time points for CCl 4 (positive controls of MASLD-independent fibrosis).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "26479923": {
   "pmid": "26479923",
@@ -943,7 +1051,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions 'clinical translatability of this approach by identifying associations between a genotype and drug response' and proposes that the 'PDX clinical trial' (PCT) approach could 'improve preclinical evaluation of treatment modalities and enhance our ability to predict clinical trial responses'. This suggests a quantitative comparison or measure of agreement between animal model results and human clinical outcomes, even if specific metrics like concordance rate are not explicitly stated. The focus on predicting clinical trial drug response from xenografts implies a quantitative assessment of translation."
+  "screen_reason": "The abstract mentions 'clinical translatability of this approach by identifying associations between a genotype and drug response' and proposes that the 'PDX clinical trial' (PCT) approach could 'improve preclinical evaluation of treatment modalities and enhance our ability to predict clinical trial responses'. This suggests a quantitative comparison or measure of agreement between animal model results and human clinical outcomes, even if specific metrics like concordance rate are not explicitly stated. The focus on predicting clinical trial drug response from xenografts implies a quantitative assessment of translation.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "With these PDXs, we performed in vivo compound screens using a 1 \u00d7 1 \u00d7 1 experimental design (PDX clinical trial or PCT) to assess the population responses to 62 treatments across six indications.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "27261415": {
   "pmid": "27261415",
@@ -986,7 +1098,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a 'strong concordance between the pattern of pathway activation at a transcriptomic level between humans and mice with similar histological phenotypes' with reported FDR values, which is a quantitative measure of agreement between animal and human results."
+  "screen_reason": "The abstract reports a 'strong concordance between the pattern of pathway activation at a transcriptomic level between humans and mice with similar histological phenotypes' with reported FDR values, which is a quantitative measure of agreement between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "We here report a d iet- i nduced a nimal m odel o f non-alcoholic fatty liver d isease (DIAMOND) using an isogenic strain derived from a cross of two common mouse strains, 129S1/SvImJ and C57BL/6J where a simple high fat diet accompanied by ad libitum consumption of water with a high fructose and glucose content (Western diet sugar water (WD SW)) sequentially induces steatosis, steatohepatitis, progressive fibrosis and HCC.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "32631250": {
   "pmid": "32631250",
@@ -1028,7 +1144,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a head-to-head comparison of histological and transcriptome changes between a mouse model and human patients, and states the model demonstrates 'good clinical translatability' with respect to histopathological, transcriptional, and metabolic aspects. This implies a quantitative or semi-quantitative assessment of agreement."
+  "screen_reason": "The abstract reports a head-to-head comparison of histological and transcriptome changes between a mouse model and human patients, and states the model demonstrates 'good clinical translatability' with respect to histopathological, transcriptional, and metabolic aspects. This implies a quantitative or semi-quantitative assessment of agreement.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The present study aimed to further validate the clinical translatability of GAN diet-induced liver lesions by comparing liver biopsy histopathological and transcriptome characteristics in GAN DIO-NASH mice and human NASH patients.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "29302222": {
   "pmid": "29302222",
@@ -1067,7 +1187,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract discusses the translational value of animal models and specifically mentions that three approved medications for alcohol addiction (acamprosate, naltrexone, and nalmefene) were developed using animal models and successfully translated to clinical situations. This implies a quantitative measure of success or agreement in the translation process, even if not explicitly stated as a rate or statistic."
+  "screen_reason": "The abstract discusses the translational value of animal models and specifically mentions that three approved medications for alcohol addiction (acamprosate, naltrexone, and nalmefene) were developed using animal models and successfully translated to clinical situations. This implies a quantitative measure of success or agreement in the translation process, even if not explicitly stated as a rate or statistic.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "As explained, these models have excellent face validity, and it is assumed that the neurochemical and neuroanatomical substrates involved in drug-intake behavior are similar in laboratory rodents and humans 8 , 9 (which is often defined as construct validity). Consequently, self-administration-based animal models are helpful in unraveling the molecular and neurobiological mechanisms of drug-related behaviors and therefore critical in identifying strategies useful in the intervention of human drug consumption; ie, they provide predictive validity.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "27916279": {
   "pmid": "27916279",
@@ -1103,7 +1227,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions 'increasingly concordant results' between preclinical choice procedures and human laboratory studies/clinical trials, suggesting a quantitative measure of agreement is reported, even if not explicitly detailed."
+  "screen_reason": "The abstract mentions 'increasingly concordant results' between preclinical choice procedures and human laboratory studies/clinical trials, suggesting a quantitative measure of agreement is reported, even if not explicitly detailed.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Preclinical drug versus food choice procedures have produced increasingly concordant results with both human laboratory drug self-administration studies and double-blind placebo-controlled clinical trials.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "37752535": {
   "pmid": "37752535",
@@ -1143,7 +1271,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions validating a pipeline in both animal models and human autopsy samples and explicitly states 'murine and human cardiomyocytes had similar diameters in health and extent of hypertrophy in disease confirming the translatability of our murine cardiac hypertrophy model.' This suggests a quantitative comparison of agreement between animal and human results."
+  "screen_reason": "The abstract mentions validating a pipeline in both animal models and human autopsy samples and explicitly states 'murine and human cardiomyocytes had similar diameters in health and extent of hypertrophy in disease confirming the translatability of our murine cardiac hypertrophy model.' This suggests a quantitative comparison of agreement between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Mice The animal study was performed following German law for the protection of animals. The investigation conforms to the guide for the Care and Use of Laboratory Animals published by the United States National Institutes of Health (Eighth edition; revised 2011). The study was approved by the regional Animal Welfare Inspectorate (Saarl\u00e4ndisches Landesamt f\u00fcr Verbraucherschutz No21/2014). Transverse-aortic constriction (TAC) was performed in five weeks old C57BL/6N mice (Charles River, Germany). C57/BL/6N mice were anesthetized with a 1:10 dilution of 100 mg/kg ketamine and 10 mg/kg xylazine and connected to a volume-cycled rodent ventilator (Harvard Apparatus) using a 20 gauge catheter. Constriction of the aorta was performed by tying a 7\u20130 nylon suture ligature against a 27 gauge needle yielding a transverse aortic constriction of 65\u201370%. Control mice underwent a sham operation in which the nylon suture was placed, but not pulled tied. After 6 weeks, animals were euthanized by injecting an overdose of a mixture of ketamine hydrochloride (100 mg/kg body weight) and xylazine hydrochloride (10 mg/kg body weight). Hearts were rapidly excised and processed for further experiments.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "40558535": {
   "pmid": "40558535",
@@ -1182,7 +1314,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "screener error - auto-advance: Expecting property name enclosed in double quotes: line 4 column 3 (char 50)"
+  "screen_reason": "screener error - auto-advance: Expecting property name enclosed in double quotes: line 4 column 3 (char 50)",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Animals such as rats and mice have traditionally been used to model ASD phenotypes like hyperactivity, aggression, repetitive behaviors, deficits in memory and sociability (in terms of behavioral modalities), as well as microcephaly and myelination deficits (in terms of brain morphology).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "35781406": {
   "pmid": "35781406",
@@ -1225,7 +1361,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative measure of agreement between patient-derived tumor xenografts (PDTX) and human clinical results, specifically a 'complete concordance between the PDTX model and patients' responses in 17 regimens'. This directly addresses the criteria for inclusion by quantifying the predictive accuracy of the animal model for human outcomes."
+  "screen_reason": "The study reports a quantitative measure of agreement between patient-derived tumor xenografts (PDTX) and human clinical results, specifically a 'complete concordance between the PDTX model and patients' responses in 17 regimens'. This directly addresses the criteria for inclusion by quantifying the predictive accuracy of the animal model for human outcomes.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Patient-derived tumour xenografts (PDTX) are a promising solution for developing new therapies and real-time personalised medicine because of their highly effective prediction of drug efficacy.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "32413492": {
   "pmid": "32413492",
@@ -1265,7 +1405,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract states that the review performed a comprehensive analysis of rodent models of DKD to compare treatment efficacy from preclinical testing with outcome from clinical trials and investigated whether rodent models are predictive for clinical outcomes of therapeutic agents in human DKD. This suggests a quantitative measure of agreement or predictive value is being reported."
+  "screen_reason": "The abstract states that the review performed a comprehensive analysis of rodent models of DKD to compare treatment efficacy from preclinical testing with outcome from clinical trials and investigated whether rodent models are predictive for clinical outcomes of therapeutic agents in human DKD. This suggests a quantitative measure of agreement or predictive value is being reported.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "In this review, we performed a comprehensive analysis of rodent models of DKD to compare treatment efficacy from preclinical testing with outcome from clinical trials.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "31694927": {
   "pmid": "31694927",
@@ -1301,7 +1445,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions the potential of the Liver-Chip to 'inform human relevance of liver toxicities detected in animal studies', suggesting a comparison or agreement measure between animal and human results, even if not explicitly quantified in the abstract itself. The focus on predicting human toxicity from animal models warrants inclusion for further review."
+  "screen_reason": "The abstract mentions the potential of the Liver-Chip to 'inform human relevance of liver toxicities detected in animal studies', suggesting a comparison or agreement measure between animal and human results, even if not explicitly quantified in the abstract itself. The focus on predicting human toxicity from animal models warrants inclusion for further review.",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "The U.S. Food and Drug Administration (FDA) and European Medicines Agency generally require the safety of new drug candidates to be evaluated in both rodent and nonrodent animal models, frequently rat and dog, before moving the new chemical entity into human clinical trials. An analysis of 150 drugs that caused adverse events in humans found that regulatory testing in rats and dogs correctly predicted just 71% of toxicities in humans (1).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "34558834": {
   "pmid": "34558834",
@@ -1346,7 +1494,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study quantifies the similarity between mouse models and human chronic liver diseases using transcriptomic data, reporting specific measures of recall (0.4) and precision (0.33) for certain models. This directly addresses the criteria for including quantitative measures of agreement between animal and human results."
+  "screen_reason": "The study quantifies the similarity between mouse models and human chronic liver diseases using transcriptomic data, reporting specific measures of recall (0.4) and precision (0.33) for certain models. This directly addresses the criteria for including quantitative measures of agreement between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Mouse Models and Human Data Sets A description of the mouse and human tissues and experimental procedures is available in the Supporting Information. The present analysis included transcriptome data from seven mouse models (one with chronic and six with acute liver damage) consisting of 227 mice (Table 1 ; Supporting Fig. S1 A) and five studies of human CLD with a total of 372 patients (Table 1 ; Supporting Fig. S1 B).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "32127577": {
   "pmid": "32127577",
@@ -1394,7 +1546,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study compares thrombin and plasmin generation parameters between humans and several animal species, providing data that could be used to assess the concordance or similarity of these hemostasis measures across species. While it doesn't explicitly state a quantitative agreement statistic like a concordance rate, it presents comparative data (e.g., 'TG and PG parameters from baboon and rhesus macaque plasma approximated that of humans') which is the basis for such calculations and aligns with the review's inclusion criteria for systematic comparisons of animal vs. human effect sizes."
+  "screen_reason": "The study compares thrombin and plasmin generation parameters between humans and several animal species, providing data that could be used to assess the concordance or similarity of these hemostasis measures across species. While it doesn't explicitly state a quantitative agreement statistic like a concordance rate, it presents comparative data (e.g., 'TG and PG parameters from baboon and rhesus macaque plasma approximated that of humans') which is the basis for such calculations and aligns with the review's inclusion criteria for systematic comparisons of animal vs. human effect sizes.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Here we performed a simultaneous TG and PG assay (STPGA) to compare human response to a range of species (baboon, Rhesus macaque, swine, rat, rabbit and guinea pig) that are widely evaluated as animal models in hemostasis research and therapeutics development.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "39255793": {
   "pmid": "39255793",
@@ -1432,7 +1588,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions 'the majority of real P-sites in mice can be inferred from experimentally derived human P-sites with PTMoreR mapping', which suggests a quantitative measure of agreement or concordance between animal and human results."
+  "screen_reason": "The abstract mentions 'the majority of real P-sites in mice can be inferred from experimentally derived human P-sites with PTMoreR mapping', which suggests a quantitative measure of agreement or concordance between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "For example, due to the short reproduction time, high reproducibility, and cost efficiency offered by mouse-based experiments, the mouse is the most widely used animal model for human drug development.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "40418625": {
   "pmid": "40418625",
@@ -1471,7 +1631,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract describes the validation of an AI-PBPK platform against human PK data, reporting that most AUC predictions fell within two and threefold error ranges. This represents a quantitative measure of agreement between predicted (animal model equivalent) and human results."
+  "screen_reason": "The abstract describes the validation of an AI-PBPK platform against human PK data, reporting that most AUC predictions fell within two and threefold error ranges. This represents a quantitative measure of agreement between predicted (animal model equivalent) and human results.",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "This study aims to develop an integrated artificial intelligence (AI) and physiologically based pharmacokinetic (PBPK) platform to rapidly estimate drug in vivo fate based solely on molecular structures.",
+  "eligible": false,
+  "exclusion_reason": "The study uses an AI-PBPK platform based solely on molecular structures to predict human PK data. It does not involve whole-animal in vivo testing as the index test."
  },
  "40054526": {
   "pmid": "40054526",
@@ -1515,7 +1679,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract describes the development and extrapolation of physiologically-based pharmacokinetic (PBPK) models from animal species (rats) to humans for methylprednisolone. It mentions assessing interspecies plasma concentration datasets and extrapolating from rats to humans, implying a quantitative comparison of pharmacokinetic parameters across species, which aligns with the criteria for including studies that report quantitative measures of agreement or translation."
+  "screen_reason": "The abstract describes the development and extrapolation of physiologically-based pharmacokinetic (PBPK) models from animal species (rats) to humans for methylprednisolone. It mentions assessing interspecies plasma concentration datasets and extrapolating from rats to humans, implying a quantitative comparison of pharmacokinetic parameters across species, which aligns with the criteria for including studies that report quantitative measures of agreement or translation.",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "Plasma profiles and PK parameters in 7 species were digitized from 10 literature sources along with our recent PBPK results in rats. Basic allometric scaling provided reported clearance (CL) and distribution volume (Vd) from noncompartmental analysis highly correlated with body weights (R2 > 0.96), although rat CL deviated from the linear trend. A basic nonlinear minimal physiologically-based pharmacokinetic model (mPBPK) (Model I), an intermediate reversible-metabolism mPBPK model (Model II) accounting for MPL and methylprednisone interconversion, and a full highly complex PBPK model were used to assess the interspecies plasma concentration datasets.",
+  "eligible": false,
+  "exclusion_reason": "The study uses physiologically-based pharmacokinetic (PBPK) models, which are in silico methods, to predict human outcomes. It does not report quantitative agreement statistics derived from whole-animal in vivo studies."
  },
  "40849367": {
   "pmid": "40849367",
@@ -1553,7 +1721,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a systematic cross-species comparison of neurophysiological markers (frontal reward positivity) associated with cognitive flexibility in humans and rats, using equivalent tasks and computational analyses. While it doesn't explicitly state a quantitative agreement statistic like concordance rate, it directly compares and finds analogous markers, which aligns with the spirit of 'systematic comparison of animal vs human effect sizes' and 'assessing neural mechanisms conserved across species'."
+  "screen_reason": "The abstract reports a systematic cross-species comparison of neurophysiological markers (frontal reward positivity) associated with cognitive flexibility in humans and rats, using equivalent tasks and computational analyses. While it doesn't explicitly state a quantitative agreement statistic like concordance rate, it directly compares and finds analogous markers, which aligns with the spirit of 'systematic comparison of animal vs human effect sizes' and 'assessing neural mechanisms conserved across species'.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "To study this phenomenon in non-human animals, rodent versions of the PRL task have been developed 40 , 41 . While human and non-human versions of the task are conceptually similar and may yield comparable behavioral results, to our knowledge, a systematic cross-species comparison of behavioral, computational, and neurophysiological markers of cognitive flexibility has not been reported.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "39182537": {
   "pmid": "39182537",
@@ -1590,7 +1762,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a cross-species convergence of functional connectivity changes in thalamic pain between human patients and macaque models. While it doesn't explicitly state a quantitative agreement metric like concordance rate, it directly compares and finds similarities in specific functional connectivity patterns (e.g., amygdala-brainstem FC) between the two species, suggesting a degree of translational validity for the animal model in reflecting human disease mechanisms."
+  "screen_reason": "The study reports a cross-species convergence of functional connectivity changes in thalamic pain between human patients and macaque models. While it doesn't explicitly state a quantitative agreement metric like concordance rate, it directly compares and finds similarities in specific functional connectivity patterns (e.g., amygdala-brainstem FC) between the two species, suggesting a degree of translational validity for the animal model in reflecting human disease mechanisms.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "In humans, resting-state FC was compared between patients with thalamic pain and healthy individuals. Furthermore, resting-state FC was compared in macaques, before and after the induction of thalamic pain in the same individuals.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "38642821": {
   "pmid": "38642821",
@@ -1627,7 +1803,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract describes the development and comparison of PBPK models for PFOA in rats and humans, aiming to predict human clinical outcomes from animal data. It explicitly mentions 'comparable predictions in the human clinical study' and that the permeability-limited model 'could improve the accuracy of human prediction', suggesting a quantitative comparison of agreement between animal and human results."
+  "screen_reason": "The abstract describes the development and comparison of PBPK models for PFOA in rats and humans, aiming to predict human clinical outcomes from animal data. It explicitly mentions 'comparable predictions in the human clinical study' and that the permeability-limited model 'could improve the accuracy of human prediction', suggesting a quantitative comparison of agreement between animal and human results.",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "PBPK models were generally developed as either flow- or permeability-limited models.",
+  "eligible": false,
+  "exclusion_reason": "The study uses physiologically-based pharmacokinetic (PBPK) models, which are in silico methods, to predict human outcomes. It does not report quantitative agreement statistics from whole-animal in vivo studies."
  },
  "38688826": {
   "pmid": "38688826",
@@ -1671,7 +1851,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative comparison of radiation carcinogenesis between humans and mice using a mathematical model. It provides specific quantitative measures of agreement and differences, such as the 'time shift per dose' (7.8 years per Gy for humans vs. 0.046 years per Gy for mice) and the effect per dose on a per-lifespan basis (0.72-fold for humans vs. 0.71-fold for mice). This directly addresses the criteria for including records that report quantitative measures of agreement or comparison of effect sizes between animal and human results."
+  "screen_reason": "The study reports a quantitative comparison of radiation carcinogenesis between humans and mice using a mathematical model. It provides specific quantitative measures of agreement and differences, such as the 'time shift per dose' (7.8 years per Gy for humans vs. 0.046 years per Gy for mice) and the effect per dose on a per-lifespan basis (0.72-fold for humans vs. 0.71-fold for mice). This directly addresses the criteria for including records that report quantitative measures of agreement or comparison of effect sizes between animal and human results.",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "Herein, we take a mathematical approach to delineate the mechanism underlying the human-mouse difference in radiation-related cancer risk. We used a multistage carcinogenesis model assuming a mutational action of radiation to analyze previous data on cancer mortality in the Japanese atomic bomb survivors and in lifespan mouse experiments.",
+  "eligible": false,
+  "exclusion_reason": "The study uses a mathematical model (in silico) to compare human and mouse data, rather than reporting a quantitative measure of agreement based on whole-animal in vivo results predicting human outcomes. The animal data is used as input for the model, not as the index test itself."
  },
  "25671556": {
   "pmid": "25671556",
@@ -1708,7 +1892,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions comparing and contrasting outcomes in human clinical trials with preclinical dog trials, suggesting a quantitative comparison of agreement, even if the specific metric isn't detailed. This aligns with the inclusion criteria for comparing animal and human results."
+  "screen_reason": "The abstract mentions comparing and contrasting outcomes in human clinical trials with preclinical dog trials, suggesting a quantitative comparison of agreement, even if the specific metric isn't detailed. This aligns with the inclusion criteria for comparing animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Spontaneous canine models exist for several inherited retinal dystrophies. This review will summarize the models and indicate where they have been used in translational gene therapy trials. The RPE65 gene therapy trials to treat childhood blindness are a good example of how studies in dogs have contributed to therapy development. Outcomes in human clinical trials are compared and contrasted with the result of the preclinical dog trials.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "22303754": {
   "pmid": "22303754",
@@ -1745,7 +1933,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports the calculation of sensitivities and specificities for potential biomarker candidates identified in animal models, which is a quantitative measure of agreement/utility that can be applied to human clinical results."
+  "screen_reason": "The abstract reports the calculation of sensitivities and specificities for potential biomarker candidates identified in animal models, which is a quantitative measure of agreement/utility that can be applied to human clinical results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The cytokine, chemokine, and matrix metalloprotease (MMP) profiles of synovial fluid, serum, and urine from dogs with surgically induced and naturally occurring OA were compared with dogs without OA using xMAP technology (Qiagen Inc., Valencia, CA).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "26563791": {
   "pmid": "26563791",
@@ -1779,7 +1971,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions 'the concordance between clinical signs, neurochemical changes, and neuropathology between animals and people' which suggests a quantitative measure of agreement is reported, even if not explicitly stated as a rate or statistic. The focus on animal models for understanding toxicity and pathogenesis, with a comparison to human conditions, aligns with the inclusion criteria."
+  "screen_reason": "The abstract mentions 'the concordance between clinical signs, neurochemical changes, and neuropathology between animals and people' which suggests a quantitative measure of agreement is reported, even if not explicitly stated as a rate or statistic. The focus on animal models for understanding toxicity and pathogenesis, with a comparison to human conditions, aligns with the inclusion criteria.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The central focus of the chapter is on animal models, especially the concordance between clinical signs, neurochemical changes, and neuropathology between animals and people.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "33039464": {
   "pmid": "33039464",
@@ -1820,7 +2016,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement (Sensitivity: 88.7%, Specificity: 88.9%) between their human liver organoid (HLO) model and marketed drugs, which is a measure of predictive value for drug-induced liver injury. This aligns with the inclusion criteria for quantitative agreement between non-human and human results."
+  "screen_reason": "The study reports quantitative measures of agreement (Sensitivity: 88.7%, Specificity: 88.9%) between their human liver organoid (HLO) model and marketed drugs, which is a measure of predictive value for drug-induced liver injury. This aligns with the inclusion criteria for quantitative agreement between non-human and human results.",
+  "index_test": "in-vitro-only",
+  "index_test_evidence": "We established a human liver organoid (HLO)\u2013 based screening model for analyzing DILI pathology at organoid resolution.",
+  "eligible": false,
+  "exclusion_reason": "The study uses human liver organoids (in vitro) to predict drug-induced liver injury, not whole animals."
  },
  "32868897": {
   "pmid": "32868897",
@@ -1863,7 +2063,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement (PPV, NPV, kappa statistics, MCC, Spearman correlation coefficients) between preclinical animal model toxicities and human clinical toxicities in oncology Phase 1 trials."
+  "screen_reason": "The study reports quantitative measures of agreement (PPV, NPV, kappa statistics, MCC, Spearman correlation coefficients) between preclinical animal model toxicities and human clinical toxicities in oncology Phase 1 trials.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "In the current study, we sought to determine the ability of preclinical animal models to predict toxicities seen in Phase 1 clinical trials of oncology drugs.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "11029269": {
   "pmid": "11029269",
@@ -1907,7 +2111,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a quantitative measure of agreement (true positive HT concordance rate of 71%) between animal toxicity studies and human clinical toxicity events across multiple compounds."
+  "screen_reason": "The abstract reports a quantitative measure of agreement (true positive HT concordance rate of 71%) between animal toxicity studies and human clinical toxicity events across multiple compounds.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The main aim of this project was to examine the strengths and weaknesses of animal studies to predict human toxicity (HT). The database was developed from a survey which covered only those compounds where HTs were identified during clinical development of new pharmaceuticals, determining whether animal toxicity studies identified concordant target organ toxicities in humans.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "28422076": {
   "pmid": "28422076",
@@ -1952,7 +2160,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports quantitative measures of agreement between non-human animal results (zebrafish) and human clinical results, specifically mentioning Specificity (89%), Sensitivity (68%), and Accuracy (78%) for predicting human drug-induced liabilities."
+  "screen_reason": "The abstract reports quantitative measures of agreement between non-human animal results (zebrafish) and human clinical results, specifically mentioning Specificity (89%), Sensitivity (68%), and Accuracy (78%) for predicting human drug-induced liabilities.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The ZeGlobalTox assay, an innovative experimental procedure that addresses organ-specific toxicity of different drugs on zebrafish larvae (up to 5 dpf). Thus, the proposed approach allows the independent analysis of cardio-, neuro-, and hepatotoxicity effects in the same animal ( Figure 1 A,B), as a proxy to predict their possible impact in human organs.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "38910363": {
   "pmid": "38910363",
@@ -2004,7 +2216,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement (sensitivity, specificity, PPV, NPV, accuracy) between in silico predictions and actual phototoxicity, which is a form of comparison between predictive models and observed outcomes. While not directly comparing animal to human, it is a quantitative assessment of a predictive tool's performance, aligning with the spirit of evaluating translation/prediction accuracy."
+  "screen_reason": "The study reports quantitative measures of agreement (sensitivity, specificity, PPV, NPV, accuracy) between in silico predictions and actual phototoxicity, which is a form of comparison between predictive models and observed outcomes. While not directly comparing animal to human, it is a quantitative assessment of a predictive tool's performance, aligning with the spirit of evaluating translation/prediction accuracy.",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "Consequently, in silico approaches based on the use of predictive software tools can offer more rapid and cost-effective phototoxicity screening solutions. With this goal in mind, the current study evaluated two in silico tools - Derek Nexus 6.1.0/Derek Knowledge Base 2020 1.0 (Lhasa Limited, UK) and the QSAR Toolbox (v 4.5) developed by the Organisation for Economic Co-operation and Development (OECD) - for their capacity to predict the phototoxicity of several substances from diverse classes.",
+  "eligible": false,
+  "exclusion_reason": "The study uses only in silico methods (Derek Nexus and QSAR Toolbox) to predict human outcomes. It mentions traditional in vivo and in vitro models but does not use them as the index test for prediction in this study."
  },
  "34968630": {
   "pmid": "34968630",
@@ -2042,7 +2258,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract describes an evaluation of the predictivity of structure-activity relationship models for acute oral toxicity, comparing their predictions to established classifications (GHS, DG) based on LD50 values. It reports on the performance of these models using an external validation dataset and discusses their predictive capacity, including limitations and potential for improvement. This suggests a quantitative assessment of agreement between model predictions (analogous to animal study outcomes) and established classifications."
+  "screen_reason": "The abstract describes an evaluation of the predictivity of structure-activity relationship models for acute oral toxicity, comparing their predictions to established classifications (GHS, DG) based on LD50 values. It reports on the performance of these models using an external validation dataset and discusses their predictive capacity, including limitations and potential for improvement. This suggests a quantitative assessment of agreement between model predictions (analogous to animal study outcomes) and established classifications.",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "The current study sought to assess and compare the predictions of the Globally Harmonized System (GHS) categories and Dangerous Goods (DG) classifications based on Lethal Dose (LD50) from several available tools (ACD/Labs, Leadscope, T.E.S.T., CATMoS, CaseUltra).",
+  "eligible": false,
+  "exclusion_reason": "The study evaluates the predictivity of Acute Oral Toxicity (AOT) structure-activity relationship models, which are in silico methods, not whole-animal in vivo studies."
  },
  "28543848": {
   "pmid": "28543848",
@@ -2082,7 +2302,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study evaluates the predictive performance of non-animal assays in comparison to animal (mouse LLNA) and human sensitization data, reporting specific percentages for correct non-sensitizer predictions (85% and 93% respectively). This represents a quantitative measure of agreement between non-animal methods and human/animal results."
+  "screen_reason": "The study evaluates the predictive performance of non-animal assays in comparison to animal (mouse LLNA) and human sensitization data, reporting specific percentages for correct non-sensitizer predictions (85% and 93% respectively). This represents a quantitative measure of agreement between non-animal methods and human/animal results.",
+  "index_test": "in-vitro-only",
+  "index_test_evidence": "Three non-animal assays have been formally validated and regulatory adopted: the direct peptide reactivity assay (DPRA), the KeratinoSens&#x2122; assay and the human cell line activation test (h-CLAT).",
+  "eligible": false,
+  "exclusion_reason": "The study exclusively uses in vitro assays (DPRA, KeratinoSens, h-CLAT) to predict human outcomes and does not include any whole-animal in vivo testing as the index test."
  },
  "39093553": {
   "pmid": "39093553",
@@ -2122,7 +2346,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative measure of agreement (concordance rate of 55.6% and discordance rate of 44.6%) between animal (rat and rabbit) results and human clinical relevance for embryofetal development studies of pharmaceuticals. This directly addresses the criteria for inclusion."
+  "screen_reason": "The study reports a quantitative measure of agreement (concordance rate of 55.6% and discordance rate of 44.6%) between animal (rat and rabbit) results and human clinical relevance for embryofetal development studies of pharmaceuticals. This directly addresses the criteria for inclusion.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "In this study, rat and rabbit EFD studies were evaluated to analyze the added value of a second species.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "18468556": {
   "pmid": "18468556",
@@ -2156,7 +2384,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract states that 'mammalian and zebrafish toxicity profiles are strikingly similar' and that zebrafish can be used to 'eliminate potentially unsafe compounds rapidly'. This suggests a quantitative comparison of agreement between animal and human results, even if specific metrics are not detailed."
+  "screen_reason": "The abstract states that 'mammalian and zebrafish toxicity profiles are strikingly similar' and that zebrafish can be used to 'eliminate potentially unsafe compounds rapidly'. This suggests a quantitative comparison of agreement between animal and human results, even if specific metrics are not detailed.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The zebrafish model organism is increasingly used for assessing drug toxicity and safety and numerous studies confirm that mammalian and zebrafish toxicity profiles are strikingly similar.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "33085125": {
   "pmid": "33085125",
@@ -2201,7 +2433,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a correlation and predictive ability between in vitro cytotoxicity data from human lung epithelial cell lines (IC50) and in vivo rat inhalation toxicity data (LC50), which is a quantitative measure of agreement between non-human animal results and human clinical results (or a surrogate for human relevance)."
+  "screen_reason": "The study reports a correlation and predictive ability between in vitro cytotoxicity data from human lung epithelial cell lines (IC50) and in vivo rat inhalation toxicity data (LC50), which is a quantitative measure of agreement between non-human animal results and human clinical results (or a surrogate for human relevance).",
+  "index_test": "in-vitro-only",
+  "index_test_evidence": "Median lethal concentration (LC50 ) (rat, inhalation, 4 h) and half maximal inhibitory concentration (IC50 ) (lung or bronchial cell, 24 h) data for 59 substances were obtained from the literature and by experiments. Cytotoxicity assays were performed on 44 substances with reported LC50 , but without IC50 , data to obtain the IC50 values.",
+  "eligible": false,
+  "exclusion_reason": "The study uses in vitro cytotoxicity data from human lung epithelial cell lines to predict acute inhalation toxicity. It does not use whole, live non-human animals as the index test."
  },
  "35148401": {
   "pmid": "35148401",
@@ -2237,7 +2473,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a retrospective analysis of 150 drug candidates comparing the performance of nonclinical assays with clinical findings, specifically evaluating concordance, sensitivity, and specificity for predicting drug-induced QTc prolongation. This directly addresses the criteria for quantitative agreement between animal and human results."
+  "screen_reason": "The abstract reports a retrospective analysis of 150 drug candidates comparing the performance of nonclinical assays with clinical findings, specifically evaluating concordance, sensitivity, and specificity for predicting drug-induced QTc prolongation. This directly addresses the criteria for quantitative agreement between animal and human results.",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "The nonclinical assays that were evaluated included the rapidly inactivating delayed rectifier potassium ion channel (human ether-a-go-go related gene [hERG]) expressed in mammalian cells, the cardiac action potential duration (APD) recorded from experimental animal preparations (eg, Purkinje fibers) and several animal species (eg, dog, guinea pig, sheep, and rabbit; Table 1 ), and measurements of the in vivo QTc interval in dogs and monkeys ( Table 2 ).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "23812503": {
   "pmid": "23812503",
@@ -2280,7 +2520,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a comparison of the predictive accuracy of two models (MICE vs. hERG) for Torsade de Pointes, explicitly mentioning a reduction in false positives and false negatives for the MICE model compared to the hERG assay. This implies a quantitative measure of agreement or predictive performance is being assessed."
+  "screen_reason": "The abstract reports a comparison of the predictive accuracy of two models (MICE vs. hERG) for Torsade de Pointes, explicitly mentioning a reduction in false positives and false negatives for the MICE model compared to the hERG assay. This implies a quantitative measure of agreement or predictive performance is being assessed.",
+  "index_test": "in-vitro-only",
+  "index_test_evidence": "We tested this hypothesis by measuring the blocking potencies of 32 torsadogenic (+TdP) and 23 non-torsadogenic (-TdP) drugs on hERG, and the depolarizing Cav1.2 and Nav1.5 channel currents. We used logistic regression models to compare torsadogenic probabilities determined by block of hERG alone or block of hERG coupled with block of Cav1.2 and/or block of Nav1.5.",
+  "eligible": false,
+  "exclusion_reason": "The study uses in vitro measurements of ion channel block to predict human clinical outcomes. It does not include any whole-animal in vivo studies as the index test."
  },
  "38852684": {
   "pmid": "38852684",
@@ -2325,7 +2569,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative comparison of drug concentrations in non-human primates and canines to human clinical concentrations, specifically in relation to QTc interval changes. It quantifies the drug concentration in animals at which a certain QTc change is observed relative to the concentration that causes a similar change in humans (e.g., '1.5x the moxifloxacin plasma concentration that causes a 10 ms QTc change in humans'). This represents a quantitative measure of agreement or translation between animal and human results."
+  "screen_reason": "The study reports a quantitative comparison of drug concentrations in non-human primates and canines to human clinical concentrations, specifically in relation to QTc interval changes. It quantifies the drug concentration in animals at which a certain QTc change is observed relative to the concentration that causes a similar change in humans (e.g., '1.5x the moxifloxacin plasma concentration that causes a 10 ms QTc change in humans'). This represents a quantitative measure of agreement or translation between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n&#xa0;=&#xa0;48) and canines (n&#xa0;=&#xa0;8).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "40863351": {
   "pmid": "40863351",
@@ -2364,7 +2612,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports that nonclinical cardiac NAMs (New Approach Methodologies) recapitulated clinical outcomes for vanoxerine, specifically detecting delayed repolarization and proarrhythmic effects that were not observed in earlier animal models and Phase I-II clinical trials but were seen in a Phase III trial. This suggests a quantitative or qualitative agreement between the NAM results and human clinical results."
+  "screen_reason": "The abstract reports that nonclinical cardiac NAMs (New Approach Methodologies) recapitulated clinical outcomes for vanoxerine, specifically detecting delayed repolarization and proarrhythmic effects that were not observed in earlier animal models and Phase I-II clinical trials but were seen in a Phase III trial. This suggests a quantitative or qualitative agreement between the NAM results and human clinical results.",
+  "index_test": "in-vitro-only",
+  "index_test_evidence": "In this study, we used robust cardiac NAMs to quantify and detect previously uncharacterized cardiac TdP adverse effects of vanoxerine. ... Here, we quantified the functional effects of clinically relevant concentrations of vanoxerine in vitro using cardiac NAMs coupled with noninvasive video-based imaging and MEA platforms.",
+  "eligible": false,
+  "exclusion_reason": "The study exclusively uses in vitro methods (cardiac NAMs, hiPSC-CMs, MPS, MEA) to predict human clinical outcomes. It does not include any whole-animal in vivo testing as the index test."
  },
  "28903488": {
   "pmid": "28903488",
@@ -2408,7 +2660,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement (sensitivity, specificity, ROC AUC) between preclinical (hERG IC50, dog QTc) and clinical QT interval data for 24 compounds."
+  "screen_reason": "The study reports quantitative measures of agreement (sensitivity, specificity, ROC AUC) between preclinical (hERG IC50, dog QTc) and clinical QT interval data for 24 compounds.",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "Clinical, heart rate-corrected QT interval (QTc) data on 24 compounds (13 positives; 11 negatives) were compared with their effect on dog QTc and the concentration of compound causing 50% inhibition (IC50) of hERG current.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "20807552": {
   "pmid": "20807552",
@@ -2447,7 +2703,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement between preclinical hERG assay results and human clinical QT prolongation, including sensitivity, specificity, and area under the receiver-operator curve, directly comparing animal model performance to human outcomes."
+  "screen_reason": "The study reports quantitative measures of agreement between preclinical hERG assay results and human clinical QT prolongation, including sensitivity, specificity, and area under the receiver-operator curve, directly comparing animal model performance to human outcomes.",
+  "index_test": "in-vitro-only",
+  "index_test_evidence": "Pharmacology & Therapeutics 129 (2011) 109\u2013119 Contents lists available at ScienceDirect Pharmacology & Therapeutics j o u r n a l h o m e p a g e : w w w. e l s ev i e r. c o m / l o c a t e / p h a r m t h e r a An evaluation of hERG current assay performance: Translating preclinical safety studies to clinical QT prolongation Gary Gintant \u204e Dept of Integrative Pharmacology, Abbott Laboratories, Dept. R46R, Bldg. AP-9, 100 Abbott Park Rd., Abbott Park IL 60064-6119, United States a r t i c l e i n f o Available online 31 August 2010 Keywords: hERG current assay QT prolongation In vitro assay performance Safety margins Likelihood ratios Assay sensitivity and speci\ufb01city a b s t r a c t Block of delayed recti\ufb01er current (IKr, Kv11.1 encoding the hERG gene) is associated with delayed cardiac repolarization (QTc prolongation), a surrogate marker of proarrhythmia. Despite its recognized role in assessing QTc prolongation risk, a quantitative analysis of the utility and limitations of the hERG current assay has not been reported. To benchmark hERG assay performance, this retrospective study compared hERG block potency with drug-induced QTc prolongation assessed during rigorous thorough QT (TQT) clinical studies for 39 drugs from multiple classes. To place block in context, hERG safety margins (IC50 values for block/mean maximal plasma drug concentrations during TQT studies) were compared to QTc prolongation (QTc increase \u2265 5 ms). Most (9/10) drugs eliciting essentially no hERG block at maximal concentrations demonstrate no QTc prolongation despite representing a wide hERG safety margin range. Based on receiver\u2013operator characteristics, a hERG safety margin of 45 provided optimal overall performance linking safety margins to QTc prolongation (sensitivity (true positive rate) = 0.64, speci\ufb01city (true negative rate) = 0.88); the area under the receiver\u2013operator curve (0.72) is indicative of moderate overall concordance. Likelihood ratios calculated from multitier contingency tables suggest that QTc prolonging drugs are only 5\u20137 times as likely to demonstrate low safety margins (1\u201330 range) compared to drugs that do not prolong QTc. Paradoxically, higher safety margins demonstrate lesser con\ufb01dence predicting prolongation. The overall limitations of hERG safety margins shown using these quantitative, evidencebased approaches highlight the need for additional preclinical assays and adaptive strategies throughout drug discovery to reliably mitigate QTc prolongation risk. \u00a9 2010 Elsevier Inc. All rights reserved.",
+  "eligible": false,
+  "exclusion_reason": "The study uses an in vitro hERG current assay to predict human clinical outcomes (QT prolongation). It does not report on whole-animal in vivo studies as the index test. Therefore, it does not meet the inclusion criteria."
  },
  "33666192": {
   "pmid": "33666192",
@@ -2483,7 +2743,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions 'Numbers of drugs and chemicals are screened using zebrafish embryos, and results were found to show 100% concordance with mammalian screening data.' This indicates a quantitative measure of agreement (concordance rate) between animal and human/mammalian results."
+  "screen_reason": "The abstract mentions 'Numbers of drugs and chemicals are screened using zebrafish embryos, and results were found to show 100% concordance with mammalian screening data.' This indicates a quantitative measure of agreement (concordance rate) between animal and human/mammalian results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Zebrafish-A Whole-organism Screening Model Zebrafish ( Danio rerio ) belonging to the family Cyprinidae, is a freshwater fish native to northern India, arose in the Ganges region and can be commonly found in countries including India, Bangladesh, Nepal, Myanmar, and Pakistan.[ 5 6 ] The interest in zebrafish as an in vivo model system has increased exponentially due to several characteristics of zebrafish. It is found that zebrafish resembles mammalian models.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "33813006": {
   "pmid": "33813006",
@@ -2522,7 +2786,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports quantitative measures of utility for different safety pharmacology tests in predicting clinical outcomes. Specifically, it mentions that only 21% and 28% of rodent CNS and respiratory studies, respectively, yielded findings of concern for clinical progression. It also notes that telemetry studies had utility in identifying cardiovascular effects in about 10% of studies. These figures represent a quantitative assessment of agreement or predictive value between animal study findings and potential clinical impact."
+  "screen_reason": "The abstract reports quantitative measures of utility for different safety pharmacology tests in predicting clinical outcomes. Specifically, it mentions that only 21% and 28% of rodent CNS and respiratory studies, respectively, yielded findings of concern for clinical progression. It also notes that telemetry studies had utility in identifying cardiovascular effects in about 10% of studies. These figures represent a quantitative assessment of agreement or predictive value between animal study findings and potential clinical impact.",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "An evaluation of such testing, supporting first clinical entry of 105 small molecule drug candidates over the last decade, showed that a \"core battery\" of in vitro electrophysiological (hERG), conscious non-rodent telemetry cardiovascular, rodent central nervous system (CNS) (modified Irwin's or functional observational battery [FOB] test) and respiratory function (plethysmography) studies was performed.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "32735877": {
   "pmid": "32735877",
@@ -2555,7 +2823,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract discusses discriminatory power (sensitivity and specificity) and predictive power of toxicological tests, which are quantitative measures of agreement. It uses examples of tests for predicting cardiac arrhythmia liability and explores how these tests can be combined to achieve desired predictive power, implying a comparison or agreement metric between test results and actual toxicity."
+  "screen_reason": "The abstract discusses discriminatory power (sensitivity and specificity) and predictive power of toxicological tests, which are quantitative measures of agreement. It uses examples of tests for predicting cardiac arrhythmia liability and explores how these tests can be combined to achieve desired predictive power, implying a comparison or agreement metric between test results and actual toxicity.",
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The abstract discusses toxicological testing and the predictive power of tests, mentioning \"tests available for the prediction of a substance's liability to cause the cardiac arrhythmia torsade de pointes\" and that \"the discriminatory powers of a number of tests for predicting a torsade de pointes liability are publicly available.\" However, it does not specify whether these tests are whole-animal in vivo, in vitro, or in silico.",
+  "eligible": false,
+  "exclusion_reason": "The abstract discusses toxicological testing and predictive power but does not specify the type of index test used (e.g., whole-animal in vivo, in vitro, in silico), making it impossible to determine if it meets the inclusion criteria for animal model concordance."
  },
  "30726989": {
   "pmid": "30726989",
@@ -2603,7 +2875,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports quantitative measures of agreement (sensitivity, specificity, predictive values) between preclinical animal models (rat and large animal) and human clinical results for cardiovascular endpoints (heart rate and blood pressure). It explicitly calculates concordance rates for both rat to large animal and large animal to human comparisons."
+  "screen_reason": "The abstract reports quantitative measures of agreement (sensitivity, specificity, predictive values) between preclinical animal models (rat and large animal) and human clinical results for cardiovascular endpoints (heart rate and blood pressure). It explicitly calculates concordance rates for both rat to large animal and large animal to human comparisons.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "To this end, we investigated translation of HR and BP endpoints using data from 83 compounds that were tested in telemetry studies in rat and large animal (LA; dog or monkey) and 79 compounds that were tested in LA telemetry studies and human phase I clinical trials.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "26803853": {
   "pmid": "26803853",
@@ -2612,8 +2888,8 @@
   "endpoint_class": null,
   "extraction_source": "none",
   "extraction_status": "no abstract available",
-  "title": "",
-  "journal": "",
+  "title": "The Role of Clinical Studies for Pets with Naturally Occurring Tumors in Translational Cancer Research: Workshop Summary",
+  "journal": "National Academies Press (US)",
   "year": 2015,
   "cited_by": 0,
   "authors": [
@@ -2623,7 +2899,11 @@
   ],
   "sources": [
    "s8_vet_targeted"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Recently, there has been renewed interest in comparative oncology &#x2013; the study of naturally developing cancers in animals as models for human disease &#x2013; as one way to improve cancer drug development and reduce attrition of investigational agents. Tumors that spontaneously develop in pet dogs and other companion animals as a result of normal aging share many characteristics with human cancers, such as histological appearance, tumor genetics, biological behavior, molecular targets, and therapeutic response.",
+  "eligible": false,
+  "exclusion_reason": "The study discusses the potential of using naturally occurring tumors in pets as models for human disease but does not report any quantitative measure of agreement or concordance between animal and human results. It is a workshop summary discussing the rationale and potential for integration, not a study reporting such a statistic."
  },
  "29730448": {
   "pmid": "29730448",
@@ -2664,7 +2944,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative measure of agreement (diagnostic power computed using likelihood ratios) between animal and human toxicity observations for pharmaceuticals, using a large dataset of approved drugs and reported adverse events."
+  "screen_reason": "The study reports a quantitative measure of agreement (diagnostic power computed using likelihood ratios) between animal and human toxicity observations for pharmaceuticals, using a large dataset of approved drugs and reported adverse events.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The events reported in five species - rat, dog, mouse, rabbit, and cynomolgus monkey - were treated as diagnostic tests for human events and the diagnostic power was computed for each event/species pair using likelihood ratios.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "17175568": {
   "pmid": "17175568",
@@ -2730,7 +3014,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a systematic review examining concordance between treatment effects in animal experiments and clinical trials. It provides quantitative measures of treatment effects (e.g., odds ratios, percentage changes with confidence intervals) for several intervention-indication pairs, allowing for a comparison of effect sizes between animal models and human studies."
+  "screen_reason": "The abstract reports a systematic review examining concordance between treatment effects in animal experiments and clinical trials. It provides quantitative measures of treatment effects (e.g., odds ratios, percentage changes with confidence intervals) for several intervention-indication pairs, allowing for a comparison of effect sizes between animal models and human studies.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Study selection Animal studies for interventions with unambiguous evidence of a treatment effect (benefit or harm) in clinical trials: head injury, antifibrinolytics in haemorrhage, thrombolysis in acute ischaemic stroke, tirilazad in acute ischaemic stroke, antenatal corticosteroids to prevent neonatal respiratory distress syndrome, and bisphosphonates to treat osteoporosis. Review methods Data were extracted on study design, allocation concealment, number of randomised animals, type of model, intervention, and outcome.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "19297654": {
   "pmid": "19297654",
@@ -2748,7 +3036,11 @@
   ],
   "sources": [
    "anchor"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The concept that animal research, particularly that relating to pharmaceuticals and environmental agents, may be a poor predictor of human experience is not new. A thousand years ago, Ibn Sina commented on the need to study humans rather than animals,1 and Alexander Pope\u2019s dictum \u2018The proper study of mankind is man\u2019 is well known and has been widely cited.2 Pharmacologists, in particular, have long recognized the difficulties inherent in extrapolating drug data from animals to man.3,4 Given the large number of animal studies conducted, it would be expected that some animal experiments do predict human reactions. For example, penicillin was observed to protect both mice and humans from staphylococcal infections,5 and isotretinoin (\u2018Acutane\u2019) causes birth defects in rabbits and monkeys as well as in humans (although not in mice or rats).6 By contrast, corticosteroids are widely teratogenic in animals but not in humans,7 and thalidomide is not a teratogen in many animal species but it is in humans.8 Recent experience in a phase 1 study of the monoclonal antibody TGN 1412 resulted in life-threatening morbidity in all six healthy volunteers, reflecting inadequate prediction even in non-human primates of the human response.9",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "17032985": {
   "pmid": "17032985",
@@ -2767,7 +3059,11 @@
   ],
   "sources": [
    "anchor"
-  ]
+  ],
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The provided text is only a title and does not contain enough information to determine the index test used.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "32391273": {
   "pmid": "32391273",
@@ -2814,7 +3110,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative comparison of preclinical drug efficacy measures (IC50, TGI) against drug approval status, using logistic regression to assess the odds of approval based on preclinical data quartiles. This represents a quantitative measure of agreement between preclinical results and clinical outcomes (drug approval)."
+  "screen_reason": "The study reports a quantitative comparison of preclinical drug efficacy measures (IC50, TGI) against drug approval status, using logistic regression to assess the odds of approval based on preclinical data quartiles. This represents a quantitative measure of agreement between preclinical results and clinical outcomes (drug approval).",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "The search identified reports on preclinical studies of 155 drugs that had been carried forward to human testing as part of the FDA approval process. Of these, 27 had been approved as monotherapy for lung cancer, but 128 had failed at some stage of human testing. Preclinical Cell Models Our search identified reports on 378 cell culture experiments ( Supplemental Table 2 ) reported from 308 data sources from peer-reviewed articles and public drug libraries ( Supplemental Figure 1 ). IC50 values were not reported for 55 of these, precluding their use in the analyses. Table 1 summarizes the remaining 323 experiments according to type of drug and cell line used, and provides of IC50 values that define each quartile of this variable for failed and approved drugs. The search identified 144 preclinical studies using murine models of lung cancer drugs that satisfied inclusion criteria, with all published reports providing sufficient experimental data to use in our analyses ( Supplemental Table 2 ).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "26753942": {
   "pmid": "26753942",
@@ -2855,7 +3155,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract explicitly mentions calculating Likelihood Ratios (LRs) for over 3,000 drugs with both animal and human data to assess the predictive value of animal tests for human drug toxicity. This represents a quantitative measure of agreement (or lack thereof) between animal and human results."
+  "screen_reason": "The abstract explicitly mentions calculating Likelihood Ratios (LRs) for over 3,000 drugs with both animal and human data to assess the predictive value of animal tests for human drug toxicity. This represents a quantitative measure of agreement (or lack thereof) between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Animals are still widely used in drug development and safety tests, despite evidence for their lack of predictive value. In this regard, we recently showed, by producing Likelihood Ratios (LRs) for an extensive data set of over 3,000 drugs with both animal and human data, that the absence of toxicity in animals provides little or virtually no evidential weight that adverse drug reactions will also be absent in humans.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "30364994": {
   "pmid": "30364994",
@@ -2893,7 +3197,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports on the predictivity of human 3D gastrointestinal microtissues for drug-induced diarrhea, comparing in vitro results to human clinical outcomes. It mentions a threshold that distinguished drugs inducing clinical diarrhea from those that do not, and accurately predicted diarrhea for drugs whose development was limited by this side effect. This suggests a quantitative measure of agreement or predictive accuracy between the model and human results."
+  "screen_reason": "The abstract reports on the predictivity of human 3D gastrointestinal microtissues for drug-induced diarrhea, comparing in vitro results to human clinical outcomes. It mentions a threshold that distinguished drugs inducing clinical diarrhea from those that do not, and accurately predicted diarrhea for drugs whose development was limited by this side effect. This suggests a quantitative measure of agreement or predictive accuracy between the model and human results.",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "Current preclinical GI safety assessment depends on in vivo tests in higher-order species to achieve translational accuracy. Retrospective evaluation of compounds with clinical GI toxicity (100% prevalence), revealed that GIT in rodents had only 46% clinical concordance compared with 83% in nonrodents ( Olson et al. , 2000 ). Conversely, when compounds with preclinical GIT were followed prospectively through the completion of Phase 1 trials, the diagnostic value of different species revealed a proportionate reduction in uncertainty of 15% and 28% in rat and dog respectively compared with 87% in primate studies ( Monticello et al. , 2017 ).",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "27870924": {
   "pmid": "27870924",
@@ -2934,7 +3242,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative measure of agreement between preclinical animal results and human clinical results by performing a meta-analysis of preclinical data (odds ratio 0.27, 95% CI 0.18-0.40) in preparation for a first-in-human trial. This directly compares the effect size in animal models to what is expected in humans."
+  "screen_reason": "The study reports a quantitative measure of agreement between preclinical animal results and human clinical results by performing a meta-analysis of preclinical data (odds ratio 0.27, 95% CI 0.18-0.40) in preparation for a first-in-human trial. This directly compares the effect size in animal models to what is expected in humans.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Our systematic review demonstrates that MSC therapy reduces the odds of death in preclinical animal sepsis models.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "23522086": {
   "pmid": "23522086",
@@ -2974,7 +3286,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a quantitative measure of agreement/concordance (9% of studies correctly determined the experimental unit) and discusses the impact of litter effects on the translation of preclinical findings. This aligns with the inclusion criteria for quantitative measures of agreement between animal models and the translation problem."
+  "screen_reason": "The abstract reports a quantitative measure of agreement/concordance (9% of studies correctly determined the experimental unit) and discusses the impact of litter effects on the translation of preclinical findings. This aligns with the inclusion criteria for quantitative measures of agreement between animal models and the translation problem.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Numerous animal models (lesion, transgenic, knockout, selective breeding, etc.) have been developed for a variety of psychiatric, neurodegenerative, and neurodevelopmental disorders. While many of these models have been helpful for understanding disease pathology, they have been less useful for discovering potential therapies or predicting clinical efficacy. Translation from in vivo animal models (typically rodent) has been poor, despite many years of research and effort.",
+  "eligible": false,
+  "exclusion_reason": "The study discusses the limitations of animal models in predicting human clinical efficacy but does not report a quantitative measure of agreement between animal results and human clinical results. It focuses on experimental design and statistical analysis within animal studies rather than comparing animal model outcomes to human outcomes with a concordance statistic."
  },
  "12667944": {
   "pmid": "12667944",
@@ -3023,7 +3339,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study compares preclinical cardiac electrophysiology data (in vitro and in vivo) with clinical QT interval prolongation and torsade de pointes for a large number of drugs. It quantifies relationships between drug concentrations and effects in animals versus humans, providing a measure of agreement and a basis for a safety margin in drug development."
+  "screen_reason": "The study compares preclinical cardiac electrophysiology data (in vitro and in vivo) with clinical QT interval prolongation and torsade de pointes for a large number of drugs. It quantifies relationships between drug concentrations and effects in animals versus humans, providing a measure of agreement and a basis for a safety margin in drug development.",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "These data were set against the free plasma concentrations attained during clinical use (effective therapeutic plasma concentrations; ETPC unbound ). The drugs were divided into five categories: (1) Class Ia and III antiarrhythmics; (2) Withdrawn from market due to TdP; (3) Measurable incidence / numerous reports of TdP in humans; (4) Isolated reports of TdP in humans; (5) No reports of TdP in humans. Results: Data from hERG (or IKr ) assays in addition to ETPC unbound data were available for 52 drugs. For Category 1 drugs, data for hERG /IKr IC 50 , APD 90 , QTc in animals and QTc in humans were generally close to or superimposed on the ETPC unbound values.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "16453316": {
   "pmid": "16453316",
@@ -3065,7 +3385,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a quantitative comparison of experimental efficacy between drugs used clinically and those tested only experimentally, including a statistical comparison of average improvement percentages (31.3% vs 24.4%) and a p-value, which indicates a measure of agreement or difference in outcomes between animal models and clinical translation."
+  "screen_reason": "The abstract reports a quantitative comparison of experimental efficacy between drugs used clinically and those tested only experimentally, including a statistical comparison of average improvement percentages (31.3% vs 24.4%) and a p-value, which indicates a measure of agreement or difference in outcomes between animal models and clinical translation.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Controlled in vivo and in vitro experiments using functional or histological end points were selected for analysis.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "39379679": {
   "pmid": "39379679",
@@ -3105,7 +3429,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports quantitative measures of overlap between diseases investigated in GWAS and those with drug development efforts (e.g., 'only 612 of 11,158 diseases listed in Human Disease Ontology have an approved drug treatment', 'Of the 1414 diseases that are the subject of preclinical or clinical phase drug development, only 666 have been investigated in GWAS'). This represents a quantitative comparison of human research efforts, which aligns with the inclusion criteria for assessing coverage and overlap."
+  "screen_reason": "The abstract reports quantitative measures of overlap between diseases investigated in GWAS and those with drug development efforts (e.g., 'only 612 of 11,158 diseases listed in Human Disease Ontology have an approved drug treatment', 'Of the 1414 diseases that are the subject of preclinical or clinical phase drug development, only 666 have been investigated in GWAS'). This represents a quantitative comparison of human research efforts, which aligns with the inclusion criteria for assessing coverage and overlap.",
+  "index_test": "human-only",
+  "index_test_evidence": "The study focuses on human genome-wide association studies (GWAS) and pharmaceutical research and development, comparing disease coverage and overlap between these two areas. It does not mention the use of whole, live non-human animals as a predictor of human outcomes.",
+  "eligible": false,
+  "exclusion_reason": "The study does not report on the use of whole, live non-human animals as an index test to predict human outcomes. The focus is on human genetic studies (GWAS) and drug development."
  },
  "35616311": {
   "pmid": "35616311",
@@ -3124,7 +3452,11 @@
   ],
   "sources": [
    "citation_hub"
-  ]
+  ],
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The provided text is only a title and does not contain any information about the index test used.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "37712424": {
   "pmid": "37712424",
@@ -3143,7 +3475,11 @@
   ],
   "sources": [
    "citation_hub"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The relative ease with which results can be gathered using a single model often leads researchers to discount the possibility that the results may not be representative of more diverse genetic backgrounds, reducing the translational potential for humans. To improve translation, we propose as one solution that a robustness test should be considered to confirm that results are \u201crobust across heterogeneous genetic contexts,\u201d thereby improving prediction of likely responses in heterogeneous patient populations. Furthermore, robustness approaches could be leveraged to identify biomarkers that prognosticate likely responders, heightening public health outcomes and alleviating financial burden. This general concept pertains to all genetically homogeneous preclinical models as well as large, genetically ill-defined outbred animals used in small numbers for safety testing, but mice will be used as the exemplar given their extensive use in modeling therapeutic efficacy in human diseases.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "29590200": {
   "pmid": "29590200",
@@ -3184,7 +3520,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports a quantitative measure of agreement between animal research and human clinical results by assessing the 'clinical relevance' of animal studies against human studies and then calculating that 'less than 7% of the studies were permissible' based on harms to animals versus benefits for humans. This is a form of concordance analysis."
+  "screen_reason": "The study reports a quantitative measure of agreement between animal research and human clinical results by assessing the 'clinical relevance' of animal studies against human studies and then calculating that 'less than 7% of the studies were permissible' based on harms to animals versus benefits for humans. This is a form of concordance analysis.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The authors identified and systematically reviewed 228 animal studies relating to the 6 interventions.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "38736280": {
   "pmid": "38736280",
@@ -3219,7 +3559,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions comparing predictions from protein-protein interaction models to animal models and demonstrating similar performance metrics. This suggests a quantitative comparison of agreement between non-human animal results and human clinical results (as the protein-protein interaction models are used to predict drug effects from drug labels, which are based on human clinical data)."
+  "screen_reason": "The abstract mentions comparing predictions from protein-protein interaction models to animal models and demonstrating similar performance metrics. This suggests a quantitative comparison of agreement between non-human animal results and human clinical results (as the protein-protein interaction models are used to predict drug effects from drug labels, which are based on human clinical data).",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "Preclinical animal research, as a gold standard for toxicity and efficacy evaluations, on rodents, non\u2010rodents, and nonhuman primates, is a key component of this regulatory process. 4 Animal models have been a valuable technique for anticipating drug\u2010induced side effects. However, other than the fact that some countries have been considering reducing and/or replacing animal use in their research studies, 5 animal studies are not uniformly sensitive to all side effects and can be costly compared with in silico approaches.",
+  "eligible": false,
+  "exclusion_reason": "The study primarily focuses on in silico methods (network-based, machine learning, protein-protein interaction networks) for predicting drug-induced side effects. While animal research is mentioned as a gold standard and a valuable technique, it is not the index test used for prediction in this study. The study's core methodology and predictive models are computational, not based on whole-animal in vivo experiments."
  },
  "30823899": {
   "pmid": "30823899",
@@ -3254,7 +3598,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract discusses the lack of published data to validate animal use in preclinical drug testing and their predictive nature for human safety/toxicity and efficacy. It mentions that data from rodent, dog, and monkey tests provide 'next to no evidential weight' regarding human toxicity, which implies a quantitative assessment of agreement (or lack thereof) between animal and human results."
+  "screen_reason": "The abstract discusses the lack of published data to validate animal use in preclinical drug testing and their predictive nature for human safety/toxicity and efficacy. It mentions that data from rodent, dog, and monkey tests provide 'next to no evidential weight' regarding human toxicity, which implies a quantitative assessment of agreement (or lack thereof) between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Background Animal testing has been central to pre-clinical drug development for several decades, yet there remains no substantial, robust, published evidence that this has a scientific basis\u2014i.e. that these tests are reliably predictive of human responses, both with respect to efficacy and toxicity/safety.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "18772421": {
   "pmid": "18772421",
@@ -3274,7 +3622,11 @@
   ],
   "sources": [
    "anchor"
-  ]
+  ],
+  "index_test": "unclear-from-text",
+  "index_test_evidence": "The text discusses the 'life cycle of translational research for medical interventions' and analyzes milestones from 'initial discovery' to 'highly cited clinical study'. It mentions 'basic science journals' and 'drug discovery' but does not explicitly state whether whole animal studies were used as the index test to predict human outcomes. The focus is on the timeline and refutation rates of interventions rather than a direct comparison of animal model performance against human clinical results.",
+  "eligible": false,
+  "exclusion_reason": "The study focuses on the timeline of translational research and the refutation rates of medical interventions, but it does not report a quantitative measure of agreement between non-human animal results and human clinical results. The index test used to predict human outcomes is not clearly specified as whole-animal-in-vivo."
  },
  "23503654": {
   "pmid": "23503654",
@@ -3313,7 +3665,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions a study showing 'low predictivity of animal responses in the field of inflammation' and corroborates 'earlier findings from comparisons in the fields of neurodegeneration, stroke and sepsis'. This suggests a quantitative comparison of animal vs human data, even if specific metrics are not detailed in the abstract."
+  "screen_reason": "The abstract mentions a study showing 'low predictivity of animal responses in the field of inflammation' and corroborates 'earlier findings from comparisons in the fields of neurodegeneration, stroke and sepsis'. This suggests a quantitative comparison of animal vs human data, even if specific metrics are not detailed in the abstract.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Animal experiments are to date the most important source of such data.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "32152206": {
   "pmid": "32152206",
@@ -3350,7 +3706,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract describes a framework (PAMERAH) that connects rodent and human pharmacokinetic models for glucose-responsive insulins. It explicitly mentions predicting therapeutic efficacy, identifying 'false positives' (promising in rodents but underperforming in humans) and 'false negatives' (optimal human dynamics not captured by rodent experiments), and condensing this information onto a 'translatability grid'. This indicates a quantitative comparison and agreement measure between animal and human results for intervention-indication pairs."
+  "screen_reason": "The abstract describes a framework (PAMERAH) that connects rodent and human pharmacokinetic models for glucose-responsive insulins. It explicitly mentions predicting therapeutic efficacy, identifying 'false positives' (promising in rodents but underperforming in humans) and 'false negatives' (optimal human dynamics not captured by rodent experiments), and condensing this information onto a 'translatability grid'. This indicates a quantitative comparison and agreement measure between animal and human results for intervention-indication pairs.",
+  "index_test": "in-silico-only",
+  "index_test_evidence": "To assist the rational design and clinical translation of the therapeutic, we present a Pharmacokinetic Algorithm Mapping GRI Efficacies in Rodents and Humans (PAMERAH) built upon our previous human model.",
+  "eligible": false,
+  "exclusion_reason": "The study uses a pharmacokinetic algorithm (PAMERAH) to predict human outcomes based on rodent and human models. While it mentions rodents, the primary predictive tool described is a computational model (in silico), not whole-animal in vivo experiments. Therefore, it does not meet the criteria for including whole-animal in vivo studies."
  },
  "32610529": {
   "pmid": "32610529",
@@ -3388,7 +3748,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports quantitative measures of agreement (correlations) between the HuP3D model's drug sensitivity metrics and clinically effective drug concentrations in patients. It also compares these correlations to those found in 2D and other 3D models, providing a direct quantitative comparison of predictive accuracy."
+  "screen_reason": "The abstract reports quantitative measures of agreement (correlations) between the HuP3D model's drug sensitivity metrics and clinically effective drug concentrations in patients. It also compares these correlations to those found in 2D and other 3D models, providing a direct quantitative comparison of predictive accuracy.",
+  "index_test": "in-vitro-only",
+  "index_test_evidence": "Human plasma-derived 3D culture (HuP3D) models were created by cross-linking fibrinogen, a blood plasma protein responsible for normal blood clotting when converted into fibrin ( Figure 1 a) [ 33 ], generating a gelatinous-like scaffold matrix using traditional tissue culture surfaces as the recipient mold, with media added on top to overcome drying of the matrix ( Figure 1 b).",
+  "eligible": false,
+  "exclusion_reason": "The study uses in vitro 3D cell cultures derived from human plasma and breast cancer cell lines to predict treatment responses. It does not involve whole, live non-human animals as the index test. While it mentions animal models in the introduction as a comparison, the primary methodology and predictive model described are in vitro."
  },
  "36730203": {
   "pmid": "36730203",
@@ -3423,7 +3787,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract describes a framework (CAMO) for 'transcriptomic response analysis' that aims to 'numerically quantify congruence' between model organisms and humans. It mentions developing 'quantitative concordance/discordance scores' and assisting researchers to 'numerically quantify congruence'. This suggests a quantitative measure of agreement between animal and human results, which aligns with the inclusion criteria."
+  "screen_reason": "The abstract describes a framework (CAMO) for 'transcriptomic response analysis' that aims to 'numerically quantify congruence' between model organisms and humans. It mentions developing 'quantitative concordance/discordance scores' and assisting researchers to 'numerically quantify congruence'. This suggests a quantitative measure of agreement between animal and human results, which aligns with the inclusion criteria.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "As human studies often encounter numerous constraints, including larger biological heterogeneity, hidden confounding factors, greater cost and time, and potential ethical concerns, model organisms have played an indispensable role in preclinical research to understand the pathogenesis of human diseases at the behavioral, cellular, and molecular levels.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "28731442": {
   "pmid": "28731442",
@@ -3461,7 +3829,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract discusses a comparative analysis between human and mouse models of neuroinflammation and NDD, specifically investigating the failure of a drug in clinical trials based on comparative analyses between the two species. This suggests a quantitative comparison of agreement or translation success, even if the specific metric isn't detailed in the abstract."
+  "screen_reason": "The abstract discusses a comparative analysis between human and mouse models of neuroinflammation and NDD, specifically investigating the failure of a drug in clinical trials based on comparative analyses between the two species. This suggests a quantitative comparison of agreement or translation success, even if the specific metric isn't detailed in the abstract.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Modulation of neuroinflammation for drug target- or biomarker identification requires extensive use of rodent models of AD to study molecular drivers of inflammation and various disease phenotypes associated to it [ 5 ].",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "26460544": {
   "pmid": "26460544",
@@ -3497,7 +3869,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a quantitative measure of agreement (45% overestimate of effect size due to publication bias) and a comparison of preclinical effect sizes with clinical trial results, which aligns with the inclusion criteria."
+  "screen_reason": "The abstract reports a quantitative measure of agreement (45% overestimate of effect size due to publication bias) and a comparison of preclinical effect sizes with clinical trial results, which aligns with the inclusion criteria.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Our screen from database and reference searches captured 74 studies eligible for extraction, corresponding to 332 unique experiments investigating tumor volume response ( Figure 1 , Table 1 , Table 1\u2014source data 1E ). Effect sizes (standardized mean difference [SMD] using Hedges' g) could not be computed for 174 experiments (52%) due to inadequate reporting (e.g., sample size not provided, effect size reported as a median, lack of error bars, Figure 1\u2014figure supplement 1 ). Overall, 158 experiments, involving 2716 animals, were eligible for meta-analysis.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "28335819": {
   "pmid": "28335819",
@@ -3537,7 +3913,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study reports quantitative measures of agreement (correlation coefficients of 0.05 and 0.38) between gene expression signatures from human Parkinson's disease studies and animal models, directly addressing the concordance between non-human animal results and human clinical results."
+  "screen_reason": "The study reports quantitative measures of agreement (correlation coefficients of 0.05 and 0.38) between gene expression signatures from human Parkinson's disease studies and animal models, directly addressing the concordance between non-human animal results and human clinical results.",
+  "index_test": "mixed-animal-and-nonanimal",
+  "index_test_evidence": "The study analysed gene expression in both human patients and animal models (mouse and rat models) to compare concordance with human clinical results.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "25677548": {
   "pmid": "25677548",
@@ -3579,7 +3959,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study compares the alteration patterns of 30 blood chemistry parameters between rats and humans after exercise, finding that almost all parameters followed a similar pattern. It quantifies the species x exercise interaction for 2 out of 30 parameters, indicating a high degree of similarity in response. This represents a quantitative measure of agreement between animal and human results."
+  "screen_reason": "The study compares the alteration patterns of 30 blood chemistry parameters between rats and humans after exercise, finding that almost all parameters followed a similar pattern. It quantifies the species x exercise interaction for 2 out of 30 parameters, indicating a high degree of similarity in response. This represents a quantitative measure of agreement between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Therefore, the aim of this study was to address this issue by directly comparing side by side in the same experimental setup rat and human responses to an acute submaximal exercise bout to exhaustion of matched intensity and duration on a treadmill.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "17988725": {
   "pmid": "17988725",
@@ -3612,7 +3996,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract mentions 'The predictive value of those animal studies is carefully monitored, thus providing an ideal dataset for evaluating the efficacy of animal models.' and 'On average, the extrapolated results from studies using tens of millions of animals fail to accurately predict human responses.' This suggests a quantitative measure of agreement or predictive value is reported."
+  "screen_reason": "The abstract mentions 'The predictive value of those animal studies is carefully monitored, thus providing an ideal dataset for evaluating the efficacy of animal models.' and 'On average, the extrapolated results from studies using tens of millions of animals fail to accurately predict human responses.' This suggests a quantitative measure of agreement or predictive value is reported.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "The vast majority of animals used as models are used in biomedical preclinical trials. The predictive value of those animal studies is carefully monitored, thus providing an ideal dataset for evaluating the efficacy of animal models.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "22790876": {
   "pmid": "22790876",
@@ -3632,7 +4020,11 @@
   ],
   "sources": [
    "citation_hub"
-  ]
+  ],
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "While LD 50 studies of drug candidates have always been performed in animals like rodents or dogs, efficacy and adverse effect studies using animals as a model for humans were prompted only in the late 1950s, as a consequence of the thalidomide scandal, where thousands of babies were born with severe extremity deformations. In the last 10\u201315 years, preclinical research methodologies have increased crucially regarding measurement of sensitivity and specificity. Adapted and improved for dedicated use in animal research, positron emission tomography (PET) and single photon emission computed tomography (SPECT) are good examples of such methodologies. It seems to us that increased measurement precision in animal research has somewhat raised expectations regarding human outcome prediction of preclinical data.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "26856335": {
   "pmid": "26856335",
@@ -3671,7 +4063,11 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The abstract reports a comparison of oxidative stress and inflammation responses between rats and humans to exercise and vitamin C administration. It states 'There were only 1/19 significant species x exercise interactions (catalase), indicating similar responses to exercise between rats and humans in redox and inflammatory biomarkers.' and 'There were 10/19 significant species x vitamin C interactions, indicating that rats poorly mimic human oxidative stress and inflammatory responses to vitamin C administration.' This indicates a quantitative comparison of agreement/disagreement between animal and human results across multiple biomarkers."
+  "screen_reason": "The abstract reports a comparison of oxidative stress and inflammation responses between rats and humans to exercise and vitamin C administration. It states 'There were only 1/19 significant species x exercise interactions (catalase), indicating similar responses to exercise between rats and humans in redox and inflammatory biomarkers.' and 'There were 10/19 significant species x vitamin C interactions, indicating that rats poorly mimic human oxidative stress and inflammatory responses to vitamin C administration.' This indicates a quantitative comparison of agreement/disagreement between animal and human results across multiple biomarkers.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "We contrasted rat and human oxidative stress and inflammatory responses to exercise (pro-oxidant stimulus) and/or vitamin C (anti-oxidant stimulus) administration.",
+  "eligible": true,
+  "exclusion_reason": null
  },
  "36859342": {
   "pmid": "36859342",
@@ -3709,6 +4105,10 @@
   "extraction_source": "abstract",
   "extraction_status": "ok",
   "rubric_version": "2026-08-20.r2",
-  "screen_reason": "The study assesses the translatability of preclinical to early clinical dose ranges for CNS drugs by calculating the overlap between pharmacologically active dose ranges and well-tolerated levels for three PK parameters (HED, Cmax, AUC). This represents a quantitative measure of agreement between animal and human results."
+  "screen_reason": "The study assesses the translatability of preclinical to early clinical dose ranges for CNS drugs by calculating the overlap between pharmacologically active dose ranges and well-tolerated levels for three PK parameters (HED, Cmax, AUC). This represents a quantitative measure of agreement between animal and human results.",
+  "index_test": "whole-animal-in-vivo",
+  "index_test_evidence": "Preclinical in vitro studies were not taken into account as we aimed to investigate the predictivity of in vivo pharmacology experiments in animals.",
+  "eligible": true,
+  "exclusion_reason": null
  }
 }

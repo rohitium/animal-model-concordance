@@ -26,9 +26,10 @@ AREAS = ["oncology","cardiovascular","neurology-stroke","neurodegeneration","psy
          "sepsis-inflammation","infectious-disease","metabolic","hepatic","renal","respiratory",
          "musculoskeletal","ophthalmology","dermatology","pain","reproductive","haematology",
          "cross-cutting"]
+# 'in-vitro-or-in-silico-comparator' was removed: it is not a kind of animal model,
+# and offering it as one let non-animal studies present as in-scope (rubric r3).
 MODELS = ["induced","genetic","xenograft-pdx","surgical","infection-challenge",
-          "spontaneous-veterinary","across-multiple-models","regulatory-dataset",
-          "in-vitro-or-in-silico-comparator"]
+          "spontaneous-veterinary","across-multiple-models","regulatory-dataset"]
 SPECIES = ["mouse","rat","dog","cat","pig","rabbit","guinea-pig","hamster","sheep","goat",
            "cattle","horse","chicken","ferret","zebrafish","non-human-primate",
            "multiple-aggregated","not-species-specific"]

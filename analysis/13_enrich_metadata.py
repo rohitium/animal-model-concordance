@@ -18,7 +18,13 @@ for i in range(0, len(pmids), 100):
             xml = urllib.request.urlopen(url, timeout=120).read().decode("utf-8", "replace"); break
         except Exception: time.sleep(2 ** a)
     if not xml: continue
-    for art in xml.split("<PubmedArticle>")[1:]:
+    # Each record must be bounded by its OWN closing tag. Splitting on the opening
+    # tag alone lets a chunk run to the end of the document, so a record lacking
+    # <ArticleTitle> (book chapters) picks up the next article's title -- silently
+    # attaching the wrong title to a PMID.
+    chunks = (re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S)
+              + re.findall(r"<PubmedBookArticle>.*?</PubmedBookArticle>", xml, re.S))
+    for art in chunks:
         m = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
         if not m: continue
         pm = m.group(1)
@@ -34,6 +40,8 @@ for i in range(0, len(pmids), 100):
                 re.findall(r'<AbstractText[^>]*Label="([^"]+)"[^>]*>(.*?)</AbstractText>', art, re.S)]
         doi = re.search(r'<ArticleId IdType="doi">(.*?)</ArticleId>', art, re.S)
         pmc = re.search(r'<ArticleId IdType="pmc">(.*?)</ArticleId>', art, re.S)
+        ti = (re.search(r"<ArticleTitle[^>]*>(.*?)</ArticleTitle>", art, re.S)
+              or re.search(r"<BookTitle[^>]*>(.*?)</BookTitle>", art, re.S))
         out[pm] = {
             "mesh": mesh,
             "publication_types": [txt(x) for x in re.findall(r"<PublicationType[^>]*>(.*?)</PublicationType>", art, re.S)],
@@ -41,7 +49,12 @@ for i in range(0, len(pmids), 100):
             "pmcid": txt(pmc.group(1)) if pmc else None,
             "abstract": abst,
             "abstract_sections": secs,
-            "journal_full": txt((re.search(r"<Title>(.*?)</Title>", art, re.S) or [None, ""])[1] if re.search(r"<Title>(.*?)</Title>", art, re.S) else ""),
+            "title": txt(ti.group(1)) if ti else "",
+            "is_book": "<BookTitle" in art,
+            "journal_full": (txt((re.search(r"<Title>(.*?)</Title>", art, re.S) or [None, ""])[1])
+                             if re.search(r"<Title>(.*?)</Title>", art, re.S)
+                             else txt((re.search(r"<PublisherName[^>]*>(.*?)</PublisherName>", art, re.S) or [None,""])[1])
+                                  if re.search(r"<PublisherName[^>]*>(.*?)</PublisherName>", art, re.S) else ""),
             "authors_full": [f"{txt(l)} {txt(f)}".strip() for f, l in
                              re.findall(r"<Author[^>]*>.*?<LastName>(.*?)</LastName>.*?<ForeName>(.*?)</ForeName>", art, re.S)][:40],
             "grants": sorted({txt(a0) for a0 in re.findall(r"<Agency>(.*?)</Agency>", art, re.S)}),
