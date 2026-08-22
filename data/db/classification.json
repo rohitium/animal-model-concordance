@@ -1547,7 +1547,10 @@
  },
  "30726989": {
   "error": "Invalid control character at: line 19 column 212 (char 1882)",
-  "source_tier": "fulltext"
+  "source_tier": "fulltext",
+  "arm": "safety-pharmacology",
+  "arm_evidence": "Title and endpoints: cardiovascular safety pharmacology studies, heart rate and blood pressure.",
+  "assigned_by": "manual - classifier returned no arm"
  },
  "26803853": {
   "screen_decision": "include",

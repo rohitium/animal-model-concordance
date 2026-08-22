@@ -113,3 +113,38 @@ def family_note(fam):
     for f, note, _ in METRIC_FAMILIES:
         if f == fam: return note
     return "direction not determined from the reported metric name"
+
+
+# --- model organisms for the site --------------------------------------------
+# One canonical name per organism. The extractor emits "monkey", "rhesus monkey",
+# "cynomolgus monkey", "baboon" and "non-human primate" as five organisms, which
+# fragments the table into rows backed by one study each. Group labels are kept as
+# their own organisms (a paper reporting "43% of rodent studies" did not measure mice
+# separately) but carry no suffix.
+ORGANISM_GROUPS = {"rodent", "non-rodent", "large animal", "small animal",
+                   "non-human primate", "farm animal", "companion animal"}
+
+def organism(name):
+    """Canonical organism name, or None if the label carries no organism information."""
+    t = re.sub(r"\s+", " ", str(name or "").strip().lower())
+    t = re.sub(r"\s*\(as grouped\)$", "", t)
+    if not t or t in {"animal","animals","human","humans","species","not specified",
+                      "animal model","animal models","other"}:
+        return None
+    if t in {"nonrodent","non rodent","non-rodents","nonrodents"}: return "non-rodent"
+    if t in {"rodents","rodentia"}: return "rodent"
+    if t in {"nhp","nhps"}: return "non-human primate"
+    if t in {"zebra fish"}: return "zebrafish"
+    if t in {"ewe","ewes","lamb","lambs"}: return "sheep"
+    # not organisms: a model type, and a non-label
+    if t in {"pdx models","pdx","xenograft","others","other species"}: return None
+    if t in ORGANISM_GROUPS: return t
+    m = _match(t, SPECIES)
+    return m or t          # keep an unrecognised but specific label rather than dropping it
+
+def organisms(names):
+    out = []
+    for n in names or []:
+        c = organism(n)
+        if c and c not in out: out.append(c)
+    return out

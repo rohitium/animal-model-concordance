@@ -56,7 +56,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/31307492.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/31307492.pdf",
   "license": null
  },
  "25092317": {
@@ -186,7 +186,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/34127759.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/34127759.pdf",
   "license": null
  },
  "34916915": {
@@ -266,7 +266,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/38867022.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/38867022.pdf",
   "license": null
  },
  "26479923": {
@@ -286,7 +286,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/27261415.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/27261415.pdf",
   "license": null
  },
  "32631250": {
@@ -296,7 +296,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/32631250.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/32631250.pdf",
   "license": null
  },
  "29302222": {
@@ -306,7 +306,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/29302222.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/29302222.pdf",
   "license": null
  },
  "27916279": {
@@ -336,7 +336,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/40558535.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/40558535.pdf",
   "license": null
  },
  "35781406": {
@@ -376,7 +376,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/34558834.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/34558834.pdf",
   "license": null
  },
  "32127577": {
@@ -386,7 +386,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/32127577.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/32127577.pdf",
   "license": null
  },
  "39255793": {
@@ -396,7 +396,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/39255793.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/39255793.pdf",
   "license": null
  },
  "40418625": {
@@ -426,7 +426,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/40849367.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/40849367.pdf",
   "license": null
  },
  "39182537": {
@@ -506,7 +506,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/32868897.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/32868897.pdf",
   "license": null
  },
  "11029269": {
@@ -526,7 +526,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/28422076.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/28422076.pdf",
   "license": null
  },
  "38910363": {
@@ -596,7 +596,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/35148401.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/35148401.pdf",
   "license": null
  },
  "23812503": {
@@ -656,7 +656,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/33666192.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/33666192.pdf",
   "license": null
  },
  "33813006": {
@@ -746,7 +746,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/32391273.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/32391273.pdf",
   "license": null
  },
  "26753942": {
@@ -766,7 +766,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/30364994.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/30364994.pdf",
   "license": null
  },
  "27870924": {
@@ -836,7 +836,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/37712424.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/37712424.pdf",
   "license": null
  },
  "29590200": {
@@ -846,7 +846,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/29590200.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/29590200.pdf",
   "license": null
  },
  "38736280": {
@@ -866,7 +866,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/30823899.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/30823899.pdf",
   "license": null
  },
  "18772421": {
@@ -886,7 +886,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/23503654.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/23503654.pdf",
   "license": null
  },
  "32152206": {
@@ -916,7 +916,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/36730203.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/36730203.pdf",
   "license": null
  },
  "28731442": {
@@ -926,7 +926,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/28731442.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/28731442.pdf",
   "license": null
  },
  "26460544": {
@@ -946,7 +946,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/28335819.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/28335819.pdf",
   "license": null
  },
  "25677548": {
@@ -956,7 +956,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/25677548.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/25677548.pdf",
   "license": null
  },
  "17988725": {
@@ -976,7 +976,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/22790876.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/22790876.pdf",
   "license": null
  },
  "26856335": {
@@ -996,7 +996,7 @@
   "oa": true,
   "route": "recovered_from_disk",
   "xml": "data/raw/fulltext/36859342.xml",
-  "pdf": null,
+  "pdf": "data/raw/fulltext/36859342.pdf",
   "license": null
  }
 }

@@ -1,0 +1,314 @@
+"""Build the site: one landing page, one page per study.
+
+Supersedes 24_build_site.py. Everything is driven by the question-driven records in
+data/db/study_answers.json, so the pages answer our questions rather than reshaping
+whatever numbers each paper happened to print."""
+import sys, os, json, html, collections, datetime, re
+sys.path.insert(0, os.path.dirname(__file__))
+import normalize as N
+ROOT=os.path.join(os.path.dirname(__file__),"..")
+OUT=os.path.join(ROOT,"site","_build")
+J=lambda *p: os.path.join(ROOT,*p)
+load=lambda *p: json.load(open(J(*p))) if os.path.exists(J(*p)) else {}
+
+DB=load("data","db","studies.json"); META=load("data","db","metadata.json")
+ANS=load("data","db","study_answers.json"); CLS=load("data","db","classification.json")
+FTS=load("data","raw","fulltext_status.json")
+OK={k:v for k,v in ANS.items() if "error" not in v and DB.get(k,{}).get("eligible")}
+# Patient-derived xenografts grow the patient's own human tumour in a mouse host, so they
+# answer an avatar question rather than whether another species predicts human outcomes.
+# Reported separately, never mixed into the organism rows.
+PDX={k for k,v in DB.items() if k in OK and v.get("substrate")=="human-tissue-in-animal-host"}
+CORE={k:v for k,v in OK.items() if k not in PDX}
+EXCL={k:v for k,v in DB.items() if v.get("eligible") is False}
+for d in (os.path.join(OUT,"api","study"), os.path.join(OUT,"study")):
+    os.makedirs(d,exist_ok=True)
+e=lambda s: html.escape(str(s if s is not None else ""))
+BUILT=datetime.date.today().isoformat()
+
+ASSESS_LABEL={"efficacy":"Efficacy","toxicology":"Toxicology",
+  "safety-pharmacology":"Safety pharmacology","disease-biology":"Disease biology",
+  "veterinary":"Veterinary"}
+ASSESS_ORDER=["efficacy","toxicology","safety-pharmacology","disease-biology","veterinary"]
+VERDICT_LABEL={"supports":"supports","partly-supports":"partly supports",
+  "does-not-support":"does not support","no-data":"no data"}
+
+def arm(pm): return (CLS.get(pm) or {}).get("arm") or "unassigned"
+def cite(pm):
+    v=DB.get(pm) or {}; md=META.get(pm) or {}
+    a=(md.get("authors_full") or v.get("authors") or [])
+    if a:
+        last=a[0].split()[-1] if " " in a[0] else a[0]
+        nm=f"{last} et al." if len(a)>1 else last
+    else: nm="Anon."
+    return f"{nm} {v.get('year') or 'n.d.'}"
+def orgs_of(pm):
+    a=OK[pm]["animal_side"]
+    return N.organisms(list(a.get("species") or [])+list(a.get("grouped_labels") or [])) or ["not specified"]
+
+UNITS={"percent":"%","proportion_0_1":"","correlation":"","fold":"-fold","ratio":"×","count":"","other":""}
+def fmt(c):
+    v,u=c.get("value"),c.get("unit")
+    if v is None: return "—"
+    if u=="percent": return f"{v:g}%"
+    if u=="proportion_0_1": return f"{v:g}"
+    if u=="correlation": return f"r={v:g}"
+    if u=="fold": return f"{v:g}-fold"
+    if u=="ratio": return f"{v:g}×"
+    return f"{v:g}"
+
+CSS="""
+:root{--bg:#fff;--fg:#15171a;--mut:#5f6673;--line:#e3e6ea;--accent:#8a2f2f;--card:#f8f9fa;--chip:#eef0f3;
+--sup:#15603a;--supbg:#e7f4ec;--part:#7a5b00;--partbg:#fdf6e3;--not:#8a2727;--notbg:#fbeaea}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1013;--fg:#e8eaed;--mut:#98a0ad;
+--line:#252a31;--accent:#e59090;--card:#171a1f;--chip:#1f242b;--sup:#7fd6a6;--supbg:#0e2419;--part:#e0c060;
+--partbg:#241f00;--not:#f0a0a0;--notbg:#2a1414}}
+:root[data-theme=dark]{--bg:#0e1013;--fg:#e8eaed;--mut:#98a0ad;--line:#252a31;--accent:#e59090;--card:#171a1f;
+--chip:#1f242b;--sup:#7fd6a6;--supbg:#0e2419;--part:#e0c060;--partbg:#241f00;--not:#f0a0a0;--notbg:#2a1414}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:2rem 1.25rem 4rem}
+h1{font-size:1.9rem;line-height:1.22;margin:0 0 .5rem;letter-spacing:-.022em}
+h2{font-size:1.18rem;margin:2.4rem 0 .8rem;padding-bottom:.32rem;border-bottom:1px solid var(--line)}
+h3{font-size:1rem;margin:1.5rem 0 .4rem}
+a{color:var(--accent)}
+.lede{color:var(--mut);font-size:1rem;max-width:62ch;margin:0 0 1.5rem}
+.sub{color:var(--mut);font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.65rem;margin:1.2rem 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:.75rem .85rem}
+.stat .n{font-size:1.4rem;font-weight:650;letter-spacing:-.02em}
+.stat .l{color:var(--mut);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;margin-top:.1rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;padding:.6rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:650;font-size:.73rem;text-transform:uppercase;letter-spacing:.05em}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+td.assess{white-space:nowrap;font-weight:600}
+td.org{white-space:nowrap}
+.ev{margin:0 0 .55rem}
+.ev:last-child{margin-bottom:0}
+.ev .v{font-variant-numeric:tabular-nums;font-weight:650}
+.ev .src{color:var(--mut);font-size:.83rem}
+.tag{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:3px;padding:.04rem .38rem;font-size:.74rem;color:var(--mut);margin:0 .16rem .16rem 0}
+.v-supports{background:var(--supbg);color:var(--sup);border-color:var(--sup)}
+.v-partly-supports{background:var(--partbg);color:var(--part);border-color:var(--part)}
+.v-does-not-support{background:var(--notbg);color:var(--not);border-color:var(--not)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:.9rem 1rem;margin:.7rem 0}
+.caveat{border-left:3px solid var(--part);background:var(--partbg);color:var(--part);padding:.55rem .8rem;border-radius:4px;font-size:.87rem;margin:.5rem 0}
+.verb{color:var(--mut);font-size:.83rem;font-style:italic}
+footer{margin-top:3.5rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--mut);font-size:.8rem}
+code{background:var(--chip);padding:.06rem .3rem;border-radius:3px;font-size:.86em}
+details{margin:.5rem 0}summary{cursor:pointer;color:var(--accent);font-size:.9rem}
+ul{padding-left:1.15rem}li{margin:.18rem 0}
+"""
+def page(title, body, depth=0):
+    up="../"*depth
+    return (f'<meta charset="utf-8"><title>{e(title)}</title>'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1"><style>{CSS}</style>'
+            f'<div class="wrap"><p class="sub"><a href="{up}index.html">Animal Model Concordance</a></p>'
+            f'{body}<footer>{len(OK)} studies &middot; updated {BUILT} &middot; '
+            f'every figure links to the study that reported it. Not peer reviewed.</footer></div>')
+
+def vtag(v): return f'<span class="tag v-{e(v)}">{e(VERDICT_LABEL.get(v,v))}</span>'
+
+# ---------------- evidence cells ----------------
+def comparisons_for(pm, organism):
+    """Comparisons attributable to this organism. A study naming one organism attributes
+    all of its comparisons; where several are named, a comparison is attributed to the
+    ones it mentions, and study-wide figures appear under each."""
+    v=OK[pm]; out=[]
+    for c in (v.get("comparisons") or []):
+        cs=N.organisms(c.get("animal_species") or [])
+        if not cs or organism in cs: out.append(c)
+    return out
+
+_STOP=set("the of a an in and or to for with between from that this is are was were on by "
+          "vs versus percentage percent share proportion number rate average mean".split())
+def _key(t):
+    return frozenset(w for w in re.findall(r"[a-z]+", (t or "").lower())
+                     if w not in _STOP and len(w)>2)
+
+def evidence_cell(pm_set, organism):
+    """One cell. A range is formed only across figures that measure THE SAME THING:
+    same statistic, same unit, and closely matching descriptions of what was compared.
+    Grouping on statistic name alone merged unrelated quantities -- "3-83% proportion"
+    spanned neuroprotective efficacy and translation success, which is precisely the
+    meaning-destruction the aggregation rules forbid."""
+    buckets=[]   # each: {stat, unit, key, items}
+    for pm in sorted(pm_set, key=lambda p:-(DB[p].get("cited_by") or 0)):
+        for c in comparisons_for(pm, organism):
+            if c.get("value") is None: continue
+            k=_key(c.get("what_compared"))
+            placed=False
+            for bk in buckets:
+                if bk["stat"]!=c["statistic"].strip().lower() or bk["unit"]!=c["unit"]: continue
+                inter=len(bk["key"] & k); union=len(bk["key"] | k) or 1
+                if inter/union >= 0.6:
+                    bk["items"].append((pm,c)); bk["key"] |= k; placed=True; break
+            if not placed:
+                buckets.append({"stat":c["statistic"].strip().lower(),"unit":c["unit"],
+                                "key":set(k),"items":[(pm,c)]})
+    by_stat={(b["stat"],b["unit"],i):b["items"] for i,b in enumerate(buckets)}
+    if not by_stat:
+        return '<span class="sub">no figure attributable to this organism</span>'
+    parts=[]
+    for (stat,unit,_),items in sorted(by_stat.items(), key=lambda kv:-len(kv[1]))[:6]:
+        vals=[c["value"] for _,c in items]
+        rng=(f"{min(vals):g}–{max(vals):g}" if len(set(vals))>1 else f"{vals[0]:g}")
+        unit_s="%" if unit=="percent" else ""
+        studies=sorted({pm for pm,_ in items}, key=lambda p:-(DB[p].get("cited_by") or 0))
+        cites=" · ".join(f'<a href="study/{p}.html">{e(cite(p))}</a>' for p in studies[:3])
+        if len(studies)>3: cites+=f' +{len(studies)-3} more'
+        _,c0=items[0]
+        nc=re.sub(r"^\s*[\d,]+\s*","",(c0.get("n_counts") or "")).strip()
+        n=f', n={c0["n"]:,} {e(nc)}'.rstrip() if c0.get("n") else ""
+        parts.append(f'<div class="ev"><span class="v">{e(rng)}{unit_s}</span> {e(stat)}'
+                     f'{n} <span class="src">— {e(c0["what_compared"])} ({cites})</span></div>')
+    cav=[OK[pm]["base_rate_caveat"] for pm in pm_set if OK[pm].get("base_rate_caveat")]
+    if cav:
+        parts.append(f'<div class="caveat"><strong>Caveat.</strong> {e(cav[0])}</div>')
+    return "".join(parts)
+
+# ---------------- landing page ----------------
+rows=collections.defaultdict(set)
+for pm in CORE:
+    for o in orgs_of(pm): rows[(arm(pm),o)].add(pm)
+verd=collections.Counter(v["verdict"] for v in OK.values())
+ncomp=sum(len(v.get("comparisons") or []) for v in OK.values())
+
+b=[f"<h1>How well do animal models predict human clinical outcomes?</h1>",
+ '<p class="lede">A structured reading of the published literature that <em>measures</em> '
+ 'animal-to-human correspondence. Each study was read from its full text and asked the same '
+ 'questions; figures below are those the studies reported, in their own units. Nothing is '
+ 'averaged across studies, because studies define concordance differently.</p>',
+ '<div class="grid">',
+ f'<div class="stat"><div class="n">{len(OK)}</div><div class="l">studies</div></div>',
+ f'<div class="stat"><div class="n">{ncomp:,}</div><div class="l">reported comparisons</div></div>',
+ f'<div class="stat"><div class="n">{len({o for _,o in rows})}</div><div class="l">model organisms</div></div>',
+ f'<div class="stat"><div class="n">{verd["supports"]}</div><div class="l">support</div></div>',
+ f'<div class="stat"><div class="n">{verd["partly-supports"]}</div><div class="l">partly support</div></div>',
+ f'<div class="stat"><div class="n">{verd["does-not-support"]}</div><div class="l">do not support</div></div>',
+ '</div>',
+ "<h2>Evidence by assessment and model organism</h2>",
+ '<p class="sub">One row per assessment and organism. Values are ranges only where several '
+ 'studies reported the <em>same</em> statistic; different statistics are listed separately. '
+ 'Grouped labels such as “rodent” are kept as reported and never expanded into member species.</p>',
+ '<div class="scroll"><table><tr><th>Assessment</th><th>Model organism</th><th>Evidence</th></tr>']
+for a in ASSESS_ORDER+[x for x in {k[0] for k in rows} if x not in ASSESS_ORDER]:
+    orgs=sorted([o for aa,o in rows if aa==a], key=lambda o:(-len(rows[(a,o)]), o))
+    for i,o in enumerate(orgs):
+        pms=rows[(a,o)]
+        vs=collections.Counter(OK[p]["verdict"] for p in pms)
+        vtags="".join(vtag(k)+f"<span class='sub'>{v}</span> " for k,v in vs.most_common())
+        b.append(f'<tr><td class="assess">{e(ASSESS_LABEL.get(a,a)) if i==0 else ""}</td>'
+                 f'<td class="org">{e(o)}<br><span class="sub">{len(pms)} {"study" if len(pms)==1 else "studies"}</span>'
+                 f'<br>{vtags}</td><td>{evidence_cell(pms,o)}</td></tr>')
+b.append("</table></div>")
+
+b+=["<h2>Studies</h2>",'<div class="scroll"><table>'
+    "<tr><th>Study</th><th>Assessment</th><th>Organisms</th><th>Verdict</th><th>Cited by</th></tr>"]
+for pm in sorted(OK, key=lambda p:-(DB[p].get("cited_by") or 0)):
+    b.append(f'<tr><td><a href="study/{pm}.html">{e(cite(pm))}</a><br>'
+             f'<span class="sub">{e(DB[pm].get("title"))}</span></td>'
+             f'<td>{e(ASSESS_LABEL.get(arm(pm),arm(pm)))}</td>'
+             f'<td>{", ".join(e(o) for o in orgs_of(pm))}</td>'
+             f'<td>{vtag(OK[pm]["verdict"])}</td><td>{e(DB[pm].get("cited_by"))}</td></tr>')
+b.append("</table></div>")
+
+b+=["<h2>Method</h2>",
+ "<p>Studies were found with a multi-strand PubMed search and citation chasing; neither "
+ "alone was sufficient, and together they recovered every paper in a 29-study verified "
+ "anchor set. A study is included only if it reports a quantitative comparison in which one "
+ "side is a result in a live non-human animal and the other a human clinical result. Papers "
+ "arguing that animals do or do not predict human outcomes, without measuring it, are "
+ "excluded, as are in vitro and in silico predictors.</p>",
+ "<p>Each included study was read from its full-text PDF and asked the same questions: which "
+ "animals against which humans, whether the endpoints are identical or merely analogous, "
+ "every animal-to-human figure with its unit as printed and its table or figure location, "
+ "and whether the data support concordance. Verdicts are judged from results, tables and "
+ "figures, not from how the authors characterise their findings.</p>",
+ f"<p>No estimate is pooled across studies. {verd['supports']} studies support concordance, "
+ f"{verd['partly-supports']} partly support it and {verd['does-not-support']} do not — a "
+ "tally of studies, not a measure of how well animal models work. Screening and extraction "
+ "were model-assisted and have not been verified by a second reader.</p>",
+ f'<details><summary>{len(EXCL)} screened studies were excluded</summary><div class="scroll">'
+ "<table><tr><th>Study</th><th>Reason</th></tr>"
+ + "".join(f'<tr><td>{e(cite(pm))}<br><span class="sub">{e(v.get("title"))}</span></td>'
+           f'<td class="sub">{e(v.get("exclusion_reason"))}</td></tr>'
+           for pm,v in sorted(EXCL.items(), key=lambda kv:-(kv[1].get("cited_by") or 0)))
+ + "</table></div></details>"]
+open(os.path.join(OUT,"index.html"),"w").write(page("Animal Model Concordance","".join(b)))
+
+# ---------------- study pages ----------------
+for pm,v in OK.items():
+    d=DB[pm]; md=META.get(pm,{}); a=v["animal_side"]; h=v["human_side"]
+    ident=[f'<a href="https://pubmed.ncbi.nlm.nih.gov/{pm}/">PMID {pm}</a>']
+    if md.get("doi"): ident.append(f'<a href="https://doi.org/{e(md["doi"])}">doi:{e(md["doi"])}</a>')
+    if md.get("pmcid"): ident.append(f'<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{e(md["pmcid"])}/">{e(md["pmcid"])}</a>')
+    body=[f'<h1>{e(d.get("title"))}</h1>',
+      f'<p class="sub">{e(", ".join(md.get("authors_full") or d.get("authors") or []))}<br>'
+      f'<em>{e(md.get("journal_full") or d.get("journal"))}</em> · {e(d.get("year"))} · '
+      f'cited by {e(d.get("cited_by"))} · {" · ".join(ident)}</p>',
+      f'<p>{vtag(v["verdict"])} <span class="tag">{e(ASSESS_LABEL.get(arm(pm),arm(pm)))}</span>'
+      + "".join(f'<span class="tag">{e(o)}</span>' for o in orgs_of(pm)) + "</p>",
+      f'<div class="card"><strong>Verdict basis</strong><br>{e(v["verdict_basis"])}</div>']
+    if v.get("base_rate_caveat"):
+        body.append(f'<div class="caveat"><strong>Caveat.</strong> {e(v["base_rate_caveat"])}</div>')
+    def side(t, pairs):
+        ps=[f"<strong>{e(k)}</strong> {e(x)}" for k,x in pairs if x]
+        return f'<div class="card"><strong>{t}</strong><br>' + " · ".join(ps) + "</div>" if ps else ""
+    body.append(side("Animal side",[("species", ", ".join(orgs_of(pm))),
+        ("strain/model",a.get("strain_or_model")),("disease arose",a.get("how_disease_arose")),
+        ("n", f'{a["n"]} {a.get("n_counts") or ""}'.strip() if a.get("n") else None),
+        ("endpoint", v.get("animal_endpoint"))]))
+    body.append(side("Human side",[("population",h.get("population")),("disease",h.get("disease")),
+        ("setting",h.get("stage_or_setting")),("phase",h.get("trial_phase")),
+        ("n", f'{h["n"]} {h.get("n_counts") or ""}'.strip() if h.get("n") else None),
+        ("endpoint", v.get("human_endpoint"))]))
+    body.append(f'<p><span class="tag">endpoints {e(v.get("endpoint_match"))}</span>'
+                f'<span class="tag">discordance: {e(v.get("discordance_direction"))}</span>'
+                + (f'<span class="tag">{e(v.get("scope"))}</span>' if v.get("scope") else "") + "</p>")
+    if v.get("discordance_note"):
+        body.append(f'<p class="sub">{e(v["discordance_note"])}</p>')
+    cs=[c for c in (v.get("comparisons") or [])]
+    if cs:
+        body.append(f'<h2>Reported comparisons <span class="tag">{len(cs)}</span></h2>')
+        body.append('<div class="scroll"><table><tr><th>Value</th><th>Statistic</th>'
+                    "<th>What was compared</th><th>Organism</th><th>n</th><th>Source</th></tr>")
+        for c in cs:
+            _nc=re.sub(r"^\s*[\d,]+\s*","",(c.get("n_counts") or "")).strip()
+            n=f'{c["n"]:,} {e(_nc)}'.strip() if c.get("n") else "—"
+            body.append(f'<tr><td class="ev"><span class="v">{e(fmt(c))}</span></td>'
+                        f'<td>{e(c["statistic"])}</td>'
+                        f'<td>{e(c["what_compared"])}<br><span class="verb">“{e(c["verbatim"])}”</span></td>'
+                        f'<td>{", ".join(e(x) for x in N.organisms(c.get("animal_species") or [])) or "—"}</td>'
+                        f'<td>{n}</td><td class="sub">{e(c.get("source_location"))}</td></tr>')
+        body.append("</table></div>")
+    if md.get("abstract"):
+        body.append(f'<details><summary>Abstract</summary><div class="card">{e(md["abstract"])}</div></details>')
+    if md.get("mesh"):
+        body.append('<details><summary>MeSH terms</summary><p>'
+                    + "".join(f'<span class="tag">{e(t["term"])}</span>' for t in md["mesh"]) + "</p></details>")
+    fs=FTS.get(pm,{})
+    body.append('<details><summary>Provenance</summary><div class="scroll"><table>'
+      f'<tr><th>Assessment</th><td>{e(ASSESS_LABEL.get(arm(pm),arm(pm)))}</td></tr>'
+      f'<tr><th>Read from</th><td>full-text PDF</td></tr>'
+      f'<tr><th>Source</th><td>{e(fs.get("route") or "—")}</td></tr>'
+      f'<tr><th>Publication types</th><td>{e(", ".join(md.get("publication_types") or []))}</td></tr>'
+      f'<tr><th>Funding</th><td>{e(", ".join(md.get("grants") or []) or "none listed")}</td></tr>'
+      "</table></div></details>")
+    open(os.path.join(OUT,"study",f"{pm}.html"),"w").write(page(d.get("title","Study")[:70],"".join(body),depth=1))
+    json.dump({**d,"assessment":arm(pm),"organisms":orgs_of(pm),"answers":v,"metadata":md},
+              open(os.path.join(OUT,"api","study",f"{pm}.json"),"w"),indent=1)
+
+json.dump({"updated":BUILT,"studies":len(OK),"comparisons":ncomp,
+  "verdicts":dict(verd),"organisms":sorted({o for _,o in rows}),
+  "assessments":sorted({a for a,_ in rows})},
+  open(os.path.join(OUT,"api","summary.json"),"w"),indent=1)
+json.dump({pm:{**DB[pm],"assessment":arm(pm),"organisms":orgs_of(pm),"answers":OK[pm]} for pm in OK},
+  open(os.path.join(OUT,"api","bulk.json"),"w"),indent=1)
+open(os.path.join(OUT,".nojekyll"),"w").write("")
+for old in ("findings.html","studies.html","species.html","areas.html","arms.html",
+            "methods.html","excluded.html","coverage.html","gaps.html"):
+    p=os.path.join(OUT,old)
+    if os.path.exists(p): os.remove(p)
+print(f"built: landing page + {len(OK)} study pages | {len(rows)} table rows | {ncomp} comparisons")

@@ -13,7 +13,14 @@ have = {os.path.basename(p).rsplit(".",1)[0] for p in glob.glob(J("data","raw","
 # Only list studies that are ELIGIBLE under rubric r3. Listing excluded records
 # (in silico, in vitro, human-only) sends the reader chasing papers this review
 # will not use.
+# Two things can be missing now: any full text at all, or a PDF specifically.
+# The question-driven pass reads PDFs so it can see tables and figures, so an
+# eligible study held only as XML still needs a PDF.
 need = [p for p in db if p not in have and db[p].get("eligible") is not False]
+FTS = json.load(open(J("data","raw","fulltext_status.json")))
+pdf_needed = [p for p in db if db[p].get("eligible")
+              and not (FTS.get(p) or {}).get("pdf")
+              and (FTS.get(p) or {}).get("xml")]
 excluded_missing = [p for p in db if p not in have and db[p].get("eligible") is False]
 rows = sorted(((db[p].get("cited_by") or 0, db[p].get("year") or 0, p) for p in need), reverse=True)
 
@@ -43,6 +50,22 @@ for c, y, pm in rows:
     arm = cl.get("arm") or "—"
     out.append(f"| [{pm}](https://pubmed.ncbi.nlm.nih.gov/{pm}/) | {c} | {y or '—'} | {arm} | "
                f"{journal_of(pm)} | {title_of(pm)} | {doi} |")
+
+if pdf_needed:
+    out += ["", "## PDFs wanted (full text already held as XML)", "",
+      f"These **{len(pdf_needed)}** studies are included and we have their text, but only as",
+      "XML. Extraction now reads the PDF so the model can see tables and figures, which is",
+      "where most concordance numbers live. A PDF would improve these records; they are not",
+      "blocked without one.", "",
+      "Save as `data/raw/fulltext/<PMID>.pdf` (it will replace nothing — the XML stays).", "",
+      "| PMID | Cites | Year | Arm | Journal | Title | DOI |", "|---|---|---|---|---|---|---|"]
+    for pm in sorted(pdf_needed, key=lambda x: -(db[x].get("cited_by") or 0)):
+        d = (meta.get(pm) or {}).get("doi")
+        doi = f"[{d}](https://doi.org/{d})" if d else "—"
+        arm = (CLS.get(pm) or {}).get("arm") or "—"
+        out.append(f"| [{pm}](https://pubmed.ncbi.nlm.nih.gov/{pm}/) | {db[pm].get('cited_by')} | "
+                   f"{db[pm].get('year')} | {arm} | {journal_of(pm)} | {title_of(pm)} | {doi} |")
 open(J("docs","fulltext_wanted.md"), "w").write("\n".join(out) + "\n")
+print(f"PDFs wanted: {len(pdf_needed)}")
 print(f"eligible {len(elig)}/{len(db)}; eligible held {len([p for p in elig if p in have])}; "
       f"still needed {len(need)}; excluded-and-missing omitted {len(excluded_missing)}")
