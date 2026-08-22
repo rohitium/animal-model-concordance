@@ -328,3 +328,18 @@ when a paper contains no figures, so zero-comparison studies are now excluded au
 **L49 — An organism earns a table row only where a figure is attributable to it.** Reviews
 often name every species they mention while reporting figures for a few; those namings are
 listed in a note rather than becoming empty rows.
+
+## Deployment (2026-08-22)
+
+**L50 — Published at https://rohitium.github.io/animal-model-concordance/.** Public repository,
+built in CI from the committed data on every push, so the published pages always regenerate
+from `data/db/`. Full-text PDFs and XML are gitignored and never published; only extracted
+structured data reaches the site. The site states on every page that it is not peer reviewed.
+
+**L51 — The first two deploys published the wrong thing, and both reported success.** The CI
+workflow referenced `analysis/11_build_site.py`, three builders out of date, so a stale 9 KB
+page was served instead of the 98 KB current site. The fix then failed to deploy itself,
+because the workflow's `paths:` filter did not include the workflow file. Both times the run
+was reported as successful; success meant the job executed, not that the intended content was
+live. Verification is now by fetching the page and comparing its size and heading against the
+local build, not by reading a green check.

@@ -3,7 +3,14 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'data/db/**', 'analysis/33_build_site.py', 'analysis/normalize.py']
+    paths:
+      - 'site/**'
+      - 'data/db/**'
+      - 'analysis/33_build_site.py'
+      - 'analysis/normalize.py'
+      # the workflow must watch itself: a commit fixing only this file matched no
+      # path and so deployed nothing, leaving a stale build served for 20 minutes
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
