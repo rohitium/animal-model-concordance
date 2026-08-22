@@ -2098,8 +2098,8 @@
   "screen_reason": "The abstract mentions 'the concordance between clinical signs, neurochemical changes, and neuropathology between animals and people' which suggests a quantitative measure of agreement is reported, even if not explicitly stated as a rate or statistic. The focus on animal models for understanding toxicity and pathogenesis, with a comparison to human conditions, aligns with the inclusion criteria.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The central focus of the chapter is on animal models, especially the concordance between clinical signs, neurochemical changes, and neuropathology between animals and people.",
-  "eligible": true,
-  "exclusion_reason": null,
+  "eligible": false,
+  "exclusion_reason": "Reports no quantitative animal-to-human comparison. The verdict returned ('supports') rested on a qualitative statement, which the inclusion rule does not accept.",
   "substrate": "animal-biology",
   "r4_comparison_type": "animal-vs-human",
   "ah_measurement_count": 2

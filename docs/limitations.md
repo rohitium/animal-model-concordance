@@ -298,3 +298,33 @@ figures including distinct correlations for different diseases in Takao 2015; th
 drops 675 and preserves Olson's two separate 63% results.
 
 **L44 — Studies are cited as Author et al. Year**, not by truncated title.
+
+## Question-driven extraction (2026-08-21, final)
+
+**L45 — Extraction is now question-driven and reads the PDF.** Bottom-up harvesting of every
+printed number produced twelve NPV rows for organ subcategories and a leaderboard of
+incommensurable statistics. Each of the 57 studies was instead read from its full-text PDF
+(native file parsing, so tables and figures are visible) and asked one fixed question set.
+925 comparisons, each with its unit as printed and its table/figure location. Verdicts are
+judged from results, tables and figures, with the prompt explicitly directing the model to
+ignore how authors characterise their own findings.
+
+**L46 — Verdict tallies count studies, not predictive performance.** supports 10,
+partly-supports 29, does-not-support 18. The studies are not a random sample of the
+literature, so this distribution describes our corpus and nothing wider. The tally also moved
+sharply as the corpus filled (does-not-support was 12% at 34 studies and 32% at 57), which is
+a warning against reading partial results.
+
+**L47 — Ranges are formed only across figures measuring the same thing.** Same statistic, same
+unit, and closely matching descriptions of what was compared. Grouping on statistic name alone
+merged neuroprotective efficacy with translation success into a single "3–83%" range.
+
+**L48 — A study reporting no quantitative animal-human comparison was excluded** (`26563791`,
+extrapyramidal neurotoxicity). The extraction returned a verdict of "supports" resting on the
+qualitative statement that "a variety of veterinary species also develop extrapyramidal signs".
+Both the inclusion rule and the verdict rule require data; the verdict step can drift to prose
+when a paper contains no figures, so zero-comparison studies are now excluded automatically.
+
+**L49 — An organism earns a table row only where a figure is attributable to it.** Reviews
+often name every species they mention while reporting figures for a few; those namings are
+listed in a note rather than becoming empty rows.

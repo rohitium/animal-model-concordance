@@ -169,9 +169,17 @@ def evidence_cell(pm_set, organism):
     return "".join(parts)
 
 # ---------------- landing page ----------------
+# An organism earns a row only if some figure is attributable to it. Reviews often name
+# every species they mention while reporting figures for a few; rows reading "no figure
+# attributable to this organism" are noise. Those namings are listed as a note instead.
 rows=collections.defaultdict(set)
+named_only=collections.defaultdict(set)
 for pm in CORE:
-    for o in orgs_of(pm): rows[(arm(pm),o)].add(pm)
+    for o in orgs_of(pm):
+        if comparisons_for(pm,o):
+            rows[(arm(pm),o)].add(pm)
+        else:
+            named_only[o].add(pm)
 verd=collections.Counter(v["verdict"] for v in OK.values())
 ncomp=sum(len(v.get("comparisons") or []) for v in OK.values())
 
@@ -203,6 +211,11 @@ for a in ASSESS_ORDER+[x for x in {k[0] for k in rows} if x not in ASSESS_ORDER]
                  f'<td class="org">{e(o)}<br><span class="sub">{len(pms)} {"study" if len(pms)==1 else "studies"}</span>'
                  f'<br>{vtags}</td><td>{evidence_cell(pms,o)}</td></tr>')
 b.append("</table></div>")
+extra={o:s_ for o,s_ in named_only.items() if not any(o==oo for _,oo in rows)}
+if extra:
+    b.append('<p class="sub">Organisms named by a study but with no figure attributable to '
+             'them, so not given a row: '
+             + ", ".join(f'{e(o)} ({len(s_)})' for o,s_ in sorted(extra.items())) + ".</p>")
 
 b+=["<h2>Studies</h2>",'<div class="scroll"><table>'
     "<tr><th>Study</th><th>Assessment</th><th>Organisms</th><th>Verdict</th><th>Cited by</th></tr>"]
