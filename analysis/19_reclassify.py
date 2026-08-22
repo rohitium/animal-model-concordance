@@ -21,7 +21,13 @@ ROOT = os.path.join(os.path.dirname(__file__), "..")
 J = lambda *p: os.path.join(ROOT, *p)
 MODEL = "google/gemini-2.5-flash-lite"
 
-ARMS = ["efficacy","safety-pharmacology","toxicology","veterinary","methods-and-bias"]
+# 'methods-and-bias' was removed: it classified studies by what KIND of study they are,
+# while every other arm classifies by WHAT IS BEING PREDICTED. Mixing the two axes made
+# the arm incoherent. Its contents split cleanly: studies measuring whether the animal's
+# biology resembles human disease biology are their own prediction target
+# ('disease-biology'), and translation-rate studies belong to the arm whose findings they
+# are counting (usually efficacy).
+ARMS = ["efficacy","safety-pharmacology","toxicology","disease-biology","veterinary"]
 AREAS = ["oncology","cardiovascular","neurology-stroke","neurodegeneration","psychiatric",
          "sepsis-inflammation","infectious-disease","metabolic","hepatic","renal","respiratory",
          "musculoskeletal","ophthalmology","dermatology","pain","reproductive","haematology",
@@ -60,8 +66,18 @@ arm (choose exactly one):
 - safety-pharmacology: acute functional effects (hERG/QT, CNS, respiratory), human AEs
 - toxicology: organ toxicity, genotoxicity, carcinogenicity, reproductive toxicity
 - veterinary: naturally occurring disease in client-owned animals
-- methods-and-bias: reproducibility, publication bias, attrition/success rates,
-  or methodology of preclinical research itself
+- veterinary: the model is naturally occurring disease in CLIENT-OWNED animals (pet dogs,
+  cats, horses) studied in veterinary practice. This describes the MODEL rather than the
+  readout, so it TAKES PRECEDENCE: choose it whenever the animals are veterinary patients
+  with spontaneous disease, whatever is being measured.
+- disease-biology: does the model's BIOLOGY resemble the human disease? No treatment is
+  being evaluated. Cross-species comparisons of gene expression, transcriptomes, immune
+  signatures, pathology, or molecular mechanism between animal models and human patients.
+  (e.g. "do mouse inflammatory responses mimic human ones?")
+
+A study that counts how often findings translate belongs to the arm whose findings it
+counts: translation rates for treatment efficacy are efficacy; for organ toxicity,
+toxicology. If it genuinely spans several, choose the one carrying most of its data.
 
 therapeutic_areas (one or more): {", ".join(AREAS)}
   Use "cross-cutting" when the study spans diseases rather than addressing one --

@@ -27,12 +27,34 @@ SCOPE= load("data","db","measurement_scope.json")
 # The figure may still be somewhere in the paper, but we cannot show it as sourced,
 # so the number is withheld and only the statement is shown.
 DETAIL = load("data","db","comparison_detail.json")
+REFINED= load("data","db","figure_refined.json")
+DUPES  = load("data","db","duplicate_figures.json")
 _AUD = load("data","db","measurement_audit.json") or []
 UNSUP = {(a["pmid"], a["index"]) for a in _AUD} if isinstance(_AUD, list) else set()
 for d in (os.path.join(OUT,"api","study"), os.path.join(OUT,"study")):
     os.makedirs(d, exist_ok=True)
 e = lambda s: html.escape(str(s if s is not None else ""))
 BUILT = datetime.date.today().isoformat()
+
+def clip(t, n):
+    """Truncate on a word boundary with an ellipsis, never mid-word."""
+    t = str(t or "")
+    if len(t) <= n: return t
+    cut = t[:n].rsplit(" ", 1)[0]
+    return cut.rstrip(" ,;:") + "\u2026"
+
+def cite(pm):
+    """Standard short citation. Truncated titles ("Genomic responses in mouse models
+    greatly mi") are unreadable and unciteable."""
+    v = DB.get(pm) or {}; md = META.get(pm) or {}
+    auth = (md.get("authors_full") or v.get("authors") or [])
+    if auth:
+        last = auth[0].split()[-1] if " " in auth[0] else auth[0]
+        name = f"{last} et al." if len(auth) > 1 else last
+    else:
+        name = "Anon."
+    yr = v.get("year") or md.get("year") or "n.d."
+    return f"{name} {yr}"
 
 ELIG = {pm: v for pm, v in DB.items() if v.get("eligible")}
 # Patient-derived xenografts test the PATIENT'S OWN human tumour tissue in a mouse
@@ -66,7 +88,21 @@ def meas(pm, ah_only=False):
         # Costs, timelines and publication counts mention animals and humans without
         # measuring agreement between them.
         x["_is_conc"] = bool(d and d.get("is_concordance_figure")) if d else None
+        rf = (REFINED.get(pm) or {})
+        r = rf.get(str(i)) if "error" not in rf else None
+        x["_refined"] = r
+        # a self-contained sentence replaces the fragment where one was produced
+        if r and r.get("keep") and r.get("precise"):
+            x["_precise"] = r["precise"]
+            x["_denominator"] = r.get("denominator")
+            x["_counterpart"] = r.get("human_counterpart_text")
+        else:
+            x["_precise"] = None
+        if r and not r.get("keep"):
+            x["_is_conc"] = False        # could not be stated precisely -> not shown
+        x["_dupe"] = i in (DUPES.get(pm) or [])
     return ([x for x in mm if x["_scope"] in ("animal-vs-human", "animal-result-by-human-outcome") and not x["_unsupported"]
+             and not x["_dupe"]
              and x["_is_conc"] is not False] if ah_only else mm)
 
 def sortkey(x):
@@ -215,14 +251,14 @@ for name,_ in FAM+[("Other reported figures",None)]:
         a=d.get("animal") or {}; h=d.get("human") or {}
         asp=", ".join(a.get("species") or []) or "—"
         astr=a.get("strain_or_model") or a.get("how_disease_arose")
-        acell=f'{e(asp)}' + (f'<br><span class="verb">{e(astr[:44])}</span>' if astr else "")
+        acell=f'{e(asp)}' + (f'<br><span class="verb">{e(clip(astr, 60))}</span>' if astr else "")
         hpop=h.get("population") or h.get("disease") or "—"
         hn=f'{h["n"]:,} {e(h.get("n_unit") or "")}'.strip() if h.get("n") else ""
-        hcell=f'{e(str(hpop)[:52])}' + (f'<br><span class="verb">{hn}</span>' if hn else "")
+        hcell=f'{e(clip(hpop, 60))}' + (f'<br><span class="verb">{hn}</span>' if hn else "")
         em=d.get("endpoint_match") or "—"
         b.append(f'<tr><td class="num">{e(fmt(x))}</td><td>{e(x["statistic"])}</td>'
-                 f'<td>{e(x["measures"][:120])}</td><td>{acell}</td><td>{hcell}</td>'
-                 f'<td>{e(em)}</td><td><a href="study/{pm}.html">{e(DB[pm]["title"][:40])}</a></td></tr>')
+                 f'<td>{e(x.get("_precise") or x["measures"])}</td><td>{acell}</td><td>{hcell}</td>'
+                 f'<td>{e(em)}</td><td><a href="study/{pm}.html">{e(cite(pm))}</a></td></tr>')
     b.append("</table></div>")
 if PDXM_AH:
     b.append("<h2>Patient-derived xenografts <span class='tag'>%d</span></h2>" % len(PDXM_AH))
@@ -237,8 +273,8 @@ if PDXM_AH:
     for pm,x in sorted(PDXM_AH,key=lambda r: sortkey(r[1])):
         nn=f'{x["n"]:,} {e(x["n_counts"] or "")}'.strip() if x.get("n") else "&mdash;"
         b.append(f'<tr><td class="num">{e(fmt(x))}</td><td>{e(x["statistic"])}</td>'
-                 f'<td>{e(x["measures"][:130])}</td><td>{nn}</td>'
-                 f'<td><a href="study/{pm}.html">{e(DB[pm]["title"][:46])}</a></td></tr>')
+                 f'<td>{e(x.get("_precise") or x["measures"])}</td><td>{nn}</td>'
+                 f'<td><a href="study/{pm}.html">{e(cite(pm))}</a></td></tr>')
     b.append("</table></div>")
 open(os.path.join(OUT,"findings.html"),"w").write(page("Findings","".join(b)))
 
@@ -249,7 +285,7 @@ b=["<h1>Studies</h1>",'<p class="sub">All studies that report a quantitative com
 for pm,v in sorted(ELIG.items(),key=lambda kv:(-(kv[1].get("year") or 0),kv[1].get("title",""))):
     pdxtag = ' <span class="tag">PDX</span>' if pm in PDX else ""
     sp=", ".join(cls(pm,"species") or [])
-    b.append(f'<tr><td>{e(v.get("year"))}</td><td><a href="study/{pm}.html">{e(v.get("title","")[:88])}</a><br>'
+    b.append(f'<tr><td>{e(v.get("year"))}</td><td><a href="study/{pm}.html">{e(v.get("title",""))}</a><br>'
              f'<span class="tag">{e(v.get("journal"))}</span></td><td>{e(cls(pm,"arm"))}</td>'
              f'<td>{e(sp[:38])}</td><td class="num">{len(meas(pm))}</td><td class="num">{e(v.get("cited_by"))}</td></tr>')
 b.append("</table></div>")
@@ -269,11 +305,11 @@ def facet(key,title,fname):
                       "<th>What it measures</th><th>Study</th></tr>")
             for pm,x in sorted(rows,key=lambda r: sortkey(r[1]))[:12]:
                 bb.append(f'<tr><td class="num">{e(fmt(x))}</td><td>{e(x["statistic"])}</td>'
-                          f'<td>{e(x["measures"][:110])}</td>'
-                          f'<td><a href="study/{pm}.html">{e(DB[pm]["title"][:44])}</a></td></tr>')
+                          f'<td>{e(x.get("_precise") or x["measures"])}</td>'
+                          f'<td><a href="study/{pm}.html">{e(cite(pm))}</a></td></tr>')
             bb.append("</table></div>")
         bb.append("<ul>"+"".join(
-            f'<li><a href="study/{pm}.html">{e(DB[pm]["title"][:84])}</a> '
+            f'<li><a href="study/{pm}.html">{e(cite(pm))}</a> '
             f'<span class="tag">{e(DB[pm].get("year"))}</span></li>'
             for pm in sorted(pms,key=lambda p:-(DB[p].get("cited_by") or 0))[:20])+"</ul>")
     open(os.path.join(OUT,fname),"w").write(page(title,"".join(bb)))
@@ -323,7 +359,7 @@ for pm,v in DB.items():
             emrow=f'<strong>Endpoints</strong> {e(d.get("endpoint_match"))}' if d.get("endpoint_match") else ""
             pair="<br>".join(p for p in (arow,hrow,emrow) if p)
             body.append(f'<tr><td class="num">{e(fmt(x))}</td><td>{e(x["statistic"])}</td>'
-                        f'<td>{e(x["measures"])}'
+                        f'<td>{e(x.get("_precise") or x["measures"])}'
                         + (f'<div class="pair">{pair}</div>' if pair else "")
                         + f'<br><span class="verb">&ldquo;{e(x["verbatim"][:200])}&rdquo;</span></td>'
                         f'<td>{e(x["compared"])}</td><td>{e(", ".join(x.get("species") or []))}</td><td>{nn}</td></tr>')
@@ -362,9 +398,9 @@ b=["<h1>Excluded studies</h1>",
    'the reason so the decision can be checked or overturned.</p>',
    "<div class='scroll'><table><tr><th>Study</th><th>Year</th><th>Cited by</th><th>Reason</th></tr>"]
 for pm,v in sorted(EXCL.items(),key=lambda kv:-(kv[1].get("cited_by") or 0)):
-    b.append(f'<tr><td><a href="study/{pm}.html">{e(v.get("title","")[:62])}</a></td>'
+    b.append(f'<tr><td><a href="study/{pm}.html">{e(v.get("title",""))}</a></td>'
              f'<td>{e(v.get("year"))}</td><td class="num">{e(v.get("cited_by"))}</td>'
-             f'<td>{e((v.get("exclusion_reason") or "")[:230])}</td></tr>')
+             f'<td>{e(clip(v.get("exclusion_reason") or "", 260))}</td></tr>')
 b.append("</table></div>")
 open(os.path.join(OUT,"excluded.html"),"w").write(page("Excluded","".join(b)))
 

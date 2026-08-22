@@ -388,11 +388,29 @@
  },
  {
   "pmid": "24678540",
+  "index": 1,
+  "statistic": "failure rate",
+  "value": 100.0,
+  "unit": "percent",
+  "verbatim": "Over the past decade, about a dozen experimental treatments have made their way into human trials for ALS. All had been shown to ameliorate disease in",
+  "title": "Preclinical research: Make mouse studies work."
+ },
+ {
+  "pmid": "24678540",
   "index": 2,
   "statistic": "benefit rate",
   "value": 0.0,
   "unit": "percent",
   "verbatim": "All but one failed in the clinic, and the survival benefits of that one are marginal.",
+  "title": "Preclinical research: Make mouse studies work."
+ },
+ {
+  "pmid": "24678540",
+  "index": 3,
+  "statistic": "benefit rate",
+  "value": 0.0,
+  "unit": "percent",
+  "verbatim": "Many of these drugs had been reported to slow down disease in that same mouse model; none was found to be beneficial in our experiments (see \u2018Due dili",
   "title": "Preclinical research: Make mouse studies work."
  },
  {
@@ -456,6 +474,24 @@
   "value": 0.4,
   "unit": "correlation",
   "verbatim": "to (F) repeat that analysis at \u03c1 Y , R = 0.95 but with a high reference threshold (2.5 standard deviation units) and rare positives (P( R \u2265 r t ) \u2248 0.",
+  "title": "When Quality Beats Quantity: Decision Theory, Drug Disc"
+ },
+ {
+  "pmid": "26863229",
+  "index": 5,
+  "statistic": "correlation coefficient",
+  "value": 0.7,
+  "unit": "correlation",
+  "verbatim": "Thus in each line, all decision variables are equally correlated with each other and with R . The correlation coefficient between decision variables (",
+  "title": "When Quality Beats Quantity: Decision Theory, Drug Disc"
+ },
+ {
+  "pmid": "26863229",
+  "index": 6,
+  "statistic": "correlation coefficient",
+  "value": 0.6,
+  "unit": "correlation",
+  "verbatim": "Thus in each line, all decision variables are equally correlated with each other and with R . The correlation coefficient between decision variables (",
   "title": "When Quality Beats Quantity: Decision Theory, Drug Disc"
  },
  {
@@ -954,6 +990,15 @@
   "title": "Lost in translation: taking neuroprotection from animal"
  },
  {
+  "pmid": "15246820",
+  "index": 3,
+  "statistic": "neuroprotection",
+  "value": 0,
+  "unit": "percent",
+  "verbatim": "Although many of these agents appear quite effective in small animal models, none of these have been proven to be conclusively effective where humans ",
+  "title": "Lost in translation: taking neuroprotection from animal"
+ },
+ {
   "pmid": "29143114",
   "index": 5,
   "statistic": "clinical benefit",
@@ -964,11 +1009,47 @@
  },
  {
   "pmid": "26479923",
+  "index": 3,
+  "statistic": "correlation",
+  "value": 0.72,
+  "unit": "correlation",
+  "verbatim": "The median mutation rate showed a weaker correlation between cell lines and patient tumors, primarily because of a lack of hypermutators in melanoma c",
+  "title": "High-throughput screening using patient-derived tumor x"
+ },
+ {
+  "pmid": "26479923",
+  "index": 5,
+  "statistic": "correlation",
+  "value": 0.6,
+  "unit": "correlation",
+  "verbatim": "The median mutation rate showed a weaker correlation between cell lines and patient tumors, primarily because of a lack of hypermutators in melanoma c",
+  "title": "High-throughput screening using patient-derived tumor x"
+ },
+ {
+  "pmid": "26479923",
   "index": 25,
   "statistic": "response rate",
   "value": 55,
   "unit": "percent",
   "verbatim": "Contrary to what was observed in vitro, the combination of LFW527 with binimetinib did not improve the response rate (Fig. 5d), or improve PFS when co",
+  "title": "High-throughput screening using patient-derived tumor x"
+ },
+ {
+  "pmid": "26479923",
+  "index": 36,
+  "statistic": "correlation",
+  "value": 0.72,
+  "unit": "correlation",
+  "verbatim": "The median mutation rate showed a weaker correlation between cell lines and patient tumors, primarily because of a lack of hypermutators in melanoma c",
+  "title": "High-throughput screening using patient-derived tumor x"
+ },
+ {
+  "pmid": "26479923",
+  "index": 38,
+  "statistic": "correlation",
+  "value": 0.6,
+  "unit": "correlation",
+  "verbatim": "The median mutation rate showed a weaker correlation between cell lines and patient tumors, primarily because of a lack of hypermutators in melanoma c",
   "title": "High-throughput screening using patient-derived tumor x"
  },
  {
@@ -1143,6 +1224,24 @@
   "title": "PTMoreR-enabled cross-species PTM mapping and comparati"
  },
  {
+  "pmid": "40849367",
+  "index": 4,
+  "statistic": "Pearson r",
+  "value": -0.58,
+  "unit": "correlation",
+  "verbatim": "and significant negative correlations between target lose-shift probability and reversals in humans ( r (52) = \u22120.58, p < 0.001; Fig. 1C ) and rats ( ",
+  "title": "Identification of conserved frontal neurophysiological "
+ },
+ {
+  "pmid": "40849367",
+  "index": 5,
+  "statistic": "Pearson r",
+  "value": -0.73,
+  "unit": "correlation",
+  "verbatim": "and significant negative correlations between target lose-shift probability and reversals in humans ( r (52) = \u22120.58, p < 0.001; Fig. 1C ) and rats ( ",
+  "title": "Identification of conserved frontal neurophysiological "
+ },
+ {
   "pmid": "25671556",
   "index": 0,
   "statistic": "restoration of function",
@@ -1150,6 +1249,60 @@
   "unit": "percent",
   "verbatim": "The ERG tracings show that there is excellent restoration of both rod- and cone-mediated ERG responses. The magnitude of ERG amplitudes approaches tho",
   "title": "Dog models for blinding inherited retinal dystrophies."
+ },
+ {
+  "pmid": "32868897",
+  "index": 21,
+  "statistic": "PPV",
+  "value": 0.6,
+  "unit": "proportion",
+  "verbatim": "These included haematologic toxicities in all four animal models, as well as cutaneous and metabolic toxicities in monkeys.",
+  "title": "Pre-clinical animal models are poor predictors of human"
+ },
+ {
+  "pmid": "32868897",
+  "index": 22,
+  "statistic": "NPV",
+  "value": 0.6,
+  "unit": "proportion",
+  "verbatim": "These included haematologic toxicities in all four animal models, as well as cutaneous and metabolic toxicities in monkeys.",
+  "title": "Pre-clinical animal models are poor predictors of human"
+ },
+ {
+  "pmid": "32868897",
+  "index": 23,
+  "statistic": "PPV",
+  "value": 0.6,
+  "unit": "proportion",
+  "verbatim": "These included haematologic toxicities in all four animal models, as well as cutaneous and metabolic toxicities in monkeys.",
+  "title": "Pre-clinical animal models are poor predictors of human"
+ },
+ {
+  "pmid": "32868897",
+  "index": 24,
+  "statistic": "NPV",
+  "value": 0.6,
+  "unit": "proportion",
+  "verbatim": "These included haematologic toxicities in all four animal models, as well as cutaneous and metabolic toxicities in monkeys.",
+  "title": "Pre-clinical animal models are poor predictors of human"
+ },
+ {
+  "pmid": "32868897",
+  "index": 25,
+  "statistic": "PPV",
+  "value": 0.6,
+  "unit": "proportion",
+  "verbatim": "These included haematologic toxicities in all four animal models, as well as cutaneous and metabolic toxicities in monkeys.",
+  "title": "Pre-clinical animal models are poor predictors of human"
+ },
+ {
+  "pmid": "32868897",
+  "index": 26,
+  "statistic": "NPV",
+  "value": 0.6,
+  "unit": "proportion",
+  "verbatim": "These included haematologic toxicities in all four animal models, as well as cutaneous and metabolic toxicities in monkeys.",
+  "title": "Pre-clinical animal models are poor predictors of human"
  },
  {
   "pmid": "11029269",
@@ -1237,6 +1390,15 @@
   "index": 23,
   "statistic": "liver size reduction",
   "value": 1,
+  "unit": "count",
+  "verbatim": "Three drugs including paracetamol, flupirtine, and methyldopa showed decreased RFP area signal, whereas finasteride and fusidic acid treatments increa",
+  "title": "ZeGlobalTox: An Innovative Approach to Address Organ Dr"
+ },
+ {
+  "pmid": "28422076",
+  "index": 24,
+  "statistic": "liver size increase",
+  "value": 2,
   "unit": "count",
   "verbatim": "Three drugs including paracetamol, flupirtine, and methyldopa showed decreased RFP area signal, whereas finasteride and fusidic acid treatments increa",
   "title": "ZeGlobalTox: An Innovative Approach to Address Organ Dr"
@@ -1333,6 +1495,15 @@
  },
  {
   "pmid": "28422076",
+  "index": 40,
+  "statistic": "liver size increase",
+  "value": 2,
+  "unit": "count",
+  "verbatim": "Three drugs including paracetamol, flupirtine, and methyldopa showed decreased RFP area signal, whereas finasteride and fusidic acid treatments increa",
+  "title": "ZeGlobalTox: An Innovative Approach to Address Organ Dr"
+ },
+ {
+  "pmid": "28422076",
   "index": 41,
   "statistic": "hepatic steatosis",
   "value": 1,
@@ -1377,12 +1548,39 @@
   "title": "The Challenges of Predicting Drug-Induced QTc Prolongat"
  },
  {
+  "pmid": "35148401",
+  "index": 39,
+  "statistic": "concordance rate",
+  "value": 81.0,
+  "unit": "percent",
+  "verbatim": "Pollard et al. (2017) evaluated clinical QTc data from TQT and Phase I clinical studies and found that, for the 24 drugs tested, 8 out of 13 (62%) dru",
+  "title": "The Challenges of Predicting Drug-Induced QTc Prolongat"
+ },
+ {
+  "pmid": "35148401",
+  "index": 40,
+  "statistic": "sensitivity",
+  "value": 83.0,
+  "unit": "percent",
+  "verbatim": "Wallis (2010) reviewed 19 drugs to determine whether the sensitivity and specificity of the in vivo dog assay could predict the outcome of a clinical ",
+  "title": "The Challenges of Predicting Drug-Induced QTc Prolongat"
+ },
+ {
   "pmid": "38852684",
   "index": 20,
   "statistic": "Prediction (ms)",
   "value": 259.3,
   "unit": "other",
   "verbatim": "Moxifloxacin Canine Individual \u0394QTc 253.0 8.2 0.0050 251.3 12.0 12.1",
+  "title": "A simple accurate method for concentration-QTc analysis"
+ },
+ {
+  "pmid": "38852684",
+  "index": 25,
+  "statistic": "Prediction (ms)",
+  "value": -0.9,
+  "unit": "other",
+  "verbatim": "Sham Canine Individual \u0394QTc \u2212 2.7 0.0006 \u2212 1.6 \u2212 2.6 \u2212 0.7",
   "title": "A simple accurate method for concentration-QTc analysis"
  },
  {
@@ -1401,6 +1599,15 @@
   "value": -1.8,
   "unit": "other",
   "verbatim": "Sham NHP Individual \u0394QTc \u2212 1.7 0.0004 \u2212 0.9 \u2212 1.8 \u2212 0.1",
+  "title": "A simple accurate method for concentration-QTc analysis"
+ },
+ {
+  "pmid": "38852684",
+  "index": 28,
+  "statistic": "Prediction (ms)",
+  "value": -0.9,
+  "unit": "other",
+  "verbatim": "Sham NHP Average \u0394QTc \u2212 1.7 0.0004 \u2212 0.9 \u2212 1.8 \u2212 0.1",
   "title": "A simple accurate method for concentration-QTc analysis"
  },
  {
@@ -1593,6 +1800,15 @@
   "title": "An evaluation of hERG current assay performance: Transl"
  },
  {
+  "pmid": "20807552",
+  "index": 38,
+  "statistic": "likelihood ratio",
+  "value": 1,
+  "unit": "ratio",
+  "verbatim": "While drugs with greater (higher) threshold ranges (above 30) showed somewhat lower post-test probabilities for QTc prolongation (below 50%, consisten",
+  "title": "An evaluation of hERG current assay performance: Transl"
+ },
+ {
   "pmid": "33813006",
   "index": 3,
   "statistic": "concordance",
@@ -1719,6 +1935,33 @@
   "title": "Why animal studies are often poor predictors of human r"
  },
  {
+  "pmid": "19297654",
+  "index": 6,
+  "statistic": "number of systematic reviews",
+  "value": 30,
+  "unit": "count",
+  "verbatim": "Other recent studies similarly found only 3015 and 5718 systematic reviews of any type of animal research.",
+  "title": "Why animal studies are often poor predictors of human r"
+ },
+ {
+  "pmid": "19297654",
+  "index": 7,
+  "statistic": "number of systematic reviews",
+  "value": 57,
+  "unit": "count",
+  "verbatim": "Other recent studies similarly found only 3015 and 5718 systematic reviews of any type of animal research.",
+  "title": "Why animal studies are often poor predictors of human r"
+ },
+ {
+  "pmid": "19297654",
+  "index": 8,
+  "statistic": "quality criteria met",
+  "value": 0,
+  "unit": "count",
+  "verbatim": "None of the 29 studies met all 10 quality criteria applied by the reviewers (one study met no criteria; the highest score was 7).",
+  "title": "Why animal studies are often poor predictors of human r"
+ },
+ {
   "pmid": "26753942",
   "index": 52,
   "statistic": "iNLR",
@@ -1728,10 +1971,55 @@
   "title": "Predicting human drug toxicity and safety via animal te"
  },
  {
+  "pmid": "26753942",
+  "index": 53,
+  "statistic": "iNLR",
+  "value": 1.39,
+  "unit": "other",
+  "verbatim": "The median iNLRs were extremely low for all the preclinical species, supporting the view that animals provide very little or essentially no evidential",
+  "title": "Predicting human drug toxicity and safety via animal te"
+ },
+ {
+  "pmid": "26753942",
+  "index": 54,
+  "statistic": "iNLR",
+  "value": 1.12,
+  "unit": "other",
+  "verbatim": "The median iNLRs were extremely low for all the preclinical species, supporting the view that animals provide very little or essentially no evidential",
+  "title": "Predicting human drug toxicity and safety via animal te"
+ },
+ {
+  "pmid": "26753942",
+  "index": 55,
+  "statistic": "iNLR",
+  "value": 1.1,
+  "unit": "other",
+  "verbatim": "The median iNLRs were extremely low for all the preclinical species, supporting the view that animals provide very little or essentially no evidential",
+  "title": "Predicting human drug toxicity and safety via animal te"
+ },
+ {
+  "pmid": "26753942",
+  "index": 56,
+  "statistic": "iNLR",
+  "value": 1.02,
+  "unit": "other",
+  "verbatim": "The median iNLRs were extremely low for all the preclinical species, supporting the view that animals provide very little or essentially no evidential",
+  "title": "Predicting human drug toxicity and safety via animal te"
+ },
+ {
   "pmid": "30364994",
   "index": 16,
   "statistic": "TEER IC 15 / C max ratio",
   "value": 0.02,
+  "unit": "ratio",
+  "verbatim": "The TEER IC 15 /clinical C max ratios were \u2264 8 for all four compounds (Table 5), ie, all four were active in the human microtissue assay.",
+  "title": "Human 3D Gastrointestinal Microtissue Barrier Function "
+ },
+ {
+  "pmid": "30364994",
+  "index": 17,
+  "statistic": "TEER IC 15 / C max ratio",
+  "value": 0.8,
   "unit": "ratio",
   "verbatim": "The TEER IC 15 /clinical C max ratios were \u2264 8 for all four compounds (Table 5), ie, all four were active in the human microtissue assay.",
   "title": "Human 3D Gastrointestinal Microtissue Barrier Function "
@@ -1756,6 +2044,15 @@
  },
  {
   "pmid": "30364994",
+  "index": 35,
+  "statistic": "TEER IC 15 / C max ratio",
+  "value": 0.8,
+  "unit": "ratio",
+  "verbatim": "The TEER IC 15 /clinical C max ratios were \u2264 8 for all four compounds (Table 5), ie, all four were active in the human microtissue assay.",
+  "title": "Human 3D Gastrointestinal Microtissue Barrier Function "
+ },
+ {
+  "pmid": "30364994",
   "index": 36,
   "statistic": "TEER IC 15 / C max ratio",
   "value": 0.02,
@@ -1770,6 +2067,24 @@
   "value": 45,
   "unit": "percent",
   "verbatim": "Forty-five percent of experiments reported that the animals were randomized, none described methods of sequence generation or how allocation concealme",
+  "title": "Evaluating mesenchymal stem cell therapy for sepsis wit"
+ },
+ {
+  "pmid": "27870924",
+  "index": 34,
+  "statistic": "studies with low risk of bias",
+  "value": 0,
+  "unit": "count",
+  "verbatim": "None of the included studies were considered low risk of bias across all domains, and their construct validity was highly variable.",
+  "title": "Evaluating mesenchymal stem cell therapy for sepsis wit"
+ },
+ {
+  "pmid": "27870924",
+  "index": 35,
+  "statistic": "studies with low risk of bias",
+  "value": 0,
+  "unit": "count",
+  "verbatim": "None of the experiments were considered low risk of bias across all six domains of methodological quality.",
   "title": "Evaluating mesenchymal stem cell therapy for sepsis wit"
  },
  {
@@ -1921,6 +2236,15 @@
   "index": 32,
   "statistic": "correlation coefficient",
   "value": -0.7,
+  "unit": "correlation",
+  "verbatim": "A significant and strong correlation with the clinical effective concentration in patients was found for eight out of ten of the HuP3D metrics (seven ",
+  "title": "Human Plasma-Derived 3D Cultures Model Breast Cancer Tr"
+ },
+ {
+  "pmid": "32610529",
+  "index": 33,
+  "statistic": "correlation coefficient",
+  "value": 0.5,
   "unit": "correlation",
   "verbatim": "A significant and strong correlation with the clinical effective concentration in patients was found for eight out of ten of the HuP3D metrics (seven ",
   "title": "Human Plasma-Derived 3D Cultures Model Breast Cancer Tr"
@@ -2229,6 +2553,15 @@
   "value": 0,
   "unit": "percent",
   "verbatim": "There was no overlap between animals and humans for AUCs of compounds in IB3, IB4, IB15 and IB20 (Table 3, Fig. 4).",
+  "title": "Translatability of preclinical to early clinical tolera"
+ },
+ {
+  "pmid": "36859342",
+  "index": 37,
+  "statistic": "internal validity reporting",
+  "value": 0,
+  "unit": "percent",
+  "verbatim": "None of the preclinical experiments in the included IBs fulfilled the criteria of internal validity as most animal experiments included a placebo arm,",
   "title": "Translatability of preclinical to early clinical tolera"
  }
 ]

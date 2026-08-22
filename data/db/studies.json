@@ -300,7 +300,7 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "failure rate: 80.0 percent | measures: share of potential therapeutics that fail when tested in people after animal studies suggest they will be safe and effective | compared: animal studies vs human testing | species: human,animal",
   "substrate": "animal-biology",
-  "ah_measurement_count": 2
+  "ah_measurement_count": 1
  },
  "21892149": {
   "pmid": "21892149",
@@ -854,12 +854,12 @@
   "screen_reason": "The abstract mentions a 'laboratory to clinical translational success' for one animal model (rabbit model for tPA treatment), implying a measure of agreement or success rate, even if not explicitly quantified with a specific statistic. It also discusses attempts to translate animal protocols to human trials and the outcomes, which suggests a comparison of results.",
   "index_test": "whole-animal-in-vivo",
   "index_test_evidence": "The accompanying paper discusses the rabbit model that was used to identify the efficacy of tissue plasminogen activator (tPA) treatment. Use of caffeinol as a cytoprotective agent in rat models yielded exciting results, which led to clinical trials.",
-  "eligible": true,
-  "exclusion_reason": null,
+  "eligible": false,
+  "exclusion_reason": "No animal-vs-human figure among its extracted measurements. The study reports a comparison between a rabbit model's success with tPA treatment and human trials, which is a direct animal-vs-human comparison.",
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "the rabbit model achieved laboratory to clinical translational success for tissue plasminogen activator (tPA) treatment.",
   "substrate": "animal-biology",
-  "ah_measurement_count": 1
+  "ah_measurement_count": 0
  },
  "20806453": {
   "pmid": "20806453",
@@ -1123,7 +1123,7 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "correlation: 0.56 correlation | measures: correlation between individual patient response rates and PDX response rates to PI3K inhibitors | compared: individual patient response rate vs. PDX response rate | species: human",
   "substrate": "human-tissue-in-animal-host",
-  "ah_measurement_count": 10
+  "ah_measurement_count": 8
  },
  "27261415": {
   "pmid": "27261415",
@@ -2199,7 +2199,7 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "positive predictive value (PPV) for all toxicity grades: 0.67 proportion | measures: the probability that human Phase 1 studies will show a particular toxicity given that animal data show that toxicity | compared: dog toxicity vs human toxicity | species: dog",
   "substrate": "animal-biology",
-  "ah_measurement_count": 29
+  "ah_measurement_count": 23
  },
  "11029269": {
   "pmid": "11029269",
@@ -2304,7 +2304,7 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "specificity: 89.0 percent | measures: share of human toxicities that were correctly identified as toxic by the assay | compared: zebrafish experimental data with known human toxicity outputs | species: zebrafish,human",
   "substrate": "animal-biology",
-  "ah_measurement_count": 12
+  "ah_measurement_count": 10
  },
  "38910363": {
   "pmid": "38910363",
@@ -2631,7 +2631,7 @@
   "exclusion_reason": null,
   "substrate": "animal-biology",
   "r4_comparison_type": "animal-vs-human",
-  "ah_measurement_count": 19
+  "ah_measurement_count": 17
  },
  "23812503": {
   "pmid": "23812503",
@@ -2732,7 +2732,7 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "change in QTc: 10.9 other | measures: the change in QTc interval in non-human primates at a specific concentration. | compared: non-human primate QTc change vs. human QTc change threshold | species: non-human primate",
   "substrate": "animal-biology",
-  "ah_measurement_count": 23
+  "ah_measurement_count": 21
  },
  "40863351": {
   "pmid": "40863351",
@@ -3359,7 +3359,7 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "Likelihood Ratios (LRs): None other | measures: the evidential weight that adverse drug reactions will be absent in humans when toxicity is absent in animals | compared: absence of toxicity in animals vs absence of adverse drug reactions in humans | species: human,animal",
   "substrate": "animal-biology",
-  "ah_measurement_count": 12
+  "ah_measurement_count": 8
  },
  "30364994": {
   "pmid": "30364994",

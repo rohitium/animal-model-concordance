@@ -18,7 +18,11 @@ WORDS = {"half":50,"a third":33.3,"one-third":33.3,"third":33.3,"a quarter":25,
  "twofold":2,"two-fold":2,"threefold":3,"three-fold":3,"fourfold":4,"four-fold":4,
  "fivefold":5,"five-fold":5,"tenfold":10,"ten-fold":10,"doubled":2,"tripled":3,
  "one":1,"two":2,"three":3,"four":4,"five":5,"six":6,"seven":7,"eight":8,"nine":9,
- "ten":10,"eleven":11,"twelve":12,"none":0,"all":100,"only":None}
+ "ten":10,"eleven":11,"twelve":12}
+# "all" and "none" were mapped to 100 and 0. That let any sentence containing the word
+# "all" support a value of 100 -- "All had been shown to ameliorate disease in mice"
+# was read as supporting a 100% FAILURE rate. Quantifiers are too loose to license a
+# number and are deliberately excluded.
 
 def nums(t):
     """Numbers written as words are still stated by the source. Counting them as
@@ -41,7 +45,14 @@ def supported(x):
     if not ns: return False
     cands = {v}
     if isinstance(v,(int,float)):
-        cands |= {v*100, v/100, round(v), round(v,1), round(v,2)}
+        cands |= {round(v), round(v,1), round(v,2)}
+        # Percent<->proportion rescaling is allowed only where it cannot trivially
+        # match a stray small integer. Permitting 100 -> 1.0 let "all but one failed"
+        # license a value of 100%, because the text contains the word "one".
+        if v >= 200 or (2 <= v/100):
+            cands.add(v/100)
+        if 0 < v < 1:
+            cands.add(v*100)
     return any(any(abs(c-n) < max(0.01, abs(c)*0.02) for n in ns) for c in cands)
 
 bad, total = [], 0

@@ -267,3 +267,34 @@ endpoint and trial phase. `endpoint_match` records whether the two endpoints are
 figure cannot be interpreted, and PLAN §6.1's D1/D2/D3 recoding cannot be done. Coarse but
 genuine groupings such as Olson's "rodent" and "non-rodent" are kept as grouped labels
 rather than discarded: rodent 43% vs non-rodent 63% is that paper's headline result.
+
+## Presentation and taxonomy (2026-08-21, later)
+
+**L40 — `methods-and-bias` removed; `disease-biology` added.** Every other arm classifies by
+what is being predicted; that one classified by what kind of study it is, mixing two axes.
+Its contents split: cross-species comparisons of gene expression, immune signatures and
+pathology became `disease-biology` (does the model's biology resemble the human disease —
+a prediction target with no intervention involved), and translation-rate studies moved to
+the arm whose findings they count. Arms: disease-biology 21, efficacy 16, toxicology 13,
+safety-pharmacology 4, veterinary 2.
+
+**L41 — Arm 4 needs precedence, not competition.** Veterinary describes the *model*
+(spontaneous disease in client-owned animals) while the other arms describe the readout, so
+under a single-choice enum the dog pan-cancer study was classified `disease-biology` and the
+veterinary arm emptied. Per PLAN v0.3, spontaneous-veterinary models take Arm 4 whatever the
+readout, with the readout retained in a `readout` field.
+
+**L42 — Figures are shown as self-contained statements.** 730 of 759 concordance figures were
+rewritten to state the denominator, the species and disease, and the human counterpart where
+the source gives one; 709 carry an explicit denominator and 141 a counterpart value. Figures
+that could not be stated precisely are dropped rather than displayed as fragments. Text is
+never truncated mid-word.
+
+**L43 — Duplicate figures are collapsed.** The same result is often extracted from two
+sentences ("93%" and "93.2%" for genes changing in the same direction). Two figures collapse
+only when unit and value agree closely AND descriptions overlap heavily; the copy retaining a
+refined statement and a denominator survives. An earlier, looser rule would have dropped 748
+figures including distinct correlations for different diseases in Takao 2015; the current rule
+drops 675 and preserves Olson's two separate 63% results.
+
+**L44 — Studies are cited as Author et al. Year**, not by truncated title.
