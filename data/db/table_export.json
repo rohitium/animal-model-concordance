@@ -9,11 +9,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 2
    },
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 2
    }
   ],
@@ -73,11 +73,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 1
    },
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 1
    }
   ],
@@ -343,7 +343,7 @@
     ]
    }
   ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
+  "caveat": "The 71% prediction rate for toxicities in humans by animal models is an overall figure and does not specify the type of toxicity or the specific animal species involved in each case. The IC50 values are for a specific drug (bosentan) and a specific endpoint (albumin secretion decrease). The JNJ-2 and JNJ-3 comparisons are for specific compounds and endpoints, and the JNJ-3 comparison notes that in vivo data for JNJ-2 in dogs or JNJ-3 in rats were not available."
  },
  {
   "assessment": "Toxicology",
@@ -461,11 +461,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 2
    },
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 2
    }
   ],
@@ -555,7 +555,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
  },
  {
   "assessment": "Toxicology",
@@ -633,7 +633,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
  },
  {
   "assessment": "Toxicology",
@@ -751,11 +751,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 1
    },
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 1
    }
   ],
@@ -803,7 +803,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
  },
  {
   "assessment": "Toxicology",
@@ -927,6 +927,20 @@
     ]
    },
    {
+    "value": "-0.04\u201316.6",
+    "statistic": "mean",
+    "n": "",
+    "what": "3 comparisons, median 16.6 \u2014 lowest QTc increase over 24h (mock drug) (-0.04), highest QTc increase at critical concentration (moxifloxacin) (16.6)",
+    "cites": [
+     {
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+     }
+    ]
+   },
+   {
     "value": "54\u201378%",
     "statistic": "sensitivity",
     "n": "",
@@ -951,20 +965,6 @@
       "pmid": "30726989",
       "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
       "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
-     }
-    ]
-   },
-   {
-    "value": "-0.04\u201316.6",
-    "statistic": "mean",
-    "n": "",
-    "what": "3 comparisons, median 16.6 \u2014 lowest QTc increase over 24h (mock drug) (-0.04), highest QTc increase at critical concentration (moxifloxacin) (16.6)",
-    "cites": [
-     {
-      "text": "Sadko et al. 2024",
-      "pmid": "38852684",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
      }
     ]
    },
@@ -1009,15 +1009,29 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "supports",
     "n": 1
    },
    {
-    "label": "supports",
+    "label": "partly supports",
     "n": 1
    }
   ],
   "evidence": [
+   {
+    "value": "-1.17\u201310.9",
+    "statistic": "mean",
+    "n": "",
+    "what": "3 comparisons, median 10 \u2014 lowest QTc increase over 24h (mock drug) (-1.17), highest QTc increase at critical concentration (moxifloxacin) (10.9)",
+    "cites": [
+     {
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+     }
+    ]
+   },
    {
     "value": "54\u201378%",
     "statistic": "sensitivity",
@@ -1047,20 +1061,6 @@
     ]
    },
    {
-    "value": "-1.17\u201310.9",
-    "statistic": "mean",
-    "n": "",
-    "what": "3 comparisons, median 10 \u2014 lowest QTc increase over 24h (mock drug) (-1.17), highest QTc increase at critical concentration (moxifloxacin) (10.9)",
-    "cites": [
-     {
-      "text": "Sadko et al. 2024",
-      "pmid": "38852684",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
-     }
-    ]
-   },
-   {
     "value": "1.5\u20133",
     "statistic": "multiple",
     "n": "",
@@ -1075,30 +1075,30 @@
     ]
    },
    {
-    "value": "52%",
-    "statistic": "positive predictive value",
-    "n": "",
-    "what": "large animal to human (combined BP and HR)",
+    "value": "0",
+    "statistic": "change",
+    "n": ", n=48 n=48",
+    "what": "QTc increase at critical concentration (mock drug)",
     "cites": [
      {
-      "text": "Bhatt et al. 2019",
-      "pmid": "30726989",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
      }
     ]
    },
    {
-    "value": "92%",
-    "statistic": "negative predictive value",
+    "value": "0.0043",
+    "statistic": "slope",
     "n": "",
-    "what": "large animal to human (combined BP and HR)",
+    "what": "Average AQTc slope (moxifloxacin)",
     "cites": [
      {
-      "text": "Bhatt et al. 2019",
-      "pmid": "30726989",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
      }
     ]
    }
@@ -1313,7 +1313,7 @@
     ]
    }
   ],
-  "caveat": "The recall and precision metrics are influenced by the duration of exposure in animal models, with longer exposure generally leading to higher recall. The WTD model's low recall might be due to a relatively short feeding period."
+  "caveat": "The MHPS scores are normalized between 0 and 1, where 1 indicates the highest proximity to human MASLD. The 'improved and statistically significant agreement' for DEGs and DRPs is a qualitative statement without a specific numerical value provided beyond the overall 50% alignment rate for the whole transcriptome."
  },
  {
   "assessment": "Disease biology",
@@ -1683,11 +1683,11 @@
   "negative_controls": "Negative-control cancers (ACC, LAML) had the lowest scores (\u224831\u201340%).",
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 1
    },
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 1
    }
   ],

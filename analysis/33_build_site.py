@@ -150,11 +150,15 @@ def comparisons_for(pm, organism):
     for i,c in enumerate(v.get("comparisons") or []):
         pv=(prov.get(str(i)) or {}) if "error" not in prov else {}
         c["_prov"]=pv.get("provenance","unclear")
+        c["_qualitative"]=c.get("value") is None
         c["_cited_source"]=pv.get("cited_source")
         # A number this paper quotes from someone else is not this paper's evidence.
         # Re-analysis of others' data is: pooling published results is the reviewer's
         # own contribution.
-        if c["_prov"]=="cited-from-other-study":
+        # Qualitative comparisons are kept: a review stating dogs recovered and patients
+        # did not has made a real comparison. Dropping them removed the clearest negative
+        # dog finding in the corpus.
+        if c["_prov"]=="cited-from-other-study" and not c["_qualitative"]:
             continue
         cs=N.organisms(c.get("animal_species") or [])
         if cs:
@@ -236,10 +240,7 @@ def evidence_synth(a, organism, pm_set):
     if sy and "error" not in sy:
         out.append(f'<p><span class="tag {DIRTAG.get(sy["direction"],"")}">{e(sy["direction"])}</span></p>')
         out.append(f'<p>{e(sy["summary"])}</p>')
-        if sy.get("negative_controls_noted"):
-            out.append(f'<div class="caveat"><strong>Negative controls.</strong> '
-                       f'{e(sy["negative_controls_noted"])} These are designed to score low and are '
-                       f'excluded from the reading above.</div>')
+
         if sy.get("why_range_is_wide"):
             out.append(f'<p class="sub"><strong>What varies across the range:</strong> '
                        f'{e(sy["why_range_is_wide"])}</p>')
