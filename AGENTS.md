@@ -75,15 +75,23 @@ regress them.
 
 ## What this project is for
 
-It supports a decision about whether companion-animal clinical trials are a viable basis for
-a biotech platform. That makes negative evidence about dogs the most valuable thing here, not
-the least. Two findings matter and should survive any rewrite:
+It supports a decision about whether companion-animal clinical trials are a viable basis for a
+biotech platform. Report what the studies show, in both directions, and let the reader draw the
+conclusion.
 
-- The corpus **cannot** support "dogs translate better (or worse) than mice". No study
-  benchmarks them on the same endpoint, and the organisms sit in different assessments.
-- The comparative-oncology literature **asserts** companion-animal validity far more than it
-  measures it: a targeted search returned 174 veterinary-patient records, one of which met the
-  inclusion rule.
+Two points of fact that took work to establish and are easy to get wrong:
+
+- **Organism comparisons are valid within a study, not across the table.** 18 studies report one
+  statistic for more than one organism — Atkins et al. 2020 gives median positive predictive
+  values of 0.38 (dog), 0.43 (mouse), 0.41 (rat), 0.60 (non-human primate); Bailey et al. 2015
+  and Monticello et al. 2017 give comparable per-species breakdowns. Those are legitimate
+  comparisons. Reading the main table's organism rows against each other is not, because dog
+  evidence sits mostly in toxicology and mouse evidence mostly in efficacy and disease biology.
+- **Arm 4 is thin in this corpus.** A targeted search for veterinary-patient studies returned 174
+  records and one met the inclusion rule, which requires a quantitative animal-to-human agreement
+  statistic in the same paper. Most comparative-oncology work is either a canine trial without a
+  paired human comparison, or a review. That is a statement about what this rubric retrieves, not
+  a verdict on the field.
 
 ## Known weaknesses, in priority order
 

@@ -242,11 +242,11 @@
   "why_range_is_wide": "Results vary by organ/endpoint, dataset and study design (e.g., high organ-specific NPVs vs lower overall PPV and selection biases).",
   "verdicts": [
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 3
    },
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 3
    }
   ],
@@ -336,7 +336,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The 71% prediction rate for toxicities in humans by animal models is an overall figure and does not specify the type of toxicity or the specific animal species involved in each case. The IC50 values are for a specific drug (bosentan) and a specific endpoint (albumin secretion decrease). The JNJ-2 and JNJ-3 comparisons are for specific compounds and endpoints, and the JNJ-3 comparison notes that in vivo data for JNJ-2 in dogs or JNJ-3 in rats were not available."
  },
  {
   "assessment": "Toxicology",
@@ -441,7 +441,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The high Negative Predictive Value (NPV) is largely based on the low clinical positive prevalence, meaning most findings are negative."
  },
  {
   "assessment": "Toxicology",
@@ -452,11 +452,11 @@
   "why_range_is_wide": "Concordance varies by endpoint and toxicity grade; some endpoints (e.g., cardiac/QT) show higher rat\u2013human agreement while others and severe toxicities show lower or inconsistent predictive value.",
   "verdicts": [
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 2
    },
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 2
    }
   ],
@@ -546,7 +546,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The 71% prediction rate for toxicities in humans by animal models is an overall figure and does not specify the type of toxicity or the specific animal species involved in each case. The IC50 values are for a specific drug (bosentan) and a specific endpoint (albumin secretion decrease). The JNJ-2 and JNJ-3 comparisons are for specific compounds and endpoints, and the JNJ-3 comparison notes that in vivo data for JNJ-2 in dogs or JNJ-3 in rats were not available."
  },
  {
   "assessment": "Toxicology",
@@ -623,7 +623,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "NPV is often high simply because most findings are negative. The paper notes that for grades 3 and 4 toxicities, there were no conditions in which PPV and NPV were both >0.75, but there were six conditions for which PPV and NPV were both >0.6. This suggests that even for severe toxicities, the predictive values are not consistently high."
  },
  {
   "assessment": "Toxicology",
@@ -1296,7 +1296,7 @@
     ]
    }
   ],
-  "caveat": "The MHPS scores are normalized between 0 and 1, where 1 indicates the highest proximity to human MASLD. The 'improved and statistically significant agreement' for DEGs and DRPs is a qualitative statement without a specific numerical value provided beyond the overall 50% alignment rate for the whole transcriptome."
+  "caveat": "The 'percentage of genes changed in the same direction' metric has a base rate of 50% for random chance, which is explicitly mentioned in the paper. Many of the reported percentages for mouse models are close to this random chance level."
  },
  {
   "assessment": "Disease biology",

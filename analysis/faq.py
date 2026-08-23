@@ -95,18 +95,22 @@ def build(k):
    "bladder cancer at the other, median 61.7%. The spread is the finding — dogs model some human "
    "cancers closely and others poorly — not noise around a central value.</p>"]),
 
- ("Does this show that companion-animal (dog) models translate worse than mouse models?",
-  ["<p>No, and the data cannot support that comparison in either direction. No study here "
-   "benchmarks dog against mouse on the same endpoint, and the two are assessed on different "
-   "things.</p>",
-   "<p>What the corpus does show is a gap: a targeted search for veterinary-patient studies "
-   "returned 174 records, of which one met the inclusion rule. The comparative-oncology literature "
-   "argues that naturally occurring disease in companion animals is a good model far more often "
-   "than it measures whether it predicts human outcomes.</p>",
-   "<p>The clearest negative result for companion animals here is specific: Petersen-Jones et al. "
-   "2015 found dog RPE65 gene therapy did not track human outcomes — dogs recovered near-normal "
-   "vision and electroretinogram responses, while patients showed no ERG change and remained "
-   "visually impaired.</p>"]),
+ ("Can dog models be compared with mouse models here?",
+  ["<p>Within a single study that measured both, yes. Several toxicology studies report the "
+   "same statistic per species. Atkins et al. 2020 gives a median positive predictive value of "
+   "0.38 for dog, 0.43 for mouse, 0.41 for rat and 0.60 for non-human primate, with negative "
+   "predictive values of 0.71, 0.81, 0.72 and 0.73. Bailey et al. 2015 and the IQ consortium "
+   "database (Monticello et al. 2017) report comparable per-species breakdowns. In total "
+   "<strong>18 of the studies here report one statistic for more than one organism</strong>, and "
+   "those are legitimate comparisons: same design, same endpoint, same cohort of compounds.</p>",
+   "<p>What is not legitimate is reading the organism rows of the main table against each other. "
+   "Dog evidence in this corpus comes mostly from regulatory toxicology and mouse evidence mostly "
+   "from disease biology and efficacy. Efficacy translation fails often in every species and "
+   "toxicology prediction succeeds more often, so a cross-row comparison largely measures which "
+   "assessment each organism happens to have been studied under.</p>",
+   "<p>Where studies do compare species directly, no organism stands out as clearly better: the "
+   "predictive values above sit within a narrow band, and the study reporting them concludes that "
+   "pre-clinical models in general predict human toxicity poorly.</p>"]),
 
  ("What counts as a study here?",
   ["<p>It must report a quantitative comparison with a live non-human animal on one side and a "
