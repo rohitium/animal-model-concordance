@@ -343,3 +343,38 @@ because the workflow's `paths:` filter did not include the workflow file. Both t
 was reported as successful; success meant the job executed, not that the intended content was
 live. Verification is now by fetching the page and comparing its size and heading against the
 local build, not by reading a green check.
+
+## Objective verdict (2026-08-22)
+
+**L52 — The argument against numeric thresholds was wrong, and has been withdrawn.** The site
+previously claimed no cut-off could span a concordance rate, a correlation and a failure rate
+"because a high value means success in the first two and failure in the third". Direction is
+trivially normalisable — a 92% failure rate is an 8% success rate — and the claim served as an
+excuse for not building a rule. `analysis/37_objective_verdict.py` now maps every figure that
+carries concordance information onto a 0–1 scale where 1 means the animal result tracked the
+human result, inverting discordance-type statistics and taking |r| for correlations. A study's
+score is the median of its figures; cut-offs are ≥0.70 supports, 0.40–0.70 partly supports,
+<0.40 does not support. Which statistics count, their orientation and the cut-offs are all
+explicit in the script and can be recomputed or changed by anyone.
+
+**L53 — Only 31 of 56 studies report anything reducible to a concordance scale.** The rest
+report p-values, regression slopes, Mahalanobis distances, fold-changes, likelihood ratios and
+odds ratios. These are real results but not rates of agreement. That roughly half of the
+studies measuring animal-to-human correspondence do not express it as agreement is itself a
+finding, and much of why concordance is hard to compare across papers.
+
+**L54 — The three verdicts agree poorly, and none is treated as authoritative.** Model rater 1
+vs rater 2: 73% agreement, κ = 0.58. Numeric rule vs rater 1: 52%, κ = 0.24. Rule vs rater 2:
+48%, κ = 0.17. Each has a known weakness: the rule takes a median across statistics that mean
+different things within one paper, so a base-rate-inflated negative predictive value can pull a
+study upward; the model raters weigh which figure matters but are only moderately reproducible.
+All three are shown on every study page and disagreement is displayed rather than resolved.
+Consequence for readers: **the figures are the evidence; the labels are contested.**
+
+**L55 — Verdict cut-offs are sensitive but not arbitrary.** Moving from 0.70/0.40 to 0.65/0.35
+shifts four studies from partly-supports to supports; does-not-support is unchanged across all
+tested cut-offs (0.60/0.30 through 0.75/0.45). The negative end of the scale is therefore more
+stable than the positive end.
+
+**L56 — Excluded-study reasons rewritten in plain language.** They had been machine strings such
+as "r4: none-found — …" truncated mid-sentence.

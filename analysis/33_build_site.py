@@ -16,6 +16,7 @@ ANS=load("data","db","study_answers.json"); CLS=load("data","db","classification
 FTS=load("data","raw","fulltext_status.json")
 SYN=load("data","db","row_synthesis.json")
 RATER2=load("data","db","second_rater.json")
+OBJ=load("data","db","objective_verdict.json")
 OK={k:v for k,v in ANS.items() if "error" not in v and DB.get(k,{}).get("eligible")}
 # Patient-derived xenografts grow the patient's own human tumour in a mouse host, so they
 # answer an avatar question rather than whether another species predicts human outcomes.
@@ -266,9 +267,37 @@ for pm in sorted(OK, key=lambda p:-(DB[p].get("cited_by") or 0)):
              f'<td>{vtag(OK[pm]["verdict"])}</td><td>{e(DB[pm].get("cited_by"))}</td></tr>')
 b.append("</table></div>")
 
-AG=agreement()
-if AG:
-    b+=["<h2>How reliable are these verdicts?</h2>",
+def _kappa(pairs):
+    n=len(pairs)
+    if not n: return 0,0
+    po=sum(1 for x,y in pairs if x==y)/n
+    ca=collections.Counter(x for x,_ in pairs); cb=collections.Counter(y for _,y in pairs)
+    pe=sum((ca[c]/n)*(cb[c]/n) for c in {c for p in pairs for c in p})
+    return po,(po-pe)/(1-pe) if pe<1 else 0.0
+_scored={k_:v_ for k_,v_ in OBJ.items() if v_.get("verdict")!="insufficient-data" and k_ in OK}
+_p1=[(OBJ[k_]["verdict"],OK[k_]["verdict"]) for k_ in _scored]
+_p2=[(OBJ[k_]["verdict"],RATER2[k_]["verdict"]) for k_ in _scored if k_ in RATER2 and "error" not in RATER2[k_]]
+_pr=[(OK[k_]["verdict"],RATER2[k_]["verdict"]) for k_ in OK if k_ in RATER2 and "error" not in RATER2[k_]]
+_a1,_k1=_kappa(_p1); _a2,_k2=_kappa(_p2); _ar,_kr=_kappa(_pr)
+b+=["<h2>How the verdicts are decided, and how far they agree</h2>",
+ '<p>Every figure carrying concordance information is put on a 0&ndash;1 scale where 1 means the '
+ 'animal result tracked the human result; figures pointing the other way are inverted, so a 92% '
+ 'failure rate becomes 0.08. A study&rsquo;s score is the median of its figures, with cut-offs at '
+ '<strong>&ge;0.70 supports</strong>, <strong>0.40&ndash;0.70 partly supports</strong>, '
+ '<strong>&lt;0.40 does not support</strong>. Two model raters judged the same PDFs independently.</p>',
+ f'<p><strong>{len(_scored)} of {len(OK)}</strong> studies report something reducible to that '
+ 'scale. The rest report p-values, slopes, distances and odds ratios &mdash; real results that are '
+ 'not rates of agreement, which is much of why concordance is hard to compare across papers.</p>',
+ '<div class="scroll"><table><tr><th>Comparison</th><th>Agreement</th><th>Cohen&rsquo;s &kappa;</th></tr>'
+ f'<tr><td>model rater 1 vs model rater 2</td><td>{_ar:.0%}</td><td>{_kr:.2f}</td></tr>'
+ f'<tr><td>numeric rule vs rater 1</td><td>{_a1:.0%}</td><td>{_k1:.2f}</td></tr>'
+ f'<tr><td>numeric rule vs rater 2</td><td>{_a2:.0%}</td><td>{_k2:.2f}</td></tr></table></div>',
+ '<p>The raters agree moderately with each other and poorly with the rule, so the labels are '
+ 'contested and the numbers beneath them are what to rely on. Each study page shows all three '
+ 'verdicts; disagreement is displayed, not resolved. '
+ '<a href="faq.html">Why, and what each gets wrong</a>.</p>']
+if False:
+    b+=["<h2>unused</h2>",
      f'<p>Every study was independently re-judged by a second rater — a different model family, '
      f'the same PDFs, the same rubric. The two agree on <strong>{AG["agree"]:.0%}</strong> of '
      f'{AG["n"]} studies (Cohen&rsquo;s &kappa; = <strong>{AG["kappa"]:.2f}</strong>, moderate). '
@@ -296,7 +325,7 @@ b+=["<h2>Method</h2>",
  f'<details><summary>{len(EXCL)} screened studies were excluded</summary><div class="scroll">'
  "<table><tr><th>Study</th><th>Reason</th></tr>"
  + "".join(f'<tr><td>{e(cite(pm))}<br><span class="sub">{e(v.get("title"))}</span></td>'
-           f'<td class="sub">{e(v.get("exclusion_reason"))}</td></tr>'
+           f'<td class="sub">{e(v.get("exclusion_reason_display") or v.get("exclusion_reason"))}</td></tr>'
            for pm,v in sorted(EXCL.items(), key=lambda kv:-(kv[1].get("cited_by") or 0)))
  + "</table></div></details>"]
 open(os.path.join(OUT,"index.html"),"w").write(page("Animal Model Concordance","".join(b)))
@@ -311,10 +340,14 @@ for pm,v in OK.items():
       f'<p class="sub">{e(", ".join(md.get("authors_full") or d.get("authors") or []))}<br>'
       f'<em>{e(md.get("journal_full") or d.get("journal"))}</em> · {e(d.get("year"))} · '
       f'cited by {e(d.get("cited_by"))} · {" · ".join(ident)}</p>',
-      f'<p>{vtag(v["verdict"])}'
-      + (f'<span class="tag">second rater: {e(VERDICT_LABEL.get(RATER2[pm]["verdict"],""))}</span>'
-         if pm in RATER2 and "error" not in RATER2[pm]
-         and RATER2[pm]["verdict"]!=v["verdict"] else "")
+      f'<p>{vtag(v["verdict"])}<span class="sub"> model rater 1</span>'
+      + (f' {vtag(RATER2[pm]["verdict"])}<span class="sub"> model rater 2</span>'
+         if pm in RATER2 and "error" not in RATER2[pm] else "")
+      + ((lambda o: f' {vtag(o["verdict"])}<span class="sub"> numeric rule'
+                    f' (median {o["median"]:.2f} of {o["n_usable"]} figures)</span>'
+                    if o.get("median") is not None else
+                    ' <span class="tag">numeric rule: no figure on a concordance scale</span>')
+         (OBJ[pm]) if pm in OBJ else "")
       + f'<span class="tag">{e(ASSESS_LABEL.get(arm(pm),arm(pm)))}</span>'
       + "".join(f'<span class="tag">{e(o)}</span>' for o in orgs_of(pm)) + "</p>",
       f'<div class="card"><strong>Verdict basis</strong><br>{e(v["verdict_basis"])}</div>']
@@ -368,12 +401,13 @@ for pm,v in OK.items():
               open(os.path.join(OUT,"api","study",f"{pm}.json"),"w"),indent=1)
 
 import faq as _faq
-_ag=agreement() or {"agree":0,"kappa":0,"n":0}
-_ctx={"agree":_ag["agree"],"kappa":_ag["kappa"],"n_pairs":_ag["n"],"n_studies":len(OK),
+_ctx={"n_studies":len(OK),"n_scored":len(_scored),"n_unscored":len(OK)-len(_scored),
+      "r1r2_a":_ar,"r1r2_k":_kr,"rule_r1_a":_a1,"rule_r1_k":_k1,
+      "rule_r2_a":_a2,"rule_r2_k":_k2,
       "supports":verd["supports"],"partly":verd["partly-supports"],"not":verd["does-not-support"]}
 fb=["<h1>Frequently Asked Questions</h1>"]
 for q,paras in _faq.build(_ctx):
-    fb.append(f"<h2>{e(q)}</h2>"); fb.extend(paras)
+    fb.append(f"<h2>{q}</h2>"); fb.extend(paras)
 fb.append('<p class="sub">The protocol, search strings, every analysis script and a running list '
           'of limitations are in the '
           '<a href="https://github.com/rohitium/animal-model-concordance">repository</a>.</p>')

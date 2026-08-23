@@ -66,7 +66,8 @@
   "index_test_evidence": "This article aims to measure clinical development success rates across the industry with a view to strengthening benchmarking metrics for drug development. The study is the largest and most recent of its kind, examining success rates of 835 drug developers, including biotech companies as well as specialty and large pharmaceutical firms. Success rates for over 7,300 independent drug development paths are analyzed by clinical phase, molecule type, disease area and lead versus nonlead indication status.",
   "eligible": false,
   "exclusion_reason": "The study analyzes clinical development success rates for investigational drugs but does not report any quantitative measure of agreement between non-human animal results and human clinical results. The index test is human-only data.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "Uses only human data; there is no animal predictor. The study analyzes clinical development success rates for investigational drugs but does not report any quantitative measure of agreement between non-human animal results and human\u2026"
  },
  "36883244": {
   "pmid": "36883244",
@@ -179,7 +180,8 @@
   "exclusion_reason": "r4: none-found \u2014 The study describes the reproducibility of preclinical cancer studies and industry validation rates. However, it does not report any quantitative comparison between animal results and human results. The comparisons made ",
   "r4_comparison_type": "none-found",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result. The study describes the reproducibility of preclinical cancer studies and industry validation rates."
  },
  "31307492": {
   "pmid": "31307492",
@@ -325,7 +327,8 @@
   "index_test_evidence": "The text mentions 'animal testing' in the context of investments to be made after target validation, but does not explicitly state that whole-animal in vivo studies were used as the index test for predicting human outcomes in this specific analysis. The focus appears to be on the reproducibility of published data, which may have involved various models, including potentially animal models, but this is not clearly defined as the primary index test for concordance.",
   "eligible": false,
   "exclusion_reason": "The study focuses on the reproducibility of published data in drug target identification and validation, rather than reporting a quantitative measure of agreement between non-human animal results and human clinical results. While animal testing is mentioned as a future investment, the study's methodology and reported outcomes do not clearly define whole-animal in vivo studies as the index test for predicting human outcomes or provide a concordance statistic.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The text does not make clear what was used to predict the human outcome. The study focuses on the reproducibility of published data in drug target identification and validation, rather than reporting a quantitative measure of agreement\u2026"
  },
  "28893587": {
   "pmid": "28893587",
@@ -400,7 +403,8 @@
   "index_test_evidence": "The guidelines, referred to as ARRIVE (Animals in Research: Reporting In Vivo Experiments), have been developed using the CONSORT Statement as their foundation [24] , [25] . The ARRIVE guidelines consist of a checklist of 20 items describing the minimum information that all scientific publications reporting research using animals should include, such as the number and specific characteristics of animals used (including species, strain, sex, and genetic background); details of housing and husbandry; and the experimental, statistical, and analytical methods (including details of methods used to reduce bias such as randomisation and blinding).",
   "eligible": false,
   "exclusion_reason": "The study describes guidelines for reporting animal research (ARRIVE) but does not report any quantitative measure of agreement between animal results and human clinical results. It focuses on improving the quality and completeness of reporting of animal studies, not on comparing their predictive accuracy.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The study describes guidelines for reporting animal research (ARRIVE) but does not report any quantitative measure of agreement between animal results and human clinical results. It focuses on improving the quality and completeness of\u2026"
  },
  "34874005": {
   "pmid": "34874005",
@@ -459,7 +463,8 @@
   "eligible": false,
   "exclusion_reason": "No animal-vs-human figure among its extracted measurements. No measurements extracted (usually no full text yet); not judged.",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result."
  },
  "31827124": {
   "pmid": "31827124",
@@ -505,7 +510,8 @@
   "index_test_evidence": "The paper focuses on human genomics, specifically genome-wide association studies (GWAS), as a method for drug target identification and validation. It contrasts this approach with traditional preclinical studies, which often involve animal models, but the primary index test discussed for predicting human outcomes is human genetic data.",
   "eligible": false,
   "exclusion_reason": "The study's primary index test is human genomics (GWAS), not whole-animal in vivo studies. While it discusses animal models as a traditional method, it does not report quantitative agreement statistics between animal results and human clinical results. The focus is on the predictive power of human genetic data.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "Uses only human data; there is no animal predictor. The study's primary index test is human genomics (GWAS), not whole-animal in vivo studies."
  },
  "26795250": {
   "pmid": "26795250",
@@ -577,7 +583,8 @@
   "index_test_evidence": "The guidelines, referred to as ARRIVE (Animals in Research: Reporting In vivo Experiments), have been developed using the CONSORT Statement as their foundation.",
   "eligible": false,
   "exclusion_reason": "This paper describes guidelines for reporting animal research (ARRIVE guidelines) and does not report a quantitative measure of agreement between non-human animal results and human clinical results.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "This paper describes guidelines for reporting animal research (ARRIVE guidelines) and does not report a quantitative measure of agreement between non-human animal results and human clinical results."
  },
  "26863229": {
   "pmid": "26863229",
@@ -621,7 +628,8 @@
   "index_test_evidence": "The text mentions 'transgenic mice' as an example of new inventions and discusses 'animal efficacy studies' as a predictor of clinical activity in man, but it does not explicitly state that whole, live non-human animals were used as the index test in a quantitative comparison against human clinical results within this specific study. The focus is on a decision-theoretic model of drug discovery and development, discussing concepts like predictive validity and the performance of predictive models in general, rather than reporting on a specific study that performed such a comparison.",
   "eligible": false,
   "exclusion_reason": "The study presents a theoretical framework and quantitative model for drug discovery and development, discussing the concept of predictive validity and the performance of predictive models. While it mentions animal models and their role in predicting clinical activity, it does not report on a specific quantitative measure of agreement between non-human animal results and human clinical results from a conducted study. The focus is on modeling and conceptualizing the translation problem rather than presenting empirical data from an animal model concordance study.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The text does not make clear what was used to predict the human outcome. The study presents a theoretical framework and quantitative model for drug discovery and development, discussing the concept of predictive validity and the\u2026"
  },
  "28328898": {
   "pmid": "28328898",
@@ -644,7 +652,8 @@
   "index_test_evidence": "The text discusses the scientific validity of animal models and their predictive validity for human conditions, but it does not explicitly state that whole, live non-human animals are used as the index test to predict human outcomes. Instead, it focuses on the methodology and validity of research involving animals.",
   "eligible": false,
   "exclusion_reason": "This is a commentary discussing the scientific validity and reproducibility of animal research and the harm-benefit analysis framework. It does not report quantitative measures of agreement between animal results and human clinical results, nor does it describe an index test using whole, live non-human animals to predict human outcomes.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The text does not make clear what was used to predict the human outcome. This is a commentary discussing the scientific validity and reproducibility of animal research and the harm-benefit analysis framework."
  },
  "35167625": {
   "pmid": "35167625",
@@ -691,7 +700,8 @@
   "eligible": false,
   "exclusion_reason": "No animal-vs-human figure among its extracted measurements. ",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result."
  },
  "34127759": {
   "pmid": "34127759",
@@ -717,7 +727,7 @@
   "key_finding": "As no single animal model perfectly replicates the clinical condition and sufficiently emulates human tenocytes, fit-for-purpose selection of the model species for each specific research question and combination of data from multiple species will be essential to optimize translational predictive validity.",
   "quantitative_claims": [],
   "evidence_vs_opinion": "data",
-  "title": "Species variations in&#xa0;tenocytes' response to inflammation require careful selection of animal models for tendon research.",
+  "title": "Species variations in tenocytes' response to inflammation require careful selection of animal models for tendon research.",
   "journal": "Sci Rep",
   "year": 2021,
   "cited_by": 18,
@@ -764,7 +774,8 @@
   "index_test_evidence": "Neuroscientists commonly employ in vivo animal models, aimed to simulate physiological, genetic, or anatomical features observed in humans (as is the case with studies of disease) or replicate natural situations under controlled laboratory conditions (van der Staay, 2006; Maximino and van der Staay, 2019).",
   "eligible": false,
   "exclusion_reason": "The study discusses the importance of animal models and experimental rigor in behavioral neuroscience but does not report any quantitative measure of agreement between animal results and human clinical results. It focuses on improving reproducibility and research quality rather than comparing predictive accuracy.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The study discusses the importance of animal models and experimental rigor in behavioral neuroscience but does not report any quantitative measure of agreement between animal results and human clinical results. It focuses on improving\u2026"
  },
  "42245789": {
   "pmid": "42245789",
@@ -859,7 +870,8 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "the rabbit model achieved laboratory to clinical translational success for tissue plasminogen activator (tPA) treatment.",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result."
  },
  "20806453": {
   "pmid": "20806453",
@@ -883,7 +895,8 @@
   "index_test_evidence": "The abstract mentions comparative oncology but does not specify the index test used to predict human outcomes.",
   "eligible": false,
   "exclusion_reason": "The abstract does not report any quantitative measure of agreement between non-human animal results and human clinical results, nor does it clearly state the index test used.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The text does not make clear what was used to predict the human outcome. The abstract does not report any quantitative measure of agreement between non-human animal results and human clinical results, nor does it clearly state the index\u2026"
  },
  "29143114": {
   "pmid": "29143114",
@@ -933,7 +946,8 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "The study translated two cancer vaccine strategies from mice into human clinical trials.",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result."
  },
  "38676802": {
   "pmid": "38676802",
@@ -1360,7 +1374,8 @@
   "eligible": false,
   "exclusion_reason": "r4: none-found \u2014 The study describes the analysis of human samples and murine samples separately. There are no direct quantitative comparisons reported between the results obtained from the animal models and the human samples.",
   "r4_comparison_type": "none-found",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result. The study describes the analysis of human samples and murine samples separately."
  },
  "40558535": {
   "pmid": "40558535",
@@ -1743,7 +1758,8 @@
   "index_test_evidence": "This study aims to develop an integrated artificial intelligence (AI) and physiologically based pharmacokinetic (PBPK) platform to rapidly estimate drug in vivo fate based solely on molecular structures.",
   "eligible": false,
   "exclusion_reason": "The study uses an AI-PBPK platform based solely on molecular structures to predict human PK data. It does not involve whole-animal in vivo testing as the index test.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study uses an AI-PBPK platform based solely on molecular structures to predict human PK data."
  },
  "40054526": {
   "pmid": "40054526",
@@ -1792,7 +1808,8 @@
   "index_test_evidence": "Plasma profiles and PK parameters in 7 species were digitized from 10 literature sources along with our recent PBPK results in rats. Basic allometric scaling provided reported clearance (CL) and distribution volume (Vd) from noncompartmental analysis highly correlated with body weights (R2 > 0.96), although rat CL deviated from the linear trend. A basic nonlinear minimal physiologically-based pharmacokinetic model (mPBPK) (Model I), an intermediate reversible-metabolism mPBPK model (Model II) accounting for MPL and methylprednisone interconversion, and a full highly complex PBPK model were used to assess the interspecies plasma concentration datasets.",
   "eligible": false,
   "exclusion_reason": "The study uses physiologically-based pharmacokinetic (PBPK) models, which are in silico methods, to predict human outcomes. It does not report quantitative agreement statistics derived from whole-animal in vivo studies.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study uses physiologically-based pharmacokinetic (PBPK) models, which are in silico methods, to predict human outcomes."
  },
  "40849367": {
   "pmid": "40849367",
@@ -1882,7 +1899,8 @@
   "exclusion_reason": "r4: none-found \u2014 The study describes separate analyses for human patients and macaque models of thalamic pain. While both groups exhibit functional connectivity changes, there is no reported quantitative comparison between the human data",
   "r4_comparison_type": "none-found",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result. The study describes separate analyses for human patients and macaque models of thalamic pain."
  },
  "38642821": {
   "pmid": "38642821",
@@ -1924,7 +1942,8 @@
   "index_test_evidence": "PBPK models were generally developed as either flow- or permeability-limited models.",
   "eligible": false,
   "exclusion_reason": "The study uses physiologically-based pharmacokinetic (PBPK) models, which are in silico methods, to predict human outcomes. It does not report quantitative agreement statistics from whole-animal in vivo studies.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study uses physiologically-based pharmacokinetic (PBPK) models, which are in silico methods, to predict human outcomes."
  },
  "38688826": {
   "pmid": "38688826",
@@ -1973,7 +1992,8 @@
   "index_test_evidence": "Herein, we take a mathematical approach to delineate the mechanism underlying the human-mouse difference in radiation-related cancer risk. We used a multistage carcinogenesis model assuming a mutational action of radiation to analyze previous data on cancer mortality in the Japanese atomic bomb survivors and in lifespan mouse experiments.",
   "eligible": false,
   "exclusion_reason": "The study uses a mathematical model (in silico) to compare human and mouse data, rather than reporting a quantitative measure of agreement based on whole-animal in vivo results predicting human outcomes. The animal data is used as input for the model, not as the index test itself.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study uses a mathematical model (in silico) to compare human and mouse data, rather than reporting a quantitative measure of agreement based on whole-animal in vivo results\u2026"
  },
  "25671556": {
   "pmid": "25671556",
@@ -2061,7 +2081,8 @@
   "exclusion_reason": "r4: within-animal-only \u2014 The study only compares measurements within dogs, specifically comparing different biomarkers (IL8, MCP1, MMPs) against the diagnosis of osteoarthritis in dogs. There is no comparison made to human results.",
   "r4_comparison_type": "within-animal-only",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Compares animals with animals, not animals with humans. The study only compares measurements within dogs, specifically comparing different biomarkers (IL8, MCP1, MMPs) against the diagnosis of osteoarthritis in dogs."
  },
  "26563791": {
   "pmid": "26563791",
@@ -2102,7 +2123,8 @@
   "exclusion_reason": "Reports no quantitative animal-to-human comparison. The verdict returned ('supports') rested on a qualitative statement, which the inclusion rule does not accept.",
   "substrate": "animal-biology",
   "r4_comparison_type": "animal-vs-human",
-  "ah_measurement_count": 2
+  "ah_measurement_count": 2,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result. Reports no quantitative animal-to-human comparison."
  },
  "33039464": {
   "pmid": "33039464",
@@ -2148,7 +2170,8 @@
   "index_test_evidence": "We established a human liver organoid (HLO)\u2013 based screening model for analyzing DILI pathology at organoid resolution.",
   "eligible": false,
   "exclusion_reason": "The study uses human liver organoids (in vitro) to predict drug-induced liver injury, not whole animals.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is an in vitro assay, not a live animal. The study uses human liver organoids (in vitro) to predict drug-induced liver injury, not whole animals."
  },
  "32868897": {
   "pmid": "32868897",
@@ -2361,7 +2384,8 @@
   "index_test_evidence": "Consequently, in silico approaches based on the use of predictive software tools can offer more rapid and cost-effective phototoxicity screening solutions. With this goal in mind, the current study evaluated two in silico tools - Derek Nexus 6.1.0/Derek Knowledge Base 2020 1.0 (Lhasa Limited, UK) and the QSAR Toolbox (v 4.5) developed by the Organisation for Economic Co-operation and Development (OECD) - for their capacity to predict the phototoxicity of several substances from diverse classes.",
   "eligible": false,
   "exclusion_reason": "The study uses only in silico methods (Derek Nexus and QSAR Toolbox) to predict human outcomes. It mentions traditional in vivo and in vitro models but does not use them as the index test for prediction in this study.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study uses only in silico methods (Derek Nexus and QSAR Toolbox) to predict human outcomes."
  },
  "34968630": {
   "pmid": "34968630",
@@ -2404,7 +2428,8 @@
   "index_test_evidence": "The current study sought to assess and compare the predictions of the Globally Harmonized System (GHS) categories and Dangerous Goods (DG) classifications based on Lethal Dose (LD50) from several available tools (ACD/Labs, Leadscope, T.E.S.T., CATMoS, CaseUltra).",
   "eligible": false,
   "exclusion_reason": "The study evaluates the predictivity of Acute Oral Toxicity (AOT) structure-activity relationship models, which are in silico methods, not whole-animal in vivo studies.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study evaluates the predictivity of Acute Oral Toxicity (AOT) structure-activity relationship models, which are in silico methods, not whole-animal in vivo studies."
  },
  "28543848": {
   "pmid": "28543848",
@@ -2446,10 +2471,11 @@
   "rubric_version": "2026-08-20.r2",
   "screen_reason": "The study evaluates the predictive performance of non-animal assays in comparison to animal (mouse LLNA) and human sensitization data, reporting specific percentages for correct non-sensitizer predictions (85% and 93% respectively). This represents a quantitative measure of agreement between non-animal methods and human/animal results.",
   "index_test": "in-vitro-only",
-  "index_test_evidence": "Three non-animal assays have been formally validated and regulatory adopted: the direct peptide reactivity assay (DPRA), the KeratinoSens&#x2122; assay and the human cell line activation test (h-CLAT).",
+  "index_test_evidence": "Three non-animal assays have been formally validated and regulatory adopted: the direct peptide reactivity assay (DPRA), the KeratinoSens\u2122 assay and the human cell line activation test (h-CLAT).",
   "eligible": false,
   "exclusion_reason": "The study exclusively uses in vitro assays (DPRA, KeratinoSens, h-CLAT) to predict human outcomes and does not include any whole-animal in vivo testing as the index test.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is an in vitro assay, not a live animal. The study exclusively uses in vitro assays (DPRA, KeratinoSens, h-CLAT) to predict human outcomes and does not include any whole-animal in vivo testing as the index test."
  },
  "39093553": {
   "pmid": "39093553",
@@ -2496,7 +2522,8 @@
   "exclusion_reason": "r4: within-animal-only \u2014 The study compares rat embryofetal development studies with rabbit embryofetal development studies. There is no mention of comparing these animal results to any human outcomes or data.",
   "r4_comparison_type": "within-animal-only",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Compares animals with animals, not animals with humans. The study compares rat embryofetal development studies with rabbit embryofetal development studies."
  },
  "18468556": {
   "pmid": "18468556",
@@ -2588,7 +2615,8 @@
   "index_test_evidence": "Median lethal concentration (LC50 ) (rat, inhalation, 4 h) and half maximal inhibitory concentration (IC50 ) (lung or bronchial cell, 24 h) data for 59 substances were obtained from the literature and by experiments. Cytotoxicity assays were performed on 44 substances with reported LC50 , but without IC50 , data to obtain the IC50 values.",
   "eligible": false,
   "exclusion_reason": "The study uses in vitro cytotoxicity data from human lung epithelial cell lines to predict acute inhalation toxicity. It does not use whole, live non-human animals as the index test.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is an in vitro assay, not a live animal. The study uses in vitro cytotoxicity data from human lung epithelial cell lines to predict acute inhalation toxicity."
  },
  "35148401": {
   "pmid": "35148401",
@@ -2679,7 +2707,8 @@
   "index_test_evidence": "We tested this hypothesis by measuring the blocking potencies of 32 torsadogenic (+TdP) and 23 non-torsadogenic (-TdP) drugs on hERG, and the depolarizing Cav1.2 and Nav1.5 channel currents. We used logistic regression models to compare torsadogenic probabilities determined by block of hERG alone or block of hERG coupled with block of Cav1.2 and/or block of Nav1.5.",
   "eligible": false,
   "exclusion_reason": "The study uses in vitro measurements of ion channel block to predict human clinical outcomes. It does not include any whole-animal in vivo studies as the index test.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is an in vitro assay, not a live animal. The study uses in vitro measurements of ion channel block to predict human clinical outcomes."
  },
  "38852684": {
   "pmid": "38852684",
@@ -2726,7 +2755,7 @@
   "rubric_version": "2026-08-20.r2",
   "screen_reason": "The study reports a quantitative comparison of drug concentrations in non-human primates and canines to human clinical concentrations, specifically in relation to QTc interval changes. It quantifies the drug concentration in animals at which a certain QTc change is observed relative to the concentration that causes a similar change in humans (e.g., '1.5x the moxifloxacin plasma concentration that causes a 10 ms QTc change in humans'). This represents a quantitative measure of agreement or translation between animal and human results.",
   "index_test": "whole-animal-in-vivo",
-  "index_test_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n&#xa0;=&#xa0;48) and canines (n&#xa0;=&#xa0;8).",
+  "index_test_evidence": "Cardiovascular telemetry studies were conducted in non-human primates (NHP; n = 48) and canines (n = 8).",
   "eligible": true,
   "exclusion_reason": null,
   "r4_comparison_type": "animal-vs-human",
@@ -2776,7 +2805,8 @@
   "index_test_evidence": "In this study, we used robust cardiac NAMs to quantify and detect previously uncharacterized cardiac TdP adverse effects of vanoxerine. ... Here, we quantified the functional effects of clinically relevant concentrations of vanoxerine in vitro using cardiac NAMs coupled with noninvasive video-based imaging and MEA platforms.",
   "eligible": false,
   "exclusion_reason": "The study exclusively uses in vitro methods (cardiac NAMs, hiPSC-CMs, MPS, MEA) to predict human clinical outcomes. It does not include any whole-animal in vivo testing as the index test.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is an in vitro assay, not a live animal. The study exclusively uses in vitro methods (cardiac NAMs, hiPSC-CMs, MPS, MEA) to predict human clinical outcomes."
  },
  "28903488": {
   "pmid": "28903488",
@@ -2872,7 +2902,8 @@
   "index_test_evidence": "Pharmacology & Therapeutics 129 (2011) 109\u2013119 Contents lists available at ScienceDirect Pharmacology & Therapeutics j o u r n a l h o m e p a g e : w w w. e l s ev i e r. c o m / l o c a t e / p h a r m t h e r a An evaluation of hERG current assay performance: Translating preclinical safety studies to clinical QT prolongation Gary Gintant \u204e Dept of Integrative Pharmacology, Abbott Laboratories, Dept. R46R, Bldg. AP-9, 100 Abbott Park Rd., Abbott Park IL 60064-6119, United States a r t i c l e i n f o Available online 31 August 2010 Keywords: hERG current assay QT prolongation In vitro assay performance Safety margins Likelihood ratios Assay sensitivity and speci\ufb01city a b s t r a c t Block of delayed recti\ufb01er current (IKr, Kv11.1 encoding the hERG gene) is associated with delayed cardiac repolarization (QTc prolongation), a surrogate marker of proarrhythmia. Despite its recognized role in assessing QTc prolongation risk, a quantitative analysis of the utility and limitations of the hERG current assay has not been reported. To benchmark hERG assay performance, this retrospective study compared hERG block potency with drug-induced QTc prolongation assessed during rigorous thorough QT (TQT) clinical studies for 39 drugs from multiple classes. To place block in context, hERG safety margins (IC50 values for block/mean maximal plasma drug concentrations during TQT studies) were compared to QTc prolongation (QTc increase \u2265 5 ms). Most (9/10) drugs eliciting essentially no hERG block at maximal concentrations demonstrate no QTc prolongation despite representing a wide hERG safety margin range. Based on receiver\u2013operator characteristics, a hERG safety margin of 45 provided optimal overall performance linking safety margins to QTc prolongation (sensitivity (true positive rate) = 0.64, speci\ufb01city (true negative rate) = 0.88); the area under the receiver\u2013operator curve (0.72) is indicative of moderate overall concordance. Likelihood ratios calculated from multitier contingency tables suggest that QTc prolonging drugs are only 5\u20137 times as likely to demonstrate low safety margins (1\u201330 range) compared to drugs that do not prolong QTc. Paradoxically, higher safety margins demonstrate lesser con\ufb01dence predicting prolongation. The overall limitations of hERG safety margins shown using these quantitative, evidencebased approaches highlight the need for additional preclinical assays and adaptive strategies throughout drug discovery to reliably mitigate QTc prolongation risk. \u00a9 2010 Elsevier Inc. All rights reserved.",
   "eligible": false,
   "exclusion_reason": "The study uses an in vitro hERG current assay to predict human clinical outcomes (QT prolongation). It does not report on whole-animal in vivo studies as the index test. Therefore, it does not meet the inclusion criteria.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is an in vitro assay, not a live animal. The study uses an in vitro hERG current assay to predict human clinical outcomes (QT prolongation)."
  },
  "33666192": {
   "pmid": "33666192",
@@ -3001,7 +3032,8 @@
   "index_test_evidence": "The abstract discusses toxicological testing and the predictive power of tests, mentioning \"tests available for the prediction of a substance's liability to cause the cardiac arrhythmia torsade de pointes\" and that \"the discriminatory powers of a number of tests for predicting a torsade de pointes liability are publicly available.\" However, it does not specify whether these tests are whole-animal in vivo, in vitro, or in silico.",
   "eligible": false,
   "exclusion_reason": "The abstract discusses toxicological testing and predictive power but does not specify the type of index test used (e.g., whole-animal in vivo, in vitro, in silico), making it impossible to determine if it meets the inclusion criteria for animal model concordance.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The text does not make clear what was used to predict the human outcome. The abstract discusses toxicological testing and predictive power but does not specify the type of index test used (e.g., whole-animal in vivo, in vitro, in silico)\u2026"
  },
  "30726989": {
   "pmid": "30726989",
@@ -3079,10 +3111,11 @@
    "s8_vet_targeted"
   ],
   "index_test": "whole-animal-in-vivo",
-  "index_test_evidence": "Recently, there has been renewed interest in comparative oncology &#x2013; the study of naturally developing cancers in animals as models for human disease &#x2013; as one way to improve cancer drug development and reduce attrition of investigational agents. Tumors that spontaneously develop in pet dogs and other companion animals as a result of normal aging share many characteristics with human cancers, such as histological appearance, tumor genetics, biological behavior, molecular targets, and therapeutic response.",
+  "index_test_evidence": "Recently, there has been renewed interest in comparative oncology \u2013 the study of naturally developing cancers in animals as models for human disease \u2013 as one way to improve cancer drug development and reduce attrition of investigational agents. Tumors that spontaneously develop in pet dogs and other companion animals as a result of normal aging share many characteristics with human cancers, such as histological appearance, tumor genetics, biological behavior, molecular targets, and therapeutic response.",
   "eligible": false,
   "exclusion_reason": "The study discusses the potential of using naturally occurring tumors in pets as models for human disease but does not report any quantitative measure of agreement or concordance between animal and human results. It is a workshop summary discussing the rationale and potential for integration, not a study reporting such a statistic.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The study discusses the potential of using naturally occurring tumors in pets as models for human disease but does not report any quantitative measure of agreement or concordance between animal and human results. It is a workshop summary\u2026"
  },
  "29730448": {
   "pmid": "29730448",
@@ -3230,7 +3263,8 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "concordance rate: 50.0 percent | measures: share of research areas where animal studies and human trials had substantially similar results | compared: animal studies vs human trials | species: none",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result."
  },
  "17032985": {
   "pmid": "17032985",
@@ -3255,7 +3289,8 @@
   "eligible": false,
   "exclusion_reason": "No animal-vs-human figure among its extracted measurements. No measurements extracted (usually no full text yet); not judged.",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "The text does not make clear what was used to predict the human outcome."
  },
  "32391273": {
   "pmid": "32391273",
@@ -3453,7 +3488,8 @@
   "exclusion_reason": "r4: within-animal-only \u2014 The study focuses exclusively on preclinical animal models and does not report any direct quantitative comparisons between animal results and human outcomes. While the stated goal is to inform a first-in-human trial, the",
   "r4_comparison_type": "within-animal-only",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Compares animals with animals, not animals with humans. The study focuses exclusively on preclinical animal models and does not report any direct quantitative comparisons between animal results and human outcomes."
  },
  "23522086": {
   "pmid": "23522086",
@@ -3498,7 +3534,8 @@
   "index_test_evidence": "Numerous animal models (lesion, transgenic, knockout, selective breeding, etc.) have been developed for a variety of psychiatric, neurodegenerative, and neurodevelopmental disorders. While many of these models have been helpful for understanding disease pathology, they have been less useful for discovering potential therapies or predicting clinical efficacy. Translation from in vivo animal models (typically rodent) has been poor, despite many years of research and effort.",
   "eligible": false,
   "exclusion_reason": "The study discusses the limitations of animal models in predicting human clinical efficacy but does not report a quantitative measure of agreement between animal results and human clinical results. It focuses on experimental design and statistical analysis within animal studies rather than comparing animal model outcomes to human outcomes with a concordance statistic.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The study discusses the limitations of animal models in predicting human clinical efficacy but does not report a quantitative measure of agreement between animal results and human clinical results. It focuses on experimental design and\u2026"
  },
  "12667944": {
   "pmid": "12667944",
@@ -3555,7 +3592,8 @@
   "r4_comparison_type": "animal-vs-human",
   "r4_evidence": "The study compared preclinical cardiac electrophysiology data (in vitro and in vivo) with clinical QT interval prolongation and torsade de pointes (TdP) risk for 100 drugs.",
   "substrate": "animal-biology",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Reports no quantitative comparison between an animal result and a human result."
  },
  "16453316": {
   "pmid": "16453316",
@@ -3649,7 +3687,8 @@
   "index_test_evidence": "The study focuses on human genome-wide association studies (GWAS) and pharmaceutical research and development, comparing disease coverage and overlap between these two areas. It does not mention the use of whole, live non-human animals as a predictor of human outcomes.",
   "eligible": false,
   "exclusion_reason": "The study does not report on the use of whole, live non-human animals as an index test to predict human outcomes. The focus is on human genetic studies (GWAS) and drug development.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "Uses only human data; there is no animal predictor. The study does not report on the use of whole, live non-human animals as an index test to predict human outcomes."
  },
  "35616311": {
   "pmid": "35616311",
@@ -3789,7 +3828,8 @@
   "index_test_evidence": "Preclinical animal research, as a gold standard for toxicity and efficacy evaluations, on rodents, non\u2010rodents, and nonhuman primates, is a key component of this regulatory process. 4 Animal models have been a valuable technique for anticipating drug\u2010induced side effects. However, other than the fact that some countries have been considering reducing and/or replacing animal use in their research studies, 5 animal studies are not uniformly sensitive to all side effects and can be costly compared with in silico approaches.",
   "eligible": false,
   "exclusion_reason": "The study primarily focuses on in silico methods (network-based, machine learning, protein-protein interaction networks) for predicting drug-induced side effects. While animal research is mentioned as a gold standard and a valuable technique, it is not the index test used for prediction in this study. The study's core methodology and predictive models are computational, not based on whole-animal in vivo experiments.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study primarily focuses on in silico methods (network-based, machine learning, protein-protein interaction networks) for predicting drug-induced side effects."
  },
  "30823899": {
   "pmid": "30823899",
@@ -3856,7 +3896,8 @@
   "index_test_evidence": "The text discusses the 'life cycle of translational research for medical interventions' and analyzes milestones from 'initial discovery' to 'highly cited clinical study'. It mentions 'basic science journals' and 'drug discovery' but does not explicitly state whether whole animal studies were used as the index test to predict human outcomes. The focus is on the timeline and refutation rates of interventions rather than a direct comparison of animal model performance against human clinical results.",
   "eligible": false,
   "exclusion_reason": "The study focuses on the timeline of translational research and the refutation rates of medical interventions, but it does not report a quantitative measure of agreement between non-human animal results and human clinical results. The index test used to predict human outcomes is not clearly specified as whole-animal-in-vivo.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The text does not make clear what was used to predict the human outcome. The study focuses on the timeline of translational research and the refutation rates of medical interventions, but it does not report a quantitative measure of\u2026"
  },
  "23503654": {
   "pmid": "23503654",
@@ -3945,7 +3986,8 @@
   "index_test_evidence": "To assist the rational design and clinical translation of the therapeutic, we present a Pharmacokinetic Algorithm Mapping GRI Efficacies in Rodents and Humans (PAMERAH) built upon our previous human model.",
   "eligible": false,
   "exclusion_reason": "The study uses a pharmacokinetic algorithm (PAMERAH) to predict human outcomes based on rodent and human models. While it mentions rodents, the primary predictive tool described is a computational model (in silico), not whole-animal in vivo experiments. Therefore, it does not meet the criteria for including whole-animal in vivo studies.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is a computational model, not a live animal. The study uses a pharmacokinetic algorithm (PAMERAH) to predict human outcomes based on rodent and human models."
  },
  "32610529": {
   "pmid": "32610529",
@@ -3988,7 +4030,8 @@
   "index_test_evidence": "Human plasma-derived 3D culture (HuP3D) models were created by cross-linking fibrinogen, a blood plasma protein responsible for normal blood clotting when converted into fibrin ( Figure 1 a) [ 33 ], generating a gelatinous-like scaffold matrix using traditional tissue culture surfaces as the recipient mold, with media added on top to overcome drying of the matrix ( Figure 1 b).",
   "eligible": false,
   "exclusion_reason": "The study uses in vitro 3D cell cultures derived from human plasma and breast cancer cell lines to predict treatment responses. It does not involve whole, live non-human animals as the index test. While it mentions animal models in the introduction as a comparison, the primary methodology and predictive model described are in vitro.",
-  "substrate": "animal-biology"
+  "substrate": "animal-biology",
+  "exclusion_reason_display": "The predictor is an in vitro assay, not a live animal. The study uses in vitro 3D cell cultures derived from human plasma and breast cancer cell lines to predict treatment responses."
  },
  "36730203": {
   "pmid": "36730203",
@@ -4120,7 +4163,8 @@
   "exclusion_reason": "r4: within-animal-only \u2014 The study focuses exclusively on preclinical research and does not include any comparisons with human results.",
   "r4_comparison_type": "within-animal-only",
   "substrate": "human-tissue-in-animal-host",
-  "ah_measurement_count": 0
+  "ah_measurement_count": 0,
+  "exclusion_reason_display": "Compares animals with animals, not animals with humans. The study focuses exclusively on preclinical research and does not include any comparisons with human results."
  },
  "28335819": {
   "pmid": "28335819",
