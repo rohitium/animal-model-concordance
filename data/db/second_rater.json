@@ -1,0 +1,971 @@
+{
+ "23401516": {
+  "verdict": "does-not-support",
+  "basis": "Among 4,918 orthologous genes, Pearson R2 between human trauma and human burns = 0.91; human endotoxemia vs burns R2 = 0.47 (88% of genes changed in same direction). Corresponding murine orthologs vs human burns: mouse burns R2 = 0.08 (60% same direction), mouse trauma R2 = 0.05 (61% same direction), mouse endotoxemia R2 = 0.00 (47% same direction). Inter-mouse-model correlations were at most R2 = 0.13.",
+  "which_numbers": [
+   "4,918",
+   "0.91",
+   "0.47",
+   "88%",
+   "0.08",
+   "60%",
+   "0.05",
+   "61%",
+   "0.00",
+   "47%",
+   "0.13"
+  ]
+ },
+ "36883244": {
+  "verdict": "does-not-support",
+  "basis": "The paper\u2019s data and figures report multiple direct animal-to-human comparisons showing poor concordance: (1) Parkinson\u2019s disease retrospective analysis: preclinical studies showed improvement in 90% of mouse studies, 95% of rat studies and 67\u201380% of non-human primate studies, whereas only 32% of human trials showed any clinical improvement (Figure 1 and text). (2) General translational failure rates cited: \u201cfailure rate for the translation of drugs from animal testing to human treatments remains at over 92%\u201d (Introduction). (3) Alzheimer\u2019s disease clinical outcomes: 99% of AD trials showed no drug\u2013placebo difference despite preclinical animal model activity (AD section). (4) HIV vaccines: 85 vaccine products with encouraging NHP results led to 197 clinical trials but no effective human vaccine (text). (5) Asthma examples (Table 6): multiple targets reduced pathology in animal models (e.g. IL-13, IL-5, VLA-4) but failed to meet primary endpoints or were discontinued in human trials. These data indicate animal results did not correspond to human outcomes.",
+  "which_numbers": [
+   "over 92%",
+   "99%",
+   "90% (mice)",
+   "95% (rats)",
+   "67\u201380% (non-human primates)",
+   "32% (humans)",
+   "85 NHP vaccine products",
+   "197 clinical trials"
+  ]
+ },
+ "24489990": {
+  "verdict": "does-not-support",
+  "basis": "The paper reports multiple data points and examples showing animal results did not match human outcomes: overall translation rate from animal models to successful clinical cancer trials <8%; 85% of early clinical trials fail; animal studies overestimate likelihood of efficacy by ~30%; only ~1/3 of highly cited animal research is later tested in humans and of those entering trials as little as 8% pass Phase I. Specific examples: TGN1412 showed no toxicity in animals at doses hundreds of times higher but caused catastrophic organ failure in humans at a dose 500\u00d7 lower than the animal-safe dose; IPI-926 produced a fivefold survival increase in mice but showed no effect versus placebo in a human Phase II trial; >16 MMP inhibitors reached clinical testing but only Periostat approved and clinical trials failed due to safety/efficacy issues; of 23 Phase II/III trials testing 17 therapeutic cancer vaccines, 18 failed.",
+  "which_numbers": [
+   "<8% translation from animal models to clinical cancer trials",
+   "85% of early clinical trials fail",
+   "animal studies overestimate efficacy by ~30%",
+   "~1/3 of highly cited animal research tested in humans",
+   "8% pass Phase I",
+   "TGN1412: safe in animals at doses hundreds of times higher; caused organ failure in humans at 500\u00d7 lower dose than animal-safe dose",
+   "IPI-926: fivefold increase in survival in mice; no effect in human trial",
+   ">16 MMP inhibitors progressed to clinical testing; only Periostat approved",
+   "Cancer vaccines: 23 Phase II/III trials testing 17 vaccines, 18 failed"
+  ]
+ },
+ "31307492": {
+  "verdict": "partly-supports",
+  "basis": "The included data show wide variability in animal-to-human correspondence across studies and endpoints: reported translational success ranged from 0% to 100%. Examples from the review include: Olson et al. concordance 71% overall (nonrodent 63%, rodent 43%); Tamaki et al. 48% of adverse drug reactions predicted; Fourches et al. liver effect concordance rodents 44%, non-rodents 40%; Alden et al. carcinogenicity sensitivity 73%, positive predictive value 20%, negative predictive value 90%; Perel et al. 3 of 6 interventions concordant; Contopoulos\u2011Ioannidis 12 of 16 interventions positive in clinical trials. These mixed numeric results indicate correspondence for some species/endpoints and not for others.",
+  "which_numbers": [
+   "0\u2013100% (overall reported range)",
+   "71% (Olson et al. overall concordance)",
+   "63% (Olson et al. nonrodent concordance)",
+   "43% (Olson et al. rodent concordance)",
+   "48% (Tamaki et al. predicted ADRs)",
+   "44% (Fourches et al. rodent liver concordance)",
+   "40% (Fourches et al. non-rodent liver concordance)",
+   "73% (Alden et al. carcinogenicity sensitivity)",
+   "20% (Alden et al. carcinogenicity PPV)",
+   "90% (Alden et al. carcinogenicity NPV)",
+   "3/6 (Perel et al. concordant interventions)",
+   "12/16 (Contopoulos\u2011Ioannidis interventions positive in trials)"
+  ]
+ },
+ "25092317": {
+  "verdict": "supports",
+  "basis": "Spearman\u2019s rank correlations between human conditions and mouse models range from 0.43 to 0.68; percentages of genes changing in the same direction range from 48.1%\u201386.2% (with more stringent criteria 74.4%\u201393.2%); NextBio overlap P values for human burn vs mouse datasets include 3.9\u00d710\u207b\u00b3\u2074, 6.3\u00d710\u207b\u00b9\u00b3, 1.2\u00d710\u207b\u00b3\u2075, 6.5\u00d710\u207b\u00b9\u00b9, and 3.4\u00d710\u207b\u00b3\u2075; discussion reports overlap P value range 6.5\u00d710\u207b\u00b9\u00b9 to 1.2\u00d710\u207b\u00b3\u2075; pathway overlap counts: of 875 up-regulated pathways in human burn, 313, 163, 345, and 114 also showed overlap in mouse burn, trauma, sepsis, and infection datasets respectively; example GO/pathway P values include human burn P=5.0\u00d710\u207b\u2075\u00b9 and mouse sepsis P=4.6\u00d710\u207b\u00b3\u00b3.",
+  "which_numbers": [
+   "Spearman \u03c1 = 0.43\u20130.68",
+   "Genes same direction = 48.1%\u201386.2%",
+   "Genes same direction (stringent) = 74.4%\u201393.2%",
+   "NextBio overlap P = 3.9\u00d710^-34",
+   "NextBio overlap P = 6.3\u00d710^-13",
+   "NextBio overlap P = 1.2\u00d710^-35",
+   "NextBio overlap P = 6.5\u00d710^-11",
+   "NextBio overlap P = 3.4\u00d710^-35",
+   "Discussion overlap P range = 6.5\u00d710^-11 to 1.2\u00d710^-35",
+   "Pathway overlaps of 875 up-regulated: 313, 163, 345, 114",
+   "GO human burn P = 5.0\u00d710^-51",
+   "GO mouse sepsis P = 4.6\u00d710^-33"
+  ]
+ },
+ "24678540": {
+  "verdict": "does-not-support",
+  "basis": "The paper's presented results show that outcomes in animal models did not match human trial outcomes: ALS TDI tested >100 potential drugs in an established mouse model and found 0 beneficial in their experiments; about a dozen experimental ALS treatments that had shown benefit in animal models proceeded to human trials and all but one failed in humans; eight of these compounds ultimately failed in clinical trials; lithium increased survival in SOD1 mice by 30 days but three separate phase III human trials showed no therapeutic benefit; ALS TDI meta-analysis of nearly 5,500 mice reported that ~90% had an average lifespan of 134 days \u00b110 days, with males dying ~1 week earlier (\u22484% variability), factors that can produce spurious positive findings; riluzole is the only FDA-approved drug for ALS, yet ALS TDI reported no survival benefit in their mouse tests.",
+  "which_numbers": [
+   ">100",
+   "0",
+   "about a dozen",
+   "all but one",
+   "eight",
+   "30 days",
+   "three",
+   "nearly 5,500",
+   "90%",
+   "134 days \u00b110 days",
+   "one week",
+   "4%",
+   "riluzole"
+  ]
+ },
+ "28893587": {
+  "verdict": "partly-supports",
+  "basis": "Overall animal-to-human concordance is mixed in the presented data: sensitivity 48%, positive predictive value (PPV) 43%, specificity 84%, negative predictive value (NPV) 86% (abstract). Some species/endpoints show stronger correspondence: nonhuman primate (NHP) PPV for nervous system 83% and for gastrointestinal 91% (Table 3). A dual-species \u2018\u2018and\u2019\u2019 combination increased liver PPV to 62% and a dual-species \u2018\u2018or\u2019\u2019 combination gave liver NPV 92% (Fig. 5).",
+  "which_numbers": [
+   "48% sensitivity",
+   "43% PPV",
+   "84% specificity",
+   "86% NPV",
+   "NHP PPV nervous system 83%",
+   "NHP PPV gastrointestinal 91%",
+   "Combined 'and' liver PPV 62%",
+   "Combined 'or' liver NPV 92%"
+  ]
+ },
+ "26795250": {
+  "verdict": "partly-supports",
+  "basis": "GSEA shows cross-species enrichment: mouse sepsis gene set enriched in human sepsis (FDR < 0.001) and reciprocal human gene set enriched in mouse sepsis (FDR = 0.002) (Figure 4A). Overlap of enriched ImmuneSigDB gene sets between species: p = 5.01e-69 (Figure 4C). Leading-edge gene ranks are correlated between species: Spearman r = 0.857, p < 0.0001 (Figure 4D). LEM metagene analysis shows shared metagenes (e.g., phagocytic vesicle; hypergeometric p = 1.09e-31) and shared inflammatory/TRIF-related metagene (p = 2.79e-23), but a mitosis metagene overrepresented in human sepsis (p = 4.9e-22) with no corresponding mouse metagene (Figures 5 and 6).",
+  "which_numbers": [
+   "FDR < 0.001",
+   "FDR = 0.002",
+   "p = 5.01e-69",
+   "Spearman r = 0.857, p < 0.0001",
+   "p = 1.09e-31",
+   "p = 2.79e-23",
+   "p = 4.9e-22",
+   "p = 2.02e-13",
+   "p = 3.7e-4"
+  ]
+ },
+ "34127759": {
+  "verdict": "partly-supports",
+  "basis": "Proliferation slopes: human 0.1027; mouse -0.1250 (p=1.95e-07); rat 0.0933 (p=9.35e-05); sheep 0.1169 (p=1.10e-06); horse 0.3000 (<2e-16). Wound closure at 48 h: rat 90.08\u00b18.01; human 86.25\u00b12.47; mouse 51.49\u00b110.23. Transient inflammation 48 h gap closure: rat 64.81\u00b17.84; human 56.06\u00b125.27. Constant inflammation 48 h gap closure: horse 35.23\u00b18.98; human 34.99\u00b119.12. Mahalanobis distances (all genes): healthy \u2013 mouse 20.01, rat 27.44, sheep 24.78, horse 23.05; transient \u2013 mouse 13.49, rat 18.66, sheep 10.62, horse 9.59; constant \u2013 mouse 10.50, rat 17.45, sheep 8.94, horse 12.97. COL1 mean differences (healthy) to human: mouse -3.03 (adj p=0.038); rat 3.95 (adj p=0.008); sheep -7.91 (adj p=0.000); horse -4.72 (adj p=0.002). COX2 mean differences (healthy) to human: mouse 9.40 (adj p=0.000); rat 11.30 (adj p=0.000); sheep 13.61 (adj p=0.000); horse 15.65 (adj p=0.000). IL6 transient mean differences to human: mouse -4.02 (adj p=0.001); rat -0.98 (adj p=0.537); sheep -2.83 (adj p=0.007); horse 3.25 (adj p=0.003). Data indicate correspondence varies by species, endpoint and inflammatory condition (some animal results align with human for specific endpoints, others do not).",
+  "which_numbers": [
+   "0.1027",
+   "-0.1250",
+   "p=1.95e-07",
+   "0.0933",
+   "p=9.35e-05",
+   "0.1169",
+   "p=1.10e-06",
+   "0.3000",
+   "<2e-16",
+   "90.08\u00b18.01",
+   "86.25\u00b12.47",
+   "51.49\u00b110.23",
+   "64.81\u00b17.84",
+   "56.06\u00b125.27",
+   "35.23\u00b18.98",
+   "34.99\u00b119.12",
+   "Mahalanobis healthy mouse 20.01",
+   "Mahalanobis healthy rat 27.44",
+   "Mahalanobis healthy sheep 24.78",
+   "Mahalanobis healthy horse 23.05",
+   "Mahalanobis transient mouse 13.49",
+   "Mahalanobis transient rat 18.66",
+   "Mahalanobis transient sheep 10.62",
+   "Mahalanobis transient horse 9.59",
+   "Mahalanobis constant mouse 10.50",
+   "Mahalanobis constant rat 17.45",
+   "Mahalanobis constant sheep 8.94",
+   "Mahalanobis constant horse 12.97",
+   "COL1 diff mouse -3.03 adj p=0.038",
+   "COL1 diff rat 3.95 adj p=0.008",
+   "COL1 diff sheep -7.91 adj p=0.000",
+   "COL1 diff horse -4.72 adj p=0.002",
+   "COX2 diff mouse 9.40 adj p=0.000",
+   "COX2 diff rat 11.30 adj p=0.000",
+   "COX2 diff sheep 13.61 adj p=0.000",
+   "COX2 diff horse 15.65 adj p=0.000",
+   "IL6 transient diff mouse -4.02 adj p=0.001",
+   "IL6 transient diff rat -0.98 adj p=0.537",
+   "IL6 transient diff sheep -2.83 adj p=0.007",
+   "IL6 transient diff horse 3.25 adj p=0.003"
+  ]
+ },
+ "42245789": {
+  "verdict": "partly-supports",
+  "basis": "Dataset: 5,875 samples total (913 dog, 4,962 human including 806 pediatric). PCA/correlation: mean difference between diff-cancer/same-species and same-cancer-diff-species = 0.1007 (95% CI 0.10067\u20130.10081), normalized per-gene median expression distances 0.007\u20130.047. Differential expression: adult BLCA had 0% COSMIC cancer-specific DEGs; adult DLBC had 24%; pediatric ACC had 0%; pediatric OS had 7%; binomial-test BH-adjusted P-values for enrichment: GBM/LGG 2.70\u00d710\u22122, SKCM 6.72\u00d710\u22124, OS 1.60\u00d710\u22122, SARC 1.73\u00d710\u22122. Supervised models: adult multi-class model AUC 0.92; pediatric model AUC 0.99; subtype classifier mean similarity differences with 95% CIs: BRCA \u22120.0072 (\u22120.0080 to \u22120.0064), GBM/LGG 0.0662 (0.0587 to 0.0733), SARC 0.0042 (0.0019 to 0.0065). Composite model robustness scores ranged 31%\u201385% (Supplemental Table 1); examples: Bladder Cancer (adult) 85.05%, Glioma (pediatric) 79.88%, Head and Neck (adult) 78.20%, Melanoma (adult) 76.85%, Breast Cancer (adult) 69.78%; low scores: Adrenocortical Carcinoma (adult) 31.10%, Leukemia (LAML, adult) 40.31% (negative controls). Based on these data, human-dog transcriptomic correspondence is present for many cancer types (notably several adult cancers) but heterogeneous across tumor types and between adult versus pediatric comparisons; negative-control cancers (ACC, LAML) show low correspondence and are to be excluded per validation design.",
+  "which_numbers": [
+   "5,875 samples total",
+   "913 dog",
+   "4,962 human",
+   "806 pediatric",
+   "mean difference 0.1007 (95% CI: 0.10067\u20130.10081)",
+   "normalized median expression distances 0.007 - 0.047",
+   "adult BLCA 0% COSMIC cancer-specific DEGs",
+   "adult DLBC 24% COSMIC cancer-specific DEGs",
+   "pediatric ACC 0% COSMIC DEGs",
+   "pediatric OS 7% COSMIC DEGs",
+   "GBM/LGG binomial BH adj P = 2.70\u00d710\u22122",
+   "SKCM BH adj P = 6.72\u00d710\u22124",
+   "OS BH adj P = 1.60\u00d710\u22122",
+   "SARC BH adj P = 1.73\u00d710\u22122",
+   "adult model AUC 0.92",
+   "pediatric model AUC 0.99",
+   "BRCA mean diff \u22120.0072 (95% CI \u22120.0080 to \u22120.0064)",
+   "GBM/LGG mean diff 0.0662 (95% CI 0.0587 to 0.0733)",
+   "SARC mean diff 0.0042 (95% CI 0.0019 to 0.0065)",
+   "composite score range 31%\u201385%",
+   "Bladder Cancer (adult) score 0.8505 (85.05%)",
+   "Glioma (pediatric) score 0.7988 (79.88%)",
+   "Head and Neck (adult) score 0.7820 (78.20%)",
+   "Melanoma (adult) score 0.7685 (76.85%)",
+   "Breast Cancer (adult) score 0.6978 (69.78%)",
+   "Adrenocortical Carcinoma (adult) score 0.3110 (31.10%)",
+   "Leukemia (LAML, adult) score 0.4031 (40.31%)"
+  ]
+ },
+ "38676802": {
+  "verdict": "supports",
+  "basis": "Cited data report that PDX responses matched patient responses: 67% of BRAF\u2011mutant PDXs responded to encorafenib consistent with clinical trial data; an analysis reported concordance between clinical and matched PDX therapeutic outcomes in 87% of cases (112/129).",
+  "which_numbers": [
+   "67%",
+   "87% (112/129)"
+  ]
+ },
+ "25814248": {
+  "verdict": "no-data",
+  "basis": "Contains no animal-to-human comparison data in results, tables, or figures",
+  "which_numbers": []
+ },
+ "38867022": {
+  "verdict": "partly-supports",
+  "basis": "Murine models vs human data: whole-transcriptome agreement approximately 50% (examples: 47.1 (e\u20134); 50.1 (e\u201313)). Differentially regulated pathways (DRPs) reached >90% agreement for certain models/DRP groups (>90%). Transcriptional \u2018disease progression\u2019 signatures were observed in murine models that had histologic fibrosis scores F0\u2013F1. Choline-deficient diets produced fibrosis F2+ within \u226412 weeks but did not align with human metabolic/transcriptomic signatures. Conclusion: pathway-level results corresponded to human data while gene-level concordance and prediction of histologic fibrosis were inconsistent.",
+  "which_numbers": [
+   "47.1 (e\u20134)",
+   "50.1 (e\u201313)",
+   ">90% agreement",
+   "F0\u2013F1",
+   "F2+",
+   "\u226412 weeks"
+  ]
+ },
+ "26479923": {
+  "verdict": "supports",
+  "basis": "PDX BRAF(V600) response to encorafenib: 67% responded and 42% mCR or mPR (Fig. 3a); PDX BRAF(V600) response to encorafenib + binimetinib: 100% responded and 72% mCR or mPR (Fig. 3b); clinical dabrafenib + trametinib combination reported response rate 94% with 76% PR+CR (cited in text); melanoma resistance mechanisms observed in PDXs included BRAF amplification (model X-3483, mCR, duration 143 d) and MAP2K1E203K (model X-2992, mPR, duration 125 d) (Table 1); PI3K\u03b1 inhibitor BYL719 PDX responses: >67% response in PIK3CA GOF / PTEN WT versus 11% response in PIK3CA WT / PTEN LOF (Fig. 3e); pan-PI3K inhibitors BKM120 and CLR457 had population response rates 48% and 54% and increased PFS versus untreated with hazard ratio 0.28 (95% interval 0.23\u20130.35) (Fig. 2c,d); TAS266 DR5 signature: 4/5 (80%) signature-positive PDXs responded and PFS hazard ratio 0.09 (95% interval 0.01\u20130.71) (Fig. 3c,d); IGF1R inhibitor LFW527 + binimetinib in CRC PDXs: binimetinib single-agent response rate 55% (1 mPR and 22 mSD), combination did not improve response and showed hazard ratio 1.43 (95% interval 0.83\u20132.47), P = 0.19 (Fig. 5).",
+  "which_numbers": [
+   "67%",
+   "42%",
+   "100%",
+   "72%",
+   "94%",
+   "76%",
+   "143 d",
+   "125 d",
+   ">67%",
+   "11%",
+   "48%",
+   "54%",
+   "0.28",
+   "95% interval 0.23\u20130.35",
+   "80%",
+   "0.09",
+   "95% interval 0.01\u20130.71",
+   "55%",
+   "1 mPR and 22 mSD",
+   "1.43",
+   "95% interval 0.83\u20132.47",
+   "P = 0.19"
+  ]
+ },
+ "27261415": {
+  "verdict": "supports",
+  "basis": "Mouse data show correspondence to multiple human endpoints: hepatic transcriptome similarity to human NASH (FDR 0.02 at 8 weeks; FDR 0.08 at 52 weeks), concordance with human cirrhosis poor-prognosis signature at 52 weeks (FDR <0.001), HCC gene-signature matched human HCC S1 and S2 subclasses (FDR 0.013 and 0.014), high incidence of spontaneous HCC in mice (89% between weeks 32\u201352), progressive fibrosis with collagen proportional area 2.3 \u00b1 0.4% at week 52, development of obesity, dyslipidemia (increased LDL-cholesterol) and insulin resistance by 16 weeks (ITT), and activation of lipogenic, inflammatory and apoptotic proteins (FAS, ACC, p-JNK, PUMA, BIM, cleaved PARP, cleaved caspase-3).",
+  "which_numbers": [
+   "FDR 0.02 (8 wk transcriptome concordance)",
+   "FDR 0.08 (52 wk transcriptome concordance)",
+   "FDR <0.001 (concordance with cirrhosis poor-prognosis signature at 52 wk)",
+   "FDR 0.013 (HCC S1 subclass)",
+   "FDR 0.014 (HCC S2 subclass)",
+   "HCC incidence 89% (weeks 32\u201352)",
+   "Collagen proportional area 2.3 \u00b1 0.4% (week 52)",
+   "Insulin resistance developed at 16 weeks (ITT)"
+  ]
+ },
+ "32631250": {
+  "verdict": "supports",
+  "basis": "Evidence: Histomorphometry \u2014 human liver fat 24.2 \u00b1 2.6% vs control 2.9 \u00b1 0.4%; mouse liver fat 29.8 \u00b1 1.3% vs control 1.2 \u00b1 0.2%. Galectin-3 \u2014 human 1.6 \u00b1 0.4% vs 0.1 \u00b1 0.02%; mouse 5.0 \u00b1 0.3% vs 0.9 \u00b1 0.1%. PSR \u2014 human 3.2 \u00b1 0.6% vs 1.7 \u00b1 0.2%; mouse 1.1 \u00b1 0.2% vs 0.2 \u00b1 0.02%. Differentially expressed genes \u2014 mouse 9495, human 6226, overlap 4418. HOMA-IR \u2014 human 7.6 \u00b1 1.0 vs control 1.3 \u00b1 0.2. Mouse ipGTT glucose-AUC p = 0.0062. Drug-target gene set \u2014 25 of 28 genes regulated in mice; shared directional regulation in both species for ACACB/ACC2, DGAT1, THRB (down) and CCR5, FGF21, LGALS3, SERPINH1 (up).",
+  "which_numbers": [
+   "24.2 \u00b1 2.6% vs 2.9 \u00b1 0.4%",
+   "29.8 \u00b1 1.3% vs 1.2 \u00b1 0.2%",
+   "1.6 \u00b1 0.4% vs 0.1 \u00b1 0.02%",
+   "5.0 \u00b1 0.3% vs 0.9 \u00b1 0.1%",
+   "3.2 \u00b1 0.6% vs 1.7 \u00b1 0.2%",
+   "1.1 \u00b1 0.2% vs 0.2 \u00b1 0.02%",
+   "9495",
+   "6226",
+   "4418",
+   "7.6 \u00b1 1.0 vs 1.3 \u00b1 0.2",
+   "p = 0.0062",
+   "25 of 28",
+   "ACACB/ACC2",
+   "DGAT1",
+   "THRB",
+   "CCR5",
+   "FGF21",
+   "LGALS3",
+   "SERPINH1"
+  ]
+ },
+ "29302222": {
+  "verdict": "partly-supports",
+  "basis": "The paper presents multiple instances where animal data translated to human findings (three medications\u2014acamprosate, naltrexone, nalmefene\u2014were developed via animal models and used clinically; the incubation-of-craving phenomenon discovered in rats was subsequently demonstrated in human smokers, alcoholics, and cocaine addicts; glutamate spectroscopy showed matching hyperglutamatergic withdrawal findings in rats and humans; naltrexone and acamprosate reduced relapse-like drinking in the rat ADE and reduce relapse in alcoholics). The paper also reports translational failures (two selective CRH-R1 antagonists identified from rat models failed in clinical trials) and notes species limitations (mouse models often failed where rat models succeeded).",
+  "which_numbers": [
+   "3",
+   "15-20%",
+   "over 1200",
+   "more than 50",
+   "more than 50%",
+   "two (CRH-R1 antagonists failed)"
+  ]
+ },
+ "27916279": {
+  "verdict": "supports",
+  "basis": "Preclinical drug-versus-food choice data in nonhuman animals corresponded to human laboratory and clinical results for multiple manipulations. Examples: chronic/agonist-like amphetamine treatment decreased cocaine choice in rhesus monkeys (phendimetrazine/d-amphetamine studies including N = 4 rhesus monkeys and 14-day treatments) and produced similar decreases in human laboratory and double-blind clinical trials; KOR antagonist effects that decreased drug intake in rat extended-access models were not observed in nonhuman primate choice procedures and a double-blind clinical trial reported no benefit; buspirone showed effects under some preclinical schedules but failed to decrease cocaine choice in primate choice procedures and failed in a clinical trial. Environmental manipulations (reinforcer magnitude, cost, delay) produced parallel effects in preclinical choice studies and human laboratory choice studies.",
+  "which_numbers": [
+   "N = 4",
+   "14",
+   "7",
+   "59-61",
+   "62,63",
+   "78-81",
+   "82,83",
+   "85",
+   "90-95",
+   "96",
+   "22",
+   "28",
+   "41",
+   "43",
+   "50,51",
+   "32-35",
+   "42",
+   "45",
+   "52"
+  ]
+ },
+ "40558535": {
+  "verdict": "partly-supports",
+  "basis": "Paper presents examples where non-human animal models reproduce some human ASD-associated phenotypes (e.g., CHD8 heterozygous KO mice: altered social behavior; SHANK3-deficient non-human primates: ASD-like phenotypes; conserved mitochondrial phenotype in FMR1 models) and also documents failures, heterogeneity, and species-specific discrepancies. Cited evidence includes an rs-fMRI study across 16 cohorts with 350 mice showing heterogeneous connectivity, low NHP CRISPR yield (116 embryos injected, 3 successful pregnancies, 1 live birth), and human genetic heterogeneity (<1% per risk gene; polygenic risk 17\u201352%; CNVs with coding DNVs explain 30% of simplex families, 25% boys and 45% girls).",
+  "which_numbers": [
+   "16",
+   "350",
+   "116",
+   "3",
+   "1",
+   "<1%",
+   "17\u201352%",
+   "30%",
+   "25%",
+   "45%",
+   "1\u20133%"
+  ]
+ },
+ "35781406": {
+  "verdict": "supports",
+  "basis": "The paper reports that for 17 clinical regimens (from 12 patients) the PDTX predictions matched the patients\u2019 clinical responses in 17/17 cases (100% concordance). Efficacy in PDTX was defined by TGI > 60% as efficacious.",
+  "which_numbers": [
+   "17 regimens compared",
+   "12 patients",
+   "17/17 = 100% concordance",
+   "TGI > 60% efficacy cutoff"
+  ]
+ },
+ "32413492": {
+  "verdict": "partly-supports",
+  "basis": "Clinical trial numeric outcomes and corresponding preclinical outcomes in the paper show concordance for some drug classes and discordance for others. Examples from the paper: SGLT2 inhibitors: CANVAS reported hazard ratio 0.73 for progression of albuminuria and hazard ratio 0.60 for a composite renal outcome; CREDENCE reported hazard ratio 0.70 for its renal composite; DECLARE reported hazard ratio 0.76 for renal composite; EMPA-REG reported hazard ratios 0.61 (new/worsening DKD), 0.61 (progression to macroalbuminuria), 0.56 (doubling serum creatinine), and 0.45 (need for RRT). Preclinical studies in multiple rodent models (db/db, KK-Ay, BTBR ob/ob, Akita, OLEFT, STZ models) reported decreased albuminuria, reduced hyperfiltration or stabilized GFR, reduced renal histopathology, or reduced oxidative stress (Table 3). DPP-4 inhibitor linagliptin: CARMELINA clinical trial hazard ratio 0.86 for albuminuria progression but hazard ratio 1.04 for the renal outcome (no effect); preclinical rodent studies reported reduced albuminuria and improved renal histopathology in several models (Table 3). Mineralocorticoid receptor antagonists: PRIORITY (spironolactone) reported no effect on albuminuria progression in patients, whereas preclinical STZ and OLEFT rodent studies reported reduced albuminuria and improved histopathology (Table 3). Bardoxolone methyl: BEACON clinical trial showed mean eGFR increase 5.5 mL/min/1.73 m2 (placebo \u22120.9) but increased cardiovascular events (hazard ratio 1.44); preclinical ZDF rat studies did not replicate sustained eGFR benefit and reported no major benefit or mixed/worsening effects (Table 3). Xanthine oxidase inhibitors: PERL clinical trial (allopurinol) showed no impact on DKD progression; preclinical rodent studies showed reductions in albuminuria and renal injury markers in some models. Therefore the paper's data show correspondence for some agents (notably SGLT2 inhibitors and ACEi/ARB) and lack of correspondence for others (MRAs, DPP-4 inhibitor linagliptin, bardoxolone, xanthine oxidase inhibitors), so overall the reported data partly support translation from rodent models to human outcomes.",
+  "which_numbers": [
+   "0.73",
+   "0.60",
+   "0.70",
+   "0.76",
+   "0.61",
+   "0.56",
+   "0.45",
+   "0.86",
+   "1.04",
+   "5.5",
+   "-0.9",
+   "1.44"
+  ]
+ },
+ "31694927": {
+  "verdict": "partly-supports",
+  "basis": "Bosentan: IC50 human = 10 \u00b5M; dog = 30 \u00b5M; rat >100 \u00b5M; human clinical Cmax = 7.4 \u00b5M. FIAU: human Liver\u2011Chip showed lipid accumulation and albumin decline at \u22651 \u00b5M (1\u201330 \u00b5M tested); rat Liver\u2011Chip showed no effect at 1\u201330 \u00b5M. JNJ\u20112: rat in vivo Cmax reported 11.6 \u00b5g/ml (24 \u00b5M); rat Liver\u2011Chip showed increased \u03b1\u2011SMA at 3, 10, 30 \u00b5M and decreased albumin (not significant); human Liver\u2011Chip showed no \u03b1\u2011SMA increase or hepatocyte abnormalities at 3\u201330 \u00b5M up to 14 days. JNJ\u20113: dog in vivo Cmax reported 12.7 and 19.4 \u00b5M; dog Liver\u2011Chip showed albumin decrease at \u22651 \u00b5M and ALT/AST elevations at 10 \u00b5M; human Liver\u2011Chip showed albumin decrease at \u226510 \u00b5M and ALT/AST elevations at 30 \u00b5M. The dataset contains examples where non\u2011human results paralleled human results and examples where they did not.",
+  "which_numbers": [
+   "10 \u00b5M",
+   "30 \u00b5M",
+   ">100 \u00b5M",
+   "7.4 \u00b5M",
+   "\u22651 \u00b5M",
+   "1\u201330 \u00b5M",
+   "11.6 \u00b5g/ml",
+   "24 \u00b5M",
+   "3 \u00b5M",
+   "10 \u00b5M",
+   "30 \u00b5M",
+   "12.7 \u00b5M",
+   "19.4 \u00b5M",
+   "\u226510 \u00b5M",
+   "10 \u00b5M (ALT/AST)",
+   "30 \u00b5M (ALT/AST)"
+  ]
+ },
+ "34558834": {
+  "verdict": "partly-supports",
+  "basis": "12-month CCl4 mouse model recall 0.4; WTD mouse model precision 0.33; 228 genes consistently altered in both species (126 up-regulated, 102 down-regulated); exclusive chronic genes 834; exclusive acute genes 2,777; common genes 586; NASH recall 0.16 at 2 months, 0.18 at 6 months, 0.4 at 12 months; overlap of up-regulated genes at 12-month CCl4 with human diseases: NAFLD 38%, NASH 40%, HCV 25%, PBC 34%, PSC 33%.",
+  "which_numbers": [
+   "0.4",
+   "0.33",
+   "228",
+   "126",
+   "102",
+   "834",
+   "2,777",
+   "586",
+   "0.16",
+   "0.18",
+   "38%",
+   "40%",
+   "25%",
+   "34%",
+   "33%"
+  ]
+ },
+ "32127577": {
+  "verdict": "partly-supports",
+  "basis": "Human thrombin PH 484.25 nM; Baboon thrombin PH 433.78 nM; Rhesus thrombin PH 398.95 nM. Human thrombin PR 111.51 nM/min; Baboon 124.22 nM/min; Rhesus 111.22 nM/min. Human plasmin PH 457.20 nM; Baboon 546.26 nM; Rhesus 565.84 nM. Human plasmin PR 34.80 nM/min; Baboon 90.81 nM/min; Rhesus 49.78 nM/min. Swine plasmin: Not Detected at the assay tPA concentration. Guinea pig thrombin PH 9.86 nM; Rabbit thrombin PH 71.60 nM. Conclusion: non-human primate data correspond to human data while the other species do not.",
+  "which_numbers": [
+   "Human thrombin PH 484.25 nM",
+   "Baboon thrombin PH 433.78 nM",
+   "Rhesus thrombin PH 398.95 nM",
+   "Human thrombin PR 111.51 nM/min",
+   "Baboon thrombin PR 124.22 nM/min",
+   "Rhesus thrombin PR 111.22 nM/min",
+   "Human plasmin PH 457.20 nM",
+   "Baboon plasmin PH 546.26 nM",
+   "Rhesus plasmin PH 565.84 nM",
+   "Human plasmin PR 34.80 nM/min",
+   "Baboon plasmin PR 90.81 nM/min",
+   "Rhesus plasmin PR 49.78 nM/min",
+   "Swine plasmin Not Detected",
+   "Guinea pig thrombin PH 9.86 nM",
+   "Rabbit thrombin PH 71.60 nM"
+  ]
+ },
+ "39255793": {
+  "verdict": "supports",
+  "basis": "Human.identified P-sites: 115,179; Mouse.identified P-sites: 42,997; Human-to-mouse mapped P-sites (WS \u22658): 87,716; Of mapped sites, 23,040 were identified in mouse (reported 62.35%); Kinase-substrate annotations increased from 978 to 3,456 after PTMoreR mapping.",
+  "which_numbers": [
+   "115,179",
+   "42,997",
+   "87,716",
+   "23,040",
+   "62.35%",
+   "978",
+   "3,456"
+  ]
+ },
+ "40849367": {
+  "verdict": "partly-supports",
+  "basis": "Behavioral, computational, and electrophysiological measures show correspondence between humans and rats on multiple endpoints, but pharmacological modulation (modafinil) produced effects in rats not seen in humans. Specific supporting results: humans reversals per 100 trials = 4.4 \u00b1 0.23; rats reversals per 100 trials = 2.6 \u00b1 0.40. Target win-stay > target lose-shift: humans t(53) = 13.93, p < 0.001; rats t(10) = 6.20, p < 0.001. Correlations: win-stay vs reversals humans r(52) = 0.44, p < 0.001; rats r(9) = 0.79, p = 0.004. Lose-shift vs reversals humans r(52) = \u22120.58, p < 0.001; rats r(9) = \u22120.73, p = 0.012. Q-values: humans target 0.710 \u00b1 0.007 vs non-target 0.329 \u00b1 0.01, t(106) = 25.51, p < 0.001; rats target 0.550 \u00b1 0.036 vs non-target 0.275 \u00b1 0.034, t(20) = 6.08, p < 0.001. Beta vs reversals humans r(52) = 0.65, p < 0.001; rats r(9) = 0.69, p = 0.019. Electrophysiology: RewP observed frontally in both species (peak ~200 ms in humans, ~100 ms in rats); humans Response \u00d7 Feedback F(1,33) = 6.10, p = 0.019 and trial-type linear effect F(3,99) = 30.23, p < 0.001; rats Feedback main effect F(1,9) = 37.73, p < 0.001 and trial-type linear effect F(3,27) = 18.52, p < 0.001. Prediction errors: humans Feedback F(1,53) = 22570.94, p < 0.001; trial-type F(3,159) = 3571.61, p < 0.001; rats Feedback F(1,10) = 5698.12, p < 0.001; trial-type F(3,30) = 882.49, p < 0.001. Trial-level regression between ERP/LFP voltage and PE peaked in the RewP window in both species (Fig. 3). Pharmacology: modafinil produced a dose effect on rewarded PEs in rats (one-way ANOVA across doses for rewarded condition F(5,50) = 2.62, p = 0.035) but no effect on RewP magnitude in either species and no comparable dose effect in humans.",
+  "which_numbers": [
+   "4.4 \u00b1 0.23 reversals per 100 trials (humans)",
+   "2.6 \u00b1 0.40 reversals per 100 trials (rats)",
+   "t(53) = 13.93, p < 0.001 (humans win-stay > lose-shift)",
+   "t(10) = 6.20, p < 0.001 (rats win-stay > lose-shift)",
+   "r(52) = 0.44, p < 0.001 (humans win-stay vs reversals)",
+   "r(9) = 0.79, p = 0.004 (rats win-stay vs reversals)",
+   "r(52) = \u22120.58, p < 0.001 (humans lose-shift vs reversals)",
+   "r(9) = \u22120.73, p = 0.012 (rats lose-shift vs reversals)",
+   "Q-values humans target 0.710 \u00b1 0.007 vs non-target 0.329 \u00b1 0.01, t(106) = 25.51, p < 0.001",
+   "Q-values rats target 0.550 \u00b1 0.036 vs non-target 0.275 \u00b1 0.034, t(20) = 6.08, p < 0.001",
+   "r(52) = 0.65, p < 0.001 (humans beta vs reversals)",
+   "r(9) = 0.69, p = 0.019 (rats beta vs reversals)",
+   "RewP peak ~200 ms (humans)",
+   "RewP peak ~100 ms (rats)",
+   "Humans Response \u00d7 Feedback F(1,33) = 6.10, p = 0.019",
+   "Humans trial-type linear effect F(3,99) = 30.23, p < 0.001",
+   "Rats Feedback F(1,9) = 37.73, p < 0.001",
+   "Rats trial-type linear effect F(3,27) = 18.52, p < 0.001",
+   "Prediction error humans Feedback F(1,53) = 22570.94, p < 0.001",
+   "Prediction error humans trial-type F(3,159) = 3571.61, p < 0.001",
+   "Prediction error rats Feedback F(1,10) = 5698.12, p < 0.001",
+   "Prediction error rats trial-type F(3,30) = 882.49, p < 0.001",
+   "Trial-level ERP/LFP vs PE regression peaked in RewP window (Fig. 3)",
+   "Modafinil rats rewarded condition across doses F(5,50) = 2.62, p = 0.035",
+   "No effect of modafinil on RewP magnitude in either species"
+  ]
+ },
+ "25671556": {
+  "verdict": "partly-supports",
+  "basis": "Human clinical trials (reported cohorts of 12, 12, and 15 patients) showed improved light perception, some improvements in visual acuity, pupillary responses, and obstacle performance but reported no change in full-field ERG responses except in one patient. Preclinical dog data show restoration of rod- and cone-mediated ERG responses and improved obstacle-course vision; ERG traces shown for treated dog used dark-adapted stimulus intensities 0.0016, 0.0099, 0.064, 0.399 cd\u00b7s/m2 and a light-adapted 33 Hz flicker at 2.5 cd\u00b7s/m2 on a 30 cd/m2 background. Human patients continued to show progressive photoreceptor loss despite functional gains, and older dogs with established degeneration also showed restored function but not long-term preservation. These results indicate correspondence for some functional endpoints (improved light perception/vision) but not for magnitude of ERG recovery or photoreceptor preservation across species.",
+  "which_numbers": [
+   "12",
+   "12",
+   "15",
+   "one",
+   "0.0016",
+   "0.0099",
+   "0.064",
+   "0.399",
+   "2.5",
+   "30"
+  ]
+ },
+ "32868897": {
+  "verdict": "partly-supports",
+  "basis": "Median PPV overall = 0.65; median NPV overall = 0.50. PPV medians (all grades) by species: dog = 0.67, monkey = 0.72, mouse = 0.57, rat = 0.65. PPV medians (grade 3/4) by species: dog = 0.38, monkey = 0.60, mouse = 0.43, rat = 0.41. NPV medians (all grades) by species: dog = 0.52, monkey = 0.50, mouse = 0.57, rat = 0.51. NPV medians (grade 3/4) by species: dog = 0.71, monkey = 0.73, mouse = 0.81, rat = 0.72. For grade 3/4, no condition had both PPV and NPV > 0.75; six conditions had both PPV and NPV > 0.6, including haematologic toxicities in all four animal models.",
+  "which_numbers": [
+   "0.65",
+   "0.50",
+   "dog 0.67",
+   "monkey 0.72",
+   "mouse 0.57",
+   "rat 0.65",
+   "dog 0.38",
+   "monkey 0.60",
+   "mouse 0.43",
+   "rat 0.41",
+   "dog 0.52",
+   "monkey 0.50",
+   "mouse 0.57",
+   "rat 0.51",
+   "dog 0.71",
+   "monkey 0.73",
+   "mouse 0.81",
+   "rat 0.72",
+   "0.75",
+   "6"
+  ]
+ },
+ "11029269": {
+  "verdict": "partly-supports",
+  "basis": "Overall true positive concordance 71%; nonrodent-only concordance 63%; rodent-only concordance 43%; ~30% of human toxicities had no animal correlate. Organ-specific data (from paper tables): hematological 10 yes / 1 no (\u224891% concordant); gastrointestinal 35 yes / 6 no (\u224885%); cardiovascular 29 yes / 5 no (\u224885%); cutaneous 5 yes / 9 no. 94% of concordant cases were first observed in animal studies of \u22641 month.",
+  "which_numbers": [
+   "71% overall true positive concordance",
+   "63% nonrodent-only concordance",
+   "43% rodent-only concordance",
+   "~30% nonconcordant (no animal correlate)",
+   "hematological: 10 yes, 1 no (\u224891%)",
+   "gastrointestinal: 35 yes, 6 no (\u224885%)",
+   "cardiovascular: 29 yes, 5 no (\u224885%)",
+   "cutaneous: 5 yes, 9 no",
+   "94% of concordant cases first observed in \u22641 month studies"
+  ]
+ },
+ "28422076": {
+  "verdict": "partly-supports",
+  "basis": "The paper\u2019s results (Table 3 and related figures) show that zebrafish outcomes correspond to human toxicity with mixed performance across endpoints. Overall ZeGlobalTox: Specificity 89%, Sensitivity 68%, Accuracy 78%. Endpoint-level values: Cardiotoxicity Specificity 90%, Sensitivity 69%, Accuracy 78%; Neurotoxicity Specificity 100%, Sensitivity 54%, Accuracy 75%; Hepatotoxicity Specificity 77%, Sensitivity 80%, Accuracy 82%. Negative controls expected to score low were included and are not counted as failures.",
+  "which_numbers": [
+   "ZeGlobalTox Specificity: 89%",
+   "ZeGlobalTox Sensitivity: 68%",
+   "ZeGlobalTox Accuracy: 78%",
+   "Cardiotoxicity Specificity: 90%",
+   "Cardiotoxicity Sensitivity: 69%",
+   "Cardiotoxicity Accuracy: 78%",
+   "Neurotoxicity Specificity: 100%",
+   "Neurotoxicity Sensitivity: 54%",
+   "Neurotoxicity Accuracy: 75%",
+   "Hepatotoxicity Specificity: 77%",
+   "Hepatotoxicity Sensitivity: 80%",
+   "Hepatotoxicity Accuracy: 82%"
+  ]
+ },
+ "18468556": {
+  "verdict": "supports",
+  "basis": "100 small molecules were tested; 22 of 23 drugs that cause QT prolongation in humans caused bradycardia and blocked AV conduction in zebrafish. A 12-compound blinded developmental-toxicity study reported sensitivity >80% and specificity >70%; the assay reported a 75% success rate for identifying nonteratogens and a 100% success rate for identifying teratogens. Table 2 lists LC50 values for compounds tested in zebrafish (Retinol 1146 \u00b5M; Valproic acid 110.9 \u00b5M; BMS-A 4.7 \u00b5M; BMS-B 1.3 \u00b5M; BMS-C 15 \u00b5M; Cytosine arabinoside 1478 \u00b5M; 9-cis-Retinoic acid 258.4 \u00b5M; several compounds ND). GFAP level increased >2-fold in zebrafish after TCDD treatment, a known mammalian neurotoxin. These reported results compare zebrafish endpoints directly to known human/mammalian outcomes.",
+  "which_numbers": [
+   "100 small molecules",
+   "22 of 23",
+   "sensitivity >80%",
+   "specificity >70%",
+   "75% success rate (nonteratogenic)",
+   "100% success rate (teratogens)",
+   "Retinol 1146 \u00b5M",
+   "Valproic acid 110.9 \u00b5M",
+   "BMS-A 4.7 \u00b5M",
+   "BMS-B 1.3 \u00b5M",
+   "BMS-C 15 \u00b5M",
+   "Cytosine arabinoside 1478 \u00b5M",
+   "9-cis-Retinoic acid 258.4 \u00b5M",
+   "ND (several compounds)",
+   "GFAP increased >2-fold"
+  ]
+ },
+ "35148401": {
+  "verdict": "partly-supports",
+  "basis": "The paper\u2019s data show mixed concordance: nonclinical assays had high specificity but limited sensitivity and there were many discordant cases. In a 150-drug HESI/FDA database 47/150 (31%) drugs were discordant. Of 43 TQT-positive drugs, 28 (65%) were discordant (TQT-positive but negative in nonclinical assays within 30\u00d7 CRC). Reported assay performance at 30\u00d7 exposure (Park et al., 2018) was: hERG sensitivity 50% specificity 92%; APD sensitivity 19% specificity 91%; in vivo QT sensitivity 57% specificity 91%.",
+  "which_numbers": [
+   "150 (total drugs)",
+   "47/150 (31% discordant)",
+   "43 (TQT-positive drugs)",
+   "28/43 (65% of TQT-positive discordant)",
+   "hERG sensitivity 50% at 30\u00d7",
+   "hERG specificity 92% at 30\u00d7",
+   "APD sensitivity 19% at 30\u00d7",
+   "APD specificity 91% at 30\u00d7",
+   "in vivo QT sensitivity 57% at 30\u00d7",
+   "in vivo QT specificity 91% at 30\u00d7"
+  ]
+ },
+ "38852684": {
+  "verdict": "supports",
+  "basis": "NHP: 10.9 \u00b1 0.06 ms change in QTc detected at 1.5\u00d7 the human critical moxifloxacin concentration (0\u201324 h). Canine: 16.6 \u00b1 0.1 ms change in QTc detected at 1.7\u00d7 the human critical concentration. Vehicle (mock) showed no QTc increase up to 3\u00d7 the human critical concentration. NHP average \u0394QTc slope = 0.0043 ms/ng/mL, prediction at human critical concentration = 7.4 ms (95% CI 4.9\u20139.9). Canine average \u0394QTc slope = 0.0027 ms/ng/mL, prediction at human critical concentration = 12.1 ms (95% CI 9.1\u201315.2). Human reference slope reported = 0.0031 ms/ng/mL.",
+  "which_numbers": [
+   "10.9 \u00b1 0.06 ms at 1.5\u00d7",
+   "16.6 \u00b1 0.1 ms at 1.7\u00d7",
+   "no increase detected up to 3\u00d7",
+   "NHP slope 0.0043 ms/ng/mL; prediction 7.4 ms (95% CI 4.9\u20139.9)",
+   "Canine slope 0.0027 ms/ng/mL; prediction 12.1 ms (95% CI 9.1\u201315.2)",
+   "Human slope 0.0031 ms/ng/mL"
+  ]
+ },
+ "28903488": {
+  "verdict": "supports",
+  "basis": "ROC area under the curve for dog QTc versus clinical QTc = 0.81 for all compounds and = 0.91 excluding two b2-adrenoceptor agonists. At the 10-fold dog Cmax free / clinical Cmax free threshold sensitivity = 0.73 and specificity = 0.80. 8 of 13 clinical QTc-positive compounds showed QTc increases in dogs within 10-fold, and 10 of 11 clinical QTc-negative compounds showed no QTc increase in dogs.",
+  "which_numbers": [
+   "0.81",
+   "0.91",
+   "0.73",
+   "0.80",
+   "8/13",
+   "10/11",
+   "0.51",
+   "0.91"
+  ]
+ },
+ "33666192": {
+  "verdict": "supports",
+  "basis": "The review presents data showing concordance between zebrafish and mammalian/human results: He et al. report 100% concordance for hepatotoxicity testing in zebrafish versus mammalian results; Yamashita et al. tested 59 compounds and report 90% overall agreement for teratogenicity; ECG comparison shows QT intervals 231 ms (zebrafish) vs 336 ms (human) and the ERG pore\u2011forming amino acid sequence is ~90% conserved; Table 4 and cited studies report human cardiotoxic and noncardiotoxic drugs producing corresponding effects in zebrafish.",
+  "which_numbers": [
+   "100% concordance (He et al. 2013 hepatotoxicity)",
+   "59 compounds; 90% overall agreement (Yamashita et al. teratogenicity)",
+   "QT intervals: 231 ms (zebrafish) vs 336 ms (human)",
+   "~90% conservation of ERG pore\u2011forming amino acid sequence"
+  ]
+ },
+ "33813006": {
+  "verdict": "no-data",
+  "basis": "The paper did not perform or report any direct comparison of non-human animal results to human clinical outcomes; it states that no attempt was made to examine concordance to effects seen in the clinic.",
+  "which_numbers": [
+   "105 (number of first-in-human small molecule packages evaluated)",
+   "99 (number of conscious non-rodent telemetry studies)",
+   "39 (number of telemetry studies that showed an effect on cardiovascular function)",
+   "9 (occasions of prolonged QTc interval reported in telemetry studies)"
+  ]
+ },
+ "30726989": {
+  "verdict": "partly-supports",
+  "basis": "LA (large animal) telemetry results show moderate-to-high concordance with human phase I hemodynamic outcomes: sensitivity 78% and specificity 79% for combined BP/HR; positive predictive value 52% and negative predictive value 92%; TP=14, FP=13, FN=4, TN=48. Directionality of BP and HR changes was conserved between LA and humans.",
+  "which_numbers": [
+   "Sensitivity 78%",
+   "Specificity 79%",
+   "PPV 52%",
+   "NPV 92%",
+   "TP 14",
+   "FP 13",
+   "FN 4",
+   "TN 48",
+   "Directionality conserved between LA and humans (100%)"
+  ]
+ },
+ "29730448": {
+  "verdict": "partly-supports",
+  "basis": "Some animal\u2013human pairs show strong positive likelihood ratios while many others do not; examples from the paper: QT and arrhythmia signals (Electrocardiogram QT prolonged TP=69 LR+=10.7; Arrhythmia TP=60 LR+=10.7; Electrocardiogram QT corrected interval prolonged TP=46 LR+=16.8); immunogenicity signal (Drug specific antibody present TP=46 LR+=162.0); species-specific examples (Rat constipation TP=93 LR+=12.3; Dog Electrocardiogram QT prolonged TP=55 LR+=11.9; Monkey alanine aminotransferase increased TP=71 LR+=16.3); many common events show low LR+ (Death TP=785 LR+=1.93; Weight decreased TP=433 LR+=2.67); system-organ-class level LR+ vary by species (Cardiac disorders LR+ dog=6.11, rabbit=3.54, mouse=5.29, rat=4.73, cyno=9.52); absence of animal findings generally not predictive (example LR- for dog cardiac=0.85; hepatobiliary dog LR-=0.85).",
+  "which_numbers": [
+   "Electrocardiogram QT prolonged TP=69 LR+=10.7",
+   "Arrhythmia TP=60 LR+=10.7",
+   "Electrocardiogram QT corrected interval prolonged TP=46 LR+=16.8",
+   "Drug specific antibody present TP=46 LR+=162.0",
+   "Rat constipation TP=93 LR+=12.3",
+   "Dog Electrocardiogram QT prolonged TP=55 LR+=11.9",
+   "Alanine aminotransferase increased (monkey) TP=71 LR+=16.3",
+   "Death TP=785 LR+=1.93",
+   "Weight decreased TP=433 LR+=2.67",
+   "Cardiac disorders LR+ dog=6.11",
+   "Cardiac disorders LR+ rabbit=3.54",
+   "Cardiac disorders LR+ mouse=5.29",
+   "Cardiac disorders LR+ rat=4.73",
+   "Cardiac disorders LR+ cyno=9.52",
+   "Dog cardiac LR-=0.85",
+   "Dog hepatobiliary LR-=0.85"
+  ]
+ },
+ "17175568": {
+  "verdict": "partly-supports",
+  "basis": "Across six intervention areas the animal data matched the human trial results for some interventions but not for others. Thrombolysis (tissue plasminogen activator): animal studies showed reduced infarct volume and improved neurobehavioural scores (\u221224% (95% CI 20% to 28%); +23% (17% to 29%)) and increased haemorrhage (odds ratio 1.96 (1.63 to 2.35)); clinical trials showed improved outcome. Bisphosphonates (alendronate): animal studies showed increases in bone mineral density (hip +11.0% (9.2 to 12.9); lumbar spine +8.5% (5.8 to 11.2); forearm +1.7% (\u22121.4 to 4.7)); clinical trials showed increased BMD. Antenatal corticosteroids: animal studies showed reduced respiratory distress (examples: calves 2 of 15 vs 9 in control (P=0.01); rabbit lung capacity 1.8 (0.4) ml/g vs 1.4 (0.4) ml/g) but pooled animal mortality estimate was 4.2 (0.85 to 20.9) (ewe subgroup 12.5 (1.9 to 79.2)); clinical trials showed reduced respiratory distress and reduced mortality. Corticosteroids for traumatic head injury: animal grip test pooled odds ratio 0.58 (0.41 to 0.83) (benefit on that animal endpoint) while clinical trials showed no benefit and increased mortality. Tirilazad in stroke: animals showed reduced infarct volume and improved neurobehaviour (+29%? see signs) (\u221229% (21 to 37); +48% (29 to 67)) while clinical trials showed worse outcomes. Antifibrinolytics: clinical trials reduced bleeding; animal reports were sparse and data reporting incomplete (examples: gastric bleeding decrease 0.09 ml (0.08 to 0.10); one report decrease 0.83 ml but no SD reported). Therefore the dataset shows correspondence for some interventions/endpoints (thrombolysis, bisphosphonates, antenatal corticosteroids on respiratory distress) and non-correspondence or unclear correspondence for others (corticosteroids in head injury, tirilazad, antifibrinolytics).",
+  "which_numbers": [
+   "0.58 (95% CI 0.41 to 0.83)",
+   "\u221224% (95% CI 20% to 28%)",
+   "23% (95% CI 17% to 29%)",
+   "odds ratio 1.96 (95% CI 1.63 to 2.35)",
+   "\u221229% (95% CI 21% to 37%)",
+   "48% (95% CI 29% to 67%)",
+   "4.2 (95% CI 0.85 to 20.9)",
+   "12.5 (1.9 to 79.2)",
+   "2 of 15 vs 9 in control (P = 0.01)",
+   "1.8 (0.4) ml/g vs 1.4 (0.4) ml/g",
+   "11.0% (95% CI 9.2% to 12.9%)",
+   "8.5% (95% CI 5.8% to 11.2%)",
+   "1.7% (\u22121.4% to 4.7%)",
+   "0.09 ml (95% CI 0.08 to 0.10)",
+   "0.83 ml (no SD reported)"
+  ]
+ },
+ "32391273": {
+  "verdict": "does-not-support",
+  "basis": "Animal (murine) results show TGI range \u22120.3119\u20131.0000; median TGI approved 0.74 vs failed 0.77 (p=0.375); ROC AUC for TGI = 0.45; P-trend for TGI = 0.636. Cell results show median IC50 approved 10.53 nM vs failed 32.00 nM (p=0.09); ROC AUC for IC50 = 0.59; logistic OR for IC50 Q2 vs Q4 = 2.84 (95% CI 1.04\u20137.74); GEE OR = 2.84 (95% CI 0.60\u201313.54); P-trend for IC50 \u2248 0.4.",
+  "which_numbers": [
+   "TGI range \u22120.3119 to 1.0000",
+   "median TGI approved 0.74",
+   "median TGI failed 0.77",
+   "p = 0.375",
+   "AUC (TGI) = 0.45",
+   "P-trend (TGI) = 0.636",
+   "median IC50 approved 10.53 nM",
+   "median IC50 failed 32.00 nM",
+   "p = 0.09",
+   "AUC (IC50) = 0.59",
+   "OR IC50 Q2 vs Q4 = 2.84 (95%CI 1.04\u20137.74)",
+   "GEE OR IC50 Q2 vs Q4 = 2.84 (95%CI 0.60\u201313.54)",
+   "P-trend (IC50) = 0.4"
+  ]
+ },
+ "26753942": {
+  "verdict": "partly-supports",
+  "basis": "Median PLR for NHP\u2192human = 9.39 and median iNLR = 1.02 (Table 3b). Median iNLRs for preclinical species versus humans: Rat 1.82 (range 1.02\u2013100.0); Mouse 1.39 (1.03\u201350.0); Rabbit 1.12 (1.01\u20132.33); Dog 1.10 (1.01\u20131.92); NHP 1.02 (1.00\u20131.08) (Table 4). Rodent interspecies PLRs: rat\u2192mouse 39.43; mouse\u2192rat 50.30 (Table 3b). PLR values >1 indicate that presence of toxicity in an animal species can increase the likelihood of toxicity in humans for some comparisons; iNLR values \u22481 indicate that absence of toxicity in animals provides little to no evidential weight for absence of toxicity in humans.",
+  "which_numbers": [
+   "NHP\u2192human PLR 9.39 (Table 3b)",
+   "NHP\u2192human iNLR 1.02 (Table 3b)",
+   "Rat iNLR 1.82 (range 1.02\u2013100.0) (Table 4)",
+   "Mouse iNLR 1.39 (range 1.03\u201350.0) (Table 4)",
+   "Rabbit iNLR 1.12 (range 1.01\u20132.33) (Table 4)",
+   "Dog iNLR 1.10 (range 1.01\u20131.92) (Table 4)",
+   "NHP iNLR 1.02 (range 1.00\u20131.08) (Table 4)",
+   "rat\u2192mouse PLR 39.43 (Table 3b)",
+   "mouse\u2192rat PLR 50.30 (Table 3b)"
+  ]
+ },
+ "30364994": {
+  "verdict": "does-not-support",
+  "basis": "Table 5 presents four AstraZeneca compounds with substantial clinical diarrhea incidence (41%, 51%, 60%, 33%) but 1-month rat/dog studies that in several cases did not report gastrointestinal toxicity (GIT) at the MTD. Specifically, animal 1-month findings for AZD3409, AZD7140, and AZD3 report \u2018GIT not noted at MTD\u2019 (rat and/or dog) despite clinical diarrhea of 41%, 60%, and 33% respectively; AZD8931 shows rat DLT: GIT but dog: GIT not noted despite 51% clinical diarrhea. These data in Table 5 show lack of correspondence between the reported non-human (1-month rat/dog) results and human clinical diarrhea incidence for these compounds.",
+  "which_numbers": [
+   "AZD3409: clinical diarrhea 41% (12/29); rat 1-month: GIT not noted at MTD; dog 1-month: GIT at MTD; TEER IC15 3.0E-06; clinical Cmax 3.9E-07; IC15/Cmax = 8",
+   "AZD8931: clinical diarrhea 51% (61/120); rat 1-month: DLT = GIT; dog 1-month: GIT not noted at MTD; TEER IC15 3.0E-09; clinical Cmax 1.3E-07; IC15/Cmax = 0.02",
+   "AZD7140: clinical diarrhea 60% (9/15); rat 1-month: GIT not noted at MTD; dog 1-month: occasional soft feces at highest dose; TEER IC15 3.0E-06; clinical Cmax 3.6E-06; IC15/Cmax = 0.8",
+   "AZD3: clinical diarrhea 33% (8/24); rat 1-month: GIT not noted at MTD; dog 1-month: GIT not noted at MTD; TEER IC15 2.0E-08; clinical Cmax 8.4E-07; IC15/Cmax = 0.02"
+  ]
+ },
+ "16453316": {
+  "verdict": "does-not-support",
+  "basis": "Average neuroprotection in focal ischemia: clinical drugs mean 31.35% (SD 16.7, n=66) versus animal-only drugs mean 24.4% (SD 32.9, n=351); p>0.05. Total candidate drugs identified: 1,026 (912 tested only in animals, 114 tested in humans). Focal ischemia experimental results: 62% treatment > control, 34% no difference, 4% treatment < control.",
+  "which_numbers": [
+   "31.35% (SD 16.7, n=66)",
+   "24.4% (SD 32.9, n=351)",
+   "p>0.05",
+   "1,026",
+   "912",
+   "114",
+   "62%",
+   "34%",
+   "4%"
+  ]
+ },
+ "35616311": {
+  "verdict": "does-not-support",
+  "basis": "A scoping review reported rates of translation from animal to human studies ranged from 0 to 100. A retrospective harm\u2013benefit analysis concluded fewer than 7% of the 212 animal studies scrutinised were permissible. An analysis of investigator brochures found 6% of the referenced preclinical animal studies reported no effect and 82% were described as reporting positive findings. An industry review of 255 protocols found over half needed amending. The paper gives examples where interventions (corticosteroids, tirilazad) were beneficial in animals but increased risk in humans.",
+  "which_numbers": [
+   "0 to 100",
+   "fewer than 7% of the 212",
+   "6%",
+   "82%",
+   "255 (over half)"
+  ]
+ },
+ "37712424": {
+  "verdict": "partly-supports",
+  "basis": "The paper reports multiple, directly cited results indicating both correspondence and noncorrespondence between animal and human outcomes: 11% of published landmark oncology findings were validated in clinical trials; an analysis of over 2,000 drugs found common preclinical species are inconsistent predictors of human toxic responses; heterogeneous preclinical populations predicted adverse responses to specific therapies (idelalisib, tolvaptan); gene expression comparisons between human and mouse produced opposing conclusions in different analyses (refs. 14, 15); a systematic analysis reported genetic variation explains more observed phenotypic variation than environment in over 75% of phenotypes and accounts for roughly 90% of observed variation in some physiological phenotypes; the figure reports phase failure rates of 37.2%, 75.4%, 59.9%, and 17.6%. These data indicate correspondence in some cases/endpoints and lack of correspondence in others.",
+  "which_numbers": [
+   "11%",
+   "over 2,000",
+   "over 75%",
+   "roughly 90%",
+   "37.2%",
+   "75.4%",
+   "59.9%",
+   "17.6%"
+  ]
+ },
+ "29590200": {
+  "verdict": "partly-supports",
+  "basis": "Perel et al.\u2019s data compare 6 intervention areas and report 2 concordant, 1 partially concordant, and 3 discordant animal-to-human comparisons (Table 7).",
+  "which_numbers": [
+   "6 interventions",
+   "2 concordant",
+   "1 partially concordant",
+   "3 discordant"
+  ]
+ },
+ "30823899": {
+  "verdict": "does-not-support",
+  "basis": "The paper\u2019s reported data show minimal correspondence between animal and human outcomes: example given that a prior probability of no human toxicity of 70% was increased by a negative animal test to an average of 74% (dogs to 72%, monkeys to 70.4%); the authors\u2019 own analyses covered >3200 drugs; Monticello et al. (n=182) reported a mean inverse Negative LR (iNLR) of 1.5\u20131.6 and a mean Positive LR (PLR) of 2.9, with 30 of 36 iLR- values <=2, only 2 of 36 PLR values >=10 and none of the iNLR/iLR- >=10; Clark & Steger-Hartmann analysed >3000 drugs and reported that lack of adverse events in animals was not a good predictor of safety in humans; the paper also cites that >90% of drugs judged safe in animals subsequently failed in human trials (2006\u20132015).",
+  "which_numbers": [
+   "70% -> 74%",
+   "dogs 70% -> 72%",
+   "monkeys 70% -> 70.4%",
+   ">3200 drugs",
+   "Monticello n=182",
+   "Monticello mean iNLR 1.5\u20131.6",
+   "Monticello mean PLR 2.9",
+   "30 of 36 iLR- values <=2",
+   "2 of 36 PLR >=10",
+   "none iNLR/iLR- >=10",
+   ">3000 drugs (Clark & Steger-Hartmann)",
+   ">90% failure rate (2006\u20132015)"
+  ]
+ },
+ "23503654": {
+  "verdict": "does-not-support",
+  "basis": "The paper reports multiple quantitative comparisons showing animal results did not match human results: Seok et al. compared ~5,000 inflammation-related human genes to mouse and reported no correlation for burns, trauma, and endotoxemia; Olson et al. reported 43% concordance of rodent toxicity with humans; Kent et al. reported a 1,000-fold difference in ouabain sensitivity between human and mouse; Seok et al. reported endotoxin sensitivity differences up to 1,000,000-fold; the paper notes >500 neuroprotective treatments that worked in animals failed in humans and >100 additional clinical trials for sepsis failed despite animal success.",
+  "which_numbers": [
+   "~5,000",
+   "43%",
+   "1,000-fold",
+   "1,000,000-fold",
+   ">500",
+   ">100"
+  ]
+ },
+ "36730203": {
+  "verdict": "partly-supports",
+  "basis": "The paper's data show that some animal models and conditions corresponded to human results while others did not. Specific reported results: human\u2013human genome-wide c-scores = 0.25\u20130.52; mouse MB and MI versus the four similar human studies c-scores = 0.081\u20130.20; mouse studies MT, MS, MA, ML genome-wide c-scores \u2248 0; human intracohort c-scores (HB, HI, HT, HS) = 0.4\u20130.7; median c-score HI1 vs MI = 0.15 versus HI1 vs HI2 = 0.43 (intracohort ceiling); pathway-level c-score HI1 vs MI (hsa04662) = 0.26 versus HI1 vs HI2 = 0.31; MS had \u22480 genome-wide and pathway c-scores with five human studies; MS d-scores = 0.2\u20130.4 for three KEGG pathways when compared to HS and four human validation studies; HS d-scores \u2248 \u22120.3 when compared to the four human validation studies; cross-species developmental stage c-score threshold used >0.1 produced within-stage edges ce.e0\u2014dm.e0, ce.e1\u2014dm.e1, ce.e2\u2014dm.e2, ce.e2\u2014dm.e1, and ce.lar\u2014dm.lar had c-score = 0.087. These results indicate concordance for some species/conditions/pathways and lack of concordance for others.",
+  "which_numbers": [
+   "human\u2013human genome-wide c-scores = 0.25\u20130.52",
+   "MB and MI versus human c-scores = 0.081\u20130.20",
+   "MT, MS, MA, ML genome-wide c-scores \u2248 0",
+   "human intracohort c-scores (HB, HI, HT, HS) = 0.4\u20130.7",
+   "median c-score HI1 vs MI = 0.15",
+   "median c-score HI1 vs HI2 = 0.43",
+   "pathway c-score HI1 vs MI (hsa04662) = 0.26",
+   "pathway c-score HI1 vs HI2 (hsa04662) = 0.31",
+   "MS \u22480 genome-wide and pathway c-scores with five human studies",
+   "MS d-scores = 0.2\u20130.4 for three KEGG pathways vs HS and four validation studies",
+   "HS d-scores \u2248 \u22120.3 vs four human validation studies",
+   "cross-species stage c-score threshold >0.1 created edges ce.e0\u2014dm.e0, ce.e1\u2014dm.e1, ce.e2\u2014dm.e2, ce.e2\u2014dm.e1",
+   "ce.lar\u2014dm.lar c-score = 0.087"
+  ]
+ },
+ "28731442": {
+  "verdict": "partly-supports",
+  "basis": "Authors report mixed concordance between mouse and human. For the cytokine\u2013cytokine receptor pathway there were 73 interactions in the human model; of these 27% were similar in mouse, 15% were contradictory in mouse, and 58% were found only in human. At the cellular/bioprocess level 62% of interactions were similar, 28% were only in human, and 10% were contradictory. Gene expression comparisons showed 31% of genes had the same expression pattern in both species, 14% were significant only in human, 19% only in mouse, 17% were inconsistent within a species, 7% were contradictory between species, and 12% were non-significant in both. Pathway enrichment returned 42 pathways in the human model and 29 in the mouse model, with 24 pathways common, 19 unique to human, and 6 unique to mouse. Model sizes: human model 671 nodes / 1,224 edges / 884 BEL statements; mouse model 1,016 nodes / 1,939 edges / 1,395 BEL statements.",
+  "which_numbers": [
+   "73 interactions",
+   "27% similar",
+   "15% contradictory",
+   "58% only in human",
+   "62% similar (cellular level)",
+   "28% only in human (cellular level)",
+   "10% contradictory (cellular level)",
+   "31% same expression patterns",
+   "14% significant only in human",
+   "19% significant only in mouse",
+   "17% inconsistent within species",
+   "7% contradictory between species",
+   "12% non-significant in both",
+   "42 pathways (human)",
+   "29 pathways (mouse)",
+   "24 pathways common",
+   "19 pathways unique to human",
+   "6 pathways unique to mouse",
+   "human model: 671 nodes",
+   "human model: 1,224 edges",
+   "human model: 884 BEL statements",
+   "mouse model: 1,016 nodes",
+   "mouse model: 1,939 edges",
+   "mouse model: 1,395 BEL statements"
+  ]
+ },
+ "28335819": {
+  "verdict": "partly-supports",
+  "basis": "Data show overall low animal-human concordance but some animal models/conditions resemble human results: mean pairwise correlation over all PD studies = 0.05; human in vivo studies = 0.15; mouse studies = 0.03; rat studies = -0.04; concordance in human substantia nigra studies = 0.30; model-type concordance: MPTP = 0.09, genetic models = 0.12. Meta-analysis enrichment for previously PD-associated genes: all studies 26% (11/43); human studies 36% (8/22); animal models 10% (1/10); basal ganglia studies 32% (9/28); substantia nigra studies 40% (6/15). These results indicate mixed correspondence: some animal models/conditions show similarity to human data but overall animal results often do not match human studies.",
+  "which_numbers": [
+   "0.05",
+   "0.15",
+   "0.03",
+   "-0.04",
+   "0.30",
+   "0.09",
+   "0.12",
+   "26% (11/43)",
+   "36% (8/22)",
+   "10% (1/10)",
+   "32% (9/28)",
+   "40% (6/15)"
+  ]
+ },
+ "25677548": {
+  "verdict": "supports",
+  "basis": "Data show 2/30 significant species \u00d7 exercise interactions (testosterone p=0.006; globulins p=0.031). The main effect of exercise was significant in 15/30 parameters and marginally nonsignificant for copper (p=0.060) and apolipoprotein B (p=0.058). Twenty-six of 30 variables changed in the same direction post-exercise across species, with mean percent change magnitudes 7.9% in rats and 7.3% in humans. Time to exhaustion was 11.1 \u00b1 1.5 min (rats) and 12.2 \u00b1 1.5 min (humans) (no significant difference). Example biomarker agreement: triacylglycerols rats 204 \u2192 179 (\u221212.4%), humans 140 \u2192 122 (\u221213.0%). Postexercise plasma volume 98 \u00b1 3% (rats) and 99 \u00b1 5% (humans).",
+  "which_numbers": [
+   "2/30",
+   "testosterone p=0.006",
+   "globulins p=0.031",
+   "15/30",
+   "copper p=0.060",
+   "apolipoprotein B p=0.058",
+   "26/30",
+   "7.9%",
+   "7.3%",
+   "11.1 \u00b1 1.5 min (rats)",
+   "12.2 \u00b1 1.5 min (humans)",
+   "triacylglycerols rats 204 \u2192 179 (\u221212.4%)",
+   "triacylglycerols humans 140 \u2192 122 (\u221213.0%)",
+   "postexercise plasma volume 98 \u00b1 3% (rats)",
+   "postexercise plasma volume 99 \u00b1 5% (humans)"
+  ]
+ },
+ "17988725": {
+  "verdict": "does-not-support",
+  "basis": "Toxicology meta-analysis: rodent experiments correctly predicted organ toxicity in humans in 43% of the studies; non-rodent animal models correctly predicted toxicity 63% of the time. FDA: rate of success for a new medical compound entering Phase 1 clinical testing to reach the market is not greater than 8%. Paper reports large-scale copy number variation: humans differ by 12% and as many as 2900 genes (~10%) are duplicated, suggesting genomic differences that may affect predictability.",
+  "which_numbers": [
+   "43%",
+   "63%",
+   "8%",
+   "12%",
+   "2900 genes (~10%)"
+  ]
+ },
+ "22790876": {
+  "verdict": "does-not-support",
+  "basis": "Reported that 3 of 494 animal-positive interventions for acute ischemic stroke showed effect in patients; a review reported fewer than 50% of animal studies predicted human outcomes; in some fields chimpanzee and macaque models had 100% prediction failure; publication bias accounted for one third of effect in animal stroke studies.",
+  "which_numbers": [
+   "3/494",
+   "fewer than 50%",
+   "100%",
+   "one third"
+  ]
+ },
+ "26856335": {
+  "verdict": "partly-supports",
+  "basis": "Data show corresponding responses for exercise but not for vitamin C. Exercise: 1/19 species\u00d7exercise interaction (catalase); reported magnitude of perturbation after exercise 14% in rats and 16% in humans; exercise increased plasma protein carbonyls and GSSG and increased CRP, TNF-\u03b1, IL-1\u03b1, IL-2 and IL-8 in both species. Vitamin C at rest: 10/19 species\u00d7vitamin C interactions; vitamin C decreased oxidative stress markers and increased TAC and GSH in humans but did not affect redox in rats; plasma vitamin C increased 92% in humans versus 41% in rats. Exercise after vitamin C: redox markers changed only in humans, while CRP decreased in both species.",
+  "which_numbers": [
+   "1/19",
+   "14%",
+   "16%",
+   "10/19",
+   "92%",
+   "41%",
+   "19 biomarkers"
+  ]
+ },
+ "36859342": {
+  "verdict": "supports",
+  "basis": "Pharmacologically active ranges in animals overlapped clinical active ranges at high rates (HED: 18/25 studies \u226580% overlap; Cmax: 15/25 studies \u226580% overlap; AUC: 19/23 studies \u226580% overlap). Average overlap values reported: HED 84%, Cmax 64%, AUC 78%. Tolerability predictions: human highest tolerated level (HURAE) exceeded preclinical NOAEL in 9/25 studies for HED, 8/25 for Cmax, and 12/23 for AUC; unacceptable adverse events occurred below NOAEL in 4/25 studies. These data show animal results corresponded to human results overall.",
+  "which_numbers": [
+   "18/25 (72%) HED \u226580% overlap",
+   "15/25 (60%) Cmax \u226580% overlap",
+   "19/23 (83%) AUC \u226580% overlap",
+   "Average overlap HED 84%",
+   "Average overlap Cmax 64%",
+   "Average overlap AUC 78%",
+   "HURAE > NOAEL in 9/25 studies (HED)",
+   "HURAE > NOAEL in 8/25 studies (Cmax)",
+   "HURAE > NOAEL in 12/23 studies (AUC)",
+   "Unacceptable AEs below NOAEL in 4/25 studies (16%)"
+  ]
+ }
+}

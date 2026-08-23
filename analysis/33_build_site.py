@@ -14,6 +14,8 @@ load=lambda *p: json.load(open(J(*p))) if os.path.exists(J(*p)) else {}
 DB=load("data","db","studies.json"); META=load("data","db","metadata.json")
 ANS=load("data","db","study_answers.json"); CLS=load("data","db","classification.json")
 FTS=load("data","raw","fulltext_status.json")
+SYN=load("data","db","row_synthesis.json")
+RATER2=load("data","db","second_rater.json")
 OK={k:v for k,v in ANS.items() if "error" not in v and DB.get(k,{}).get("eligible")}
 # Patient-derived xenografts grow the patient's own human tumour in a mouse host, so they
 # answer an avatar question rather than whether another species predicts human outcomes.
@@ -25,6 +27,17 @@ for d in (os.path.join(OUT,"api","study"), os.path.join(OUT,"study")):
     os.makedirs(d,exist_ok=True)
 e=lambda s: html.escape(str(s if s is not None else ""))
 BUILT=datetime.date.today().isoformat()
+
+def agreement():
+    pairs=[(k,ANS[k]["verdict"],RATER2[k]["verdict"]) for k in RATER2
+           if "error" not in RATER2[k] and k in OK]
+    if not pairs: return None
+    n=len(pairs); po=sum(1 for _,x,y in pairs if x==y)/n
+    ca=collections.Counter(x for _,x,_ in pairs); cb=collections.Counter(y for _,_,y in pairs)
+    cats={v for _,x,y in pairs for v in (x,y)}
+    pe=sum((ca[c]/n)*(cb[c]/n) for c in cats)
+    return {"n":n,"agree":po,"kappa":(po-pe)/(1-pe) if pe<1 else 0.0,
+            "disagree":{k:(x,y) for k,x,y in pairs if x!=y}}
 
 ASSESS_LABEL={"efficacy":"Efficacy","toxicology":"Toxicology",
   "safety-pharmacology":"Safety pharmacology","disease-biology":"Disease biology",
@@ -168,6 +181,28 @@ def evidence_cell(pm_set, organism):
         parts.append(f'<div class="caveat"><strong>Caveat.</strong> {e(cav[0])}</div>')
     return "".join(parts)
 
+DIRTAG={"evidence favours the model":"v-supports","mixed":"v-partly-supports",
+        "evidence does not favour the model":"v-does-not-support",
+        "too little evidence":"v-partly-supports"}
+def evidence_synth(a, organism, pm_set):
+    """A readable synthesis, with the raw figures kept beneath for checking. A list of
+    extracted numbers is not a finding: a reader cannot tell from '3-70% proportion'
+    which way the evidence points, or what varies across the range."""
+    sy=SYN.get(f"{a}|{organism}")
+    out=[]
+    if sy and "error" not in sy:
+        out.append(f'<p><span class="tag {DIRTAG.get(sy["direction"],"")}">{e(sy["direction"])}</span></p>')
+        out.append(f'<p>{e(sy["summary"])}</p>')
+        if sy.get("negative_controls_noted"):
+            out.append(f'<div class="caveat"><strong>Negative controls.</strong> '
+                       f'{e(sy["negative_controls_noted"])} These are designed to score low and are '
+                       f'excluded from the reading above.</div>')
+        if sy.get("why_range_is_wide"):
+            out.append(f'<p class="sub"><strong>What varies across the range:</strong> '
+                       f'{e(sy["why_range_is_wide"])}</p>')
+    out.append(f'<details><summary>Figures behind this row</summary>{evidence_cell(pm_set,organism)}</details>')
+    return "".join(out)
+
 # ---------------- landing page ----------------
 # An organism earns a row only if some figure is attributable to it. Reviews often name
 # every species they mention while reporting figures for a few; rows reading "no figure
@@ -209,7 +244,7 @@ for a in ASSESS_ORDER+[x for x in {k[0] for k in rows} if x not in ASSESS_ORDER]
         vtags="".join(vtag(k)+f"<span class='sub'>{v}</span> " for k,v in vs.most_common())
         b.append(f'<tr><td class="assess">{e(ASSESS_LABEL.get(a,a)) if i==0 else ""}</td>'
                  f'<td class="org">{e(o)}<br><span class="sub">{len(pms)} {"study" if len(pms)==1 else "studies"}</span>'
-                 f'<br>{vtags}</td><td>{evidence_cell(pms,o)}</td></tr>')
+                 f'<br>{vtags}</td><td>{evidence_synth(a,o,pms)}</td></tr>')
 b.append("</table></div>")
 extra={o:s_ for o,s_ in named_only.items() if not any(o==oo for _,oo in rows)}
 if extra:
@@ -226,6 +261,17 @@ for pm in sorted(OK, key=lambda p:-(DB[p].get("cited_by") or 0)):
              f'<td>{", ".join(e(o) for o in orgs_of(pm))}</td>'
              f'<td>{vtag(OK[pm]["verdict"])}</td><td>{e(DB[pm].get("cited_by"))}</td></tr>')
 b.append("</table></div>")
+
+AG=agreement()
+if AG:
+    b+=["<h2>How reliable are these verdicts?</h2>",
+     f'<p>Every study was independently re-judged by a second rater — a different model family, '
+     f'the same PDFs, the same rubric. The two agree on <strong>{AG["agree"]:.0%}</strong> of '
+     f'{AG["n"]} studies (Cohen&rsquo;s &kappa; = <strong>{AG["kappa"]:.2f}</strong>, moderate). '
+     f'Nearly all disagreements are one step apart, and the second rater is systematically more '
+     f'generous. Read a verdict as indicative and the numbers beneath it as the evidence; '
+     f'studies where the raters disagreed are marked on their pages. '
+     f'<a href="faq.html">More in the FAQ</a>.</p>']
 
 b+=["<h2>Method</h2>",
  "<p>Studies were found with a multi-strand PubMed search and citation chasing; neither "
@@ -261,7 +307,11 @@ for pm,v in OK.items():
       f'<p class="sub">{e(", ".join(md.get("authors_full") or d.get("authors") or []))}<br>'
       f'<em>{e(md.get("journal_full") or d.get("journal"))}</em> · {e(d.get("year"))} · '
       f'cited by {e(d.get("cited_by"))} · {" · ".join(ident)}</p>',
-      f'<p>{vtag(v["verdict"])} <span class="tag">{e(ASSESS_LABEL.get(arm(pm),arm(pm)))}</span>'
+      f'<p>{vtag(v["verdict"])}'
+      + (f'<span class="tag">second rater: {e(VERDICT_LABEL.get(RATER2[pm]["verdict"],""))}</span>'
+         if pm in RATER2 and "error" not in RATER2[pm]
+         and RATER2[pm]["verdict"]!=v["verdict"] else "")
+      + f'<span class="tag">{e(ASSESS_LABEL.get(arm(pm),arm(pm)))}</span>'
       + "".join(f'<span class="tag">{e(o)}</span>' for o in orgs_of(pm)) + "</p>",
       f'<div class="card"><strong>Verdict basis</strong><br>{e(v["verdict_basis"])}</div>']
     if v.get("base_rate_caveat"):
@@ -312,6 +362,20 @@ for pm,v in OK.items():
     open(os.path.join(OUT,"study",f"{pm}.html"),"w").write(page(d.get("title","Study")[:70],"".join(body),depth=1))
     json.dump({**d,"assessment":arm(pm),"organisms":orgs_of(pm),"answers":v,"metadata":md},
               open(os.path.join(OUT,"api","study",f"{pm}.json"),"w"),indent=1)
+
+import faq as _faq
+_ag=agreement() or {"agree":0,"kappa":0,"n":0}
+_ctx={"agree":_ag["agree"],"kappa":_ag["kappa"],"n_pairs":_ag["n"],"n_studies":len(OK),
+      "supports":verd["supports"],"partly":verd["partly-supports"],"not":verd["does-not-support"]}
+fb=["<h1>Questions about this work</h1>",
+    '<p class="lede">Answers to the questions collaborators ask first, including the ones that '
+    'cut against a favourable reading of the data.</p>']
+for q,paras in _faq.build(_ctx):
+    fb.append(f"<h2>{e(q)}</h2>"); fb.extend(paras)
+fb.append('<p class="sub">The protocol, search strings, every analysis script and a running list '
+          'of limitations are in the '
+          '<a href="https://github.com/rohitium/animal-model-concordance">repository</a>.</p>')
+open(os.path.join(OUT,"faq.html"),"w").write(page("FAQ","".join(fb)))
 
 json.dump({"updated":BUILT,"studies":len(OK),"comparisons":ncomp,
   "verdicts":dict(verd),"organisms":sorted({o for _,o in rows}),
