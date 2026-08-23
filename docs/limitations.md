@@ -378,3 +378,29 @@ stable than the positive end.
 
 **L56 — Excluded-study reasons rewritten in plain language.** They had been machine strings such
 as "r4: none-found — …" truncated mid-sentence.
+
+## Attribution and provenance (2026-08-22)
+
+**L57 — A figure with no species of its own was attributed to every organism the study named.**
+41% of extracted figures (377/925) carry no species. The old rule gave those to each organism
+the study mentioned, duplicating one result across up to eight rows: Martić-Kehl 2012's "3 of
+494 stroke interventions" appeared as evidence about dogs, rodents and primates alike, from a
+paper about none of them specifically. A species-less figure is now attributed only when the
+study examines exactly one organism. Table rows fell from 38 to 27.
+
+**L58 — Figures quoted from other papers were counted as the quoting paper's evidence.**
+206 of 925 figures (22%) are numbers taken from earlier work, usually while setting up a
+problem. All three of Martić-Kehl 2012's figures are of this kind, including the 3/494
+explicitly credited to Sena and colleagues. Counting them is wrong twice: the conditions
+belong to the original study, and where the original is also in this corpus the same number is
+counted twice. Provenance is now classified per figure — own result (556), re-analysis of
+others' data (162, which does count, since pooling published results is the reviewer's own
+work), cited from another study (206, which does not). Rows fell from 27 to 24.
+
+A keyword detector had found only 4% of the cited figures; the classification pass found 22%.
+Pattern-matching on phrases like "reported" and "et al." is not adequate for this.
+
+**L59 — Both defects were found by a reader checking one paper against the site.** Neither
+would have surfaced from internal consistency checks: the numbers were extracted correctly,
+carried correct verbatims and correct source locations, and simply meant something other than
+what the table asserted.

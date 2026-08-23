@@ -1,475 +1,298 @@
 {
- "disease-biology|rabbit": {
-  "summary": "Tarandovskiy et al. 2020: Rabbit thrombin and plasmin generation were substantially lower than humans \u2014 thrombin peak 71.6 nM (15% of human 484.3), thrombin production 14.93 nM/min (13% of human 111.5); plasmin peak 197.7 nM (43% of human 457.2), plasmin production 17.63 nM/min (51% of human 34.8). Authors note high variability in rabbit plasmin-generation (PG) curves.",
-  "direction": "evidence does not favour the model",
-  "key_numbers": [
-   "Thrombin peak 71.6 nM (vs human 484.3; 15%)",
-   "Thrombin production 14.93 nM/min (vs human 111.5; 13%)",
-   "Plasmin peak 197.7 nM (vs human 457.2; 43%)",
-   "Plasmin production 17.63 nM/min (vs human 34.8; 51%)"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
  "disease-biology|pig": {
-  "summary": "Mixed evidence: Tarandovskiy et al. 2020 found swine thrombin peak 242.35 nM (\u224850% of human 484.25; n=20) and thrombin production rate 93.6 nM/min (\u224884% of human 111.51), but plasmin was not detected in swine while human plasmin peak is 457.2 nM. Ranjan et al. 2025 cautions animal models vary in recapitulating human disease and highlights primates as more translatable, limiting pig applicability for human neurodevelopmental disease.",
+  "summary": "Tarandovskiy et al. 2020: swine thrombin partly tracked humans\u2014thrombin peak 242.35 nM (~50% of human 484.25) and production 93.6 nM/min (~84% of human 111.51), but swine produced no detectable plasmin. n=20; absent plasmin limits pig utility for fibrinolysis/disease-biology comparisons.",
   "direction": "mixed",
   "key_numbers": [
-   "Thrombin peak 242.35 nM (swine; human 484.25 nM; n=20)",
-   "Thrombin production rate 93.6 nM/min (swine; human 111.51 nM/min; n=20)",
-   "Plasmin peak not detected in swine (human 457.2 nM)"
+   "Thrombin peak 242.35 nM (~50% of human 484.25, n=20)",
+   "Thrombin production rate 93.6 nM/min (~84% of human 111.51, n=20)",
+   "Plasmin peak: not detected (human 457.20 nM, n=20)",
+   "Plasmin production rate: not detected (human 34.80 nM, n=20)"
   ],
   "why_range_is_wide": null,
   "negative_controls_noted": null
  },
  "disease-biology|horse": {
-  "summary": "Oreff et al. 2021: horse tenocytes match human gene-expression under transient inflammation (Mahalanobis 9.59) and approximate human wound-closure kinetics (migration slope diff 0.0133 vs human, healthy). However they diverge in proliferation under healthy conditions (slope diff 0.3000, p<2e-16).",
+  "summary": "Evidence is mixed: horse tenocyte gene expression best matches human under transient inflammation (Mahalanobis 9.59) but is farther under healthy (23.05) and constant inflammation (12.97). Proliferation difference is large in healthy (slope 0.3000, p<2e-16) but negligible in transient inflammation (slope 0.0233, p=0.49).",
   "direction": "mixed",
   "key_numbers": [
-   "Mahalanobis=9.59 (gene-expression, transient inflammation)",
-   "Mahalanobis=23.05 (gene-expression, healthy)",
-   "Proliferation slope diff=0.3000 vs human (healthy; p<2e-16)",
-   "Migration slope diff=0.0132563 vs human (healthy; p=0.00375)",
-   "Mahalanobis=4.65 (MMP genes)"
+   "9.59 \u2014 Mahalanobis distance to human (all genes, transient inflammation)",
+   "23.05 \u2014 Mahalanobis distance to human (all genes, healthy)",
+   "12.97 \u2014 Mahalanobis distance to human (all genes, constant inflammation)",
+   "0.3000 \u2014 proliferation slope difference to human (healthy; p<2e-16)",
+   "0.0233 \u2014 proliferation slope difference to human (transient inflammation; p=0.4868)"
   ],
-  "why_range_is_wide": "Similarity depends on inflammatory state (closer under transient inflammation: Mahalanobis 9.59 vs 23.05 in healthy).",
-  "negative_controls_noted": null
- },
- "disease-biology|c. elegans": {
-  "summary": "Zong et al. 2023: C. elegans shows modest transcriptomic resemblance to human inflammatory disease\u2014most within-stage cross\u2011species genome\u2011wide c-scores >0.1, though some pairs were lower (ce.lar\u2013dm.lar c=0.087). Human\u2013human c-scores reached up to 0.52 and some human pairs were \u22480, so similarity varies by comparison.",
-  "direction": "mixed",
-  "key_numbers": [
-   "most cross\u2011species within-stage genome-wide c-scores >0.1",
-   "ce.lar\u2013dm.lar c-score = 0.087",
-   "median c-score in pathway hsa04662 (HI1 vs HI2) = 0.31",
-   "human\u2013human genome-wide c-scores up to 0.52",
-   "some human comparisons c \u2248 0 (HL, HA)"
-  ],
-  "why_range_is_wide": "Scores vary by which stage pairs, which specific pathway, and which human inflammatory studies are compared.",
-  "negative_controls_noted": null
- },
- "disease-biology|d. melanogaster": {
-  "summary": "Evidence shows D. melanogaster has low cross-species transcriptome resemblance in disease-related comparisons (Zong et al. 2023): most within-stage Drosophila\u2013C. elegans genome-wide c-scores were >0.1, but one ce.lar\u2013dm.lar pairing was 0.087. The study reports mainly invertebrate cross-species comparisons, not direct Drosophila\u2013human matches.",
-  "direction": "too little evidence",
-  "key_numbers": [
-   "c-score >0.1 \u2014 most within-stage Drosophila\u2013C. elegans comparisons",
-   "c-score = 0.087 \u2014 ce.lar\u2013dm.lar pairing"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
- "disease-biology|mouse": {
-  "summary": "Evidence is mixed: Seok et al. 2013 found very low whole\u2011transcriptome concordance (R^2 \u22640.09, mouse vs human), whereas Takao et al. 2015 reported moderate\u2013strong similarity (Spearman 0.43\u20130.68; 77\u201393% genes same direction). Disease\u2011 and method\u2011specific studies (Asgharpour et al. 2016 FDR 0.02; Holland et al. 2022 recall 0.40) show better but variable alignment.",
-  "direction": "mixed",
-  "key_numbers": [
-   "R^2 \u22640.09 \u2014 correlation of gene expression changes (mouse vs human) (Seok et al. 2013)",
-   "Spearman 0.43\u20130.68 \u2014 rank correlation of gene fold\u2011changes (human vs mouse) (Takao et al. 2015)",
-   "77\u201393% \u2014 genes changed in same direction between human and mouse (Takao et al. 2015)",
-   "FDR 0.02 \u2014 transcriptomic concordance between mouse model and human NASH (Asgharpour et al. 2016)",
-   "Recall 0.40 \u2014 12\u2011month CCl4 mouse model detected 40% of genes altered in human CLD (Holland et al. 2022)"
-  ],
-  "why_range_is_wide": "Ranges reflect different diseases, analysis choices and thresholds (whole\u2011transcriptome vs top/filtered genes), and model conditions/duration.",
+  "why_range_is_wide": "Similarity varies by inflammatory state (healthy vs transient vs constant inflammation).",
   "negative_controls_noted": null
  },
  "disease-biology|non-human primate": {
-  "summary": "Evidence is mixed: NHPs mirror some human physiology (baboon thrombin peak 434 nM vs human 484 nM; plasmin peak 546\u2013566 nM vs human 457 nM). However, across disease studies animals overpredicted benefit (67\u201380% NHP trials improved vs 32% human) and animal PD models found 10% vs 36% human PD genes.",
+  "summary": "Tarandovskiy et al. 2020: baboon and rhesus thrombin measures closely matched human values (thrombin peak 434 nM and 399 nM vs human 484 nM; thrombin production 124 and 111 nM/min vs 111.5 nM/min). However plasmin production rates were substantially higher (baboon 90.8 vs human 34.8 nM/min).",
+  "direction": "evidence favours the model",
+  "key_numbers": [
+   "Baboon thrombin peak 433.78 nM (human 484.25 nM)",
+   "Rhesus thrombin peak 398.95 nM (human 484.25 nM)",
+   "Baboon thrombin production 124.22 nM/min (human 111.51 nM/min)",
+   "Rhesus thrombin production 111.22 nM/min (human 111.51 nM/min)",
+   "Baboon plasmin production 90.81 nM/min (human 34.80 nM/min)"
+  ],
+  "why_range_is_wide": "Different metrics diverge: thrombin parameters approximate human values while plasmin generation\u2014especially production rate\u2014is much higher in primates.",
+  "negative_controls_noted": null
+ },
+ "disease-biology|d. melanogaster": {
+  "summary": "Zong et al. 2023: genome-wide transcript concordance between D. melanogaster and C. elegans exceeded c=0.1 for most within-stage comparisons (modest cross-species similarity); one larval pair (ce.lar\u2013dm.lar) had c=0.087. Links to human disease are indirect, so translation is limited.",
   "direction": "mixed",
   "key_numbers": [
-   "67\u201380% of non-human primate trials reported improvement with disease-modifying interventions",
-   "32% of human trials showed clinical improvement",
-   "Baboon thrombin peak 433.78 nM vs human 484.25 nM",
-   "Plasmin peak 546.26\u2013565.84 nM in baboon/rhesus vs human 457.20 nM",
-   "10% of PD-associated genes identified in animal-model meta-analysis vs 36% in human studies"
+   "most within-stage Drosophila\u2013C. elegans genome-wide c-scores >0.1",
+   "ce.lar\u2013dm.lar genome-wide c-score = 0.087"
   ],
-  "why_range_is_wide": "Ranges reflect different NHP species, assays and trial subsets (e.g., 67\u201380% across NHP trial subsets; 546\u2013566 nM plasmin across baboon vs rhesus).",
+  "why_range_is_wide": null,
+  "negative_controls_noted": null
+ },
+ "disease-biology|rabbit": {
+  "summary": "Tarandovskiy et al. 2020: rabbit thrombin peak 71.6 nM (~15% of human 484.25 nM) and thrombin production 14.9 nM/min (~13% of human 111.51), while plasmin peak 197.7 nM (~43% of human 457.20) and plasmin production 17.6 nM/min (~51% of human 34.80). Rabbit curves were highly variable, so alignment with human coagulation is mixed.",
+  "direction": "mixed",
+  "key_numbers": [
+   "71.6 nM thrombin peak (rabbit) = 15% of human 484.25 nM",
+   "14.9 nM/min thrombin production (rabbit) = 13% of human 111.51 nM/min",
+   "197.7 nM plasmin peak (rabbit) = 43% of human 457.20 nM",
+   "17.6 nM/min plasmin production (rabbit) = 51% of human 34.80 nM/min"
+  ],
+  "why_range_is_wide": "Different coagulation metrics diverge: thrombin measures are much lower than human while plasmin measures are nearer human values, and rabbit curves showed high variability.",
+  "negative_controls_noted": null
+ },
+ "disease-biology|c. elegans": {
+  "summary": "Zong et al. 2023: C. elegans shows modest, inconsistent concordance with disease-related expression\u2014most C. elegans\u2013Drosophila within-stage genome-wide c-scores >0.1, but one pair (ce.lar\u2013dm.lar) was 0.087. Findings vary by stage pairings.",
+  "direction": "mixed",
+  "key_numbers": [
+   ">0.1: genome-wide c-score for most C. elegans\u2013Drosophila within-stage comparisons (Zong et al. 2023)",
+   "0.087: genome-wide c-score for ce.lar\u2013dm.lar (Zong et al. 2023)"
+  ],
+  "why_range_is_wide": "Varies by developmental stage pairings\u2014most within-stage comparisons exceed 0.1 but specific pairs (e.g., ce.lar\u2013dm.lar) are lower (0.087).",
   "negative_controls_noted": null
  },
  "disease-biology|rat": {
-  "summary": "Evidence is mixed: rats recapitulate many systemic and behavioral disease features \u2014 e.g., 26/30 blood biochemistry changes post\u2011exercise matched humans (magnitude 7.9% vs 7.3%; Goutianos et al. 2015) and cognitive/EEG markers paralleled human patterns (Der\u2011Avakian et al. 2025). However, transcriptomic concordance in Parkinson's models was negative (average concordance \u22120.04) and animal meta\u2011analysis recovered 10% vs 36% PD\u2011associated genes in humans (Oerton et al. 2017).",
+  "summary": "Evidence is mixed: rats mirror human biology in some domains (26/30 blood variables changed same way post-exercise, Goutianos et al. 2015; behavioral/electrophysiological correlations, Der-Avakian et al. 2025) but not others (\u224850% transcriptome DEG alignment, Vacca et al. 2024; lower thrombin/plasmin peaks vs human, Tarandovskiy et al. 2020). A CDAA-fed rat MASLD model had MHPS = 0.941 for MASH-fibrosis (Vacca et al. 2024).",
   "direction": "mixed",
   "key_numbers": [
-   "26/30 blood biochemical variables matched direction after exercise (Goutianos et al. 2015)",
-   "Magnitude of uniform changes: 7.9% in rats vs 7.3% in humans (Goutianos et al. 2015)",
-   "Average concordance of differential gene expression in rat PD models: \u22120.04 (Oerton et al. 2017)",
-   "Animal meta-analysis captured 10% of PD-associated genes vs 36% in human studies (Oerton et al. 2017)",
-   "Rat thrombin peak 270 nM vs human 484 nM (Tarandovskiy et al. 2020)"
+   "26/30 blood variables changed toward same direction after exercise (Goutianos et al. 2015)",
+   "1/19 biomarkers showed species\u00d7exercise interaction (Veskoukis et al. 2016)",
+   "\u224850% whole-transcriptome DEG alignment with humans (Vacca et al. 2024)",
+   "MHPS = 0.941 for CDAA-fed rat MASH-fibrosis (Vacca et al. 2024)",
+   "Rat thrombin peak 270.28 nM vs human 484.25 nM (Tarandovskiy et al. 2020)"
   ],
-  "why_range_is_wide": "Alignment varies strongly by domain (transcriptomics vs systemic biochemistry vs behavior vs coagulation), model type and measured endpoints.",
+  "why_range_is_wide": null,
   "negative_controls_noted": null
  },
  "disease-biology|sheep": {
-  "summary": "Oreff et al. 2021: Sheep tenocyte gene-expression and proliferation match human responses mainly under constant inflammation (Mahalanobis 8.94; proliferation slope diff -0.0878, p=0.009) but are less similar when healthy (Mahalanobis 24.78) and only borderline under transient inflammation. Data are from three biological replicates per species.",
+  "summary": "Oreff et al. 2021 found sheep tenocytes matched human tenocytes mainly under constant inflammation (Mahalanobis 8.94) but diverged under healthy conditions (Mahalanobis 24.78); MMP genes were relatively close (8.6) while inflammatory mediators were farther (18.51). n=3 biological replicates/species; some slope differences were small but significant (proliferation diff \u22120.0878, p=0.009).",
   "direction": "mixed",
   "key_numbers": [
-   "Mahalanobis distance to human (all genes) \u2014 healthy: 24.78",
-   "Mahalanobis distance to human (all genes) \u2014 transient inflammation: 10.62",
-   "Mahalanobis distance to human (all genes) \u2014 constant inflammation: 8.94",
-   "Proliferation slope difference to human \u2014 constant inflammation: -0.0878 (p=0.009)",
-   "Biological replicates per species: 3"
+   "Mahalanobis 8.94 \u2014 all genes under constant inflammation",
+   "Mahalanobis 24.78 \u2014 all genes under healthy conditions",
+   "Mahalanobis 8.6 \u2014 MMPs (MMP1, MMP3, MMP13)",
+   "Mahalanobis 18.51 \u2014 inflammatory mediators (COX2, IL6)",
+   "Proliferation slope difference \u22120.0878 vs human under constant inflammation (p=0.009)"
   ],
-  "why_range_is_wide": "Similarity varies by inflammatory condition: sheep are least similar when healthy and most similar under constant inflammation.",
-  "negative_controls_noted": null
- },
- "efficacy|dog": {
-  "summary": "Marti\u0107-Kehl et al. 2012 found animal efficacy often did not predict human outcomes: fewer than 50% of animal studies predicted human results and only 3 of 494 animal-positive acute ischemic stroke interventions showed convincing patient benefit. Findings aggregate multiple species and indications, not dogs alone.",
-  "direction": "evidence does not favour the model",
-  "key_numbers": [
-   "<50% of animal studies predicted human outcomes",
-   "3 of 494 animal-positive stroke interventions showed convincing patient benefit"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
- "efficacy|cattle": {
-  "summary": "Pound et al. 2018: animal\u2013human concordance in cattle was mixed \u2014 2 interventions (bisphosphonates, thrombolytics) concordant, 3 (corticosteroids, Tirilazad, antifibrinolytics) discordant and 1 partially concordant (antenatal corticosteroids). Under Bateson's Cube <7% of studies were permissible and some concordant results involved high animal suffering.",
-  "direction": "mixed",
-  "key_numbers": [
-   "<7% studies permissible (Bateson's Cube)",
-   "2 interventions concordant (bisphosphonates, thrombolytics)",
-   "3 interventions discordant (corticosteroids, Tirilazad, antifibrinolytics)",
-   "1 intervention partially concordant (antenatal corticosteroids)"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
- "disease-biology|rodent": {
-  "summary": "Evidence shows rodent disease models often report preclinical benefit that does not mirror human outcomes: 90% of mouse and 95% of rat preclinical trials reported apparent improvement versus 32% of human trials (Marshall et al. 2023). A large analysis found only 43% predictivity of rodents for humans and poor-to-absent mouse\u2013human correlation across inflammation, sepsis, burns, trauma and infection (Leist et al. 2013).",
-  "direction": "evidence does not favour the model",
-  "key_numbers": [
-   "90% of mouse preclinical trials showed apparent improvement (Marshall et al. 2023)",
-   "95% of rat preclinical trials showed apparent improvement (Marshall et al. 2023)",
-   "32% of human trials showed clinical improvement (Marshall et al. 2023)",
-   "43% predictivity of rodents for humans in toxicology (Leist et al. 2013)"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
- "efficacy|cat": {
-  "summary": "Evidence is mixed: thrombolytics (tPA) in animals reduced infarct volume by 24% and improved neurobehaviour by 23% and matched clinical benefit, while corticosteroids (animal pooled OR 0.58) and tirilazad (infarct \u221229%, behaviour +48%) showed animal benefit but not in humans. Only <7% of studies met permissibility (Bateson's Cube) and several concordant studies involved high animal suffering.",
-  "direction": "mixed",
-  "key_numbers": [
-   "Corticosteroids: pooled OR 0.58 for adverse functional outcome in animals (no clinical benefit)",
-   "Thrombolysis (tPA): infarct volume \u221224% in animals",
-   "Thrombolysis (tPA): neurobehavioural +23% in animals (matched clinical benefit)",
-   "Tirilazad: infarct \u221229% and neurobehaviour +48% in animals (no clinical benefit)",
-   "<7% of studies permissible by Bateson's Cube"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
- "efficacy|non-rodent": {
-  "summary": "Study reports toxicity concordance: non\u2011rodent liver concordance 40% (n=951) and animal data predicted 48% of adverse drug reactions (n=1,256); overall concordance across species was 71% (n=221). These are toxicity metrics and do not assess efficacy, so they provide too little evidence to judge non\u2011rodents for efficacy.",
-  "direction": "too little evidence",
-  "key_numbers": [
-   "40% \u2014 concordance of liver effects between non\u2011rodents and humans (n=951)",
-   "48% \u2014 adverse drug reactions predicted from animal data (n=1,256)",
-   "71% \u2014 concordance between animals and humans when all species considered (n=221 human toxicity events)"
-  ],
-  "why_range_is_wide": "Numbers refer to different analyses/endpoints: 40% is non\u2011rodent liver concordance, 71% is concordance across all species.",
-  "negative_controls_noted": null
- },
- "efficacy|non-human primate": {
-  "summary": "Evidence is mixed: some NHP results tracked clinical outcomes (thrombolysis: 24% infarct reduction and 23% neurobehavioural gain in animal models \u2014 Perel et al. 2007; HED overlap 84% \u2014 Ferreira et al. 2023), but many did not (3/494 stroke interventions; 100% AIDS\u2011vaccine failure \u2014 Marti\u0107\u2011Kehl et al. 2012).",
-  "direction": "mixed",
-  "key_numbers": [
-   "24% infarct-volume reduction with thrombolysis in animal models (Perel et al. 2007)",
-   "23% neurobehavioural improvement with thrombolysis in animal models (Perel et al. 2007)",
-   "84% average HED overlap between preclinical and clinical active ranges (Ferreira et al. 2023)",
-   "3/494 animal-positive acute ischaemic stroke interventions translated to convincing patient benefit (Marti\u0107\u2011Kehl et al. 2012)",
-   "100% prediction failure for AIDS-vaccine development in chimpanzee/macaque models (Marti\u0107\u2011Kehl et al. 2012)"
-  ],
-  "why_range_is_wide": "Findings vary by intervention class and outcome (e.g., thrombolytics and bisphosphonates translated, whereas vaccines and many neuroprotectants did not).",
-  "negative_controls_noted": null
- },
- "efficacy|pig": {
-  "summary": "Evidence is mixed: pig efficacy studies agreed with human outcomes for bisphosphonates and thrombolytics but disagreed for corticosteroids, Tirilazad and antifibrinolytics, while antenatal corticosteroids were partially concordant; only 7% of studies were permissible by Bateson's Cube. Concordance and permissibility depended on the intervention and on animal suffering severity (moderate studies were permissible; severe were not).",
-  "direction": "mixed",
-  "key_numbers": [
-   "7% of studies were permissible by Bateson's Cube",
-   "2 interventions concordant with humans (bisphosphonates, thrombolytics)",
-   "3 interventions discordant with humans (corticosteroids, Tirilazad, antifibrinolytics)",
-   "1 intervention partially concordant (antenatal corticosteroids)"
-  ],
-  "why_range_is_wide": "Concordance varies by intervention and by experiment severity/animal suffering.",
+  "why_range_is_wide": "Similarity shifts with inflammatory state (healthy vs transient vs constant) and varies by gene set.",
   "negative_controls_noted": null
  },
  "efficacy|mouse": {
-  "summary": "Evidence is mixed: some mouse findings translated (thrombolysis reduced infarct volume 24% and bisphosphonates raised hip BMD 11% \u2014 Perel et al. 2007). But many did not\u2014Perrin et al. 2014 found 11/12 ALS candidates failed in clinic and Pan et al. 2020 reported AUC 0.45 for TGI.",
-  "direction": "mixed",
-  "key_numbers": [
-   "24% reduction in infarct volume in animal thrombolysis studies (Perel et al. 2007)",
-   "11% increase in hip bone mineral density with alendronate in animals (Perel et al. 2007)",
-   "11/12 ALS experimental treatments that reached humans failed clinically (Perrin et al. 2014)",
-   "AUC 0.45 for tumor growth inhibition in mice to predict drug approval (Pan et al. 2020)"
-  ],
-  "why_range_is_wide": "Translation varies by intervention, indication and study quality (e.g. published positive ALS studies vs rigorous ALS TDI null results).",
-  "negative_controls_noted": null
- },
- "efficacy|rat": {
-  "summary": "Evidence is mixed: rats predicted clinical efficacy for some interventions (thrombolysis reduced infarct volume 24% and improved neurobehaviour 23%; three alcohol medications originated from rat models) but failed for others (corticosteroids: animal OR 0.58 yet no human benefit; tirilazad: 29% infarct reduction in rats but clinical failure). Translation varies by drug class\u2014bisphosphonates and thrombolytics were concordant, several CNS candidates were not.",
-  "direction": "mixed",
-  "key_numbers": [
-   "24% reduced infarct volume (rats, thrombolysis)",
-   "23% improved neurobehaviour (rats, thrombolysis)",
-   "OR 0.58 for adverse outcome (rats, corticosteroids) \u2014 no benefit in humans",
-   "29% reduced infarct volume (rats, tirilazad) \u2014 clinical failure",
-   "3 medications (acamprosate, naltrexone, nalmefene) developed from rat models"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
- "efficacy|rabbit": {
-  "summary": "Evidence is mixed: some rabbit results tracked human efficacy (thrombolysis and bisphosphonates), e.g. thrombolysis in animals reduced infarct volume by 24% and improved neurobehaviour by 23%. Other interventions were discordant\u2014corticosteroids showed animal benefit (pooled OR 0.58) but no clinical benefit; tirilazad reduced infarct 29% in animals yet failed clinically.",
-  "direction": "mixed",
-  "key_numbers": [
-   "Thrombolysis: infarct \u221224% (animals)",
-   "Thrombolysis: neurobehaviour +23% (animals)",
-   "Corticosteroids: pooled OR 0.58 for adverse outcome (animals) \u2014 no clinical benefit",
-   "Tirilazad: infarct \u221229% and neurobehaviour +48% (animals) \u2014 discordant clinically"
-  ],
-  "why_range_is_wide": "Effect direction and size vary by intervention (thrombolytics and bisphosphonates concordant; corticosteroids, tirilazad and antifibrinolytics discordant).",
-  "negative_controls_noted": null
- },
- "efficacy|sheep": {
-  "summary": "Sheep data are mixed: bisphosphonates raised bone density (alendronate +11.0% hip, +8.5% spine) and thrombolysis reduced infarct volume (\u221224%) and improved behaviour (+23%), but antenatal corticosteroids increased neonatal mortality in ewes (OR 12.5). The mortality estimate is based on seven ewe experiments and many efficacy studies involved high animal suffering, limiting permissibility.",
-  "direction": "mixed",
-  "key_numbers": [
-   "OR 12.5 neonatal mortality in ewe models",
-   "+11.0% hip BMD (alendronate)",
-   "+8.5% lumbar spine BMD (alendronate)",
-   "\u221224% infarct volume (tPA)",
-   "+23% neurobehaviour improvement (tPA)"
-  ],
-  "why_range_is_wide": "The large CI for the ewe mortality OR reflects pooling of only seven ewe experiments with small sample sizes.",
-  "negative_controls_noted": null
- },
- "safety-pharmacology|non-rodent": {
-  "summary": "Baldrick et al. 2021 report non-rodent safety\u2011pharmacology does not reliably predict clinical proarrhythmic risk: a stand\u2011alone hERG assay showed little correlation to animal data, while non\u2011rodent telemetry detected QTc effects in \u224810% of studies. However, the authors note in vivo telemetry can still be useful for identifying QTc effects and supporting safe clinical entry.",
+  "summary": "Pan et al. 2020: mouse tumor-growth-inhibition (TGI) did not predict clinical approval\u2014median TGI 0.74 for approved vs 0.77 for failed drugs and AUC=0.45 for predicting approval; odds ratios for higher TGI quartiles vs lowest were 0.74\u20130.90 and non-significant. Comparisons are limited by few approved drugs and variable TGI measurement across studies.",
   "direction": "evidence does not favour the model",
   "key_numbers": [
-   "\u224810% \u2014 non\u2011rodent telemetry studies detected QTc effects (Baldrick et al. 2021)",
-   "Little correlation \u2014 hERG assay (including low IC50 \u22641 \u00b5M) to animal cardiovascular data (Baldrick et al. 2021)"
+   "Median TGI 0.74 (approved drugs)",
+   "Median TGI 0.77 (failed drugs)",
+   "AUC = 0.45 for TGI predicting approval",
+   "OR = 0.74\u20130.90 for Q2\u2013Q4 vs Q1 (all <1)",
+   "P-trend = 0.636 (no association)"
   ],
-  "why_range_is_wide": null,
+  "why_range_is_wide": "OR range reflects separate comparisons of TGI quartiles Q2\u2013Q4 versus Q1.",
   "negative_controls_noted": null
  },
- "safety-pharmacology|dog": {
-  "summary": "Dog safety studies broadly track human cardiac and BP/HR effects: dog QTc AUC \u22480.81 (Pollard et al. 2017), 91% of human QT\u2011prolongers also prolonged QT in animals (Valentin et al. 2022), and combined BP/HR sensitivity/specificity were 78%/79% (Bhatt et al. 2019). However, overall discordance was 31% and nonclinical false\u2011negatives among TQT\u2011positive drugs reached 65% (Valentin et al. 2022); assay sensitivity varies by assay and exposure.",
+ "disease-biology|mouse": {
+  "summary": "Evidence is mixed: some mouse\u2013human transcriptome comparisons agree (Takao et al. 2015: Spearman r 0.43\u20130.68; 77\u201393% genes same direction), but others show near\u2011zero genome\u2011wide concordance (Seok et al. 2013: R^2 \u22640.09; Kodamullil et al. 2017: 12% genes mimicked).",
   "direction": "mixed",
   "key_numbers": [
-   "0.81 \u2014 dog QTc AUC concordance with clinical QTc (Pollard et al. 2017)",
-   "91% \u2014 drugs that prolonged QT in humans also prolonged QT in animals (Valentin et al. 2022)",
-   "65% \u2014 nonclinical false negatives among TQT\u2011positive drugs (Valentin et al. 2022)",
-   "31% \u2014 overall discordance between nonclinical and clinical data (Valentin et al. 2022)",
-   "78%/79% \u2014 combined BP/HR sensitivity and specificity large animal\u2192human (Bhatt et al. 2019)"
+   "R^2 \u22640.09 \u2014 genome-wide correlation human vs mouse gene-expression changes (Seok et al. 2013)",
+   "47\u201363% \u2014 genes changing in same direction human vs mouse (Seok et al. 2013)",
+   "0.43\u20130.68 \u2014 Spearman r for human vs mouse fold-changes (Takao et al. 2015)",
+   "77\u201393% \u2014 genes changing same direction human vs mouse (Takao et al. 2015)",
+   "12% \u2014 human-deregulated genes mimicked by mouse models (Kodamullil et al. 2017)"
   ],
-  "why_range_is_wide": "Sensitivity varies by assay type and exposure multiple (e.g., hERG/in vivo QTc 50\u201357% at 30\u00d7 vs APD 19%).",
-  "negative_controls_noted": "Sadko et al. 2024 included a mock/vehicle negative control that produced no QTc change in dogs."
+  "why_range_is_wide": "Ranges arise from different models, thresholds, timepoints and whether analyses use genome-wide vs pathway/leading\u2011edge gene sets.",
+  "negative_controls_noted": "Seok et al. 2013 notes the 'same direction' metric has a ~50% random baseline."
  },
  "efficacy|rodent": {
-  "summary": "Most studies show poor translation of rodent efficacy to humans: <8% of cancer drugs entering trials translated (Mak et al. 2014) and 3 of 494 animal\u2011positive stroke interventions worked in patients (Marti\u0107\u2011Kehl et al. 2012). Some exceptions exist\u2014Ferreira et al. 2023 found 84% HED overlap and Spanagel 2017/Sembach 2021 cite specific drug successes\u2014but selective sampling and publication bias limit generalisability.",
+  "summary": "Rodent efficacy findings did not reliably predict clinical efficacy: O'Collins et al. 2006 found similar mean neuroprotection in focal ischemia for drugs tested only in animals (24.4%) and drugs used clinically (31.3%, p>0.05), and translation rates ranged 0\u2013100% (Ritskes\u2011Hoitinga et al. 2022). Many preclinical studies (82%) reported positive findings, suggesting publication/selection bias.",
   "direction": "evidence does not favour the model",
   "key_numbers": [
-   "<8% \u2014 successful translation of animal cancer studies to clinical trials (Mak et al. 2014)",
-   "3 of 494 \u2014 animal\u2011positive stroke interventions effective in patients (Marti\u0107\u2011Kehl et al. 2012)",
-   "84% \u2014 overlap of preclinical and clinical pharmacologically active HED ranges (Ferreira et al. 2023)",
-   "82% \u2014 preclinical studies in investigator brochures reported positive findings (Ritskes\u2011Hoitinga et al. 2022)",
-   "62% \u2014 focal ischemia experimental results superior to control in animals (O'Collins et al. 2006)"
+   "24.4% mean improvement in focal models for drugs tested only in animals (n=351)",
+   "31.3% mean improvement in focal models for drugs also used clinically (n=66)",
+   "62% of focal ischemia results were superior to control (animal studies)",
+   "82% of preclinical animal studies reported positive findings",
+   "0\u2013100% range of reported translation rates from animal to human studies"
   ],
-  "why_range_is_wide": "Estimates vary by disease area, outcome measured, and study selection (e.g., small/selected IB samples and publication/selective\u2011reporting bias).",
+  "why_range_is_wide": "Translation rates came from heterogeneous studies and outcomes across reviews and were affected by publication bias and selective reporting.",
+  "negative_controls_noted": null
+ },
+ "efficacy|non-rodent": {
+  "summary": "Leenaars et al. 2019 provides no direct efficacy data; for toxicity it reports non\u2011rodent\u2192human concordance for liver effects 40% (n=951) and that animal data predicted 48% of 221 human adverse drug reactions. They also report 71% concordance when all species are pooled and state predictivity is higher for non\u2011rodents than rodents.",
+  "direction": "too little evidence",
+  "key_numbers": [
+   "40% \u2014 concordance of liver effects (non\u2011rodent\u2192human; n=951)",
+   "48% \u2014 proportion of human adverse drug reactions predicted from animal data (221 events)",
+   "71% \u2014 concordance when all species considered"
+  ],
+  "why_range_is_wide": "The 71% figure pools all species; 40% is the non\u2011rodent-specific concordance for liver effects.",
   "negative_controls_noted": null
  },
  "safety-pharmacology|non-human primate": {
-  "summary": "Evidence is mixed: NHPs recapitulated a clinical QTc change for moxifloxacin (10.9 ms vs ~10 ms in humans; Sadko et al. 2024) and 91% of human-QT\u2013prolonging drugs also prolonged in animals, but 31% of 150 drugs were discordant (Valentin et al. 2022). Large-animal to human BP/HR concordance was reasonable (sensitivity 78%, specificity 79%; Bhatt et al. 2019), though assay sensitivity varies by endpoint and exposure multiple.",
-  "direction": "mixed",
+  "summary": "Evidence shows NHP cardiovascular safety findings largely track human results: Bhatt et al. 2019 \u2014 combined BP+HR sensitivity 78%, specificity 79% (NPV 92%), though HR-only sensitivity was 54%. Sadko et al. 2024 found NHP moxifloxacin QTc +10.9 ms (vs ~10 ms in humans).",
+  "direction": "evidence favours the model",
   "key_numbers": [
-   "91% of human-QT\u2013prolonging drugs also prolonged QT in animals (Valentin et al. 2022)",
-   "31% discordant (47/150) between nonclinical and clinical QT (Valentin et al. 2022)",
-   "10.9 ms QTc increase in NHP for moxifloxacin (~10 ms in humans) (Sadko et al. 2024)",
-   "78% sensitivity for combined BP/HR large animal\u2192human (Bhatt et al. 2019)",
-   "79% specificity for combined BP/HR large animal\u2192human (Bhatt et al. 2019)"
+   "78% sensitivity \u2014 large animal to human (combined BP+HR)",
+   "79% specificity \u2014 large animal to human (combined BP+HR)",
+   "92% negative predictive value \u2014 combined BP+HR",
+   "54% sensitivity \u2014 large animal to human (HR only)",
+   "10.9 ms QTc increase \u2014 NHP moxifloxacin (matches ~10 ms in humans)"
   ],
-  "why_range_is_wide": "Results vary by endpoint, assay type and exposure multiple (e.g., hERG/in vivo QTc sensitivity rose to ~50\u201357% at 30\u00d7 while APD stayed ~19%; Valentin et al. 2022).",
-  "negative_controls_noted": "Sadko et al. 2024 included a mock drug negative control showing no QTc increase up to 3\u00d7 clinical concentration."
- },
- "safety-pharmacology|pig": {
-  "summary": "Valentin et al. 2022: nonrodent (including pig) QT findings partly tracked clinical QT\u201469% concordant (31% discordant, 47/150); 91% of human QT\u2011prolongers and 88% of human non\u2011prolongers matched animal results. However, sensitivity varied by assay (hERG 50%; in vivo QTc 57% at 30x; APD 19%) and 65% of TQT\u2011positives were nonclinical false negatives.",
-  "direction": "mixed",
-  "key_numbers": [
-   "31% discordant (47/150 drugs)",
-   "91% of human QT\u2011prolonging drugs matched animal findings",
-   "88% of human non\u2011prolonging drugs matched animal findings",
-   "hERG sensitivity 50% at 30x; in vivo QTc sensitivity 57% at 30x; APD sensitivity 19% at 30x",
-   "65% nonclinical false negatives among TQT\u2011positive drugs (28/43)"
-  ],
-  "why_range_is_wide": "Performance varies by assay type and by exposure multiple (results reported at 30x exposure).",
-  "negative_controls_noted": null
- },
- "safety-pharmacology|rabbit": {
-  "summary": "Valentin et al. 2022: rabbit/nonrodent QT findings partially tracked humans \u2014 91% of human-QT\u2011prolonging drugs also prolonged QT in animals and 88% of non\u2011prolongers had no animal effect, but 31% (47/150) of drugs were discordant. Crucially, 65% of TQT\u2011positive drugs were nonclinical false negatives and assay sensitivity at 30x was only 50\u201357%.",
-  "direction": "mixed",
-  "key_numbers": [
-   "91% \u2014 of drugs that prolonged QT in humans also prolonged QT in animals",
-   "88% \u2014 of drugs that did not prolong QT in humans had no animal effect",
-   "31% (47/150) \u2014 overall discordance between nonclinical and clinical QT findings",
-   "65% \u2014 of TQT-positive drugs were nonclinical false negatives (discordant)",
-   "50\u201357% \u2014 sensitivity of hERG and in vivo QTc assays at 30x exposure"
-  ],
-  "why_range_is_wide": "Performance varies by assay type (hERG, in vivo QTc, APD) and by exposure multiple.",
-  "negative_controls_noted": null
- },
- "toxicology|mouse": {
-  "summary": "Mouse toxicology translates inconsistently to humans: PPV 0.57 (all grades) and 0.43 (grade 3\u20134) vs NPV 0.81 for grade 3\u20134 (Atkins et al. 2020), iNLR 1.39 (Bailey et al. 2015), though mouse cardiac LR+ = 5.29 (Clark et al. 2018). Performance varies by organ class and severity.",
-  "direction": "mixed",
-  "key_numbers": [
-   "0.57 PPV for all toxicity grades (Atkins et al. 2020)",
-   "0.43 PPV for grade 3\u20134 toxicities (Atkins et al. 2020)",
-   "0.81 NPV for grade 3\u20134 toxicities (Atkins et al. 2020)",
-   "1.39 iNLR mouse\u2192human (Bailey et al. 2015)",
-   "5.29 LR+ for mouse cardiac disorders (Clark et al. 2018)"
-  ],
-  "why_range_is_wide": "Variation arises from organ class and toxicity severity: some endpoints (e.g. cardiac) show high LR+ while overall selectivity and iNLR remain low.",
-  "negative_controls_noted": null
- },
- "safety-pharmacology|rodent": {
-  "summary": "Rodent safety\u2011pharmacology tests found CNS findings in 21% and respiratory findings in 28% of studies, but none (0%) were judged of obvious concern for clinical progression; in vitro hERG assays showed little correlation with animal data even at low IC50 (\u22641 \u00b5M). All figures from Baldrick et al. 2021.",
-  "direction": "evidence does not favour the model",
-  "key_numbers": [
-   "21% of rodent CNS studies had findings (n=92)",
-   "28% of rodent respiratory studies had findings (n=87)",
-   "0% of rodent CNS findings judged of obvious concern for clinical progression (n=92)",
-   "hERG low IC50 (\u22641 \u00b5M) showed little correlation to animal data"
-  ],
-  "why_range_is_wide": null,
-  "negative_controls_noted": null
- },
- "toxicology|dog": {
-  "summary": "Dog toxicology tests are inconsistently predictive of human toxicity. Examples: Monticello et al. 2017\u2014specificity 84% and NPV 86% (absence); Atkins et al. 2020\u2014median dog PPV \u22480.67 and NPV \u22480.52; Bailey et al. 2019\u2014no-animal-toxicity \u2192 72% no human toxicity; Clark et al. 2018\u2014dog LR+ for cardiac 6.11.",
-  "direction": "mixed",
-  "key_numbers": [
-   "84% specificity (Monticello et al. 2017, correctly identifying absence of clinical adverse effects)",
-   "86% NPV (Monticello et al. 2017)",
-   "\u22480.67 median PPV for dog (Atkins et al. 2020)",
-   "\u22480.52 median NPV for dog (Atkins et al. 2020)",
-   "72% probability of no human toxicity given no dog toxicity (Bailey et al. 2019)"
-  ],
-  "why_range_is_wide": "Results vary by organ/endpoint, by metric reported (PPV/NPV vs likelihood ratios), and by study design/sample.",
-  "negative_controls_noted": null
+  "why_range_is_wide": "Performance varies by endpoint: combined BP+HR concordance is higher than HR-only.",
+  "negative_controls_noted": "Sadko et al. 2024 included a mock (no-effect) drug showing no QTc change up to 3\u00d7 clinical concentration."
  },
  "safety-pharmacology|rat": {
-  "summary": "Rat safety data partly track human cardiovascular outcomes: Bhatt et al. 2019 reported rat\u2192large-animal concordance for combined BP/HR with sensitivity 84% and specificity 71% (PPV 90%, NPV 60%). However, QT findings are mixed \u2014 Valentin et al. 2022 found 91% of human QT\u2011prolongers also prolonged QT in animals but 31% overall discordance and only 50\u201357% assay sensitivity at 30x exposure.",
+  "summary": "Bhatt et al. 2019: Rat findings tracked large-animal changes for combined BP+HR (sensitivity 84%, specificity 71%, PPV 90%, NPV 60%) but were weaker for single endpoints (HR sensitivity 64%, BP specificity 59%) and 23\u201326% showed opposite direction of change. Predictive values may be inflated because dataset prevalence may be lower than real-world.",
   "direction": "mixed",
   "key_numbers": [
-   "84% sensitivity (rat\u2192large-animal, combined BP/HR; Bhatt et al. 2019)",
-   "71% specificity (rat\u2192large-animal, combined BP/HR; Bhatt et al. 2019)",
-   "90% PPV (rat\u2192large-animal, combined BP/HR; Bhatt et al. 2019)",
-   "91% of human QT\u2011prolonging drugs also prolonged QT in animals (Valentin et al. 2022)",
-   "31% overall discordance between nonclinical and clinical QT data (Valentin et al. 2022, n=150)"
+   "84% \u2014 sensitivity for combined BP+HR (rat\u2192large animal)",
+   "71% \u2014 specificity for combined BP+HR (rat\u2192large animal)",
+   "90% \u2014 positive predictive value for combined BP+HR (rat\u2192large animal)",
+   "64% \u2014 sensitivity for HR only (rat\u2192large animal)",
+   "23\u201326% \u2014 opposite direction of change for HR/BP (rat\u2192large animal)"
   ],
-  "why_range_is_wide": null,
+  "why_range_is_wide": "The 23\u201326% range reflects separate opposite-direction percentages reported for HR versus BP.",
   "negative_controls_noted": null
  },
- "toxicology|non-rodent": {
-  "summary": "Non\u2011rodent toxicology tracked human organ toxicities moderately: non\u2011rodents predicted human organ toxicity ~63% of the time (Olson et al. 2000; Wall et al. 2008) and rodent+nonrodent concordance was ~71% (Olson et al. 2000). Concordance varied by organ \u2014 e.g. non\u2011rodent GI 83% vs rodent GI 46% (Peters et al. 2019) \u2014 and Olson analysed only compounds with known human toxicities.",
+ "safety-pharmacology|dog": {
+  "summary": "Dogs moderately predict human cardiac safety: Valentin et al. 2022 found 91% of drugs that prolonged QT in humans also prolonged QT in dogs (88% concordant negatives; 31% discordant), and Pollard et al. 2017 reported dog QTc AUC \u22480.81. Bhatt et al. 2019 gave combined BP/HR sensitivity 78% and specificity 79%, and Sadko et al. 2024 observed moxifloxacin +16.6 ms QTc in dogs (human \u224810 ms); concordance varies by endpoint and exposure.",
+  "direction": "evidence favours the model",
+  "key_numbers": [
+   "91% of human QT\u2011prolonging drugs also prolonged QT in dogs (Valentin et al. 2022)",
+   "88% of drugs with no human QT effect also showed no effect in dogs (Valentin et al. 2022)",
+   "Dog QTc AUC \u22480.81 versus clinical QTc (Pollard et al. 2017)",
+   "Sensitivity 78% / Specificity 79% for large\u2011animal\u2192human combined BP/HR (Bhatt et al. 2019)",
+   "Moxifloxacin +16.6 ms QTc in dogs vs ~10 ms in humans (Sadko et al. 2024)"
+  ],
+  "why_range_is_wide": "Variation arises by endpoint (QTc vs BP/HR), assay type and exposure level, and dataset composition (e.g. inclusion/exclusion of \u03b22\u2011agonists).",
+  "negative_controls_noted": "Sadko et al. 2024: mock/vehicle produced no QTc increase (negative control)."
+ },
+ "toxicology|dog": {
+  "summary": "Evidence is mixed \u2014 dog data sometimes track human toxicities for specific endpoints (dog LR+ for cardiac disorders 6.11; regulatory rat+dog testing flagged 71% of human toxicities (Jang et al. 2019)). However absence of dog toxicity gives only modest reassurance (~72% no human toxicity; dog iNLR\u22481.10).",
   "direction": "mixed",
   "key_numbers": [
-   "63% \u2014 non\u2011rodent studies predicted human organ toxicity (Olson et al. 2000; Wall et al. 2008)",
-   "71% \u2014 true\u2011positive concordance when \u22651 preclinical species showed the same organ toxicity (Olson et al. 2000)",
-   "83% \u2014 non\u2011rodent clinical concordance for gastrointestinal toxicity (Peters et al. 2019)",
-   "46% \u2014 rodent clinical concordance for gastrointestinal toxicity (Peters et al. 2019)",
-   "91% \u2014 hematologic concordance with animal findings (Olson et al. 2000)"
+   "72% \u2014 probability of no human toxicity given no dog toxicity (Bailey et al. 2019)",
+   "Dog median iNLR = 1.10 (Bailey et al. 2015)",
+   "LR+ = 6.11 for dog, cardiac disorders (Clark et al. 2018)",
+   "Specificity 84% and NPV 86% for predicting absence of clinical adverse effects (beagle dog; Monticello et al. 2017)",
+   "71% \u2014 human toxicities correctly predicted by regulatory testing in rats and dogs (Jang et al. 2019)"
   ],
-  "why_range_is_wide": "Concordance differs by organ system and clinical phase, and Olson restricted analysis to compounds with known human toxicities.",
+  "why_range_is_wide": "Performance varies by organ class, endpoint and toxicity severity (e.g., cardiac vs hepatic, grade 3\u20134 vs all grades, in vitro vs in vivo).",
   "negative_controls_noted": null
  },
  "toxicology|rabbit": {
-  "summary": "Evidence is mixed: rabbit findings predict some human toxicities (LR+ 3.54 for cardiac, LR+ 2.8 for hepatobiliary; rabbit QT post-test odds 83%) but give little reassurance overall (rabbit median iNLR 1.12 \u2248 unity). Differences reflect endpoint-specific concordance and study design/selection bias (Clark et al. 2018; Bailey et al. 2015).",
+  "summary": "Evidence is mixed: rabbit tests show signal for some cardiac endpoints (Clark et al. 2018: rabbit LR+ 3.54 for cardiac disorders; QT prolongation post-test odds 83%). But overall animal-to-human discriminative weight is minimal (Bailey et al. 2015: rabbit median iNLR 1.12).",
   "direction": "mixed",
   "key_numbers": [
-   "LR+ 3.54 \u2014 rabbit, cardiac disorders (n=99)",
-   "LR+ 2.8 \u2014 rabbit, hepatobiliary disorders (n=101)",
-   "QT post-test odds 83% \u2014 rabbit",
-   "Median iNLR 1.12 \u2014 rabbit (near 1, little evidential weight)"
+   "LR+ 3.54 \u2014 rabbit, cardiac disorders (Clark et al. 2018)",
+   "QT post-test odds 83% \u2014 rabbit, QT prolongation (Clark et al. 2018)",
+   "LR+ 2.8 \u2014 rabbit, hepatobiliary disorders (Clark et al. 2018)",
+   "median iNLR 1.12 \u2014 rabbit-human (Bailey et al. 2015)"
   ],
-  "why_range_is_wide": "Endpoint-specific analyses (e.g., QT) show higher concordance while overall selectivity is low; differing datasets and selection bias explain variation.",
-  "negative_controls_noted": null
- },
- "toxicology|pig": {
-  "summary": "Monticello et al. 2017: animal findings predicted absence of human adverse effects better than presence \u2014 specificity 84% and NPV 86% vs sensitivity 48% and PPV 43% (clinical positive prevalence 21%). Excluding subjective 'other' events raised sensitivity to 52% and NPV to 92%.",
-  "direction": "mixed",
-  "key_numbers": [
-   "48% sensitivity (animal detected human adverse when present)",
-   "43% PPV (when animal adverse observed, human had adverse)",
-   "84% specificity (animal absence predicted human absence)",
-   "86% NPV (animal negative predicted human negative)",
-   "21% clinical positive prevalence"
-  ],
-  "why_range_is_wide": "Excluding the subjective 'other' organ-category (low signal) changed PPV/NPV and prevalence.",
-  "negative_controls_noted": null
- },
- "toxicology|zebrafish": {
-  "summary": "Studies show zebrafish toxicology often tracks mammalian outcomes: Nikam et al. 2020 reported 100% concordance with mammalian screening and hepatotoxicity and 90% agreement for teratogenicity (n=59); Cornet et al. 2017 reported overall accuracy 78%. Performance varies by endpoint\u2014sensitivities 54\u201380% and specificities 77\u2013100% across endpoints (McGrath 2008 noted sensitivity >80% and specificity >70%).",
-  "direction": "evidence favours the model",
-  "key_numbers": [
-   "100% concordance with mammalian screening and hepatotoxicity",
-   "90% agreement for teratogenicity (n=59)",
-   "78% overall accuracy (ZeGlobalTox)",
-   "sensitivity 54\u201380% across endpoints",
-   "specificity 77\u2013100% across endpoints"
-  ],
-  "why_range_is_wide": "Range reflects differences between toxicity endpoints (cardiotoxicity, neurotoxicity, hepatotoxicity) and between assay versions/studies.",
-  "negative_controls_noted": null
- },
- "toxicology|rodent": {
-  "summary": "Evidence is mixed: rodents detect some human toxicities but often miss others \u2014 rodent concordance/sensitivity \u224843\u201348% (Wall et al. 2008; Monticello et al. 2017; Olson et al. 2000) with mean PPV \u224836% (Bailey et al. 2019); hematologic concordance was 91% (Olson et al. 2000). Findings vary by organ, trial phase and study inclusion (e.g., Olson included only compounds with known human toxicities).",
-  "direction": "mixed",
-  "key_numbers": [
-   "43% correctly predicted human organ toxicity (Wall et al. 2008)",
-   "48% overall sensitivity (Monticello et al. 2017)",
-   "46% GI concordance in rodents (Peters et al. 2019)",
-   "36% mean positive predictive value (Bailey et al. 2019)",
-   "91% hematologic concordance (Olson et al. 2000)"
-  ],
-  "why_range_is_wide": "Estimates vary by organ system, clinical-prevalence effects on PPV/NPV, trial phase, and study inclusion criteria (e.g., Olson only included drugs with known human toxicities).",
-  "negative_controls_noted": null
- },
- "toxicology|rat": {
-  "summary": "Evidence is mixed: rats give modest positive signal for some toxicities (Atkins et al. 2020 median PPV 0.65; Clark et al. 2018 rat LR+ 2.74 hepatobiliary, 4.73 cardiac) but do not reliably rule out human harm (Bailey et al. 2015 rat iNLR 1.82). Jang et al. 2019 shows species mismatches (bosentan rat IC50 >100 \u00b5M vs human 10 \u00b5M).",
-  "direction": "mixed",
-  "key_numbers": [
-   "PPV 0.65 (median, overall animal\u2192human correlation; Atkins et al. 2020)",
-   "NPV 0.50 (median; Atkins et al. 2020)",
-   "LR+ 2.74 (rat, hepatobiliary; Clark et al. 2018)",
-   "LR+ 4.73 (rat, cardiac; Clark et al. 2018)",
-   "iNLR 1.82 (rat; Bailey et al. 2015)"
-  ],
-  "why_range_is_wide": "Metrics vary by organ class and severity of toxicity (different endpoints and study subsets produce different performance).",
+  "why_range_is_wide": "Performance varies by endpoint and dataset selection (overall selectivity low while specific cardiac endpoints show higher concordance).",
   "negative_controls_noted": null
  },
  "toxicology|non-human primate": {
-  "summary": "Evidence is mixed: NHPs have low-to-moderate overall predictive value for human toxicity (Monticello 2017: sens 48%, PPV 43%; Atkins 2020: median PPV 0.65, NPV 0.50; Bailey 2019: negative animal test \u2192 ~70% chance no human toxicity). Predictivity is endpoint-dependent\u2014Clark 2018 reports LR+ up to 11 for cynomolgus monkey (cardiac/hepatobiliary).",
+  "summary": "Evidence is mixed: NHP findings sometimes predict human toxicity \u2014 Monticello 2017 overall sensitivity 48% and specificity 84% (GI PPV 91%, nervous PPV 83%), and Clark 2018 LR+ up to 11.02. But other analyses report weak or inconsistent prediction (Bailey 2019 no-animal\u2192no-human 70.4%; Bailey 2015 iNLR 1.02).",
   "direction": "mixed",
   "key_numbers": [
    "Sensitivity 48% (Monticello et al. 2017)",
-   "PPV 43% (Monticello et al. 2017)",
-   "Median PPV 0.65; median NPV 0.50 (Atkins et al. 2020)",
-   "Negative animal test \u2192 ~70% chance no human toxicity (Bailey et al. 2019)",
-   "LR+ up to 11 for cynomolgus monkey (Clark et al. 2018)"
+   "Specificity 84% (Monticello et al. 2017)",
+   "GI PPV 91% / Nervous PPV 83% (Monticello et al. 2017)",
+   "LR+ 11.02 (cynomolgus, hepatobiliary; Clark et al. 2018)",
+   "No-animal-toxicity \u2192 no-human-toxicity 70.4% (Bailey et al. 2019)"
   ],
-  "why_range_is_wide": "Results differ by organ system, endpoint and study dataset/metric (some endpoints show high LR+ while many ADRs have low selectivity or iNLR\u22481).",
+  "why_range_is_wide": "Performance varies by organ/endpoint, toxicity severity, study selection bias and low clinical positive prevalence.",
+  "negative_controls_noted": null
+ },
+ "toxicology|rat": {
+  "summary": "Evidence is mixed: some studies find rat findings often align with human toxicity (regulatory tests predicted 71% of human toxicities; rat LR+ 4.73 for cardiac and 2.74 for hepatobiliary), but other analyses show only modest predictive power (median PPV 0.65; iNLR 1.82). Variation by endpoint, severity and study methods limits generalisability.",
+  "direction": "mixed",
+  "key_numbers": [
+   "71% \u2014 regulatory tests (rats+dogs) correctly predicted human toxicities",
+   "LR+ 4.73 \u2014 rat, cardiac disorders",
+   "LR+ 2.74 \u2014 rat, hepatobiliary disorders",
+   "median PPV 0.65 \u2014 rat, all toxicity grades",
+   "median iNLR 1.82 \u2014 rat"
+  ],
+  "why_range_is_wide": "Results vary by endpoint, toxicity grade and study methods/datasets (e.g., Jang pooled rats and dogs; Atkins stratified by severity).",
+  "negative_controls_noted": null
+ },
+ "toxicology|mouse": {
+  "summary": "Mouse toxicology is mixed: some mouse signals predict human toxicity (Clark et al. 2018 \u2014 LR+ cardiac 5.29; hepatobiliary 3.73; pain 7.4). However overall discrimination is weak (Atkins et al. 2020 median PPV 0.57 all grades, 0.43 for grade 3\u20134; Bailey et al. 2015 iNLR 1.39).",
+  "direction": "mixed",
+  "key_numbers": [
+   "LR+ cardiac (mouse\u2013human) = 5.29 (Clark et al. 2018)",
+   "LR+ hepatobiliary (mouse\u2013human) = 3.73 (Clark et al. 2018)",
+   "LR+ pain (mouse\u2013human) = 7.4 (Clark et al. 2018)",
+   "Median PPV all toxicity grades (mouse) = 0.57 (Atkins et al. 2020)",
+   "Mouse iNLR = 1.39 (Bailey et al. 2015)"
+  ],
+  "why_range_is_wide": "Results vary by specific organ endpoint and toxicity severity (Clark shows high LR+ for some endpoints; Atkins shows PPV falls for grade 3\u20134).",
+  "negative_controls_noted": null
+ },
+ "toxicology|rodent": {
+  "summary": "Monticello et al. 2017: rodent toxicology showed modest sensitivity (48%) and PPV (43%) but higher specificity (84%) and NPV (86%), so rodent findings only partially tracked human adverse effects. Performance varied by organ (PPV 0\u201354%; e.g. Ophthalmology 0%, Biochemical 54%) and was poor for subjective 'other' events (PPV 9%, NPV 14%).",
+  "direction": "mixed",
+  "key_numbers": [
+   "Sensitivity 48% (overall, detecting clinical adverse effects)",
+   "PPV 43% (overall)",
+   "Specificity 84% (overall)",
+   "NPV 86% (overall)",
+   "PPV range 0\u201354% across organs (Ophthalmology 0%, Biochemical 54%)"
+  ],
+  "why_range_is_wide": "Predictive values differ by target organ and event type; subjective 'other' events had especially low PPV/NPV.",
+  "negative_controls_noted": null
+ },
+ "efficacy|sheep": {
+  "summary": "Perel et al. 2007: in ewe models antenatal corticosteroids were linked to higher neonatal mortality (pooled OR 12.5, 95% CI 1.9\u201379.2), which contrasts with no benefit in clinical trials \u2014 sheep results did not track human outcomes. The estimate is imprecise.",
+  "direction": "evidence does not favour the model",
+  "key_numbers": [
+   "12.5 (95% CI 1.9\u201379.2) \u2014 pooled OR for neonatal mortality in ewe models (antenatal corticosteroids)"
+  ],
+  "why_range_is_wide": "Very wide CI reflects few and/or small ewe experiments giving imprecise estimates.",
+  "negative_controls_noted": null
+ },
+ "toxicology|zebrafish": {
+  "summary": "Zebrafish assays generally track human toxicology: McGrath et al. 2008 detected 100% of teratogens and 75% of non\u2011teratogens; Cornet et al. 2017 reported 78% accuracy (89% specificity, 68% sensitivity). Performance varies by endpoint (neuro 54% vs hepatotoxicity 80%).",
+  "direction": "mixed",
+  "key_numbers": [
+   "100% teratogens detected (McGrath et al. 2008)",
+   "75% non\u2011teratogens identified (McGrath et al. 2008)",
+   "78% overall accuracy (Cornet et al. 2017)",
+   "89% specificity and 68% sensitivity overall (Cornet et al. 2017)"
+  ],
+  "why_range_is_wide": "Sensitivity differs by toxicity endpoint (e.g. neurotoxicity 54% vs hepatotoxicity 80%).",
   "negative_controls_noted": null
  },
  "veterinary|dog": {
-  "summary": "Evidence is mixed: Daluwatumulle et al. 2026 found model robustness scores 31\u201385% across cancers (e.g. bladder 85.05%, pediatric glioma 79.88%), but Petersen\u2011Jones et al. 2015 reported dogs regained ERG/function close to normal while human patients showed no ERG change.",
+  "summary": "Dog models recapitulated many human cancer transcriptomes, with robustness scores up to 85.05% (adult bladder) and several tumors \u226570% (pediatric glioma 79.88%, adult head & neck 78.20%). However, suitability varied by tumor type and negative controls (ACC, LAML) scored low (adult ACC 31.10%).",
   "direction": "mixed",
   "key_numbers": [
-   "31\u201385% model robustness scores across cancer types (Daluwatumulle et al. 2026)",
-   "85.05% robustness \u2014 adult bladder cancer",
-   "79.88% robustness \u2014 pediatric glioma",
-   "31.1% robustness \u2014 adult adrenocortical carcinoma (negative control)",
-   "normalized expression distance 0.007\u20130.047 (Daluwatumulle et al. 2026)"
+   "85.05% \u2014 model robustness score for adult bladder cancer",
+   "79.88% \u2014 model robustness score for pediatric glioma",
+   "78.20% \u2014 model robustness score for adult head and neck cancer",
+   "72.95% \u2014 model robustness score for pediatric sarcoma",
+   "31.10% \u2014 model robustness score for adult adrenocortical carcinoma (negative control)"
   ],
-  "why_range_is_wide": "Range reflects large variation across cancer types, pediatric vs adult cohorts and inclusion of negative-control cancers.",
-  "negative_controls_noted": "Negative controls ACC and LAML had low scores (adult ACC 31.1%; adult leukemia/LAML 40.31%)."
+  "why_range_is_wide": "Scores vary across cancer types (adult vs pediatric and tumor lineage) and include deliberate negative-control cancers.",
+  "negative_controls_noted": "Negative controls reported: adult adrenocortical carcinoma 31.10%, pediatric adrenocortical carcinoma 33.56%, adult leukemia (LAML) 40.31%."
  }
 }

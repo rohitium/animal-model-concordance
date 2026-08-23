@@ -2,19 +2,19 @@
  {
   "assessment": "Efficacy",
   "organism": "rodent",
-  "n_studies": 8,
-  "summary": "Most studies show poor translation of rodent efficacy to humans: <8% of cancer drugs entering trials translated (Mak et al. 2014) and 3 of 494 animal\u2011positive stroke interventions worked in patients (Marti\u0107\u2011Kehl et al. 2012). Some exceptions exist\u2014Ferreira et al. 2023 found 84% HED overlap and Spanagel 2017/Sembach 2021 cite specific drug successes\u2014but selective sampling and publication bias limit generalisability.",
+  "n_studies": 3,
+  "summary": "Rodent efficacy findings did not reliably predict clinical efficacy: O'Collins et al. 2006 found similar mean neuroprotection in focal ischemia for drugs tested only in animals (24.4%) and drugs used clinically (31.3%, p>0.05), and translation rates ranged 0\u2013100% (Ritskes\u2011Hoitinga et al. 2022). Many preclinical studies (82%) reported positive findings, suggesting publication/selection bias.",
   "direction": "evidence does not favour the model",
-  "why_range_is_wide": "Estimates vary by disease area, outcome measured, and study selection (e.g., small/selected IB samples and publication/selective\u2011reporting bias).",
+  "why_range_is_wide": "Translation rates came from heterogeneous studies and outcomes across reviews and were affected by publication bias and selective reporting.",
   "negative_controls": null,
   "verdicts": [
    {
     "label": "does not support",
-    "n": 4
+    "n": 2
    },
    {
     "label": "partly supports",
-    "n": 4
+    "n": 1
    }
   ],
   "evidence": [
@@ -47,77 +47,59 @@
     ]
    },
    {
-    "value": "64\u201384%",
-    "statistic": "average overlap",
-    "n": "",
-    "what": "overlap between preclinical and clinical pharmacologically active dose ranges (HED)",
+    "value": "24.4\u201331.3%",
+    "statistic": "mean",
+    "n": ", n=351 experimental agents",
+    "what": "improvement in focal models for drugs tested only in animal models vs. drugs tested clinically",
     "cites": [
      {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
+      "text": "O'Collins et al. 2006",
+      "pmid": "16453316",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16453316/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/16453316.html"
      }
     ]
    },
    {
-    "value": "32\u201352%",
-    "statistic": "proportion",
-    "n": ", n=25 studies",
-    "what": "clinical studies reporting well-tolerated doses above NOAEL (Cmax)",
-    "cites": [
-     {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
-     }
-    ]
-   },
-   {
-    "value": "16%",
+    "value": "74%",
     "statistic": "proportion",
     "n": "",
-    "what": "clinical studies reporting unacceptable side effects at values below NOAEL (Cmax)",
+    "what": "neuroprotective efficacy in culture models (superior to control)",
     "cites": [
      {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
+      "text": "O'Collins et al. 2006",
+      "pmid": "16453316",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16453316/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/16453316.html"
      }
     ]
    },
    {
-    "value": "60\u201383%",
-    "statistic": "proportion",
-    "n": ", n=25 studies",
-    "what": "overlap of preclinical and clinical pharmacologically active dose ranges (HED) >= 80%",
+    "value": "44%",
+    "statistic": "concordance rate",
+    "n": ", n=951 compounds",
+    "what": "concordance of liver effects",
     "cites": [
      {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
+      "text": "Leenaars et al. 2019",
+      "pmid": "31307492",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31307492/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/31307492.html"
      }
     ]
    }
   ],
-  "caveat": "The 8% success rate for drugs passing Phase I is out of those that enter clinical trials, which is already a subset of highly cited animal research (only about a third of which enters clinical trials). The 85% failure rate for early clinical trials is despite successful pre-clinical testing."
+  "caveat": "The high percentage of positive findings in animal studies (82%) is likely inflated due to publication bias and selective reporting, as noted by the authors. The range of translation rates (0-100%) indicates high variability and unreliability."
  },
  {
   "assessment": "Efficacy",
-  "organism": "non-human primate",
-  "n_studies": 6,
-  "summary": "Evidence is mixed: some NHP results tracked clinical outcomes (thrombolysis: 24% infarct reduction and 23% neurobehavioural gain in animal models \u2014 Perel et al. 2007; HED overlap 84% \u2014 Ferreira et al. 2023), but many did not (3/494 stroke interventions; 100% AIDS\u2011vaccine failure \u2014 Marti\u0107\u2011Kehl et al. 2012).",
-  "direction": "mixed",
-  "why_range_is_wide": "Findings vary by intervention class and outcome (e.g., thrombolytics and bisphosphonates translated, whereas vaccines and many neuroprotectants did not).",
+  "organism": "mouse",
+  "n_studies": 1,
+  "summary": "Pan et al. 2020: mouse tumor-growth-inhibition (TGI) did not predict clinical approval\u2014median TGI 0.74 for approved vs 0.77 for failed drugs and AUC=0.45 for predicting approval; odds ratios for higher TGI quartiles vs lowest were 0.74\u20130.90 and non-significant. Comparisons are limited by few approved drugs and variable TGI measurement across studies.",
+  "direction": "evidence does not favour the model",
+  "why_range_is_wide": "OR range reflects separate comparisons of TGI quartiles Q2\u2013Q4 versus Q1.",
   "negative_controls": null,
   "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 5
-   },
    {
     "label": "does not support",
     "n": 1
@@ -125,186 +107,66 @@
   ],
   "evidence": [
    {
-    "value": "64\u201384%",
-    "statistic": "average overlap",
-    "n": "",
-    "what": "overlap between preclinical and clinical pharmacologically active dose ranges (HED)",
-    "cites": [
-     {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
-     }
-    ]
-   },
-   {
-    "value": "32\u201352%",
-    "statistic": "proportion",
-    "n": ", n=25 studies",
-    "what": "clinical studies reporting well-tolerated doses above NOAEL (Cmax)",
-    "cites": [
-     {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
-     }
-    ]
-   },
-   {
-    "value": "16%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "clinical studies reporting unacceptable side effects at values below NOAEL (Cmax)",
-    "cites": [
-     {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
-     }
-    ]
-   },
-   {
-    "value": "60\u201383%",
-    "statistic": "proportion",
-    "n": ", n=25 studies",
-    "what": "overlap of preclinical and clinical pharmacologically active dose ranges (HED) >= 80%",
-    "cites": [
-     {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
-     }
-    ]
-   },
-   {
-    "value": "8\u201328%",
-    "statistic": "proportion",
-    "n": ", n=25 studies",
-    "what": "poor preclinical prediction of clinical active range (HED) <= 20% overlap",
-    "cites": [
-     {
-      "text": "Ferreira et al. 2023",
-      "pmid": "36859342",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36859342/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36859342.html"
-     }
-    ]
-   },
-   {
-    "value": "24\u201329%",
-    "statistic": "reduction",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: infarct volume reduction",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   }
-  ],
-  "caveat": "The study included only 25 IBs, which were selected based on specific criteria (e.g., statistically significant CNS activity, reported dose ranges for tolerability and pharmacological activity). This selection process might introduce bias and limit the generalizability of the findings."
- },
- {
-  "assessment": "Efficacy",
-  "organism": "mouse",
-  "n_studies": 5,
-  "summary": "Evidence is mixed: some mouse findings translated (thrombolysis reduced infarct volume 24% and bisphosphonates raised hip BMD 11% \u2014 Perel et al. 2007). But many did not\u2014Perrin et al. 2014 found 11/12 ALS candidates failed in clinic and Pan et al. 2020 reported AUC 0.45 for TGI.",
-  "direction": "mixed",
-  "why_range_is_wide": "Translation varies by intervention, indication and study quality (e.g. published positive ALS studies vs rigorous ALS TDI null results).",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 3
-   },
-   {
-    "label": "does not support",
-    "n": 2
-   }
-  ],
-  "evidence": [
-   {
-    "value": "0\u201310%",
-    "statistic": "change in survival",
-    "n": "",
-    "what": "survival benefit of riluzole in mouse study (published)",
-    "cites": [
-     {
-      "text": "Perrin 2014",
-      "pmid": "24678540",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24678540/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/24678540.html"
-     }
-    ]
-   },
-   {
-    "value": "0%",
-    "statistic": "change in survival",
-    "n": "",
-    "what": "survival benefit of thalidomide in mouse study (ALS TDI)",
-    "cites": [
-     {
-      "text": "Perrin 2014",
-      "pmid": "24678540",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24678540/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/24678540.html"
-     }
-    ]
-   },
-   {
-    "value": "10%",
-    "statistic": "change in survival",
-    "n": "",
-    "what": "survival benefit of creatine in mouse study (published)",
-    "cites": [
-     {
-      "text": "Perrin 2014",
-      "pmid": "24678540",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24678540/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/24678540.html"
-     }
-    ]
-   },
-   {
-    "value": "10\u201330%",
-    "statistic": "change in survival",
-    "n": "",
-    "what": "survival benefit of ceftriaxone in mouse study (published)",
-    "cites": [
-     {
-      "text": "Perrin 2014",
-      "pmid": "24678540",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24678540/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/24678540.html"
-     }
-    ]
-   },
-   {
-    "value": "0\u201310%",
-    "statistic": "change in survival",
-    "n": "",
-    "what": "survival benefit of sodium phenylbutyrate in mouse study (published)",
-    "cites": [
-     {
-      "text": "Perrin 2014",
-      "pmid": "24678540",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24678540/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/24678540.html"
-     }
-    ]
-   },
-   {
     "value": "0.74\u20130.9",
     "statistic": "or",
     "n": "",
     "what": "Odds Ratio for drug success (Q2 TGI vs Q1 TGI)",
+    "cites": [
+     {
+      "text": "Pan et al. 2020",
+      "pmid": "32391273",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32391273/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32391273.html"
+     }
+    ]
+   },
+   {
+    "value": "0.74\u20130.77",
+    "statistic": "median",
+    "n": "",
+    "what": "TGI values for approved vs. failed drugs",
+    "cites": [
+     {
+      "text": "Pan et al. 2020",
+      "pmid": "32391273",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32391273/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32391273.html"
+     }
+    ]
+   },
+   {
+    "value": "0.375",
+    "statistic": "p-value",
+    "n": "",
+    "what": "Statistical significance of TGI difference between approved and failed drugs",
+    "cites": [
+     {
+      "text": "Pan et al. 2020",
+      "pmid": "32391273",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32391273/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32391273.html"
+     }
+    ]
+   },
+   {
+    "value": "0.45",
+    "statistic": "auc",
+    "n": "",
+    "what": "Area Under the Curve (AUC) for TGI predicting success",
+    "cites": [
+     {
+      "text": "Pan et al. 2020",
+      "pmid": "32391273",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32391273/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32391273.html"
+     }
+    ]
+   },
+   {
+    "value": "0.636",
+    "statistic": "p-value",
+    "n": "",
+    "what": "P-trend for TGI and drug success",
     "cites": [
      {
       "text": "Pan et al. 2020",
@@ -319,497 +181,11 @@
  },
  {
   "assessment": "Efficacy",
-  "organism": "rat",
-  "n_studies": 4,
-  "summary": "Evidence is mixed: rats predicted clinical efficacy for some interventions (thrombolysis reduced infarct volume 24% and improved neurobehaviour 23%; three alcohol medications originated from rat models) but failed for others (corticosteroids: animal OR 0.58 yet no human benefit; tirilazad: 29% infarct reduction in rats but clinical failure). Translation varies by drug class\u2014bisphosphonates and thrombolytics were concordant, several CNS candidates were not.",
-  "direction": "mixed",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 4
-   }
-  ],
-  "evidence": [
-   {
-    "value": "24\u201329%",
-    "statistic": "reduction",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: infarct volume reduction",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "23\u201348%",
-    "statistic": "improvement",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: neurobehavioural scores improvement",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "8.5\u201311%",
-    "statistic": "increase",
-    "n": "",
-    "what": "Bisphosphonates (alendronate): bone mineral density increase in hip region",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "0.58",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Corticosteroids for traumatic head injury: adverse functional outcome (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "1.96",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: probability of haemorrhage",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "4.2",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Antenatal corticosteroids: neonatal mortality (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Efficacy",
-  "organism": "cat",
-  "n_studies": 2,
-  "summary": "Evidence is mixed: thrombolytics (tPA) in animals reduced infarct volume by 24% and improved neurobehaviour by 23% and matched clinical benefit, while corticosteroids (animal pooled OR 0.58) and tirilazad (infarct \u221229%, behaviour +48%) showed animal benefit but not in humans. Only <7% of studies met permissibility (Bateson's Cube) and several concordant studies involved high animal suffering.",
-  "direction": "mixed",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 2
-   }
-  ],
-  "evidence": [
-   {
-    "value": "24\u201329%",
-    "statistic": "reduction",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: infarct volume reduction",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "23\u201348%",
-    "statistic": "improvement",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: neurobehavioural scores improvement",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "8.5\u201311%",
-    "statistic": "increase",
-    "n": "",
-    "what": "Bisphosphonates (alendronate): bone mineral density increase in hip region",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "0.58",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Corticosteroids for traumatic head injury: adverse functional outcome (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "1.96",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: probability of haemorrhage",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "4.2",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Antenatal corticosteroids: neonatal mortality (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Efficacy",
-  "organism": "rabbit",
-  "n_studies": 2,
-  "summary": "Evidence is mixed: some rabbit results tracked human efficacy (thrombolysis and bisphosphonates), e.g. thrombolysis in animals reduced infarct volume by 24% and improved neurobehaviour by 23%. Other interventions were discordant\u2014corticosteroids showed animal benefit (pooled OR 0.58) but no clinical benefit; tirilazad reduced infarct 29% in animals yet failed clinically.",
-  "direction": "mixed",
-  "why_range_is_wide": "Effect direction and size vary by intervention (thrombolytics and bisphosphonates concordant; corticosteroids, tirilazad and antifibrinolytics discordant).",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 2
-   }
-  ],
-  "evidence": [
-   {
-    "value": "24\u201329%",
-    "statistic": "reduction",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: infarct volume reduction",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "23\u201348%",
-    "statistic": "improvement",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: neurobehavioural scores improvement",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "8.5\u201311%",
-    "statistic": "increase",
-    "n": "",
-    "what": "Bisphosphonates (alendronate): bone mineral density increase in hip region",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "0.58",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Corticosteroids for traumatic head injury: adverse functional outcome (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "1.96",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: probability of haemorrhage",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "4.2",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Antenatal corticosteroids: neonatal mortality (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Efficacy",
-  "organism": "sheep",
-  "n_studies": 2,
-  "summary": "Sheep data are mixed: bisphosphonates raised bone density (alendronate +11.0% hip, +8.5% spine) and thrombolysis reduced infarct volume (\u221224%) and improved behaviour (+23%), but antenatal corticosteroids increased neonatal mortality in ewes (OR 12.5). The mortality estimate is based on seven ewe experiments and many efficacy studies involved high animal suffering, limiting permissibility.",
-  "direction": "mixed",
-  "why_range_is_wide": "The large CI for the ewe mortality OR reflects pooling of only seven ewe experiments with small sample sizes.",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 2
-   }
-  ],
-  "evidence": [
-   {
-    "value": "24\u201329%",
-    "statistic": "reduction",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: infarct volume reduction",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "23\u201348%",
-    "statistic": "improvement",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: neurobehavioural scores improvement",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "4.2\u201312.5",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Antenatal corticosteroids: neonatal mortality (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "8.5\u201311%",
-    "statistic": "increase",
-    "n": "",
-    "what": "Bisphosphonates (alendronate): bone mineral density increase in hip region",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "0.58",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Corticosteroids for traumatic head injury: adverse functional outcome (pooled odds ratio)",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   },
-   {
-    "value": "1.96",
-    "statistic": "odds ratio",
-    "n": "",
-    "what": "Thrombolysis in acute ischaemic stroke: probability of haemorrhage",
-    "cites": [
-     {
-      "text": "Perel et al. 2007",
-      "pmid": "17175568",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Efficacy",
-  "organism": "cattle",
-  "n_studies": 1,
-  "summary": "Pound et al. 2018: animal\u2013human concordance in cattle was mixed \u2014 2 interventions (bisphosphonates, thrombolytics) concordant, 3 (corticosteroids, Tirilazad, antifibrinolytics) discordant and 1 partially concordant (antenatal corticosteroids). Under Bateson's Cube <7% of studies were permissible and some concordant results involved high animal suffering.",
-  "direction": "mixed",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 1
-   }
-  ],
-  "evidence": [
-   {
-    "value": "7%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "Studies permissible according to Bateson's Cube",
-    "cites": [
-     {
-      "text": "Pound et al. 2018",
-      "pmid": "29590200",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29590200/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29590200.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Efficacy",
-  "organism": "dog",
-  "n_studies": 1,
-  "summary": "Marti\u0107-Kehl et al. 2012 found animal efficacy often did not predict human outcomes: fewer than 50% of animal studies predicted human results and only 3 of 494 animal-positive acute ischemic stroke interventions showed convincing patient benefit. Findings aggregate multiple species and indications, not dogs alone.",
-  "direction": "evidence does not favour the model",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "does not support",
-    "n": 1
-   }
-  ],
-  "evidence": [
-   {
-    "value": "50%",
-    "statistic": "less than",
-    "n": "",
-    "what": "prediction of human outcomes by animal studies",
-    "cites": [
-     {
-      "text": "Marti\u0107-Kehl et al. 2012",
-      "pmid": "22790876",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22790876/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/22790876.html"
-     }
-    ]
-   },
-   {
-    "value": "3",
-    "statistic": "number of interventions",
-    "n": ", n=494 out of 494",
-    "what": "interventions for acute ischaemic stroke treatment with convincing effect in patients out of interventions with positive effect in animal models",
-    "cites": [
-     {
-      "text": "Marti\u0107-Kehl et al. 2012",
-      "pmid": "22790876",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22790876/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/22790876.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Efficacy",
   "organism": "non-rodent",
   "n_studies": 1,
-  "summary": "Study reports toxicity concordance: non\u2011rodent liver concordance 40% (n=951) and animal data predicted 48% of adverse drug reactions (n=1,256); overall concordance across species was 71% (n=221). These are toxicity metrics and do not assess efficacy, so they provide too little evidence to judge non\u2011rodents for efficacy.",
+  "summary": "Leenaars et al. 2019 provides no direct efficacy data; for toxicity it reports non\u2011rodent\u2192human concordance for liver effects 40% (n=951) and that animal data predicted 48% of 221 human adverse drug reactions. They also report 71% concordance when all species are pooled and state predictivity is higher for non\u2011rodents than rodents.",
   "direction": "too little evidence",
-  "why_range_is_wide": "Numbers refer to different analyses/endpoints: 40% is non\u2011rodent liver concordance, 71% is concordance across all species.",
+  "why_range_is_wide": "The 71% figure pools all species; 40% is the non\u2011rodent-specific concordance for liver effects.",
   "negative_controls": null,
   "verdicts": [
    {
@@ -818,20 +194,6 @@
    }
   ],
   "evidence": [
-   {
-    "value": "48%",
-    "statistic": "predictive value",
-    "n": ", n=1,256 adverse drug reactions",
-    "what": "prediction of adverse drug reactions",
-    "cites": [
-     {
-      "text": "Leenaars et al. 2019",
-      "pmid": "31307492",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31307492/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31307492.html"
-     }
-    ]
-   },
    {
     "value": "40%",
     "statistic": "concordance rate",
@@ -845,31 +207,17 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/31307492.html"
      }
     ]
-   },
-   {
-    "value": "71%",
-    "statistic": "concordance rate",
-    "n": ", n=221 human toxicity events",
-    "what": "concordance of human toxicity events",
-    "cites": [
-     {
-      "text": "Leenaars et al. 2019",
-      "pmid": "31307492",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31307492/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31307492.html"
-     }
-    ]
    }
   ],
   "caveat": null
  },
  {
   "assessment": "Efficacy",
-  "organism": "pig",
+  "organism": "sheep",
   "n_studies": 1,
-  "summary": "Evidence is mixed: pig efficacy studies agreed with human outcomes for bisphosphonates and thrombolytics but disagreed for corticosteroids, Tirilazad and antifibrinolytics, while antenatal corticosteroids were partially concordant; only 7% of studies were permissible by Bateson's Cube. Concordance and permissibility depended on the intervention and on animal suffering severity (moderate studies were permissible; severe were not).",
-  "direction": "mixed",
-  "why_range_is_wide": "Concordance varies by intervention and by experiment severity/animal suffering.",
+  "summary": "Perel et al. 2007: in ewe models antenatal corticosteroids were linked to higher neonatal mortality (pooled OR 12.5, 95% CI 1.9\u201379.2), which contrasts with no benefit in clinical trials \u2014 sheep results did not track human outcomes. The estimate is imprecise.",
+  "direction": "evidence does not favour the model",
+  "why_range_is_wide": "Very wide CI reflects few and/or small ewe experiments giving imprecise estimates.",
   "negative_controls": null,
   "verdicts": [
    {
@@ -879,16 +227,16 @@
   ],
   "evidence": [
    {
-    "value": "7%",
-    "statistic": "proportion",
+    "value": "12.5",
+    "statistic": "odds ratio",
     "n": "",
-    "what": "Studies permissible according to Bateson's Cube",
+    "what": "Antenatal corticosteroids: neonatal mortality in ewe models (pooled odds ratio)",
     "cites": [
      {
-      "text": "Pound et al. 2018",
-      "pmid": "29590200",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29590200/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29590200.html"
+      "text": "Perel et al. 2007",
+      "pmid": "17175568",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17175568/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/17175568.html"
      }
     ]
    }
@@ -899,91 +247,21 @@
   "assessment": "Toxicology",
   "organism": "dog",
   "n_studies": 6,
-  "summary": "Dog toxicology tests are inconsistently predictive of human toxicity. Examples: Monticello et al. 2017\u2014specificity 84% and NPV 86% (absence); Atkins et al. 2020\u2014median dog PPV \u22480.67 and NPV \u22480.52; Bailey et al. 2019\u2014no-animal-toxicity \u2192 72% no human toxicity; Clark et al. 2018\u2014dog LR+ for cardiac 6.11.",
+  "summary": "Evidence is mixed \u2014 dog data sometimes track human toxicities for specific endpoints (dog LR+ for cardiac disorders 6.11; regulatory rat+dog testing flagged 71% of human toxicities (Jang et al. 2019)). However absence of dog toxicity gives only modest reassurance (~72% no human toxicity; dog iNLR\u22481.10).",
   "direction": "mixed",
-  "why_range_is_wide": "Results vary by organ/endpoint, by metric reported (PPV/NPV vs likelihood ratios), and by study design/sample.",
+  "why_range_is_wide": "Performance varies by organ class, endpoint and toxicity severity (e.g., cardiac vs hepatic, grade 3\u20134 vs all grades, in vitro vs in vivo).",
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 3
    },
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 3
    }
   ],
   "evidence": [
-   {
-    "value": "16\u201390%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "Sensitivity for liver disorders (Olson study)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "4.1\u20131000",
-    "statistic": "lr+",
-    "n": "",
-    "what": "Likelihood Ratio for Pain (all species combined)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "10\u201330",
-    "statistic": "ic50 (half-maximal inhibitory concentration)",
-    "n": "",
-    "what": "IC50 for bosentan-induced albumin secretion decrease",
-    "cites": [
-     {
-      "text": "Jang et al. 2019",
-      "pmid": "31694927",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
-     }
-    ]
-   },
-   {
-    "value": "20\u201370",
-    "statistic": "range",
-    "n": "",
-    "what": "albumin secretion (\u00b5g day-1 per million cells) in Liver-Chip vs in vivo",
-    "cites": [
-     {
-      "text": "Jang et al. 2019",
-      "pmid": "31694927",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
-     }
-    ]
-   },
-   {
-    "value": "2.8\u20133.9",
-    "statistic": "lower",
-    "n": "",
-    "what": "albumin secretion in conventional sandwich monoculture plates vs human Liver-Chip",
-    "cites": [
-     {
-      "text": "Jang et al. 2019",
-      "pmid": "31694927",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
-     }
-    ]
-   },
    {
     "value": "3\u201310",
     "statistic": "more potent",
@@ -997,17 +275,87 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
      }
     ]
+   },
+   {
+    "value": "30\u201340%",
+    "statistic": "pru",
+    "n": "",
+    "what": "Proportionate Reduction in Uncertainty (PRU) for GI (Dog)",
+    "cites": [
+     {
+      "text": "Monticello et al. 2017",
+      "pmid": "28893587",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
+     }
+    ]
+   },
+   {
+    "value": "3.42\u20136.11",
+    "statistic": "lr+",
+    "n": ", n=404",
+    "what": "Likelihood Ratio for dog, Cardiac disorders",
+    "cites": [
+     {
+      "text": "Clark et al. 2018",
+      "pmid": "29730448",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
+     }
+    ]
+   },
+   {
+    "value": "30",
+    "statistic": "ic50 (half-maximal inhibitory concentration)",
+    "n": "",
+    "what": "IC50 for bosentan-induced albumin secretion decrease",
+    "cites": [
+     {
+      "text": "Jang et al. 2019",
+      "pmid": "31694927",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
+     }
+    ]
+   },
+   {
+    "value": "50%",
+    "statistic": "ppv",
+    "n": "",
+    "what": "PPV for Cutaneous",
+    "cites": [
+     {
+      "text": "Monticello et al. 2017",
+      "pmid": "28893587",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
+     }
+    ]
+   },
+   {
+    "value": "91%",
+    "statistic": "npv",
+    "n": "",
+    "what": "NPV for Cutaneous",
+    "cites": [
+     {
+      "text": "Monticello et al. 2017",
+      "pmid": "28893587",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
+     }
+    ]
    }
   ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
+  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
  },
  {
   "assessment": "Toxicology",
   "organism": "non-human primate",
   "n_studies": 5,
-  "summary": "Evidence is mixed: NHPs have low-to-moderate overall predictive value for human toxicity (Monticello 2017: sens 48%, PPV 43%; Atkins 2020: median PPV 0.65, NPV 0.50; Bailey 2019: negative animal test \u2192 ~70% chance no human toxicity). Predictivity is endpoint-dependent\u2014Clark 2018 reports LR+ up to 11 for cynomolgus monkey (cardiac/hepatobiliary).",
+  "summary": "Evidence is mixed: NHP findings sometimes predict human toxicity \u2014 Monticello 2017 overall sensitivity 48% and specificity 84% (GI PPV 91%, nervous PPV 83%), and Clark 2018 LR+ up to 11.02. But other analyses report weak or inconsistent prediction (Bailey 2019 no-animal\u2192no-human 70.4%; Bailey 2015 iNLR 1.02).",
   "direction": "mixed",
-  "why_range_is_wide": "Results differ by organ system, endpoint and study dataset/metric (some endpoints show high LR+ while many ADRs have low selectivity or iNLR\u22481).",
+  "why_range_is_wide": "Performance varies by organ/endpoint, toxicity severity, study selection bias and low clinical positive prevalence.",
   "negative_controls": null,
   "verdicts": [
    {
@@ -1049,34 +397,6 @@
     ]
    },
    {
-    "value": "16\u201390%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "Sensitivity for liver disorders (Olson study)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "4.1\u20131000",
-    "statistic": "lr+",
-    "n": "",
-    "what": "Likelihood Ratio for Pain (all species combined)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
     "value": "60\u201380%",
     "statistic": "pru",
     "n": "",
@@ -1103,205 +423,57 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
      }
     ]
-   }
-  ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
- },
- {
-  "assessment": "Toxicology",
-  "organism": "rodent",
-  "n_studies": 5,
-  "summary": "Evidence is mixed: rodents detect some human toxicities but often miss others \u2014 rodent concordance/sensitivity \u224843\u201348% (Wall et al. 2008; Monticello et al. 2017; Olson et al. 2000) with mean PPV \u224836% (Bailey et al. 2019); hematologic concordance was 91% (Olson et al. 2000). Findings vary by organ, trial phase and study inclusion (e.g., Olson included only compounds with known human toxicities).",
-  "direction": "mixed",
-  "why_range_is_wide": "Estimates vary by organ system, clinical-prevalence effects on PPV/NPV, trial phase, and study inclusion criteria (e.g., Olson only included drugs with known human toxicities).",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 3
    },
    {
-    "label": "does not support",
-    "n": 2
-   }
-  ],
-  "evidence": [
+    "value": "1.02",
+    "statistic": "median inlr",
+    "n": "",
+    "what": "NHP-human median iNLR",
+    "cites": [
+     {
+      "text": "Bailey et al. 2015",
+      "pmid": "26753942",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26753942/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/26753942.html"
+     }
+    ]
+   },
    {
-    "value": "26\u201362%",
+    "value": "67%",
     "statistic": "ppv",
     "n": "",
-    "what": "PPV for Liver",
+    "what": "PPV for Cutaneous",
     "cites": [
      {
       "text": "Monticello et al. 2017",
       "pmid": "28893587",
       "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
       "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
-     }
-    ]
-   },
-   {
-    "value": "86\u201392%",
-    "statistic": "npv",
-    "n": "",
-    "what": "NPV for Liver",
-    "cites": [
-     {
-      "text": "Monticello et al. 2017",
-      "pmid": "28893587",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
-     }
-    ]
-   },
-   {
-    "value": "52\u201375%",
-    "statistic": "rate",
-    "n": "",
-    "what": "concordance rate for Phase I onset HTs",
-    "cites": [
-     {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
-     }
-    ]
-   },
-   {
-    "value": "70\u201371%",
-    "statistic": "rate",
-    "n": "",
-    "what": "true positive HT concordance rate (sensitivity)",
-    "cites": [
-     {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
-     }
-    ]
-   },
-   {
-    "value": "43\u201363%",
-    "statistic": "rate",
-    "n": "",
-    "what": "predictive rate for HTs",
-    "cites": [
-     {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
-     }
-    ]
-   },
-   {
-    "value": "43\u201363%",
-    "statistic": "rate",
-    "n": "",
-    "what": "concordance rate",
-    "cites": [
-     {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
      }
     ]
    }
   ],
-  "caveat": "The study only included compounds where human toxicities were identified, meaning it focused on true positives and false negatives, not true negatives or false positives. This limits the ability to assess overall predictivity."
+  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
  },
  {
   "assessment": "Toxicology",
   "organism": "rat",
   "n_studies": 4,
-  "summary": "Evidence is mixed: rats give modest positive signal for some toxicities (Atkins et al. 2020 median PPV 0.65; Clark et al. 2018 rat LR+ 2.74 hepatobiliary, 4.73 cardiac) but do not reliably rule out human harm (Bailey et al. 2015 rat iNLR 1.82). Jang et al. 2019 shows species mismatches (bosentan rat IC50 >100 \u00b5M vs human 10 \u00b5M).",
+  "summary": "Evidence is mixed: some studies find rat findings often align with human toxicity (regulatory tests predicted 71% of human toxicities; rat LR+ 4.73 for cardiac and 2.74 for hepatobiliary), but other analyses show only modest predictive power (median PPV 0.65; iNLR 1.82). Variation by endpoint, severity and study methods limits generalisability.",
   "direction": "mixed",
-  "why_range_is_wide": "Metrics vary by organ class and severity of toxicity (different endpoints and study subsets produce different performance).",
+  "why_range_is_wide": "Results vary by endpoint, toxicity grade and study methods/datasets (e.g., Jang pooled rats and dogs; Atkins stratified by severity).",
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 2
    },
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 2
    }
   ],
   "evidence": [
-   {
-    "value": "16\u201390%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "Sensitivity for liver disorders (Olson study)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "4.1\u20131000",
-    "statistic": "lr+",
-    "n": "",
-    "what": "Likelihood Ratio for Pain (all species combined)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "10\u2013100",
-    "statistic": "ic50 (half-maximal inhibitory concentration)",
-    "n": "",
-    "what": "IC50 for bosentan-induced albumin secretion decrease",
-    "cites": [
-     {
-      "text": "Jang et al. 2019",
-      "pmid": "31694927",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
-     }
-    ]
-   },
-   {
-    "value": "20\u201370",
-    "statistic": "range",
-    "n": "",
-    "what": "albumin secretion (\u00b5g day-1 per million cells) in Liver-Chip vs in vivo",
-    "cites": [
-     {
-      "text": "Jang et al. 2019",
-      "pmid": "31694927",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
-     }
-    ]
-   },
-   {
-    "value": "2.8\u20133.9",
-    "statistic": "lower",
-    "n": "",
-    "what": "albumin secretion in conventional sandwich monoculture plates vs human Liver-Chip",
-    "cites": [
-     {
-      "text": "Jang et al. 2019",
-      "pmid": "31694927",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
-     }
-    ]
-   },
    {
     "value": "2.74\u20134.73",
     "statistic": "lr+",
@@ -1315,17 +487,87 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
      }
     ]
+   },
+   {
+    "value": "100",
+    "statistic": "ic50 (half-maximal inhibitory concentration)",
+    "n": "",
+    "what": "IC50 for bosentan-induced albumin secretion decrease",
+    "cites": [
+     {
+      "text": "Jang et al. 2019",
+      "pmid": "31694927",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31694927/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/31694927.html"
+     }
+    ]
+   },
+   {
+    "value": "0.65",
+    "statistic": "median ppv",
+    "n": "",
+    "what": "PPV for all toxicity grades",
+    "cites": [
+     {
+      "text": "Atkins et al. 2020",
+      "pmid": "32868897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
+     }
+    ]
+   },
+   {
+    "value": "0.41",
+    "statistic": "median ppv",
+    "n": "",
+    "what": "PPV for grade 3 and 4 toxicities",
+    "cites": [
+     {
+      "text": "Atkins et al. 2020",
+      "pmid": "32868897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
+     }
+    ]
+   },
+   {
+    "value": "0.51",
+    "statistic": "median npv",
+    "n": "",
+    "what": "NPV for all toxicity grades",
+    "cites": [
+     {
+      "text": "Atkins et al. 2020",
+      "pmid": "32868897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
+     }
+    ]
+   },
+   {
+    "value": "0.72",
+    "statistic": "median npv",
+    "n": "",
+    "what": "NPV for grade 3 and 4 toxicities",
+    "cites": [
+     {
+      "text": "Atkins et al. 2020",
+      "pmid": "32868897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
+     }
+    ]
    }
   ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
+  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
  },
  {
   "assessment": "Toxicology",
   "organism": "mouse",
   "n_studies": 3,
-  "summary": "Mouse toxicology translates inconsistently to humans: PPV 0.57 (all grades) and 0.43 (grade 3\u20134) vs NPV 0.81 for grade 3\u20134 (Atkins et al. 2020), iNLR 1.39 (Bailey et al. 2015), though mouse cardiac LR+ = 5.29 (Clark et al. 2018). Performance varies by organ class and severity.",
+  "summary": "Mouse toxicology is mixed: some mouse signals predict human toxicity (Clark et al. 2018 \u2014 LR+ cardiac 5.29; hepatobiliary 3.73; pain 7.4). However overall discrimination is weak (Atkins et al. 2020 median PPV 0.57 all grades, 0.43 for grade 3\u20134; Bailey et al. 2015 iNLR 1.39).",
   "direction": "mixed",
-  "why_range_is_wide": "Variation arises from organ class and toxicity severity: some endpoints (e.g. cardiac) show high LR+ while overall selectivity and iNLR remain low.",
+  "why_range_is_wide": "Results vary by specific organ endpoint and toxicity severity (Clark shows high LR+ for some endpoints; Atkins shows PPV falls for grade 3\u20134).",
   "negative_controls": null,
   "verdicts": [
    {
@@ -1339,34 +581,6 @@
   ],
   "evidence": [
    {
-    "value": "16\u201390%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "Sensitivity for liver disorders (Olson study)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "4.1\u20131000",
-    "statistic": "lr+",
-    "n": "",
-    "what": "Likelihood Ratio for Pain (all species combined)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
     "value": "3.73\u20135.29",
     "statistic": "lr+",
     "n": ", n=210",
@@ -1377,34 +591,6 @@
       "pmid": "29730448",
       "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
       "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "0.65",
-    "statistic": "median ppv",
-    "n": "",
-    "what": "Overall animal toxicity correlation with human toxicity",
-    "cites": [
-     {
-      "text": "Atkins et al. 2020",
-      "pmid": "32868897",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
-     }
-    ]
-   },
-   {
-    "value": "0.5",
-    "statistic": "median npv",
-    "n": "",
-    "what": "Overall animal toxicity correlation with human toxicity",
-    "cites": [
-     {
-      "text": "Atkins et al. 2020",
-      "pmid": "32868897",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
      }
     ]
    },
@@ -1421,128 +607,142 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
      }
     ]
+   },
+   {
+    "value": "0.43",
+    "statistic": "median ppv",
+    "n": "",
+    "what": "PPV for grade 3 and 4 toxicities",
+    "cites": [
+     {
+      "text": "Atkins et al. 2020",
+      "pmid": "32868897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
+     }
+    ]
+   },
+   {
+    "value": "0.57",
+    "statistic": "median npv",
+    "n": "",
+    "what": "NPV for all toxicity grades",
+    "cites": [
+     {
+      "text": "Atkins et al. 2020",
+      "pmid": "32868897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
+     }
+    ]
+   },
+   {
+    "value": "0.81",
+    "statistic": "median npv",
+    "n": "",
+    "what": "NPV for grade 3 and 4 toxicities",
+    "cites": [
+     {
+      "text": "Atkins et al. 2020",
+      "pmid": "32868897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32868897/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32868897.html"
+     }
+    ]
+   },
+   {
+    "value": "7.4",
+    "statistic": "lr+",
+    "n": "",
+    "what": "Likelihood Ratio for Pain (mouse)",
+    "cites": [
+     {
+      "text": "Clark et al. 2018",
+      "pmid": "29730448",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
+     }
+    ]
    }
   ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
+  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
  },
  {
   "assessment": "Toxicology",
-  "organism": "non-rodent",
-  "n_studies": 3,
-  "summary": "Non\u2011rodent toxicology tracked human organ toxicities moderately: non\u2011rodents predicted human organ toxicity ~63% of the time (Olson et al. 2000; Wall et al. 2008) and rodent+nonrodent concordance was ~71% (Olson et al. 2000). Concordance varied by organ \u2014 e.g. non\u2011rodent GI 83% vs rodent GI 46% (Peters et al. 2019) \u2014 and Olson analysed only compounds with known human toxicities.",
+  "organism": "rabbit",
+  "n_studies": 2,
+  "summary": "Evidence is mixed: rabbit tests show signal for some cardiac endpoints (Clark et al. 2018: rabbit LR+ 3.54 for cardiac disorders; QT prolongation post-test odds 83%). But overall animal-to-human discriminative weight is minimal (Bailey et al. 2015: rabbit median iNLR 1.12).",
   "direction": "mixed",
-  "why_range_is_wide": "Concordance differs by organ system and clinical phase, and Olson restricted analysis to compounds with known human toxicities.",
+  "why_range_is_wide": "Performance varies by endpoint and dataset selection (overall selectivity low while specific cardiac endpoints show higher concordance).",
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
-    "n": 2
+    "label": "does not support",
+    "n": 1
    },
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 1
    }
   ],
   "evidence": [
    {
-    "value": "52\u201375%",
-    "statistic": "rate",
-    "n": "",
-    "what": "concordance rate for Phase I onset HTs",
+    "value": "2.8\u20133.54",
+    "statistic": "lr+",
+    "n": ", n=99",
+    "what": "Likelihood Ratio for rabbit, Cardiac disorders",
     "cites": [
      {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
+      "text": "Clark et al. 2018",
+      "pmid": "29730448",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
      }
     ]
    },
    {
-    "value": "70\u201371%",
-    "statistic": "rate",
+    "value": "83%",
+    "statistic": "post-test odds",
     "n": "",
-    "what": "true positive HT concordance rate (sensitivity)",
+    "what": "QT prolongation post-test odds (rabbit)",
     "cites": [
      {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
+      "text": "Clark et al. 2018",
+      "pmid": "29730448",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
      }
     ]
    },
    {
-    "value": "43\u201363%",
-    "statistic": "rate",
+    "value": "1.12",
+    "statistic": "median inlr",
     "n": "",
-    "what": "predictive rate for HTs",
+    "what": "Rabbit-human median iNLR",
     "cites": [
      {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
-     }
-    ]
-   },
-   {
-    "value": "43\u201363%",
-    "statistic": "rate",
-    "n": "",
-    "what": "concordance rate",
-    "cites": [
-     {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
-     }
-    ]
-   },
-   {
-    "value": "7\u201327%",
-    "statistic": "rate",
-    "n": "",
-    "what": "concordance by only one species occurring in the nonrodent",
-    "cites": [
-     {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
-     }
-    ]
-   },
-   {
-    "value": "90\u201391%",
-    "statistic": "rate",
-    "n": "",
-    "what": "rodent toxicology studies judged to have been performed at limiting doses for cases where HTs were not predicted",
-    "cites": [
-     {
-      "text": "Olson et al. 2000",
-      "pmid": "11029269",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11029269/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/11029269.html"
+      "text": "Bailey et al. 2015",
+      "pmid": "26753942",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26753942/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/26753942.html"
      }
     ]
    }
   ],
-  "caveat": "The study only included compounds where human toxicities were identified, meaning it focused on true positives and false negatives, not true negatives or false positives. This limits the ability to assess overall predictivity."
+  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
  },
  {
   "assessment": "Toxicology",
   "organism": "zebrafish",
-  "n_studies": 3,
-  "summary": "Studies show zebrafish toxicology often tracks mammalian outcomes: Nikam et al. 2020 reported 100% concordance with mammalian screening and hepatotoxicity and 90% agreement for teratogenicity (n=59); Cornet et al. 2017 reported overall accuracy 78%. Performance varies by endpoint\u2014sensitivities 54\u201380% and specificities 77\u2013100% across endpoints (McGrath 2008 noted sensitivity >80% and specificity >70%).",
-  "direction": "evidence favours the model",
-  "why_range_is_wide": "Range reflects differences between toxicity endpoints (cardiotoxicity, neurotoxicity, hepatotoxicity) and between assay versions/studies.",
+  "n_studies": 2,
+  "summary": "Zebrafish assays generally track human toxicology: McGrath et al. 2008 detected 100% of teratogens and 75% of non\u2011teratogens; Cornet et al. 2017 reported 78% accuracy (89% specificity, 68% sensitivity). Performance varies by endpoint (neuro 54% vs hepatotoxicity 80%).",
+  "direction": "mixed",
+  "why_range_is_wide": "Sensitivity differs by toxicity endpoint (e.g. neurotoxicity 54% vs hepatotoxicity 80%).",
   "negative_controls": null,
   "verdicts": [
    {
     "label": "supports",
-    "n": 2
+    "n": 1
    },
    {
     "label": "partly supports",
@@ -1550,20 +750,6 @@
    }
   ],
   "evidence": [
-   {
-    "value": "231\u2013336",
-    "statistic": "qt interval",
-    "n": "",
-    "what": "QT interval",
-    "cites": [
-     {
-      "text": "Nikam et al. 2020",
-      "pmid": "33666192",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33666192/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33666192.html"
-     }
-    ]
-   },
    {
     "value": "75%",
     "statistic": "success rate",
@@ -1633,123 +819,31 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/28422076.html"
      }
     ]
+   },
+   {
+    "value": "68%",
+    "statistic": "sensitivity",
+    "n": "",
+    "what": "ZeGlobalTox predictive assessment (overall)",
+    "cites": [
+     {
+      "text": "Cornet et al. 2017",
+      "pmid": "28422076",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28422076/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/28422076.html"
+     }
+    ]
    }
   ],
   "caveat": null
  },
  {
   "assessment": "Toxicology",
-  "organism": "rabbit",
-  "n_studies": 2,
-  "summary": "Evidence is mixed: rabbit findings predict some human toxicities (LR+ 3.54 for cardiac, LR+ 2.8 for hepatobiliary; rabbit QT post-test odds 83%) but give little reassurance overall (rabbit median iNLR 1.12 \u2248 unity). Differences reflect endpoint-specific concordance and study design/selection bias (Clark et al. 2018; Bailey et al. 2015).",
-  "direction": "mixed",
-  "why_range_is_wide": "Endpoint-specific analyses (e.g., QT) show higher concordance while overall selectivity is low; differing datasets and selection bias explain variation.",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 1
-   },
-   {
-    "label": "does not support",
-    "n": 1
-   }
-  ],
-  "evidence": [
-   {
-    "value": "16\u201390%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "Sensitivity for liver disorders (Olson study)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "4.1\u20131000",
-    "statistic": "lr+",
-    "n": "",
-    "what": "Likelihood Ratio for Pain (all species combined)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "2.8\u20133.54",
-    "statistic": "lr+",
-    "n": ", n=99",
-    "what": "Likelihood Ratio for rabbit, Cardiac disorders",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "7%",
-    "statistic": "selectivity",
-    "n": "",
-    "what": "Overall true positive rate for all species and organ classes",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "90%",
-    "statistic": "chance",
-    "n": ", n=23 small set of compounds (n = 23)",
-    "what": "QT prolongation prediction chance (Vargas et al. study)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   },
-   {
-    "value": "83%",
-    "statistic": "post-test odds",
-    "n": "",
-    "what": "QT prolongation post-test odds (rabbit)",
-    "cites": [
-     {
-      "text": "Clark et al. 2018",
-      "pmid": "29730448",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29730448/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/29730448.html"
-     }
-    ]
-   }
-  ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
- },
- {
-  "assessment": "Toxicology",
-  "organism": "pig",
+  "organism": "rodent",
   "n_studies": 1,
-  "summary": "Monticello et al. 2017: animal findings predicted absence of human adverse effects better than presence \u2014 specificity 84% and NPV 86% vs sensitivity 48% and PPV 43% (clinical positive prevalence 21%). Excluding subjective 'other' events raised sensitivity to 52% and NPV to 92%.",
+  "summary": "Monticello et al. 2017: rodent toxicology showed modest sensitivity (48%) and PPV (43%) but higher specificity (84%) and NPV (86%), so rodent findings only partially tracked human adverse effects. Performance varied by organ (PPV 0\u201354%; e.g. Ophthalmology 0%, Biochemical 54%) and was poor for subjective 'other' events (PPV 9%, NPV 14%).",
   "direction": "mixed",
-  "why_range_is_wide": "Excluding the subjective 'other' organ-category (low signal) changed PPV/NPV and prevalence.",
+  "why_range_is_wide": "Predictive values differ by target organ and event type; subjective 'other' events had especially low PPV/NPV.",
   "negative_controls": null,
   "verdicts": [
    {
@@ -1759,24 +853,10 @@
   ],
   "evidence": [
    {
-    "value": "48%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "Sensitivity",
-    "cites": [
-     {
-      "text": "Monticello et al. 2017",
-      "pmid": "28893587",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
-     }
-    ]
-   },
-   {
-    "value": "43%",
+    "value": "26\u201362%",
     "statistic": "ppv",
     "n": "",
-    "what": "Positive Predictive Value (PPV)",
+    "what": "PPV for Liver",
     "cites": [
      {
       "text": "Monticello et al. 2017",
@@ -1787,24 +867,10 @@
     ]
    },
    {
-    "value": "84%",
-    "statistic": "specificity",
-    "n": "",
-    "what": "Specificity",
-    "cites": [
-     {
-      "text": "Monticello et al. 2017",
-      "pmid": "28893587",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
-     }
-    ]
-   },
-   {
-    "value": "86%",
+    "value": "86\u201392%",
     "statistic": "npv",
     "n": "",
-    "what": "Negative Predictive Value (NPV)",
+    "what": "NPV for Liver",
     "cites": [
      {
       "text": "Monticello et al. 2017",
@@ -1815,10 +881,10 @@
     ]
    },
    {
-    "value": "48%",
-    "statistic": "sensitivity",
+    "value": "20\u201340%",
+    "statistic": "pru",
     "n": "",
-    "what": "Overall Sensitivity",
+    "what": "Proportionate Reduction in Uncertainty (PRU) for GI (Rodent)",
     "cites": [
      {
       "text": "Monticello et al. 2017",
@@ -1829,10 +895,38 @@
     ]
    },
    {
-    "value": "84%",
-    "statistic": "specificity",
+    "value": "40%",
+    "statistic": "ppv",
     "n": "",
-    "what": "Overall Specificity",
+    "what": "PPV for Cutaneous",
+    "cites": [
+     {
+      "text": "Monticello et al. 2017",
+      "pmid": "28893587",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
+     }
+    ]
+   },
+   {
+    "value": "82%",
+    "statistic": "npv",
+    "n": "",
+    "what": "NPV for Cutaneous",
+    "cites": [
+     {
+      "text": "Monticello et al. 2017",
+      "pmid": "28893587",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28893587/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/28893587.html"
+     }
+    ]
+   },
+   {
+    "value": "14%",
+    "statistic": "ppv",
+    "n": "",
+    "what": "PPV for Musculoskeletal",
     "cites": [
      {
       "text": "Monticello et al. 2017",
@@ -1849,10 +943,10 @@
   "assessment": "Safety pharmacology",
   "organism": "dog",
   "n_studies": 4,
-  "summary": "Dog safety studies broadly track human cardiac and BP/HR effects: dog QTc AUC \u22480.81 (Pollard et al. 2017), 91% of human QT\u2011prolongers also prolonged QT in animals (Valentin et al. 2022), and combined BP/HR sensitivity/specificity were 78%/79% (Bhatt et al. 2019). However, overall discordance was 31% and nonclinical false\u2011negatives among TQT\u2011positive drugs reached 65% (Valentin et al. 2022); assay sensitivity varies by assay and exposure.",
-  "direction": "mixed",
-  "why_range_is_wide": "Sensitivity varies by assay type and exposure multiple (e.g., hERG/in vivo QTc 50\u201357% at 30\u00d7 vs APD 19%).",
-  "negative_controls": "Sadko et al. 2024 included a mock/vehicle negative control that produced no QTc change in dogs.",
+  "summary": "Dogs moderately predict human cardiac safety: Valentin et al. 2022 found 91% of drugs that prolonged QT in humans also prolonged QT in dogs (88% concordant negatives; 31% discordant), and Pollard et al. 2017 reported dog QTc AUC \u22480.81. Bhatt et al. 2019 gave combined BP/HR sensitivity 78% and specificity 79%, and Sadko et al. 2024 observed moxifloxacin +16.6 ms QTc in dogs (human \u224810 ms); concordance varies by endpoint and exposure.",
+  "direction": "evidence favours the model",
+  "why_range_is_wide": "Variation arises by endpoint (QTc vs BP/HR), assay type and exposure level, and dataset composition (e.g. inclusion/exclusion of \u03b22\u2011agonists).",
+  "negative_controls": "Sadko et al. 2024: mock/vehicle produced no QTc increase (negative control).",
   "verdicts": [
    {
     "label": "partly supports",
@@ -1864,20 +958,6 @@
    }
   ],
   "evidence": [
-   {
-    "value": "19\u201357%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "sensitivity of hERG assay for clinical QTc prolongation at 30x exposure multiples",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
    {
     "value": "0.78\u20130.92",
     "statistic": "auc",
@@ -1921,20 +1001,6 @@
     ]
    },
    {
-    "value": "88\u201391%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "concordance between QT results in humans and nonrodent animals",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
     "value": "0.81\u20130.91",
     "statistic": "auc",
     "n": "",
@@ -1947,34 +1013,26 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/28903488.html"
      }
     ]
-   }
-  ],
-  "caveat": "Predictive values are dependent on the prevalence of positives in the dataset. The paper notes that the prevalence in the dataset may be lower than \"real world\" prevalence."
- },
- {
-  "assessment": "Safety pharmacology",
-  "organism": "non-human primate",
-  "n_studies": 3,
-  "summary": "Evidence is mixed: NHPs recapitulated a clinical QTc change for moxifloxacin (10.9 ms vs ~10 ms in humans; Sadko et al. 2024) and 91% of human-QT\u2013prolonging drugs also prolonged in animals, but 31% of 150 drugs were discordant (Valentin et al. 2022). Large-animal to human BP/HR concordance was reasonable (sensitivity 78%, specificity 79%; Bhatt et al. 2019), though assay sensitivity varies by endpoint and exposure multiple.",
-  "direction": "mixed",
-  "why_range_is_wide": "Results vary by endpoint, assay type and exposure multiple (e.g., hERG/in vivo QTc sensitivity rose to ~50\u201357% at 30\u00d7 while APD stayed ~19%; Valentin et al. 2022).",
-  "negative_controls": "Sadko et al. 2024 included a mock drug negative control showing no QTc increase up to 3\u00d7 clinical concentration.",
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 2
    },
    {
-    "label": "supports",
-    "n": 1
-   }
-  ],
-  "evidence": [
+    "value": "1.7\u20133",
+    "statistic": "multiple",
+    "n": ", n=8 n=8",
+    "what": "Critical concentration multiple for 10ms QTc increase (moxifloxacin)",
+    "cites": [
+     {
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+     }
+    ]
+   },
    {
-    "value": "19\u201357%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "sensitivity of hERG assay for clinical QTc prolongation at 30x exposure multiples",
+    "value": "0.81",
+    "statistic": "concordance rate",
+    "n": ", n=24 drugs",
+    "what": "concordance rate of in vivo dog assay for clinical QT outcome",
     "cites": [
      {
       "text": "Valentin et al. 2022",
@@ -1983,7 +1041,29 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
      }
     ]
+   }
+  ],
+  "caveat": "The prevalence of compounds that prolong QTc in clinical studies was estimated at 0.22, which can influence PPV and NPV values."
+ },
+ {
+  "assessment": "Safety pharmacology",
+  "organism": "non-human primate",
+  "n_studies": 2,
+  "summary": "Evidence shows NHP cardiovascular safety findings largely track human results: Bhatt et al. 2019 \u2014 combined BP+HR sensitivity 78%, specificity 79% (NPV 92%), though HR-only sensitivity was 54%. Sadko et al. 2024 found NHP moxifloxacin QTc +10.9 ms (vs ~10 ms in humans).",
+  "direction": "evidence favours the model",
+  "why_range_is_wide": "Performance varies by endpoint: combined BP+HR concordance is higher than HR-only.",
+  "negative_controls": "Sadko et al. 2024 included a mock (no-effect) drug showing no QTc change up to 3\u00d7 clinical concentration.",
+  "verdicts": [
+   {
+    "label": "supports",
+    "n": 1
    },
+   {
+    "label": "partly supports",
+    "n": 1
+   }
+  ],
+  "evidence": [
    {
     "value": "54\u201378%",
     "statistic": "sensitivity",
@@ -2013,20 +1093,6 @@
     ]
    },
    {
-    "value": "88\u201391%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "concordance between QT results in humans and nonrodent animals",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
     "value": "1.5\u20133",
     "statistic": "multiple",
     "n": ", n=48 n=48",
@@ -2041,16 +1107,44 @@
     ]
    },
    {
-    "value": "89%",
-    "statistic": "specificity",
-    "n": "",
-    "what": "specificity of all nonclinical assays for clinical QTc prolongation",
+    "value": "10.9",
+    "statistic": "mean",
+    "n": ", n=48 n=48",
+    "what": "QTc increase at critical concentration (moxifloxacin)",
     "cites": [
      {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+     }
+    ]
+   },
+   {
+    "value": "0",
+    "statistic": "change",
+    "n": ", n=48 n=48",
+    "what": "QTc increase at critical concentration (mock drug)",
+    "cites": [
+     {
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+     }
+    ]
+   },
+   {
+    "value": "10",
+    "statistic": "mean",
+    "n": ", n=48 n=48",
+    "what": "QTc increase over 24h (moxifloxacin)",
+    "cites": [
+     {
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
      }
     ]
    }
@@ -2060,32 +1154,18 @@
  {
   "assessment": "Safety pharmacology",
   "organism": "rat",
-  "n_studies": 2,
-  "summary": "Rat safety data partly track human cardiovascular outcomes: Bhatt et al. 2019 reported rat\u2192large-animal concordance for combined BP/HR with sensitivity 84% and specificity 71% (PPV 90%, NPV 60%). However, QT findings are mixed \u2014 Valentin et al. 2022 found 91% of human QT\u2011prolongers also prolonged QT in animals but 31% overall discordance and only 50\u201357% assay sensitivity at 30x exposure.",
+  "n_studies": 1,
+  "summary": "Bhatt et al. 2019: Rat findings tracked large-animal changes for combined BP+HR (sensitivity 84%, specificity 71%, PPV 90%, NPV 60%) but were weaker for single endpoints (HR sensitivity 64%, BP specificity 59%) and 23\u201326% showed opposite direction of change. Predictive values may be inflated because dataset prevalence may be lower than real-world.",
   "direction": "mixed",
-  "why_range_is_wide": null,
+  "why_range_is_wide": "The 23\u201326% range reflects separate opposite-direction percentages reported for HR versus BP.",
   "negative_controls": null,
   "verdicts": [
    {
     "label": "partly supports",
-    "n": 2
+    "n": 1
    }
   ],
   "evidence": [
-   {
-    "value": "19\u201357%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "sensitivity of hERG assay for clinical QTc prolongation at 30x exposure multiples",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
    {
     "value": "64\u201384%",
     "statistic": "sensitivity",
@@ -2115,20 +1195,6 @@
     ]
    },
    {
-    "value": "88\u201391%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "concordance between QT results in humans and nonrodent animals",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
     "value": "23\u201326%",
     "statistic": "opposite direction of change",
     "n": "",
@@ -2143,16 +1209,30 @@
     ]
    },
    {
-    "value": "89%",
-    "statistic": "specificity",
+    "value": "90%",
+    "statistic": "positive predictive value",
     "n": "",
-    "what": "specificity of all nonclinical assays for clinical QTc prolongation",
+    "what": "rat to large animal (combined BP and HR)",
     "cites": [
      {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
+      "text": "Bhatt et al. 2019",
+      "pmid": "30726989",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
+     }
+    ]
+   },
+   {
+    "value": "60%",
+    "statistic": "negative predictive value",
+    "n": "",
+    "what": "rat to large animal (combined BP and HR)",
+    "cites": [
+     {
+      "text": "Bhatt et al. 2019",
+      "pmid": "30726989",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
      }
     ]
    }
@@ -2160,349 +1240,25 @@
   "caveat": "Predictive values are dependent on the prevalence of positives in the dataset. The paper notes that the prevalence in the dataset may be lower than \"real world\" prevalence."
  },
  {
-  "assessment": "Safety pharmacology",
-  "organism": "non-rodent",
-  "n_studies": 1,
-  "summary": "Baldrick et al. 2021 report non-rodent safety\u2011pharmacology does not reliably predict clinical proarrhythmic risk: a stand\u2011alone hERG assay showed little correlation to animal data, while non\u2011rodent telemetry detected QTc effects in \u224810% of studies. However, the authors note in vivo telemetry can still be useful for identifying QTc effects and supporting safe clinical entry.",
-  "direction": "evidence does not favour the model",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "does not support",
-    "n": 1
-   }
-  ],
-  "evidence": [
-   {
-    "value": "0%",
-    "statistic": "proportion",
-    "n": ", n=92 studies",
-    "what": "Rodent CNS (neurobehavioural) evaluations with findings identified as of obvious concern to moving affected drugs into clinic",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   },
-   {
-    "value": "21%",
-    "statistic": "proportion",
-    "n": ", n=92 studies",
-    "what": "Rodent CNS studies (modified Irwin's or FOB test) with findings",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   },
-   {
-    "value": "28%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "Rodent respiratory function (plethysmography) studies with findings",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   },
-   {
-    "value": "10%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "Non-rodent telemetry studies identifying effects on QTc interval",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Safety pharmacology",
-  "organism": "pig",
-  "n_studies": 1,
-  "summary": "Valentin et al. 2022: nonrodent (including pig) QT findings partly tracked clinical QT\u201469% concordant (31% discordant, 47/150); 91% of human QT\u2011prolongers and 88% of human non\u2011prolongers matched animal results. However, sensitivity varied by assay (hERG 50%; in vivo QTc 57% at 30x; APD 19%) and 65% of TQT\u2011positives were nonclinical false negatives.",
-  "direction": "mixed",
-  "why_range_is_wide": "Performance varies by assay type and by exposure multiple (results reported at 30x exposure).",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 1
-   }
-  ],
-  "evidence": [
-   {
-    "value": "19\u201357%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "sensitivity of hERG assay for clinical QTc prolongation at 30x exposure multiples",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "88\u201391%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "concordance between QT results in humans and nonrodent animals",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "89%",
-    "statistic": "specificity",
-    "n": "",
-    "what": "specificity of all nonclinical assays for clinical QTc prolongation",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "65%",
-    "statistic": "proportion",
-    "n": ", n=43 TQT-positive drugs",
-    "what": "discordant TQT-positive drugs",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "65%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "nonclinical false negatives among TQT-positive drugs",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Safety pharmacology",
-  "organism": "rabbit",
-  "n_studies": 1,
-  "summary": "Valentin et al. 2022: rabbit/nonrodent QT findings partially tracked humans \u2014 91% of human-QT\u2011prolonging drugs also prolonged QT in animals and 88% of non\u2011prolongers had no animal effect, but 31% (47/150) of drugs were discordant. Crucially, 65% of TQT\u2011positive drugs were nonclinical false negatives and assay sensitivity at 30x was only 50\u201357%.",
-  "direction": "mixed",
-  "why_range_is_wide": "Performance varies by assay type (hERG, in vivo QTc, APD) and by exposure multiple.",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 1
-   }
-  ],
-  "evidence": [
-   {
-    "value": "19\u201357%",
-    "statistic": "sensitivity",
-    "n": "",
-    "what": "sensitivity of hERG assay for clinical QTc prolongation at 30x exposure multiples",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "88\u201391%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "concordance between QT results in humans and nonrodent animals",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "89%",
-    "statistic": "specificity",
-    "n": "",
-    "what": "specificity of all nonclinical assays for clinical QTc prolongation",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "65%",
-    "statistic": "proportion",
-    "n": ", n=43 TQT-positive drugs",
-    "what": "discordant TQT-positive drugs",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   },
-   {
-    "value": "65%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "nonclinical false negatives among TQT-positive drugs",
-    "cites": [
-     {
-      "text": "Valentin et al. 2022",
-      "pmid": "35148401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35148401/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/35148401.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Safety pharmacology",
-  "organism": "rodent",
-  "n_studies": 1,
-  "summary": "Rodent safety\u2011pharmacology tests found CNS findings in 21% and respiratory findings in 28% of studies, but none (0%) were judged of obvious concern for clinical progression; in vitro hERG assays showed little correlation with animal data even at low IC50 (\u22641 \u00b5M). All figures from Baldrick et al. 2021.",
-  "direction": "evidence does not favour the model",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "does not support",
-    "n": 1
-   }
-  ],
-  "evidence": [
-   {
-    "value": "0%",
-    "statistic": "proportion",
-    "n": ", n=92 studies",
-    "what": "Rodent CNS (neurobehavioural) evaluations with findings identified as of obvious concern to moving affected drugs into clinic",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   },
-   {
-    "value": "21%",
-    "statistic": "proportion",
-    "n": ", n=92 studies",
-    "what": "Rodent CNS studies (modified Irwin's or FOB test) with findings",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   },
-   {
-    "value": "28%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "Rodent respiratory function (plethysmography) studies with findings",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   },
-   {
-    "value": "10%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "Non-rodent telemetry studies identifying effects on QTc interval",
-    "cites": [
-     {
-      "text": "Baldrick 2021",
-      "pmid": "33813006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33813006/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/33813006.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
   "assessment": "Disease biology",
   "organism": "mouse",
-  "n_studies": 14,
-  "summary": "Evidence is mixed: Seok et al. 2013 found very low whole\u2011transcriptome concordance (R^2 \u22640.09, mouse vs human), whereas Takao et al. 2015 reported moderate\u2013strong similarity (Spearman 0.43\u20130.68; 77\u201393% genes same direction). Disease\u2011 and method\u2011specific studies (Asgharpour et al. 2016 FDR 0.02; Holland et al. 2022 recall 0.40) show better but variable alignment.",
+  "n_studies": 11,
+  "summary": "Evidence is mixed: some mouse\u2013human transcriptome comparisons agree (Takao et al. 2015: Spearman r 0.43\u20130.68; 77\u201393% genes same direction), but others show near\u2011zero genome\u2011wide concordance (Seok et al. 2013: R^2 \u22640.09; Kodamullil et al. 2017: 12% genes mimicked).",
   "direction": "mixed",
-  "why_range_is_wide": "Ranges reflect different diseases, analysis choices and thresholds (whole\u2011transcriptome vs top/filtered genes), and model conditions/duration.",
-  "negative_controls": null,
+  "why_range_is_wide": "Ranges arise from different models, thresholds, timepoints and whether analyses use genome-wide vs pathway/leading\u2011edge gene sets.",
+  "negative_controls": "Seok et al. 2013 notes the 'same direction' metric has a ~50% random baseline.",
   "verdicts": [
    {
     "label": "partly supports",
-    "n": 7
-   },
-   {
-    "label": "does not support",
-    "n": 4
+    "n": 6
    },
    {
     "label": "supports",
     "n": 3
+   },
+   {
+    "label": "does not support",
+    "n": 2
    }
   ],
   "evidence": [
@@ -2523,20 +1279,6 @@
       "pmid": "25092317",
       "url": "https://pubmed.ncbi.nlm.nih.gov/25092317/",
       "site": "https://rohitium.github.io/animal-model-concordance/study/25092317.html"
-     }
-    ]
-   },
-   {
-    "value": "-0.04\u20130.15",
-    "statistic": "average concordance",
-    "n": ", n=9 mouse studies",
-    "what": "Average concordance of differential gene expression signatures",
-    "cites": [
-     {
-      "text": "Oerton et al. 2017",
-      "pmid": "28335819",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28335819/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/28335819.html"
      }
     ]
    },
@@ -2595,26 +1337,36 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/25092317.html"
      }
     ]
+   },
+   {
+    "value": "6.5e-52\u20131.3e-09",
+    "statistic": "p value",
+    "n": "",
+    "what": "Overlap P value for 'cytokine signaling in immune system' genes up-regulated in mouse sepsis",
+    "cites": [
+     {
+      "text": "Takao et al. 2015",
+      "pmid": "25092317",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25092317/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/25092317.html"
+     }
+    ]
    }
   ],
-  "caveat": "The MHPS scores are normalized between 0 and 1, where 1 indicates the highest proximity to human MASLD. The 'improved and statistically significant agreement' for DEGs and DRPs is a qualitative statement without a specific numerical value provided beyond the overall 50% alignment rate for the whole transcriptome."
+  "caveat": "The recall and precision metrics are influenced by the duration of exposure in animal models, with longer exposure generally leading to higher recall. The WTD model's low recall might be due to a relatively short feeding period."
  },
  {
   "assessment": "Disease biology",
   "organism": "rat",
-  "n_studies": 8,
-  "summary": "Evidence is mixed: rats recapitulate many systemic and behavioral disease features \u2014 e.g., 26/30 blood biochemistry changes post\u2011exercise matched humans (magnitude 7.9% vs 7.3%; Goutianos et al. 2015) and cognitive/EEG markers paralleled human patterns (Der\u2011Avakian et al. 2025). However, transcriptomic concordance in Parkinson's models was negative (average concordance \u22120.04) and animal meta\u2011analysis recovered 10% vs 36% PD\u2011associated genes in humans (Oerton et al. 2017).",
+  "n_studies": 6,
+  "summary": "Evidence is mixed: rats mirror human biology in some domains (26/30 blood variables changed same way post-exercise, Goutianos et al. 2015; behavioral/electrophysiological correlations, Der-Avakian et al. 2025) but not others (\u224850% transcriptome DEG alignment, Vacca et al. 2024; lower thrombin/plasmin peaks vs human, Tarandovskiy et al. 2020). A CDAA-fed rat MASLD model had MHPS = 0.941 for MASH-fibrosis (Vacca et al. 2024).",
   "direction": "mixed",
-  "why_range_is_wide": "Alignment varies strongly by domain (transcriptomics vs systemic biochemistry vs behavior vs coagulation), model type and measured endpoints.",
+  "why_range_is_wide": null,
   "negative_controls": null,
   "verdicts": [
    {
     "label": "partly supports",
-    "n": 6
-   },
-   {
-    "label": "does not support",
-    "n": 1
+    "n": 5
    },
    {
     "label": "supports",
@@ -2622,20 +1374,6 @@
    }
   ],
   "evidence": [
-   {
-    "value": "-0.04\u20130.15",
-    "statistic": "average concordance",
-    "n": ", n=9 mouse studies",
-    "what": "Average concordance of differential gene expression signatures",
-    "cites": [
-     {
-      "text": "Oerton et al. 2017",
-      "pmid": "28335819",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28335819/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/28335819.html"
-     }
-    ]
-   },
    {
     "value": "0.275\u20130.71",
     "statistic": "mean",
@@ -2647,20 +1385,6 @@
       "pmid": "40849367",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40849367/",
       "site": "https://rohitium.github.io/animal-model-concordance/study/40849367.html"
-     }
-    ]
-   },
-   {
-    "value": "0.941",
-    "statistic": "mhps score",
-    "n": "",
-    "what": "MHPS metabolic relevance score for WD0.2% diet",
-    "cites": [
-     {
-      "text": "Vacca et al. 2024",
-      "pmid": "38867022",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38867022/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/38867022.html"
      }
     ]
    },
@@ -2705,285 +1429,45 @@
       "site": "https://rohitium.github.io/animal-model-concordance/study/34127759.html"
      }
     ]
+   },
+   {
+    "value": "17.45\u201327.44",
+    "statistic": "mahalanobis distance",
+    "n": "",
+    "what": "Mahalanobis distance to human for all genes combined under healthy conditions",
+    "cites": [
+     {
+      "text": "Oreff et al. 2021",
+      "pmid": "34127759",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34127759/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/34127759.html"
+     }
+    ]
+   },
+   {
+    "value": "7.3\u20137.9%",
+    "statistic": "mean",
+    "n": "",
+    "what": "magnitude of uniform changes in rats",
+    "cites": [
+     {
+      "text": "Goutianos et al. 2015",
+      "pmid": "25677548",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25677548/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/25677548.html"
+     }
+    ]
    }
   ],
   "caveat": "The MHPS scores are normalized between 0 and 1, where 1 indicates the highest proximity to human MASLD. The 'improved and statistically significant agreement' for DEGs and DRPs is a qualitative statement without a specific numerical value provided beyond the overall 50% alignment rate for the whole transcriptome."
  },
  {
   "assessment": "Disease biology",
-  "organism": "non-human primate",
-  "n_studies": 4,
-  "summary": "Evidence is mixed: NHPs mirror some human physiology (baboon thrombin peak 434 nM vs human 484 nM; plasmin peak 546\u2013566 nM vs human 457 nM). However, across disease studies animals overpredicted benefit (67\u201380% NHP trials improved vs 32% human) and animal PD models found 10% vs 36% human PD genes.",
-  "direction": "mixed",
-  "why_range_is_wide": "Ranges reflect different NHP species, assays and trial subsets (e.g., 67\u201380% across NHP trial subsets; 546\u2013566 nM plasmin across baboon vs rhesus).",
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "does not support",
-    "n": 2
-   },
-   {
-    "label": "partly supports",
-    "n": 2
-   }
-  ],
-  "evidence": [
-   {
-    "value": "-0.04\u20130.15",
-    "statistic": "average concordance",
-    "n": ", n=9 mouse studies",
-    "what": "Average concordance of differential gene expression signatures",
-    "cites": [
-     {
-      "text": "Oerton et al. 2017",
-      "pmid": "28335819",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28335819/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/28335819.html"
-     }
-    ]
-   },
-   {
-    "value": "398.95\u2013565.84",
-    "statistic": "mean",
-    "n": ", n=10",
-    "what": "Thrombin Concentration Peak (Mean, nM)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   },
-   {
-    "value": "49.78\u2013124.22",
-    "statistic": "mean",
-    "n": ", n=10",
-    "what": "Thrombin Production Rate (Mean, nM/min)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   },
-   {
-    "value": "25\u201345%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "Proportion of simplex families with coding DNVs explained by CNVs (boys)",
-    "cites": [
-     {
-      "text": "Ranjan et al. 2025",
-      "pmid": "40558535",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40558535/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/40558535.html"
-     }
-    ]
-   },
-   {
-    "value": "546.26\u2013565.84",
-    "statistic": "mean",
-    "n": ", n=10",
-    "what": "Plasmin Concentration Peak (Mean, nM)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   },
-   {
-    "value": "49.78\u201390.81",
-    "statistic": "mean",
-    "n": ", n=10",
-    "what": "Plasmin Production Rate (Mean, nM/min)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Disease biology",
-  "organism": "pig",
-  "n_studies": 2,
-  "summary": "Mixed evidence: Tarandovskiy et al. 2020 found swine thrombin peak 242.35 nM (\u224850% of human 484.25; n=20) and thrombin production rate 93.6 nM/min (\u224884% of human 111.51), but plasmin was not detected in swine while human plasmin peak is 457.2 nM. Ranjan et al. 2025 cautions animal models vary in recapitulating human disease and highlights primates as more translatable, limiting pig applicability for human neurodevelopmental disease.",
-  "direction": "mixed",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "partly supports",
-    "n": 2
-   }
-  ],
-  "evidence": [
-   {
-    "value": "9.86\u2013242.35",
-    "statistic": "mean",
-    "n": ", n=20",
-    "what": "Thrombin Concentration Peak (Mean, nM)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   },
-   {
-    "value": "1.48\u201393.6",
-    "statistic": "mean",
-    "n": ", n=20",
-    "what": "Thrombin Production Rate (Mean, nM/min)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   },
-   {
-    "value": "25\u201345%",
-    "statistic": "proportion",
-    "n": "",
-    "what": "Proportion of simplex families with coding DNVs explained by CNVs (boys)",
-    "cites": [
-     {
-      "text": "Ranjan et al. 2025",
-      "pmid": "40558535",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40558535/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/40558535.html"
-     }
-    ]
-   },
-   {
-    "value": "81.98",
-    "statistic": "mean",
-    "n": ", n=14",
-    "what": "Plasmin Concentration Peak (Mean, nM)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   },
-   {
-    "value": "1.48",
-    "statistic": "mean",
-    "n": ", n=14",
-    "what": "Plasmin Production Rate (Mean, nM/min)",
-    "cites": [
-     {
-      "text": "Tarandovskiy et al. 2020",
-      "pmid": "32127577",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
-     }
-    ]
-   },
-   {
-    "value": "4",
-    "statistic": "ratio",
-    "n": "",
-    "what": "ASD prevalence in males vs. females",
-    "cites": [
-     {
-      "text": "Ranjan et al. 2025",
-      "pmid": "40558535",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40558535/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/40558535.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Disease biology",
-  "organism": "rodent",
-  "n_studies": 2,
-  "summary": "Evidence shows rodent disease models often report preclinical benefit that does not mirror human outcomes: 90% of mouse and 95% of rat preclinical trials reported apparent improvement versus 32% of human trials (Marshall et al. 2023). A large analysis found only 43% predictivity of rodents for humans and poor-to-absent mouse\u2013human correlation across inflammation, sepsis, burns, trauma and infection (Leist et al. 2013).",
-  "direction": "evidence does not favour the model",
-  "why_range_is_wide": null,
-  "negative_controls": null,
-  "verdicts": [
-   {
-    "label": "does not support",
-    "n": 2
-   }
-  ],
-  "evidence": [
-   {
-    "value": "43%",
-    "statistic": "predictivity",
-    "n": "",
-    "what": "predictivity of rodents for man in toxicology",
-    "cites": [
-     {
-      "text": "Leist et al. 2013",
-      "pmid": "23503654",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23503654/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/23503654.html"
-     }
-    ]
-   },
-   {
-    "value": "67%",
-    "statistic": "apparent improvement",
-    "n": "",
-    "what": "improvement with disease-modifying interventions",
-    "cites": [
-     {
-      "text": "Marshall et al. 2023",
-      "pmid": "36883244",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36883244/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36883244.html"
-     }
-    ]
-   },
-   {
-    "value": "32%",
-    "statistic": "clinical improvement",
-    "n": "",
-    "what": "clinical improvement with disease-modifying interventions",
-    "cites": [
-     {
-      "text": "Marshall et al. 2023",
-      "pmid": "36883244",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36883244/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36883244.html"
-     }
-    ]
-   }
-  ],
-  "caveat": null
- },
- {
-  "assessment": "Disease biology",
   "organism": "c. elegans",
   "n_studies": 1,
-  "summary": "Zong et al. 2023: C. elegans shows modest transcriptomic resemblance to human inflammatory disease\u2014most within-stage cross\u2011species genome\u2011wide c-scores >0.1, though some pairs were lower (ce.lar\u2013dm.lar c=0.087). Human\u2013human c-scores reached up to 0.52 and some human pairs were \u22480, so similarity varies by comparison.",
+  "summary": "Zong et al. 2023: C. elegans shows modest, inconsistent concordance with disease-related expression\u2014most C. elegans\u2013Drosophila within-stage genome-wide c-scores >0.1, but one pair (ce.lar\u2013dm.lar) was 0.087. Findings vary by stage pairings.",
   "direction": "mixed",
-  "why_range_is_wide": "Scores vary by which stage pairs, which specific pathway, and which human inflammatory studies are compared.",
+  "why_range_is_wide": "Varies by developmental stage pairings\u2014most within-stage comparisons exceed 0.1 but specific pairs (e.g., ce.lar\u2013dm.lar) are lower (0.087).",
   "negative_controls": null,
   "verdicts": [
    {
@@ -2992,34 +1476,6 @@
    }
   ],
   "evidence": [
-   {
-    "value": "0\u20130.52",
-    "statistic": "c-score",
-    "n": "",
-    "what": "genome-wide c-scores between human inflammatory studies (HB, HI, HT, HS)",
-    "cites": [
-     {
-      "text": "Zong et al. 2023",
-      "pmid": "36730203",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36730203/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36730203.html"
-     }
-    ]
-   },
-   {
-    "value": "0.31",
-    "statistic": "median c-score",
-    "n": "",
-    "what": "median c-score for HI1 vs. HI2 in hsa04662",
-    "cites": [
-     {
-      "text": "Zong et al. 2023",
-      "pmid": "36730203",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36730203/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36730203.html"
-     }
-    ]
-   },
    {
     "value": "0.1",
     "statistic": "c-score",
@@ -3055,8 +1511,8 @@
   "assessment": "Disease biology",
   "organism": "d. melanogaster",
   "n_studies": 1,
-  "summary": "Evidence shows D. melanogaster has low cross-species transcriptome resemblance in disease-related comparisons (Zong et al. 2023): most within-stage Drosophila\u2013C. elegans genome-wide c-scores were >0.1, but one ce.lar\u2013dm.lar pairing was 0.087. The study reports mainly invertebrate cross-species comparisons, not direct Drosophila\u2013human matches.",
-  "direction": "too little evidence",
+  "summary": "Zong et al. 2023: genome-wide transcript concordance between D. melanogaster and C. elegans exceeded c=0.1 for most within-stage comparisons (modest cross-species similarity); one larval pair (ce.lar\u2013dm.lar) had c=0.087. Links to human disease are indirect, so translation is limited.",
+  "direction": "mixed",
   "why_range_is_wide": null,
   "negative_controls": null,
   "verdicts": [
@@ -3066,34 +1522,6 @@
    }
   ],
   "evidence": [
-   {
-    "value": "0\u20130.52",
-    "statistic": "c-score",
-    "n": "",
-    "what": "genome-wide c-scores between human inflammatory studies (HB, HI, HT, HS)",
-    "cites": [
-     {
-      "text": "Zong et al. 2023",
-      "pmid": "36730203",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36730203/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36730203.html"
-     }
-    ]
-   },
-   {
-    "value": "0.31",
-    "statistic": "median c-score",
-    "n": "",
-    "what": "median c-score for HI1 vs. HI2 in hsa04662",
-    "cites": [
-     {
-      "text": "Zong et al. 2023",
-      "pmid": "36730203",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36730203/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/36730203.html"
-     }
-    ]
-   },
    {
     "value": "0.1",
     "statistic": "c-score",
@@ -3129,9 +1557,9 @@
   "assessment": "Disease biology",
   "organism": "horse",
   "n_studies": 1,
-  "summary": "Oreff et al. 2021: horse tenocytes match human gene-expression under transient inflammation (Mahalanobis 9.59) and approximate human wound-closure kinetics (migration slope diff 0.0133 vs human, healthy). However they diverge in proliferation under healthy conditions (slope diff 0.3000, p<2e-16).",
+  "summary": "Evidence is mixed: horse tenocyte gene expression best matches human under transient inflammation (Mahalanobis 9.59) but is farther under healthy (23.05) and constant inflammation (12.97). Proliferation difference is large in healthy (slope 0.3000, p<2e-16) but negligible in transient inflammation (slope 0.0233, p=0.49).",
   "direction": "mixed",
-  "why_range_is_wide": "Similarity depends on inflammatory state (closer under transient inflammation: Mahalanobis 9.59 vs 23.05 in healthy).",
+  "why_range_is_wide": "Similarity varies by inflammatory state (healthy vs transient vs constant inflammation).",
   "negative_controls": null,
   "verdicts": [
    {
@@ -3229,11 +1657,159 @@
  },
  {
   "assessment": "Disease biology",
+  "organism": "non-human primate",
+  "n_studies": 1,
+  "summary": "Tarandovskiy et al. 2020: baboon and rhesus thrombin measures closely matched human values (thrombin peak 434 nM and 399 nM vs human 484 nM; thrombin production 124 and 111 nM/min vs 111.5 nM/min). However plasmin production rates were substantially higher (baboon 90.8 vs human 34.8 nM/min).",
+  "direction": "evidence favours the model",
+  "why_range_is_wide": "Different metrics diverge: thrombin parameters approximate human values while plasmin generation\u2014especially production rate\u2014is much higher in primates.",
+  "negative_controls": null,
+  "verdicts": [
+   {
+    "label": "partly supports",
+    "n": 1
+   }
+  ],
+  "evidence": [
+   {
+    "value": "398.95\u2013565.84",
+    "statistic": "mean",
+    "n": ", n=10",
+    "what": "Thrombin Concentration Peak (Mean, nM)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   },
+   {
+    "value": "49.78\u2013124.22",
+    "statistic": "mean",
+    "n": ", n=10",
+    "what": "Thrombin Production Rate (Mean, nM/min)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   },
+   {
+    "value": "546.26\u2013565.84",
+    "statistic": "mean",
+    "n": ", n=10",
+    "what": "Plasmin Concentration Peak (Mean, nM)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   },
+   {
+    "value": "49.78\u201390.81",
+    "statistic": "mean",
+    "n": ", n=10",
+    "what": "Plasmin Production Rate (Mean, nM/min)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   }
+  ],
+  "caveat": null
+ },
+ {
+  "assessment": "Disease biology",
+  "organism": "pig",
+  "n_studies": 1,
+  "summary": "Tarandovskiy et al. 2020: swine thrombin partly tracked humans\u2014thrombin peak 242.35 nM (~50% of human 484.25) and production 93.6 nM/min (~84% of human 111.51), but swine produced no detectable plasmin. n=20; absent plasmin limits pig utility for fibrinolysis/disease-biology comparisons.",
+  "direction": "mixed",
+  "why_range_is_wide": null,
+  "negative_controls": null,
+  "verdicts": [
+   {
+    "label": "partly supports",
+    "n": 1
+   }
+  ],
+  "evidence": [
+   {
+    "value": "9.86\u2013242.35",
+    "statistic": "mean",
+    "n": ", n=20",
+    "what": "Thrombin Concentration Peak (Mean, nM)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   },
+   {
+    "value": "1.48\u201393.6",
+    "statistic": "mean",
+    "n": ", n=20",
+    "what": "Thrombin Production Rate (Mean, nM/min)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   },
+   {
+    "value": "81.98",
+    "statistic": "mean",
+    "n": ", n=14",
+    "what": "Plasmin Concentration Peak (Mean, nM)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   },
+   {
+    "value": "1.48",
+    "statistic": "mean",
+    "n": ", n=14",
+    "what": "Plasmin Production Rate (Mean, nM/min)",
+    "cites": [
+     {
+      "text": "Tarandovskiy et al. 2020",
+      "pmid": "32127577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32127577/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/32127577.html"
+     }
+    ]
+   }
+  ],
+  "caveat": null
+ },
+ {
+  "assessment": "Disease biology",
   "organism": "rabbit",
   "n_studies": 1,
-  "summary": "Tarandovskiy et al. 2020: Rabbit thrombin and plasmin generation were substantially lower than humans \u2014 thrombin peak 71.6 nM (15% of human 484.3), thrombin production 14.93 nM/min (13% of human 111.5); plasmin peak 197.7 nM (43% of human 457.2), plasmin production 17.63 nM/min (51% of human 34.8). Authors note high variability in rabbit plasmin-generation (PG) curves.",
-  "direction": "evidence does not favour the model",
-  "why_range_is_wide": null,
+  "summary": "Tarandovskiy et al. 2020: rabbit thrombin peak 71.6 nM (~15% of human 484.25 nM) and thrombin production 14.9 nM/min (~13% of human 111.51), while plasmin peak 197.7 nM (~43% of human 457.20) and plasmin production 17.6 nM/min (~51% of human 34.80). Rabbit curves were highly variable, so alignment with human coagulation is mixed.",
+  "direction": "mixed",
+  "why_range_is_wide": "Different coagulation metrics diverge: thrombin measures are much lower than human while plasmin measures are nearer human values, and rabbit curves showed high variability.",
   "negative_controls": null,
   "verdicts": [
    {
@@ -3305,9 +1881,9 @@
   "assessment": "Disease biology",
   "organism": "sheep",
   "n_studies": 1,
-  "summary": "Oreff et al. 2021: Sheep tenocyte gene-expression and proliferation match human responses mainly under constant inflammation (Mahalanobis 8.94; proliferation slope diff -0.0878, p=0.009) but are less similar when healthy (Mahalanobis 24.78) and only borderline under transient inflammation. Data are from three biological replicates per species.",
+  "summary": "Oreff et al. 2021 found sheep tenocytes matched human tenocytes mainly under constant inflammation (Mahalanobis 8.94) but diverged under healthy conditions (Mahalanobis 24.78); MMP genes were relatively close (8.6) while inflammatory mediators were farther (18.51). n=3 biological replicates/species; some slope differences were small but significant (proliferation diff \u22120.0878, p=0.009).",
   "direction": "mixed",
-  "why_range_is_wide": "Similarity varies by inflammatory condition: sheep are least similar when healthy and most similar under constant inflammation.",
+  "why_range_is_wide": "Similarity shifts with inflammatory state (healthy vs transient vs constant) and varies by gene set.",
   "negative_controls": null,
   "verdicts": [
    {
@@ -3406,18 +1982,14 @@
  {
   "assessment": "Veterinary",
   "organism": "dog",
-  "n_studies": 2,
-  "summary": "Evidence is mixed: Daluwatumulle et al. 2026 found model robustness scores 31\u201385% across cancers (e.g. bladder 85.05%, pediatric glioma 79.88%), but Petersen\u2011Jones et al. 2015 reported dogs regained ERG/function close to normal while human patients showed no ERG change.",
+  "n_studies": 1,
+  "summary": "Dog models recapitulated many human cancer transcriptomes, with robustness scores up to 85.05% (adult bladder) and several tumors \u226570% (pediatric glioma 79.88%, adult head & neck 78.20%). However, suitability varied by tumor type and negative controls (ACC, LAML) scored low (adult ACC 31.10%).",
   "direction": "mixed",
-  "why_range_is_wide": "Range reflects large variation across cancer types, pediatric vs adult cohorts and inclusion of negative-control cancers.",
-  "negative_controls": "Negative controls ACC and LAML had low scores (adult ACC 31.1%; adult leukemia/LAML 40.31%).",
+  "why_range_is_wide": "Scores vary across cancer types (adult vs pediatric and tumor lineage) and include deliberate negative-control cancers.",
+  "negative_controls": "Negative controls reported: adult adrenocortical carcinoma 31.10%, pediatric adrenocortical carcinoma 33.56%, adult leukemia (LAML) 40.31%.",
   "verdicts": [
    {
     "label": "partly supports",
-    "n": 1
-   },
-   {
-    "label": "does not support",
     "n": 1
    }
   ],

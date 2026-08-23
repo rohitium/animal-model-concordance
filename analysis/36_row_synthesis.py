@@ -18,6 +18,7 @@ MODEL="openai/gpt-5-mini"
 load=lambda *p: json.load(open(J(*p)))
 DB=load("data","db","studies.json"); META=load("data","db","metadata.json")
 ANS=load("data","db","study_answers.json"); CLS=load("data","db","classification.json")
+PROV=load("data","db","figure_provenance.json")
 OK={k:v for k,v in ANS.items() if "error" not in v and DB.get(k,{}).get("eligible")}
 PDX={k for k,v in DB.items() if k in OK and v.get("substrate")=="human-tissue-in-animal-host"}
 CORE={k:v for k,v in OK.items() if k not in PDX}
@@ -77,10 +78,19 @@ def orgs_of(pm):
     a=OK[pm]["animal_side"]
     return N.organisms(list(a.get("species") or [])+list(a.get("grouped_labels") or []))
 def comps(pm,o):
+    """Only this study's own figures, and only those attributable to this organism."""
+    v=OK[pm]; prov=PROV.get(pm) or {}
+    study_orgs=N.organisms(list(v["animal_side"].get("species") or [])
+                           + list(v["animal_side"].get("grouped_labels") or []))
     out=[]
-    for c in (OK[pm].get("comparisons") or []):
+    for i,c in enumerate(v.get("comparisons") or []):
+        pv=(prov.get(str(i)) or {}) if "error" not in prov else {}
+        if pv.get("provenance")=="cited-from-other-study": continue
         cs=N.organisms(c.get("animal_species") or [])
-        if not cs or o in cs: out.append(c)
+        if cs:
+            if o in cs: out.append(c)
+        elif len(study_orgs)==1 and study_orgs[0]==o:
+            out.append(c)
     return out
 
 rows=collections.defaultdict(set)

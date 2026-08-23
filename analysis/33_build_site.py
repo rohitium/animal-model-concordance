@@ -17,6 +17,7 @@ FTS=load("data","raw","fulltext_status.json")
 SYN=load("data","db","row_synthesis.json")
 RATER2=load("data","db","second_rater.json")
 OBJ=load("data","db","objective_verdict.json")
+PROV=load("data","db","figure_provenance.json")
 OK={k:v for k,v in ANS.items() if "error" not in v and DB.get(k,{}).get("eligible")}
 # Patient-derived xenografts grow the patient's own human tumour in a mouse host, so they
 # answer an avatar question rather than whether another species predicts human outcomes.
@@ -130,15 +131,35 @@ def vtag(v): return f'<span class="tag v-{e(v)}">{e(VERDICT_LABEL.get(v,v))}</sp
 
 # ---------------- evidence cells ----------------
 def comparisons_for(pm, organism):
-    """Comparisons attributable to this organism. A study naming one organism attributes
-    all of its comparisons; where several are named, a comparison is attributed to the
-    ones it mentions, and study-wide figures appear under each."""
-    v=OK[pm]; out=[]
-    for c in (v.get("comparisons") or []):
-        cs=N.organisms(c.get("animal_species") or [])
-        if not cs or organism in cs: out.append(c)
-    return out
+    """Figures attributable to this organism.
 
+    A figure naming its own species goes to that species. A figure with NO species is
+    study-level: it is attributed only when the study examines exactly one organism, so
+    the attribution is unambiguous. Previously such figures were attributed to every
+    organism the study named, which duplicated one result across up to eight rows --
+    Martic-Kehl 2012's "3 of 494 stroke interventions" appeared as evidence about dogs,
+    rodents and primates alike, from a paper that is not about any of them specifically.
+    """
+    v=OK[pm]
+    study_orgs=N.organisms(list(v["animal_side"].get("species") or [])
+                           + list(v["animal_side"].get("grouped_labels") or []))
+    prov=PROV.get(pm) or {}
+    out=[]
+    for i,c in enumerate(v.get("comparisons") or []):
+        pv=(prov.get(str(i)) or {}) if "error" not in prov else {}
+        c["_prov"]=pv.get("provenance","unclear")
+        c["_cited_source"]=pv.get("cited_source")
+        # A number this paper quotes from someone else is not this paper's evidence.
+        # Re-analysis of others' data is: pooling published results is the reviewer's
+        # own contribution.
+        if c["_prov"]=="cited-from-other-study":
+            continue
+        cs=N.organisms(c.get("animal_species") or [])
+        if cs:
+            if organism in cs: out.append(c)
+        elif len(study_orgs)==1 and study_orgs[0]==organism:
+            out.append(c)
+    return out
 _STOP=set("the of a an in and or to for with between from that this is are was were on by "
           "vs versus percentage percent share proportion number rate average mean".split())
 def _key(t):
@@ -369,7 +390,13 @@ for pm,v in OK.items():
                 + (f'<span class="tag">{e(v.get("scope"))}</span>' if v.get("scope") else "") + "</p>")
     if v.get("discordance_note"):
         body.append(f'<p class="sub">{e(v["discordance_note"])}</p>')
-    cs=[c for c in (v.get("comparisons") or [])]
+    _pv=PROV.get(pm) or {}
+    allc=list(v.get("comparisons") or [])
+    for _i,_c in enumerate(allc):
+        _p=(_pv.get(str(_i)) or {}) if "error" not in _pv else {}
+        _c["_prov"]=_p.get("provenance","unclear"); _c["_cited_source"]=_p.get("cited_source")
+    cited=[c for c in allc if c["_prov"]=="cited-from-other-study"]
+    cs=[c for c in allc if c["_prov"]!="cited-from-other-study"]
     if cs:
         body.append(f'<h2>Reported comparisons <span class="tag">{len(cs)}</span></h2>')
         body.append('<div class="scroll"><table><tr><th>Value</th><th>Statistic</th>'
@@ -382,6 +409,20 @@ for pm,v in OK.items():
                         f'<td>{e(c["what_compared"])}<br><span class="verb">“{e(c["verbatim"])}”</span></td>'
                         f'<td>{", ".join(e(x) for x in N.organisms(c.get("animal_species") or [])) or "—"}</td>'
                         f'<td>{n}</td><td class="sub">{e(c.get("source_location"))}</td></tr>')
+        body.append("</table></div>")
+    if cited:
+        body.append(f'<h2>Figures this paper quotes from other work '
+                    f'<span class="tag">{len(cited)}</span></h2>')
+        body.append('<p class="sub">Reported here for context. They are not this study&rsquo;s '
+                    'evidence and do not contribute to its verdict or to any row of the main '
+                    'table; the conditions that produced them belong to the original work.</p>')
+        body.append("<div class='scroll'><table><tr><th>Value</th><th>Statistic</th>"
+                    "<th>What was compared</th><th>Credited to</th><th>Source</th></tr>")
+        for c in cited:
+            body.append(f'<tr><td class="ev"><span class="v">{e(fmt(c))}</span></td>'
+                        f'<td>{e(c["statistic"])}</td><td>{e(c["what_compared"])}</td>'
+                        f'<td>{e(c.get("_cited_source") or "not named")}</td>'
+                        f'<td class="sub">{e(c.get("source_location"))}</td></tr>')
         body.append("</table></div>")
     if md.get("abstract"):
         body.append(f'<details><summary>Abstract</summary><div class="card">{e(md["abstract"])}</div></details>')
@@ -404,7 +445,10 @@ import faq as _faq
 _ctx={"n_studies":len(OK),"n_scored":len(_scored),"n_unscored":len(OK)-len(_scored),
       "r1r2_a":_ar,"r1r2_k":_kr,"rule_r1_a":_a1,"rule_r1_k":_k1,
       "rule_r2_a":_a2,"rule_r2_k":_k2,
-      "supports":verd["supports"],"partly":verd["partly-supports"],"not":verd["does-not-support"]}
+      "supports":verd["supports"],"partly":verd["partly-supports"],"not":verd["does-not-support"],
+      "pct_cited":(100.0*sum(1 for _p,_v in PROV.items() if "error" not in _v
+                             for _it in _v.values() if _it.get("provenance")=="cited-from-other-study")
+                   /max(1,sum(len(_v) for _p,_v in PROV.items() if "error" not in _v)))}
 fb=["<h1>Frequently Asked Questions</h1>"]
 for q,paras in _faq.build(_ctx):
     fb.append(f"<h2>{q}</h2>"); fb.extend(paras)
