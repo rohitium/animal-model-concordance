@@ -11,7 +11,17 @@ def build(k):
    f"correlations, and differences between quantities that are themselves on a 0–1 scale. "
    f"It applies to <strong>{k['n_scored']} of {k['n_studies']}</strong> studies. Moving the "
    f"cut-offs to 0.65/0.35 shifts a few studies from partly-supports to supports and leaves "
-   f"does-not-support unchanged, so the negative end of the scale is the more stable one.</p>"]),
+   f"does-not-support unchanged, so the negative end of the scale is the more stable one.</p>",
+   "<p><strong>A worked example.</strong> Daluwatumulle et al. 2026 computed a model-robustness "
+   "score for dog models of each human cancer type — a composite of how closely the dog tumour "
+   "transcriptome matches its human counterpart. That distribution is the concordance measure, so "
+   "the score is simply its median. The 20 reported values run from 31.10% (adult adrenocortical "
+   "carcinoma) to 85.05% (adult bladder cancer), with a median of 61.7%, placing the study in "
+   "<em>partly supports</em>. Nothing is removed from the distribution: the authors included some "
+   "cancers they expected to score low in order to check the metric behaves, and those belong in "
+   "it. Ancillary statistics from the same paper — the mean gap between within-species and "
+   "cross-species correlations, for instance — are steps in the analysis rather than measures of "
+   "match, and do not enter the score.</p>"]),
 
  ("Why aren't odds ratios, fold-changes and p-values included in the score?",
   ["<p>Odds ratios, likelihood ratios, fold-changes and slopes <em>can</em> be put on the same "
@@ -77,12 +87,13 @@ def build(k):
    "<p>Comparisons within one assessment are meaningful.</p>"]),
 
  ("A row shows a wide range, such as 31–85%. What does that mean?",
-  ["<p>It is the span of several sub-analyses, not an uncertainty interval, and the midpoint is not "
-   "an estimate. Each row states what varies across the range.</p>",
-   "<p>One case matters. In Daluwatumulle et al. 2026 the dog cancer scores run 31–85%, but the "
-   "bottom is a <strong>negative control</strong>: leukaemia (40%) and adrenocortical carcinoma "
-   "(31%) were deliberately included as cancers expected to be poor dog models, to check the metric "
-   "flags them. It does. Real cancer types score 62–85%, led by bladder cancer at 85%.</p>"]),
+  ["<p>It is the span of a distribution, not an uncertainty interval. Where a paper scores many "
+   "conditions — one value per cancer type, per organ system, per compound — the row shows the "
+   "span and the summary gives the median. Each row states what varies across it.</p>",
+   "<p>In Daluwatumulle et al. 2026, the 31–85% span is 20 dog cancer models scored against their "
+   "human counterparts: 31.10% for adult adrenocortical carcinoma at one end, 85.05% for adult "
+   "bladder cancer at the other, median 61.7%. The spread is the finding — dogs model some human "
+   "cancers closely and others poorly — not noise around a central value.</p>"]),
 
  ("Does this show that companion-animal (dog) models translate worse than mouse models?",
   ["<p>No, and the data cannot support that comparison in either direction. No study here "

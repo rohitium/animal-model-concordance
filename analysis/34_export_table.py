@@ -29,18 +29,25 @@ def orgs_of(pm):
     a=OK[pm]["animal_side"]
     return N.organisms(list(a.get("species") or [])+list(a.get("grouped_labels") or [])) or []
 def comps(pm,o):
-    """This study's own figures, attributable to this organism.
+    """Figures attributable to this organism.
 
-    Figures quoted from other work are excluded: their conditions belong to the original
-    study, and counting them here would double-count. A figure with no species of its own
-    is attributed only when the study examines exactly one organism."""
+    Numeric figures quoted from other work are excluded: their conditions belong to the
+    original study and counting them here would double-count.
+
+    QUALITATIVE comparisons are kept. A paper that states "in dogs there is a remarkable
+    improvement in the ERG" against "there was no change" in patients has made a real
+    animal-to-human comparison; it simply reports no number. Dropping these silently
+    deleted the clearest negative result about dog models in the corpus and flipped that
+    row from mixed to favourable. They are marked and never enter the numeric score.
+    """
     v=OK[pm]; prov=PROV.get(pm) or {}
     study_orgs=N.organisms(list(v["animal_side"].get("species") or [])
                            + list(v["animal_side"].get("grouped_labels") or []))
     out=[]
     for i,c in enumerate(v.get("comparisons") or []):
         pv=(prov.get(str(i)) or {}) if "error" not in prov else {}
-        if pv.get("provenance")=="cited-from-other-study": continue
+        c["_qualitative"] = c.get("value") is None
+        if pv.get("provenance")=="cited-from-other-study" and not c["_qualitative"]: continue
         cs=N.organisms(c.get("animal_species") or [])
         if cs:
             if o in cs: out.append(c)
@@ -62,28 +69,42 @@ out=[]
 for a in ORDER+[x for x in {k[0] for k in rows} if x not in ORDER]:
     for o in sorted([oo for aa,oo in rows if aa==a], key=lambda x:(-len(rows[(a,x)]), x)):
         pms=rows[(a,o)]
-        buckets=[]
+        import importlib.util as _iu
+        global _OV
+        try: _OV
+        except NameError:
+            _sp=_iu.spec_from_file_location("_ov", os.path.join(os.path.dirname(__file__),
+                                            "37_objective_verdict.py"))
+            _OV=_iu.module_from_spec(_sp); _sp.loader.exec_module(_OV)
+        buckets={}
         for pm in sorted(pms, key=lambda p:-(DB[p].get("cited_by") or 0)):
             for c in comps(pm,o):
                 if c.get("value") is None: continue
-                k=_key(c.get("what_compared")); placed=False
-                for b in buckets:
-                    if b["stat"]!=c["statistic"].strip().lower() or b["unit"]!=c["unit"]: continue
-                    if len(b["key"]&k)/(len(b["key"]|k) or 1) >= 0.6:
-                        b["items"].append((pm,c)); b["key"]|=k; placed=True; break
-                if not placed:
-                    buckets.append({"stat":c["statistic"].strip().lower(),"unit":c["unit"],
-                                    "key":set(k),"items":[(pm,c)]})
+                if _OV.classify(c.get("statistic"),c.get("unit"),c.get("what_compared"))=="bounded-difference":
+                    continue
+                buckets.setdefault((c["statistic"].strip().lower(), c["unit"]), []).append((pm,c))
         ev=[]
-        for b in sorted(buckets,key=lambda x:-len(x["items"]))[:6]:
-            vals=[c["value"] for _,c in b["items"]]
-            rng=f"{min(vals):g}–{max(vals):g}" if len(set(vals))>1 else f"{vals[0]:g}"
-            if b["unit"]=="percent": rng+="%"
-            _,c0=b["items"][0]
-            nc=re.sub(r"^\s*[\d,]+\s*","",(c0.get("n_counts") or "")).strip()
-            n=f", n={c0['n']:,} {nc}".rstrip() if c0.get("n") else ""
-            studies=sorted({pm for pm,_ in b["items"]}, key=lambda p:-(DB[p].get("cited_by") or 0))
-            ev.append({"value":rng,"statistic":b["stat"],"n":n,"what":c0["what_compared"],
+        for (stat,unit),items in sorted(buckets.items(), key=lambda kv:-len(kv[1]))[:6]:
+            vals=sorted(c["value"] for _,c in items)
+            m=len(vals)//2
+            med=vals[m] if len(vals)%2 else (vals[m-1]+vals[m])/2
+            u="%" if unit=="percent" else ""
+            rng=f"{vals[0]:g}–{vals[-1]:g}" if len(set(vals))>1 else f"{vals[0]:g}"
+            if u: rng+=u
+            _,c0=items[0]
+            descs={c["what_compared"] for _,c in items}
+            if len(descs)>1:
+                lo=min(items,key=lambda t:t[1]["value"]); hi=max(items,key=lambda t:t[1]["value"])
+                what=(f'{len(items)} comparisons, median {med:g}{u} — lowest '
+                      f'{lo[1]["what_compared"]} ({lo[1]["value"]:g}{u}), highest '
+                      f'{hi[1]["what_compared"]} ({hi[1]["value"]:g}{u})')
+                n=""
+            else:
+                what=c0["what_compared"]
+                nc=re.sub(r"^\s*[\d,]+\s*","",(c0.get("n_counts") or "")).strip()
+                n=f", n={c0['n']:,} {nc}".rstrip() if c0.get("n") else ""
+            studies=sorted({pm for pm,_ in items}, key=lambda p:-(DB[p].get("cited_by") or 0))
+            ev.append({"value":rng,"statistic":stat,"n":n,"what":what,
                        "cites":[{"text":cite(p),"pmid":p,
                                  "url":f"https://pubmed.ncbi.nlm.nih.gov/{p}/",
                                  "site":f"https://rohitium.github.io/animal-model-concordance/study/{p}.html"}

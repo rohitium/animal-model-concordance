@@ -429,3 +429,32 @@ across studies.
 included; 33 have organism-specific evidence; 577 of 925 extracted figures appear in the table
 (206 are quoted from other work, the rest are not attributable to a specific organism);
 24 evidence rows; 27 studies carry a numeric score.
+
+## Distributions, qualitative evidence, worked example (2026-08-22)
+
+**L63 — A purpose-built composite score is the concordance measure; its distribution is the
+finding.** Daluwatumulle et al. 2026 scores dog models of each human cancer type. The row now
+reports that distribution — 20 comparisons, span 31–85.05%, median 61.73%, with the lowest and
+highest named — rather than splitting it into pairs or picking out individual cancers.
+Conditions the authors expected to score low are part of the distribution and are not removed;
+the earlier special-casing of "negative controls" was an unnecessary editorial layer.
+
+**L64 — Ancillary statistics are not concordance measures.** The mean gap between within-species
+and cross-species correlations is a step in an analysis, not a measure of how well the model
+matched. Such figures no longer appear in table rows (they remain on study pages) and do not
+enter the score.
+
+**L65 — A merged span must not be named after one of its members.** A row read "78.2–85.05% —
+model robustness score for adult bladder cancer" when bladder is 85.05% and 78.2% is head and
+neck. Spans covering several comparisons now state the count, the median, and the identity of
+the lowest and highest.
+
+**L66 — Qualitative comparisons are evidence and were being deleted.** Petersen-Jones et al.
+2015 compares dog and human RPE65 gene therapy entirely in words — dogs showed "remarkable
+improvement in the ERG", patients "no change", and the degree of rescue in humans was "nowhere
+near" that in dogs. Every figure had a null value, and the provenance filter treated a review's
+synthesis as quoted material, so the study vanished from the veterinary/dog row and the row's
+direction flipped from mixed to *favours the model*. Qualitative animal-to-human comparisons
+are now retained, marked, and excluded only from the numeric score. **A rule that drops
+unquantified findings will preferentially drop negative ones**, since failures are often
+reported without a number.

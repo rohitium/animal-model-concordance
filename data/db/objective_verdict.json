@@ -1269,9 +1269,9 @@
   ]
  },
  "42245789": {
-  "n_usable": 27,
-  "n_converted_not_scored": 0,
-  "median": 0.6978,
+  "n_usable": 24,
+  "n_converted_not_scored": 3,
+  "median": 0.6323,
   "min": 0.31,
   "max": 0.99,
   "verdict": "partly-supports",
@@ -1442,7 +1442,7 @@
     "raw": 0.1007,
     "kind": "bounded-difference",
     "scaled": 0.8993,
-    "in_score": true,
+    "in_score": false,
     "what": "mean difference in sample-sample correlation between diff cancer-same species group and same cancer-diff species group",
     "source": "Results, p15, Figure 1b"
    },
@@ -1452,7 +1452,7 @@
     "raw": 0.0215,
     "kind": "bounded-difference",
     "scaled": 0.9785,
-    "in_score": true,
+    "in_score": false,
     "what": "mean difference in sample-sample correlation between same cancer-same species and same cancer-diff species groups",
     "source": "Results, p15"
    },
@@ -1462,7 +1462,7 @@
     "raw": 0.0646,
     "kind": "bounded-difference",
     "scaled": 0.9354,
-    "in_score": true,
+    "in_score": false,
     "what": "mean difference in sample-sample correlation between same cancer-diff species and diff cancer-diff species groups",
     "source": "Results, p15"
    },

@@ -111,7 +111,11 @@ def to_scale(value, unit, kind):
 # mixing them empirically destroys agreement with independent readers: including ratio-like
 # figures moves kappa against rater 1 from +0.17 to -0.01, i.e. to chance. They are reported
 # per figure on study pages instead, converted and labelled, without entering the score.
-SCORED_FAMILIES = {"agreement","discordance","correlation","bounded-difference"}
+# A study's purpose-built concordance metric is the thing to score. Ancillary statistics --
+# e.g. the mean gap between within-species and cross-species correlations -- are steps in
+# the analysis, not measures of how well the model matched. Including bounded differences
+# left kappa unchanged, so they are reported per figure and left out of the score.
+SCORED_FAMILIES = {"agreement","discordance","correlation"}
 SUPPORTS, PARTLY = 0.70, 0.40      # >=0.70 supports; 0.40-0.70 partly; <0.40 does not
 def verdict_from(score):
     if score is None: return "insufficient-data"

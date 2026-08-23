@@ -52,12 +52,15 @@ Hard rules:
 - NEVER write filler like "proportion", "score" or "rate" as if it were a finding. Say what
   was counted.
 - If a wide range comes from different sub-analyses, say what varies across it in
-  `why_range_is_wide`, in one short sentence. Do not present a wide range as a single
+  `why_range_is_wide`, in one short sentence. Give the median where a distribution is
+  being summarised. Do not present a wide range as a single
   uncertain estimate.
-- If any figure is a NEGATIVE CONTROL — a comparison the authors deliberately expected to
-  score low, to validate their metric — exclude it from the summary's direction and record it
-  in `negative_controls_noted`. Treating a negative control as poor performance is a
-  misreading.
+- Where a paper reports a purpose-built composite score across many conditions (e.g. one
+  model-robustness score per cancer type), that distribution IS the concordance measure.
+  Summarise it as a distribution — the median and the span, with a couple of named examples
+  — rather than picking out individual conditions. Do not editorialise about which
+  conditions the authors expected to score low; they are part of the distribution.
+  Leave `negative_controls_noted` null unless a figure would actively mislead without it.
 - A study's headline finding must not be omitted because it is inconvenient to summarise. If
   a study reports that animal results failed to discriminate human outcomes, that IS the
   finding.
@@ -78,14 +81,25 @@ def orgs_of(pm):
     a=OK[pm]["animal_side"]
     return N.organisms(list(a.get("species") or [])+list(a.get("grouped_labels") or []))
 def comps(pm,o):
-    """Only this study's own figures, and only those attributable to this organism."""
+    """Figures attributable to this organism.
+
+    Numeric figures quoted from other work are excluded: their conditions belong to the
+    original study and counting them here would double-count.
+
+    QUALITATIVE comparisons are kept. A paper that states "in dogs there is a remarkable
+    improvement in the ERG" against "there was no change" in patients has made a real
+    animal-to-human comparison; it simply reports no number. Dropping these silently
+    deleted the clearest negative result about dog models in the corpus and flipped that
+    row from mixed to favourable. They are marked and never enter the numeric score.
+    """
     v=OK[pm]; prov=PROV.get(pm) or {}
     study_orgs=N.organisms(list(v["animal_side"].get("species") or [])
                            + list(v["animal_side"].get("grouped_labels") or []))
     out=[]
     for i,c in enumerate(v.get("comparisons") or []):
         pv=(prov.get(str(i)) or {}) if "error" not in prov else {}
-        if pv.get("provenance")=="cited-from-other-study": continue
+        c["_qualitative"] = c.get("value") is None
+        if pv.get("provenance")=="cited-from-other-study" and not c["_qualitative"]: continue
         cs=N.organisms(c.get("animal_species") or [])
         if cs:
             if o in cs: out.append(c)

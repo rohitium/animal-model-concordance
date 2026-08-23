@@ -133,12 +133,14 @@ def vtag(v): return f'<span class="tag v-{e(v)}">{e(VERDICT_LABEL.get(v,v))}</sp
 def comparisons_for(pm, organism):
     """Figures attributable to this organism.
 
-    A figure naming its own species goes to that species. A figure with NO species is
-    study-level: it is attributed only when the study examines exactly one organism, so
-    the attribution is unambiguous. Previously such figures were attributed to every
-    organism the study named, which duplicated one result across up to eight rows --
-    Martic-Kehl 2012's "3 of 494 stroke interventions" appeared as evidence about dogs,
-    rodents and primates alike, from a paper that is not about any of them specifically.
+    Numeric figures quoted from other work are excluded: their conditions belong to the
+    original study and counting them here would double-count.
+
+    QUALITATIVE comparisons are kept. A paper that states "in dogs there is a remarkable
+    improvement in the ERG" against "there was no change" in patients has made a real
+    animal-to-human comparison; it simply reports no number. Dropping these silently
+    deleted the clearest negative result about dog models in the corpus and flipped that
+    row from mixed to favourable. They are marked and never enter the numeric score.
     """
     v=OK[pm]
     study_orgs=N.organisms(list(v["animal_side"].get("species") or [])
@@ -166,42 +168,57 @@ def _key(t):
     return frozenset(w for w in re.findall(r"[a-z]+", (t or "").lower())
                      if w not in _STOP and len(w)>2)
 
+def _family(c):
+    import importlib.util as _iu
+    global _OV
+    try: _OV
+    except NameError:
+        _sp=_iu.spec_from_file_location("_ov", os.path.join(os.path.dirname(__file__),
+                                        "37_objective_verdict.py"))
+        _OV=_iu.module_from_spec(_sp); _sp.loader.exec_module(_OV)
+    return _OV.classify(c.get("statistic"), c.get("unit"), c.get("what_compared"))
+
 def evidence_cell(pm_set, organism):
-    """One cell. A range is formed only across figures that measure THE SAME THING:
-    same statistic, same unit, and closely matching descriptions of what was compared.
-    Grouping on statistic name alone merged unrelated quantities -- "3-83% proportion"
-    spanned neuroprotective efficacy and translation success, which is precisely the
-    meaning-destruction the aggregation rules forbid."""
-    buckets=[]   # each: {stat, unit, key, items}
+    """One cell.
+
+    Figures are bucketed by statistic and unit. Where a paper scores many conditions with
+    the same measure -- one model-robustness score per cancer type -- that is a
+    distribution, and the cell shows its span, median and ends rather than splitting it up
+    or naming it after one member. Ancillary statistics such as differences between
+    correlations are steps in an analysis rather than measures of match, and are left to
+    the study page.
+    """
+    buckets={}
     for pm in sorted(pm_set, key=lambda p:-(DB[p].get("cited_by") or 0)):
         for c in comparisons_for(pm, organism):
             if c.get("value") is None: continue
-            k=_key(c.get("what_compared"))
-            placed=False
-            for bk in buckets:
-                if bk["stat"]!=c["statistic"].strip().lower() or bk["unit"]!=c["unit"]: continue
-                inter=len(bk["key"] & k); union=len(bk["key"] | k) or 1
-                if inter/union >= 0.6:
-                    bk["items"].append((pm,c)); bk["key"] |= k; placed=True; break
-            if not placed:
-                buckets.append({"stat":c["statistic"].strip().lower(),"unit":c["unit"],
-                                "key":set(k),"items":[(pm,c)]})
-    by_stat={(b["stat"],b["unit"],i):b["items"] for i,b in enumerate(buckets)}
-    if not by_stat:
-        return '<span class="sub">no figure attributable to this organism</span>'
+            if _family(c)=="bounded-difference": continue
+            buckets.setdefault((c["statistic"].strip().lower(), c["unit"]), []).append((pm,c))
+    if not buckets:
+        return '<span class="sub">no numeric figure attributable to this organism</span>'
     parts=[]
-    for (stat,unit,_),items in sorted(by_stat.items(), key=lambda kv:-len(kv[1]))[:6]:
-        vals=[c["value"] for _,c in items]
-        rng=(f"{min(vals):g}–{max(vals):g}" if len(set(vals))>1 else f"{vals[0]:g}")
-        unit_s="%" if unit=="percent" else ""
+    for (stat,unit),items in sorted(buckets.items(), key=lambda kv:-len(kv[1]))[:6]:
+        vals=sorted(c["value"] for _,c in items)
+        m=len(vals)//2
+        med=vals[m] if len(vals)%2 else (vals[m-1]+vals[m])/2
+        u="%" if unit=="percent" else ""
+        rng=f"{vals[0]:g}–{vals[-1]:g}" if len(set(vals))>1 else f"{vals[0]:g}"
         studies=sorted({pm for pm,_ in items}, key=lambda p:-(DB[p].get("cited_by") or 0))
         cites=" · ".join(f'<a href="study/{p}.html">{e(cite(p))}</a>' for p in studies[:3])
         if len(studies)>3: cites+=f' +{len(studies)-3} more'
         _,c0=items[0]
+        descs={c["what_compared"] for _,c in items}
+        if len(descs)>1:
+            lo=min(items,key=lambda t:t[1]["value"]); hi=max(items,key=lambda t:t[1]["value"])
+            what=(f'{len(items)} comparisons, median {med:g}{u} — lowest '
+                  f'{lo[1]["what_compared"]} ({lo[1]["value"]:g}{u}), highest '
+                  f'{hi[1]["what_compared"]} ({hi[1]["value"]:g}{u})')
+        else:
+            what=c0["what_compared"]
         nc=re.sub(r"^\s*[\d,]+\s*","",(c0.get("n_counts") or "")).strip()
-        n=f', n={c0["n"]:,} {e(nc)}'.rstrip() if c0.get("n") else ""
-        parts.append(f'<div class="ev"><span class="v">{e(rng)}{unit_s}</span> {e(stat)}'
-                     f'{n} <span class="src">— {e(c0["what_compared"])} ({cites})</span></div>')
+        n=f', n={c0["n"]:,} {e(nc)}'.rstrip() if c0.get("n") and len(descs)==1 else ""
+        parts.append(f'<div class="ev"><span class="v">{e(rng)}{u}</span> {e(stat)}'
+                     f'{n} <span class="src">— {e(what)} ({cites})</span></div>')
     cav=[OK[pm]["base_rate_caveat"] for pm in pm_set if OK[pm].get("base_rate_caveat")]
     if cav:
         parts.append(f'<div class="caveat"><strong>Caveat.</strong> {e(cav[0])}</div>')
