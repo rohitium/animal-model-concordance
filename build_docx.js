@@ -28,9 +28,6 @@ const body=rows.map((r,idx)=>{
       color:r.direction.startsWith('evidence favours')?'15603A':
             r.direction.startsWith('evidence does not')?'8A2727':'7A5B00'})],{after:40}));
   if(r.summary) ev.push(p([t(r.summary,{size:18})],{after:60}));
-  if(r.negative_controls) ev.push(p([t('Negative controls. ',{b:true,size:17,color:'8A6D00'}),
-      t(r.negative_controls+' These are designed to score low and are excluded from the reading above.',
-        {i:true,size:17,color:'8A6D00'})],{after:50}));
   if(r.why_range_is_wide) ev.push(p([t('What varies across the range. ',{b:true,size:17,color:'555555'}),
       t(r.why_range_is_wide,{size:17,color:'555555'})],{after:60}));
   if(r.evidence.length) ev.push(p([t('Figures behind this row',{b:true,size:16,color:'666666'})],{after:30}));

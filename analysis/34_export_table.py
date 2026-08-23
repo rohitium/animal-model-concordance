@@ -116,7 +116,6 @@ for a in ORDER+[x for x in {k[0] for k in rows} if x not in ORDER]:
         out.append({"assessment":LABEL.get(a,a),"organism":o,"n_studies":len(pms),
                     "summary":sy.get("summary"),"direction":sy.get("direction"),
                     "why_range_is_wide":sy.get("why_range_is_wide"),
-                    "negative_controls":sy.get("negative_controls_noted"),
                     "verdicts":[{"label":VLAB.get(k,k),"n":v} for k,v in vs.most_common()],
                     "evidence":ev,"caveat":cav[0] if cav else None})
 json.dump(out, open(J("data","db","table_export.json"),"w"), indent=1)

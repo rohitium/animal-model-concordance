@@ -29,8 +29,8 @@ SCHEMA={"type":"object","additionalProperties":False,"properties":{
    "evidence favours the model","mixed","evidence does not favour the model","too little evidence"]},
  "key_numbers":{"type":"array","items":{"type":"string"}},
  "why_range_is_wide":{"type":["string","null"]},
- "negative_controls_noted":{"type":["string","null"]}},
- "required":["summary","direction","key_numbers","why_range_is_wide","negative_controls_noted"]}
+},
+ "required":["summary","direction","key_numbers","why_range_is_wide"]}
 
 PROMPT="""You are writing one cell of a table. The row is a MODEL ORGANISM assessed for one
 purpose (efficacy, toxicology, safety pharmacology, disease biology, or veterinary). You are
@@ -60,7 +60,8 @@ Hard rules:
   Summarise it as a distribution — the median and the span, with a couple of named examples
   — rather than picking out individual conditions. Do not editorialise about which
   conditions the authors expected to score low; they are part of the distribution.
-  Leave `negative_controls_noted` null unless a figure would actively mislead without it.
+  Do not single out conditions the authors expected to score low; they belong to the
+  distribution like any other.
 - A study's headline finding must not be omitted because it is inconvenient to summarise. If
   a study reports that animal results failed to discriminate human outcomes, that IS the
   finding.
@@ -171,4 +172,4 @@ with ThreadPoolExecutor(max_workers=8) as ex:
 ok={k:v for k,v in out.items() if "error" not in v}
 print(f"\nsynthesised {len(ok)}/{len(rows)} errors={errs} cost=${cost:.3f}")
 print("directions:", dict(collections.Counter(v["direction"] for v in ok.values())))
-print("with negative controls flagged:", sum(1 for v in ok.values() if v.get("negative_controls_noted")))
+
