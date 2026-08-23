@@ -108,6 +108,10 @@ td.org{white-space:nowrap}
 .card{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:.9rem 1rem;margin:.7rem 0}
 .caveat{border-left:3px solid var(--part);background:var(--partbg);color:var(--part);padding:.55rem .8rem;border-radius:4px;font-size:.87rem;margin:.5rem 0}
 .verb{color:var(--mut);font-size:.83rem;font-style:italic}
+nav{display:flex;gap:1.4rem;flex-wrap:wrap;padding:.7rem 0 .75rem;border-bottom:1px solid var(--line);
+margin:0 0 1.6rem;font-size:.9rem}
+nav a{text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
 footer{margin-top:3.5rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--mut);font-size:.8rem}
 code{background:var(--chip);padding:.06rem .3rem;border-radius:3px;font-size:.86em}
 details{margin:.5rem 0}summary{cursor:pointer;color:var(--accent);font-size:.9rem}
@@ -117,7 +121,7 @@ def page(title, body, depth=0):
     up="../"*depth
     return (f'<meta charset="utf-8"><title>{e(title)}</title>'
             f'<meta name="viewport" content="width=device-width,initial-scale=1"><style>{CSS}</style>'
-            f'<div class="wrap"><p class="sub"><a href="{up}index.html">Animal Model Concordance</a></p>'
+            f'<div class="wrap"><nav><a href="{up}index.html">Evidence</a><a href="{up}faq.html">Frequently Asked Questions</a><a href="https://github.com/rohitium/animal-model-concordance">Repository</a></nav>'
             f'{body}<footer>{len(OK)} studies &middot; updated {BUILT} &middot; '
             f'every figure links to the study that reported it. Not peer reviewed.</footer></div>')
 
@@ -367,9 +371,7 @@ import faq as _faq
 _ag=agreement() or {"agree":0,"kappa":0,"n":0}
 _ctx={"agree":_ag["agree"],"kappa":_ag["kappa"],"n_pairs":_ag["n"],"n_studies":len(OK),
       "supports":verd["supports"],"partly":verd["partly-supports"],"not":verd["does-not-support"]}
-fb=["<h1>Questions about this work</h1>",
-    '<p class="lede">Answers to the questions collaborators ask first, including the ones that '
-    'cut against a favourable reading of the data.</p>']
+fb=["<h1>Frequently Asked Questions</h1>"]
 for q,paras in _faq.build(_ctx):
     fb.append(f"<h2>{e(q)}</h2>"); fb.extend(paras)
 fb.append('<p class="sub">The protocol, search strings, every analysis script and a running list '
