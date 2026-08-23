@@ -172,6 +172,22 @@ def _key(t):
     return frozenset(w for w in re.findall(r"[a-z]+", (t or "").lower())
                      if w not in _STOP and len(w)>2)
 
+def source_label(loc):
+    """A locator we can stand behind.
+
+    Table and figure references are verifiable in the published paper and are kept
+    verbatim. Page numbers are not: they were read off a PDF, so they may be PDF pages
+    rather than journal pages, and "Results, p5" invites a reader to look somewhere we
+    cannot vouch for. The section is kept; the page is dropped.
+    """
+    t=(loc or "").strip()
+    if not t: return ""
+    low=t.lower()
+    if "table" in low or "fig" in low or "appendix" in low or "supplement" in low:
+        return t
+    t=re.sub(r",?\s*p+\.?\s*\d+[a-z]?", "", t, flags=re.I).strip(" ,;")
+    return t
+
 def _family(c):
     import importlib.util as _iu
     global _OV
@@ -425,8 +441,10 @@ for pm,v in OK.items():
     for _i,_c in enumerate(allc):
         _p=(_pv.get(str(_i)) or {}) if "error" not in _pv else {}
         _c["_prov"]=_p.get("provenance","unclear"); _c["_cited_source"]=_p.get("cited_source")
-    cited=[c for c in allc if c["_prov"]=="cited-from-other-study"]
-    cs=[c for c in allc if c["_prov"]!="cited-from-other-study"]
+    for _c in allc: _c["_qual"]=_c.get("value") is None
+    cited=[c for c in allc if c["_prov"]=="cited-from-other-study" and not c["_qual"]]
+    quals=[c for c in allc if c["_qual"]]
+    cs=[c for c in allc if not c["_qual"] and c["_prov"]!="cited-from-other-study"]
     if cs:
         body.append(f'<h2>Reported comparisons <span class="tag">{len(cs)}</span></h2>')
         body.append('<div class="scroll"><table><tr><th>Value</th><th>Statistic</th>'
@@ -440,6 +458,17 @@ for pm,v in OK.items():
                         f'<td>{", ".join(e(x) for x in N.organisms(c.get("animal_species") or [])) or "—"}</td>'
                         f'<td>{n}</td><td class="sub">{e(c.get("source_location"))}</td></tr>')
         body.append("</table></div>")
+    if quals:
+        body.append(f'<h2>Comparisons stated without a number '
+                    f'<span class="tag">{len(quals)}</span></h2>')
+        body.append('<p class="sub">The paper compares animal and human results here in words '
+                    'rather than figures. These count as evidence and are shown in full, but they '
+                    'cannot enter a numeric score.</p>')
+        for c in quals:
+            loc=source_label(c.get("source_location"))
+            body.append(f'<div class="quote"><span class="t">{e(c["what_compared"])}'
+                        + (f' &middot; {e(loc)}' if loc else "") + '</span>'
+                        + f'&ldquo;{e(c.get("verbatim") or "")}&rdquo;</div>')
     if cited:
         body.append(f'<h2>Figures this paper quotes from other work '
                     f'<span class="tag">{len(cited)}</span></h2>')
@@ -452,7 +481,7 @@ for pm,v in OK.items():
             body.append(f'<tr><td class="ev"><span class="v">{e(fmt(c))}</span></td>'
                         f'<td>{e(c["statistic"])}</td><td>{e(c["what_compared"])}</td>'
                         f'<td>{e(c.get("_cited_source") or "not named")}</td>'
-                        f'<td class="sub">{e(c.get("source_location"))}</td></tr>')
+                        f'<td class="sub">{e(source_label(c.get("source_location")))}</td></tr>')
         body.append("</table></div>")
     if md.get("abstract"):
         body.append(f'<details><summary>Abstract</summary><div class="card">{e(md["abstract"])}</div></details>')

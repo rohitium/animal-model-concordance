@@ -9,11 +9,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 2
    },
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 2
    }
   ],
@@ -449,7 +449,7 @@
     ]
    }
   ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
+  "caveat": "The high Negative Predictive Value (NPV) is largely based on the low clinical positive prevalence, meaning most findings are negative."
  },
  {
   "assessment": "Toxicology",
@@ -927,20 +927,6 @@
     ]
    },
    {
-    "value": "-0.04\u201316.6",
-    "statistic": "mean",
-    "n": "",
-    "what": "3 comparisons, median 16.6 \u2014 lowest QTc increase over 24h (mock drug) (-0.04), highest QTc increase at critical concentration (moxifloxacin) (16.6)",
-    "cites": [
-     {
-      "text": "Sadko et al. 2024",
-      "pmid": "38852684",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
-     }
-    ]
-   },
-   {
     "value": "54\u201378%",
     "statistic": "sensitivity",
     "n": "",
@@ -965,6 +951,20 @@
       "pmid": "30726989",
       "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
       "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
+     }
+    ]
+   },
+   {
+    "value": "-0.04\u201316.6",
+    "statistic": "mean",
+    "n": "",
+    "what": "3 comparisons, median 16.6 \u2014 lowest QTc increase over 24h (mock drug) (-0.04), highest QTc increase at critical concentration (moxifloxacin) (16.6)",
+    "cites": [
+     {
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
      }
     ]
    },
@@ -1009,29 +1009,15 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "supports",
+    "label": "partly supports",
     "n": 1
    },
    {
-    "label": "partly supports",
+    "label": "supports",
     "n": 1
    }
   ],
   "evidence": [
-   {
-    "value": "-1.17\u201310.9",
-    "statistic": "mean",
-    "n": "",
-    "what": "3 comparisons, median 10 \u2014 lowest QTc increase over 24h (mock drug) (-1.17), highest QTc increase at critical concentration (moxifloxacin) (10.9)",
-    "cites": [
-     {
-      "text": "Sadko et al. 2024",
-      "pmid": "38852684",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
-     }
-    ]
-   },
    {
     "value": "54\u201378%",
     "statistic": "sensitivity",
@@ -1061,6 +1047,20 @@
     ]
    },
    {
+    "value": "-1.17\u201310.9",
+    "statistic": "mean",
+    "n": "",
+    "what": "3 comparisons, median 10 \u2014 lowest QTc increase over 24h (mock drug) (-1.17), highest QTc increase at critical concentration (moxifloxacin) (10.9)",
+    "cites": [
+     {
+      "text": "Sadko et al. 2024",
+      "pmid": "38852684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+     }
+    ]
+   },
+   {
     "value": "1.5\u20133",
     "statistic": "multiple",
     "n": "",
@@ -1075,30 +1075,30 @@
     ]
    },
    {
-    "value": "0",
-    "statistic": "change",
-    "n": ", n=48 n=48",
-    "what": "QTc increase at critical concentration (mock drug)",
+    "value": "52%",
+    "statistic": "positive predictive value",
+    "n": "",
+    "what": "large animal to human (combined BP and HR)",
     "cites": [
      {
-      "text": "Sadko et al. 2024",
-      "pmid": "38852684",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+      "text": "Bhatt et al. 2019",
+      "pmid": "30726989",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
      }
     ]
    },
    {
-    "value": "0.0043",
-    "statistic": "slope",
+    "value": "92%",
+    "statistic": "negative predictive value",
     "n": "",
-    "what": "Average AQTc slope (moxifloxacin)",
+    "what": "large animal to human (combined BP and HR)",
     "cites": [
      {
-      "text": "Sadko et al. 2024",
-      "pmid": "38852684",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38852684/",
-      "site": "https://rohitium.github.io/animal-model-concordance/study/38852684.html"
+      "text": "Bhatt et al. 2019",
+      "pmid": "30726989",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30726989/",
+      "site": "https://rohitium.github.io/animal-model-concordance/study/30726989.html"
      }
     ]
    }
@@ -1313,7 +1313,7 @@
     ]
    }
   ],
-  "caveat": "The MHPS scores are normalized between 0 and 1, where 1 indicates the highest proximity to human MASLD. The 'improved and statistically significant agreement' for DEGs and DRPs is a qualitative statement without a specific numerical value provided beyond the overall 50% alignment rate for the whole transcriptome."
+  "caveat": "The 'percentage of genes changed in the same direction' metric has a base rate of 50% for random chance, which is explicitly mentioned in the paper. Many of the reported percentages for mouse models are close to this random chance level."
  },
  {
   "assessment": "Disease biology",

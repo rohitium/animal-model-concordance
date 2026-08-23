@@ -458,3 +458,17 @@ direction flipped from mixed to *favours the model*. Qualitative animal-to-human
 are now retained, marked, and excluded only from the numeric score. **A rule that drops
 unquantified findings will preferentially drop negative ones**, since failures are often
 reported without a number.
+
+## Locators and qualitative rendering (2026-08-22)
+
+**L67 — Page numbers are no longer published as locators.** 392 of 925 figures carried a
+locator of the form "Results, p5". These were read off a PDF, so a page number may be the PDF's
+rather than the journal's, and pointing a reader at a page we cannot vouch for is worse than
+giving the section alone. Page numbers are stripped; section names are kept. Table and figure
+references (501 figures) are verifiable in the published article and are kept verbatim.
+
+**L68 — Qualitative comparisons are shown as statements, not as empty table rows.** A comparison
+made in words was being rendered in the numeric table as a dash for the value and the phrase
+"remarkable improvement" in the statistic column, with "not named" under credit. It is now shown
+as the quoted sentence with its section, under a heading that says the paper compared animal and
+human results in words rather than figures and that these cannot enter a numeric score.
