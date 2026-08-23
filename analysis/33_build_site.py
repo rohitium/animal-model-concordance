@@ -243,6 +243,17 @@ for pm in CORE:
             named_only[o].add(pm)
 verd=collections.Counter(v["verdict"] for v in OK.values())
 ncomp=sum(len(v.get("comparisons") or []) for v in OK.values())
+# what actually survives to become evidence in a row
+_own=0; _cited=0
+for _pm,_v in OK.items():
+    _pr=PROV.get(_pm) or {}
+    for _i,_c in enumerate(_v.get("comparisons") or []):
+        _p=((_pr.get(str(_i)) or {}) if "error" not in _pr else {}).get("provenance")
+        if _p=="cited-from-other-study": _cited+=1
+        else: _own+=1
+_in_rows=sum(len(comparisons_for(pm,o)) for (a,o),pms in rows.items() for pm in pms)
+_studies_in_rows=len({pm for pms in rows.values() for pm in pms})
+_scored=len([1 for k_ in OK if (OBJ.get(k_) or {}).get("verdict") not in (None,"insufficient-data")])
 
 b=[f"<h1>How well do animal models predict human clinical outcomes?</h1>",
  '<p class="lede">A structured reading of the published literature that <em>measures</em> '
@@ -250,13 +261,14 @@ b=[f"<h1>How well do animal models predict human clinical outcomes?</h1>",
  'questions; figures below are those the studies reported, in their own units. Nothing is '
  'averaged across studies, because studies define concordance differently.</p>',
  '<div class="grid">',
- f'<div class="stat"><div class="n">{len(OK)}</div><div class="l">studies</div></div>',
- f'<div class="stat"><div class="n">{ncomp:,}</div><div class="l">reported comparisons</div></div>',
+ f'<div class="stat"><div class="n">{len(OK)}</div><div class="l">studies included</div></div>',
+ f'<div class="stat"><div class="n">{_studies_in_rows}</div><div class="l">with organism-specific evidence</div></div>',
+ f'<div class="stat"><div class="n">{_in_rows:,}</div><div class="l">figures in the table</div></div>',
  f'<div class="stat"><div class="n">{len({o for _,o in rows})}</div><div class="l">model organisms</div></div>',
- f'<div class="stat"><div class="n">{verd["supports"]}</div><div class="l">support</div></div>',
- f'<div class="stat"><div class="n">{verd["partly-supports"]}</div><div class="l">partly support</div></div>',
- f'<div class="stat"><div class="n">{verd["does-not-support"]}</div><div class="l">do not support</div></div>',
- '</div>',
+ f'<div class="stat"><div class="n">{len(rows)}</div><div class="l">evidence rows</div></div>',
+ f'<div class="stat"><div class="n">{_scored}</div><div class="l">with a numeric score</div></div>',
+'</div>',
+ f'<p class="sub">{ncomp:,} figures were extracted from these studies. {_cited:,} are quoted from earlier work and do not count as the quoting study&rsquo;s evidence; {_in_rows:,} of the rest are attributable to a specific model organism and appear below. {_scored} studies report something reducible to a common 0&ndash;1 concordance scale.</p>',
  "<h2>Evidence by assessment and model organism</h2>",
  '<p class="sub">One row per assessment and organism. Values are ranges only where several '
  'studies reported the <em>same</em> statistic; different statistics are listed separately. '

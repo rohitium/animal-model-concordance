@@ -1,30 +1,21 @@
 {
  "36883244": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "24489990": {
-  "n_usable": 1,
-  "median": 0.7,
-  "min": 0.7,
-  "max": 0.7,
-  "verdict": "supports",
-  "figures": [
-   {
-    "statistic": "overestimation",
-    "unit": "percent",
-    "raw": 30,
-    "kind": "discordance",
-    "scaled": 0.7,
-    "what": "overestimation of treatment effectiveness likelihood by animal studies",
-    "source": "Limitations of animal models in cancer research, p2"
-   }
-  ]
+  "n_usable": 0,
+  "n_converted_not_scored": 0,
+  "median": null,
+  "verdict": "insufficient-data",
+  "figures": []
  },
  "31307492": {
   "n_usable": 4,
+  "n_converted_not_scored": 0,
   "median": 0.46,
   "min": 0.4,
   "max": 0.71,
@@ -36,6 +27,7 @@
     "raw": 48,
     "kind": "agreement",
     "scaled": 0.48,
+    "in_score": true,
     "what": "prediction of adverse drug reactions",
     "source": "Results, p6"
    },
@@ -45,6 +37,7 @@
     "raw": 44,
     "kind": "agreement",
     "scaled": 0.44,
+    "in_score": true,
     "what": "concordance of liver effects",
     "source": "Results, p6"
    },
@@ -54,6 +47,7 @@
     "raw": 40,
     "kind": "agreement",
     "scaled": 0.4,
+    "in_score": true,
     "what": "concordance of liver effects",
     "source": "Results, p6"
    },
@@ -63,6 +57,7 @@
     "raw": 71,
     "kind": "agreement",
     "scaled": 0.71,
+    "in_score": true,
     "what": "concordance of human toxicity events",
     "source": "Results, p6"
    }
@@ -70,17 +65,19 @@
  },
  "25092317": {
   "n_usable": 6,
-  "median": 0.47,
-  "min": 0.26,
-  "max": 0.68,
-  "verdict": "partly-supports",
+  "n_converted_not_scored": 6,
+  "median": 0.816,
+  "min": 0.481,
+  "max": 0.932,
+  "verdict": "supports",
   "figures": [
    {
     "statistic": "Spearman's rank correlation coefficient",
     "unit": "correlation",
     "raw": 0.43,
-    "kind": "correlation",
+    "kind": "ratio-like",
     "scaled": 0.43,
+    "in_score": false,
     "what": "Spearman's rank correlation coefficient of gene fold changes between human conditions and mouse models",
     "source": "Results, p2, Fig 1"
    },
@@ -88,17 +85,39 @@
     "statistic": "Spearman's rank correlation coefficient",
     "unit": "correlation",
     "raw": 0.68,
-    "kind": "correlation",
+    "kind": "ratio-like",
     "scaled": 0.68,
+    "in_score": false,
     "what": "Spearman's rank correlation coefficient of gene fold changes between human conditions and mouse models",
     "source": "Results, p2, Fig 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 77,
+    "kind": "agreement",
+    "scaled": 0.77,
+    "in_score": true,
+    "what": "Percentage of genes changed in the same direction between human conditions and mouse models",
+    "source": "Abstract, p1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 93,
+    "kind": "agreement",
+    "scaled": 0.93,
+    "in_score": true,
+    "what": "Percentage of genes changed in the same direction between human conditions and mouse models",
+    "source": "Abstract, p1"
    },
    {
     "statistic": "Pearson's correlation coefficient",
     "unit": "correlation",
     "raw": 0.26,
-    "kind": "correlation",
+    "kind": "ratio-like",
     "scaled": 0.26,
+    "in_score": false,
     "what": "Pearson's correlation coefficient of gene fold changes between human burn and mouse models (human FC > 2.0, mouse FC > 1.2)",
     "source": "Results, p2, Fig 3"
    },
@@ -106,17 +125,39 @@
     "statistic": "Pearson's correlation coefficient",
     "unit": "correlation",
     "raw": 0.51,
-    "kind": "correlation",
+    "kind": "ratio-like",
     "scaled": 0.51,
+    "in_score": false,
     "what": "Pearson's correlation coefficient of gene fold changes between human burn and mouse models (human FC > 2.0, mouse FC > 1.2)",
+    "source": "Results, p2, Fig 3"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 48.1,
+    "kind": "agreement",
+    "scaled": 0.481,
+    "in_score": true,
+    "what": "Percentage of genes changed in the same direction between human burn and mouse models (human FC > 2.0, mouse FC > 1.2)",
+    "source": "Results, p2, Fig 3"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 86.2,
+    "kind": "agreement",
+    "scaled": 0.862,
+    "in_score": true,
+    "what": "Percentage of genes changed in the same direction between human burn and mouse models (human FC > 2.0, mouse FC > 1.2)",
     "source": "Results, p2, Fig 3"
    },
    {
     "statistic": "Pearson's correlation coefficient",
     "unit": "correlation",
     "raw": 0.36,
-    "kind": "correlation",
+    "kind": "ratio-like",
     "scaled": 0.36,
+    "in_score": false,
     "what": "Pearson's correlation coefficient of gene fold changes between human burn and mouse models (human FC > 4.0, mouse FC > 1.2)",
     "source": "Results, p3, Fig 3"
    },
@@ -124,21 +165,44 @@
     "statistic": "Pearson's correlation coefficient",
     "unit": "correlation",
     "raw": 0.59,
-    "kind": "correlation",
+    "kind": "ratio-like",
     "scaled": 0.59,
+    "in_score": false,
     "what": "Pearson's correlation coefficient of gene fold changes between human burn and mouse models (human FC > 4.0, mouse FC > 1.2)",
+    "source": "Results, p3, Fig 3"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 74.4,
+    "kind": "agreement",
+    "scaled": 0.744,
+    "in_score": true,
+    "what": "Percentage of genes changed in the same direction between human burn and mouse models (human FC > 4.0, mouse FC > 1.2)",
+    "source": "Results, p3, Fig 3"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 93.2,
+    "kind": "agreement",
+    "scaled": 0.932,
+    "in_score": true,
+    "what": "Percentage of genes changed in the same direction between human burn and mouse models (human FC > 4.0, mouse FC > 1.2)",
     "source": "Results, p3, Fig 3"
    }
   ]
  },
  "24678540": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "28893587": {
   "n_usable": 91,
+  "n_converted_not_scored": 0,
   "median": 0.68,
   "min": 0.0,
   "max": 0.97,
@@ -150,6 +214,7 @@
     "raw": 48,
     "kind": "agreement",
     "scaled": 0.48,
+    "in_score": true,
     "what": "Sensitivity",
     "source": "Abstract"
    },
@@ -159,6 +224,7 @@
     "raw": 43,
     "kind": "agreement",
     "scaled": 0.43,
+    "in_score": true,
     "what": "Positive Predictive Value (PPV)",
     "source": "Abstract"
    },
@@ -168,6 +234,7 @@
     "raw": 84,
     "kind": "agreement",
     "scaled": 0.84,
+    "in_score": true,
     "what": "Specificity",
     "source": "Abstract"
    },
@@ -177,6 +244,7 @@
     "raw": 86,
     "kind": "agreement",
     "scaled": 0.86,
+    "in_score": true,
     "what": "Negative Predictive Value (NPV)",
     "source": "Abstract"
    },
@@ -186,6 +254,7 @@
     "raw": 48,
     "kind": "agreement",
     "scaled": 0.48,
+    "in_score": true,
     "what": "Overall Sensitivity",
     "source": "Table 3"
    },
@@ -195,6 +264,7 @@
     "raw": 84,
     "kind": "agreement",
     "scaled": 0.84,
+    "in_score": true,
     "what": "Overall Specificity",
     "source": "Table 3"
    },
@@ -204,6 +274,7 @@
     "raw": 43,
     "kind": "agreement",
     "scaled": 0.43,
+    "in_score": true,
     "what": "Overall PPV",
     "source": "Table 3"
    },
@@ -213,6 +284,7 @@
     "raw": 86,
     "kind": "agreement",
     "scaled": 0.86,
+    "in_score": true,
     "what": "Overall NPV",
     "source": "Table 3"
    },
@@ -222,6 +294,7 @@
     "raw": 40,
     "kind": "agreement",
     "scaled": 0.4,
+    "in_score": true,
     "what": "PPV for Cutaneous",
     "source": "Table 3"
    },
@@ -231,6 +304,7 @@
     "raw": 50,
     "kind": "agreement",
     "scaled": 0.5,
+    "in_score": true,
     "what": "PPV for Cutaneous",
     "source": "Table 3"
    },
@@ -240,6 +314,7 @@
     "raw": 67,
     "kind": "agreement",
     "scaled": 0.67,
+    "in_score": true,
     "what": "PPV for Cutaneous",
     "source": "Table 3"
    },
@@ -249,6 +324,7 @@
     "raw": 82,
     "kind": "agreement",
     "scaled": 0.82,
+    "in_score": true,
     "what": "NPV for Cutaneous",
     "source": "Table 3"
    },
@@ -258,6 +334,7 @@
     "raw": 91,
     "kind": "agreement",
     "scaled": 0.91,
+    "in_score": true,
     "what": "NPV for Cutaneous",
     "source": "Table 3"
    },
@@ -267,6 +344,7 @@
     "raw": 70,
     "kind": "agreement",
     "scaled": 0.7,
+    "in_score": true,
     "what": "NPV for Cutaneous",
     "source": "Table 3"
    },
@@ -276,6 +354,7 @@
     "raw": 14,
     "kind": "agreement",
     "scaled": 0.14,
+    "in_score": true,
     "what": "PPV for Musculoskeletal",
     "source": "Table 3"
    },
@@ -285,6 +364,7 @@
     "raw": 0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "PPV for Musculoskeletal",
     "source": "Table 3"
    },
@@ -294,6 +374,7 @@
     "raw": 92,
     "kind": "agreement",
     "scaled": 0.92,
+    "in_score": true,
     "what": "NPV for Musculoskeletal",
     "source": "Table 3"
    },
@@ -303,6 +384,7 @@
     "raw": 91,
     "kind": "agreement",
     "scaled": 0.91,
+    "in_score": true,
     "what": "NPV for Musculoskeletal",
     "source": "Table 3"
    },
@@ -312,6 +394,7 @@
     "raw": 93,
     "kind": "agreement",
     "scaled": 0.93,
+    "in_score": true,
     "what": "NPV for Musculoskeletal",
     "source": "Table 3"
    },
@@ -321,6 +404,7 @@
     "raw": 54,
     "kind": "agreement",
     "scaled": 0.54,
+    "in_score": true,
     "what": "PPV for Biochemical",
     "source": "Table 3"
    },
@@ -330,6 +414,7 @@
     "raw": 14,
     "kind": "agreement",
     "scaled": 0.14,
+    "in_score": true,
     "what": "PPV for Biochemical",
     "source": "Table 3"
    },
@@ -339,6 +424,7 @@
     "raw": 43,
     "kind": "agreement",
     "scaled": 0.43,
+    "in_score": true,
     "what": "PPV for Biochemical",
     "source": "Table 3"
    },
@@ -348,6 +434,7 @@
     "raw": 93,
     "kind": "agreement",
     "scaled": 0.93,
+    "in_score": true,
     "what": "NPV for Biochemical",
     "source": "Table 3"
    },
@@ -357,6 +444,7 @@
     "raw": 95,
     "kind": "agreement",
     "scaled": 0.95,
+    "in_score": true,
     "what": "NPV for Biochemical",
     "source": "Table 3"
    },
@@ -366,6 +454,7 @@
     "raw": 88,
     "kind": "agreement",
     "scaled": 0.88,
+    "in_score": true,
     "what": "NPV for Biochemical",
     "source": "Table 3"
    },
@@ -375,6 +464,7 @@
     "raw": 52,
     "kind": "agreement",
     "scaled": 0.52,
+    "in_score": true,
     "what": "PPV for Nervous system",
     "source": "Table 3"
    },
@@ -384,6 +474,7 @@
     "raw": 52,
     "kind": "agreement",
     "scaled": 0.52,
+    "in_score": true,
     "what": "PPV for Nervous system",
     "source": "Table 3"
    },
@@ -393,6 +484,7 @@
     "raw": 83,
     "kind": "agreement",
     "scaled": 0.83,
+    "in_score": true,
     "what": "PPV for Nervous system",
     "source": "Table 3"
    },
@@ -402,6 +494,7 @@
     "raw": 90,
     "kind": "agreement",
     "scaled": 0.9,
+    "in_score": true,
     "what": "NPV for Nervous system",
     "source": "Table 3"
    },
@@ -411,6 +504,7 @@
     "raw": 90,
     "kind": "agreement",
     "scaled": 0.9,
+    "in_score": true,
     "what": "NPV for Nervous system",
     "source": "Table 3"
    },
@@ -420,6 +514,7 @@
     "raw": 94,
     "kind": "agreement",
     "scaled": 0.94,
+    "in_score": true,
     "what": "NPV for Nervous system",
     "source": "Table 3"
    },
@@ -429,6 +524,7 @@
     "raw": 17,
     "kind": "agreement",
     "scaled": 0.17,
+    "in_score": true,
     "what": "PPV for Cardiovascular",
     "source": "Table 3"
    },
@@ -438,6 +534,7 @@
     "raw": 50,
     "kind": "agreement",
     "scaled": 0.5,
+    "in_score": true,
     "what": "PPV for Cardiovascular",
     "source": "Table 3"
    },
@@ -447,6 +544,7 @@
     "raw": 20,
     "kind": "agreement",
     "scaled": 0.2,
+    "in_score": true,
     "what": "PPV for Cardiovascular",
     "source": "Table 3"
    },
@@ -456,6 +554,7 @@
     "raw": 75,
     "kind": "agreement",
     "scaled": 0.75,
+    "in_score": true,
     "what": "NPV for Cardiovascular",
     "source": "Table 3"
    },
@@ -465,6 +564,7 @@
     "raw": 91,
     "kind": "agreement",
     "scaled": 0.91,
+    "in_score": true,
     "what": "NPV for Cardiovascular",
     "source": "Table 3"
    },
@@ -474,6 +574,7 @@
     "raw": 84,
     "kind": "agreement",
     "scaled": 0.84,
+    "in_score": true,
     "what": "NPV for Cardiovascular",
     "source": "Table 3"
    },
@@ -483,6 +584,7 @@
     "raw": 36,
     "kind": "agreement",
     "scaled": 0.36,
+    "in_score": true,
     "what": "PPV for Hematology",
     "source": "Table 3"
    },
@@ -492,6 +594,7 @@
     "raw": 46,
     "kind": "agreement",
     "scaled": 0.46,
+    "in_score": true,
     "what": "PPV for Hematology",
     "source": "Table 3"
    },
@@ -501,6 +604,7 @@
     "raw": 22,
     "kind": "agreement",
     "scaled": 0.22,
+    "in_score": true,
     "what": "PPV for Hematology",
     "source": "Table 3"
    },
@@ -510,6 +614,7 @@
     "raw": 92,
     "kind": "agreement",
     "scaled": 0.92,
+    "in_score": true,
     "what": "NPV for Hematology",
     "source": "Table 3"
    },
@@ -519,6 +624,7 @@
     "raw": 93,
     "kind": "agreement",
     "scaled": 0.93,
+    "in_score": true,
     "what": "NPV for Hematology",
     "source": "Table 3"
    },
@@ -528,6 +634,7 @@
     "raw": 88,
     "kind": "agreement",
     "scaled": 0.88,
+    "in_score": true,
     "what": "NPV for Hematology",
     "source": "Table 3"
    },
@@ -537,6 +644,7 @@
     "raw": 33,
     "kind": "agreement",
     "scaled": 0.33,
+    "in_score": true,
     "what": "PPV for Liver",
     "source": "Table 3"
    },
@@ -546,6 +654,7 @@
     "raw": 27,
     "kind": "agreement",
     "scaled": 0.27,
+    "in_score": true,
     "what": "PPV for Liver",
     "source": "Table 3"
    },
@@ -555,6 +664,7 @@
     "raw": 50,
     "kind": "agreement",
     "scaled": 0.5,
+    "in_score": true,
     "what": "PPV for Liver",
     "source": "Table 3"
    },
@@ -564,6 +674,7 @@
     "raw": 89,
     "kind": "agreement",
     "scaled": 0.89,
+    "in_score": true,
     "what": "NPV for Liver",
     "source": "Table 3"
    },
@@ -573,6 +684,7 @@
     "raw": 88,
     "kind": "agreement",
     "scaled": 0.88,
+    "in_score": true,
     "what": "NPV for Liver",
     "source": "Table 3"
    },
@@ -582,6 +694,7 @@
     "raw": 85,
     "kind": "agreement",
     "scaled": 0.85,
+    "in_score": true,
     "what": "NPV for Liver",
     "source": "Table 3"
    },
@@ -591,6 +704,7 @@
     "raw": 0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "PPV for Ophthalmology",
     "source": "Table 3"
    },
@@ -600,6 +714,7 @@
     "raw": 96,
     "kind": "agreement",
     "scaled": 0.96,
+    "in_score": true,
     "what": "NPV for Ophthalmology",
     "source": "Table 3"
    },
@@ -609,6 +724,7 @@
     "raw": 94,
     "kind": "agreement",
     "scaled": 0.94,
+    "in_score": true,
     "what": "NPV for Ophthalmology",
     "source": "Table 3"
    },
@@ -618,6 +734,7 @@
     "raw": 97,
     "kind": "agreement",
     "scaled": 0.97,
+    "in_score": true,
     "what": "NPV for Ophthalmology",
     "source": "Table 3"
    },
@@ -627,6 +744,7 @@
     "raw": 7,
     "kind": "agreement",
     "scaled": 0.07,
+    "in_score": true,
     "what": "PPV for Pulmonary",
     "source": "Table 3"
    },
@@ -636,6 +754,7 @@
     "raw": 0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "PPV for Pulmonary",
     "source": "Table 3"
    },
@@ -645,6 +764,7 @@
     "raw": 95,
     "kind": "agreement",
     "scaled": 0.95,
+    "in_score": true,
     "what": "NPV for Pulmonary",
     "source": "Table 3"
    },
@@ -654,6 +774,7 @@
     "raw": 96,
     "kind": "agreement",
     "scaled": 0.96,
+    "in_score": true,
     "what": "NPV for Pulmonary",
     "source": "Table 3"
    },
@@ -663,6 +784,7 @@
     "raw": 97,
     "kind": "agreement",
     "scaled": 0.97,
+    "in_score": true,
     "what": "NPV for Pulmonary",
     "source": "Table 3"
    },
@@ -672,6 +794,7 @@
     "raw": 19,
     "kind": "agreement",
     "scaled": 0.19,
+    "in_score": true,
     "what": "PPV for Renal",
     "source": "Table 3"
    },
@@ -681,6 +804,7 @@
     "raw": 33,
     "kind": "agreement",
     "scaled": 0.33,
+    "in_score": true,
     "what": "PPV for Renal",
     "source": "Table 3"
    },
@@ -690,6 +814,7 @@
     "raw": 0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "PPV for Renal",
     "source": "Table 3"
    },
@@ -699,6 +824,7 @@
     "raw": 96,
     "kind": "agreement",
     "scaled": 0.96,
+    "in_score": true,
     "what": "NPV for Renal",
     "source": "Table 3"
    },
@@ -708,6 +834,7 @@
     "raw": 95,
     "kind": "agreement",
     "scaled": 0.95,
+    "in_score": true,
     "what": "NPV for Renal",
     "source": "Table 3"
    },
@@ -717,6 +844,7 @@
     "raw": 43,
     "kind": "agreement",
     "scaled": 0.43,
+    "in_score": true,
     "what": "PPV for Gastrointestinal",
     "source": "Table 3"
    },
@@ -726,6 +854,7 @@
     "raw": 52,
     "kind": "agreement",
     "scaled": 0.52,
+    "in_score": true,
     "what": "PPV for Gastrointestinal",
     "source": "Table 3"
    },
@@ -735,6 +864,7 @@
     "raw": 91,
     "kind": "agreement",
     "scaled": 0.91,
+    "in_score": true,
     "what": "PPV for Gastrointestinal",
     "source": "Table 3"
    },
@@ -744,6 +874,7 @@
     "raw": 69,
     "kind": "agreement",
     "scaled": 0.69,
+    "in_score": true,
     "what": "NPV for Gastrointestinal",
     "source": "Table 3"
    },
@@ -753,6 +884,7 @@
     "raw": 76,
     "kind": "agreement",
     "scaled": 0.76,
+    "in_score": true,
     "what": "NPV for Gastrointestinal",
     "source": "Table 3"
    },
@@ -762,6 +894,7 @@
     "raw": 77,
     "kind": "agreement",
     "scaled": 0.77,
+    "in_score": true,
     "what": "NPV for Gastrointestinal",
     "source": "Table 3"
    },
@@ -771,6 +904,7 @@
     "raw": 9,
     "kind": "agreement",
     "scaled": 0.09,
+    "in_score": true,
     "what": "PPV for 'Other'",
     "source": "Table 3"
    },
@@ -780,6 +914,7 @@
     "raw": 0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "PPV for 'Other'",
     "source": "Table 3"
    },
@@ -789,6 +924,7 @@
     "raw": 25,
     "kind": "agreement",
     "scaled": 0.25,
+    "in_score": true,
     "what": "PPV for 'Other'",
     "source": "Table 3"
    },
@@ -798,6 +934,7 @@
     "raw": 14,
     "kind": "agreement",
     "scaled": 0.14,
+    "in_score": true,
     "what": "NPV for 'Other'",
     "source": "Table 3"
    },
@@ -807,6 +944,7 @@
     "raw": 15,
     "kind": "agreement",
     "scaled": 0.15,
+    "in_score": true,
     "what": "NPV for 'Other'",
     "source": "Table 3"
    },
@@ -816,6 +954,7 @@
     "raw": 16,
     "kind": "agreement",
     "scaled": 0.16,
+    "in_score": true,
     "what": "NPV for 'Other'",
     "source": "Table 3"
    },
@@ -825,6 +964,7 @@
     "raw": 60,
     "kind": "agreement",
     "scaled": 0.6,
+    "in_score": true,
     "what": "Sensitivity for Liver (Rodent)",
     "source": "Figure 5A"
    },
@@ -834,6 +974,7 @@
     "raw": 68,
     "kind": "agreement",
     "scaled": 0.68,
+    "in_score": true,
     "what": "Specificity for Liver (Rodent)",
     "source": "Figure 5A"
    },
@@ -843,6 +984,7 @@
     "raw": 26,
     "kind": "agreement",
     "scaled": 0.26,
+    "in_score": true,
     "what": "PPV for Liver (Rodent)",
     "source": "Figure 5A"
    },
@@ -852,6 +994,7 @@
     "raw": 90,
     "kind": "agreement",
     "scaled": 0.9,
+    "in_score": true,
     "what": "NPV for Liver (Rodent)",
     "source": "Figure 5A"
    },
@@ -861,6 +1004,7 @@
     "raw": 27,
     "kind": "agreement",
     "scaled": 0.27,
+    "in_score": true,
     "what": "Sensitivity for Liver (Monkey)",
     "source": "Figure 5A"
    },
@@ -870,6 +1014,7 @@
     "raw": 94,
     "kind": "agreement",
     "scaled": 0.94,
+    "in_score": true,
     "what": "Specificity for Liver (Monkey)",
     "source": "Figure 5A"
    },
@@ -879,6 +1024,7 @@
     "raw": 46,
     "kind": "agreement",
     "scaled": 0.46,
+    "in_score": true,
     "what": "PPV for Liver (Monkey)",
     "source": "Figure 5A"
    },
@@ -888,6 +1034,7 @@
     "raw": 87,
     "kind": "agreement",
     "scaled": 0.87,
+    "in_score": true,
     "what": "NPV for Liver (Monkey)",
     "source": "Figure 5A"
    },
@@ -897,6 +1044,7 @@
     "raw": 62,
     "kind": "agreement",
     "scaled": 0.62,
+    "in_score": true,
     "what": "PPV for Liver (Rodent + Monkey, 'and' view)",
     "source": "Figure 5B"
    },
@@ -906,6 +1054,7 @@
     "raw": 86,
     "kind": "agreement",
     "scaled": 0.86,
+    "in_score": true,
     "what": "NPV for Liver (Rodent + Monkey, 'and' view)",
     "source": "Figure 5B"
    },
@@ -915,6 +1064,7 @@
     "raw": 27,
     "kind": "agreement",
     "scaled": 0.27,
+    "in_score": true,
     "what": "PPV for Liver (Rodent + Monkey, 'or' view)",
     "source": "Figure 5B"
    },
@@ -924,6 +1074,7 @@
     "raw": 92,
     "kind": "agreement",
     "scaled": 0.92,
+    "in_score": true,
     "what": "NPV for Liver (Rodent + Monkey, 'or' view)",
     "source": "Figure 5B"
    },
@@ -933,6 +1084,7 @@
     "raw": 52,
     "kind": "agreement",
     "scaled": 0.52,
+    "in_score": true,
     "what": "Sensitivity (excluding 'other' category)",
     "source": "Table 4"
    },
@@ -942,6 +1094,7 @@
     "raw": 86,
     "kind": "agreement",
     "scaled": 0.86,
+    "in_score": true,
     "what": "Specificity (excluding 'other' category)",
     "source": "Table 4"
    },
@@ -951,6 +1104,7 @@
     "raw": 36,
     "kind": "agreement",
     "scaled": 0.36,
+    "in_score": true,
     "what": "PPV (excluding 'other' category)",
     "source": "Table 4"
    },
@@ -960,6 +1114,7 @@
     "raw": 92,
     "kind": "agreement",
     "scaled": 0.92,
+    "in_score": true,
     "what": "NPV (excluding 'other' category)",
     "source": "Table 4"
    }
@@ -967,6 +1122,7 @@
  },
  "26795250": {
   "n_usable": 1,
+  "n_converted_not_scored": 0,
   "median": 0.857,
   "min": 0.857,
   "max": 0.857,
@@ -978,6 +1134,7 @@
     "raw": 0.857,
     "kind": "correlation",
     "scaled": 0.857,
+    "in_score": true,
     "what": "similarity of leading edge genes in gene sets enriched in both species (sepsis)",
     "source": "Results, p8, Figure 4D"
    }
@@ -985,15 +1142,138 @@
  },
  "34127759": {
   "n_usable": 0,
+  "n_converted_not_scored": 12,
   "median": null,
   "verdict": "insufficient-data",
-  "figures": []
+  "figures": [
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": 0.0311503,
+    "kind": "ratio-like",
+    "scaled": 0.0312,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under healthy conditions",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": 0.0001854,
+    "kind": "ratio-like",
+    "scaled": 0.0002,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under healthy conditions",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": 0.018555,
+    "kind": "ratio-like",
+    "scaled": 0.0186,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under healthy conditions",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": 0.0132563,
+    "kind": "ratio-like",
+    "scaled": 0.0133,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under healthy conditions",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": -0.0075,
+    "kind": "ratio-like",
+    "scaled": 0.0,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under transient inflammation",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": -0.0063,
+    "kind": "ratio-like",
+    "scaled": 0.0,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under transient inflammation",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": -0.0188,
+    "kind": "ratio-like",
+    "scaled": 0.0,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under transient inflammation",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": -0.0123,
+    "kind": "ratio-like",
+    "scaled": 0.0,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under transient inflammation",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": -0.0156,
+    "kind": "ratio-like",
+    "scaled": 0.0,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under constant inflammation",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": 0.0035,
+    "kind": "ratio-like",
+    "scaled": 0.0035,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under constant inflammation",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": -0.0112,
+    "kind": "ratio-like",
+    "scaled": 0.0,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under constant inflammation",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "slope",
+    "unit": "other",
+    "raw": -0.014,
+    "kind": "ratio-like",
+    "scaled": 0.0,
+    "in_score": false,
+    "what": "Migration slope (difference to human) under constant inflammation",
+    "source": "Table 1"
+   }
+  ]
  },
  "42245789": {
-  "n_usable": 24,
-  "median": 0.6695,
+  "n_usable": 27,
+  "n_converted_not_scored": 0,
+  "median": 0.6978,
   "min": 0.31,
-  "max": 0.993,
+  "max": 0.99,
   "verdict": "partly-supports",
   "figures": [
    {
@@ -1002,6 +1282,7 @@
     "raw": 85.05,
     "kind": "agreement",
     "scaled": 0.8505,
+    "in_score": true,
     "what": "model robustness score for adult bladder cancer",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1011,6 +1292,7 @@
     "raw": 79.88,
     "kind": "agreement",
     "scaled": 0.7988,
+    "in_score": true,
     "what": "model robustness score for pediatric glioma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1020,6 +1302,7 @@
     "raw": 78.2,
     "kind": "agreement",
     "scaled": 0.782,
+    "in_score": true,
     "what": "model robustness score for adult head and neck cancer",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1029,6 +1312,7 @@
     "raw": 76.85,
     "kind": "agreement",
     "scaled": 0.7685,
+    "in_score": true,
     "what": "model robustness score for adult melanoma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1038,6 +1322,7 @@
     "raw": 72.95,
     "kind": "agreement",
     "scaled": 0.7295,
+    "in_score": true,
     "what": "model robustness score for pediatric sarcoma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1047,6 +1332,7 @@
     "raw": 72.1,
     "kind": "agreement",
     "scaled": 0.721,
+    "in_score": true,
     "what": "model robustness score for adult glioma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1056,6 +1342,7 @@
     "raw": 69.78,
     "kind": "agreement",
     "scaled": 0.6978,
+    "in_score": true,
     "what": "model robustness score for adult breast cancer",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1065,6 +1352,7 @@
     "raw": 64.13,
     "kind": "agreement",
     "scaled": 0.6413,
+    "in_score": true,
     "what": "model robustness score for adult sarcoma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1074,6 +1362,7 @@
     "raw": 62.33,
     "kind": "agreement",
     "scaled": 0.6233,
+    "in_score": true,
     "what": "model robustness score for adult prostate cancer",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1083,6 +1372,7 @@
     "raw": 61.13,
     "kind": "agreement",
     "scaled": 0.6113,
+    "in_score": true,
     "what": "model robustness score for pediatric osteosarcoma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1092,6 +1382,7 @@
     "raw": 54.58,
     "kind": "agreement",
     "scaled": 0.5458,
+    "in_score": true,
     "what": "model robustness score for pediatric lymphoma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1101,6 +1392,7 @@
     "raw": 48.33,
     "kind": "agreement",
     "scaled": 0.4833,
+    "in_score": true,
     "what": "model robustness score for adult lymphoma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1110,6 +1402,7 @@
     "raw": 45.88,
     "kind": "agreement",
     "scaled": 0.4588,
+    "in_score": true,
     "what": "model robustness score for pediatric melanoma",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1119,6 +1412,7 @@
     "raw": 40.31,
     "kind": "agreement",
     "scaled": 0.4031,
+    "in_score": true,
     "what": "model robustness score for adult leukemia (negative control)",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1128,6 +1422,7 @@
     "raw": 33.56,
     "kind": "agreement",
     "scaled": 0.3356,
+    "in_score": true,
     "what": "model robustness score for pediatric adrenocortical carcinoma (negative control)",
     "source": "Figure 4, Supplemental Table 1"
    },
@@ -1137,26 +1432,39 @@
     "raw": 31.1,
     "kind": "agreement",
     "scaled": 0.311,
+    "in_score": true,
     "what": "model robustness score for adult adrenocortical carcinoma (negative control)",
     "source": "Figure 4, Supplemental Table 1"
    },
    {
-    "statistic": "normalized absolute distance",
-    "unit": "proportion_0_1",
-    "raw": 0.007,
-    "kind": "discordance",
-    "scaled": 0.993,
-    "what": "normalized absolute distance of per-gene median expression between species",
-    "source": "Results, p14"
+    "statistic": "mean difference",
+    "unit": "correlation",
+    "raw": 0.1007,
+    "kind": "bounded-difference",
+    "scaled": 0.8993,
+    "in_score": true,
+    "what": "mean difference in sample-sample correlation between diff cancer-same species group and same cancer-diff species group",
+    "source": "Results, p15, Figure 1b"
    },
    {
-    "statistic": "normalized absolute distance",
-    "unit": "proportion_0_1",
-    "raw": 0.047,
-    "kind": "discordance",
-    "scaled": 0.953,
-    "what": "normalized absolute distance of per-gene median expression between species",
-    "source": "Results, p14"
+    "statistic": "mean difference",
+    "unit": "correlation",
+    "raw": 0.0215,
+    "kind": "bounded-difference",
+    "scaled": 0.9785,
+    "in_score": true,
+    "what": "mean difference in sample-sample correlation between same cancer-same species and same cancer-diff species groups",
+    "source": "Results, p15"
+   },
+   {
+    "statistic": "mean difference",
+    "unit": "correlation",
+    "raw": 0.0646,
+    "kind": "bounded-difference",
+    "scaled": 0.9354,
+    "in_score": true,
+    "what": "mean difference in sample-sample correlation between same cancer-diff species and diff cancer-diff species groups",
+    "source": "Results, p15"
    },
    {
     "statistic": "AUC",
@@ -1164,6 +1472,7 @@
     "raw": 0.92,
     "kind": "agreement",
     "scaled": 0.92,
+    "in_score": true,
     "what": "AUC for adult samples (elastic net model)",
     "source": "Results, p20"
    },
@@ -1173,7 +1482,28 @@
     "raw": 0.99,
     "kind": "agreement",
     "scaled": 0.99,
+    "in_score": true,
     "what": "AUC for pediatric samples (random forest model)",
+    "source": "Results, p20"
+   },
+   {
+    "statistic": "range",
+    "unit": "percent",
+    "raw": 31.0,
+    "kind": "agreement",
+    "scaled": 0.31,
+    "in_score": true,
+    "what": "model robustness score range",
+    "source": "Results, p20"
+   },
+   {
+    "statistic": "range",
+    "unit": "percent",
+    "raw": 85.0,
+    "kind": "agreement",
+    "scaled": 0.85,
+    "in_score": true,
+    "what": "model robustness score range",
     "source": "Results, p20"
    },
    {
@@ -1182,6 +1512,7 @@
     "raw": 31.0,
     "kind": "agreement",
     "scaled": 0.31,
+    "in_score": true,
     "what": "model robustness score for ACC (negative control)",
     "source": "Results, p21"
    },
@@ -1191,6 +1522,7 @@
     "raw": 40.0,
     "kind": "agreement",
     "scaled": 0.4,
+    "in_score": true,
     "what": "model robustness score for LAML (negative control)",
     "source": "Results, p21"
    },
@@ -1200,6 +1532,7 @@
     "raw": 34.0,
     "kind": "agreement",
     "scaled": 0.34,
+    "in_score": true,
     "what": "score variability in pediatric cancers (ACC)",
     "source": "Results, p21"
    },
@@ -1209,174 +1542,64 @@
     "raw": 80.0,
     "kind": "agreement",
     "scaled": 0.8,
+    "in_score": true,
     "what": "score variability in pediatric cancers (GBM/LGG)",
     "source": "Results, p21"
    }
   ]
  },
  "38676802": {
-  "n_usable": 15,
-  "median": 0.5,
-  "min": 0.034,
-  "max": 1.0,
-  "verdict": "partly-supports",
+  "n_usable": 1,
+  "n_converted_not_scored": 0,
+  "median": 0.2,
+  "min": 0.2,
+  "max": 0.2,
+  "verdict": "does-not-support",
   "figures": [
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 90,
-    "kind": "agreement",
-    "scaled": 0.9,
-    "what": "engraftment success rate of PDXs using X-irradiation or cortisone treatment",
-    "source": "Results, p15"
-   },
-   {
-    "statistic": "failure rate",
-    "unit": "percent",
-    "raw": 90,
-    "kind": "discordance",
-    "scaled": 0.1,
-    "what": "predictive ability of cell line-derived xenografts for clinical outcomes",
-    "source": "Results, p17"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 50,
-    "kind": "agreement",
-    "scaled": 0.5,
-    "what": "engraftment success rate of subcutaneous transplantation of NSCLC primary lung tumor from naive tumors vs. neoadjuvant therapy treated tumors",
-    "source": "Results, p33"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 70,
-    "kind": "agreement",
-    "scaled": 0.7,
-    "what": "engraftment success rate of subcutaneous transplantation of NSCLC primary lung tumor from naive tumors vs. neoadjuvant therapy treated tumors",
-    "source": "Results, p33"
-   },
-   {
-    "statistic": "prediction accuracy",
-    "unit": "percent",
-    "raw": 67,
-    "kind": "agreement",
-    "scaled": 0.67,
-    "what": "PDX clinical trial (PCT) prediction of patient response to treatments",
-    "source": "Results, p36"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 41,
-    "kind": "agreement",
-    "scaled": 0.41,
-    "what": "engraftment success rate for neuroblastoma samples (diagnosis vs. relapse)",
-    "source": "Results, p71"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 53,
-    "kind": "agreement",
-    "scaled": 0.53,
-    "what": "engraftment success rate for neuroblastoma samples (diagnosis vs. relapse)",
-    "source": "Results, p71"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 78,
-    "kind": "agreement",
-    "scaled": 0.78,
-    "what": "engraftment success rate for rhabdomyosarcoma samples (diagnosis vs. relapse)",
-    "source": "Results, p71"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 100,
-    "kind": "agreement",
-    "scaled": 1.0,
-    "what": "engraftment success rate for rhabdomyosarcoma samples (diagnosis vs. relapse)",
-    "source": "Results, p71"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 30,
-    "kind": "agreement",
-    "scaled": 0.3,
-    "what": "successful engraftment rates from surgical samples of high-grade pediatric brain tumors",
-    "source": "Results, p55"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 68,
-    "kind": "agreement",
-    "scaled": 0.68,
-    "what": "successful engraftment rates from surgical samples of high-grade pediatric brain tumors",
-    "source": "Results, p55"
-   },
    {
     "statistic": "success rate",
     "unit": "percent",
     "raw": 20,
     "kind": "agreement",
     "scaled": 0.2,
+    "in_score": true,
     "what": "overall success rate of PDOX models for high-grade pediatric brain tumors using this protocol",
     "source": "Results, p55"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 10,
-    "kind": "agreement",
-    "scaled": 0.1,
-    "what": "drug progression from preclinical testing to Phase I clinical trial",
-    "source": "Results, p163"
-   },
-   {
-    "statistic": "failure rate",
-    "unit": "percent",
-    "raw": 76,
-    "kind": "discordance",
-    "scaled": 0.24,
-    "what": "drug failure rate at Phase II or III trial for lack of efficacy, safety, or sufficient therapeutic index",
-    "source": "Results, p163"
-   },
-   {
-    "statistic": "success rate",
-    "unit": "percent",
-    "raw": 3.4,
-    "kind": "agreement",
-    "scaled": 0.034,
-    "what": "success rate of cancer drugs to clinical use",
-    "source": "Results, p31"
    }
   ]
  },
  "25814248": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "38867022": {
-  "n_usable": 7,
+  "n_usable": 8,
+  "n_converted_not_scored": 0,
   "median": 0.941,
-  "min": 0.941,
+  "min": 0.5,
   "max": 0.941,
   "verdict": "supports",
   "figures": [
+   {
+    "statistic": "alignment rate",
+    "unit": "percent",
+    "raw": 50,
+    "kind": "agreement",
+    "scaled": 0.5,
+    "in_score": true,
+    "what": "Agreement of murine DEGs and DRPs with human MASLD (whole transcriptome)",
+    "source": "Results, p5, Fig. 4"
+   },
    {
     "statistic": "MHPS score",
     "unit": "proportion_0_1",
     "raw": 0.941,
     "kind": "agreement",
     "scaled": 0.941,
+    "in_score": true,
     "what": "MHPS metabolic relevance score for WD0.2% diet",
     "source": "Fig. 6a"
    },
@@ -1386,6 +1609,7 @@
     "raw": 0.941,
     "kind": "agreement",
     "scaled": 0.941,
+    "in_score": true,
     "what": "MHPS metabolic relevance score for WD2% diet",
     "source": "Fig. 6a"
    },
@@ -1395,6 +1619,7 @@
     "raw": 0.941,
     "kind": "agreement",
     "scaled": 0.941,
+    "in_score": true,
     "what": "MHPS metabolic relevance score for WD0.2% AMLD diet",
     "source": "Fig. 6a"
    },
@@ -1404,6 +1629,7 @@
     "raw": 0.941,
     "kind": "agreement",
     "scaled": 0.941,
+    "in_score": true,
     "what": "MHPS ability to induce MASH-fibrosis score for LDLR-CDHFHCD-F42-C1-8W mice",
     "source": "Fig. 6b"
    },
@@ -1413,6 +1639,7 @@
     "raw": 0.941,
     "kind": "agreement",
     "scaled": 0.941,
+    "in_score": true,
     "what": "MHPS ability to induce MASH-fibrosis score for CDAA-fed rats (12 weeks)",
     "source": "Fig. 6b"
    },
@@ -1422,6 +1649,7 @@
     "raw": 0.941,
     "kind": "agreement",
     "scaled": 0.941,
+    "in_score": true,
     "what": "MHPS ability to induce MASH-fibrosis score for GAN-C2 diet in C57BL6/NTac or ob/ob mice",
     "source": "Fig. 6b"
    },
@@ -1431,24 +1659,67 @@
     "raw": 0.941,
     "kind": "agreement",
     "scaled": 0.941,
+    "in_score": true,
     "what": "MHPS ability to induce MASH-fibrosis score for MC4R KO mice on a WD0.2% diet",
     "source": "Fig. 6b"
    }
   ]
  },
  "26479923": {
-  "n_usable": 6,
-  "median": 0.695,
+  "n_usable": 9,
+  "n_converted_not_scored": 1,
+  "median": 0.67,
   "min": 0.11,
-  "max": 0.94,
+  "max": 0.96,
   "verdict": "partly-supports",
   "figures": [
+   {
+    "statistic": "R",
+    "unit": "correlation",
+    "raw": 0.94,
+    "kind": "correlation",
+    "scaled": 0.94,
+    "in_score": true,
+    "what": "correlation of mutation rates between PDXs and patient tumors",
+    "source": "Results, p2"
+   },
+   {
+    "statistic": "R",
+    "unit": "correlation",
+    "raw": 0.96,
+    "kind": "correlation",
+    "scaled": 0.96,
+    "in_score": true,
+    "what": "correlation of mutation rates between PDXs and patient tumors (s.d.)",
+    "source": "Results, p2"
+   },
+   {
+    "statistic": "R",
+    "unit": "correlation",
+    "raw": 0.51,
+    "kind": "correlation",
+    "scaled": 0.51,
+    "in_score": true,
+    "what": "correlation of mutation rates between cell lines and patient tumors",
+    "source": "Results, p2"
+   },
+   {
+    "statistic": "R",
+    "unit": "correlation",
+    "raw": 0.53,
+    "kind": "correlation",
+    "scaled": 0.53,
+    "in_score": true,
+    "what": "correlation of mutation rates between cell lines and PDXs",
+    "source": "Results, p3"
+   },
    {
     "statistic": "response rate",
     "unit": "percent",
     "raw": 42,
     "kind": "agreement",
     "scaled": 0.42,
+    "in_score": true,
     "what": "response rate to encorafenib in BRAF-mutated melanoma PDXs (mCR or mPR)",
     "source": "Results, p4"
    },
@@ -1458,16 +1729,8 @@
     "raw": 72,
     "kind": "agreement",
     "scaled": 0.72,
+    "in_score": true,
     "what": "response rate to encorafenib + binimetinib in BRAF-mutated melanoma PDXs (mCR or mPR)",
-    "source": "Results, p5"
-   },
-   {
-    "statistic": "response rate",
-    "unit": "percent",
-    "raw": 94,
-    "kind": "agreement",
-    "scaled": 0.94,
-    "what": "response rate to dabrafenib + trametinib in BRAF(V600)-mutant melanoma patients",
     "source": "Results, p5"
    },
    {
@@ -1476,7 +1739,18 @@
     "raw": 80,
     "kind": "agreement",
     "scaled": 0.8,
+    "in_score": true,
     "what": "response rate to TAS266 in DR5 signature-positive melanoma PDXs",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "hazard ratio",
+    "unit": "ratio",
+    "raw": 0.09,
+    "kind": "association",
+    "scaled": 0.0826,
+    "in_score": false,
+    "what": "PFS hazard ratio for TAS266 in DR5 signature-positive melanoma PDXs vs. signature-negative cohorts",
     "source": "Results, p5"
    },
    {
@@ -1485,6 +1759,7 @@
     "raw": 67,
     "kind": "agreement",
     "scaled": 0.67,
+    "in_score": true,
     "what": "response rate to BYL719 in PIK3CA mutations and wild-type PTEN PDXs",
     "source": "Results, p6"
    },
@@ -1494,6 +1769,7 @@
     "raw": 11,
     "kind": "agreement",
     "scaled": 0.11,
+    "in_score": true,
     "what": "response rate to BYL719 in wild-type PIK3CA and PTEN-mutated PDXs",
     "source": "Results, p6"
    }
@@ -1501,30 +1777,35 @@
  },
  "32631250": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "29302222": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "27916279": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "40558535": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "35781406": {
   "n_usable": 1,
+  "n_converted_not_scored": 0,
   "median": 1.0,
   "min": 1.0,
   "max": 1.0,
@@ -1536,6 +1817,7 @@
     "raw": 100,
     "kind": "agreement",
     "scaled": 1.0,
+    "in_score": true,
     "what": "concordance between PDTX model and patients' responses",
     "source": "Results, p5"
    }
@@ -1543,30 +1825,21 @@
  },
  "32413492": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "31694927": {
-  "n_usable": 1,
-  "median": 0.71,
-  "min": 0.71,
-  "max": 0.71,
-  "verdict": "supports",
-  "figures": [
-   {
-    "statistic": "correctly predicted",
-    "unit": "percent",
-    "raw": 71,
-    "kind": "agreement",
-    "scaled": 0.71,
-    "what": "prediction of toxicities in humans",
-    "source": "Introduction, p1"
-   }
-  ]
+  "n_usable": 0,
+  "n_converted_not_scored": 0,
+  "median": null,
+  "verdict": "insufficient-data",
+  "figures": []
  },
  "34558834": {
   "n_usable": 11,
+  "n_converted_not_scored": 0,
   "median": 0.33,
   "min": 0.02,
   "max": 0.4,
@@ -1578,6 +1851,7 @@
     "raw": 0.38,
     "kind": "agreement",
     "scaled": 0.38,
+    "in_score": true,
     "what": "Recall of genes significantly altered in human liver diseases (NAFLD) by 12-month CCl4 mouse model",
     "source": "Results, p15, Fig 6B"
    },
@@ -1587,6 +1861,7 @@
     "raw": 0.4,
     "kind": "agreement",
     "scaled": 0.4,
+    "in_score": true,
     "what": "Recall of genes significantly altered in human liver diseases (NASH) by 12-month CCl4 mouse model",
     "source": "Results, p15, Fig 6B"
    },
@@ -1596,6 +1871,7 @@
     "raw": 0.25,
     "kind": "agreement",
     "scaled": 0.25,
+    "in_score": true,
     "what": "Recall of genes significantly altered in human liver diseases (HCV) by 12-month CCl4 mouse model",
     "source": "Results, p15, Fig 6B"
    },
@@ -1605,6 +1881,7 @@
     "raw": 0.34,
     "kind": "agreement",
     "scaled": 0.34,
+    "in_score": true,
     "what": "Recall of genes significantly altered in human liver diseases (PBC) by 12-month CCl4 mouse model",
     "source": "Results, p15, Fig 6B"
    },
@@ -1614,6 +1891,7 @@
     "raw": 0.33,
     "kind": "agreement",
     "scaled": 0.33,
+    "in_score": true,
     "what": "Recall of genes significantly altered in human liver diseases (PSC) by 12-month CCl4 mouse model",
     "source": "Results, p15, Fig 6B"
    },
@@ -1623,6 +1901,7 @@
     "raw": 0.4,
     "kind": "agreement",
     "scaled": 0.4,
+    "in_score": true,
     "what": "Recall of genes significantly altered in human liver diseases by 12-month CCl4 mouse model (overall)",
     "source": "Abstract, p1"
    },
@@ -1632,6 +1911,7 @@
     "raw": 0.33,
     "kind": "agreement",
     "scaled": 0.33,
+    "in_score": true,
     "what": "Precision of genes significantly altered in human liver diseases by 12-month CCl4 mouse model (overall)",
     "source": "Abstract, p1"
    },
@@ -1641,6 +1921,7 @@
     "raw": 0.16,
     "kind": "agreement",
     "scaled": 0.16,
+    "in_score": true,
     "what": "Recall of up-regulated genes for human NASH by 2-month CCl4 mouse model",
     "source": "Results, p15"
    },
@@ -1650,6 +1931,7 @@
     "raw": 0.18,
     "kind": "agreement",
     "scaled": 0.18,
+    "in_score": true,
     "what": "Recall of up-regulated genes for human NASH by 6-month CCl4 mouse model",
     "source": "Results, p15"
    },
@@ -1659,6 +1941,7 @@
     "raw": 0.33,
     "kind": "agreement",
     "scaled": 0.33,
+    "in_score": true,
     "what": "Precision of WTD mouse model for human NAFLD",
     "source": "Results, p15"
    },
@@ -1668,6 +1951,7 @@
     "raw": 0.02,
     "kind": "agreement",
     "scaled": 0.02,
+    "in_score": true,
     "what": "Recall of WTD mouse model for human NAFLD",
     "source": "Results, p15"
    }
@@ -1675,12 +1959,14 @@
  },
  "32127577": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "40849367": {
   "n_usable": 6,
+  "n_converted_not_scored": 0,
   "median": 0.67,
   "min": 0.44,
   "max": 0.79,
@@ -1692,6 +1978,7 @@
     "raw": 0.79,
     "kind": "correlation",
     "scaled": 0.79,
+    "in_score": true,
     "what": "correlation between target win-stay probability and reversals",
     "source": "Results, p2, Fig 1D"
    },
@@ -1701,6 +1988,7 @@
     "raw": 0.44,
     "kind": "correlation",
     "scaled": 0.44,
+    "in_score": true,
     "what": "correlation between target win-stay probability and reversals",
     "source": "Results, p2, Fig 1C"
    },
@@ -1710,6 +1998,7 @@
     "raw": -0.73,
     "kind": "correlation",
     "scaled": 0.73,
+    "in_score": true,
     "what": "correlation between target lose-shift probability and reversals",
     "source": "Results, p2, Fig 1D"
    },
@@ -1719,6 +2008,7 @@
     "raw": -0.58,
     "kind": "correlation",
     "scaled": 0.58,
+    "in_score": true,
     "what": "correlation between target lose-shift probability and reversals",
     "source": "Results, p2, Fig 1C"
    },
@@ -1728,6 +2018,7 @@
     "raw": 0.69,
     "kind": "correlation",
     "scaled": 0.69,
+    "in_score": true,
     "what": "correlation between beta parameter and reversals",
     "source": "Results, p2, Fig 1F"
    },
@@ -1737,6 +2028,7 @@
     "raw": 0.65,
     "kind": "correlation",
     "scaled": 0.65,
+    "in_score": true,
     "what": "correlation between beta parameter and reversals",
     "source": "Results, p2, Fig 1E"
    }
@@ -1744,6 +2036,7 @@
  },
  "28422076": {
   "n_usable": 12,
+  "n_converted_not_scored": 0,
   "median": 0.78,
   "min": 0.54,
   "max": 1.0,
@@ -1755,6 +2048,7 @@
     "raw": 89.0,
     "kind": "agreement",
     "scaled": 0.89,
+    "in_score": true,
     "what": "ZeGlobalTox predictive assessment (overall)",
     "source": "Abstract, p1; Table 3, p10"
    },
@@ -1764,6 +2058,7 @@
     "raw": 68.0,
     "kind": "agreement",
     "scaled": 0.68,
+    "in_score": true,
     "what": "ZeGlobalTox predictive assessment (overall)",
     "source": "Abstract, p1; Table 3, p10"
    },
@@ -1773,6 +2068,7 @@
     "raw": 78.0,
     "kind": "agreement",
     "scaled": 0.78,
+    "in_score": true,
     "what": "ZeGlobalTox predictive assessment (overall)",
     "source": "Abstract, p1; Table 3, p10"
    },
@@ -1782,6 +2078,7 @@
     "raw": 90.0,
     "kind": "agreement",
     "scaled": 0.9,
+    "in_score": true,
     "what": "Cardiotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1791,6 +2088,7 @@
     "raw": 69.0,
     "kind": "agreement",
     "scaled": 0.69,
+    "in_score": true,
     "what": "Cardiotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1800,6 +2098,7 @@
     "raw": 78.0,
     "kind": "agreement",
     "scaled": 0.78,
+    "in_score": true,
     "what": "Cardiotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1809,6 +2108,7 @@
     "raw": 100.0,
     "kind": "agreement",
     "scaled": 1.0,
+    "in_score": true,
     "what": "Neurotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1818,6 +2118,7 @@
     "raw": 54.0,
     "kind": "agreement",
     "scaled": 0.54,
+    "in_score": true,
     "what": "Neurotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1827,6 +2128,7 @@
     "raw": 75.0,
     "kind": "agreement",
     "scaled": 0.75,
+    "in_score": true,
     "what": "Neurotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1836,6 +2138,7 @@
     "raw": 77.0,
     "kind": "agreement",
     "scaled": 0.77,
+    "in_score": true,
     "what": "Hepatotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1845,6 +2148,7 @@
     "raw": 80.0,
     "kind": "agreement",
     "scaled": 0.8,
+    "in_score": true,
     "what": "Hepatotoxicity predictive assessment",
     "source": "Table 3, p10"
    },
@@ -1854,15 +2158,17 @@
     "raw": 82.0,
     "kind": "agreement",
     "scaled": 0.82,
+    "in_score": true,
     "what": "Hepatotoxicity predictive assessment",
     "source": "Table 3, p10"
    }
   ]
  },
  "18468556": {
-  "n_usable": 2,
-  "median": 0.875,
-  "min": 0.75,
+  "n_usable": 4,
+  "n_converted_not_scored": 0,
+  "median": 0.775,
+  "min": 0.7,
   "max": 1.0,
   "verdict": "supports",
   "figures": [
@@ -1872,6 +2178,7 @@
     "raw": 75,
     "kind": "agreement",
     "scaled": 0.75,
+    "in_score": true,
     "what": "success rate in identifying nonteratogenic compounds",
     "source": "Results, p7"
    },
@@ -1881,43 +2188,58 @@
     "raw": 100,
     "kind": "agreement",
     "scaled": 1.0,
+    "in_score": true,
     "what": "success rate in identifying teratogens",
+    "source": "Results, p7"
+   },
+   {
+    "statistic": "good",
+    "unit": "percent",
+    "raw": 70,
+    "kind": "agreement",
+    "scaled": 0.7,
+    "in_score": true,
+    "what": "specificity",
+    "source": "Results, p7"
+   },
+   {
+    "statistic": "excellent",
+    "unit": "percent",
+    "raw": 80,
+    "kind": "agreement",
+    "scaled": 0.8,
+    "in_score": true,
+    "what": "specificity",
     "source": "Results, p7"
    }
   ]
  },
  "35148401": {
-  "n_usable": 5,
-  "median": 0.57,
-  "min": 0.19,
-  "max": 0.89,
-  "verdict": "partly-supports",
+  "n_usable": 6,
+  "n_converted_not_scored": 0,
+  "median": 0.845,
+  "min": 0.35,
+  "max": 0.91,
+  "verdict": "supports",
   "figures": [
    {
-    "statistic": "sensitivity",
+    "statistic": "proportion",
     "unit": "percent",
-    "raw": 50,
+    "raw": 91,
     "kind": "agreement",
-    "scaled": 0.5,
-    "what": "sensitivity of hERG assay for clinical QTc prolongation at 30x exposure multiples",
+    "scaled": 0.91,
+    "in_score": true,
+    "what": "concordance between QT results in humans and nonrodent animals",
     "source": "Results, p4"
    },
    {
-    "statistic": "sensitivity",
+    "statistic": "proportion",
     "unit": "percent",
-    "raw": 57,
+    "raw": 88,
     "kind": "agreement",
-    "scaled": 0.57,
-    "what": "sensitivity of in vivo QTc assays for clinical QTc prolongation at 30x exposure multiples",
-    "source": "Results, p4"
-   },
-   {
-    "statistic": "sensitivity",
-    "unit": "percent",
-    "raw": 19,
-    "kind": "agreement",
-    "scaled": 0.19,
-    "what": "sensitivity of APD assay for clinical QTc prolongation at 30x exposure multiples",
+    "scaled": 0.88,
+    "in_score": true,
+    "what": "concordance between QT results in humans and nonrodent animals",
     "source": "Results, p4"
    },
    {
@@ -1926,7 +2248,18 @@
     "raw": 89,
     "kind": "agreement",
     "scaled": 0.89,
+    "in_score": true,
     "what": "specificity of all nonclinical assays for clinical QTc prolongation",
+    "source": "Results, p4"
+   },
+   {
+    "statistic": "proportion",
+    "unit": "percent",
+    "raw": 65,
+    "kind": "discordance",
+    "scaled": 0.35,
+    "in_score": true,
+    "what": "discordant TQT-positive drugs",
     "source": "Results, p4"
    },
    {
@@ -1935,19 +2268,32 @@
     "raw": 0.81,
     "kind": "agreement",
     "scaled": 0.81,
+    "in_score": true,
     "what": "concordance rate of in vivo dog assay for clinical QT outcome",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "proportion",
+    "unit": "percent",
+    "raw": 65,
+    "kind": "discordance",
+    "scaled": 0.35,
+    "in_score": true,
+    "what": "nonclinical false negatives among TQT-positive drugs",
     "source": "Results, p5"
    }
   ]
  },
  "38852684": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "28903488": {
   "n_usable": 6,
+  "n_converted_not_scored": 0,
   "median": 0.81,
   "min": 0.78,
   "max": 0.92,
@@ -1959,6 +2305,7 @@
     "raw": 0.78,
     "kind": "agreement",
     "scaled": 0.78,
+    "in_score": true,
     "what": "concordance between hERG potency and clinical QTc outcome",
     "source": "Table 1"
    },
@@ -1968,6 +2315,7 @@
     "raw": 0.81,
     "kind": "agreement",
     "scaled": 0.81,
+    "in_score": true,
     "what": "concordance between hERG potency and clinical QTc outcome (excluding \u03b22-adrenoceptor agonists)",
     "source": "Table 1"
    },
@@ -1977,6 +2325,7 @@
     "raw": 0.8,
     "kind": "agreement",
     "scaled": 0.8,
+    "in_score": true,
     "what": "concordance between hERG safety margin and clinical QTc outcome",
     "source": "Table 2"
    },
@@ -1986,6 +2335,7 @@
     "raw": 0.92,
     "kind": "agreement",
     "scaled": 0.92,
+    "in_score": true,
     "what": "concordance between hERG safety margin and clinical QTc outcome (excluding \u03b22-adrenoceptor agonists)",
     "source": "Table 2"
    },
@@ -1995,6 +2345,7 @@
     "raw": 0.81,
     "kind": "agreement",
     "scaled": 0.81,
+    "in_score": true,
     "what": "concordance between dog QTc data and clinical QTc outcome",
     "source": "Table 3"
    },
@@ -2004,64 +2355,29 @@
     "raw": 0.91,
     "kind": "agreement",
     "scaled": 0.91,
+    "in_score": true,
     "what": "concordance between dog QTc data and clinical QTc outcome (excluding \u03b22-adrenoceptor agonists)",
     "source": "Table 3"
    }
   ]
  },
  "33666192": {
-  "n_usable": 4,
-  "median": 0.95,
-  "min": 0.7,
-  "max": 1.0,
-  "verdict": "supports",
-  "figures": [
-   {
-    "statistic": "concordance",
-    "unit": "percent",
-    "raw": 100,
-    "kind": "agreement",
-    "scaled": 1.0,
-    "what": "concordance with mammalian screening data",
-    "source": "Abstract, p1"
-   },
-   {
-    "statistic": "similarity",
-    "unit": "percent",
-    "raw": 70,
-    "kind": "agreement",
-    "scaled": 0.7,
-    "what": "genetic and physiological similarity with mammals",
-    "source": "p2"
-   },
-   {
-    "statistic": "concordance",
-    "unit": "percent",
-    "raw": 100,
-    "kind": "agreement",
-    "scaled": 1.0,
-    "what": "concordance with mammalian results for hepatotoxic and nonhepatotoxic compounds",
-    "source": "p5"
-   },
-   {
-    "statistic": "agreement",
-    "unit": "percent",
-    "raw": 90,
-    "kind": "agreement",
-    "scaled": 0.9,
-    "what": "overall agreement between zebrafish and in vivo mammalian models for teratogenicity",
-    "source": "p7"
-   }
-  ]
+  "n_usable": 0,
+  "n_converted_not_scored": 0,
+  "median": null,
+  "verdict": "insufficient-data",
+  "figures": []
  },
  "33813006": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "30726989": {
   "n_usable": 16,
+  "n_converted_not_scored": 0,
   "median": 0.745,
   "min": 0.52,
   "max": 0.92,
@@ -2073,6 +2389,7 @@
     "raw": 84,
     "kind": "agreement",
     "scaled": 0.84,
+    "in_score": true,
     "what": "rat to large animal (combined BP and HR)",
     "source": "Results, p3, Figure 2A"
    },
@@ -2082,6 +2399,7 @@
     "raw": 71,
     "kind": "agreement",
     "scaled": 0.71,
+    "in_score": true,
     "what": "rat to large animal (combined BP and HR)",
     "source": "Results, p3, Figure 2A"
    },
@@ -2091,6 +2409,7 @@
     "raw": 82,
     "kind": "agreement",
     "scaled": 0.82,
+    "in_score": true,
     "what": "rat to large animal (BP only)",
     "source": "Results, p3, Figure 2B"
    },
@@ -2100,6 +2419,7 @@
     "raw": 59,
     "kind": "agreement",
     "scaled": 0.59,
+    "in_score": true,
     "what": "rat to large animal (BP only)",
     "source": "Results, p3, Figure 2B"
    },
@@ -2109,6 +2429,7 @@
     "raw": 64,
     "kind": "agreement",
     "scaled": 0.64,
+    "in_score": true,
     "what": "rat to large animal (HR only)",
     "source": "Results, p3, Figure 2C"
    },
@@ -2118,6 +2439,7 @@
     "raw": 67,
     "kind": "agreement",
     "scaled": 0.67,
+    "in_score": true,
     "what": "rat to large animal (HR only)",
     "source": "Results, p3, Figure 2C"
    },
@@ -2127,6 +2449,7 @@
     "raw": 78,
     "kind": "agreement",
     "scaled": 0.78,
+    "in_score": true,
     "what": "large animal to human (combined BP and HR)",
     "source": "Results, p5, Figure 2D"
    },
@@ -2136,6 +2459,7 @@
     "raw": 79,
     "kind": "agreement",
     "scaled": 0.79,
+    "in_score": true,
     "what": "large animal to human (combined BP and HR)",
     "source": "Results, p5, Figure 2D"
    },
@@ -2145,6 +2469,7 @@
     "raw": 71,
     "kind": "agreement",
     "scaled": 0.71,
+    "in_score": true,
     "what": "large animal to human (BP only)",
     "source": "Results, p5, Figure 2E"
    },
@@ -2154,6 +2479,7 @@
     "raw": 83,
     "kind": "agreement",
     "scaled": 0.83,
+    "in_score": true,
     "what": "large animal to human (BP only)",
     "source": "Results, p5, Figure 2E"
    },
@@ -2163,6 +2489,7 @@
     "raw": 54,
     "kind": "agreement",
     "scaled": 0.54,
+    "in_score": true,
     "what": "large animal to human (HR only)",
     "source": "Results, p5, Figure 2F"
    },
@@ -2172,6 +2499,7 @@
     "raw": 83,
     "kind": "agreement",
     "scaled": 0.83,
+    "in_score": true,
     "what": "large animal to human (HR only)",
     "source": "Results, p5, Figure 2F"
    },
@@ -2181,6 +2509,7 @@
     "raw": 90,
     "kind": "agreement",
     "scaled": 0.9,
+    "in_score": true,
     "what": "rat to large animal (combined BP and HR)",
     "source": "Results, p5, Figure 2A"
    },
@@ -2190,6 +2519,7 @@
     "raw": 60,
     "kind": "agreement",
     "scaled": 0.6,
+    "in_score": true,
     "what": "rat to large animal (combined BP and HR)",
     "source": "Results, p5, Figure 2A"
    },
@@ -2199,6 +2529,7 @@
     "raw": 52,
     "kind": "agreement",
     "scaled": 0.52,
+    "in_score": true,
     "what": "large animal to human (combined BP and HR)",
     "source": "Results, p5, Figure 2D"
    },
@@ -2208,25 +2539,28 @@
     "raw": 92,
     "kind": "agreement",
     "scaled": 0.92,
+    "in_score": true,
     "what": "large animal to human (combined BP and HR)",
     "source": "Results, p5, Figure 2D"
    }
   ]
  },
  "29730448": {
-  "n_usable": 5,
-  "median": 0.48,
-  "min": 0.16,
-  "max": 0.9,
-  "verdict": "partly-supports",
+  "n_usable": 2,
+  "n_converted_not_scored": 19,
+  "median": 0.115,
+  "min": 0.07,
+  "max": 0.16,
+  "verdict": "does-not-support",
   "figures": [
    {
-    "statistic": "sensitivity",
+    "statistic": "selectivity",
     "unit": "percent",
-    "raw": 90,
+    "raw": 7,
     "kind": "agreement",
-    "scaled": 0.9,
-    "what": "Sensitivity for liver disorders (Olson study)",
+    "scaled": 0.07,
+    "in_score": true,
+    "what": "Overall true positive rate for all species and organ classes",
     "source": "Results, p7"
    },
    {
@@ -2235,172 +2569,371 @@
     "raw": 16,
     "kind": "agreement",
     "scaled": 0.16,
+    "in_score": true,
     "what": "Sensitivity for liver disorders (this study)",
     "source": "Results, p7"
    },
    {
-    "statistic": "sensitivity",
-    "unit": "percent",
-    "raw": 48,
-    "kind": "agreement",
-    "scaled": 0.48,
-    "what": "Sensitivity for liver disorders (Monticello study)",
-    "source": "Results, p7"
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 10.7,
+    "kind": "association",
+    "scaled": 0.9145,
+    "in_score": false,
+    "what": "Likelihood Ratio for Electrocardiogram QT prolonged",
+    "source": "Table 5"
    },
    {
-    "statistic": "concordance",
-    "unit": "percent",
-    "raw": 70,
-    "kind": "agreement",
-    "scaled": 0.7,
-    "what": "Concordance for hematological disorders",
-    "source": "Results, p1"
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 6.9,
+    "kind": "association",
+    "scaled": 0.8734,
+    "in_score": false,
+    "what": "Likelihood Ratio for ECG investigations",
+    "source": "Table 5"
    },
    {
-    "statistic": "concordance",
-    "unit": "percent",
-    "raw": 30,
-    "kind": "agreement",
-    "scaled": 0.3,
-    "what": "Concordance for musculoskeletal, respiratory and neurological ADRs",
-    "source": "Results, p2"
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 4.3,
+    "kind": "association",
+    "scaled": 0.8113,
+    "in_score": false,
+    "what": "Likelihood Ratio for Cardiac and vascular investigations (excl enzyme tests)",
+    "source": "Table 5"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 6.11,
+    "kind": "association",
+    "scaled": 0.8594,
+    "in_score": false,
+    "what": "Likelihood Ratio for dog, Cardiac disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 3.54,
+    "kind": "association",
+    "scaled": 0.7797,
+    "in_score": false,
+    "what": "Likelihood Ratio for rabbit, Cardiac disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 5.29,
+    "kind": "association",
+    "scaled": 0.841,
+    "in_score": false,
+    "what": "Likelihood Ratio for mouse, Cardiac disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 4.73,
+    "kind": "association",
+    "scaled": 0.8255,
+    "in_score": false,
+    "what": "Likelihood Ratio for rat, Cardiac disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 9.52,
+    "kind": "association",
+    "scaled": 0.9049,
+    "in_score": false,
+    "what": "Likelihood Ratio for cynomolgus monkey, Cardiac disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 3.42,
+    "kind": "association",
+    "scaled": 0.7738,
+    "in_score": false,
+    "what": "Likelihood Ratio for dog, Hepatobiliary disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 2.8,
+    "kind": "association",
+    "scaled": 0.7368,
+    "in_score": false,
+    "what": "Likelihood Ratio for rabbit, Hepatobiliary disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 3.73,
+    "kind": "association",
+    "scaled": 0.7886,
+    "in_score": false,
+    "what": "Likelihood Ratio for mouse, Hepatobiliary disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 2.74,
+    "kind": "association",
+    "scaled": 0.7326,
+    "in_score": false,
+    "what": "Likelihood Ratio for rat, Hepatobiliary disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 11.02,
+    "kind": "association",
+    "scaled": 0.9168,
+    "in_score": false,
+    "what": "Likelihood Ratio for cynomolgus monkey, Hepatobiliary disorders",
+    "source": "Table 10"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 4.1,
+    "kind": "association",
+    "scaled": 0.8039,
+    "in_score": false,
+    "what": "Likelihood Ratio for Pain (all species combined)",
+    "source": "Table 12"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 4.25,
+    "kind": "association",
+    "scaled": 0.8095,
+    "in_score": false,
+    "what": "Likelihood Ratio for Somnolence (all species combined)",
+    "source": "Table 12"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 1000,
+    "kind": "association",
+    "scaled": 0.999,
+    "in_score": false,
+    "what": "Likelihood Ratio for Dizziness (all species combined)",
+    "source": "Table 12"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 4.11,
+    "kind": "association",
+    "scaled": 0.8043,
+    "in_score": false,
+    "what": "Likelihood Ratio for Fatigue (all species combined)",
+    "source": "Table 12"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 2.5,
+    "kind": "association",
+    "scaled": 0.7143,
+    "in_score": false,
+    "what": "Likelihood Ratio for Pain (rat)",
+    "source": "Table 12"
+   },
+   {
+    "statistic": "LR+",
+    "unit": "other",
+    "raw": 7.4,
+    "kind": "association",
+    "scaled": 0.881,
+    "in_score": false,
+    "what": "Likelihood Ratio for Pain (mouse)",
+    "source": "Table 12"
    }
   ]
  },
  "17175568": {
-  "n_usable": 0,
-  "median": null,
-  "verdict": "insufficient-data",
-  "figures": []
+  "n_usable": 2,
+  "n_converted_not_scored": 1,
+  "median": 0.355,
+  "min": 0.23,
+  "max": 0.48,
+  "verdict": "does-not-support",
+  "figures": [
+   {
+    "statistic": "improvement",
+    "unit": "percent",
+    "raw": 23,
+    "kind": "agreement",
+    "scaled": 0.23,
+    "in_score": true,
+    "what": "Thrombolysis in acute ischaemic stroke: neurobehavioural scores improvement",
+    "source": "Results, p2"
+   },
+   {
+    "statistic": "odds ratio",
+    "unit": "ratio",
+    "raw": 1.96,
+    "kind": "association",
+    "scaled": 0.6622,
+    "in_score": false,
+    "what": "Thrombolysis in acute ischaemic stroke: probability of haemorrhage",
+    "source": "Results, p2"
+   },
+   {
+    "statistic": "improvement",
+    "unit": "percent",
+    "raw": 48,
+    "kind": "agreement",
+    "scaled": 0.48,
+    "in_score": true,
+    "what": "Tirilazad in acute ischaemic stroke: neurobehavioural scores improvement",
+    "source": "Results, p3"
+   }
+  ]
  },
  "32391273": {
-  "n_usable": 1,
-  "median": 0.45,
-  "min": 0.45,
+  "n_usable": 3,
+  "n_converted_not_scored": 3,
+  "median": 0.26,
+  "min": 0.23,
   "max": 0.45,
-  "verdict": "partly-supports",
+  "verdict": "does-not-support",
   "figures": [
+   {
+    "statistic": "median",
+    "unit": "proportion_0_1",
+    "raw": 0.74,
+    "kind": "discordance",
+    "scaled": 0.26,
+    "in_score": true,
+    "what": "TGI values for approved vs. failed drugs",
+    "source": "Figure 3A"
+   },
+   {
+    "statistic": "median",
+    "unit": "proportion_0_1",
+    "raw": 0.77,
+    "kind": "discordance",
+    "scaled": 0.23,
+    "in_score": true,
+    "what": "TGI values for approved vs. failed drugs",
+    "source": "Figure 3A"
+   },
    {
     "statistic": "AUC",
     "unit": "proportion_0_1",
     "raw": 0.45,
     "kind": "agreement",
     "scaled": 0.45,
+    "in_score": true,
     "what": "Area Under the Curve (AUC) for TGI predicting success",
     "source": "Figure 3C"
+   },
+   {
+    "statistic": "OR",
+    "unit": "ratio",
+    "raw": 0.84,
+    "kind": "association",
+    "scaled": 0.4565,
+    "in_score": false,
+    "what": "Odds Ratio for drug success (Q2 TGI vs Q1 TGI)",
+    "source": "Figure 3B"
+   },
+   {
+    "statistic": "OR",
+    "unit": "ratio",
+    "raw": 0.9,
+    "kind": "association",
+    "scaled": 0.4737,
+    "in_score": false,
+    "what": "Odds Ratio for drug success (Q3 TGI vs Q1 TGI)",
+    "source": "Figure 3B"
+   },
+   {
+    "statistic": "OR",
+    "unit": "ratio",
+    "raw": 0.74,
+    "kind": "association",
+    "scaled": 0.4253,
+    "in_score": false,
+    "what": "Odds Ratio for drug success (Q4 TGI vs Q1 TGI)",
+    "source": "Figure 3B"
    }
   ]
  },
  "26753942": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "30364994": {
-  "n_usable": 2,
-  "median": 0.645,
-  "min": 0.46,
-  "max": 0.83,
-  "verdict": "partly-supports",
-  "figures": [
-   {
-    "statistic": "clinical concordance",
-    "unit": "percent",
-    "raw": 46,
-    "kind": "agreement",
-    "scaled": 0.46,
-    "what": "clinical concordance of GIT in rodents vs. humans",
-    "source": "Results, p4"
-   },
-   {
-    "statistic": "clinical concordance",
-    "unit": "percent",
-    "raw": 83,
-    "kind": "agreement",
-    "scaled": 0.83,
-    "what": "clinical concordance of GIT in nonrodents vs. humans",
-    "source": "Results, p4"
-   }
-  ]
+  "n_usable": 0,
+  "n_converted_not_scored": 0,
+  "median": null,
+  "verdict": "insufficient-data",
+  "figures": []
  },
  "16453316": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "35616311": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "37712424": {
-  "n_usable": 4,
-  "median": 0.5145,
-  "min": 0.246,
-  "max": 0.824,
-  "verdict": "partly-supports",
-  "figures": [
-   {
-    "statistic": "failure rate",
-    "unit": "percent",
-    "raw": 37.2,
-    "kind": "discordance",
-    "scaled": 0.628,
-    "what": "Phase I clinical trial failure rate",
-    "source": "Figure 1"
-   },
-   {
-    "statistic": "failure rate",
-    "unit": "percent",
-    "raw": 75.4,
-    "kind": "discordance",
-    "scaled": 0.246,
-    "what": "Phase II clinical trial failure rate",
-    "source": "Figure 1"
-   },
-   {
-    "statistic": "failure rate",
-    "unit": "percent",
-    "raw": 59.9,
-    "kind": "discordance",
-    "scaled": 0.401,
-    "what": "Phase III clinical trial failure rate",
-    "source": "Figure 1"
-   },
-   {
-    "statistic": "failure rate",
-    "unit": "percent",
-    "raw": 17.6,
-    "kind": "discordance",
-    "scaled": 0.824,
-    "what": "Phase IV clinical trial failure rate",
-    "source": "Figure 1"
-   }
-  ]
+  "n_usable": 0,
+  "n_converted_not_scored": 0,
+  "median": null,
+  "verdict": "insufficient-data",
+  "figures": []
  },
  "29590200": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "30823899": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "23503654": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "28335819": {
   "n_usable": 8,
+  "n_converted_not_scored": 0,
   "median": 0.04,
   "min": -0.04,
   "max": 0.15,
@@ -2412,6 +2945,7 @@
     "raw": 0.03,
     "kind": "agreement",
     "scaled": 0.03,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Table 1"
    },
@@ -2421,6 +2955,7 @@
     "raw": -0.04,
     "kind": "agreement",
     "scaled": -0.04,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Table 1"
    },
@@ -2430,6 +2965,7 @@
     "raw": 0.09,
     "kind": "agreement",
     "scaled": 0.09,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Table 1"
    },
@@ -2439,6 +2975,7 @@
     "raw": 0.12,
     "kind": "agreement",
     "scaled": 0.12,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Table 1"
    },
@@ -2448,6 +2985,7 @@
     "raw": 0.03,
     "kind": "agreement",
     "scaled": 0.03,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Table 1"
    },
@@ -2457,6 +2995,7 @@
     "raw": -0.03,
     "kind": "agreement",
     "scaled": -0.03,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Table 1"
    },
@@ -2466,6 +3005,7 @@
     "raw": 0.05,
     "kind": "agreement",
     "scaled": 0.05,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Results, p2"
    },
@@ -2475,6 +3015,7 @@
     "raw": 0.15,
     "kind": "agreement",
     "scaled": 0.15,
+    "in_score": true,
     "what": "Average concordance of differential gene expression signatures",
     "source": "Table 1"
    }
@@ -2482,12 +3023,14 @@
  },
  "25677548": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "17988725": {
   "n_usable": 2,
+  "n_converted_not_scored": 0,
   "median": 0.53,
   "min": 0.43,
   "max": 0.63,
@@ -2499,6 +3042,7 @@
     "raw": 43,
     "kind": "agreement",
     "scaled": 0.43,
+    "in_score": true,
     "what": "prediction of organ toxicity in humans",
     "source": "Results, p5"
    },
@@ -2508,6 +3052,7 @@
     "raw": 63,
     "kind": "agreement",
     "scaled": 0.63,
+    "in_score": true,
     "what": "prediction of organ toxicity in humans",
     "source": "Results, p5"
    }
@@ -2515,52 +3060,89 @@
  },
  "26856335": {
   "n_usable": 0,
+  "n_converted_not_scored": 2,
   "median": null,
   "verdict": "insufficient-data",
-  "figures": []
- },
- "36859342": {
-  "n_usable": 3,
-  "median": 0.78,
-  "min": 0.64,
-  "max": 0.84,
-  "verdict": "supports",
   "figures": [
    {
-    "statistic": "average overlap",
+    "statistic": "increase",
     "unit": "percent",
-    "raw": 84,
+    "raw": 41,
+    "kind": "ratio-like",
+    "scaled": 0.0244,
+    "in_score": false,
+    "what": "increase in vitamin C plasma levels after vitamin C administration",
+    "source": "Discussion, p10"
+   },
+   {
+    "statistic": "increase",
+    "unit": "percent",
+    "raw": 92,
+    "kind": "ratio-like",
+    "scaled": 0.0109,
+    "in_score": false,
+    "what": "increase in vitamin C plasma levels after vitamin C administration",
+    "source": "Discussion, p10"
+   }
+  ]
+ },
+ "36859342": {
+  "n_usable": 4,
+  "n_converted_not_scored": 0,
+  "median": 0.165,
+  "min": 0.08,
+  "max": 0.28,
+  "verdict": "does-not-support",
+  "figures": [
+   {
+    "statistic": "proportion",
+    "unit": "percent",
+    "raw": 16,
     "kind": "agreement",
-    "scaled": 0.84,
-    "what": "overlap between preclinical and clinical pharmacologically active dose ranges (HED)",
+    "scaled": 0.16,
+    "in_score": true,
+    "what": "clinical studies reporting unacceptable side effects at values below NOAEL (AUC)",
+    "source": "Results, Tolerability assessment, p6"
+   },
+   {
+    "statistic": "proportion",
+    "unit": "percent",
+    "raw": 8,
+    "kind": "agreement",
+    "scaled": 0.08,
+    "in_score": true,
+    "what": "poor preclinical prediction of clinical active range (HED) <= 20% overlap",
     "source": "Results, Pharmacological activity assessment, p8"
    },
    {
-    "statistic": "average overlap",
+    "statistic": "proportion",
     "unit": "percent",
-    "raw": 64,
+    "raw": 28,
     "kind": "agreement",
-    "scaled": 0.64,
-    "what": "overlap between preclinical and clinical pharmacologically active dose ranges (Cmax)",
+    "scaled": 0.28,
+    "in_score": true,
+    "what": "poor preclinical prediction of clinical active range (Cmax) <= 20% overlap",
     "source": "Results, Pharmacological activity assessment, p8"
    },
    {
-    "statistic": "average overlap",
+    "statistic": "proportion",
     "unit": "percent",
-    "raw": 78,
+    "raw": 17,
     "kind": "agreement",
-    "scaled": 0.78,
-    "what": "overlap between preclinical and clinical pharmacologically active dose ranges (AUC)",
+    "scaled": 0.17,
+    "in_score": true,
+    "what": "poor preclinical prediction of clinical active range (AUC) <= 20% overlap",
     "source": "Results, Pharmacological activity assessment, p8"
    }
   ]
  },
  "23401516": {
-  "n_usable": 26,
-  "median": 0.085,
+  "n_usable": 45,
+  "n_converted_not_scored": 0,
+  "median": 0.5,
   "min": 0.0,
-  "max": 0.91,
-  "verdict": "does-not-support",
+  "max": 0.97,
+  "verdict": "partly-supports",
   "figures": [
    {
     "statistic": "Pearson correlation (R^2)",
@@ -2568,6 +3150,7 @@
     "raw": 0.91,
     "kind": "correlation",
     "scaled": 0.91,
+    "in_score": true,
     "what": "correlation of gene expression changes between human trauma and human burns",
     "source": "Fig. 1, Results p3"
    },
@@ -2577,6 +3160,7 @@
     "raw": 0.47,
     "kind": "correlation",
     "scaled": 0.47,
+    "in_score": true,
     "what": "correlation of gene expression changes between human endotoxemia and human injuries",
     "source": "Fig. 1, Results p3"
    },
@@ -2586,8 +3170,19 @@
     "raw": 0.09,
     "kind": "correlation",
     "scaled": 0.09,
+    "in_score": true,
     "what": "correlation of gene expression changes between human conditions and mouse orthologs in mouse models",
     "source": "Fig. 1, Results p3"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 47,
+    "kind": "agreement",
+    "scaled": 0.47,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human conditions and mouse orthologs in mouse models",
+    "source": "Results p3"
    },
    {
     "statistic": "Pearson correlation (R^2)",
@@ -2595,6 +3190,7 @@
     "raw": 0.13,
     "kind": "correlation",
     "scaled": 0.13,
+    "in_score": true,
     "what": "correlation of gene expression changes among mouse models",
     "source": "Fig. 1, Results p3"
    },
@@ -2604,6 +3200,7 @@
     "raw": 0.28,
     "kind": "correlation",
     "scaled": 0.28,
+    "in_score": true,
     "what": "correlation of gene expression changes between human conditions and mouse orthologs for top 105 genes with greatest magnitude of changes",
     "source": "Results p3"
    },
@@ -2613,6 +3210,7 @@
     "raw": 0.88,
     "kind": "correlation",
     "scaled": 0.88,
+    "in_score": true,
     "what": "correlation of gene expression changes between human orthologs corresponding to responsive mouse genes",
     "source": "Results p3"
    },
@@ -2622,6 +3220,7 @@
     "raw": 0.22,
     "kind": "correlation",
     "scaled": 0.22,
+    "in_score": true,
     "what": "correlation of gene expression changes among mouse genes (reverse analysis)",
     "source": "Results p3"
    },
@@ -2631,6 +3230,7 @@
     "raw": 0.85,
     "kind": "correlation",
     "scaled": 0.85,
+    "in_score": true,
     "what": "correlation of gene expression changes between human trauma and human burn (resampled)",
     "source": "Results p3"
    },
@@ -2640,7 +3240,18 @@
     "raw": 0.16,
     "kind": "correlation",
     "scaled": 0.16,
+    "in_score": true,
     "what": "median correlation of individual gene activation in human conditions vs. mouse models for top 40 pathways (mouse burns)",
+    "source": "Results p4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 67,
+    "kind": "agreement",
+    "scaled": 0.67,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction for top 40 pathways (mouse burns)",
     "source": "Results p4"
    },
    {
@@ -2649,7 +3260,18 @@
     "raw": 0.03,
     "kind": "correlation",
     "scaled": 0.03,
+    "in_score": true,
     "what": "median correlation of individual gene activation in human conditions vs. mouse models for top 40 pathways (mouse trauma)",
+    "source": "Results p4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 60,
+    "kind": "agreement",
+    "scaled": 0.6,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction for top 40 pathways (mouse trauma)",
     "source": "Results p4"
    },
    {
@@ -2658,7 +3280,18 @@
     "raw": 0.0,
     "kind": "correlation",
     "scaled": 0.0,
+    "in_score": true,
     "what": "median correlation of individual gene activation in human conditions vs. mouse models for top 40 pathways (mouse endotoxemia)",
+    "source": "Results p4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 52,
+    "kind": "agreement",
+    "scaled": 0.52,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction for top 40 pathways (mouse endotoxemia)",
     "source": "Results p4"
    },
    {
@@ -2667,7 +3300,18 @@
     "raw": 0.08,
     "kind": "correlation",
     "scaled": 0.08,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse burn",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 60,
+    "kind": "agreement",
+    "scaled": 0.6,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse burn",
     "source": "Table 1"
    },
    {
@@ -2676,16 +3320,18 @@
     "raw": 0.05,
     "kind": "correlation",
     "scaled": 0.05,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse trauma",
     "source": "Table 1"
    },
    {
-    "statistic": "Pearson correlation (R^2)",
-    "unit": "proportion_0_1",
-    "raw": 0.0,
-    "kind": "correlation",
-    "scaled": 0.0,
-    "what": "correlation of gene response between human burn and mouse endotoxemia (GSE7404)",
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 61,
+    "kind": "agreement",
+    "scaled": 0.61,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse trauma",
     "source": "Table 1"
    },
    {
@@ -2694,7 +3340,38 @@
     "raw": 0.0,
     "kind": "correlation",
     "scaled": 0.0,
+    "in_score": true,
+    "what": "correlation of gene response between human burn and mouse endotoxemia (GSE7404)",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 47,
+    "kind": "agreement",
+    "scaled": 0.47,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse endotoxemia (GSE7404)",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "Pearson correlation (R^2)",
+    "unit": "proportion_0_1",
+    "raw": 0.0,
+    "kind": "correlation",
+    "scaled": 0.0,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse endotoxemia (GSE5663)",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 50,
+    "kind": "agreement",
+    "scaled": 0.5,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse endotoxemia (GSE5663)",
     "source": "Table 1"
    },
    {
@@ -2703,7 +3380,18 @@
     "raw": -0.01,
     "kind": "correlation",
     "scaled": 0.01,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse ARDS",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 48,
+    "kind": "agreement",
+    "scaled": 0.48,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse ARDS",
     "source": "Table 1"
    },
    {
@@ -2712,7 +3400,18 @@
     "raw": 0.03,
     "kind": "correlation",
     "scaled": 0.03,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse sepsis (CLP)",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 53,
+    "kind": "agreement",
+    "scaled": 0.53,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse sepsis (CLP)",
     "source": "Table 1"
    },
    {
@@ -2721,7 +3420,18 @@
     "raw": 0.02,
     "kind": "correlation",
     "scaled": 0.02,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse sepsis (CLP-Mild)",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 52,
+    "kind": "agreement",
+    "scaled": 0.52,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse sepsis (CLP-Mild)",
     "source": "Table 1"
    },
    {
@@ -2730,7 +3440,18 @@
     "raw": 0.05,
     "kind": "correlation",
     "scaled": 0.05,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse sepsis (GSE19668)",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 58,
+    "kind": "agreement",
+    "scaled": 0.58,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse sepsis (GSE19668)",
     "source": "Table 1"
    },
    {
@@ -2739,7 +3460,18 @@
     "raw": 0.02,
     "kind": "correlation",
     "scaled": 0.02,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse sepsis (GSE26472)",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 55,
+    "kind": "agreement",
+    "scaled": 0.55,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse sepsis (GSE26472)",
     "source": "Table 1"
    },
    {
@@ -2748,7 +3480,18 @@
     "raw": 0.08,
     "kind": "correlation",
     "scaled": 0.08,
+    "in_score": true,
     "what": "correlation of gene response between human burn and mouse infection",
+    "source": "Table 1"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 61,
+    "kind": "agreement",
+    "scaled": 0.61,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human burn and mouse infection",
     "source": "Table 1"
    },
    {
@@ -2757,7 +3500,18 @@
     "raw": 0.91,
     "kind": "correlation",
     "scaled": 0.91,
+    "in_score": true,
     "what": "correlation of gene response between human trauma and human burn (Fig. 4)",
+    "source": "Fig. 4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 97,
+    "kind": "agreement",
+    "scaled": 0.97,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human trauma and human burn (Fig. 4)",
     "source": "Fig. 4"
    },
    {
@@ -2766,7 +3520,18 @@
     "raw": 0.55,
     "kind": "correlation",
     "scaled": 0.55,
+    "in_score": true,
     "what": "correlation of gene response between human ARDS and human burn (Fig. 4)",
+    "source": "Fig. 4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 84,
+    "kind": "agreement",
+    "scaled": 0.84,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human ARDS and human burn (Fig. 4)",
     "source": "Fig. 4"
    },
    {
@@ -2775,7 +3540,18 @@
     "raw": 0.79,
     "kind": "correlation",
     "scaled": 0.79,
+    "in_score": true,
     "what": "correlation of gene response between human sepsis and human burn (Fig. 4)",
+    "source": "Fig. 4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 92,
+    "kind": "agreement",
+    "scaled": 0.92,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human sepsis and human burn (Fig. 4)",
     "source": "Fig. 4"
    },
    {
@@ -2784,7 +3560,18 @@
     "raw": 0.5,
     "kind": "correlation",
     "scaled": 0.5,
+    "in_score": true,
     "what": "correlation of gene response between human infection and human burn (Fig. 4)",
+    "source": "Fig. 4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 83,
+    "kind": "agreement",
+    "scaled": 0.83,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between human infection and human burn (Fig. 4)",
     "source": "Fig. 4"
    },
    {
@@ -2793,31 +3580,57 @@
     "raw": 0.08,
     "kind": "correlation",
     "scaled": 0.08,
+    "in_score": true,
     "what": "correlation of gene response between mouse orthologs and human burn (Fig. 4)",
+    "source": "Fig. 4"
+   },
+   {
+    "statistic": "percentage",
+    "unit": "percent",
+    "raw": 61,
+    "kind": "agreement",
+    "scaled": 0.61,
+    "in_score": true,
+    "what": "percentage of genes changed in the same direction between mouse orthologs and human burn (Fig. 4)",
     "source": "Fig. 4"
    }
   ]
  },
  "27261415": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "39255793": {
   "n_usable": 0,
+  "n_converted_not_scored": 1,
   "median": null,
   "verdict": "insufficient-data",
-  "figures": []
+  "figures": [
+   {
+    "statistic": "ratio",
+    "unit": "fold",
+    "raw": 3.37,
+    "kind": "ratio-like",
+    "scaled": 0.2967,
+    "in_score": false,
+    "what": "KS information provided in blasted results compared to original identified phosphopeptides",
+    "source": "Results, p6"
+   }
+  ]
  },
  "25671556": {
   "n_usable": 0,
+  "n_converted_not_scored": 0,
   "median": null,
   "verdict": "insufficient-data",
   "figures": []
  },
  "32868897": {
   "n_usable": 18,
+  "n_converted_not_scored": 0,
   "median": 0.585,
   "min": 0.38,
   "max": 0.81,
@@ -2827,8 +3640,9 @@
     "statistic": "median PPV",
     "unit": "proportion_0_1",
     "raw": 0.65,
-    "kind": "agreement",
+    "kind": "correlation",
     "scaled": 0.65,
+    "in_score": true,
     "what": "Overall animal toxicity correlation with human toxicity",
     "source": "Results, p1"
    },
@@ -2836,8 +3650,9 @@
     "statistic": "median NPV",
     "unit": "proportion_0_1",
     "raw": 0.5,
-    "kind": "agreement",
+    "kind": "correlation",
     "scaled": 0.5,
+    "in_score": true,
     "what": "Overall animal toxicity correlation with human toxicity",
     "source": "Results, p1"
    },
@@ -2847,6 +3662,7 @@
     "raw": 0.67,
     "kind": "agreement",
     "scaled": 0.67,
+    "in_score": true,
     "what": "PPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2856,6 +3672,7 @@
     "raw": 0.72,
     "kind": "agreement",
     "scaled": 0.72,
+    "in_score": true,
     "what": "PPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2865,6 +3682,7 @@
     "raw": 0.57,
     "kind": "agreement",
     "scaled": 0.57,
+    "in_score": true,
     "what": "PPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2874,6 +3692,7 @@
     "raw": 0.65,
     "kind": "agreement",
     "scaled": 0.65,
+    "in_score": true,
     "what": "PPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2883,6 +3702,7 @@
     "raw": 0.38,
     "kind": "agreement",
     "scaled": 0.38,
+    "in_score": true,
     "what": "PPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    },
@@ -2892,6 +3712,7 @@
     "raw": 0.6,
     "kind": "agreement",
     "scaled": 0.6,
+    "in_score": true,
     "what": "PPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    },
@@ -2901,6 +3722,7 @@
     "raw": 0.43,
     "kind": "agreement",
     "scaled": 0.43,
+    "in_score": true,
     "what": "PPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    },
@@ -2910,6 +3732,7 @@
     "raw": 0.41,
     "kind": "agreement",
     "scaled": 0.41,
+    "in_score": true,
     "what": "PPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    },
@@ -2919,6 +3742,7 @@
     "raw": 0.52,
     "kind": "agreement",
     "scaled": 0.52,
+    "in_score": true,
     "what": "NPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2928,6 +3752,7 @@
     "raw": 0.5,
     "kind": "agreement",
     "scaled": 0.5,
+    "in_score": true,
     "what": "NPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2937,6 +3762,7 @@
     "raw": 0.57,
     "kind": "agreement",
     "scaled": 0.57,
+    "in_score": true,
     "what": "NPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2946,6 +3772,7 @@
     "raw": 0.51,
     "kind": "agreement",
     "scaled": 0.51,
+    "in_score": true,
     "what": "NPV for all toxicity grades",
     "source": "Figure 2 caption"
    },
@@ -2955,6 +3782,7 @@
     "raw": 0.71,
     "kind": "agreement",
     "scaled": 0.71,
+    "in_score": true,
     "what": "NPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    },
@@ -2964,6 +3792,7 @@
     "raw": 0.73,
     "kind": "agreement",
     "scaled": 0.73,
+    "in_score": true,
     "what": "NPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    },
@@ -2973,6 +3802,7 @@
     "raw": 0.81,
     "kind": "agreement",
     "scaled": 0.81,
+    "in_score": true,
     "what": "NPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    },
@@ -2982,19 +3812,185 @@
     "raw": 0.72,
     "kind": "agreement",
     "scaled": 0.72,
+    "in_score": true,
     "what": "NPV for grade 3 and 4 toxicities",
     "source": "Figure 2 caption"
    }
   ]
  },
  "11029269": {
-  "n_usable": 0,
-  "median": null,
-  "verdict": "insufficient-data",
-  "figures": []
+  "n_usable": 16,
+  "n_converted_not_scored": 0,
+  "median": 0.605,
+  "min": 0.07,
+  "max": 0.91,
+  "verdict": "partly-supports",
+  "figures": [
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 71,
+    "kind": "agreement",
+    "scaled": 0.71,
+    "in_score": true,
+    "what": "true positive HT concordance rate (sensitivity)",
+    "source": "Results, p1"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 70,
+    "kind": "agreement",
+    "scaled": 0.7,
+    "in_score": true,
+    "what": "true positive concordance rate (sensitivity)",
+    "source": "Results, p4"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 63,
+    "kind": "agreement",
+    "scaled": 0.63,
+    "in_score": true,
+    "what": "concordance rate",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 43,
+    "kind": "agreement",
+    "scaled": 0.43,
+    "in_score": true,
+    "what": "concordance rate",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 36,
+    "kind": "agreement",
+    "scaled": 0.36,
+    "in_score": true,
+    "what": "overlap in toxicology with HTs being concordance with two species (i.e., a rodent and a nonrodent)",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 27,
+    "kind": "agreement",
+    "scaled": 0.27,
+    "in_score": true,
+    "what": "concordance by only one species occurring in the nonrodent",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 7,
+    "kind": "agreement",
+    "scaled": 0.07,
+    "in_score": true,
+    "what": "concordance by only one species occurring in the rodent",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 75,
+    "kind": "agreement",
+    "scaled": 0.75,
+    "in_score": true,
+    "what": "concordance rate for Phase I onset HTs",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 58,
+    "kind": "agreement",
+    "scaled": 0.58,
+    "in_score": true,
+    "what": "concordance rate for Phase II onset HTs",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 52,
+    "kind": "agreement",
+    "scaled": 0.52,
+    "in_score": true,
+    "what": "concordance rate for Phase III onset HTs",
+    "source": "Results, p5"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 86,
+    "kind": "discordance",
+    "scaled": 0.14,
+    "in_score": true,
+    "what": "animal metabolism profiles considered to correlate with that of man in false negative cases",
+    "source": "Results, p6"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 89,
+    "kind": "correlation",
+    "scaled": 0.89,
+    "in_score": true,
+    "what": "animal:human metabolite correlation rate (overall)",
+    "source": "Results, p6"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 85,
+    "kind": "discordance",
+    "scaled": 0.15,
+    "in_score": true,
+    "what": "animal models were pharmacologically responsive in false negative cases of pharmacology-related HT prediction",
+    "source": "Results, p7"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 91,
+    "kind": "agreement",
+    "scaled": 0.91,
+    "in_score": true,
+    "what": "concordance rate for hematological HTs",
+    "source": "Results, p8"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 85,
+    "kind": "agreement",
+    "scaled": 0.85,
+    "in_score": true,
+    "what": "concordance rate for gastrointestinal HTs",
+    "source": "Results, p8"
+   },
+   {
+    "statistic": "rate",
+    "unit": "percent",
+    "raw": 80,
+    "kind": "agreement",
+    "scaled": 0.8,
+    "in_score": true,
+    "what": "concordance rate for cardiovascular HTs",
+    "source": "Results, p8"
+   }
+  ]
  },
  "36730203": {
   "n_usable": 13,
+  "n_converted_not_scored": 0,
   "median": 0.11,
   "min": 0.0,
   "max": 0.52,
@@ -3006,6 +4002,7 @@
     "raw": 0.25,
     "kind": "agreement",
     "scaled": 0.25,
+    "in_score": true,
     "what": "genome-wide c-scores between human inflammatory studies (HB, HI, HT, HS)",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3015,6 +4012,7 @@
     "raw": 0.52,
     "kind": "agreement",
     "scaled": 0.52,
+    "in_score": true,
     "what": "genome-wide c-scores between human inflammatory studies (HB, HI, HT, HS)",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3024,6 +4022,7 @@
     "raw": 0.0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "genome-wide c-scores between human inflammatory studies (HL, HA)",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3033,6 +4032,7 @@
     "raw": 0.081,
     "kind": "agreement",
     "scaled": 0.081,
+    "in_score": true,
     "what": "genome-wide c-scores between mouse studies (MB, MI) and human studies (HB, HI, HT, HS)",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3042,6 +4042,7 @@
     "raw": 0.2,
     "kind": "agreement",
     "scaled": 0.2,
+    "in_score": true,
     "what": "genome-wide c-scores between mouse studies (MB, MI) and human studies (HB, HI, HT, HS)",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3051,6 +4052,7 @@
     "raw": 0.0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "genome-wide c-scores between mouse studies (MT, MS, MA, ML) and human studies",
     "source": "Results, p3"
    },
@@ -3060,6 +4062,7 @@
     "raw": 0.2,
     "kind": "agreement",
     "scaled": 0.2,
+    "in_score": true,
     "what": "c-score for MI-HI",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3069,6 +4072,7 @@
     "raw": 0.11,
     "kind": "agreement",
     "scaled": 0.11,
+    "in_score": true,
     "what": "c-score for MB-HB",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3078,6 +4082,7 @@
     "raw": 0.0,
     "kind": "agreement",
     "scaled": 0.0,
+    "in_score": true,
     "what": "c-scores for MT-HT, MS-HS, ML-HL, and MA-HA",
     "source": "Results, p3, SI Appendix, Table S4"
    },
@@ -3087,6 +4092,7 @@
     "raw": 0.26,
     "kind": "agreement",
     "scaled": 0.26,
+    "in_score": true,
     "what": "median c-score for HI1 vs. MI in hsa04662",
     "source": "Results, p6"
    },
@@ -3096,6 +4102,7 @@
     "raw": 0.31,
     "kind": "agreement",
     "scaled": 0.31,
+    "in_score": true,
     "what": "median c-score for HI1 vs. HI2 in hsa04662",
     "source": "Results, p6"
    },
@@ -3105,6 +4112,7 @@
     "raw": 0.1,
     "kind": "agreement",
     "scaled": 0.1,
+    "in_score": true,
     "what": "genome-wide c-scores between Drosophila and C. elegans stages",
     "source": "Results, p6, Fig. 4A"
    },
@@ -3114,6 +4122,7 @@
     "raw": 0.087,
     "kind": "agreement",
     "scaled": 0.087,
+    "in_score": true,
     "what": "c-score for ce.lar-dm.lar",
     "source": "Results, p6, Fig. 4A"
    }
@@ -3121,6 +4130,7 @@
  },
  "28731442": {
   "n_usable": 1,
+  "n_converted_not_scored": 0,
   "median": 0.12,
   "min": 0.12,
   "max": 0.12,
@@ -3132,27 +4142,17 @@
     "raw": 12,
     "kind": "agreement",
     "scaled": 0.12,
+    "in_score": true,
     "what": "genes deregulated in human conditions mimicked by mouse models",
     "source": "Results, p2"
    }
   ]
  },
  "22790876": {
-  "n_usable": 1,
-  "median": 0.0,
-  "min": 0.0,
-  "max": 0.0,
-  "verdict": "does-not-support",
-  "figures": [
-   {
-    "statistic": "prediction failure",
-    "unit": "percent",
-    "raw": 100,
-    "kind": "discordance",
-    "scaled": 0.0,
-    "what": "prediction failure of chimpanzee and macaque models for vaccination development against AIDS",
-    "source": "Introduction, p1"
-   }
-  ]
+  "n_usable": 0,
+  "n_converted_not_scored": 0,
+  "median": null,
+  "verdict": "insufficient-data",
+  "figures": []
  }
 }

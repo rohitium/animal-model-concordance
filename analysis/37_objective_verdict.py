@@ -32,18 +32,44 @@ DISCORDANCE = [
 ]
 # CORRELATION: |r| or R² already on 0-1 and oriented the right way
 CORRELATION = ["correlation","pearson","spearman","r^2","r2","rho","kendall"]
-# Explicitly NOT usable as a concordance score, whatever their value
+# RATIO-LIKE: agreement is at 1. A ratio of animal to human effect, a fold-difference, or
+# a regression slope of human on animal all mean "the same" at 1 and diverge either way.
+# Mapped by 1/max(x, 1/x), so 1 -> 1.00, 2 -> 0.50, 10 -> 0.10.
+RATIO_LIKE = ["fold","ratio","times","slope of","regression slope","potency ratio"]
+# ASSOCIATION: odds ratios and likelihood ratios measure association, 1 = none.
+# Mapped by x/(1+x), which is Yule's Q rescaled to 0-1: OR 1 -> 0.50, OR 10 -> 0.91.
+ASSOCIATION = ["odds ratio","likelihood ratio","lr+","risk ratio","hazard ratio"]
+# BOUNDED DIFFERENCE: a difference between two quantities that are themselves on 0-1
+# (e.g. a difference of correlations). 0 = identical, so agreement is 1 - |d|.
+BOUNDED_DIFF = ["difference in correlation","correlation difference","mean difference"]
+
+# NOT convertible to a concordance magnitude, and why:
+#  - p-values and FDR measure evidence against a null, not how closely two things agree.
+#    A tiny p can accompany a trivial or a large divergence.
+#  - unbounded distances (Mahalanobis) and slope differences in unstated units are
+#    monotone in agreement but have no common scale, so they rank species within a study
+#    and cannot be thresholded across studies.
 UNUSABLE = [
- "p value","p-value","f-statistic","slope","count","number of","fold","increase","reduced",
- "decrease","lr+","lr-","inlr","likelihood ratio","odds ratio","hazard","mean","median diff",
- "difference","change in","cost","duration","fdr","qualitative","not statistically",
- "dose","concentration","ic50","auc0","exposure","potency","n=",
+ "p value","p-value","f-statistic","fdr","q value","significance","count","number of",
+ "cost","duration","qualitative","not statistically","dose","concentration","ic50",
+ "auc0","exposure","n=","mahalanobis","distance","slope difference",
 ]
 
-def classify(stat, unit):
-    t=(stat or "").strip().lower()
+def classify(stat, unit, what=""):
+    """Classify on the statistic name AND the description of what was compared.
+
+    Classifying on the name alone left bare labels like "rate", "proportion" and
+    "probability" unscored even when the description said plainly what they measured.
+    """
+    t=((stat or "")+" "+(what or "")).strip().lower()
     for k in UNUSABLE:
         if k in t: return None
+    for k in BOUNDED_DIFF:
+        if k in t and unit in ("correlation","proportion_0_1"): return "bounded-difference"
+    for k in ASSOCIATION:
+        if k in t: return "association"
+    for k in RATIO_LIKE:
+        if k in t: return "ratio-like"
     for k in CORRELATION:
         if k in t: return "correlation"
     for k in DISCORDANCE:
@@ -56,6 +82,16 @@ def to_scale(value, unit, kind):
     """Map onto 0-1 where 1 = perfect animal-to-human correspondence."""
     if value is None: return None
     v=float(value)
+    if kind=="ratio-like":
+        if v<=0: return 0.0
+        return round(1.0/max(v, 1.0/v), 4)
+    if kind=="association":
+        if v<0: return None
+        return round(v/(1.0+v), 4)
+    if kind=="bounded-difference":
+        d=abs(v)
+        if d>1.0: d=d/100.0 if d<=100 else None
+        return None if d is None else round(1.0-d, 4)
     if unit=="percent":
         if not (0<=v<=100): return None
         v=v/100.0
@@ -68,6 +104,14 @@ def to_scale(value, unit, kind):
     return 1.0-v if kind=="discordance" else v
 
 # --- 2. thresholds -----------------------------------------------------------------------
+# Families that enter the score. Odds ratios, fold-changes and slopes CAN be put on a 0-1
+# scale (Yule's Q rescaled; 1/max(x,1/x)) and those conversions are kept below — but folding
+# them into one median makes the composite less meaningful, not more. A 0.5 meaning "a
+# two-fold difference" is not the same claim as a 0.5 meaning "agreed half the time", and
+# mixing them empirically destroys agreement with independent readers: including ratio-like
+# figures moves kappa against rater 1 from +0.17 to -0.01, i.e. to chance. They are reported
+# per figure on study pages instead, converted and labelled, without entering the score.
+SCORED_FAMILIES = {"agreement","discordance","correlation","bounded-difference"}
 SUPPORTS, PARTLY = 0.70, 0.40      # >=0.70 supports; 0.40-0.70 partly; <0.40 does not
 def verdict_from(score):
     if score is None: return "insufficient-data"
@@ -78,27 +122,36 @@ def verdict_from(score):
 def main():
     ANS=json.load(open(J("data","db","study_answers.json")))
     DB=json.load(open(J("data","db","studies.json")))
+    PROV=json.load(open(J("data","db","figure_provenance.json")))
     OK={k:v for k,v in ANS.items() if "error" not in v and DB.get(k,{}).get("eligible")}
     out={}
     for pm,v in OK.items():
         used=[]
-        for c in (v.get("comparisons") or []):
-            kind=classify(c.get("statistic"), c.get("unit"))
+        prov=PROV.get(pm) or {}
+        for _i,c in enumerate(v.get("comparisons") or []):
+            if ((prov.get(str(_i)) or {}) if "error" not in prov else {}).get(
+                    "provenance")=="cited-from-other-study":
+                continue
+            kind=classify(c.get("statistic"), c.get("unit"), c.get("what_compared"))
             if not kind: continue
             s=to_scale(c.get("value"), c.get("unit"), kind)
             if s is None: continue
-            used.append({"statistic":c["statistic"],"unit":c["unit"],"raw":c["value"],
-                         "kind":kind,"scaled":round(s,4),
-                         "what":c.get("what_compared"),"source":c.get("source_location")})
-        if used:
-            vals=sorted(x["scaled"] for x in used)
+            rec={"statistic":c["statistic"],"unit":c["unit"],"raw":c["value"],
+                 "kind":kind,"scaled":round(s,4),"in_score":kind in SCORED_FAMILIES,
+                 "what":c.get("what_compared"),"source":c.get("source_location")}
+            used.append(rec)
+        scored=[x for x in used if x["in_score"]]
+        if scored:
+            vals=sorted(x["scaled"] for x in scored)
             m=len(vals)//2
             median=vals[m] if len(vals)%2 else (vals[m-1]+vals[m])/2
-            out[pm]={"n_usable":len(used),"median":round(median,4),
+            out[pm]={"n_usable":len(scored),"n_converted_not_scored":len(used)-len(scored),
+                     "median":round(median,4),
                      "min":round(vals[0],4),"max":round(vals[-1],4),
                      "verdict":verdict_from(median),"figures":used}
         else:
-            out[pm]={"n_usable":0,"median":None,"verdict":"insufficient-data","figures":[]}
+            out[pm]={"n_usable":0,"n_converted_not_scored":len(used),"median":None,
+                     "verdict":"insufficient-data","figures":used}
     json.dump(out, open(J("data","db","objective_verdict.json"),"w"), indent=1)
 
     # --- 3. how well does the rule match the two model raters? ---------------------------

@@ -347,7 +347,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "NPV is often high simply because most findings are negative. The paper notes that for grades 3 and 4 toxicities, there were no conditions in which PPV and NPV were both >0.75, but there were six conditions for which PPV and NPV were both >0.6. This suggests that even for severe toxicities, the predictive values are not consistently high."
  },
  {
   "assessment": "Toxicology",
@@ -453,7 +453,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "NPV is often high simply because most findings are negative. The paper notes that for grades 3 and 4 toxicities, there were no conditions in which PPV and NPV were both >0.75, but there were six conditions for which PPV and NPV were both >0.6. This suggests that even for severe toxicities, the predictive values are not consistently high."
  },
  {
   "assessment": "Toxicology",
@@ -465,11 +465,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 2
    },
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 2
    }
   ],
@@ -559,7 +559,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
  },
  {
   "assessment": "Toxicology",
@@ -665,7 +665,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
  },
  {
   "assessment": "Toxicology",
@@ -677,11 +677,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 1
    },
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 1
    }
   ],
@@ -729,7 +729,7 @@
     ]
    }
   ],
-  "caveat": "The data set is affected by selection bias, as drugs highly toxic in rodent tests are unlikely to advance to tests in dogs, NHPs, and humans, meaning these types of drugs are under-represented. Rare observations were removed from the analysis, which could affect the results."
+  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
  },
  {
   "assessment": "Toxicology",
@@ -741,11 +741,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "supports",
+    "label": "partly supports",
     "n": 1
    },
    {
-    "label": "partly supports",
+    "label": "supports",
     "n": 1
    }
   ],
@@ -1353,7 +1353,7 @@
     ]
    }
   ],
-  "caveat": "The recall and precision metrics are influenced by the duration of exposure in animal models, with longer exposure generally leading to higher recall. The WTD model's low recall might be due to a relatively short feeding period."
+  "caveat": "The 'percentage of genes changed in the same direction' metric has a base rate of 50% for random chance, which is explicitly mentioned in the paper. Many of the reported percentages for mouse models are close to this random chance level."
  },
  {
   "assessment": "Disease biology",

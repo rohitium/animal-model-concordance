@@ -404,3 +404,28 @@ Pattern-matching on phrases like "reported" and "et al." is not adequate for thi
 would have surfaced from internal consistency checks: the numbers were extracted correctly,
 carried correct verbatims and correct source locations, and simply meant something other than
 what the table asserted.
+
+## Which statistics can be thresholded (2026-08-22)
+
+**L60 — Odds ratios, fold-changes and slopes CAN be converted; converting them makes the
+composite worse.** Standard transforms exist: an odds or likelihood ratio maps by x/(1+x)
+(Yule's Q rescaled, so 1 → 0.50), and a fold-change or ratio maps by 1/max(x, 1/x) (1 → 1.00,
+2 → 0.50). Claiming they were unconvertible was wrong. But folding them into one median is
+not an improvement: a 0.5 meaning "a two-fold difference" is not the same claim as a 0.5
+meaning "agreed half the time". Measured against independent readers, each family added makes
+the rule worse — agreement/discordance/correlation alone gives κ = +0.17 against rater 1;
+adding association gives +0.13; adding ratio-like gives **−0.01**, i.e. chance. The score is
+therefore restricted to agreement, discordance, correlation and bounded differences. The other
+families are still converted and shown per figure on study pages, labelled and excluded from
+the score, so the information is not lost.
+
+**L61 — Two families genuinely cannot be thresholded.** p-values and FDRs measure evidence
+against a null, not how closely two things agree: a tiny p can accompany a trivial or a large
+divergence. Mahalanobis distances and slope differences in unstated units are monotone in
+agreement but have no common scale, so they rank species within a study and cannot be compared
+across studies.
+
+**L62 — Headline numbers restated after the attribution and provenance fixes.** 56 studies
+included; 33 have organism-specific evidence; 577 of 925 extracted figures appear in the table
+(206 are quoted from other work, the rest are not attributable to a specific organism);
+24 evidence rows; 27 studies carry a numeric score.
