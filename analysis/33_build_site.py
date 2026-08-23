@@ -458,6 +458,7 @@ _ctx={"n_studies":len(OK),"n_scored":len(_scored),"n_unscored":len(OK)-len(_scor
       "r1r2_a":_ar,"r1r2_k":_kr,"rule_r1_a":_a1,"rule_r1_k":_k1,
       "rule_r2_a":_a2,"rule_r2_k":_k2,
       "supports":verd["supports"],"partly":verd["partly-supports"],"not":verd["does-not-support"],
+      "cited":_cited,"n_figures":ncomp,"in_rows":_studies_in_rows,
       "pct_cited":(100.0*sum(1 for _p,_v in PROV.items() if "error" not in _v
                              for _it in _v.values() if _it.get("provenance")=="cited-from-other-study")
                    /max(1,sum(len(_v) for _p,_v in PROV.items() if "error" not in _v)))}

@@ -7,16 +7,34 @@ def build(k):
    "92% failure rate becomes 0.08; correlations use |r| or R². A study's score is the median of "
    "its figures, with cut-offs at <strong>≥0.70 supports</strong>, "
    "<strong>0.40–0.70 partly supports</strong>, <strong>&lt;0.40 does not support</strong>.</p>",
-   "<p>Which statistics count, how each is oriented and where the cut-offs sit are written out in "
-   "<code>analysis/37_objective_verdict.py</code>. Moving the cut-offs to 0.65/0.35 shifts four "
-   "studies from partly-supports to supports and leaves does-not-support unchanged.</p>"]),
+   f"<p>The score covers agreement and concordance rates, discordance rates (inverted), "
+   f"correlations, and differences between quantities that are themselves on a 0–1 scale. "
+   f"It applies to <strong>{k['n_scored']} of {k['n_studies']}</strong> studies. Moving the "
+   f"cut-offs to 0.65/0.35 shifts a few studies from partly-supports to supports and leaves "
+   f"does-not-support unchanged, so the negative end of the scale is the more stable one.</p>"]),
+
+ ("Why aren't odds ratios, fold-changes and p-values included in the score?",
+  ["<p>Odds ratios, likelihood ratios, fold-changes and slopes <em>can</em> be put on the same "
+   "0–1 scale — an odds ratio by x/(1+x), so no association maps to 0.50; a fold-change by "
+   "1/max(x, 1/x), so a two-fold difference maps to 0.50. Those conversions are applied and shown "
+   "on each study page.</p>",
+   "<p>They are kept out of the score because pooling them makes it less meaningful rather than "
+   "more. A 0.5 meaning “a two-fold difference” is not the same claim as a 0.5 meaning “agreed "
+   "half the time”. Measured against independent readers, adding them moves the rule from modest "
+   "agreement to chance, while buying only three extra studies.</p>",
+   "<p>Two kinds genuinely cannot be converted. p-values and false discovery rates measure "
+   "evidence against a null hypothesis, not how closely two things agree — a very small p is "
+   "compatible with a trivial difference or an enormous one. Mahalanobis distances and slope "
+   "differences reported in unstated units are monotone in agreement but have no common scale, so "
+   "they rank species within one study and cannot be compared across studies.</p>"]),
 
  ("Why do some studies have no numeric verdict?",
-  [f"<p><strong>{k['n_unscored']} of {k['n_studies']}</strong> studies report nothing reducible to "
-   "a concordance scale — their figures are p-values, regression slopes, Mahalanobis distances, "
-   "fold-changes and odds ratios. Real results, but not rates of agreement.</p>",
-   "<p>That roughly half the field does not express animal-to-human correspondence as agreement is "
-   "a large part of why concordance figures rarely compare across papers.</p>"]),
+  [f"<p><strong>{k['n_unscored']} of {k['n_studies']}</strong> studies report nothing that enters "
+   "the score. Their figures are p-values, regression slopes, Mahalanobis distances, and ratio-type "
+   "measures that are convertible but not poolable (see above). Real results, but not rates of "
+   "agreement.</p>",
+   "<p>That roughly half the field does not express animal-to-human correspondence as a rate of "
+   "agreement is a large part of why concordance figures rarely compare across papers.</p>"]),
 
  ("How much should I trust the verdicts?",
   ["<p>Treat the figures as the evidence and the labels as contested. Three independent verdicts "
@@ -34,7 +52,8 @@ def build(k):
  ("Which figures count as a study's evidence?",
   [f"<p>Only figures the study produced itself, or produced by pooling others' published data. "
    f"Papers frequently quote numbers from earlier work while setting up a problem — "
-   f"<strong>{k['pct_cited']:.0f}%</strong> of all extracted figures are quoted from another "
+   f"<strong>{k['cited']}</strong> of {k['n_figures']} extracted figures "
+   f"({k['pct_cited']:.0f}%) are quoted from another "
    "study. Those do not count toward the quoting paper's verdict or toward any row of the main "
    "table, because the conditions that produced them belong to the original work and counting "
    "them twice would inflate the corpus.</p>",
@@ -88,7 +107,8 @@ def build(k):
    "a mouse host and so test whether a patient's tumour predicts that patient.</p>"]),
 
  ("Is this a systematic review?",
-  [f"<p>No. It is a structured reading of {k['n_studies']} studies selected from a screened pool by "
+  [f"<p>No. It is a structured reading of {k['n_studies']} studies — {k['in_rows']} of which "
+   f"contribute organism-specific evidence — selected from a screened pool by "
    "a score combining citations and recency — weighted toward authoritative and recent work, and "
    "not a random sample. Verdict counts describe this corpus and nothing wider.</p>"]),
 

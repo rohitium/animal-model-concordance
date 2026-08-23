@@ -465,11 +465,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "does not support",
     "n": 2
    },
    {
-    "label": "does not support",
+    "label": "partly supports",
     "n": 2
    }
   ],
@@ -559,7 +559,7 @@
     ]
    }
   ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
+  "caveat": "NPV is often high simply because most findings are negative. The paper notes that for grades 3 and 4 toxicities, there were no conditions in which PPV and NPV were both >0.75, but there were six conditions for which PPV and NPV were both >0.6. This suggests that even for severe toxicities, the predictive values are not consistently high."
  },
  {
   "assessment": "Toxicology",
@@ -665,7 +665,7 @@
     ]
    }
   ],
-  "caveat": "The selectivity of 7% is low, but the paper notes that the data set differs from other studies, as it focuses on marketed drugs that passed rigorous clinical safety testing. The high LR+ for dizziness (1000) might be an outlier or reflect specific testing practices."
+  "caveat": "NPV is often high simply because most findings are negative. The paper notes that for grades 3 and 4 toxicities, there were no conditions in which PPV and NPV were both >0.75, but there were six conditions for which PPV and NPV were both >0.6. This suggests that even for severe toxicities, the predictive values are not consistently high."
  },
  {
   "assessment": "Toxicology",
@@ -741,11 +741,11 @@
   "negative_controls": null,
   "verdicts": [
    {
-    "label": "partly supports",
+    "label": "supports",
     "n": 1
    },
    {
-    "label": "supports",
+    "label": "partly supports",
     "n": 1
    }
   ],
@@ -1353,7 +1353,7 @@
     ]
    }
   ],
-  "caveat": "The 'percentage of genes changed in the same direction' metric has a base rate of 50% for random chance, which is explicitly mentioned in the paper. Many of the reported percentages for mouse models are close to this random chance level."
+  "caveat": "The paper notes that the P-site abundance was a main determining factor for P-site identification in mouse measurement, suggesting that deeper phosphoproteomic depth in mouse experiments could yield more identified P-sites."
  },
  {
   "assessment": "Disease biology",
