@@ -36,17 +36,23 @@ purpose (efficacy, toxicology, safety pharmacology, disease biology, or veterina
 given every quantitative animal-to-human comparison the studies reported for that organism,
 each with the sentence it came from, plus each study's verdict and any caveat.
 
-Write `summary`: 2-4 sentences a scientific reader can act on. It must
+Write `summary`: AT MOST TWO SENTENCES, under 320 characters total. Be ruthless — a reader
+scanning a table will not read a paragraph. It must
 - lead with what the evidence SHOWS, not with a list of numbers;
 - give the most important numbers inline, each with what it is a proportion OF;
 - make the direction unmistakable — say whether animal results tracked human results;
 - name the studies as "Author et al. Year" where a number is attributed.
 
+Cut anything that does not change the reader's conclusion. Two numbers that make the same
+point are one number. Do not list every sub-result; give the load-bearing figures and stop.
+Sentence one: what the evidence shows. Sentence two: the most important qualification.
+
 Hard rules:
 - NEVER write filler like "proportion", "score" or "rate" as if it were a finding. Say what
   was counted.
 - If a wide range comes from different sub-analyses, say what varies across it in
-  `why_range_is_wide`. Do not present a wide range as a single uncertain estimate.
+  `why_range_is_wide`, in one short sentence. Do not present a wide range as a single
+  uncertain estimate.
 - If any figure is a NEGATIVE CONTROL — a comparison the authors deliberately expected to
   score low, to validate their metric — exclude it from the summary's direction and record it
   in `negative_controls_noted`. Treating a negative control as poor performance is a
