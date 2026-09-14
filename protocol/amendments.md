@@ -57,3 +57,45 @@ titles with weaker PMC deposition (*Regul Toxicol Pharmacol*, *ATLA*, *Vet Sci*)
 a non-random gap that runs against toxicology and veterinary sources — precisely Arms 3
 and 4 — and is the reason the query mechanism is retained at equal standing rather than
 demoted to a supplement.
+
+## A4 — 2026-09-14 — Question-first redesign (protocol v0.4)
+
+**As written (v0.3 and the pipeline built on it).** Track A only: extract every animal-vs-human
+number from a 100-study slice chosen by citations and recency, summarise per arm × organism, and
+assign verdicts by model raters and a 0–1 median score.
+
+**Why it changed.** A review of the pipeline and a spot-check against source PDFs found:
+- in-vitro studies in the eligible set despite the L28 rule (tenocytes, Liver-Chip,
+  GI microtissue);
+- central studies absent or excluded for lack of a PDF (Ineichen 2024 not retrieved; Hackam 2006
+  excluded with no full text; van der Worp 2010 screened but not selected);
+- extractions that miss a paper's headline result (Perel 2007's 3 of 6) and record treatment
+  effects as concordance;
+- 355 of 925 stored "verbatim" quotes not locatable in the PDF text, many being constructed
+  table-cell strings, so the quote check could not detect errors;
+- rows mostly n = 1–2 and "mixed", built from incommensurable statistics; three verdict methods
+  agreeing at κ 0.17–0.58.
+Numbers that were captured were generally transcribed correctly (Olson 2000, Monticello 2017,
+Atkins 2020, Bailey 2016 checked).
+
+**Amendment.** v0.4 replaces the arm × organism table with four pre-specified questions: a
+disease-area × species evidence map with evidence levels A–D; within-cell pooling only at k ≥ 3
+independent datasets; a drug-pair table for dogs and cats with spontaneous disease, built from
+complete sampling frames; and a within-drug comparison of lab model vs companion animal vs human.
+Falsifiers are stated before data collection. Every headline number passes double extraction,
+mechanical location in the PDF, a checklist verifier, and human review of flags, with a published
+audit false-accept rate. Models start at the cheapest tier and escalate only on measured failure
+(user decision). Scope of the drug-pair table is dogs and cats only (user decision). The live site
+is unchanged until a replacement exists (user decision).
+
+**Revisions before sign-off (user review, 2026-09-14).** The draft falsifiers were changed:
+(1) if companion-animal concordance is not higher than lab-model concordance, this is stated
+plainly as no difference, with its CI; (2) a small number of drug pairs is reported with an exact
+CI rather than declared unanswerable, so no evidence is withheld; (3) the prediction-vs-agreement
+distinction was removed — the object of measurement is concordance, and dates are descriptive
+only; (4) "discordant" is reserved for cases where all available evidence points the opposite
+way, with "mixed" and "indeterminate" otherwise. ORR ≥ 20% is kept as the primary single-arm
+threshold, with lower thresholds as sensitivity analyses. Disease areas may be added as needed.
+
+**Motivation declared.** The review supports the Nori white paper. v0.4 §1 and §3 exist to offset
+that motivation, not to disguise it.

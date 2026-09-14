@@ -1,0 +1,377 @@
+# Animal Model Concordance with Human Clinical Outcomes
+## Systematic Review Protocol — v0.3 (draft for iteration)
+
+**Date:** 2026-08-20
+**Status:** Draft. Not executed. No conclusions formed.
+**Changes from v0.2:** Veterinary / naturally occurring disease promoted from a cross-cutting stratum to **Arm 4**, a separate reporting arm with its own `readout` sub-dimension. Arms 1–3 correspondingly restricted to induced/laboratory models so the four arms are mutually exclusive. Hosting target fixed as **GitHub Pages**.
+**Changes in v0.2:** Track A only (Track B deferred). Evidence arms defined. Denominator problem demoted to a flagged limitation. Falsification ceilings demoted to labelled context. Access model = PubMed + Stanford. Non-animal comparators removed. Output re-specified as a structured, citation-anchored database.
+**Archived:** `protocol/v0.1_archive.md`, `protocol/v0.2_archive.md`
+
+---
+
+## 1. Objective
+
+Quantify how well results in animal models predict outcomes in human clinical trials, and characterize where predictivity is high or low.
+
+**Not an objective:** arguing for or against animal research. Output = concordance statistics with uncertainty, plus an explicit accounting of what the data cannot answer.
+
+### 1.1 Primary question
+
+| Element | Specification |
+|---|---|
+| **P** | Paired preclinical–clinical evaluations of the same intervention for the same indication |
+| **I** (index test) | Result in a non-human animal model |
+| **C** (reference standard) | Corresponding human clinical result (preferably RCT, Phase II/III) |
+| **O** | Concordance: direction, significance, and effect magnitude agreement |
+
+### 1.2 Secondary questions — the analysis backbone
+
+These are not an afterthought; every table, figure, and database field below exists to answer one of them. Each is restated in §7 as a pre-specified stratified analysis.
+
+| # | Question | Primary moderator variable |
+|---|---|---|
+| **SQ1** | Does concordance vary by **species**? | `species`, `phylo_distance_my` |
+| **SQ2** | Does concordance vary by **therapeutic area**? | `therapeutic_area` |
+| **SQ3** | Does concordance differ for **efficacy vs safety vs toxicology**? | `arm` (§2) |
+| **SQ4** | Does concordance differ for **primary hard endpoints vs secondary/biomarker endpoints**? | `endpoint_class` |
+| **SQ5** | How much discordance is **methodological quality + publication bias** vs **irreducible species divergence**? | `rob_score`, bias-adjusted vs raw estimates |
+| **SQ6** | Has concordance **changed over time** (pre-2000 / 2000–2015 / post-2015, i.e. post-ARRIVE, post-STAIR)? | `pub_year`, `era` |
+| **SQ7** | Do **naturally occurring veterinary disease models** outperform induced laboratory models? | `arm` = veterinary (Arm 4, §4) × `readout` |
+
+SQ7 is answered by comparing Arm 4 against Arms 1–3 at matched `readout` and `therapeutic_area` (§7.3). It is a co-primary question, not a subgroup.
+
+---
+
+## 2. Four evidence arms
+
+Arms are analysed separately and **never pooled into a single headline number**. They are different prediction problems with different base rates and different regulatory histories.
+
+Arms 1–3 are split by *what is being predicted* (efficacy / acute functional safety / cumulative toxicity) and cover **induced or engineered laboratory models**. Arm 4 is split by *the nature of the model itself* — spontaneous disease in client-owned animals — and therefore cuts across all three readouts. To keep the four arms mutually exclusive and exhaustive, Arm 4 carries a required `readout ∈ {efficacy, safety, toxicology}` sub-field, and Arms 1–3 exclude spontaneous-veterinary records. A canine osteosarcoma trial with survival and adverse-event data yields two Arm 4 rows (`readout: efficacy`, `readout: safety`), not one row in Arm 1 and one in Arm 2.
+
+> **On "safety" vs "toxicology" — a clarification.** These are not two parallel biological categories; in regulatory usage they sit on different sides of the translation. *Toxicology* is the animal-side discipline (GLP repeat-dose organ toxicity, genotoxicity, carcinogenicity, reproductive toxicity). *Safety* is the human-side observation (adverse events, SAEs, discontinuations, boxed warnings, withdrawals). "Does animal tox predict human AEs?" is one question spanning both words. The genuinely separable third category is **safety pharmacology** — acute functional effects on cardiovascular, CNS, and respiratory systems (ICH S7A/S7B; hERG/QT), which has its own methods and a distinct, historically stronger track record.
+>
+> We therefore define the three arms as below. If you prefer to keep the labels "safety" and "toxicology" as you framed them, Arm 2 and Arm 3 map onto that split with the boundary drawn at *acute functional* vs *cumulative structural* injury.
+
+| Arm | Animal side (index test) | Human side (reference standard) | Typical endpoints |
+|---|---|---|---|
+| **Arm 1 — Efficacy** | Disease-model treatment effect | Trial efficacy result | Mortality, OS/PFS, MACE, 6MWD, mRS, symptom scales, biomarkers |
+| **Arm 2 — Safety pharmacology & adverse events** | ICH S7A/S7B core battery; acute functional CV/CNS/respiratory effects | Human AEs, SAEs, QT prolongation, discontinuation, boxed warnings, withdrawals | TdP/QTc, seizure, sedation, respiratory depression, hypotension |
+| **Arm 3 — Toxicology** | GLP repeat-dose organ toxicity, genotoxicity, carcinogenicity, reproductive/developmental toxicity | Human target-organ toxicity, DILI, nephrotoxicity, myelosuppression, teratogenicity | Hepatic, renal, haematologic, cardiac, GI, reproductive findings |
+| **Arm 4 — Veterinary / spontaneous disease** | Naturally occurring disease in client-owned animals, treated in veterinary clinical trials (`readout` = efficacy / safety / toxicology) | Corresponding human clinical result | OS, PFS, TTP, RECIST-vet, VCOG-CTCAE adverse events, owner-reported outcome measures (CBPI, LOAD, HCPI, FMPI) |
+
+Arm 3 requires ICH-era regulatory-grade data (Drugs@FDA pharm/tox reviews, EMA EPARs) as well as journal literature; Arms 1–2 are primarily literature-based.
+
+---
+
+## 3. Design — Track A only
+
+**Track A (this protocol):** systematic review of studies that *themselves* measured animal-to-human agreement. Unit of analysis = one published concordance study (and, where the study reports them, its constituent intervention pairs, extracted as sub-rows).
+
+**Track B (deferred, not abandoned):** our own de novo pair-by-pair extraction. Deferred on cost grounds. Track A extraction will record, per study, whether its underlying pair list is published and machine-readable — this becomes the feasibility map if Track B is ever revived.
+
+**Practical consequence:** Track A inherits inconsistent concordance definitions from source studies. Mitigation — every extracted estimate is re-coded onto our own D1/D2/D3 scale (§6.1) where the source reports enough detail, and flagged `definition_recoverable: true/false`. Estimates that cannot be re-coded are reported descriptively and excluded from pooling.
+
+---
+
+## 4. Arm 4 — Veterinary / naturally occurring disease (SQ7)
+
+Companion and production animals develop spontaneous disease in outbred, immunocompetent, environmentally exposed populations, and are treated in real clinical settings with owner consent, pharmacovigilance, and survival follow-up. This is structurally different from an induced laboratory model and is the single most important stratum in this review.
+
+### 4.1 Why this stratum is analytically privileged
+1. **Spontaneous, not induced** — genuine tumour heterogeneity, natural disease chronicity, intact tumour microenvironment and immune system.
+2. **Outbred genetics + shared environment** with humans (especially dogs sharing households).
+3. **Endpoint alignment is unusually good** — veterinary oncology uses adapted human instruments: VCOG-CTCAE for adverse events, RECIST-vet (VCOG RECIST v1.0) for response, plus OS/PFS/TTP and validated owner-reported outcome measures (CBPI, LOAD, HCPI, FMPI).
+4. **Real trial infrastructure** — NCI Comparative Oncology Trials Consortium (COTC), academic veterinary teaching hospitals, FDA CVM regulatory approvals.
+
+### 4.2 Scope of veterinary conditions to search (comprehensive; each becomes a database record)
+
+**Dog — oncology:** osteosarcoma; B-cell and T-cell lymphoma (incl. DLBCL analogue); hemangiosarcoma; invasive urothelial/transitional cell carcinoma; mast cell tumour; oral malignant melanoma; glioma (brachycephalic breeds); soft tissue sarcoma; mammary carcinoma; nasal carcinoma; histiocytic sarcoma.
+**Dog — non-oncology:** Duchenne muscular dystrophy (GRMD, golden retriever); degenerative myelopathy (*SOD1* — a spontaneous canine counterpart to the engineered SOD1 rodent ALS model, so a direct within-review contrast); narcolepsy (*HCRTR2*, the origin of orexin biology); RPE65 retinal dystrophy (Briard) and other inherited retinal degenerations; haemophilia A/B; lysosomal storage diseases (MPS I, MPS VII, GM1/GM2); idiopathic epilepsy; atopic dermatitis (IL-31/JAK axis); osteoarthritis (anti-NGF axis); myxomatous mitral valve disease; dilated cardiomyopathy; chronic kidney disease; diabetes mellitus; obesity; inflammatory bowel disease; canine cognitive dysfunction (Alzheimer's-adjacent); ageing/geroscience (rapamycin, Dog Aging Project; Golden Retriever Lifetime Study).
+
+**Cat:** hypertrophic cardiomyopathy (*MYBPC3*, Maine Coon/Ragdoll — sarcomeric HCM with the same causal genes as human); chronic kidney disease; type 2 diabetes with islet amyloid (cats are one of few non-primates with amyloidogenic IAPP); feline infectious peritonitis (coronavirus; nucleoside-analogue antivirals); oral squamous cell carcinoma; feline asthma; osteoarthritis; injection-site sarcoma; lymphoma.
+
+**Horse:** osteoarthritis and joint injury (the standard large-animal cartilage repair model); superficial digital flexor tendinopathy (cell therapy); laminitis; equine metabolic syndrome / insulin dysregulation; severe equine asthma ("heaves", RAO) as a spontaneous asthma model; equine recurrent uveitis (spontaneous autoimmune uveitis); exercise cardiology and rhabdomyolysis; herpesvirus myeloencephalopathy; melanoma in grey horses.
+
+**Pig:** spontaneous melanoma with regression (Sinclair, MeLiM minipigs); Ossabaw metabolic syndrome; hereditary hypercholesterolaemia; malignant hyperthermia (*RYR1*); plus engineered lines (CFTR pig) recorded separately as non-spontaneous.
+
+**Cattle / sheep / goat:** bovine respiratory syncytial virus (a true natural RSV host, relevant to RSV vaccine and mAb development); BSE/scrapie and prion biology; paratuberculosis (Johne's) and the Crohn's hypothesis; mastitis; bovine leukaemia virus; ovine pulmonary adenocarcinoma (JSRV) as a lung adenocarcinoma model; hereditary chondrodysplasia.
+
+**Chicken / avian:** Marek's disease (herpesvirus lymphoma; first effective cancer vaccine); avian leukosis / Rous sarcoma virus (origin of *SRC* and the oncogene concept); spontaneous ovarian adenocarcinoma in laying hens (highest spontaneous incidence of any species; used for ovarian cancer chemoprevention); muscular dystrophy; atherosclerosis; retinal degeneration.
+
+**Non-human primate:** SIV/SHIV in macaques (HIV); spontaneous obesity, insulin resistance and type 2 diabetes in rhesus; spontaneous endometriosis in baboons; age-related amyloid and cerebral amyloid angiopathy; spontaneous atherosclerosis; endometriosis and reproductive biology.
+
+**Ferret:** influenza infection and transmission (the reference host model); RSV; CF ferret (engineered, recorded separately).
+
+**Other, if evidence exists:** rabbit (atherosclerosis, WHHL), guinea pig (tuberculosis, asthma), naked mole rat and dog-breed longevity (geroscience), zebrafish (recorded but out of the animal-model concordance pool unless paired human data exist).
+
+### 4.3 Named translation exemplars to locate and adjudicate (unverified anchors)
+Both directions must be captured, not just successes: RPE65 gene therapy (Briard dog → voretigene neparvovec); anti-NGF antibodies (canine/feline OA → tanezumab, including its human safety failure — a case where efficacy translated and safety did not, i.e. Arm 1 and Arm 2 disagree); JAK/IL-31 dermatology (oclacitinib, lokivetmab → human atopic dermatitis JAK inhibitors); toceranib → sunitinib; canine osteosarcoma immunotherapy programmes; rapamycin geroscience; canine DMD exon-skipping and gene therapy.
+
+### 4.4 Veterinary-specific search sources
+PubMed + CAB Abstracts (via Stanford) + AGRICOLA; *JVIM*, *Veterinary and Comparative Oncology*, *Vet Surgery*, *AJVR*, *Equine Vet J*, *J Feline Med Surg*, *Front Vet Sci*; FDA CVM approval documents; AVMA/NIH comparative-oncology programme reports; VetCompass and Banfield population datasets for denominators.
+
+---
+
+## 5. Search strategy and access
+
+### 5.1 Access model
+No commercial subscriptions of our own. Route: **PubMed/MEDLINE (open)** + **Stanford University Libraries / Lane Medical Library** under SUNet ID (`rsatija@stanford.edu`).
+
+Action item for Phase 1: confirm which of Embase, Web of Science, Scopus, CAB Abstracts, and Cochrane are licensed through Lane. Stanford is likely to carry most of these; if a database turns out to be unavailable, that is recorded in `protocol/search_strings.md` and declared as a sensitivity limitation rather than silently absorbed. Full text via Lane holdings, PMC, interlibrary loan, and author request. **All access is manual and user-driven — no credentials are handled by the tooling, and no paywall is circumvented.**
+
+### 5.2 Query blocks (Track A)
+
+```
+BLOCK 1 — animal model
+  "Models, Animal"[Mesh] OR "Disease Models, Animal"[Mesh] OR "animal model*"[tiab]
+  OR preclinical[tiab] OR "pre-clinical"[tiab]
+  OR mouse OR mice OR murine OR rat* OR canine OR dog* OR feline OR cat*
+  OR porcine OR pig* OR swine OR minipig* OR equine OR horse* OR pony
+  OR bovine OR cattle OR ovine OR sheep OR caprine OR goat
+  OR chicken OR hen* OR avian OR rabbit* OR ferret* OR "guinea pig*"
+  OR primate* OR macaque OR rhesus OR cynomolgus OR marmoset OR baboon OR chimpanzee OR ape*
+  OR zebrafish
+
+BLOCK 2 — concordance / translation
+  concordan* OR discordan* OR predictiv* OR "predictive value" OR translat*
+  OR "bench to bedside" OR extrapolat* OR replicat* OR reproducib* OR agreement
+  OR "cross-species" OR interspecies OR "species differences"
+
+BLOCK 3 — human clinical
+  "clinical trial*" OR "randomized controlled trial"[pt] OR "randomised controlled trial"
+  OR "Clinical Trials as Topic"[Mesh] OR human*[tiab] OR "phase II" OR "phase III"
+  OR "first-in-human"
+
+BLOCK 4 — meta-research filter (Track A)
+  "systematic review" OR meta-analy* OR "cross-sectional" OR "retrospective analysis"
+  OR "success rate*" OR attrition OR "failure rate*" OR "predictive value"
+  OR "positive predictive value" OR sensitivity OR specificity
+
+BLOCK 5 — arm-specific
+  Arm 2:  "safety pharmacology" OR ICH S7 OR hERG OR "QT prolongation" OR torsade*
+          OR "adverse event*" OR "adverse drug reaction*" OR "drug withdrawal"
+  Arm 3:  toxicolog* OR "repeat-dose" OR carcinogenic* OR genotoxic* OR teratogen*
+          OR hepatotoxic* OR nephrotoxic* OR "target organ toxicity" OR "no observed adverse effect"
+
+BLOCK 6 — veterinary / spontaneous (SQ7)
+  "comparative oncology" OR "naturally occurring" OR spontaneous[tiab]
+  OR "companion animal*" OR "client-owned" OR "veterinary clinical trial*"
+  OR "pet dog*" OR "pet cat*" OR "One Health"
+
+Arm 1 core   = 1 AND 2 AND 3 AND 4
+Arm 2        = 1 AND 3 AND 5(Arm2) AND (2 OR 4)
+Arm 3        = 1 AND 3 AND 5(Arm3) AND (2 OR 4)
+Veterinary   = 6 AND 3 AND (2 OR 4)      # run as its own search, not a filter on the above
+```
+
+Each query is version-controlled in `protocol/search_strings.md` with the exact string, database, run date, and hit count.
+
+### 5.3 Supplementary retrieval
+Backward + forward citation chasing, 2 generations, on all included studies and on the anchor set. Hand-search of *ALTEX*, *BMJ Open Science*, *Lab Animal*, *Nat Rev Drug Discov*, *Clin Pharmacol Ther*, *Regul Toxicol Pharmacol*, *Vet Comp Oncol*, *JVIM*. Date range 1980–present.
+
+### 5.4 Anchor set (search-sensitivity test — **unverified, not yet read**)
+If the final queries do not retrieve ≥90% of these, the queries are rewritten.
+
+*Efficacy concordance:* Hackam & Redelmeier (JAMA 2006); Perel et al. (BMJ 2007); Contopoulos-Ioannidis et al. (Science 2008); van der Worp et al. (PLoS Med 2010); Pound & Ritskes-Hoitinga (2018); Leenaars et al. (2019); Bracken (JRSM 2009); Wall & Shani (2008).
+*Quality & bias:* Sena et al. (PLoS Biol 2010); CAMARADES/Macleod series; Begley & Ellis (2012); Prinz et al. (2011); Freedman et al. (2015).
+*Safety / toxicology:* Olson et al. (2000); Monticello et al. (2017); Clark & Steger-Hartmann (2018); Bailey et al. (NHP series); Redfern/Valentin safety-pharmacology series.
+*Attrition denominators:* Hay et al. (2014); Wong, Siah & Lo (2019); Thomas et al. (BIO 2016); Cummings et al. (Alzheimer's pipeline).
+*Contested cases (both sides cited together):* Seok et al. (PNAS 2013) **with** Takao & Miyakawa (PNAS 2015); Perrin (Nature 2014, ALS); STAIR / NXY-059 SAINT I–II.
+*Veterinary / comparative:* NCI COTC programme reports; Paoloni & Khanna (Nat Rev Cancer, comparative oncology); LeBlanc et al. comparative-oncology consensus; Kol et al. (Sci Transl Med, companion animals in translation); VCOG-CTCAE and RECIST-vet method papers.
+
+---
+
+## 6. Eligibility, screening, extraction
+
+### 6.1 Concordance definitions (recoded uniformly; primary = D2)
+- **D1 — direction:** same sign of effect.
+- **D2 — direction + significance (primary):** animal significant benefit/harm → human significant benefit/harm at α = 0.05 on the pre-specified primary endpoint.
+- **D3 — magnitude:** ratio of standardized effect sizes; whether the human CI contains the animal point estimate.
+
+### 6.2 Include
+Studies reporting a quantitative animal-to-human concordance, translation, or predictive-value statistic across one or more intervention–indication pairs, in any species, any therapeutic area, any of the three arms; including regulatory-dataset analyses and veterinary comparative-oncology concordance analyses.
+
+### 6.3 Exclude
+Opinion pieces, editorials, commentaries, news, and narrative essays **containing no original data and no systematic re-analysis**; animal-only or human-only studies; in vitro/in silico-only comparisons; abstracts without extractable numerators and denominators; duplicate datasets (deduplicated to most complete report).
+
+### 6.4 Screening
+Two independent screeners (or one screener plus independent audit of a 20% random sample), Cohen's κ reported, disagreements resolved by discussion. PRISMA 2020 flow diagram with exact counts. All decisions logged as data in `data/screening/`.
+
+### 6.5 Evidence/opinion separation
+Enforced by a required field `evidence_vs_opinion ∈ {data, opinion}`. Opinion rows are stored, rendered on the website with a distinct visual treatment, and **never** enter a pooled estimate. Expert opinion lives in `docs/expert_opinion.md`.
+
+---
+
+## 7. Analysis plan
+
+### 7.1 Per-arm synthesis
+For each of the four arms separately: pooled concordance proportion (random effects, REML, Freeman–Tukey transformation), τ², I², and — as the headline — 95% **prediction intervals**. Arm 4 is additionally stratified by `readout` so it can be compared like-for-like against Arms 1–3.
+
+### 7.2 Diagnostic-test framing
+Where 2×2 data are recoverable: sensitivity, specificity, PPV, NPV, LR+, LR−, Youden's J with Wilson CIs; bivariate/HSROC meta-analysis. PPV is reported as a curve against assumed prevalence of truly effective interventions, never as a single number.
+
+### 7.3 Pre-specified stratified analyses and meta-regression — mapped to §1.2
+| Question | Analysis |
+|---|---|
+| SQ1 species | Subgroup + meta-regression on species and phylogenetic distance |
+| SQ2 area | Subgroup by 12 therapeutic areas |
+| SQ3 arm | Between-arm comparison; explicitly not pooled |
+| SQ4 endpoint | Subgroup: primary-hard vs secondary/biomarker; interaction test |
+| SQ5 quality vs biology | Meta-regression on RoB score; bias-adjusted vs raw; residual heterogeneity after adjustment interpreted as the upper bound on "irreducible" divergence |
+| SQ6 time | Meta-regression on year; pre-specified era cut-points 2000 and 2015 |
+| SQ7 veterinary | Arm 4 vs Arms 1–3, matched on `readout` and `therapeutic_area`; paired contrasts where the same indication exists in both (canine osteosarcoma vs murine xenograft; canine degenerative myelopathy vs SOD1 mouse). Reported with the power caveat in §13. |
+
+### 7.4 Bias assessment
+Funnel plots, Egger's regression, trim-and-fill, excess-significance test. Raw and bias-adjusted estimates both reported; the gap is a reported finding for SQ5.
+
+### 7.5 Deferred and demoted items
+- **Denominator problem** (animal-negative compounds rarely reach humans, so TN/FN are structurally under-observed): flagged in `docs/limitations.md`, applied as a caveat wherever specificity or NPV is reported. Not pursued as a work item unless it blocks a specific estimate — revisit at Phase 5.
+- **Falsification ceilings** (Phase II→III agreement; within-species lab-to-lab replication): retained only as **labelled descriptive context** in a sidebar, not as a comparator. The objection that this is not an apples-to-apples comparison is accepted: those rates are measured on different populations under different designs, and no formal benchmarking against them will be performed. Open for revisit if a defensible matched comparison emerges.
+
+---
+
+## 8. Risk of bias
+| Evidence type | Instrument |
+|---|---|
+| Concordance / meta-research studies (main unit) | QUADAS-2, adapted (index test = animal model) |
+| Constituent animal studies, where appraised | SYRCLE RoB + CAMARADES checklist |
+| Constituent human RCTs | Cochrane RoB 2 |
+| Veterinary clinical trials | CONSORT-adapted veterinary checklist (REFLECT statement where applicable) |
+| Regulatory datasets | Custom transparency checklist (`docs/appraisal.md`) |
+
+GRADE certainty rating per summary estimate.
+
+---
+
+## 9. Structured output for web hosting
+
+The review is built database-first: the prose report is a *view* of the database, not the source of truth. Model follows the Affinage pattern — per-entity records, every sentence resolving to one or more PMIDs, JSON exposed via a static API.
+
+### 9.1 Entity model
+
+**`Study`** — one included concordance study (Track A unit).
+```json
+{
+  "id": "STU-0001", "pmid": "…", "doi": "…", "year": 2007,
+  "design": "systematic-review | cross-sectional | regulatory-dataset | cohort",
+  "arms": ["efficacy"], "species": ["mouse","rat"], "areas": ["stroke"],
+  "n_pairs": 6, "concordance_definition_reported": "…",
+  "definition_recoverable": true,
+  "estimates": [ {"metric":"D2_concordance","value":0.50,"ci":[0.14,0.86],"n":6} ],
+  "rob": {"tool":"QUADAS-2","domains":{…},"overall":"moderate"},
+  "pair_list_machine_readable": true,
+  "evidence_vs_opinion": "data"
+}
+```
+
+**`ModelRecord`** — the browsable headline entity: species × model × indication. This is the analogue of Affinage's per-gene page.
+```json
+{
+  "id": "MOD-dog-osteosarcoma-spontaneous",
+  "species": "dog", "common_name": "domestic dog", "latin": "Canis lupus familiaris",
+  "model_type": "spontaneous-veterinary",
+  "indication": "osteosarcoma", "area": "oncology",
+  "human_counterpart": "pediatric/adult osteosarcoma",
+  "arm": "veterinary", "readouts": ["efficacy","safety"],
+  "endpoints": {"animal":["OS","DFI","RECIST-vet"],"human":["OS","EFS","RECIST 1.1"],
+                "match":"identical"},
+  "concordance": {"D2": {"value":null,"ci":null,"n_studies":0,"status":"not-yet-extracted"}},
+  "mechanism_notes": [{"claim":"…","pmids":["…"],"status":"demonstrated|hypothesized"}],
+  "translations": [{"intervention":"…","direction":"true-positive|false-positive|…","pmids":["…"]}],
+  "citations": ["…"], "last_reviewed": "2026-08-20"
+}
+```
+
+**`Pair`** — an intervention × indication × species pair, populated only where a Track A study publishes its underlying list. (Schema retained so Track B can be revived without migration.)
+
+**`Claim`** — atomic, citation-anchored statement: `{text, pmids[], entity_id, arm, evidence_vs_opinion, confidence}`. Every sentence in the rendered report is a `Claim`. Nothing renders without at least one PMID.
+
+### 9.2 Site surfaces (build order)
+1. Browse by **species** (mouse … chimpanzee) → per-species concordance summary.
+2. Browse by **disease/therapeutic area**.
+3. Browse by **arm** (efficacy / safety / toxicology).
+4. **ModelRecord** detail pages with mechanism schematics.
+5. **Study** detail pages with extracted estimates and RoB.
+6. Search; statistics dashboard (studies, PMIDs, pairs, coverage by species × area — a coverage heatmap doubles as an evidence-gap map).
+7. Static JSON API (`/api/model/{id}.json`, `/api/study/{id}.json`, bulk dump).
+8. Downloads: CSV/Parquet of all tables + BibTeX.
+
+### 9.2b Deployment — GitHub Pages
+Fully static: the generator writes HTML + JSON into `site/_build/`, published from the `gh-pages` branch (or `/docs` on `main`) via GitHub Actions on push. Constraints this imposes, designed for from the start:
+- No server-side code, no database at runtime — all search and filtering is client-side over a prebuilt index (Lunr/MiniSearch or a static JSON index).
+- The "API" is static files: `/api/model/{id}.json`, `/api/study/{id}.json`, `/api/bulk.json`. Stable URLs; entity IDs never reused.
+- `.nojekyll` at the root; all asset paths relative so the project-page base path (`/animal-model-concordance/`) works without rewriting.
+- Soft limits respected: keep the built site well under 1 GB and individual JSON payloads small; bulk dumps chunked or attached to a GitHub Release rather than committed if they grow.
+- Content is public from first push. Nothing enters `site/` that is not already publishable — no licensed full texts, no scraped publisher content, only bibliographic metadata, extracted numbers, and our own prose.
+- Data and site are versioned together; each published build tagged so a cited figure resolves to a specific commit.
+
+Rendered as an Artifact for review before the first public push.
+
+### 9.3 Repository layout
+```
+animal-model-concordance/
+├── PLAN.md
+├── protocol/   search_strings.md · prisma_flow.md · amendments.md · v0.1_archive.md
+├── data/       raw/ · screening/ · extracted/ · db/{studies,models,pairs,claims}.json · DICTIONARY.md
+├── analysis/   01_dedupe · 02_screen_stats · 03_effects · 04_meta · 05_bias · 06_metaregression
+├── figures/    SVG / Mermaid sources + rendered
+├── site/       static generator, templates, api/
+├── docs/       report.md · evidence_tables.md · appraisal.md · expert_opinion.md · limitations.md
+└── references/ BibTeX
+```
+
+---
+
+## 10. Mechanistic schematics
+Diagram only where a discordance has a documented biological explanation; every figure cites its evidence and states `demonstrated` vs `hypothesized`.
+
+Planned: (1) translational pipeline with attrition rates; (2) 2×2 framing + PPV-vs-prevalence curve; (3) species divergence in drug metabolism (CYP complement: human / mouse / dog / minipig / macaque); (4) immune divergence (TLR repertoire, neutrophil fraction, complement) underlying the sepsis debate; (5) cardiac electrophysiology divergence and hERG/QT prediction (Arm 2); (6) induced-acute-lesion vs chronic-human-disease construct mismatch; (7) **spontaneous vs induced tumour biology** — microenvironment, heterogeneity, immune competence (SQ7); (8) endpoint-translation map, animal surrogate → human biomarker → human clinical endpoint; (9) forest plots per arm and area; (10) species × area coverage heatmap.
+
+---
+
+## 11. Rules of construction
+1. Every quantitative claim carries n, estimate, interval, and PMID.
+2. Evidence and opinion are separate fields, separate files, separate rendering.
+3. No conclusions written before §7 completes. Section headings contain no claims.
+4. Contested questions cite both sides' primary papers together.
+5. Absence of data is reported as absence of data.
+6. Prose compact and numeric; no advocacy language.
+7. Nothing enters the database without a resolvable identifier (PMID/DOI/NCT/regulatory doc ID).
+
+---
+
+## 12. Phases (targets and timeline TBD)
+| Phase | Work | Gate |
+|---|---|---|
+| 0 | Finalize protocol; confirm Stanford database access; register on PROSPERO | User sign-off |
+| 1 | Scoping search; validate against anchor set §5.4; record hit counts | ≥90% anchor recall |
+| 2 | Full search (4 query families incl. veterinary), dedupe, title/abstract screen | PRISMA counts + κ |
+| 3 | Full-text screen; extraction into `data/db/` | Schema-valid records |
+| 4 | Risk-of-bias appraisal | All included studies scored |
+| 5 | Analysis §7; revisit denominator problem if blocking | Code re-runs clean |
+| 6 | Schematics §10 | Each figure cites evidence |
+| 7 | Site build §9, report, Artifact review, GitHub Pages deploy | Public build tagged and reproducible from a clean checkout |
+
+---
+
+## 13. Declared limitations
+- Track A inherits heterogeneous concordance definitions; recoding is partial (`definition_recoverable`).
+- Specificity/NPV only partially estimable (§7.5).
+- Preclinical publication bias is severe and only partly correctable.
+- Endpoint non-equivalence forces judgment calls; `endpoint_match` makes these auditable.
+- Selection into clinical trials is not random with respect to preclinical strength.
+- Species coverage will be rodent-dominated; horse, chicken, cat, and great-ape estimates will rest on small n and are reported as such, never absorbed into a headline number.
+- Veterinary trials are typically small, single-arm, and under-powered relative to human RCTs — SQ7 must not conflate "better model" with "weaker comparator."
+
+---
+
+## 14. Open questions for v0.4
+
+**Resolved in v0.3:** veterinary = Arm 4 (separate arm, with `readout` sub-dimension); hosting = GitHub Pages.
+
+1. Does the Arm 2 / Arm 3 boundary (acute functional vs cumulative structural) match your intent, or do you want Arm 2 = human adverse events and Arm 3 = animal toxicology as two sides of one pipeline? *(Carried from v0.2 — still open.)*
+2. Screening resourcing: is a second human screener available, or do we use the 20% audit variant and declare it?
+3. PROSPERO registration — proceed, and under whose name?
+4. Repository visibility: public from the start (needed for GitHub Pages on a free account), or private repo with a separate public build repo?
+5. Phase targets and timeline.
+6. Is v0.3 close enough to begin Phase 0/1 (access check + scoping search + anchor-set recall test)?
