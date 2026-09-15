@@ -620,8 +620,21 @@ manually adjudicated studies**.
 - The manual pass dropped a larger share of results than the model adjudicator did (878 of 1,647 decisions,
   53%). Whether that reflects a stricter reading of the same criteria or a different one is not measured.
 
-**L88 — Species labels in the final set are imperfect.** 879 of the 1,494 final results carry the extractor's
-`grouped-label` (the paper reported several species together and the result was not resolvable to one), and
-15 carry `human`, which is an extraction error that survived both adjudication passes — these are results
-whose animal side is named only in the surrounding text. The evidence map therefore shows a `human` column,
-which should be read as "species not correctly assigned", not as a finding.
+**L88 — Species labels in the final set are imperfect, and 395 results still have none.** The extractor
+assigned `grouped-label` to 879 of the 1,494 final results and `human` — an error that survived both
+adjudication passes — to 15 more. Most of that was an artefact of the comparison itself: labels such as
+"canine and human" name one animal and the comparator, not two animals. Amendment A7 recovers the species
+for display wherever the reported label names exactly one animal from the frozen vocabulary, which resolves
+499 of the 894 (mouse 366, dog 67, rat 23, pig-minipig 14, non-human-primate 13, zebrafish 11, other-rodent
+4, c-elegans 1).
+
+395 results remain unresolved and are shown in a *not resolved* column: their reported label is genuinely
+non-specific ("animals", "both species", "rodents", "preclinical") or names only the human side. That column
+means the species could not be pinned down, not that something was found, and those results are absent from
+every species column in the map — so a species total is a lower bound, not a count of the evidence.
+
+Two residual risks. The recovery reads the extractor's own label rather than the paper, so an extractor error
+in that field is carried through rather than corrected; and the rule is unverified against the full texts
+beyond the ophthalmology cell that prompted it. Species assignment remains the weakest field in the record
+set, and the evidence map should be read as a map of where evidence was *found and labelled*, not of where it
+exists.

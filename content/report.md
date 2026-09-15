@@ -40,10 +40,10 @@ dogs and cats throughout.
 {{heatmap}}
 
 ::: small
-{{n_unresolved}} of {{n_results}} results sit in the *not resolved* column: the paper reported
-several species together, or the species label is wrong. That column means the species could not be
-pinned down, not that something was found. The grid is sparse by nature — most disease-area and
-species combinations have never been studied this way.
+{{n_unresolved}} of {{n_results}} results sit in the *not resolved* column, because the paper named
+its animals only as "animals", "both species" or "rodents". That column means the species could not
+be pinned down, not that something was found, so every species total is a lower bound. The grid is
+sparse by nature — most disease-area and species combinations have never been studied this way.
 :::
 
 ## What the results say {#results}

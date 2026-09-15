@@ -295,3 +295,34 @@ snapshots. The corpus is the v0.3 100-study slice, selected by citations and rec
   - `t1_part1_outputs.py` merges `"|manual"` alongside `"|all"` and `"|excl"`.
   - Final set after the merge: **1,494 results in 406 studies**; 309 study-calls were adjudicated by
     `claude-sonnet-5` and 263 by the reviewing agent, covering disjoint sets of studies.
+
+## A7 — Species recovered from the reported label, for display (2026-09-15)
+
+**What was wrong.** 879 of 1,494 final results carried `species: grouped-label`, and 15 carried
+`species: human`. Inspecting `species_as_reported` on those records shows why: labels such as
+"canine and human", "dog and human" and "human and canine" name two things, so the extractor
+recorded them as grouped. But one of those two is always the comparator. Every result in this
+review compares an animal with a human; "canine and human" is a dog result, not a grouped one.
+
+The effect was not cosmetic. The evidence map's species axis was 60% "unknown", and cells that
+hold real evidence looked empty — the question "what do we have for dogs in eye disease?" returned
+one study when the corpus holds four, including a paper on RPE65 gene therapy in dog models of
+inherited retinal dystrophy whose whole subject is the dog-to-human comparison.
+
+**The rule.** Where a result's species is `grouped-label` or `human`, and `species_as_reported`
+names exactly one animal from the frozen vocabulary, the species column shows that animal. Where
+the label names several ("both species", "rodents", "animals", "preclinical") or none, it stays in
+the *not resolved* column. The rule cannot invent a species: it fires only on an unambiguous match,
+and human-only words are never animal matches.
+
+**Effect.** 499 of the 894 unresolved results resolve: mouse 366, dog 67 (45 laboratory, 22
+companion), rat 23, pig-minipig 14, non-human-primate 13, zebrafish 11, other-rodent 4,
+c-elegans 1. 395 remain unresolved and are still shown as such. `model_type` is untouched, so
+recovered dogs and cats still separate into companion and laboratory columns by the existing rule.
+
+**Scope.** Display only. The stored records keep what the extractor recorded, exactly as with the
+spelling normalisations (`guinea pig` → other-rodent, `Macaca fascicularis` → non-human-primate).
+The mapping is applied in the site builder and is reproducible from the committed data.
+
+**Found by.** A reader asking why a paper we hold in full text was not in the ophthalmology dog
+cell — the kind of check limitation L87 exists to invite.

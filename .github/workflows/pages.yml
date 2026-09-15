@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'content/**'          # the site's prose: an edit here must deploy like any other change
       - 'data/v04/**'
       - 'analysis/v04/**'
       - 'docs/limitations.md'

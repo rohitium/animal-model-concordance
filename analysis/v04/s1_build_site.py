@@ -44,6 +44,34 @@ DIR_CLASS = {"animal-corresponded": "ok", "animal-did-not-correspond": "no", "mi
 SPECIES_FIX = {"guinea pig": "other-rodent", "cynomolgus monkey": "non-human-primate",
                "Macaca fascicularis": "non-human-primate", "sheep": "sheep-goat"}
 UNRESOLVED = {"grouped-label", "human"}
+
+# Recovering species from species_as_reported (amendment A7).
+#
+# Every result in this review compares an animal with a human, so a reported label such as
+# "canine and human" names one animal and the comparator — not two animals. The extractor
+# collapsed those to "grouped-label", which put 879 results into a column meaning "species
+# unknown" and emptied cells that do hold evidence. Where the reported label names exactly one
+# animal from the frozen vocabulary, that is the species; where it names several ("both species",
+# "rodents", "animals") or none, it stays unresolved. The rule never invents a species, and the
+# stored records are unchanged: this is a display mapping, like the spelling fixes above.
+ANIMAL_WORDS = {
+    "dog": r"\b(dogs?|canine|canis)\b", "cat": r"\b(cats?|feline)\b",
+    "mouse": r"\b(mice|mouse|murine|mus musculus)\b", "rat": r"\b(rats?|rattus)\b",
+    "non-human-primate": r"\b(monkeys?|macaques?|primates?|rhesus|cynomolgus|marmoset|baboon)\b",
+    "pig-minipig": r"\b(pigs?|swine|porcine|minipigs?)\b",
+    "rabbit": r"\b(rabbits?|leporine|oryctolagus)\b",
+    "sheep-goat": r"\b(sheep|ovine|goats?|caprine)\b", "zebrafish": r"\b(zebrafish|danio)\b",
+    "drosophila": r"\b(drosophila|fruit fly|fruit flies)\b",
+    "c-elegans": r"\b(c\.? ?elegans|nematode)\b", "horse": r"\b(horses?|equine)\b",
+    "other-rodent": r"\b(guinea pigs?|hamsters?|gerbils?)\b",
+}
+
+
+def recovered_species(r):
+    """The one animal named in species_as_reported, or None if it names several or none."""
+    rep = str(r.get("species_as_reported") or "")
+    found = {k for k, pat in ANIMAL_WORDS.items() if re.search(pat, rep, re.I)}
+    return found.pop() if len(found) == 1 else None
 SPECIES_ORDER = ["mouse", "rat", "other-rodent", "rabbit", "pig-minipig", "sheep-goat",
                  "non-human-primate", "laboratory-dog", "companion-dog", "laboratory-cat",
                  "companion-cat", "horse", "zebrafish", "drosophila", "c-elegans", "other-species",
@@ -58,7 +86,9 @@ def sp_display(r):
     """Species column for display: frozen vocabulary, with unresolved labels kept visible."""
     s = r.get("species")
     if s in UNRESOLVED:
-        return "not resolved"
+        s = recovered_species(r)
+        if not s:
+            return "not resolved"
     return species_column(SPECIES_FIX.get(s, s), r.get("model_type"))
 
 
