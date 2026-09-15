@@ -38,6 +38,7 @@ data/v04/**
 !data/v04/part2/
 !data/v04/part2/pairs.json
 !data/v04/part2/pair_attributes.json
+!data/v04/part2/pair_overrides.json
 !data/v04/part2/quality.json
 !data/v04/part2/summary.json
 !data/v04/part2/summary.md

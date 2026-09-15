@@ -1,0 +1,155 @@
+{
+  "_README": [
+    "Corrections to pair ingredient names and treatment types, applied at build time (amendment A9).",
+    "The ingredient string came from an automated name-extraction step that sometimes captured the",
+    "wrong entity: an allergen instead of the diet being tested, an analyte instead of the fluid, or a",
+    "fragment of a label string. Every correction below is taken from that pair's own veterinary_basis",
+    "text, which describes what was actually studied. 'drop' removes a pair whose record does not",
+    "support a drug-and-indication comparison at all.",
+    "Fields: name (corrected ingredient), type (corrected treatment type), drop (true to remove),",
+    "why (the evidence for the correction)."
+  ],
+
+  "AMMONIA|same-molecule|portosystemic shunt": {
+    "drop": true,
+    "why": "The veterinary record is a diagnostic study evaluating fasting ammonia as a biomarker to confirm surgical shunt closure. Ammonia is the analyte measured, not a treatment given, so there is no intervention to compare across species."
+  },
+  "DRUG PRESCRIPTION PATTERN|same-molecule|atopic dermatitis": {
+    "drop": true,
+    "why": "Not an entity: the name is a fragment from a prescribing-pattern paper, while the basis text describes the whey-enriched therapeutic diet trial already captured as WHEY|atopic dermatitis. Duplicate evidence under a meaningless name."
+  },
+  "NSAID|same-molecule|osteosarcoma": {
+    "drop": true,
+    "why": "The record is a retrospective cohort comparing high- versus low-intensity perioperative analgesia, not an NSAID-specific comparison, and NSAID is a drug class rather than an agent. The pair does not test what its name claims."
+  },
+  "ACE INHIBITOR|same-molecule|hyperthyroidism": {
+    "drop": true,
+    "why": "The record is about methimazole for hyperthyroidism; an ACE inhibitor is mentioned only as an adjunct for concurrent hypertension. Drug class, and the wrong indication for it."
+  },
+
+  "PARTS A B ADRABETADEX|same-molecule|niemann-pick disease type c": {
+    "name": "ADRABETADEX (2-HYDROXYPROPYL-BETA-CYCLODEXTRIN)",
+    "type": "small-molecule-drug",
+    "why": "Name is a mangled label string. The basis describes intrathecal HPBCD in NPC1 cats; adrabetadex is HPBCD."
+  },
+  "CHICKEN|same-molecule|food allergy in dogs": {
+    "name": "HYDROLYSED POULTRY FEATHER DIET",
+    "type": "dietary-supplement",
+    "why": "Chicken is the allergen the dogs reacted to, not the intervention. The trial tested a hydrolysed poultry feather diet against chicken challenge."
+  },
+  "THYROID|same-molecule|hyperthyroidism": {
+    "name": "RECOMBINANT HUMAN TSH (THYROTROPIN ALFA)",
+    "type": "biologic",
+    "why": "The trial gave recombinant human TSH to hyperthyroid cats to test thyroidal radioiodine uptake. 'Thyroid' is the organ, not the agent."
+  },
+  "THYROID|same-molecule|thyroid carcinoma": {
+    "name": "RECOMBINANT HUMAN TSH (THYROTROPIN ALFA)",
+    "type": "biologic",
+    "why": "Same agent as above: a crossover pharmacodynamic trial of rhTSH to increase tumour radioiodine uptake."
+  },
+  "HL036|same-molecule|keratoconjunctivitis sicca": {
+    "name": "TANFANERCEPT (HL036)",
+    "type": "biologic",
+    "why": "HL036 is tanfanercept, a topical TNF-receptor fragment protein, tested in dogs with naturally occurring KCS."
+  },
+  "M032|same-molecule|glioma": {
+    "name": "M032 ONCOLYTIC HERPES SIMPLEX VIRUS",
+    "type": "cell-or-gene-therapy",
+    "why": "M032 is a genetically engineered oncolytic HSV-1 expressing IL-12, given intratumourally in canine glioma."
+  },
+  "RAAV2TYF GRK1 HRPGRCO|same-molecule|retinitis pigmentosa": {
+    "name": "rAAV2tYF-GRK1-hRPGRco GENE THERAPY",
+    "type": "cell-or-gene-therapy",
+    "why": "An AAV vector carrying codon-optimised human RPGR, dose-escalated in the XLPRA2 canine model."
+  },
+  "RED BLOOD CELLS|same-molecule|autoimmune hemolytic anemia": {
+    "name": "RED BLOOD CELL TRANSFUSION",
+    "type": "procedure-or-regimen",
+    "why": "The controlled canine AIHA study compared fresh versus stored RBC transfusion. Transfusion is the intervention."
+  },
+  "LACTATE|same-molecule|dehydration": {
+    "name": "LACTATE-BUFFERED INTRAVENOUS FLUID",
+    "type": "procedure-or-regimen",
+    "why": "The RCT compared acetate- against lactate-buffered IV fluids in dehydrated cats; the intervention is the fluid, not the anion as an analyte."
+  },
+  "ACETATE|same-molecule|dehydration": {
+    "name": "ACETATE-BUFFERED INTRAVENOUS FLUID",
+    "type": "procedure-or-regimen",
+    "why": "The other arm of the same fluid trial; typed as a mineral, but the intervention is fluid therapy."
+  },
+  "ENTEROCOCCUS FAECALIS|same-molecule|atopic dermatitis": {
+    "name": "ENTEROCOCCUS FAECALIS FK-23 (PROBIOTIC)",
+    "type": "dietary-supplement",
+    "why": "A probiotic preparation given orally in a placebo-controlled trial in atopic dogs."
+  },
+  "ENTEROCOCCUS FAECIUM|same-molecule|atopic dermatitis": {
+    "name": "ENTEROCOCCUS FAECIUM SF68 (PROBIOTIC)",
+    "type": "dietary-supplement",
+    "why": "A probiotic supplement, not a non-treatment."
+  },
+  "ENTEROCOCCUS FAECIUM|same-molecule|diarrhea": {
+    "name": "ENTEROCOCCUS FAECIUM SF68 (PROBIOTIC)",
+    "type": "dietary-supplement",
+    "why": "The E. faecium-containing probiotic paste tested in a 148-dog RCT for diarrhoea duration."
+  },
+  "ETHYL|same-molecule|superficial bacterial pyoderma": {
+    "name": "ETHYL ALCOHOL 70% (TOPICAL)",
+    "type": "small-molecule-drug",
+    "why": "Truncated name. The trial applied topical 70% ethyl alcohol to dogs with pyoderma."
+  },
+  "ETHYL|same-molecule|head and neck cancer": {
+    "name": "ETHANOL (INTRATUMOURAL ABLATION)",
+    "type": "procedure-or-regimen",
+    "why": "Truncated name. The pilot injected ethanol into feline head and neck tumours; the intervention is ablation."
+  },
+  "BORIC|same-molecule|otitis externa": {
+    "name": "BORIC ACID-ALCOHOL SOLUTION",
+    "type": "small-molecule-drug",
+    "why": "Truncated name; the trial used a boric acid-alcohol ear solution."
+  },
+  "BUTYL|same-molecule|chylothorax": {
+    "name": "N-BUTYL CYANOACRYLATE (EMBOLIC)",
+    "type": "device-or-material",
+    "why": "Truncated name. Used as an embolic adhesive for lymphatic embolization, which is a material, not a systemic drug."
+  },
+  "CORN|same-molecule|hypoglycemia": {
+    "name": "CORN SYRUP (ORAL GLUCOSE)",
+    "type": "dietary-supplement",
+    "why": "The trial applied mucosal corn syrup to raise blood glucose."
+  },
+  "CORN|same-molecule|osteoarthritis": {
+    "name": "CORN OIL",
+    "type": "dietary-supplement",
+    "why": "Corn oil was one of two oil arms in a canine osteoarthritis study."
+  },
+  "WHEY|same-molecule|atopic dermatitis": {
+    "name": "WHEY-ENRICHED THERAPEUTIC DIET",
+    "type": "dietary-supplement",
+    "why": "The intervention is a whey-enriched food, not whey as an isolated compound."
+  },
+  "I 131|same-molecule|hyperthyroidism": {
+    "name": "RADIOIODINE (IODINE-131)",
+    "type": "small-molecule-drug",
+    "why": "Name reads as a fragment; the agent is therapeutic radioiodine."
+  },
+  "PRGF|same-molecule|patellar desmopathy": {
+    "name": "PLASMA RICH IN GROWTH FACTORS (PRGF)",
+    "type": "procedure-or-regimen",
+    "why": "Abbreviation expanded; an autologous blood-derived preparation injected locally."
+  },
+  "CHOP|same-molecule|lymphoma": {
+    "name": "CHOP CHEMOTHERAPY PROTOCOL",
+    "type": "procedure-or-regimen",
+    "why": "CHOP is a multi-drug regimen, not a single agent; the name now says so."
+  },
+  "OZONE|same-molecule|bacterial colonization": {
+    "name": "OZONE (LIPOSOMAL, TOPICAL)",
+    "type": "procedure-or-regimen",
+    "why": "Clarifies the formulation actually tested."
+  },
+  "OZONE|same-molecule|otitis externa": {
+    "name": "OZONE (TOPICAL)",
+    "type": "procedure-or-regimen",
+    "why": "Clarifies the formulation actually tested."
+  }
+}
