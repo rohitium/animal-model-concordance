@@ -65,13 +65,30 @@ ANIMAL_WORDS = {
     "c-elegans": r"\b(c\.? ?elegans|nematode)\b", "horse": r"\b(horses?|equine)\b",
     "other-rodent": r"\b(guinea pigs?|hamsters?|gerbils?)\b",
 }
+ANIMAL_WORDS["mouse"] += r"|\bGEMMs?\b"
+
+
+def _one_animal(text):
+    found = {k for k, pat in ANIMAL_WORDS.items() if re.search(pat, text or "", re.I)}
+    return found.pop() if len(found) == 1 else None
 
 
 def recovered_species(r):
-    """The one animal named in species_as_reported, or None if it names several or none."""
-    rep = str(r.get("species_as_reported") or "")
-    found = {k for k, pat in ANIMAL_WORDS.items() if re.search(pat, rep, re.I)}
-    return found.pop() if len(found) == 1 else None
+    """The species this result is about, or None if it cannot be pinned down.
+
+    Sources in order of authority (amendments A7, A8): the extractor's own species_as_reported
+    label first; then, only if that is non-specific, the study title or the result's own statement
+    and quote. Where both of those fire they agreed in 74 of 74 checked cases. Any source naming
+    more than one animal resolves nothing, so the rule cannot invent a species.
+    """
+    s = _one_animal(str(r.get("species_as_reported") or ""))
+    if s:
+        return s
+    from_title = _one_animal(r.get("title") or "")
+    from_text = _one_animal((r.get("statement") or "") + " " + (r.get("quote") or ""))
+    if from_title and from_text:
+        return from_title if from_title == from_text else None
+    return from_title or from_text
 SPECIES_ORDER = ["mouse", "rat", "other-rodent", "rabbit", "pig-minipig", "sheep-goat",
                  "non-human-primate", "laboratory-dog", "companion-dog", "laboratory-cat",
                  "companion-cat", "horse", "zebrafish", "drosophila", "c-elegans", "other-species",
@@ -218,6 +235,16 @@ th.s.desc::after{border-top:4px solid var(--accent)}
 td .stmt{font-family:var(--serif);font-size:15px;line-height:1.45;display:block;max-width:60ch}
 td .src{color:var(--dim);font-size:12.5px}
 .empty-state{padding:26px;text-align:center;color:var(--dim);font-family:var(--sans);font-size:14px}
+tr.row{cursor:pointer}
+tr.row.open{background:var(--accent-soft)}
+tr.det>td{background:#fafbfc;padding:0}
+.pd{padding:14px 18px;max-width:82ch}
+.pd h4{margin:.9em 0 .2em;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--accent);font-family:var(--sans)}
+.pd h4:first-child{margin-top:0}
+.pd p{margin:.25em 0;font-family:var(--serif);font-size:15px;line-height:1.5;max-width:76ch}
+.pd p.src{font-family:var(--sans);font-size:13px;color:var(--dim)}
+.hint{font-family:var(--sans);font-size:13.5px;color:var(--dim);margin:0 0 4px}
 
 footer{border-top:1px solid var(--line);margin-top:60px;padding:22px;color:var(--faint);
   font-family:var(--sans);font-size:13px}
@@ -322,7 +349,8 @@ window.initTable = function (cfg) {
     }
     tbody.innerHTML = rows.length
       ? rows.map(cfg.row).join('')
-      : '<tr><td class="empty-state" colspan="' + cfg.cols + '">Nothing matches those filters.</td></tr>';
+      : '<tr><td class="empty-state" colspan="' + cfg.cols + '">'
+        + (root.dataset.empty || 'Nothing matches those filters.') + '</td></tr>';
     count.textContent = rows.length === data.length
       ? data.length.toLocaleString() + ' ' + cfg.noun
       : rows.length.toLocaleString() + ' of ' + data.length.toLocaleString() + ' ' + cfg.noun;
@@ -331,6 +359,19 @@ window.initTable = function (cfg) {
     selects.forEach(function (sel) { if (sel.value) p.set(sel.dataset.key, sel.value); });
     history.replaceState(null, '', p.toString() ? '?' + p : location.pathname);
   }
+
+  // Rows that carry an evidence panel open on click. The panel is a sibling row emitted by the
+  // row renderer, so filtering and sorting move it with its row.
+  tbody.addEventListener('click', function (ev) {
+    if (ev.target.closest('a')) return;
+    var tr = ev.target.closest('tr.row');
+    if (!tr) return;
+    var det = tr.nextElementSibling;
+    if (det && det.classList.contains('det')) {
+      det.hidden = !det.hidden;
+      tr.classList.toggle('open', !det.hidden);
+    }
+  });
 
   var timer;
   search.addEventListener('input', function () {
@@ -537,6 +578,32 @@ def render(src):
     return "\n".join(out), sections
 
 
+def load_artifacts():
+    """The wording inside the generated artifacts, from content/artifacts.md.
+
+    Sections are "## name"; within a section each line is "key :: text". Missing keys fall back to
+    the caller's default, so an edit that removes a line degrades to the built-in wording rather
+    than to a blank.
+    """
+    art, section = {}, None
+    path = os.path.join(CONTENT, "artifacts.md")
+    if not os.path.exists(path):
+        return art
+    for line in open(path):
+        s = line.strip()
+        if s.startswith("## "):
+            section = s[3:].strip(); art[section] = {}
+        elif section and "::" in s and not s.startswith("#"):
+            k, _, v = s.partition("::")
+            art[section][k.strip()] = v.strip()
+    return art
+
+
+ART = {}
+def A(section, key, default=""):
+    return ART.get(section, {}).get(key, default)
+
+
 def compose(name, scalars, blocks):
     """Read a content file, fill in its tokens, and render it."""
     src = open(os.path.join(CONTENT, name)).read()
@@ -563,8 +630,12 @@ def compose(name, scalars, blocks):
     return "\n".join(html_out), sections, title
 
 
+def dir_label(d):
+    return A("directions", d, DIR_LABEL.get(d, d or "—"))
+
+
 def dirtag(d):
-    return f'<span class="tag {DIR_CLASS.get(d, "")}">{e(DIR_LABEL.get(d, d or "—"))}</span>'
+    return f'<span class="tag {DIR_CLASS.get(d, "")}">{e(dir_label(d))}</span>'
 
 
 def figures_block(pairs):
@@ -591,9 +662,10 @@ def heatmap(fin):
     rowtot = {a: len({p for (aa, _), g in grid.items() if aa == a for p in g["s"]}) for a in areas}
     coltot = {c: len({p for (_, cc), g in grid.items() if cc == c for p in g["s"]}) for c in cols}
 
-    h = ['<div class="hmwrap"><table class="hm"><thead><tr><th class="rowh">disease area</th>']
+    h = ['<div class="hmwrap"><table class="hm"><thead><tr><th class="rowh">'
+         f'{e(A("heatmap", "row_header", "disease area"))}</th>']
     h += [f"<th>{e(c)}</th>" for c in cols]
-    h.append('<th class="tot">all</th></tr></thead><tbody>')
+    h.append(f'<th class="tot">{e(A("heatmap", "total", "all"))}</th></tr></thead><tbody>')
     for a in areas:
         h.append(f'<tr><th class="rowh">{e(a)}</th>')
         for c in cols:
@@ -603,7 +675,10 @@ def heatmap(fin):
             n = len(g["s"])
             bg, fg = ramp((n / mx) ** 0.5)
             lv = min(g["lv"])
-            ttl = f"{a} · {c}: {n} studies, highest evidence level {lv}"
+            ttl = (A("heatmap", "cell_title", "{{area}} · {{species}}: {{n}} studies, highest "
+                                              "evidence level {{level}}")
+                   .replace("{{area}}", a).replace("{{species}}", c)
+                   .replace("{{n}}", str(n)).replace("{{level}}", lv))
             h.append(f'<td><a href="results.html?ar={e(a)}&amp;sp={e(c)}" '
                      f'style="background:{bg};color:{fg}" title="{e(ttl)}">{n}<sup>{lv}</sup></a></td>')
         h.append(f'<td class="tot"><a href="results.html?ar={e(a)}">{rowtot[a]}</a></td></tr>')
@@ -612,19 +687,24 @@ def heatmap(fin):
              + f'<td class="tot">{len({r["pmid"] for r in fin})}</td></tr>')
     h.append("</tbody></table></div>")
     steps = "".join(f'<i style="background:{ramp(i / 5)[0]}"></i>' for i in range(6))
-    h.append(f'<div class="legend"><span>fewer studies</span><span class="ramp">{steps}</span>'
-             f"<span>more ({mx} at most)</span><span>· superscript = highest evidence level in the "
-             f"cell · click a cell to see those results</span></div>")
+    high = A("heatmap", "legend_high", "more ({{max}} at most)").replace("{{max}}", str(mx))
+    h.append(f'<div class="legend"><span>{e(A("heatmap", "legend_low", "fewer studies"))}</span>'
+             f'<span class="ramp">{steps}</span><span>{e(high)}</span>'
+             f'<span>· {e(A("heatmap", "legend_note", "superscript = highest evidence level in the "
+                            "cell · click a cell to see those results"))}</span></div>')
     return "\n".join(h)
 
 
-def browser(tid, data_id, rows_json, columns, filters, noun, search_keys, row_js):
+def browser(tid, data_id, rows_json, columns, filters, noun, search_keys, row_js,
+            placeholder="", empty="", reset="Reset"):
     """A searchable, sortable table. Rows render client-side from JSON embedded in the page."""
-    ctl = [f'<div id="{tid}"><div class="controls">',
-           f'<input type="search" placeholder="Search {noun}…" aria-label="Search {noun}">']
+    ph = placeholder or f"Search {noun}…"
+    ctl = [f'<div id="{tid}" data-empty="{e(empty or "Nothing matches those filters.")}">'
+           '<div class="controls">',
+           f'<input type="search" placeholder="{e(ph)}" aria-label="{e(ph)}">']
     for key, label in filters:
-        ctl.append(f'<select data-key="{key}" aria-label="{label}"><option value="">{label}: all</option></select>')
-    ctl.append('<button class="reset" type="button">Reset</button><span class="count"></span></div>')
+        ctl.append(f'<select data-key="{key}" aria-label="{e(label)}"><option value="">{e(label)}: all</option></select>')
+    ctl.append(f'<button class="reset" type="button">{e(reset)}</button><span class="count"></span></div>')
     ctl.append('<div class="scroll"><table><thead><tr>')
     for c in columns:
         cls = "s" + (" num" if c.get("num") else "")
@@ -640,6 +720,8 @@ noun:"{noun}",searchKeys:{json.dumps(search_keys)},row:{row_js}}});}});</script>
 
 
 def main():
+    global ART
+    ART = load_artifacts()
     fin = [r for r in load("part1/final_results.json") if r["status"] == "final"]
     studies = collections.defaultdict(list)
     for r in fin:
@@ -669,6 +751,19 @@ def main():
     attrs = load("part2/pair_attributes.json")
     classified = {k: v for k, v in pairs.items()
                   if (v.get("judgement") or {}).get("pair") in ("concordant", "discordant", "mixed", "indeterminate")}
+    # Amendment A9: name and type corrections, each justified in the overrides file from the
+    # pair's own veterinary_basis; four pairs are dropped as not drug-and-indication comparisons.
+    overrides = {k: v for k, v in load("part2/pair_overrides.json").items() if not k.startswith("_")}
+    for key, ov in overrides.items():
+        if key not in classified:
+            continue
+        if ov.get("drop"):
+            del classified[key]
+        else:
+            if ov.get("name"):
+                classified[key] = {**classified[key], "ingredient": ov["name"]}
+            if ov.get("type"):
+                attrs[key] = {**attrs.get(key, {}), "type": ov["type"]}
 
     os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
     open(os.path.join(OUT, "assets", "site.css"), "w").write(CSS)
@@ -684,17 +779,26 @@ def main():
                "n_pairs": f"{len(classified):,}", "n_single_reviewer": f"{n_single:,}",
                "n_extracted": f"{n_extracted:,}", "n_extraction_studies": f"{n_extraction_studies:,}",
                "n_eligible": f"{n_eligible:,}",
-               "n_limitations": f"{n_limits:,}", "built_date": today()}
+               "n_limitations": f"{n_limits:,}", "built_date": today(),
+               # Results sharing one quote are the same finding split across rows (one per gene,
+               # per cell type, per tissue). Counting distinct quotes says how many findings there
+               # actually are, so the prose need not imply that every row is a separate one.
+               "n_distinct_findings": f"{len({(r['pmid'], (r.get('quote') or '')[:120]) for r in fin}):,}"}
 
     # ---------------- blocks the writer cannot type by hand ----------------
-    lt = ['<div class="scroll"><table><caption>Results by evidence level, and how they came out.'
-          "</caption><thead><tr><th>Evidence level</th><th class='num'>studies</th>"
-          "<th class='num'>results</th><th class='num'>corresponded</th><th class='num'>did not</th>"
-          "<th class='num'>mixed</th></tr></thead><tbody>"]
+    lt = [f'<div class="scroll"><table><caption>'
+          f'{e(A("level_table", "caption", "Results by evidence level, and how they came out."))}'
+          f'</caption><thead><tr><th>{e(A("level_table", "level", "Evidence level"))}</th>'
+          f'<th class="num">{e(A("level_table", "studies", "studies"))}</th>'
+          f'<th class="num">{e(A("level_table", "results", "results"))}</th>'
+          f'<th class="num">{e(A("level_table", "corresponded", "corresponded"))}</th>'
+          f'<th class="num">{e(A("level_table", "did_not", "did not"))}</th>'
+          f'<th class="num">{e(A("level_table", "mixed", "mixed"))}</th></tr></thead><tbody>']
     for key, letter, label in LEVELS:
         rs = [r for r in fin if r["level"] == key]
         c = lvl_dir[key]
-        lt.append(f"<tr><td><strong>{letter}</strong> — {label}</td>"
+        label = A("level_table", f"label_{letter.lower()}", label)
+        lt.append(f"<tr><td><strong>{letter}</strong> — {e(label)}</td>"
                   f"<td class='num'>{len({r['pmid'] for r in rs})}</td><td class='num'>{len(rs):,}</td>"
                   f"<td class='num'>{c['animal-corresponded']:,}</td>"
                   f"<td class='num'>{c['animal-did-not-correspond']}</td>"
@@ -703,10 +807,11 @@ def main():
 
     blocks = {
         "figures": figures_block([
-            (f"{len(fin):,}", "results kept after checking"), (f"{n_stud}", "studies"),
-            (f"{by_level['A-outcome-concordance']}", "level A · intervention outcomes"),
-            (f"{by_level['B-toxicity-safety-concordance']}", "level B · toxicity and safety"),
-            (f"{by_level['C-biological-similarity']}", "level C · disease biology")]),
+            (f"{len(fin):,}", A("figures", "n_results", "results kept after checking")),
+            (f"{n_stud}", A("figures", "n_studies", "studies")),
+            (f"{by_level['A-outcome-concordance']}", A("figures", "n_level_a", "level A · intervention outcomes")),
+            (f"{by_level['B-toxicity-safety-concordance']}", A("figures", "n_level_b", "level B · toxicity and safety")),
+            (f"{by_level['C-biological-similarity']}", A("figures", "n_level_c", "level C · disease biology"))]),
         "level_table": "\n".join(lt),
         "heatmap": heatmap(fin),
         "pairs_strata": report_md(os.path.join(V04, "part2", "summary_v2.md")),
@@ -726,7 +831,7 @@ def main():
         rows.append({"st": (r["statement"] or "").replace("*", ""), "ti": (r.get("title") or "")[:140],
                      "pm": r["pmid"], "y": r.get("year") or 0, "lv": (r["level"] or "?")[:1],
                      "sp": sp_display(r), "ar": area_display(r),
-                     "dr": DIR_LABEL.get(r.get("direction"), "—"),
+                     "dr": dir_label(r.get("direction")),
                      "dc": DIR_CLASS.get(r.get("direction"), ""), "v": val,
                      "vn": r["value"] if isinstance(r.get("value"), (int, float)) else None})
     row_js = ("""function(r){return '<tr><td><span class="stmt">'+esc(r.st)+'</span></td>'
@@ -734,14 +839,23 @@ def main():
 +'<td><span class="tag '+r.dc+'">'+r.dr+'</span></td>'
 +'<td class="num">'+esc(r.v||'')+'</td>'
 +'<td><a href="study/'+encodeURIComponent(r.pm)+'.html">'+esc(r.ti)+'</a><br><span class="src">'+(r.y||'')+'</span></td></tr>';}""")
-    cols = [{"key": "st", "label": "Finding"}, {"key": "lv", "label": "Level"},
-            {"key": "sp", "label": "Species"}, {"key": "ar", "label": "Disease area"},
-            {"key": "dr", "label": "Direction"}, {"key": "vn", "label": "Value", "num": True},
-            {"key": "ti", "label": "Study"}]
+    cols = [{"key": "st", "label": A("results_table", "col_st", "Finding")},
+            {"key": "lv", "label": A("results_table", "col_lv", "Level")},
+            {"key": "sp", "label": A("results_table", "col_sp", "Species")},
+            {"key": "ar", "label": A("results_table", "col_ar", "Disease area")},
+            {"key": "dr", "label": A("results_table", "col_dr", "Direction")},
+            {"key": "vn", "label": A("results_table", "col_vn", "Value"), "num": True},
+            {"key": "ti", "label": A("results_table", "col_ti", "Study")}]
     body, _, title = compose("results.md", scalars, {
         "results_table": browser("results", "resultdata", json.dumps(rows, separators=(",", ":")), cols,
-                                 [("lv", "Level"), ("sp", "Species"), ("ar", "Disease area"),
-                                  ("dr", "Direction")], "results", ["st", "ti", "sp", "ar"], row_js)})
+                                 [("lv", A("results_table", "filter_lv", "Level")),
+                                  ("sp", A("results_table", "filter_sp", "Species")),
+                                  ("ar", A("results_table", "filter_ar", "Disease area")),
+                                  ("dr", A("results_table", "filter_dr", "Direction"))],
+                                 A("results_table", "noun", "results"), ["st", "ti", "sp", "ar"], row_js,
+                                 placeholder=A("results_table", "placeholder", ""),
+                                 empty=A("results_table", "empty", ""),
+                                 reset=A("results_table", "reset", "Reset"))})
     page("results.html", title or "Results", body)
 
     # ---------------- pairs browser ----------------
@@ -750,22 +864,71 @@ def main():
     for k, v in classified.items():
         j, a = v["judgement"], attrs.get(k, {})
         sp = v.get("species")
+        # Provenance for the verdict: the veterinary studies read, and the human studies and US
+        # labels cited. PMIDs link to PubMed; label keys resolve through this pair's own label set
+        # to DailyMed. A few citations arrive as "PMID 12345678", so digits are taken where present.
+        labels = v.get("labels") or {}
+        cites = []
+        for c in (j.get("human_citations") or []):
+            c = str(c).strip()
+            digits = re.sub(r"\D", "", c)
+            if re.fullmatch(r"L\d+", c) and c in labels:
+                lab = labels[c]
+                cites.append({"k": "label", "t": f"{lab.get('brand') or c} ({lab.get('application') or 'US label'})",
+                              "u": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={lab.get('set_id')}"})
+            elif len(digits) >= 6:
+                cites.append({"k": "pmid", "t": digits, "u": f"https://pubmed.ncbi.nlm.nih.gov/{digits}/"})
+        vrecs = [{"t": rec.split(":", 1)[1], "u": f"https://pubmed.ncbi.nlm.nih.gov/{rec.split(':', 1)[1]}/"}
+                 for rec in (v.get("records") or []) if rec.startswith("PMID:")]
         prow.append({"ag": v.get("ingredient") or "", "sp": ", ".join(sp) if isinstance(sp, list) else str(sp or ""),
                      "ind": v.get("veterinary_indication") or "", "vd": j["pair"],
                      "vc": vclass.get(j["pair"], ""), "vet": j.get("veterinary") or "",
-                     "hu": j.get("human") or "", "ty": a.get("type") or "", "ti": a.get("timing") or ""})
-    prow.sort(key=lambda r: ({"concordant": 0, "discordant": 1, "mixed": 2, "indeterminate": 3}[r["vd"]], r["ag"]))
-    prow_js = ("""function(r){return '<tr><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'</td>'
+                     "hu": j.get("human") or "", "ty": a.get("type") or "", "ti": a.get("timing") or "",
+                     "vb": j.get("veterinary_basis") or "", "hb": j.get("human_basis") or "",
+                     "cv": j.get("caveats") or "", "tl": j.get("human_top_level") or "",
+                     "vr": vrecs, "hc": cites})
+    prow.sort(key=lambda r: (r["ag"].lower(), r["ind"].lower()))
+    L = {k: A("pairs_table", k, d) for k, d in (
+        ("detail_vet", "What the veterinary evidence showed"),
+        ("detail_human", "What the human evidence showed"),
+        ("detail_caveats", "Caveats"),
+        ("detail_vet_records", "Veterinary studies behind this verdict"),
+        ("detail_human_records", "Human evidence cited"),
+        ("detail_toplevel", "Strongest human evidence found"),
+        ("detail_none", "No human evidence was retrieved for this drug and indication."))}
+    prow_js = ("""function(r){
+var link=function(x){return '<a href="'+x.u+'">'+esc(x.t)+'</a>';};
+var L=""" + json.dumps(L) + """;
+var det='<div class="pd"><h4>'+L.detail_vet+'</h4><p>'+esc(r.vb)+'</p>'
++(r.vr.length?'<p class="src">'+L.detail_vet_records+': '+r.vr.map(link).join(', ')+'</p>':'')
++'<h4>'+L.detail_human+'</h4><p>'+esc(r.hb)+'</p>'
++(r.hc.length?'<p class="src">'+L.detail_human_records+': '+r.hc.map(link).join(', ')+'</p>'
+  :'<p class="src">'+L.detail_none+'</p>')
++(r.tl?'<p class="src">'+L.detail_toplevel+': '+esc(r.tl)+'</p>':'')
++(r.cv?'<h4>'+L.detail_caveats+'</h4><p>'+esc(r.cv)+'</p>':'')+'</div>';
+return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'</td>'
 +'<td>'+esc(r.ind)+'</td><td><span class="tag '+r.vc+'">'+r.vd+'</span></td>'
-+'<td>'+esc(r.vet)+'</td><td>'+esc(r.hu)+'</td><td>'+esc(r.ty)+'</td><td>'+esc(r.ti)+'</td></tr>';}""")
-    pcols = [{"key": "ag", "label": "Agent"}, {"key": "sp", "label": "Species"},
-             {"key": "ind", "label": "Veterinary indication"}, {"key": "vd", "label": "Verdict"},
-             {"key": "vet", "label": "Veterinary"}, {"key": "hu", "label": "Human"},
-             {"key": "ty", "label": "Type"}, {"key": "ti", "label": "Timing"}]
++'<td>'+esc(r.vet)+'</td><td>'+esc(r.hu)+'</td><td>'+esc(r.ty)+'</td><td>'+esc(r.ti)+'</td></tr>'
++'<tr class="det" hidden><td colspan="8">'+det+'</td></tr>';}""")
+    pcols = [{"key": "ag", "label": A("pairs_table", "col_ag", "Drug")},
+             {"key": "sp", "label": A("pairs_table", "col_sp", "Species")},
+             {"key": "ind", "label": A("pairs_table", "col_ind", "Veterinary indication")},
+             {"key": "vd", "label": A("pairs_table", "col_vd", "Verdict")},
+             {"key": "vet", "label": A("pairs_table", "col_vet", "Veterinary")},
+             {"key": "hu", "label": A("pairs_table", "col_hu", "Human")},
+             {"key": "ty", "label": A("pairs_table", "col_ty", "Type")},
+             {"key": "ti", "label": A("pairs_table", "col_ti", "Timing")}]
+    hint = A("pairs_table", "hint", "")
     body, _, title = compose("pairs.md", scalars, {
-        "pairs_table": browser("pairs", "pairdata", json.dumps(prow, separators=(",", ":")), pcols,
-                               [("vd", "Verdict"), ("sp", "Species"), ("ty", "Type"), ("ti", "Timing")],
-                               "pairs", ["ag", "ind", "vet", "hu"], prow_js)})
+        "pairs_table": (f'<p class="hint">{e(hint)}</p>' if hint else "") +
+                       browser("pairs", "pairdata", json.dumps(prow, separators=(",", ":")), pcols,
+                               [("vd", A("pairs_table", "filter_vd", "Verdict")),
+                                ("sp", A("pairs_table", "filter_sp", "Species")),
+                                ("ty", A("pairs_table", "filter_ty", "Type")),
+                                ("ti", A("pairs_table", "filter_ti", "Timing"))],
+                               A("pairs_table", "noun", "pairs"), ["ag", "ind", "vet", "hu", "vb", "hb"],
+                               prow_js, placeholder=A("pairs_table", "placeholder", ""),
+                               empty=A("pairs_table", "empty", ""), reset=A("pairs_table", "reset", "Reset"))})
     page("pairs.html", title or "Dog and cat drug pairs", body)
 
     # ---------------- study pages ----------------

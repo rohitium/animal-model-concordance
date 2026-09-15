@@ -5,7 +5,7 @@ Systematic review
 # Brief survey of animal-to-human concordance in the biomedical literature
 
 ::: lede
-We compared findings in live non-human animals with corresponding findings in humans, and recorded what they found.
+We reviewed studies that reported direct comparisons between live non-human animals and humans, then recorded what they found.
 :::
 
 {{figures}}
@@ -14,6 +14,10 @@ We compared findings in live non-human animals with corresponding findings in hu
 
 Across every result we kept, the animal finding matched the human finding **{{n_corresponded}}**
 times, failed to match **{{n_not_corresponded}}** times, and was mixed **{{n_mixed}}** times.
+
+Those {{n_results}} results represent about **{{n_distinct_findings}} distinct findings**: where a
+paper reports one comparison gene by gene or tissue by tissue, each row quotes the same sentence, so
+rows are not independent evidence.
 
 {{level_table}}
 
@@ -39,7 +43,7 @@ dogs and cats throughout.
 
 {{heatmap}}
 
-::: small
+::: note Note
 {{n_unresolved}} of {{n_results}} results sit in the *not resolved* column, because the paper named
 its animals only as "animals", "both species" or "rodents". That column means the species could not
 be pinned down, not that something was found, so every species total is a lower bound. The grid is
@@ -54,11 +58,10 @@ page number the value came from.
 
 [**Browse all {{n_results}} results →**](results.html)
 
-## Dog and cat drug pairs {#pairs}
+## Companion animal vs Human drug pairs {#pairs}
 
 For agents used both in companion animals with naturally occurring disease and in people: does the
-veterinary evidence point the same way as the human evidence? Concordance is concordant /
-(concordant + discordant); mixed and indeterminate pairs are counted in the table and never dropped.
+veterinary evidence point the same way as the human evidence?
 
 {{pairs_strata}}
 

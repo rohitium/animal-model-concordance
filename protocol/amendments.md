@@ -326,3 +326,45 @@ The mapping is applied in the site builder and is reproducible from the committe
 
 **Found by.** A reader asking why a paper we hold in full text was not in the ophthalmology dog
 cell — the kind of check limitation L87 exists to invite.
+
+## A8 — Species recovery extended to the title and the result's own text (2026-09-15)
+
+A7 recovered a species where `species_as_reported` named exactly one animal. 399 results still had
+none. Two further sources were tested against each other before either was used: the study title,
+and the result's own statement and quote.
+
+Where both name exactly one animal they agree in **74 of 74 cases, with no disagreements**, so the
+two are treated as one rule: if the reported label is non-specific, take the single animal named in
+the title or in the result's own text, and if either source names more than one animal, or they
+would disagree, leave the result unresolved. This recovers a further 139 results; 260 remain
+unresolved and are still displayed as such.
+
+The order matters: `species_as_reported` first (A7), then title or text (A8). The reported label is
+the extractor's own answer to "which species", while the title and statement are evidence about the
+paper, not about the result. The weaker source is used only where the stronger one is silent.
+
+`GEMM`/`GEMMs` (genetically engineered mouse models) was added to the animal vocabulary, having
+appeared as an unrecognised label.
+
+## A9 — Drug-pair names and treatment types corrected (2026-09-15)
+
+The `not-a-treatment` type held 16 pairs and should not have existed. Inspecting each against its
+own `veterinary_basis` showed the problem was in the ingredient name, not the evidence: the
+automated name-extraction step had captured the wrong entity. `CHICKEN` was the allergen a
+hydrolysed-diet trial challenged with; `THYROID` was recombinant human TSH; `RED BLOOD CELLS` was
+transfusion; `HL036`, `M032` and `RAAV2TYF GRK1 HRPGRCO` were tanfanercept, an oncolytic herpes
+virus and an AAV gene therapy; `PARTS A B ADRABETADEX` was adrabetadex (HPBCD) with a label string
+wrapped around it. Truncations were also present outside that type: `BORIC`, `BUTYL`, `ETHYL`,
+`CORN`, `WHEY`, `I 131`, `PRGF`.
+
+Corrections are recorded one pair at a time in `pair_overrides.json`, each carrying the sentence
+from its own record that justifies it, and applied at build time; the judgements themselves are
+untouched. Four pairs are dropped rather than renamed, because their records do not support a
+drug-and-indication comparison at all: ammonia (a diagnostic biomarker study), a prescribing-pattern
+fragment that duplicated the whey-diet trial, and two drug classes (`NSAID`, `ACE INHIBITOR`) whose
+records were about something else. Classified pairs fall from 803 to 799, and `not-a-treatment`
+falls to zero.
+
+The pairs table now also defaults to alphabetical order by drug rather than grouping by verdict,
+and every row can be opened to show the veterinary and human evidence behind its verdict, with
+links to each cited study on PubMed and each cited US label on DailyMed.

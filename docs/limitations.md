@@ -638,3 +638,23 @@ in that field is carried through rather than corrected; and the rule is unverifi
 beyond the ophthalmology cell that prompted it. Species assignment remains the weakest field in the record
 set, and the evidence map should be read as a map of where evidence was *found and labelled*, not of where it
 exists.
+
+**L89 — Results are not independent of one another.** 227 clusters of results share a single quoted
+sentence, covering 555 of the 1,494 final results: a paper reporting one cross-species comparison
+gene by gene (COL8A1, BGN, COL11A1 …) or tissue by tissue yields one row per item, all resting on
+the same sentence and the same underlying analysis. Counting distinct quotes gives roughly 1,166
+distinct findings rather than 1,494 independent ones. Collapsing to one row per quote moves the
+direction tallies from 1,032 / 348 / 110 to 797 / 284 / 81 — the ratio barely shifts, so the balance
+of the corpus is not an artefact of the splitting, but any count of "results" overstates how many
+separate observations the review rests on, and no statistic here should be read as though the rows
+were independent samples.
+
+**L90 — The companion-versus-laboratory split is contaminated by unfilled model_type.** 51 dog and
+cat results across 20 studies carry `model_type: mixed-or-not-stated`, which the species rule routes
+to the laboratory column. Several are plainly studies of naturally occurring disease — spontaneous
+canine mammary carcinoma, bladder urothelial carcinoma, prostate cancer, eyelid melanoma — and
+belong in the companion column. None of the 51 contains explicit "spontaneous" or "client-owned"
+language in its statement, quote or title, so no text rule can resolve them; the full texts are held
+and the field has to be read from them. Until that is done, the companion and laboratory dog columns
+in the evidence map, and any comparison between them, carry an unmeasured misclassification that
+runs in one direction: companion studies mislabelled as laboratory, not the reverse.
