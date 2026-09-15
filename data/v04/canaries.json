@@ -1,0 +1,33 @@
+{
+ "_about": "Known errors in the v0.3 data (PLAN.md v0.4 §8.3). The v0.4 workflow must catch every one before its output is trusted. Each canary is evaluated mechanically by analysis/v04/s7_report.py; 'rule' names the check.",
+ "canaries": [
+  {"id": "C1", "pmid": "17175568", "study": "Perel et al. 2007",
+   "error": "Headline result (3 of 6 interventions concordant) not extracted; animal-only treatment effects (OR 0.58, 4.2, 12.5, 1.96; infarct -24%, -29%; neurobehavioural +23%, +48%) recorded as concordance; OR 4.2 attached to a quote reporting 12.5.",
+   "rule": "perel",
+   "pass_if": "An accepted or flagged level-A comparison with numerator 3 and denominator 6 (or 50%) exists, AND no auto-accepted comparison carries any of the animal-only effect values."},
+  {"id": "C2", "pmid": "34127759", "study": "Oreff et al. 2021 (tenocytes)",
+   "error": "Cultured tenocytes (in vitro) were treated as an animal model.",
+   "rule": "out_of_scope",
+   "pass_if": "No auto-accepted comparison from this study."},
+  {"id": "C3", "pmid": "31694927", "study": "Jang et al. 2019 (Liver-Chip)",
+   "error": "Organ-chip (in vitro) study in the eligible set.",
+   "rule": "no_in_vitro_accepted",
+   "pass_if": "No auto-accepted comparison whose index test is the chip or other in vitro system; live-animal comparisons reported in the same paper may be accepted."},
+  {"id": "C4", "pmid": "30364994", "study": "Peters et al. 2019 (GI microtissue)",
+   "error": "In vitro microtissue study in the eligible set.",
+   "rule": "no_in_vitro_accepted",
+   "pass_if": "No auto-accepted comparison whose index test is the microtissue or other in vitro system."},
+  {"id": "C5", "pmid": "26753942", "study": "Bailey et al. 2016",
+   "error": "Table 4 iNLRs for rat, mouse, rabbit and dog condense the authors' earlier papers but were tagged as this paper's own result.",
+   "rule": "bailey_table4",
+   "pass_if": "No auto-accepted own-result comparison for rat (1.82), mouse (1.39), rabbit (1.12) or dog (1.10) iNLR."},
+  {"id": "C6", "pmid": "42245789", "study": "Daluwatumulle et al. 2026 (preprint)",
+   "error": "Transcriptomic similarity treated as clinical concordance; preprint status not shown.",
+   "rule": "level_c_preprint",
+   "pass_if": "No accepted comparison at level A or B, and the study is marked peer_reviewed = false."},
+  {"id": "C7", "pmid": "31307492", "study": "Leenaars et al. 2019",
+   "error": "Toxicology concordance figures (liver 44%/40%, ADR 48%) placed in an efficacy row.",
+   "rule": "leenaars_tox",
+   "pass_if": "No auto-accepted level-A comparison carrying 44, 40 or 48 (%)."}
+ ]
+}

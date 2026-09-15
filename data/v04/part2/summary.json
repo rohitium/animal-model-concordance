@@ -1,0 +1,126 @@
+{
+ "built": "2026-09-14",
+ "tallies": {
+  "Primary: all": {
+   "n": 787,
+   "concordant": 190,
+   "discordant": 47,
+   "mixed": 108,
+   "indeterminate": 442,
+   "classifiable": 237,
+   "concordance": 0.802,
+   "ci95": [
+    0.7452,
+    0.8505
+   ]
+  },
+  "Primary: disease-modifying use": {
+   "n": 569,
+   "concordant": 126,
+   "discordant": 33,
+   "mixed": 75,
+   "indeterminate": 335,
+   "classifiable": 159,
+   "concordance": 0.792,
+   "ci95": [
+    0.7211,
+    0.8526
+   ]
+  },
+  "Primary: symptomatic or preventive use": {
+   "n": 218,
+   "concordant": 64,
+   "discordant": 14,
+   "mixed": 33,
+   "indeterminate": 107,
+   "classifiable": 78,
+   "concordance": 0.821,
+   "ci95": [
+    0.7172,
+    0.8983
+   ]
+  },
+  "Primary: systematically found": {
+   "n": 744,
+   "concordant": 183,
+   "discordant": 46,
+   "mixed": 102,
+   "indeterminate": 413,
+   "classifiable": 229,
+   "concordance": 0.799,
+   "ci95": [
+    0.7413,
+    0.849
+   ]
+  },
+  "Primary: exemplar-only": {
+   "n": 43,
+   "concordant": 7,
+   "discordant": 1,
+   "mixed": 6,
+   "indeterminate": 29,
+   "classifiable": 8,
+   "concordance": 0.875,
+   "ci95": [
+    0.4735,
+    0.9968
+   ]
+  },
+  "Primary, disease-modifying: dog": {
+   "n": 445,
+   "concordant": 87,
+   "discordant": 23,
+   "mixed": 53,
+   "indeterminate": 282,
+   "classifiable": 110,
+   "concordance": 0.791,
+   "ci95": [
+    0.703,
+    0.8626
+   ]
+  },
+  "Primary, disease-modifying: cat": {
+   "n": 89,
+   "concordant": 25,
+   "discordant": 9,
+   "mixed": 14,
+   "indeterminate": 41,
+   "classifiable": 34,
+   "concordance": 0.735,
+   "ci95": [
+    0.5564,
+    0.8712
+   ]
+  },
+  "Class analogues (separate stratum)": {
+   "n": 15,
+   "concordant": 3,
+   "discordant": 1,
+   "mixed": 1,
+   "indeterminate": 10,
+   "classifiable": 4,
+   "concordance": 0.75,
+   "ci95": [
+    0.1941,
+    0.9937
+   ]
+  },
+  "Safety pairs (separate)": {
+   "n": 1,
+   "concordant": 1,
+   "discordant": 0,
+   "mixed": 0,
+   "indeterminate": 0,
+   "classifiable": 1,
+   "concordance": 1.0,
+   "ci95": [
+    0.025,
+    1.0
+   ]
+  }
+ },
+ "excluded_statuses": {
+  "no-human-counterpart": 9
+ },
+ "flagged_invalid_citations": 0
+}

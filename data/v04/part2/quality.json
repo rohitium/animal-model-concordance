@@ -1,0 +1,2424 @@
+{
+ "types": {
+  "ATORVASTATIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Atorvastatin is a small-molecule drug used to lower cholesterol."
+  },
+  "ARTESUNATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Artesunate is a small-molecule antimalarial drug used in treatment."
+  },
+  "AMMONIA": {
+   "treatment_type": "not-a-treatment",
+   "note": "Ammonia is a chemical compound, not a treatment."
+  },
+  "ADXS31 164": {
+   "treatment_type": "biologic",
+   "note": "ADXS31 164 is a biologic immunotherapy used in veterinary studies."
+  },
+  "ACETYLCYSTEINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Acetylcysteine is a small-molecule drug used as a mucolytic and antidote."
+  },
+  "ALLERGEN EXTRACT": {
+   "treatment_type": "biologic",
+   "note": "Allergen extract is used as a biologic treatment for allergy desensitization."
+  },
+  "ADRENALINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Adrenaline is a small-molecule drug used as a treatment in emergency medicine."
+  },
+  "ALPRAZOLAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Alprazolam is a small-molecule drug used primarily as an anxiolytic."
+  },
+  "ASPARAGINASE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Asparaginase is an enzyme used as a chemotherapeutic agent in veterinary medicine."
+  },
+  "ARGININE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Arginine is an amino acid used as a dietary supplement in veterinary treatments."
+  },
+  "ACETATE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Acetate is a chemical ion, not a specific treatment but can be part of compounds used in therapy."
+  },
+  "2 OCTYL CYANOACRYLATE": {
+   "treatment_type": "device-or-material",
+   "note": "2 Octyl cyanoacrylate is a medical adhesive used for wound closure."
+  },
+  "ADEFOVIR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Adefovir is an antiviral small-molecule drug used to treat viral infections."
+  },
+  "ANTIOXIDANTS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Antioxidants are substances used as dietary supplements to reduce oxidative stress."
+  },
+  "ACE INHIBITOR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "ACE inhibitors are small-molecule drugs used to treat cardiovascular conditions."
+  },
+  "ATIPAMEZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Atipamezole is a small-molecule drug used as a reversal agent for sedation in veterinary medicine."
+  },
+  "ANGIOTENSIN CONVERTING ENZYME INHIBITOR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Angiotensin converting enzyme inhibitor is a class of small-molecule drugs used to treat various conditions."
+  },
+  "ABROCITINIB+BARICITINIB+TOFACITINIB+UPADACITINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "All are small-molecule JAK inhibitors used as treatments."
+  },
+  "AMINOCAPROIC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Aminocaproic acid is a small-molecule drug used to reduce bleeding by inhibiting fibrinolysis."
+  },
+  "AMPICILLIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ampicillin is a beta-lactam antibiotic used as a small-molecule drug."
+  },
+  "ATENOLOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Atenolol is a beta-blocker used as a small-molecule drug for cardiovascular conditions."
+  },
+  "ADRENOCORTICOTROPHIC HORMONE": {
+   "treatment_type": "biologic",
+   "note": "Adrenocorticotrophic hormone is a biologic hormone used as a treatment."
+  },
+  "ASCOPHYLLUM NODOSUM": {
+   "treatment_type": "dietary-supplement",
+   "note": "Ascophyllum nodosum is a type of seaweed commonly used as a dietary supplement in veterinary care."
+  },
+  "AMANTADINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Amantadine is an antiviral and antiparkinsonian small-molecule drug used in veterinary medicine."
+  },
+  "4 AMINOPYRIDINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "4-Aminopyridine is a small-molecule drug used to improve nerve conduction."
+  },
+  "ALCOHOL": {
+   "treatment_type": "mineral-or-element",
+   "note": "Alcohol is classified as a chemical substance rather than a specific treatment."
+  },
+  "AMIODARONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Amiodarone is a small-molecule antiarrhythmic drug used to treat cardiac arrhythmias."
+  },
+  "ASPIRIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Aspirin is a small-molecule drug used as an analgesic and anti-inflammatory agent."
+  },
+  "ACETAMINOPHEN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Acetaminophen is a small-molecule drug used as an analgesic and antipyretic."
+  },
+  "6 HYDROXYETHYL STARCH 130 0 4": {
+   "treatment_type": "device-or-material",
+   "note": "6 Hydroxyethyl Starch 130/0.4 is a synthetic colloid used as a plasma volume expander in veterinary medicine."
+  },
+  "ANTIBIOTICS": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Antibiotics are small-molecule drugs used to treat bacterial infections."
+  },
+  "ACALABRUTINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Acalabrutinib is a small-molecule drug used as a Bruton tyrosine kinase inhibitor."
+  },
+  "AMOXICILLIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Amoxicillin is a small-molecule antibiotic drug used to treat bacterial infections."
+  },
+  "ACUPUNCTURE": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Acupuncture is a therapeutic procedure involving needle insertion at specific points."
+  },
+  "ANGIOTENSIN RECEPTOR BLOCKER": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Angiotensin receptor blockers are small-molecule drugs used to block angiotensin receptors."
+  },
+  "AMINOLEVULINIC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Aminolevulinic acid is a small-molecule drug used in photodynamic therapy."
+  },
+  "ANTIBIOTIC TREATMENT": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Antibiotic treatment refers to a regimen involving antibiotics rather than a single drug."
+  },
+  "AMLODIPINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Amlodipine is a small-molecule drug used as a calcium channel blocker for hypertension."
+  },
+  "ALLOPURINOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Allopurinol is a small-molecule drug used to reduce uric acid levels."
+  },
+  "153SM DOTMP": {
+   "treatment_type": "small-molecule-drug",
+   "note": "153SM DOTMP is a radiopharmaceutical used for therapeutic purposes."
+  },
+  "AMITRIPTYLINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Amitriptyline is a small-molecule drug used as an antidepressant and for pain management."
+  },
+  "ALBUTEROL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Albuterol is a small-molecule bronchodilator drug used to treat respiratory conditions."
+  },
+  "APOMORPHINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Apomorphine is a small-molecule drug used as a treatment."
+  },
+  "ANTACID": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Antacid is a small-molecule drug used to neutralize stomach acid."
+  },
+  "ALFENTANIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Alfentanil is a small-molecule opioid analgesic used as a drug."
+  },
+  "AMIKACIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Amikacin is an aminoglycoside antibiotic used as a small-molecule drug in veterinary medicine."
+  },
+  "AURANOFIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Auranofin is a small-molecule drug used as a treatment."
+  },
+  "AZACITIDINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Azacitidine is a small-molecule chemotherapeutic agent used in treatment."
+  },
+  "AUTOLOGOUS PLATELET RICH FIBRIN": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Autologous platelet rich fibrin is a procedure involving the use of a patient's own blood components to promote healing."
+  },
+  "AUTOLOGOUS MICRO FRAGMENTED ADIPOSE TISSUE": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Autologous micro fragmented adipose tissue is a procedure involving processing and reinjection of fat tissue for therapeutic purposes."
+  },
+  "AZITHROMYCIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Azithromycin is an antibiotic used as a small-molecule drug treatment."
+  },
+  "BETAMETHASONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Betamethasone is a corticosteroid drug used to reduce inflammation."
+  },
+  "AUTOLOGOUS SERUM": {
+   "treatment_type": "biologic",
+   "note": "Autologous serum is a biologic treatment derived from the patient's own blood serum."
+  },
+  "AUTOLOGOUS PLATELET RICH PLASMA PRP": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Autologous platelet rich plasma (PRP) is a procedure involving the use of a patient's own platelets to promote healing."
+  },
+  "AUTOLOGOUS PLATELET RICH PLASMA": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Autologous platelet rich plasma is a procedure involving the use of a patient's own platelets to promote healing."
+  },
+  "BETA LACTAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Beta lactam refers to a class of antibiotics used as small-molecule drugs."
+  },
+  "BONE GRAFT": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Bone graft is a surgical procedure used to replace or augment bone."
+  },
+  "ANTIHISTAMINES": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Antihistamines are small-molecule drugs used to block histamine receptors."
+  },
+  "CAR T CELLS": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "CAR T cells are genetically engineered T cells used as a cell therapy."
+  },
+  "BEZAFIBRATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Bezafibrate is a small-molecule drug used to lower lipid levels."
+  },
+  "BUTYL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Butyl refers to a chemical group often found in small-molecule drugs."
+  },
+  "BINDERS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Binders are substances used to bind toxins or other compounds, commonly used as dietary supplements in veterinary medicine."
+  },
+  "BUMETANIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Bumetanide is a loop diuretic used as a small-molecule drug for treatment."
+  },
+  "CARBON DIOXIDE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Carbon dioxide is classified as an element used in some medical procedures, thus considered a mineral or element treatment."
+  },
+  "BUPRENORPHINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Buprenorphine is an opioid used as a small-molecule analgesic drug."
+  },
+  "BUPIVACAINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Bupivacaine is a local anesthetic used as a small-molecule drug for pain management."
+  },
+  "BERAPROST": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Beraprost is a small-molecule drug used as a treatment."
+  },
+  "AUTOLOGOUS BONE MARROW ASPIRATE CONCENTRATE": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Autologous bone marrow aspirate concentrate is a procedure involving the concentration of bone marrow cells for therapeutic use."
+  },
+  "BUDESONIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Budesonide is a corticosteroid medication used as a small-molecule drug for treatment."
+  },
+  "CARBIMAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Carbimazole is a small-molecule drug used to treat hyperthyroidism."
+  },
+  "BICARBONATE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Bicarbonate is classified as a mineral or element used to adjust pH, not a drug or biologic."
+  },
+  "BROMELAIN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Bromelain is an enzyme extract derived from pineapples used as a dietary supplement with anti-inflammatory properties."
+  },
+  "BLEOMYCIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Bleomycin is a small-molecule chemotherapeutic drug used in cancer treatment."
+  },
+  "BOSWELLIA": {
+   "treatment_type": "dietary-supplement",
+   "note": "Boswellia is a natural extract commonly used as a dietary supplement for its anti-inflammatory properties."
+  },
+  "CANNABIDIOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cannabidiol is a small-molecule drug derived from cannabis used for therapeutic purposes."
+  },
+  "CARBOPLATIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Carboplatin is a chemotherapy drug used in cancer treatment."
+  },
+  "AUTOLOGOUS MESENCHYMAL STEM CELLS": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "Autologous mesenchymal stem cells are used as a cell therapy treatment."
+  },
+  "CALCIFEDIOL": {
+   "treatment_type": "mineral-or-element",
+   "note": "Calcifediol is a vitamin D metabolite used as a supplement or treatment for vitamin D deficiency."
+  },
+  "BRILLIANT BLUE G": {
+   "treatment_type": "mineral-or-element",
+   "note": "Brilliant Blue G is a dye used in medical procedures, classified here as a mineral or element-related agent."
+  },
+  "BORIC": {
+   "treatment_type": "mineral-or-element",
+   "note": "Boric refers to boric acid, a mineral-based treatment often used for its antiseptic properties."
+  },
+  "CALCITRIOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Calcitriol is the active form of vitamin D used as a drug to treat conditions like hypocalcemia."
+  },
+  "CARVEDILOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Carvedilol is a small-molecule drug used as a beta-blocker in veterinary medicine."
+  },
+  "BAICALIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Baicalin is a flavonoid compound used as a small-molecule drug with therapeutic properties."
+  },
+  "CARBONATE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Carbonate is a mineral compound, often used as a dietary supplement or in treatments involving mineral supplementation."
+  },
+  "CARPROFEN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Carprofen is a nonsteroidal anti-inflammatory drug used in veterinary medicine."
+  },
+  "CEFADROXIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cefadroxil is a small-molecule antibiotic used in veterinary medicine."
+  },
+  "BUTORPHANOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Butorphanol is an opioid analgesic used as a small-molecule drug for pain management."
+  },
+  "CALCIUM SULFATE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Calcium sulfate is a mineral compound used in veterinary treatments."
+  },
+  "CABERGOLINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cabergoline is a dopamine agonist used as a small-molecule drug in veterinary medicine."
+  },
+  "CARNITINE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Carnitine is a dietary supplement used to support metabolism and energy production."
+  },
+  "CHLORHEXIDINE": {
+   "treatment_type": "device-or-material",
+   "note": "Chlorhexidine is an antiseptic agent used for disinfection and wound cleaning."
+  },
+  "CEFOXITIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cefoxitin is a small-molecule antibiotic used as a treatment."
+  },
+  "BEXAGLIFLOZIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Bexagliflozin is a small-molecule drug used as a treatment."
+  },
+  "CELLULOSE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Cellulose is a dietary fiber used as a supplement or bulking agent in veterinary treatments."
+  },
+  "CEFAZOLIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cefazolin is a small-molecule antibiotic used to treat bacterial infections."
+  },
+  "CHLORAMPHENICOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Chloramphenicol is an antibiotic used as a small-molecule drug in veterinary medicine."
+  },
+  "CEFPODOXIME": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cefpodoxime is a small-molecule antibiotic used in veterinary medicine."
+  },
+  "CHICKEN": {
+   "treatment_type": "not-a-treatment",
+   "note": "Chicken is an animal species, not a treatment."
+  },
+  "CHLORHEXIDINE DIGLUCONATE": {
+   "treatment_type": "device-or-material",
+   "note": "Chlorhexidine digluconate is an antiseptic agent used for disinfection and wound cleaning."
+  },
+  "CHOP": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "CHOP is a multi-drug chemotherapy protocol used in veterinary oncology."
+  },
+  "COPPER": {
+   "treatment_type": "mineral-or-element",
+   "note": "Copper is an essential trace mineral used as a dietary supplement or treatment in veterinary medicine."
+  },
+  "CHONDROITIN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Chondroitin is commonly used as a dietary supplement for joint health in veterinary medicine."
+  },
+  "CHOLECALCIFEROL": {
+   "treatment_type": "dietary-supplement",
+   "note": "Cholecalciferol is vitamin D3, commonly used as a dietary supplement."
+  },
+  "CLAVULANATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clavulanate is a beta-lactamase inhibitor used in combination with antibiotics."
+  },
+  "CETIRIZINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cetirizine is an antihistamine drug used to treat allergy symptoms."
+  },
+  "CIMICOXIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cimicoxib is a nonsteroidal anti-inflammatory drug used in veterinary medicine."
+  },
+  "CISAPRIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cisapride is a small-molecule prokinetic drug used to enhance gastrointestinal motility."
+  },
+  "CORN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Corn is classified as a dietary supplement in veterinary studies."
+  },
+  "CHITOSAN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Chitosan is a dietary supplement derived from chitin, used for various health purposes."
+  },
+  "CLINDAMYCIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clindamycin is an antibiotic used to treat bacterial infections."
+  },
+  "COENZYME Q10": {
+   "treatment_type": "dietary-supplement",
+   "note": "Coenzyme Q10 is a dietary supplement used to support cellular energy production."
+  },
+  "CLOMIPRAMINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clomipramine is a tricyclic antidepressant used as a small-molecule drug in veterinary medicine."
+  },
+  "CLOPIDOGREL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clopidogrel is an antiplatelet small-molecule drug used to prevent blood clots."
+  },
+  "CLOFAZIMINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clofazimine is an antimicrobial small-molecule drug used in treatment."
+  },
+  "CLAVULANIC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clavulanic acid is a beta-lactamase inhibitor used with antibiotics."
+  },
+  "DEHYDROEPIANDROSTERONE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Dehydroepiandrosterone is a steroid hormone supplement often used for its potential therapeutic effects."
+  },
+  "CLEVIDIPINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clevidipine is a small-molecule calcium channel blocker used as an antihypertensive agent."
+  },
+  "CRIZOTINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Crizotinib is a small-molecule tyrosine kinase inhibitor used as a targeted cancer therapy."
+  },
+  "COBALAMIN": {
+   "treatment_type": "mineral-or-element",
+   "note": "Cobalamin is a form of vitamin B12, classified as a mineral or element used as a supplement."
+  },
+  "CELECOXIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Celecoxib is a small-molecule nonsteroidal anti-inflammatory drug (NSAID)."
+  },
+  "DAPAGLIFLOZIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Dapagliflozin is a small-molecule drug used as a treatment."
+  },
+  "CRANBERRY": {
+   "treatment_type": "dietary-supplement",
+   "note": "Cranberry is commonly used as a dietary supplement, especially for urinary tract health."
+  },
+  "CYANOCOBALAMIN": {
+   "treatment_type": "mineral-or-element",
+   "note": "Cyanocobalamin is a synthetic form of vitamin B12, classified as a mineral or element supplement."
+  },
+  "COR388": {
+   "treatment_type": "small-molecule-drug",
+   "note": "COR388 is a small-molecule drug under investigation for therapeutic use."
+  },
+  "CORTICOSTEROIDS": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Corticosteroids are small-molecule drugs used to reduce inflammation and suppress the immune system."
+  },
+  "CHLORAMBUCIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Chlorambucil is a chemotherapy agent used as a small-molecule drug in veterinary medicine."
+  },
+  "CURCUMIN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Curcumin is a natural compound commonly used as a dietary supplement with potential therapeutic effects."
+  },
+  "CISPLATIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cisplatin is a chemotherapy drug used as a small-molecule treatment."
+  },
+  "CLARITHROMYCIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Clarithromycin is an antibiotic used as a small-molecule drug."
+  },
+  "ALMONERTINIB PLUS MICROWAVE ABLATION": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Combination of a small-molecule drug and a procedural treatment modality."
+  },
+  "CYCLOSPORINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cyclosporine is an immunosuppressive small-molecule drug used in veterinary medicine."
+  },
+  "COSYNTROPIN": {
+   "treatment_type": "biologic",
+   "note": "Cosyntropin is a synthetic peptide used as a diagnostic agent and treatment, classified as a biologic."
+  },
+  "BENAZEPRIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Benazepril is an ACE inhibitor used as a small-molecule drug for treating hypertension and heart failure."
+  },
+  "DESOXYCORTICOSTERONE PIVALATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Desoxycorticosterone pivalate is a synthetic corticosteroid used as a drug treatment."
+  },
+  "DEXAMETHASONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Dexamethasone is a corticosteroid drug used to reduce inflammation."
+  },
+  "DEXMEDETOMIDINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Dexmedetomidine is a small-molecule drug used as a sedative and analgesic in veterinary medicine."
+  },
+  "DESLORELIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Deslorelin is a synthetic hormone used as a small-molecule drug in veterinary medicine."
+  },
+  "DIAZEPAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Diazepam is a small-molecule drug used as a sedative and anxiolytic."
+  },
+  "DEXTRAN 70": {
+   "treatment_type": "dietary-supplement",
+   "note": "Dextran 70 is a plasma volume expander used as a supportive treatment."
+  },
+  "DIPHENHYDRAMINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Diphenhydramine is an antihistamine drug used to treat allergies."
+  },
+  "CYCLOPHOSPHAMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Cyclophosphamide is a chemotherapy small-molecule drug used in veterinary medicine."
+  },
+  "DOPAMINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Dopamine is a small-molecule drug used as a neurotransmitter and medication."
+  },
+  "DEXTROSE SOLUTION": {
+   "treatment_type": "dietary-supplement",
+   "note": "Dextrose solution is used as a nutritional supplement or energy source in veterinary care."
+  },
+  "DENDRITIC CELL THERAPY": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "Dendritic cell therapy involves using immune cells to stimulate an immune response against disease."
+  },
+  "DICLOFENAC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Diclofenac is a nonsteroidal anti-inflammatory drug used to reduce inflammation and pain."
+  },
+  "DILTIAZEM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Diltiazem is a calcium channel blocker used as a small-molecule drug in veterinary medicine."
+  },
+  "DOMPERIDONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Domperidone is a small-molecule drug used as a dopamine antagonist to treat nausea and gastrointestinal disorders."
+  },
+  "DOCOSAHEXAENOIC": {
+   "treatment_type": "dietary-supplement",
+   "note": "Docosahexaenoic acid is an omega-3 fatty acid used as a dietary supplement."
+  },
+  "DIMENHYDRINATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Dimenhydrinate is an antiemetic small-molecule drug used to prevent nausea and vomiting."
+  },
+  "DOXYCYCLINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Doxycycline is a small-molecule antibiotic used as a treatment."
+  },
+  "DOXORUBICIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Doxorubicin is a chemotherapy small-molecule drug used in cancer treatment."
+  },
+  "DRUG ELUTING BEAD TRANSARTERIAL CHEMOEMBOLIZATION": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "This is a procedure involving drug-eluting beads used in transarterial chemoembolization."
+  },
+  "DRUG PRESCRIPTION PATTERN": {
+   "treatment_type": "not-a-treatment",
+   "note": "This term refers to a pattern of prescribing drugs, not a specific treatment."
+  },
+  "ENROFLOXACIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Enrofloxacin is a small-molecule antibiotic used in veterinary medicine."
+  },
+  "ESSENTIAL OIL": {
+   "treatment_type": "dietary-supplement",
+   "note": "Essential oil is classified as a dietary supplement used for therapeutic purposes."
+  },
+  "DORZOLAMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Dorzolamide is a small-molecule drug used to treat glaucoma by reducing intraocular pressure."
+  },
+  "DWP16001": {
+   "treatment_type": "small-molecule-drug",
+   "note": "DWP16001 is a code name typical for a small-molecule drug compound."
+  },
+  "EPINEPHRINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Epinephrine is a small-molecule drug used as a treatment in veterinary medicine."
+  },
+  "EMLA CREAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "EMLA cream is a topical anesthetic containing lidocaine and prilocaine used for numbing skin."
+  },
+  "ESSENTIAL FATTY ACIDS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Essential fatty acids are nutrients used as dietary supplements in veterinary care."
+  },
+  "ENALAPRIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Enalapril is an ACE inhibitor used as a small-molecule drug for treating hypertension and heart failure."
+  },
+  "ELASTIN": {
+   "treatment_type": "mineral-or-element",
+   "note": "Elastin is a structural protein, not a treatment, but classified here as a mineral or element due to lack of a better category."
+  },
+  "ENTEROCOCCUS FAECIUM": {
+   "treatment_type": "not-a-treatment",
+   "note": "Enterococcus faecium is a bacterial species, not a treatment."
+  },
+  "EPIRUBICIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Epirubicin is a chemotherapy drug used as a small-molecule treatment."
+  },
+  "ETODOLAC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Etodolac is a nonsteroidal anti-inflammatory drug used as a small-molecule treatment."
+  },
+  "ENOXAPARIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Enoxaparin is a low molecular weight heparin used as an anticoagulant drug."
+  },
+  "ENTEROCOCCUS FAECALIS": {
+   "treatment_type": "not-a-treatment",
+   "note": "Enterococcus faecalis is a bacterial species, not a treatment."
+  },
+  "ETOPOSIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Etoposide is a chemotherapy drug used to treat cancer."
+  },
+  "EPHEDRINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ephedrine is a small-molecule drug used as a stimulant and decongestant."
+  },
+  "EMODEPSIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Emodepside is an anthelmintic small-molecule drug used in veterinary medicine."
+  },
+  "DEHYDROEPIANDROSTERONE DHEA": {
+   "treatment_type": "dietary-supplement",
+   "note": "Dehydroepiandrosterone (DHEA) is a dietary supplement often used for its hormone precursor properties."
+  },
+  "DIGOXIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Digoxin is a small-molecule drug used to treat heart conditions."
+  },
+  "EICOSAPENTAENOIC": {
+   "treatment_type": "dietary-supplement",
+   "note": "Eicosapentaenoic acid is an omega-3 fatty acid used as a dietary supplement."
+  },
+  "ESSENTIAL OILS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Essential oils are natural extracts often used as dietary supplements or alternative therapies."
+  },
+  "FASINUMAB+TANEZUMAB": {
+   "treatment_type": "biologic",
+   "note": "Fasinumab and tanezumab are both monoclonal antibodies used as biologic treatments."
+  },
+  "FECAL MICROBIOTA TRANSPLANTATION": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Fecal microbiota transplantation is a procedure involving transfer of gut microbiota to treat certain conditions."
+  },
+  "EZN 3042": {
+   "treatment_type": "small-molecule-drug",
+   "note": "EZN 3042 is a small-molecule drug used in therapeutic contexts."
+  },
+  "FLUDROCORTISONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fludrocortisone is a synthetic corticosteroid used as a small-molecule drug for treatment."
+  },
+  "FLUOXETINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fluoxetine is a small-molecule drug used as an antidepressant."
+  },
+  "FENOFIBRATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fenofibrate is a small-molecule drug used to reduce cholesterol levels."
+  },
+  "FAECAL MICROBIOTA TRANSPLANTATION": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Faecal microbiota transplantation is a procedure involving transfer of gut microbiota to treat disease."
+  },
+  "FLUTICASONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fluticasone is a corticosteroid used as an anti-inflammatory drug."
+  },
+  "FECAL MICROBIAL TRANSPLANT": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Fecal microbial transplant is a procedure involving transfer of gut microbiota to treat certain conditions."
+  },
+  "FISH OIL": {
+   "treatment_type": "dietary-supplement",
+   "note": "Fish oil is a dietary supplement commonly used for its omega-3 fatty acids."
+  },
+  "FLURBIPROFEN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Flurbiprofen is a nonsteroidal anti-inflammatory drug used as a small-molecule treatment."
+  },
+  "EXENATIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Exenatide is a small-molecule drug used to treat diabetes by mimicking incretin hormones."
+  },
+  "FLUORIDE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Fluoride is classified as a mineral used in veterinary treatments, often for dental health."
+  },
+  "FLUCONAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fluconazole is an antifungal small-molecule drug used to treat fungal infections."
+  },
+  "ELECTROCHEMOTHERAPY": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Electrochemotherapy is a procedure combining electrical pulses with chemotherapy to enhance drug uptake."
+  },
+  "GEMCITABINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Gemcitabine is a chemotherapy drug used as a small-molecule treatment."
+  },
+  "FOSMIDOMYCIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fosmidomycin is an antibiotic small-molecule drug used as a treatment."
+  },
+  "FAMOTIDINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Famotidine is a small-molecule drug used as an H2 receptor antagonist to reduce stomach acid."
+  },
+  "FLUORINE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Fluorine is a chemical element, often used in dental treatments and water fluoridation."
+  },
+  "FOSPHENYTOIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fosphenytoin is an anticonvulsant drug used as a treatment."
+  },
+  "GABAPENTIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Gabapentin is a small-molecule drug used primarily for neuropathic pain and seizures."
+  },
+  "GLUCOCORTICOID": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Glucocorticoid is a class of steroid hormones used as anti-inflammatory and immunosuppressive drugs."
+  },
+  "GLARGINE INSULIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Glargine insulin is a long-acting insulin analog used as a drug for diabetes management."
+  },
+  "FAMCICLOVIR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Famciclovir is an antiviral small-molecule drug used to treat viral infections."
+  },
+  "FENTANYL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Fentanyl is a potent synthetic opioid used as a small-molecule drug for pain management."
+  },
+  "GS 441524": {
+   "treatment_type": "small-molecule-drug",
+   "note": "GS 441524 is an antiviral small-molecule drug used in veterinary medicine."
+  },
+  "GLUCOCORTICOIDS": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Glucocorticoids are steroid hormones used as anti-inflammatory and immunosuppressive drugs."
+  },
+  "GANCICLOVIR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ganciclovir is an antiviral small-molecule drug used to treat viral infections."
+  },
+  "GREEN TEA EXTRACT": {
+   "treatment_type": "dietary-supplement",
+   "note": "Green tea extract is a dietary supplement derived from green tea leaves."
+  },
+  "GLUTAMINE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Glutamine is an amino acid commonly used as a dietary supplement in veterinary treatments."
+  },
+  "GADOXETATE": {
+   "treatment_type": "device-or-material",
+   "note": "Gadoxetate is a contrast agent used in imaging, classified as a device or material rather than a drug or biologic."
+  },
+  "ETHYL": {
+   "treatment_type": "not-a-treatment",
+   "note": "Ethyl is a chemical group, not a treatment."
+  },
+  "GS 9219": {
+   "treatment_type": "small-molecule-drug",
+   "note": "GS 9219 is a small-molecule drug used in veterinary medicine."
+  },
+  "FUROSEMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Furosemide is a loop diuretic used as a small-molecule drug in veterinary medicine."
+  },
+  "GLYBURIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Glyburide is an oral hypoglycemic agent used to treat diabetes."
+  },
+  "GRANULOCYTE COLONY STIMULATING FACTOR": {
+   "treatment_type": "biologic",
+   "note": "Granulocyte colony stimulating factor is a biologic used to stimulate white blood cell production."
+  },
+  "GRAPIPRANT": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Grapiprant is a small-molecule drug used as a veterinary treatment."
+  },
+  "GLYCERYL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Glyceryl is a small-molecule compound often used in pharmaceutical formulations."
+  },
+  "GLUCOSAMINE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Glucosamine is commonly used as a dietary supplement for joint health."
+  },
+  "HEPARIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Heparin is an anticoagulant drug used to prevent blood clots."
+  },
+  "HIGH FLOW NASAL CANNULA": {
+   "treatment_type": "device-or-material",
+   "note": "High flow nasal cannula is a medical device used for respiratory support."
+  },
+  "FECAL MICROBIOTA TRANSPLANT": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Fecal microbiota transplant is a procedure involving transfer of gut microbiota to treat certain conditions."
+  },
+  "GRANULOCYTE MACROPHAGE COLONY STIMULATING FACTOR": {
+   "treatment_type": "biologic",
+   "note": "Granulocyte macrophage colony stimulating factor is a biologic used to stimulate white blood cell production."
+  },
+  "HOLMIUM": {
+   "treatment_type": "mineral-or-element",
+   "note": "Holmium is a chemical element used in certain medical devices and treatments."
+  },
+  "HL036": {
+   "treatment_type": "not-a-treatment",
+   "note": "HL036 appears to be a code or identifier, not a recognized treatment."
+  },
+  "HETASTARCH": {
+   "treatment_type": "device-or-material",
+   "note": "Hetastarch is a plasma volume expander used as a medical fluid, classified as a device or material rather than a drug."
+  },
+  "HYDROCORTISONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Hydrocortisone is a corticosteroid drug used to reduce inflammation."
+  },
+  "HYDRALAZINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Hydralazine is a small-molecule drug used as an antihypertensive agent."
+  },
+  "GENTAMICIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Gentamicin is an antibiotic used as a small-molecule drug in veterinary medicine."
+  },
+  "HUPERZINE A 0 4 MG": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Huperzine A is a small-molecule drug used for its neuroprotective effects."
+  },
+  "HYDROMORPHONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Hydromorphone is an opioid analgesic used as a small-molecule drug for pain management."
+  },
+  "HYALURONATE": {
+   "treatment_type": "device-or-material",
+   "note": "Hyaluronate is a material used in medical treatments, often as a viscosupplement or biomaterial."
+  },
+  "ENAMEL MATRIX DERIVATIVE": {
+   "treatment_type": "biologic",
+   "note": "Enamel matrix derivative is a biologic used to promote periodontal tissue regeneration."
+  },
+  "HYPERBARIC OXYGEN THERAPY": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Hyperbaric oxygen therapy is a medical procedure involving breathing pure oxygen in a pressurized environment."
+  },
+  "FOLATE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Folate is a vitamin used as a dietary supplement and not a drug or procedure."
+  },
+  "HYLAN G F 20": {
+   "treatment_type": "device-or-material",
+   "note": "HYLAN G F 20 is a viscosupplement used as a device or material in joint treatments."
+  },
+  "HYMENOPTERA VENOM": {
+   "treatment_type": "biologic",
+   "note": "Hymenoptera venom is a biologic used in venom immunotherapy."
+  },
+  "HYALURONAN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Hyaluronan is commonly used as a dietary supplement or therapeutic agent for joint health."
+  },
+  "HYDROCHLORIC": {
+   "treatment_type": "mineral-or-element",
+   "note": "Hydrochloric acid is a mineral acid, not a drug or biologic treatment."
+  },
+  "HYPERTONIC SALINE": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Hypertonic saline is used as a treatment regimen for fluid management and resuscitation."
+  },
+  "HYALURONIC": {
+   "treatment_type": "dietary-supplement",
+   "note": "Hyaluronic acid is commonly used as a dietary supplement or injectable for joint health and tissue repair."
+  },
+  "HYDROCODONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Hydrocodone is an opioid analgesic used as a small-molecule drug for pain management."
+  },
+  "HYDROXOCOBALAMIN": {
+   "treatment_type": "mineral-or-element",
+   "note": "Hydroxocobalamin is a form of vitamin B12, classified as a mineral or element used in treatment."
+  },
+  "HYDROXYETHYL STARCH": {
+   "treatment_type": "device-or-material",
+   "note": "Hydroxyethyl starch is a plasma volume expander used as a medical fluid, classified as a device or material rather than a drug."
+  },
+  "HYDROXYETHYL STARCH 130 0 4": {
+   "treatment_type": "device-or-material",
+   "note": "Hydroxyethyl starch 130/0.4 is a synthetic colloid used as a plasma volume expander, classified as a device or material rather than a drug."
+  },
+  "HYDROXYETHYLSTARCH": {
+   "treatment_type": "device-or-material",
+   "note": "Hydroxyethylstarch is a plasma volume expander used as a medical fluid, classified as a device or material rather than a drug."
+  },
+  "HYDROXYCHLOROQUINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Hydroxychloroquine is a small-molecule drug used as an antimalarial and immunomodulatory agent."
+  },
+  "IMMUNE PLASMA": {
+   "treatment_type": "biologic",
+   "note": "Immune plasma is a biologic treatment derived from plasma containing antibodies used to confer passive immunity."
+  },
+  "INDOCYANINE GREEN": {
+   "treatment_type": "device-or-material",
+   "note": "Indocyanine green is a diagnostic dye used in medical imaging, classified as a device or material rather than a drug."
+  },
+  "I 131": {
+   "treatment_type": "small-molecule-drug",
+   "note": "I 131 is a radioactive isotope used as a small-molecule radiopharmaceutical treatment."
+  },
+  "INSULIN DETEMIR": {
+   "treatment_type": "biologic",
+   "note": "Insulin detemir is a long-acting insulin analog used as a biologic treatment for diabetes."
+  },
+  "HYPERIMMUNE PLASMA": {
+   "treatment_type": "biologic",
+   "note": "Hyperimmune plasma is a biologic treatment derived from plasma with high antibody levels used for passive immunity."
+  },
+  "INSULIN": {
+   "treatment_type": "biologic",
+   "note": "Insulin is a biologic hormone used as a treatment for diabetes."
+  },
+  "IDARUBICIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Idarubicin is a chemotherapy drug used as a small-molecule anticancer agent."
+  },
+  "INTERMEDIATE ACTING INSULIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Intermediate acting insulin is a pharmaceutical treatment used to regulate blood sugar levels."
+  },
+  "INTERLEUKIN 12": {
+   "treatment_type": "biologic",
+   "note": "Interleukin 12 is a cytokine used as a biologic treatment to modulate immune response."
+  },
+  "INTERFERON ALPHA": {
+   "treatment_type": "biologic",
+   "note": "Interferon alpha is a biologic used as an immunotherapy agent."
+  },
+  "INSULIN ASPART": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Insulin aspart is a fast-acting insulin analog used as a drug for diabetes management."
+  },
+  "INSULIN DEGLUDEC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Insulin degludec is a long-acting insulin used as a drug for diabetes management."
+  },
+  "HYPOCHLORITE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Hypochlorite is a chemical compound often used as a disinfectant, classified here as a mineral or element treatment."
+  },
+  "IOHEXOL": {
+   "treatment_type": "device-or-material",
+   "note": "Iohexol is a contrast agent used in imaging procedures, classified as a device or material rather than a drug."
+  },
+  "IV IMMUNOGLOBULIN": {
+   "treatment_type": "biologic",
+   "note": "IV immunoglobulin is a biologic therapy consisting of pooled antibodies used to treat various immune conditions."
+  },
+  "IVABRADINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ivabradine is a small-molecule drug used to reduce heart rate."
+  },
+  "ITRACONAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Itraconazole is an antifungal small-molecule drug used in veterinary medicine."
+  },
+  "ISOFLURANE": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Isoflurane is an inhalational anesthetic agent used as part of anesthesia procedures."
+  },
+  "INSULIN GLARGINE": {
+   "treatment_type": "biologic",
+   "note": "Insulin glargine is a long-acting insulin analog used as a biologic treatment for diabetes."
+  },
+  "INTRAVENOUS LIPID EMULSION": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Intravenous lipid emulsion is a procedure involving administration of lipids through the vein."
+  },
+  "IODINE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Iodine is classified as a mineral or element used in veterinary treatments."
+  },
+  "IBRUTINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ibrutinib is a small-molecule drug used as a treatment."
+  },
+  "KETAMINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ketamine is a small-molecule drug used as an anesthetic and analgesic."
+  },
+  "IVERMECTIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ivermectin is an antiparasitic small-molecule drug used in veterinary medicine."
+  },
+  "IMIDAPRIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Imidapril is an angiotensin-converting enzyme inhibitor used as a small-molecule drug."
+  },
+  "INTERLEUKIN 2": {
+   "treatment_type": "biologic",
+   "note": "Interleukin 2 is a cytokine used as a biologic treatment to modulate the immune system."
+  },
+  "KPT 9274": {
+   "treatment_type": "small-molecule-drug",
+   "note": "KPT 9274 is a small-molecule drug used in therapeutic contexts."
+  },
+  "KETOPROFEN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ketoprofen is a nonsteroidal anti-inflammatory drug used for pain and inflammation."
+  },
+  "L REUTERI": {
+   "treatment_type": "dietary-supplement",
+   "note": "L. reuteri is a probiotic bacterium used as a dietary supplement in veterinary medicine."
+  },
+  "IMATINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Imatinib is a small-molecule tyrosine kinase inhibitor used as a targeted cancer therapy."
+  },
+  "LIPIODOL": {
+   "treatment_type": "device-or-material",
+   "note": "Lipiodol is an iodized oil used as a contrast agent and drug carrier in medical procedures."
+  },
+  "LOMUSTINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Lomustine is a chemotherapy drug used in veterinary oncology."
+  },
+  "LOW FREQUENCY ACUPOINT ELECTRICAL STIMULATION": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "This is a therapeutic procedure involving electrical stimulation at acupuncture points."
+  },
+  "MAGNESIUM": {
+   "treatment_type": "mineral-or-element",
+   "note": "Magnesium is classified as a mineral used in veterinary treatments."
+  },
+  "LACTATE": {
+   "treatment_type": "not-a-treatment",
+   "note": "Lactate is a metabolic compound, not a treatment."
+  },
+  "LMP400": {
+   "treatment_type": "small-molecule-drug",
+   "note": "LMP400 is a small-molecule drug used in treatment."
+  },
+  "LISPRO INSULIN": {
+   "treatment_type": "biologic",
+   "note": "Lispro insulin is a biologic used as a rapid-acting insulin therapy."
+  },
+  "LMP776": {
+   "treatment_type": "small-molecule-drug",
+   "note": "LMP776 is a small-molecule drug used in treatment."
+  },
+  "LACTULOSE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Lactulose is a synthetic sugar used as a laxative and to treat hepatic encephalopathy."
+  },
+  "LEVETIRACETAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Levetiracetam is an anticonvulsant small-molecule drug used to treat seizures."
+  },
+  "LOCAL ANAESTHETIC": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Local anaesthetic is a procedure involving administration of anesthesia to a specific area."
+  },
+  "LACTOBACILLUS RHAMNOSUS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Lactobacillus rhamnosus is a probiotic bacterium used as a dietary supplement."
+  },
+  "LEVOTHYROXINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Levothyroxine is a synthetic thyroid hormone used as a small-molecule drug for hormone replacement therapy."
+  },
+  "LACTATED RINGER S SOLUTION": {
+   "treatment_type": "device-or-material",
+   "note": "Lactated Ringer's solution is a fluid used for hydration and electrolyte balance, classified as a medical solution material."
+  },
+  "M032": {
+   "treatment_type": "not-a-treatment",
+   "note": "M032 appears to be a code or identifier, not a recognized treatment."
+  },
+  "LORAZEPAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Lorazepam is a small-molecule drug used as a benzodiazepine sedative."
+  },
+  "L THEANINE": {
+   "treatment_type": "dietary-supplement",
+   "note": "L Theanine is an amino acid commonly used as a dietary supplement for its calming effects."
+  },
+  "LIDOCAINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Lidocaine is a small-molecule local anesthetic drug used for pain relief and arrhythmia treatment."
+  },
+  "MAGNESIUM SULFATE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Magnesium sulfate is classified as a mineral or element used therapeutically."
+  },
+  "MASITINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Masitinib is a small-molecule tyrosine kinase inhibitor used as a drug treatment."
+  },
+  "KETOCONAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ketoconazole is an antifungal small-molecule drug used in veterinary medicine."
+  },
+  "LAPATINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Lapatinib is a small-molecule tyrosine kinase inhibitor used as a targeted cancer therapy."
+  },
+  "MALTODEXTRIN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Maltodextrin is a carbohydrate used as a dietary supplement or food additive, not a drug or biologic."
+  },
+  "MANNITOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Mannitol is a small-molecule osmotic diuretic used as a treatment."
+  },
+  "MEGLUMINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Meglumine is a small-molecule drug used as a pharmaceutical excipient or active agent."
+  },
+  "MELPHALAN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Melphalan is a chemotherapy agent used as a small-molecule drug."
+  },
+  "LOBAPLATIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Lobaplatin is a platinum-based chemotherapy drug used as a small-molecule anticancer agent."
+  },
+  "METFORMIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Metformin is a small-molecule drug used primarily to treat diabetes."
+  },
+  "METHIMAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Methimazole is a small-molecule drug used to treat hyperthyroidism."
+  },
+  "LMP744": {
+   "treatment_type": "small-molecule-drug",
+   "note": "LMP744 is a small-molecule drug used in cancer treatment studies."
+  },
+  "MESENCHYMAL STEM CELLS": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "Mesenchymal stem cells are used as a cell therapy for regenerative purposes."
+  },
+  "LOSARTAN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Losartan is a small-molecule drug used primarily as an angiotensin receptor blocker."
+  },
+  "METAMIZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Metamizole is a non-opioid analgesic and antipyretic drug used for pain and fever management."
+  },
+  "LOTILANER": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Lotilaner is a small-molecule drug used as an ectoparasiticide in veterinary medicine."
+  },
+  "MELATONIN": {
+   "treatment_type": "dietary-supplement",
+   "note": "Melatonin is a dietary supplement used to regulate sleep and circadian rhythms."
+  },
+  "LYSINE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Lysine is an amino acid commonly used as a dietary supplement in veterinary medicine."
+  },
+  "MEGESTROL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Megestrol is a synthetic progestin used as a hormonal therapy."
+  },
+  "METHOTREXATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Methotrexate is a small-molecule chemotherapeutic and immunosuppressive drug."
+  },
+  "MELOXICAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Meloxicam is a nonsteroidal anti-inflammatory drug used to reduce inflammation and pain."
+  },
+  "MEDIUM CHAIN TRIGLYCERIDES": {
+   "treatment_type": "dietary-supplement",
+   "note": "Medium chain triglycerides are used as a dietary supplement in veterinary treatments."
+  },
+  "MESENCHYMAL STROMAL CELLS": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "Mesenchymal stromal cells are used as a cell therapy in veterinary medicine."
+  },
+  "METHYLENE BLUE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Methylene blue is a small-molecule drug used for various medical treatments."
+  },
+  "MIDAZOLAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Midazolam is a small-molecule drug used as a sedative and anxiolytic."
+  },
+  "MICONAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Miconazole is an antifungal small-molecule drug used to treat fungal infections."
+  },
+  "METHIONINE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Methionine is an essential amino acid used as a dietary supplement in veterinary medicine."
+  },
+  "METHADONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Methadone is a synthetic opioid used as a small-molecule drug for pain management."
+  },
+  "MITOMYCIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Mitomycin is a chemotherapy agent used as a small-molecule drug."
+  },
+  "METRONIDAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Metronidazole is an antibiotic and antiprotozoal small-molecule drug used in veterinary medicine."
+  },
+  "MICRONEEDLING": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Microneedling is a procedure used to treat skin conditions by creating controlled skin injury."
+  },
+  "MYCOPHENOLATE MOFETIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Mycophenolate mofetil is an immunosuppressive small-molecule drug used in veterinary medicine."
+  },
+  "METOCLOPRAMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Metoclopramide is a small-molecule drug used as an antiemetic and gastroprokinetic agent."
+  },
+  "MOGAMULIZUMAB": {
+   "treatment_type": "biologic",
+   "note": "Mogamulizumab is a monoclonal antibody used as a biologic therapy."
+  },
+  "MILTEFOSINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Miltefosine is a small-molecule drug used as an antiparasitic agent."
+  },
+  "MIRTAZAPINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Mirtazapine is a small-molecule drug used as an antidepressant and appetite stimulant in veterinary medicine."
+  },
+  "MILRINONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Milrinone is a phosphodiesterase inhibitor used as a small-molecule drug for heart failure."
+  },
+  "NALBUPHINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Nalbuphine is an opioid analgesic used as a small-molecule drug for pain management."
+  },
+  "MOXIDECTIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Moxidectin is an antiparasitic small-molecule drug used in veterinary medicine."
+  },
+  "NERVE GROWTH FACTOR": {
+   "treatment_type": "biologic",
+   "note": "Nerve growth factor is a protein used as a biologic treatment to promote nerve regeneration."
+  },
+  "MYCOPHENOLATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Mycophenolate is an immunosuppressive small-molecule drug used in veterinary medicine."
+  },
+  "MOLNUPIRAVIR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Molnupiravir is an antiviral small-molecule drug used to treat viral infections."
+  },
+  "MIGLUSTAT": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Miglustat is a small-molecule drug used to treat certain metabolic disorders."
+  },
+  "NOREPINEPHRINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Norepinephrine is a small-molecule drug used as a vasopressor in veterinary medicine."
+  },
+  "NON STEROIDAL ANTI INFLAMMATORY DRUG": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Non steroidal anti inflammatory drug is a class of small-molecule drugs used to reduce inflammation."
+  },
+  "NPH INSULIN": {
+   "treatment_type": "biologic",
+   "note": "NPH insulin is a biologic used to manage diabetes by regulating blood glucose levels."
+  },
+  "OZONE": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Ozone therapy is a procedure involving the administration of ozone gas for therapeutic purposes."
+  },
+  "MORPHINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Morphine is an opioid analgesic used as a small-molecule drug for pain management."
+  },
+  "NAVITOCLAX": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Navitoclax is a small-molecule drug used as a Bcl-2 family protein inhibitor in cancer therapy."
+  },
+  "METHYLPREDNISOLONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Methylprednisolone is a corticosteroid drug used to reduce inflammation."
+  },
+  "OMEPRAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Omeprazole is a small-molecule drug used to reduce stomach acid."
+  },
+  "NICLOSAMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Niclosamide is an anthelmintic small-molecule drug used to treat parasitic infections."
+  },
+  "OMEGA 3 FATTY": {
+   "treatment_type": "dietary-supplement",
+   "note": "Omega 3 fatty acids are dietary supplements used for health benefits."
+  },
+  "NHS IL12": {
+   "treatment_type": "biologic",
+   "note": "NHS IL12 is a biologic treatment involving interleukin-12 for immunotherapy."
+  },
+  "OMEGA 3 FATTY ACIDS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Omega 3 fatty acids are dietary supplements used for health benefits."
+  },
+  "OLOPATADINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Olopatadine is an antihistamine used as a small-molecule drug for allergic conditions."
+  },
+  "PANCREATIC ENZYME SUPPLEMENT": {
+   "treatment_type": "dietary-supplement",
+   "note": "Pancreatic enzyme supplements are used to aid digestion by providing digestive enzymes."
+  },
+  "MITOXANTRONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Mitoxantrone is a chemotherapy drug used as a small-molecule treatment."
+  },
+  "NETARSUDIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Netarsudil is a small-molecule drug used to treat glaucoma by lowering intraocular pressure."
+  },
+  "ONDANSETRON": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ondansetron is a small-molecule drug used as an antiemetic."
+  },
+  "NSAID": {
+   "treatment_type": "small-molecule-drug",
+   "note": "NSAID refers to nonsteroidal anti-inflammatory drugs, which are small-molecule drugs used to reduce inflammation and pain."
+  },
+  "PASIREOTIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Pasireotide is a small-molecule drug used as a somatostatin analog for treatment purposes."
+  },
+  "PAROMOMYCIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Paromomycin is an aminoglycoside antibiotic used as a small-molecule drug."
+  },
+  "NEMOLIZUMAB": {
+   "treatment_type": "biologic",
+   "note": "Nemolizumab is a monoclonal antibody used as a biologic treatment."
+  },
+  "MINOCYCLINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Minocycline is a small-molecule antibiotic drug used in veterinary medicine."
+  },
+  "PATUPILONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Patupilone is a small-molecule drug used as an anticancer agent."
+  },
+  "PENTOSAN POLYSULFATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Pentosan polysulfate is a small-molecule drug used for treatment purposes."
+  },
+  "PEUMUS BOLDUS LEAF": {
+   "treatment_type": "dietary-supplement",
+   "note": "Peumus boldus leaf is a herbal supplement used for therapeutic purposes."
+  },
+  "PERMETHRIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Permethrin is a synthetic chemical used as an insecticide and treatment for parasitic infestations."
+  },
+  "POLYUNSATURATED FATTY ACIDS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Polyunsaturated fatty acids are dietary supplements used for health benefits."
+  },
+  "PIROXICAM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Piroxicam is a nonsteroidal anti-inflammatory drug used as a small-molecule therapeutic agent."
+  },
+  "PLATELET RICH PLASMA": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Platelet rich plasma is a procedure involving concentration of platelets for therapeutic use."
+  },
+  "POSACONAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Posaconazole is an antifungal small-molecule drug used to treat fungal infections."
+  },
+  "PRAZIQUANTEL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Praziquantel is an antiparasitic small-molecule drug used in veterinary medicine."
+  },
+  "PARTS A B ADRABETADEX": {
+   "treatment_type": "not-a-treatment",
+   "note": "The name appears to be a combination of parts or components rather than a specific treatment."
+  },
+  "PLATELET CONCENTRATE": {
+   "treatment_type": "biologic",
+   "note": "Platelet concentrate is a biologic treatment derived from blood components used to promote healing."
+  },
+  "PLERIXAFOR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Plerixafor is a small-molecule drug used to mobilize hematopoietic stem cells."
+  },
+  "PREGABALIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Pregabalin is a small-molecule drug used primarily for neuropathic pain and seizures."
+  },
+  "PHENOBARBITAL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Phenobarbital is a small-molecule drug used as an anticonvulsant in veterinary medicine."
+  },
+  "PREDNISONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Prednisone is a corticosteroid drug used as an anti-inflammatory and immunosuppressant."
+  },
+  "PHENYLEPHRINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Phenylephrine is a small-molecule drug used as a decongestant and vasopressor."
+  },
+  "PROTAMINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Protamine is a small-molecule drug used to reverse the effects of heparin anticoagulation."
+  },
+  "RADIATION": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Radiation is a therapeutic procedure used to treat diseases, especially cancer."
+  },
+  "OCTREOTIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Octreotide is a synthetic small-molecule drug used to treat hormone-related conditions."
+  },
+  "PROPYLTHIOURACIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Propylthiouracil is a small-molecule drug used to treat hyperthyroidism."
+  },
+  "PYRANTEL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Pyrantel is an anthelmintic drug used to treat parasitic worm infections."
+  },
+  "PAMIDRONATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Pamidronate is a bisphosphonate drug used to treat bone diseases."
+  },
+  "RADIOIODINE": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Radioiodine is a therapeutic procedure using radioactive iodine for treatment."
+  },
+  "RAAV2TYF GRK1 HRPGRCO": {
+   "treatment_type": "not-a-treatment",
+   "note": "The name appears to be a vector or gene construct identifier, not a treatment type."
+  },
+  "POLYETHYLENE GLYCOL": {
+   "treatment_type": "dietary-supplement",
+   "note": "Polyethylene glycol is commonly used as a laxative or bowel preparation agent, classifying it as a dietary supplement in treatment contexts."
+  },
+  "PREDNISOLONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Prednisolone is a corticosteroid drug used to reduce inflammation."
+  },
+  "PROPRANOLOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Propranolol is a beta-blocker used as a small-molecule drug for various treatments."
+  },
+  "PROPARACAINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Proparacaine is a topical anesthetic used in veterinary medicine."
+  },
+  "PROBIOTIC": {
+   "treatment_type": "dietary-supplement",
+   "note": "Probiotic is a dietary supplement used to support gut health."
+  },
+  "RADIOTHERAPY": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Radiotherapy is a procedure using radiation to treat diseases, commonly cancer."
+  },
+  "RED BLOOD CELLS": {
+   "treatment_type": "not-a-treatment",
+   "note": "Red blood cells are a body substance, not a treatment."
+  },
+  "PRGF": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "PRGF refers to Plasma Rich in Growth Factors, a regenerative therapy procedure used in veterinary medicine."
+  },
+  "PSYLLIUM": {
+   "treatment_type": "dietary-supplement",
+   "note": "Psyllium is a dietary fiber supplement used to improve digestive health."
+  },
+  "PROPOFOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Propofol is an intravenous anesthetic agent used for induction and maintenance of anesthesia."
+  },
+  "RAMIPRIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ramipril is an ACE inhibitor used as a small-molecule drug for treatment."
+  },
+  "PHOSPHORUS": {
+   "treatment_type": "mineral-or-element",
+   "note": "Phosphorus is an essential mineral element, often used as a dietary supplement in veterinary medicine."
+  },
+  "RHUBARB": {
+   "treatment_type": "dietary-supplement",
+   "note": "Rhubarb is commonly used as a dietary supplement or herbal remedy in veterinary and human medicine."
+  },
+  "RIFAMPICIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Rifampicin is an antibiotic used as a small-molecule drug in veterinary treatments."
+  },
+  "PICLIDENOSON": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Piclidenoson is a small-molecule drug used for therapeutic purposes."
+  },
+  "RESVERATROL": {
+   "treatment_type": "dietary-supplement",
+   "note": "Resveratrol is a natural compound often used as a dietary supplement with antioxidant properties."
+  },
+  "REMDESIVIR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Remdesivir is an antiviral small-molecule drug used to treat viral infections."
+  },
+  "QUINAPRIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Quinapril is an ACE inhibitor used as a small-molecule drug for treating hypertension and heart failure."
+  },
+  "REGULAR INSULIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Regular insulin is a small-molecule drug used to manage diabetes by regulating blood glucose levels."
+  },
+  "RIFAXIMIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Rifaximin is an antibiotic used as a small-molecule drug treatment."
+  },
+  "ROPINIROLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ropinirole is a small-molecule drug used primarily as a dopamine agonist."
+  },
+  "RILZABRUTINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Rilzabrutinib is a small-molecule drug acting as a BTK inhibitor used in treatment."
+  },
+  "RIVAROXABAN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Rivaroxaban is an oral anticoagulant used to prevent blood clots."
+  },
+  "MOMETASONE FUROATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Mometasone furoate is a corticosteroid used as a small-molecule drug for anti-inflammatory treatment."
+  },
+  "SALICYLIC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Salicylic acid is a small-molecule drug used for its anti-inflammatory properties."
+  },
+  "ROPIVACAINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Ropivacaine is a local anesthetic used as a small-molecule drug for pain management."
+  },
+  "SACCHAROMYCES BOULARDII": {
+   "treatment_type": "dietary-supplement",
+   "note": "Saccharomyces boulardii is a probiotic yeast used as a dietary supplement to support gut health."
+  },
+  "SORAFENIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sorafenib is a small-molecule kinase inhibitor used as a targeted cancer therapy."
+  },
+  "SEVOFLURANE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sevoflurane is an inhalational anesthetic agent used as a small-molecule drug in veterinary medicine."
+  },
+  "SELINEXOR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Selinexor is a small-molecule drug used as a selective inhibitor of nuclear export."
+  },
+  "SILDENAFIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sildenafil is a small-molecule drug used primarily for treating erectile dysfunction and pulmonary hypertension."
+  },
+  "POTASSIUM BROMIDE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Potassium bromide is classified as a mineral or element used as a treatment in veterinary medicine."
+  },
+  "SUBSTANCE P SAPORIN": {
+   "treatment_type": "biologic",
+   "note": "Substance P saporin is a targeted toxin used as a biologic treatment."
+  },
+  "STROMAL VASCULAR FRACTION": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "Stromal vascular fraction is a cell-based therapy derived from adipose tissue."
+  },
+  "STANOZOLOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Stanozolol is an anabolic steroid used as a small-molecule drug."
+  },
+  "SPIRONOLACTONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Spironolactone is a small-molecule drug used as a diuretic and aldosterone antagonist."
+  },
+  "STANNOUS FLUORIDE": {
+   "treatment_type": "mineral-or-element",
+   "note": "Stannous fluoride is a mineral compound used primarily in dental care treatments."
+  },
+  "SELEGILINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Selegiline is a small-molecule drug used primarily as a monoamine oxidase inhibitor."
+  },
+  "SACUBITRIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sacubitril is a small-molecule drug used as a neprilysin inhibitor in heart failure treatment."
+  },
+  "SULFADIAZINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sulfadiazine is a sulfonamide antibiotic used as a small-molecule drug in veterinary medicine."
+  },
+  "SUBLINGUAL IMMUNOTHERAPY": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Sublingual immunotherapy is a treatment procedure involving administration of allergens under the tongue."
+  },
+  "SPINOSAD": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Spinosad is an insecticide used as a small-molecule drug in veterinary medicine."
+  },
+  "SODIUM BENZOATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sodium benzoate is a small-molecule drug used as a treatment, often as a preservative or in metabolic disorders."
+  },
+  "SULFAMETHOXAZOLE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sulfamethoxazole is a small-molecule antibiotic used to treat bacterial infections."
+  },
+  "SULFORAPHANE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Sulforaphane is a natural compound found in cruciferous vegetables used as a dietary supplement."
+  },
+  "SUFENTANIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sufentanil is a potent opioid analgesic used as a small-molecule drug for pain management."
+  },
+  "SUNITINIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sunitinib is a small-molecule tyrosine kinase inhibitor used as a targeted cancer therapy."
+  },
+  "SHORT ACTING INSULIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Short acting insulin is a small-molecule drug used to regulate blood sugar."
+  },
+  "TARAXACUM OFFICINALE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Taraxacum officinale is commonly known as dandelion and used as a herbal dietary supplement."
+  },
+  "TCMCB07": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "TCMCB07 is a cell-based therapy used in veterinary medicine."
+  },
+  "THERAPEUTIC ULTRASOUND": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Therapeutic ultrasound is a procedure used for treatment purposes."
+  },
+  "THALIDOMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Thalidomide is a small-molecule drug used for its immunomodulatory and anti-inflammatory properties."
+  },
+  "TEMOZOLOMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Temozolomide is an oral chemotherapy drug used to treat certain cancers."
+  },
+  "TADALAFIL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Tadalafil is a small-molecule drug used primarily for treating erectile dysfunction and pulmonary hypertension."
+  },
+  "TOLFENAMIC": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Tolfenamic is a nonsteroidal anti-inflammatory drug used as a small-molecule therapeutic agent."
+  },
+  "TRIAMCINOLONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Triamcinolone is a corticosteroid drug used to reduce inflammation."
+  },
+  "TANEZUMAB": {
+   "treatment_type": "biologic",
+   "note": "Tanezumab is a monoclonal antibody used as a biologic treatment."
+  },
+  "TORASEMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Torasemide is a loop diuretic used as a small-molecule drug in veterinary medicine."
+  },
+  "SIROLIMUS": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Sirolimus is an immunosuppressive small-molecule drug used in veterinary and human medicine."
+  },
+  "THYROID": {
+   "treatment_type": "not-a-treatment",
+   "note": "Thyroid refers to a gland or hormone, not a treatment."
+  },
+  "TORSEMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Torsemide is a loop diuretic used as a small-molecule drug to treat fluid retention."
+  },
+  "TRAMADOL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Tramadol is a small-molecule opioid analgesic used for pain management."
+  },
+  "TRIAMCINOLONE HEXACETONIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Triamcinolone hexacetonide is a corticosteroid used as a small-molecule drug for anti-inflammatory treatment."
+  },
+  "RADIATION THERAPY": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "Radiation therapy is a procedure used to treat diseases, commonly cancer, by using ionizing radiation."
+  },
+  "TRICLOSAN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Triclosan is an antimicrobial agent used as a small-molecule drug."
+  },
+  "TRIAMCINOLONE ACETONIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Triamcinolone acetonide is a corticosteroid medication used as a small-molecule drug."
+  },
+  "THIOPENTAL": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Thiopental is a barbiturate used as an anesthetic agent."
+  },
+  "TERBINAFINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Terbinafine is an antifungal small-molecule drug used to treat fungal infections."
+  },
+  "TACROLIMUS": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Tacrolimus is an immunosuppressive small-molecule drug used in veterinary medicine."
+  },
+  "TRAZODONE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Trazodone is a small-molecule drug used primarily as an antidepressant and anxiolytic."
+  },
+  "UMBILICAL CORD DERIVED MESENCHYMAL STEM CELL": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "Umbilical cord derived mesenchymal stem cells are a type of cell therapy used for treatment."
+  },
+  "TELMISARTAN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Telmisartan is an angiotensin II receptor antagonist used as a small-molecule drug."
+  },
+  "UROKINASE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Urokinase is an enzyme used as a thrombolytic agent to dissolve blood clots."
+  },
+  "TURMERIC": {
+   "treatment_type": "dietary-supplement",
+   "note": "Turmeric is commonly used as a dietary supplement with anti-inflammatory properties."
+  },
+  "VALSARTAN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Valsartan is an angiotensin II receptor blocker used as a small-molecule drug for treating hypertension."
+  },
+  "VINCRISTINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Vincristine is a chemotherapy drug used in veterinary oncology."
+  },
+  "VINBLASTINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Vinblastine is a chemotherapy drug used as a small-molecule treatment."
+  },
+  "VASOPRESSIN": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Vasopressin is a small-molecule drug used as a hormone therapy."
+  },
+  "VENETOCLAX": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Venetoclax is a small-molecule drug used as a targeted therapy."
+  },
+  "VITAMIN K1": {
+   "treatment_type": "dietary-supplement",
+   "note": "Vitamin K1 is a dietary supplement used to treat or prevent vitamin K deficiency."
+  },
+  "VAPOCOOLANT SPRAY": {
+   "treatment_type": "device-or-material",
+   "note": "Vapocoolant spray is a topical cooling agent used to reduce pain and inflammation, classified as a device or material."
+  },
+  "VECURONIUM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Vecuronium is a small-molecule neuromuscular blocking agent used as a muscle relaxant during anesthesia."
+  },
+  "TRIMETHOPRIM": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Trimethoprim is an antibiotic used as a small-molecule drug in veterinary medicine."
+  },
+  "ULTRASOUND THERAPY COMBINED WITH CHITOSAN NANOPARTICLES GEL": {
+   "treatment_type": "procedure-or-regimen",
+   "note": "This is a combined treatment involving a therapeutic procedure (ultrasound therapy) and a drug delivery system (chitosan nanoparticles gel)."
+  },
+  "WHEY": {
+   "treatment_type": "dietary-supplement",
+   "note": "Whey is a dietary supplement derived from milk proteins, commonly used for nutritional support."
+  },
+  "VERDINEXOR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Verdinexor is a small-molecule drug used as a selective inhibitor of nuclear export."
+  },
+  "XYLOMETAZOLINE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Xylometazoline is a small-molecule nasal decongestant drug."
+  },
+  "VITAMIN E": {
+   "treatment_type": "dietary-supplement",
+   "note": "Vitamin E is classified as a dietary supplement used in veterinary treatments."
+  },
+  "TRILOSTANE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Trilostane is a small-molecule drug used to treat hyperadrenocorticism in veterinary medicine."
+  },
+  "ZINC": {
+   "treatment_type": "mineral-or-element",
+   "note": "Zinc is an essential mineral used as a dietary supplement and treatment."
+  },
+  "YUNNAN BAIYAO": {
+   "treatment_type": "dietary-supplement",
+   "note": "Yunnan Baiyao is a traditional Chinese herbal remedy used as a dietary supplement for its hemostatic properties."
+  },
+  "THERAPEUTIC AUTOLOGOUS LYMPHOCYTES": {
+   "treatment_type": "cell-or-gene-therapy",
+   "note": "Therapeutic autologous lymphocytes involve using a patient's own immune cells for treatment, classifying it as cell therapy."
+  },
+  "VEMURAFENIB": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Vemurafenib is a small-molecule drug used as a targeted therapy."
+  },
+  "ZOLEDRONATE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Zoledronate is a bisphosphonate drug used to treat bone diseases."
+  },
+  "VITAMIN C": {
+   "treatment_type": "dietary-supplement",
+   "note": "Vitamin C is classified as a dietary supplement used in veterinary treatments."
+  },
+  "VITAMINS": {
+   "treatment_type": "dietary-supplement",
+   "note": "Vitamins are dietary supplements used to support health."
+  },
+  "RALTEGRAVIR": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Raltegravir is an antiretroviral drug used to treat viral infections."
+  },
+  "ZONISAMIDE": {
+   "treatment_type": "small-molecule-drug",
+   "note": "Zonisamide is an anticonvulsant medication used as a small-molecule drug in veterinary medicine."
+  },
+  "TAURINE": {
+   "treatment_type": "dietary-supplement",
+   "note": "Taurine is an amino acid commonly used as a dietary supplement in veterinary medicine."
+  }
+ },
+ "rejudge": {
+  "EMODEPSIDE|same-molecule|ectoparasite infestation": {
+   "veterinary": "positive",
+   "veterinary_basis": "A multicenter, randomized, blinded field study in 326 cats with natural flea and/or tick infestations demonstrated non-inferiority of an emodepside-containing combination product compared to a commercial control product.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "No human records for emodepside for ectoparasite infestation were provided.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary product is a combination of emodepside, praziquantel, and tigolaner, making it difficult to attribute efficacy solely to emodepside."
+  },
+  "CORTICOSTEROIDS|same-molecule|mastocytosis cutaneous": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "A single observational case series of 8 dogs described multi-modal therapy including corticosteroids, but did not assess the efficacy of corticosteroids alone.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "negative",
+   "human_basis": "A meta-analysis described treatment for cutaneous mastocytosis, including corticosteroids, as purely symptomatic, indicating a lack of disease-modifying effect.",
+   "human_citations": [
+    "28770635"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The human evidence is negative for a disease-modifying effect, as specified in the prompt. The veterinary evidence is from a small, uncontrolled case series."
+  },
+  "BLEOMYCIN|same-molecule|soft tissue sarcoma": {
+   "veterinary": "positive",
+   "veterinary_basis": "A non-randomized controlled trial in 12 cats with soft tissue sarcoma treated with bleomycin electrochemotherapy showed a significant increase in mean survival time compared to 11 untreated control cats (6.1 months vs 0.8 months).",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "No evidence was provided for the use of bleomycin in human soft tissue sarcoma.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study used electrochemotherapy, combining bleomycin with electric pulses. The veterinary study was a non-randomized controlled trial."
+  },
+  "GLYCERYL|same-molecule|prostatic carcinoma": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The single veterinary study was a prospective trial evaluating the effect of glyceryl trinitrate on CT angiogram findings, not on the prostatic carcinoma itself. It was not designed to assess anti-cancer efficacy.",
+   "human_top_level": "phase-2",
+   "human": "positive",
+   "human_basis": "A single-arm, open-label phase 2 study in 29 men with biochemical recurrence of prostate cancer found that glyceryl trinitrate significantly prolonged the PSA doubling time from 13.3 months to 31.8 months (P < .001).",
+   "human_citations": [
+    "19476985"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study did not assess the anti-cancer efficacy of glyceryl trinitrate, but rather its effect on imaging prior to a different procedure. The therapeutic intent differs from the human study."
+  },
+  "CIMICOXIB|same-molecule|osteosarcoma": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "A small, open-label study in 13 dogs evaluated cimicoxib as part of a palliative care regimen for osteosarcoma pain. While some specific outcomes like actimetry improved, the authors concluded the pain was 'mostly refractory' to treatment, making the results indeterminate.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "No human studies of cimicoxib for osteosarcoma were identified.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study evaluated cimicoxib for palliative pain relief in osteosarcoma, not as a disease-modifying agent, which was the specified intent for the human condition."
+  },
+  "CARVEDILOL|same-molecule|hypertrophic cardiomyopathy": {
+   "veterinary": "positive",
+   "veterinary_basis": "A prospective, single-arm study in 11 cats with obstructive hypertrophic cardiomyopathy showed that high-dose carvedilol significantly improved LVOT velocity, myocardial function, and cardiac troponin I levels.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "Carvedilol is not approved for hypertrophic cardiomyopathy in the US. No clinical trials evaluating carvedilol for this specific indication were provided.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary evidence is from a single, small, uncontrolled study. No relevant human clinical trials for hypertrophic cardiomyopathy were provided for review."
+  },
+  "HYMENOPTERA VENOM|same-molecule|anaphylaxis": {
+   "veterinary": "positive",
+   "veterinary_basis": "In a single-arm prospective study of 10 dogs with a history of anaphylaxis, venom immunotherapy was evaluated. Of the 7 dogs that were re-stung, 6 had no reaction and 1 had only a mild local reaction, demonstrating efficacy.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "positive",
+   "human_basis": "A systematic review and meta-analysis found that venom immunotherapy substantially reduced the risk of subsequent severe systemic sting reactions (OR = 0.08, 95% CI 0.03-0.26). It also improved disease-specific quality of life.",
+   "human_citations": [
+    "28120424"
+   ],
+   "pair": "concordant",
+   "caveats": "The veterinary evidence is from a small, single-arm study. The human evidence is from a meta-analysis."
+  },
+  "FUROSEMIDE|same-molecule|congestive heart failure": {
+   "veterinary": "positive",
+   "veterinary_basis": "In a large randomized controlled trial in 366 dogs with congestive heart failure, furosemide was the active control and standard of care. A new diuretic, torasemide, was demonstrated to be non-inferior to furosemide, establishing the efficacy of furosemide as the benchmark for treatment success.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Furosemide is approved in the US for the treatment of edema associated with congestive heart failure. Multiple labels for oral and injectable formulations confirm this indication.",
+   "human_citations": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "pair": "concordant",
+   "caveats": "The veterinary evidence is from a study where furosemide was the active control, not tested against placebo; its efficacy is established as the standard of care. The human indication is for the treatment of edema associated with CHF, a symptomatic role, not altering the underlying disease progression."
+  },
+  "ANTIHISTAMINES|same-molecule|mastocytosis": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The only study was a small, observational case series where all 8 dogs received multiple concurrent therapies, making it impossible to assess the efficacy of antihistamines alone.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "positive",
+   "human_basis": "A randomized, double-blind, placebo-controlled trial in 30 patients found the antihistamine rupatadine significantly improved symptoms and quality of life compared to placebo. A systematic review identified this as the key positive evidence among a small number of trials.",
+   "human_citations": [
+    "23734572",
+    "26095756"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The human evidence supports symptomatic relief, not disease modification as specified in the user's intent. The veterinary study was for cutaneous mastocytosis, while the human evidence covers both cutaneous and systemic forms."
+  },
+  "CORTICOSTEROIDS|same-molecule|lymphoma central nervous system": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The only available study was a single-arm trial of corticosteroids in combination with lomustine. It is not possible to determine the efficacy of corticosteroids alone from this study.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "indeterminate",
+   "human_basis": "The highest level of evidence includes a phase 3 trial and a meta-analysis. However, none of the provided studies were designed to assess the disease-modifying efficacy of corticosteroids for CNS lymphoma; they were used as background therapy or studied for their impact on diagnosis.",
+   "human_citations": [
+    "42486133",
+    "38865324"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study evaluated corticosteroids as part of a combination therapy, not as a monotherapy. The human studies evaluated corticosteroids as background therapy or for their impact on diagnosis, not for their primary disease-modifying efficacy."
+  },
+  "DICLOFENAC|same-molecule|diabetes mellitus": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The single randomized trial in dogs with diabetes mellitus was not designed to test the efficacy of diclofenac for treating the disease. It evaluated the effect of topical ophthalmic diclofenac on glycemic control and found no difference compared to a topical steroid.",
+   "human_top_level": "us-approval",
+   "human": "indeterminate",
+   "human_basis": "Diclofenac is not approved by the US FDA for the treatment or modification of diabetes mellitus. No clinical trials were identified that tested the efficacy of diclofenac for this indication.",
+   "human_citations": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study evaluated the safety of topical ophthalmic diclofenac on glycemic control, not its efficacy as a treatment for diabetes. The human condition was specified as disease-modifying, for which no evidence was found."
+  },
+  "4 AMINOPYRIDINE|same-molecule|spinal cord injury": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The single study was a Phase I dose-escalation trial in 39 dogs with naturally occurring spinal cord injury. Although temporary neurological improvements were noted, the study's primary purpose was dose-finding, rendering the evidence for efficacy indeterminate.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "negative",
+   "human_basis": "The highest level of evidence consists of two Phase 3 randomized controlled trials evaluating fampridine for spasticity in chronic spinal cord injury. Both trials failed to show a significant difference between treatment and placebo for their primary endpoints.",
+   "human_citations": [
+    "24216616"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary evidence is from a single, uncontrolled Phase I dose-finding study. The human classification is based on two negative Phase 3 trials for spasticity, a symptom of spinal cord injury; lower-level evidence for other functional endpoints was mixed."
+  },
+  "IVERMECTIN|same-molecule|thelaziosis": {
+   "veterinary": "positive",
+   "veterinary_basis": "In a randomized controlled trial in dogs with naturally occurring thelaziosis, an ivermectin eye drop formulation demonstrated 85.7% treatment efficacy one week after administration. This was superior to the comparator milbemycin oxime/praziquantel group, which had 70.4% efficacy at the same time point.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "Ivermectin is not approved by the FDA for the treatment of thelaziasis, and no clinical studies for this indication were provided.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": ""
+  },
+  "EXENATIDE|same-molecule|diabetes mellitus": {
+   "veterinary": "negative",
+   "veterinary_basis": "A randomized, placebo-controlled trial in 30 cats with newly diagnosed diabetes failed to meet its primary endpoints for remission (p=0.427) or good metabolic control (p=0.178).",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Exenatide is approved in the US as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+   "human_citations": [
+    "L0",
+    "L1"
+   ],
+   "pair": "discordant",
+   "caveats": "The single veterinary study was a small pilot trial (n=30) which may have been underpowered to detect a significant effect. The human approval is for glycemic control; cardiovascular outcome trials have shown more nuanced results."
+  },
+  "IVERMECTIN|same-molecule|transmissible venereal tumor": {
+   "veterinary": "positive",
+   "veterinary_basis": "A randomized, placebo-controlled trial in 20 dogs with transmissible venereal tumors found that adding ivermectin to standard vincristine therapy significantly shortened the time to remission compared to vincristine plus placebo.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "Ivermectin is not approved for transmissible venereal tumor in humans, and no clinical trials for this indication were provided.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "Transmissible venereal tumor is exceedingly rare in humans, which likely explains the absence of clinical trials. The veterinary study evaluated ivermectin as an adjunctive therapy, not as a monotherapy."
+  },
+  "LOTILANER|same-molecule|gastrointestinal nematode infection": {
+   "veterinary": "positive",
+   "veterinary_basis": "Two randomized controlled trials demonstrated that combination products containing lotilaner were highly effective, reducing fecal egg counts by over 97% in dogs with naturally occurring gastrointestinal nematode infections.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "No human studies of lotilaner for gastrointestinal nematode infection were identified.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary studies evaluated combination products where lotilaner, an ectoparasiticide, was paired with anthelmintic drugs. The observed efficacy against nematodes is attributable to the other components (e.g., milbemycin oxime, moxidectin, pyrantel), not lotilaner itself."
+  },
+  "BLEOMYCIN|same-molecule|melanoma": {
+   "veterinary": "positive",
+   "veterinary_basis": "A controlled study in 364 dogs with melanoma found that adjuvant therapy including bleomycin significantly increased local disease-free rates, distant metastases-free rates, and overall survival compared to surgery alone.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "mixed",
+   "human_basis": "A meta-analysis of bleomycin electrochemotherapy for cutaneous metastases found a high aggregate objective response rate of 77.6%. However, two phase 3 RCTs of systemic combination chemotherapy including bleomycin failed to show superiority over comparator regimens.",
+   "human_citations": [
+    "6199481",
+    "11828263",
+    "34889156"
+   ],
+   "pair": "mixed",
+   "caveats": "The veterinary study used bleomycin as part of a complex multi-modal adjuvant therapy, making it difficult to isolate its specific effect. The human evidence is split between local therapy (electrochemotherapy), which is positive, and systemic therapy, which is negative."
+  },
+  "ENAMEL MATRIX DERIVATIVE|same-molecule|periodontal disease": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The only available study was a retrospective, uncontrolled case series in 16 dogs. While it reported positive outcomes, this study design is insufficient to be classified as positive.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "mixed",
+   "human_basis": "Multiple randomized controlled trials exist with conflicting results. Some trials showed enamel matrix derivative was superior to control for clinical attachment gain, while others found no significant difference compared to placebo or control procedures.",
+   "human_citations": [
+    "12795787",
+    "33107596",
+    "12887343",
+    "15830647",
+    "32182380",
+    "15766363"
+   ],
+   "pair": "indeterminate",
+   "caveats": ""
+  },
+  "CARBOPLATIN|same-molecule|urothelial carcinoma": {
+   "veterinary": "positive",
+   "veterinary_basis": "A single-arm study of carboplatin and piroxicam in 31 dogs with TCC reported an objective response rate of 40%. A second single-arm study of transarterial chemoembolization with carboplatin in 29 dogs reported a partial remission rate of 96.5%.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "positive",
+   "human_basis": "The Phase 3 POUT trial demonstrated that adjuvant chemotherapy with gemcitabine and carboplatin significantly improved disease-free survival compared to surveillance. Multiple other Phase 3 trials establish gemcitabine/carboplatin as an active standard-of-care comparator arm for first-line treatment of advanced urothelial carcinoma.",
+   "human_citations": [
+    "32145825",
+    "38101433",
+    "38446675"
+   ],
+   "pair": "concordant",
+   "caveats": "The veterinary studies used carboplatin in combination with piroxicam or as part of a transarterial chemoembolization procedure. The human evidence is primarily for carboplatin in combination with gemcitabine."
+  },
+  "METAMIZOLE|same-molecule|cancer pain": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The only available study was a prospective, uncontrolled, open-label clinical trial. Per the rules, uncontrolled studies are classified as indeterminate.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "positive",
+   "human_basis": "A systematic review of 4 studies, including 3 RCTs, found that metamizole significantly decreased cancer pain intensity compared to placebo. The review concluded that it can be recommended for the treatment of cancer pain.",
+   "human_citations": [
+    "27435604"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary evidence is limited to a single uncontrolled study. Metamizole is not approved for use in the US."
+  },
+  "METHADONE|same-molecule|thoracolumbar disc disease": {
+   "veterinary": "positive",
+   "veterinary_basis": "A randomized controlled trial in 50 dogs with thoracolumbar disc disease found that subcutaneous methadone provided adequate postoperative analgesia, with no significant difference compared to the active comparator, transdermal fentanyl.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Methadone is approved in the US for the management of severe and persistent pain that requires an opioid analgesic and cannot be adequately treated with alternative options, which covers symptomatic treatment of thoracolumbar disc disease.",
+   "human_citations": [
+    "L2",
+    "L4",
+    "L5"
+   ],
+   "pair": "concordant",
+   "caveats": "The veterinary study was an active-comparator trial against fentanyl, not placebo. The human approval is for severe, persistent pain in general, not specifically for disc disease, and is reserved for when alternative treatments are inadequate."
+  },
+  "MOXIDECTIN|same-molecule|intestinal nematode infections": {
+   "veterinary": "positive",
+   "veterinary_basis": "Three randomized controlled trials in cats and dogs with naturally occurring intestinal nematode infections found moxidectin-containing combination products to be effective, meeting non-inferiority or superiority endpoints against active controls.",
+   "human_top_level": "us-approval",
+   "human": "indeterminate",
+   "human_basis": "Moxidectin is approved in the US for onchocerciasis, a filarial nematode infection, but not for the corresponding condition of intestinal nematode infections. No other evidence was provided for the specified indication.",
+   "human_citations": [
+    "L0"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The human approval is for a different type of nematode infection (onchocerciasis, a filarial disease) than the one studied in pets (intestinal nematodes). The veterinary studies all used moxidectin as part of a combination product."
+  },
+  "NHS IL12|same-molecule|melanoma": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "A single-arm dose-escalation study in dogs with melanoma reported 2 partial responses out of 18 treated dogs. The objective response rate of 11% is below the 20% threshold required for a positive classification in a single-arm cancer study.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "No human clinical trial data for NHS-IL12 in melanoma was identified.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": ""
+  },
+  "MIRTAZAPINE|same-molecule|chronic kidney disease": {
+   "veterinary": "positive",
+   "veterinary_basis": "A randomized, placebo-controlled trial in cats with chronic kidney disease found that transdermal mirtazapine significantly increased appetite and body weight compared to placebo.",
+   "human_top_level": "earlier",
+   "human": "positive",
+   "human_basis": "A pilot randomized crossover trial in hemodialysis patients found mirtazapine was significantly more effective than gabapentin at reducing pruritus severity.",
+   "human_citations": [
+    "32383050"
+   ],
+   "pair": "concordant",
+   "caveats": "The specific symptom targeted differed between species (appetite in cats, pruritus in humans). The human evidence is from a single pilot study."
+  },
+  "IVABRADINE|same-molecule|hypertrophic cardiomyopathy with lvot obstruction": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "A single RCT in cats with HCM found that ivabradine produced a statistically significant reduction in LVOT obstruction from baseline. However, the effect was deemed clinically negligible and inferior to the active comparator, atenolol.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "Ivabradine is not approved for hypertrophic cardiomyopathy in the US. No clinical trials for this indication were provided in the records.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study evaluated only the acute effects of a single dose. The human evidence search was limited to the provided records."
+  },
+  "PYRANTEL|same-molecule|flea infestation": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The study evaluated a combination product (sarolaner, moxidectin, pyrantel) for flea infestation. The efficacy against fleas is attributed to sarolaner, an ectoparasiticide, not pyrantel, which is an anthelmintic.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "No human studies for pyrantel for flea infestation were identified.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study tested a combination product in which pyrantel is not the active ingredient for flea infestation; efficacy is attributed to sarolaner."
+  },
+  "PROPARACAINE|same-molecule|infected corneal ulcer": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The single clinical trial did not assess the efficacy of proparacaine for treating infected corneal ulcers. It only evaluated whether its use as a topical anesthetic prior to sample collection interfered with the results of aerobic bacterial cultures.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Proparacaine is approved in the US for use as a topical anesthetic for short ophthalmic procedures. This includes procedures relevant to the diagnosis and management of infected corneal ulcers, such as corneal scraping for culture.",
+   "human_citations": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary study was not designed to assess efficacy. The human approval is for short-term procedural anesthesia, not for therapeutic pain management of the ulcer itself due to risks of corneal toxicity."
+  },
+  "PROPOFOL|same-molecule|intracranial disease": {
+   "veterinary": "positive",
+   "veterinary_basis": "A randomized controlled trial in 25 dogs with intracranial disease found that propofol maintenance anesthesia resulted in better cardiovascular stability and recovery scores compared to isoflurane.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Propofol is approved in the US for general anesthesia and ICU sedation, which are standard procedures for patients with intracranial disease. A randomized controlled trial also showed propofol reduced intracranial hypertension and improved prognosis in this population.",
+   "human_citations": [
+    "L5",
+    "33121474"
+   ],
+   "pair": "concordant",
+   "caveats": "The veterinary study compared propofol to another active anesthetic, isoflurane, not placebo. The use in both species is for symptomatic control (anesthesia/sedation) in patients with intracranial disease, not treatment of the underlying pathology."
+  },
+  "PREDNISOLONE|same-molecule|asthma": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "A single small pilot RCT (n=9 total, 4 on prednisolone) showed that cats with asthma responded well to oral prednisolone, becoming clinically normal with improved airway cytology. However, due to the very small sample size and pilot nature of the study, the evidence is considered indeterminate.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Prednisolone is approved in the US for the treatment of asthma. Multiple labels for oral formulations list asthma or bronchial asthma as an indication.",
+   "human_citations": [
+    "L0",
+    "L1",
+    "L2",
+    "L4"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary evidence is limited to a single, very small pilot study."
+  },
+  "SEVOFLURANE|same-molecule|intervertebral disc disease": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The provided studies were randomized controlled trials comparing the physiological effects of sevoflurane versus isoflurane as anesthetics in dogs undergoing procedures for intervertebral disc disease. They were not designed to assess efficacy for a clinical outcome related to the disease itself.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Sevoflurane has a US label indication for the induction and maintenance of general anesthesia for inpatient and outpatient surgery. This broad indication covers its use as an anesthetic during surgical procedures for intervertebral disc disease.",
+   "human_citations": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The veterinary studies evaluated sevoflurane as an anesthetic agent during procedures for intervertebral disc disease, not as a treatment for the disease itself. The human approval is for general anesthesia in surgery, a broad indication covering the context of use."
+  },
+  "TRAZODONE|same-molecule|perioperative analgesia": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The single observational study did not evaluate the analgesic efficacy of trazodone. It was administered as part of a multi-drug protocol to all dogs, and the study's endpoint was skin perfusion, not pain.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "There is no US approval or published clinical trial evidence for the use of trazodone for postoperative pain.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": ""
+  },
+  "TERBINAFINE|same-molecule|malassezia dermatitis": {
+   "veterinary": "positive",
+   "veterinary_basis": "A randomized controlled trial in 22 dogs with Malassezia dermatitis showed that terbinafine combined with an antibiotic resulted in a significant reduction in yeast counts (p<0.002) and pruritus, while the antibiotic-only control group did not.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "No human clinical trials for terbinafine in Malassezia dermatitis were provided. US approval is for onychomycosis, a different indication.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary evidence is based on a small pilot study. The human condition of Malassezia dermatitis is different from the approved indication of onychomycosis."
+  },
+  "METHADONE|same-molecule|perioperative analgesia": {
+   "veterinary": "positive",
+   "veterinary_basis": "A randomized controlled trial in 49 cats undergoing castration found that intravenous methadone provided longer-lasting analgesia and resulted in fewer requirements for rescue analgesia compared to local anesthetic techniques.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Methadone is approved in the US for the management of severe pain that requires an opioid analgesic. Multiple labels for oral and injectable formulations carry this indication.",
+   "human_citations": [
+    "L2",
+    "L4",
+    "L5"
+   ],
+   "pair": "concordant",
+   "caveats": ""
+  },
+  "PROPOFOL|same-molecule|laryngeal paralysis": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The single veterinary study was a randomized trial comparing propofol to alfaxalone for their effects on laryngeal motion during anesthesia for diagnostic purposes. It was not designed to test the efficacy of propofol for treating laryngeal paralysis, making the outcome indeterminate for this condition.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Propofol is approved in the US for general anesthesia and monitored anesthesia care sedation. These indications cover its use during diagnostic or surgical procedures for patients with laryngeal paralysis.",
+   "human_citations": [
+    "L5"
+   ],
+   "pair": "indeterminate",
+   "caveats": "The use of propofol in both veterinary and human medicine for this condition is as an anesthetic to facilitate diagnostic procedures, not as a treatment for laryngeal paralysis itself."
+  },
+  "ZONISAMIDE|same-molecule|epilepsy": {
+   "veterinary": "positive",
+   "veterinary_basis": "A prospective, single-arm study (PMID:38780448) in 53 dogs with newly diagnosed idiopathic epilepsy found that zonisamide monotherapy resulted in a ≥50% reduction in seizure frequency in 76% of dogs.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Zonisamide is approved in the US as adjunctive therapy for the treatment of partial seizures in adults with epilepsy.",
+   "human_citations": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "pair": "concordant",
+   "caveats": "The veterinary evidence is from a single-arm, open-label study, while the human evidence includes US approval and multiple RCTs. The human approval is for adjunctive therapy, while the veterinary study evaluated monotherapy."
+  },
+  "MELOXICAM|same-molecule|perioperative analgesia": {
+   "veterinary": "positive",
+   "veterinary_basis": "Multiple randomized controlled trials in both dogs and cats demonstrated that meloxicam provided effective perioperative analgesia. It was shown to be superior to placebo and to have efficacy comparable or superior to other active analgesics like ketoprofen and robenacoxib.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "positive",
+   "human_basis": "Multiple phase 3 randomized controlled trials and meta-analyses demonstrate that intravenous meloxicam is superior to placebo for managing moderate-to-severe postoperative pain. These studies also consistently show a significant opioid-sparing effect.",
+   "human_citations": [
+    "39660482",
+    "30786162",
+    "35678995",
+    "33109098",
+    "33291975"
+   ],
+   "pair": "concordant",
+   "caveats": ""
+  },
+  "PROPOFOL|same-molecule|perioperative complications": {
+   "veterinary": "positive",
+   "veterinary_basis": "A randomized controlled trial in dogs undergoing orthopedic surgery found that a propofol-based anesthesia protocol resulted in significantly fewer interventions to treat cardiovascular depression or arousal/movement episodes compared to an isoflurane-based protocol.",
+   "human_top_level": "us-approval",
+   "human": "positive",
+   "human_basis": "Propofol is approved in the US for the induction and maintenance of general anesthesia and for sedation. This approval indicates it is considered effective for its intended use with a manageable profile of perioperative complications.",
+   "human_citations": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ],
+   "pair": "concordant",
+   "caveats": "The veterinary study assessed propofol's superiority over a specific comparator (isoflurane) in reducing anesthetic interventions. The human evidence is based on the general approval of propofol as an anesthetic agent, which implies an acceptable risk-benefit profile for perioperative use."
+  },
+  "SIROLIMUS|same-molecule|osteosarcoma": {
+   "veterinary": "negative",
+   "veterinary_basis": "A large, randomized controlled trial in 324 dogs with osteosarcoma found that adding adjuvant sirolimus to standard of care (amputation and carboplatin) did not significantly improve disease-free interval or overall survival.",
+   "human_top_level": "phase-2",
+   "human": "mixed",
+   "human_basis": "Phase 2 trials of mTOR inhibitors for osteosarcoma show conflicting results. A single-arm trial of sirolimus plus gemcitabine met its primary endpoint, but a randomized trial of temsirolimus plus cixutumumab showed no objective responses.",
+   "human_citations": [
+    "29045512",
+    "25446280"
+   ],
+   "pair": "mixed",
+   "caveats": "The veterinary trial evaluated sirolimus as an adjuvant monotherapy added to standard chemotherapy, whereas the human trials evaluated sirolimus or other mTOR inhibitors in combination regimens for relapsed or refractory disease."
+  },
+  "TRAZODONE|same-molecule|postsurgical confinement": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "The single veterinary study was a prospective, single-arm, open-label trial. While 89% of owners reported improvement, the outcome was based on an owner survey not specified as validated, which is required for a positive classification for this study design.",
+   "human_top_level": "none",
+   "human": "indeterminate",
+   "human_basis": "Trazodone is approved in the US for major depressive disorder, but not for postoperative anxiety. No clinical trials for this specific indication were identified.",
+   "human_citations": [],
+   "pair": "indeterminate",
+   "caveats": "The veterinary evidence is limited to a single uncontrolled study. The human indication is an off-label use for which no clinical trials were provided."
+  },
+  "METRONIDAZOLE|same-molecule|inflammatory bowel disease": {
+   "veterinary": "indeterminate",
+   "veterinary_basis": "A randomized controlled trial in dogs with IBD failed to show that adding metronidazole to prednisone was superior to prednisone alone for inducing remission. As the comparator was not placebo or no treatment, the result is indeterminate.",
+   "human_top_level": "phase-3-or-meta-analysis",
+   "human": "mixed",
+   "human_basis": "The highest level of evidence consists of meta-analyses, which show conflicting results. A network meta-analysis found metronidazole effective for inducing remission in chronic pouchitis (a complication of ulcerative colitis), while another meta-analysis found no benefit for antibiotics in maintaining remission in Crohn's disease.",
+   "human_citations": [
+    "35271513",
+    "30731030"
+   ],
+   "pair": "mixed",
+   "caveats": "The veterinary evidence is limited to a single RCT that tested metronidazole only in combination with prednisone. The human evidence is complex, with efficacy varying by IBD subtype, disease state (active vs. maintenance), and specific complication (e.g., pouchitis)."
+  }
+ }
+}

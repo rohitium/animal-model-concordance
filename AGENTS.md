@@ -5,10 +5,12 @@ correspond to human clinical outcomes. Live at
 <https://rohitium.github.io/animal-model-concordance/>, built in CI from the committed data
 on every push to `main`.
 
-**Redesign in progress (2026-09-14):** `PLAN.md` is now protocol v0.4 (question-first; evidence
-map, dog/cat drug-pair table, verification workflow; see amendment A4). The state and pipeline
-described below are v0.3 and still drive the live site, which stays unchanged until v0.4 outputs
-replace it.
+**v0.4 is live (2026-09-14).** `PLAN.md` is protocol v0.4 (question-first; evidence map, dog/cat
+drug-pair table, verification workflow; see amendment A4). The live site is now built by
+`analysis/v04/s1_build_site.py` from the committed `data/v04/` outputs: 1,494 results in 406
+studies. The v0.3 pipeline described below still runs but no longer publishes anything — see
+`archive/README.md`. Half the final results were adjudicated by hand and were not independently
+checked (limitation L87); `data/v04/part1/spotcheck.md` is the standing invitation to check them.
 
 Read `PLAN.md` (protocol, v0.4), `protocol/amendments.md` (dated deviations) and
 `docs/limitations.md` (68 numbered limitations) before changing anything. The limitations

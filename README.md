@@ -55,10 +55,23 @@ n=150; Monticello 2017 → PPV 43%, sensitivity 48%, specificity 84%, NPV 86%, n
 
 ## Build the site
 
+The live site is the v0.4 build. CI regenerates it from the committed v0.4 outputs on every push
+to `main`, with no network access and no model calls.
+
 ```bash
-python3 analysis/15_build_site.py
-python3 -m http.server 8811 --directory site/_build
+python3 analysis/v04/t1_part1_outputs.py   # final result set, evidence map, spot-check
+python3 analysis/v04/s1_build_site.py      # -> site/v04_build/
+python3 -m http.server 8811 --directory site/v04_build
 ```
+
+The v0.3 site it replaced is retired but reproducible; see [`archive/README.md`](archive/README.md).
+
+## Check the work
+
+`data/v04/part1/spotcheck.md` (also published at `/spotcheck.html`) is a seeded sample of 40 kept
+results with a link and a PDF page for each, and instructions for verifying one in about five
+minutes. Half the final results were adjudicated by hand and not blind (limitation L87), so this
+check is the only independent read of the corpus — it matters more than it looks.
 
 ## Layout
 

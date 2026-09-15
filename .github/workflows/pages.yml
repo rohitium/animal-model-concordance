@@ -5,9 +5,9 @@ on:
     branches: [main]
     paths:
       - 'site/**'
-      - 'data/db/**'
-      - 'analysis/33_build_site.py'
-      - 'analysis/normalize.py'
+      - 'data/v04/**'
+      - 'analysis/v04/**'
+      - 'docs/limitations.md'
       # the workflow must watch itself: a commit fixing only this file matched no
       # path and so deployed nothing, leaving a stale build served for 20 minutes
       - '.github/workflows/pages.yml'
@@ -30,14 +30,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      # The site is regenerated from data/db/studies.json so the published
-      # build always matches the committed data. No network access needed.
+      # The v0.4 site is regenerated from the committed v0.4 outputs so the published
+      # build always matches the committed data. No network access, no model calls.
+      # The v0.3 site (analysis/33_build_site.py, data/db/) is retired; see archive/README.md.
       - name: Build site
-        run: python3 analysis/33_build_site.py
+        run: python3 analysis/v04/s1_build_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/_build
+          path: site/v04_build
   deploy:
     needs: build
     runs-on: ubuntu-latest

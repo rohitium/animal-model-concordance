@@ -2,10 +2,51 @@ __pycache__/
 *.pyc
 .DS_Store
 .venv/
-site/_build/
 data/raw/fulltext/
 
 # Secrets - never commit
 .env
 .env.*
 !.env.example
+
+# v0.4 reference-data snapshots (FDA, ClinicalTrials.gov/AACT); large, re-downloadable
+data/raw/snapshots/
+
+# Site builds are generated in CI from the committed data, never committed.
+site/_build/
+site/v04_build/
+
+# v0.4 working data is large (~1 GB: LLM cache, retrieval frames, PDFs text layers) and
+# regenerable. Ignore all of it, then allow back exactly the files the site build and the
+# audit trail need, so the published site stays reproducible from the repo alone.
+data/v04/**
+!data/v04/
+!data/v04/part1/
+!data/v04/part1/studies.json
+!data/v04/part1/headlines.json
+!data/v04/part1/verified.json
+!data/v04/part1/adjudicated.json
+!data/v04/part1/final_results.json
+!data/v04/part1/evidence_map.json
+!data/v04/part1/evidence_map.md
+!data/v04/part1/excluded_audit.json
+!data/v04/part1/excluded_audit.md
+!data/v04/part1/part1_quality.md
+!data/v04/part1/table_draft.md
+!data/v04/part1/spotcheck.md
+!data/v04/part1/spotcheck.json
+!data/v04/part2/
+!data/v04/part2/pairs.json
+!data/v04/part2/pair_attributes.json
+!data/v04/part2/quality.json
+!data/v04/part2/summary.json
+!data/v04/part2/summary.md
+!data/v04/part2/summary_v2.md
+!data/v04/part2/pairs_report.md
+!data/v04/part2/q4_report.md
+!data/v04/part2/q4_reader_audit.md
+!data/v04/retrieval/
+!data/v04/retrieval/recall.md
+!data/v04/canaries.json
+!data/v04/canary_report.json
+!data/v04/audit_sample.json

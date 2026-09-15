@@ -99,3 +99,199 @@ threshold, with lower thresholds as sensitivity analyses. Disease areas may be a
 
 **Motivation declared.** The review supports the Nori white paper. v0.4 §1 and §3 exist to offset
 that motivation, not to disguise it.
+
+## A5 — 2026-09-14 — Drug-pair table rebuilt on reference-data snapshots (after pilot 1)
+
+**As written (v0.4 §7).** Human counterparts found by searching PubMed for the agent and condition
+and classifying the retrieved abstracts; sampling frames drawn without regard to whether the agent
+exists in human medicine.
+
+**Why it changed.** Pilot 1 (`data/v04/pilot/pilot_findings.md`) did not pass its gate: the
+pilot set came out indeterminate 6, mixed 3, discordant 1, and inspection showed the labels
+reflected design defects. The trial, not the tested agent, was the unit, so comparators were
+paired. Every retrieved abstract was pooled. Human drug names were taken from model memory
+(lotilaner mapped to fluralaner; lokivetmab to a garbled name). Relevance-ranked top-12 retrieval
+could not show absence. The random PubMed frame was dominated by agents with no human form.
+
+**Amendment (user decisions 2026-09-14).**
+1. The human side is classified from frozen local snapshots of authoritative US sources, not
+   live searches: Drugs@FDA (approvals and application history), the openFDA drug label and NDC
+   files, and the AACT export of ClinicalTrials.gov. Each file is recorded with URL, date, size
+   and SHA-256 (`data/v04/frames/snapshots_manifest.json`). Models read matched records; they do
+   not find them.
+2. Sampling frames are restricted to agents present in US human medicine, determined by lookup in
+   those snapshots, not by a model. The unrestricted count is reported alongside.
+3. US sources only. An agent approved for humans only outside the US is treated as absent from
+   human medicine; declared as a limitation.
+4. Carried from the pilot findings as defaults, open to user veto: one pair per tested agent
+   (comparators and background therapy recorded, not paired); a fixed human evidence hierarchy
+   (US approval for the indication, then registered phase 3, then phase 2, then earlier, classified
+   from the highest level present); non-inferiority met = positive, superiority against an active
+   comparator not shown = indeterminate; separate statuses for no human form of the disease, agent
+   absent from human medicine, and no human record found.
+
+A second 10-pair pilot under these rules precedes the full table.
+
+## A6 — 2026-09-14 — Simplified execution; expanded search for concordance evidence
+
+**As written (v0.4 §5, §6, §7, §8 and A5).** Two models enumerate every animal-vs-human comparison in
+each study, followed by a nine-item verifier, a model-tier ladder and item-level human review. Drug
+pairs are drawn from random veterinary-trial frames, with human evidence taken from registry
+snapshots. The corpus is the v0.3 100-study slice, selected by citations and recency.
+
+**Why it changed.** See `docs/retrospective_v04.md`.
+- **Step 1** failed at tier 1 and tier 2 (99% and 95% flag rates; canary C1 missed both times).
+  The cause was task definition: open enumeration has no single right answer, so the agreement checks
+  flagged differences in how papers were carved, not errors.
+- **Drug-pair pilot 2** produced 6 indeterminate pairs. Registry results are sparse and random frames
+  are dominated by veterinary-only drugs.
+- **The corpus is not comprehensive (user assessment).** Key studies are missing: Ineichen 2024,
+  Hackam 2006, van der Worp 2010, Clark 2018.
+
+**Amendment (user decision 2026-09-14).**
+1. **Expanded retrieval** for studies reporting animal-to-human concordance evidence:
+   - backward and forward citation chasing (OpenAlex, NCBI) from every included study and a named
+     anchor set, including the reviews included in Ineichen 2024;
+   - targeted PubMed queries per theme (efficacy translation, toxicology/safety concordance,
+     cross-species disease biology, companion-animal translation);
+   - title/abstract screening by two models, where either model's "include" advances a record;
+   - full-text eligibility per §4.4.
+
+   Search strings, dates, counts and anchor recall are logged in `protocol/search_strings.md`.
+2. **Extraction asks one fixed question per study**: its headline animal-vs-human results, overall and
+   per species or disease area, at most ~8 numbers, each with sentence and page.
+   - Each number is checked mechanically against the PDF page.
+   - A second model answers independently.
+   - Differences are adjudicated by the reviewing agent and recorded.
+   - The user spot-checks a random sample; the error rate is published.
+3. **Drug pairs start from drugs**: candidate drugs come from COTC, comparative-oncology reviews,
+   FDA-CVM approvals with a US human counterpart, and targeted searches, with known failures included
+   deliberately. Human evidence comes from PubMed (pivotal trials, approval), with FDA data as a
+   cross-check.
+4. **Dropped:** item-level enumeration, the verifier ladder, the item review queue and web page,
+   registry-first human evidence, and random veterinary-trial frames. Questions, falsifiers (§3) and
+   classification rules (§7.4, A5 §4) are unchanged.
+5. **Routine method decisions** are made by the reviewing agent and logged here or in
+   `docs/limitations.md`. The user is consulted at milestones.
+
+### A6 execution notes (reviewing agent, 2026-09-14): routine decisions, logged per the working agreement
+
+- **Headline extraction:** one extractor (`gemini-2.5-flash`), not two. On five test studies,
+  two-extractor agreement was 6 of 57 results while the values were largely correct. Agreement
+  measured selection differences, not errors.
+- **Per-result verifier:** `gpt-5-mini`. On the same test it rejected 8 of 10 known-bad results,
+  against 0 of 10 for `gpt-4.1-mini` and 3 of 10 for `claude-haiku-4.5`.
+- **Adjudication:** by `claude-sonnet-5`, once per study with all of that study's results, so that
+  like results are decided alike. A seeded 10% of studies with verified results are re-checked blind
+  to estimate the verifier's false-accept rate before the human spot-check.
+- **Abstract screening:** `gemini-2.5-flash-lite` and `gpt-4.1-nano`. Either model's include or
+  uncertain advances a record. A title-only exclusion by both models is accepted, a departure from
+  L27 given ~26,000 candidates; see limitations.
+- **Forward citation chasing** excludes attrition and reproducibility seeds (Hay 2014, Begley 2012,
+  Prinz 2011, Wong 2019, Cummings 2014, Freedman 2015). Their citing works are not about
+  animal-to-human comparison; they remain backward seeds.
+- **Held-out recall check** was built from memory and proved weak: 6 of 14 titles unresolved, 2
+  resolved to out-of-scope papers. To be rebuilt from exact titles in published reviews' reference
+  lists.
+- **Drug pairs, by relation to the human drug.** The primary table includes a pair when the dog or cat
+  drug is:
+  - **the same molecule** as a human drug, or
+  - **a species-specific biologic** against the same target as a human product (e.g. bedinvetmab vs
+    tanezumab).
+
+  **Class analogues** (a different molecule, same mechanism: toceranib vs sunitinib, verdinexor vs
+  selinexor, oclacitinib vs human JAK inhibitors) form a separate stratum. **Hand-added exemplars** are
+  searched by name and reported separately from systematically found candidates.
+- **Large PDFs** (over 14 MB) are sent to the model as their text layer with page markers, because of
+  provider request limits.
+- **"Exists in humans" includes investigational drugs.** For drug pairs, a veterinary drug has a human
+  counterpart if it is in the US human-medicine index (approved or labelled) **or** is an intervention in
+  at least one registered interventional trial in the ClinicalTrials.gov snapshot. Matches are by name or
+  registered other name, so development codes resolve (PCI-32765 → ibrutinib).
+  - **Why:** the approval-only rule dropped tanezumab and fasinumab (the anti-NGF antibodies, never
+    FDA-approved, with a well-known human safety failure), plus masitinib and rabacfosadine. Removing
+    unapproved drugs removes exactly the cases where human development failed, which biases the table
+    towards concordance.
+  - Resolution is deterministic (`analysis/v04/f7_resolve.py`) and records whether a counterpart is
+    approved or investigational.
+- **Name matching no longer accepts "anti-X" as ingredient X.** "Anti-nerve growth factor antibodies" had
+  been matched to nerve growth factor.
+- **Drug-pair records must report an efficacy result to form a pair.** Pharmacokinetic, dose-finding and
+  biomarker-only records are counted but not paired.
+- **Indications are merged into canonical conditions per drug.** Species words are dropped, subtypes are
+  merged into the parent disease when the human counterpart is the same, and non-specific tumour mixtures
+  are not paired.
+- **An uncontrolled or below-threshold veterinary study is indeterminate, never negative.** The first
+  exemplar run called a 4-dog pilot with no responses "discordant".
+- **A second, strict screening pass was added before full text.** The first pass advanced a record if
+  either fast model said include or uncertain, which advanced 15,439 of 26,335 records. That included
+  4,886 records the first model had itself labelled not relevant, too many to take to full text.
+  - **The strict pass** (`gemini-2.5-flash`) asks whether the paper's *own* data or pooled analysis
+    compares live animals with humans, and names the common false positives.
+  - **Calibration set:** 20 anchors that genuinely measure concordance. The v0.3 stage-1 includes were
+    not used, because many are narrative reviews or in vitro studies the criterion correctly excludes.
+    Two first-draft anchors were removed as not measuring concordance: van der Worp 2010 (an essay) and
+    Sena 2010 (animal-only publication bias).
+  - **Calibration result:** 18 of 20 passed on their abstracts. The other two (Hackam 2006, Perrin
+    2014) have no abstract, and records without an abstract advance whenever the first pass's Gemini
+    model said include or uncertain.
+- **Q4 laboratory side, corrected.** The first run was invalid, found by inspecting a sample before
+  reporting:
+  - the reader credited studies of other compounds that used the drug only as a benchmark or comparator;
+  - it counted adverse effects as efficacy failures;
+  - it aggregated 25–30 studies per drug with an any-disagreement-is-mixed rule.
+
+  The reader now requires the drug to be the treatment under test for that condition's main efficacy
+  outcome. The laboratory side is positive or negative when at least 75% of its classifiable studies
+  agree. The unanimous rule is reported as a sensitivity analysis. Veterinary and human sides keep their
+  rules; they rest on few records.
+- **The Q4 laboratory reader was escalated from `gemini-2.5-flash-lite` to `gemini-2.5-flash` on
+  measured failure.**
+  - **Audit:** a blind audit by `gemini-2.5-pro` of 56 random Flash-Lite reads found both inclusion and
+    result correct in 26 (46%).
+  - **Main error:** 27 abstracts counted as laboratory efficacy studies of the drug when they were not.
+    Examples: propylthiouracil used to *induce* hypothyroidism; post-laparotomy pain models under a
+    cataract-surgery pair; comparator studies of other drugs.
+  - **Status of that run:** its within-drug result (companion 80% vs laboratory 87% on 101 pairs) is not
+    reported. It is kept as `lab_models_flashlite.json` / `q4_report_flashlite.md`.
+  - **Next:** the escalated reader is audited the same way before its result is used.
+- **All verifier-excluded results are adjudicated, per a rule set before the audit.** A blind audit of
+  59 random verifier exclusions (`claude-sonnet-5`, `e4_audit_excluded.py`) found 15 the adjudicator
+  kept: 25%, exact 95% CI 15–38%. The pre-set rule was to adjudicate every exclusion if the upper bound
+  exceeded 10%, and it was followed.
+  - Several of the adjudicator's keeps look lenient: an animal-only percentage of macaque studies, a
+    forensic human prediction error, gene-sequence similarity. The true false-exclusion rate is probably
+    lower than 25%.
+  - Adjudicator leniency is therefore a named target of the human spot-check, and it is reported in the
+    quality file.
+  - Implementation: studies already adjudicated on their non-excluded results get one extra call for
+    their excluded results; the rest get one call covering all results.
+- **OpenRouter credit ran out during adjudication.** 373 of 573 per-study calls failed with credit
+  errors: 372 HTTP 402 "requires more credits", plus one timeout.
+  - The failed studies are re-run on the **same model** (`claude-sonnet-5`) through the Anthropic API,
+    using the user's key provided for fallback. The rule that a stage never switches models is kept.
+  - The direct route attaches PDFs natively. Documents over 100 pages go as text with page markers
+    (Anthropic's PDF limit), as oversized files already did.
+  - Structured output is forced through a tool schema.
+  - Each output records its route (`openrouter`, `anthropic-direct`).
+  - Outputs built from the partial adjudication (1,074 final results in 345 studies; recall estimate 35%)
+    are provisional and are rebuilt after the rerun.
+- **Anthropic credit also ran out; the remaining studies were adjudicated by the reviewing agent, by hand,
+  in session.** No further API spend was authorised, so the 263 studies left unadjudicated (262 credit
+  errors, one KeyError, one OpenRouter error) were decided by the reviewing agent reading each extracted
+  result against the paper's own text.
+  - Tooling (no network, no model calls): `m1_dossier.py` prints, per pending study, every extracted result
+    with its verifier status, quote, located PDF page and a ±450-character context window from the PDF text
+    layer; `m2_record.py` records the decisions under `"{pmid}|manual"` in `adjudicated.json`, in the same
+    shape as model decisions, with the model field naming the reviewing agent.
+  - The criteria are the ones in `e3_adjudicate.SYSTEM`, unchanged: keep / keep-with-correction / drop, the
+    same definition of a correspondence result, and the same "treat like results alike" rule.
+  - Result: 1,647 decisions over 263 studies — 646 keep, 123 keep-with-correction, 878 drop.
+  - Two recurring calls made consistently and recorded in each rationale: (a) where a paper reported the
+    animal and the human arm as separate single-species results, the pair was recast as one comparison and
+    the other half dropped, rather than counting each arm as a correspondence result; (b) duplicate reports
+    of one analysis (preprint and published version) were kept once and the duplicate dropped, with the
+    retained record named in the rationale.
+  - `t1_part1_outputs.py` merges `"|manual"` alongside `"|all"` and `"|excl"`.
+  - Final set after the merge: **1,494 results in 406 studies**; 309 study-calls were adjudicated by
+    `claude-sonnet-5` and 263 by the reviewing agent, covering disjoint sets of studies.

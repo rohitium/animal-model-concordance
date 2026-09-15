@@ -1,0 +1,1807 @@
+[
+ {
+  "disease_area": "cardiovascular",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 9,
+  "n_results": 18,
+  "direction": {
+   "animal-corresponded": 15,
+   "animal-did-not-correspond": 1,
+   "mixed": 2
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 3,
+  "n_results": 9,
+  "direction": {
+   "animal-corresponded": 9
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 9,
+  "n_results": 21,
+  "direction": {
+   "animal-corresponded": 18,
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "guinea pig",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "laboratory-dog",
+  "level": "A-outcome-concordance",
+  "n_studies": 6,
+  "n_results": 15,
+  "direction": {
+   "animal-corresponded": 10,
+   "animal-did-not-correspond": 5
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "laboratory-dog",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 5,
+  "direction": {
+   "animal-corresponded": 3,
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 5,
+  "n_results": 9,
+  "direction": {
+   "mixed": 1,
+   "animal-corresponded": 2,
+   "animal-did-not-correspond": 6
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "non-human-primate",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 5,
+  "direction": {
+   "animal-corresponded": 2,
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "other-species",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "pig-minipig",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "pig-minipig",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 1,
+   "mixed": 2,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "rat",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 5,
+  "direction": {
+   "animal-corresponded": 5
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "sheep-goat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 1,
+   "mixed": 2,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "zebrafish",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "cardiovascular",
+  "species": "zebrafish",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "comparative genomics",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "cross-cutting",
+  "species": "zebrafish",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "cross-cutting-genomics",
+  "species": "Macaca fascicularis",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-physiology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "cynomolgus monkey",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 7,
+  "n_results": 10,
+  "direction": {
+   "mixed": 3,
+   "animal-corresponded": 3,
+   "animal-did-not-correspond": 4
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 6,
+  "n_results": 26,
+  "direction": {
+   "animal-corresponded": 15,
+   "mixed": 2,
+   "animal-did-not-correspond": 9
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 9,
+  "n_results": 22,
+  "direction": {
+   "animal-did-not-correspond": 3,
+   "mixed": 2,
+   "animal-corresponded": 17
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "laboratory-dog",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "laboratory-dog",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "mouse",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 2,
+  "n_results": 9,
+  "direction": {
+   "animal-did-not-correspond": 2,
+   "animal-corresponded": 6,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 6,
+  "n_results": 15,
+  "direction": {
+   "animal-corresponded": 11,
+   "animal-did-not-correspond": 4
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "non-human-primate",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "non-human-primate",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 3,
+  "n_results": 6,
+  "direction": {
+   "animal-corresponded": 5,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "pig-minipig",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "rabbit",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "rat",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "sheep-goat",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "zebrafish",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "zebrafish",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 3,
+  "n_results": 7,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "animal-corresponded": 6
+  }
+ },
+ {
+  "disease_area": "cross-cutting-toxicology",
+  "species": "zebrafish",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "dermatology",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "dermatology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "dermatology",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "functional-genomics",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 5,
+  "direction": {
+   "animal-corresponded": 5
+  }
+ },
+ {
+  "disease_area": "haematology",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "haematology",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "haematology",
+  "species": "human",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "haematology",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 6,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 5
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "companion-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 19,
+  "n_results": 49,
+  "direction": {
+   "animal-corresponded": 30,
+   "animal-did-not-correspond": 16,
+   "mixed": 3
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 20,
+  "n_results": 63,
+  "direction": {
+   "animal-did-not-correspond": 10,
+   "animal-corresponded": 47,
+   "mixed": 6
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "human",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "human",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "laboratory-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 3,
+   "not-applicable": 1
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 9,
+  "n_results": 27,
+  "direction": {
+   "animal-corresponded": 19,
+   "animal-did-not-correspond": 8
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 9,
+  "n_results": 24,
+  "direction": {
+   "animal-did-not-correspond": 8,
+   "animal-corresponded": 16
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "non-human-primate",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "mixed": 2
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-did-not-correspond": 2,
+   "not-applicable": 1
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "other-species",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "rat",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 10,
+  "direction": {
+   "animal-corresponded": 7,
+   "mixed": 1,
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "immunology-inflammation",
+  "species": "sheep",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 7,
+  "n_results": 25,
+  "direction": {
+   "animal-corresponded": 15,
+   "animal-did-not-correspond": 10
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 10,
+  "n_results": 30,
+  "direction": {
+   "animal-corresponded": 21,
+   "animal-did-not-correspond": 6,
+   "mixed": 3
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "non-human-primate",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 2,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "rabbit",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "infectious-disease",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 8,
+  "direction": {
+   "animal-corresponded": 7,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 5,
+  "n_results": 9,
+  "direction": {
+   "animal-corresponded": 6,
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 16,
+  "n_results": 41,
+  "direction": {
+   "animal-corresponded": 30,
+   "animal-did-not-correspond": 8,
+   "mixed": 3
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "laboratory-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 4,
+  "n_results": 15,
+  "direction": {
+   "animal-did-not-correspond": 5,
+   "mixed": 2,
+   "animal-corresponded": 8
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "mouse",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 7,
+  "n_results": 20,
+  "direction": {
+   "animal-corresponded": 17,
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "non-human-primate",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "pig-minipig",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "rat",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "liver-gi",
+  "species": "zebrafish",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 5,
+  "n_results": 11,
+  "direction": {
+   "animal-corresponded": 9,
+   "animal-did-not-correspond": 1,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 7,
+  "n_results": 21,
+  "direction": {
+   "mixed": 2,
+   "animal-corresponded": 19
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "human",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "mixed": 1,
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 4,
+  "n_results": 6,
+  "direction": {
+   "animal-did-not-correspond": 2,
+   "not-applicable": 1,
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "pig-minipig",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "rat",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "metabolic-endocrine",
+  "species": "sheep-goat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "molecular-biology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 2,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "multiple",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 1,
+   "mixed": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "companion-dog",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-did-not-correspond": 3,
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "companion-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 3,
+  "n_results": 9,
+  "direction": {
+   "animal-corresponded": 3,
+   "animal-did-not-correspond": 6
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "drosophila",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 14,
+  "n_results": 26,
+  "direction": {
+   "animal-did-not-correspond": 9,
+   "animal-corresponded": 13,
+   "mixed": 4
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 40,
+  "n_results": 124,
+  "direction": {
+   "animal-corresponded": 80,
+   "animal-did-not-correspond": 34,
+   "mixed": 10
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "guinea pig",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 6,
+  "direction": {
+   "animal-corresponded": 6
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "human",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-did-not-correspond": 3,
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 5,
+  "n_results": 16,
+  "direction": {
+   "animal-did-not-correspond": 3,
+   "animal-corresponded": 13
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "mouse",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 5,
+  "direction": {
+   "animal-corresponded": 1,
+   "mixed": 4
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 9,
+  "n_results": 20,
+  "direction": {
+   "animal-did-not-correspond": 8,
+   "animal-corresponded": 12
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 3,
+  "n_results": 12,
+  "direction": {
+   "animal-corresponded": 9,
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "pig-minipig",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "rat",
+  "level": "A-outcome-concordance",
+  "n_studies": 3,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "sheep-goat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "zebrafish",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "neurology",
+  "species": "zebrafish",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "new",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "new",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 5,
+  "n_results": 23,
+  "direction": {
+   "mixed": 3,
+   "animal-did-not-correspond": 3,
+   "animal-corresponded": 17
+  }
+ },
+ {
+  "disease_area": "new",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 4,
+  "direction": {
+   "animal-did-not-correspond": 4
+  }
+ },
+ {
+  "disease_area": "new",
+  "species": "zebrafish",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "companion-cat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "companion-dog",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "companion-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 13,
+  "n_results": 45,
+  "direction": {
+   "mixed": 2,
+   "animal-corresponded": 34,
+   "animal-did-not-correspond": 9
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 26,
+  "n_results": 57,
+  "direction": {
+   "mixed": 2,
+   "animal-did-not-correspond": 14,
+   "animal-corresponded": 41
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 3,
+  "n_results": 17,
+  "direction": {
+   "animal-did-not-correspond": 2,
+   "mixed": 12,
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 41,
+  "n_results": 125,
+  "direction": {
+   "animal-corresponded": 102,
+   "animal-did-not-correspond": 16,
+   "mixed": 7
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "human",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "human",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "laboratory-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 9,
+  "direction": {
+   "animal-corresponded": 9
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 11,
+  "n_results": 16,
+  "direction": {
+   "animal-did-not-correspond": 6,
+   "animal-corresponded": 9,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "mouse",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 6,
+  "direction": {
+   "animal-corresponded": 5,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 15,
+  "n_results": 39,
+  "direction": {
+   "animal-corresponded": 30,
+   "animal-did-not-correspond": 9
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "non-human-primate",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "mixed": 2
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "other-species",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "pig-minipig",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "zebrafish",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "oncology",
+  "species": "zebrafish",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 4,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "ophthalmology",
+  "species": "companion-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "ophthalmology",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "ophthalmology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 10,
+  "direction": {
+   "animal-corresponded": 7,
+   "mixed": 1,
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "ophthalmology",
+  "species": "laboratory-dog",
+  "level": "C-biological-similarity",
+  "n_studies": 3,
+  "n_results": 11,
+  "direction": {
+   "animal-corresponded": 5,
+   "animal-did-not-correspond": 5,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "ophthalmology",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "ophthalmology",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "oral-biology",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "companion-dog",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 5,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "animal-corresponded": 4
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 5,
+  "n_results": 9,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "animal-corresponded": 7,
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 10,
+  "n_results": 32,
+  "direction": {
+   "animal-corresponded": 22,
+   "animal-did-not-correspond": 7,
+   "mixed": 3
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "horse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-did-not-correspond": 1,
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "rat",
+  "level": "A-outcome-concordance",
+  "n_studies": 3,
+  "n_results": 10,
+  "direction": {
+   "animal-corresponded": 10
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "pain-musculoskeletal",
+  "species": "sheep-goat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "psychiatry-addiction",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 6,
+  "n_results": 16,
+  "direction": {
+   "animal-corresponded": 6,
+   "animal-did-not-correspond": 6,
+   "mixed": 4
+  }
+ },
+ {
+  "disease_area": "psychiatry-addiction",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 9,
+  "n_results": 34,
+  "direction": {
+   "animal-corresponded": 27,
+   "animal-did-not-correspond": 5,
+   "mixed": 2
+  }
+ },
+ {
+  "disease_area": "psychiatry-addiction",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "psychiatry-addiction",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 4,
+  "n_results": 5,
+  "direction": {
+   "animal-corresponded": 5
+  }
+ },
+ {
+  "disease_area": "psychiatry-addiction",
+  "species": "non-human-primate",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "psychiatry-addiction",
+  "species": "non-human-primate",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "psychiatry-addiction",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "renal",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "renal",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 2
+  }
+ },
+ {
+  "disease_area": "renal",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 5,
+  "direction": {
+   "animal-corresponded": 5
+  }
+ },
+ {
+  "disease_area": "renal",
+  "species": "rabbit",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "reproductive-developmental",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "mixed": 1
+  }
+ },
+ {
+  "disease_area": "reproductive-developmental",
+  "species": "grouped-label",
+  "level": "B-toxicity-safety-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "reproductive-developmental",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 3,
+  "n_results": 10,
+  "direction": {
+   "animal-corresponded": 6,
+   "mixed": 1,
+   "animal-did-not-correspond": 3
+  }
+ },
+ {
+  "disease_area": "reproductive-developmental",
+  "species": "rat",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 3,
+  "direction": {
+   "animal-corresponded": 3
+  }
+ },
+ {
+  "disease_area": "respiratory",
+  "species": "grouped-label",
+  "level": "A-outcome-concordance",
+  "n_studies": 3,
+  "n_results": 6,
+  "direction": {
+   "animal-corresponded": 4,
+   "animal-did-not-correspond": 2
+  }
+ },
+ {
+  "disease_area": "respiratory",
+  "species": "grouped-label",
+  "level": "C-biological-similarity",
+  "n_studies": 4,
+  "n_results": 7,
+  "direction": {
+   "animal-corresponded": 5,
+   "not-applicable": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "respiratory",
+  "species": "human",
+  "level": "C-biological-similarity",
+  "n_studies": 2,
+  "n_results": 2,
+  "direction": {
+   "animal-corresponded": 1,
+   "animal-did-not-correspond": 1
+  }
+ },
+ {
+  "disease_area": "respiratory",
+  "species": "mouse",
+  "level": "A-outcome-concordance",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ },
+ {
+  "disease_area": "respiratory",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 3,
+  "n_results": 7,
+  "direction": {
+   "animal-corresponded": 3,
+   "animal-did-not-correspond": 4
+  }
+ },
+ {
+  "disease_area": "urogenital",
+  "species": "mouse",
+  "level": "C-biological-similarity",
+  "n_studies": 1,
+  "n_results": 1,
+  "direction": {
+   "animal-corresponded": 1
+  }
+ }
+]

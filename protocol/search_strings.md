@@ -152,3 +152,48 @@ nothing about papers nobody thought to name. Citation recall is measured
 leave-one-out and does not depend on the tuned vocabulary, so it is the less
 contaminated of the two estimates. A held-out check against reference lists of
 published reviews remains required before Phase 2 closes.
+
+
+## v0.4 — companion-animal intervention frame (PLAN.md v0.4 §7.2 frame 4)
+
+- **Run date:** 2026-09-14
+- **Database:** PubMed (E-utilities esearch)
+- **Hits:** 2985 (all ids retrieved)
+- **Script:** `analysis/v04/f2_pubmed_frame.py` → `data/v04/frames/pubmed_companion.json`
+
+```
+("client-owned"[tiab] OR "client owned"[tiab] OR "privately owned"[tiab] OR "owned dogs"[tiab] OR "owned cats"[tiab] OR "pet dogs"[tiab] OR "pet cats"[tiab] OR "naturally occurring"[tiab] OR spontaneous[tiab] OR spontaneously[tiab]) AND ("Dogs"[Mesh] OR "Cats"[Mesh] OR canine[tiab] OR feline[tiab] OR dog[tiab] OR dogs[tiab] OR cat[tiab] OR cats[tiab]) AND ("Clinical Trial, Veterinary"[pt] OR "Randomized Controlled Trial, Veterinary"[pt] OR "clinical trial"[tiab] OR randomized[tiab] OR randomised[tiab] OR "phase I"[tiab] OR "phase II"[tiab] OR "single-arm"[tiab] OR "dose-escalation"[tiab] OR prospective[tiab])
+```
+
+
+## v0.4 A6 — theme queries for expanded retrieval (run 2026-09-14)
+
+### efficacy_translation — 2577 hits
+
+```
+("animal model*"[tiab] OR preclinical[tiab] OR "pre-clinical"[tiab] OR "animal stud*"[tiab] OR "animal experiment*"[tiab] OR "animal data"[tiab]) AND ("clinical trial*"[tiab] OR "human stud*"[tiab] OR patients[tiab] OR "clinical outcome*"[tiab] OR "clinical stud*"[tiab]) AND (concordan*[tiab] OR discordan*[tiab] OR "translational success"[tiab] OR "translation rate*"[tiab] OR "predictive validity"[tiab] OR "predictive value"[tiab] OR "agreement between"[tiab] OR "animal-to-human"[tiab] OR "bench-to-bedside"[tiab] OR "from animals to humans"[tiab])
+```
+
+### tox_safety_concordance — 577 hits
+
+```
+(toxicit*[tiab] OR "adverse drug reaction*"[tiab] OR "adverse event*"[tiab] OR "target organ"[tiab] OR teratogen*[tiab] OR carcinogen*[tiab] OR hepatotox*[tiab]) AND (concordan*[tiab] OR "predictive value"[tiab] OR "positive predictive"[tiab] OR "negative predictive"[tiab] OR "likelihood ratio*"[tiab] OR "true positive"[tiab] OR "sensitivity and specificity"[tiab]) AND (animal*[tiab] OR preclinical[tiab] OR nonclinical[tiab] OR "non-clinical"[tiab] OR rodent*[tiab] OR "non-rodent"[tiab] OR dog*[tiab] OR monkey*[tiab] OR "non-human primate*"[tiab]) AND (human*[tiab] OR clinical[tiab] OR "first-in-human"[tiab])
+```
+
+### cross_species_biology — 1349 hits
+
+```
+("cross-species"[tiab] OR interspecies[tiab] OR "inter-species"[tiab] OR "mouse and human"[tiab] OR "human and mouse"[tiab] OR "murine and human"[tiab] OR "rat and human"[tiab] OR "dog and human"[tiab] OR "canine and human"[tiab]) AND (transcriptom*[tiab] OR "gene expression"[tiab] OR proteom*[tiab] OR pathway*[tiab] OR histopatholog*[tiab]) AND (concordan*[tiab] OR correlat*[tiab] OR "recapitulat*"[tiab] OR mimic*[tiab] OR similarit*[tiab] OR conserved[tiab]) AND (disease[tiab] OR "disease model*"[tiab] OR "animal model*"[tiab])
+```
+
+### companion_animal_translation — 796 hits
+
+```
+("comparative oncology"[tiab] OR "client-owned"[tiab] OR "client owned"[tiab] OR "pet dogs"[tiab] OR "companion animal*"[tiab] OR "naturally occurring"[tiab] OR spontaneous[tiab]) AND (dog*[tiab] OR canine[tiab] OR cat*[tiab] OR feline[tiab]) AND (human*[tiab] OR patients[tiab] OR "clinical trial*"[tiab]) AND (translat*[tiab] OR concordan*[tiab] OR "predictive"[tiab] OR "model for human"[tiab] OR "human counterpart"[tiab] OR "comparative"[tiab]) AND (drug*[tiab] OR therap*[tiab] OR treatment*[tiab] OR inhibitor*[tiab])
+```
+
+### safety_pharmacology_qt — 566 hits
+
+```
+(QT[tiab] OR QTc[tiab] OR hERG[tiab] OR "safety pharmacology"[tiab] OR "torsade*"[tiab] OR hemodynamic*[tiab]) AND (dog*[tiab] OR monkey*[tiab] OR "non-human primate*"[tiab] OR telemetry[tiab] OR "guinea pig*"[tiab] OR "in vivo"[tiab]) AND (clinical[tiab] OR human*[tiab] OR "thorough QT"[tiab]) AND (concordan*[tiab] OR predictiv*[tiab] OR translat*[tiab] OR "sensitivity"[tiab] OR "false positive"[tiab] OR "false negative"[tiab])
+```

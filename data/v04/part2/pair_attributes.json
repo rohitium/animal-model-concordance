@@ -1,0 +1,5623 @@
+{
+ "AMLODIPINE|same-molecule|hypertension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1997,
+  "approval_year": 1992,
+  "intent": "disease-modifying"
+ },
+ "INTERFERON ALPHA|same-molecule|keratoconjunctivitis sicca": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 1999,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DEXTRAN 70|same-molecule|septic shock": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 1999,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DOXYCYCLINE|same-molecule|ehrlichiosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1967,
+  "intent": "disease-modifying"
+ },
+ "CLAVULANATE|same-molecule|periodontal disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1984,
+  "intent": "disease-modifying"
+ },
+ "KETOPROFEN|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1999,
+  "approval_year": 1986,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PHENOBARBITAL|same-molecule|epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 2022,
+  "intent": "disease-modifying"
+ },
+ "CARBIMAZOLE|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2000,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PIROXICAM|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "DOXORUBICIN|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1999,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "DOXYCYCLINE|same-molecule|leproid granuloma syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1967,
+  "intent": "disease-modifying"
+ },
+ "CLINDAMYCIN|same-molecule|periodontal disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1970,
+  "intent": "disease-modifying"
+ },
+ "METRONIDAZOLE|same-molecule|periodontal disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "PHOSPHORUS|same-molecule|chronic kidney disease": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2000,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ENALAPRIL|same-molecule|glomerulonephritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1985,
+  "intent": "disease-modifying"
+ },
+ "FENTANYL|same-molecule|postoperative pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CLARITHROMYCIN|same-molecule|leproid granuloma syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "ASPARAGINASE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "CABERGOLINE|same-molecule|anestrus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2002,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "DOXYCYCLINE|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1967,
+  "intent": "disease-modifying"
+ },
+ "CLOFAZIMINE|same-molecule|leproid granuloma syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1986,
+  "intent": "disease-modifying"
+ },
+ "CARBOPLATIN|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1996,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "RIFAMPICIN|same-molecule|leproid granuloma syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2001,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DOXYCYCLINE|same-molecule|periodontal disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1967,
+  "intent": "disease-modifying"
+ },
+ "QUINAPRIL|same-molecule|congestive heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "CISPLATIN|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2000,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "BUMETANIDE|same-molecule|congestive heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "VINCRISTINE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "POTASSIUM BROMIDE|same-molecule|epilepsy": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2002,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LOBAPLATIN|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2002,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "OCTREOTIDE|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2002,
+  "approval_year": 1988,
+  "intent": "disease-modifying"
+ },
+ "CYCLOPHOSPHAMIDE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1959,
+  "intent": "disease-modifying"
+ },
+ "METHOTREXATE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1953,
+  "intent": "disease-modifying"
+ },
+ "CARPROFEN|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2003,
+  "approval_year": 1987,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CARPROFEN|same-molecule|orthopedic disorders": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2003,
+  "approval_year": 1987,
+  "intent": "symptomatic-or-preventive"
+ },
+ "IVERMECTIN|same-molecule|spirocercosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2004,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "PREDNISOLONE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "TRILOSTANE|same-molecule|hyperadrenocorticism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2003,
+  "approval_year": 1984,
+  "intent": "disease-modifying"
+ },
+ "TERBINAFINE|same-molecule|malassezia dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2005,
+  "approval_year": 1992,
+  "intent": "disease-modifying"
+ },
+ "SELEGILINE|same-molecule|pituitary-dependent hypercortisolism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2004,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "METHIONINE|same-molecule|taurine deficiency": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2003,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MELOXICAM|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2003,
+  "approval_year": 2000,
+  "intent": "symptomatic-or-preventive"
+ },
+ "KETOCONAZOLE|same-molecule|malassezia dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2005,
+  "approval_year": 1981,
+  "intent": "disease-modifying"
+ },
+ "MELOXICAM|same-molecule|orthopedic disorders": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2003,
+  "approval_year": 2000,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CISPLATIN|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1997,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "FENTANYL|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2002,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MORPHINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "AMLODIPINE|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1992,
+  "intent": "disease-modifying"
+ },
+ "DOXORUBICIN|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1997,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "BUPIVACAINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2005,
+  "approval_year": 1972,
+  "intent": "symptomatic-or-preventive"
+ },
+ "METHADONE|same-molecule|ruptured cruciate ligament": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1947,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ACE INHIBITOR|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2006,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METHADONE|same-molecule|postoperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2004,
+  "approval_year": 1947,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ATENOLOL|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1981,
+  "intent": "disease-modifying"
+ },
+ "ATIPAMEZOLE|same-molecule|procedural sedation and analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2006,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MELOXICAM|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2004,
+  "approval_year": 2000,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MALTODEXTRIN|same-molecule|food responsive diarrhoea": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2006,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "GABAPENTIN|same-molecule|epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2005,
+  "approval_year": 1993,
+  "intent": "disease-modifying"
+ },
+ "THIOPENTAL|same-molecule|anaesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2005,
+  "approval_year": 1959,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PROPYLTHIOURACIL|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1947,
+  "intent": "disease-modifying"
+ },
+ "METHIMAZOLE|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1950,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RADIOTHERAPY|same-molecule|sarcoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 1992,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FISH OIL|same-molecule|arrhythmogenic right ventricular cardiomyopathy": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "LOMUSTINE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 1976,
+  "intent": "disease-modifying"
+ },
+ "GLARGINE INSULIN|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2006,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MORPHINE|same-molecule|orthopedic surgery": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DEXMEDETOMIDINE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BENAZEPRIL|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "IMIDAPRIL|same-molecule|heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2007,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|dental disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "GS 9219|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2008,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AMANTADINE|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1968,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|radiography": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "GEMCITABINE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2006,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "PAMIDRONATE|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "AZITHROMYCIN|same-molecule|papillomatosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "DEHYDROEPIANDROSTERONE DHEA|same-molecule|obesity": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 1991,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ADRENOCORTICOTROPHIC HORMONE|same-molecule|babesiosis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2007,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ACETYLCYSTEINE|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "EPHEDRINE|same-molecule|hypotension under anesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 2016,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DOPAMINE|same-molecule|hypotension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 1974,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TOLFENAMIC|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2008,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ZOLEDRONATE|same-molecule|malignant osteolysis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2008,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SIROLIMUS|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "ENALAPRIL|same-molecule|mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 1985,
+  "intent": "disease-modifying"
+ },
+ "PREDNISONE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "MASITINIB|same-molecule|mast cell tumour": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2008,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HOLMIUM|same-molecule|urolithiasis": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2008,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MORPHINE|same-molecule|postoperative pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CARBOPLATIN|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2005,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "ARGININE|same-molecule|obesity": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2009,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "EPIRUBICIN|same-molecule|hemangiosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2007,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "MORPHINE|same-molecule|trauma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SUNITINIB|class-analogue|mast cell tumour": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2009,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FENTANYL|same-molecule|trauma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "FENTANYL|same-molecule|anaesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MIDAZOLAM|same-molecule|anaesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1985,
+  "intent": "symptomatic-or-preventive"
+ },
+ "NALBUPHINE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1979,
+  "intent": "symptomatic-or-preventive"
+ },
+ "4 AMINOPYRIDINE|same-molecule|spinal cord injury": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 1991,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AMINOLEVULINIC|same-molecule|squamous cell carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "MELPHALAN|same-molecule|melanoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1991,
+  "approval_year": 1964,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|postoperative pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PROPOFOL|same-molecule|anaesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ALFENTANIL|same-molecule|anaesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1986,
+  "intent": "symptomatic-or-preventive"
+ },
+ "COPPER|same-molecule|hepatic copper accumulation": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 1984,
+  "intent": "disease-modifying"
+ },
+ "BENAZEPRIL|same-molecule|congestive heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2008,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "ZINC|same-molecule|copper storage disease": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 1986,
+  "intent": "disease-modifying"
+ },
+ "DIGOXIN|same-molecule|atrial fibrillation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 1954,
+  "intent": "disease-modifying"
+ },
+ "MIDAZOLAM|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 1985,
+  "intent": "symptomatic-or-preventive"
+ },
+ "OMEGA 3 FATTY ACIDS|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2010,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREDNISOLONE|same-molecule|steroid responsive meningitis-arteritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "FISH OIL|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "VINBLASTINE|same-molecule|mast cell tumour": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1965,
+  "intent": "disease-modifying"
+ },
+ "DILTIAZEM|same-molecule|atrial fibrillation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "PREGABALIN|same-molecule|epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2009,
+  "approval_year": 2004,
+  "intent": "disease-modifying"
+ },
+ "STANNOUS FLUORIDE|same-molecule|superficial pyoderma": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2010,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "IBRUTINIB|same-molecule|b-cell non-hodgkin lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 2013,
+  "intent": "disease-modifying"
+ },
+ "VINCRISTINE|same-molecule|mast cell tumour": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "SPIRONOLACTONE|same-molecule|myxomatous mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1960,
+  "intent": "disease-modifying"
+ },
+ "DOCOSAHEXAENOIC|same-molecule|degenerative joint disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2010,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MELOXICAM|same-molecule|acute musculoskeletal pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 2000,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PREDNISONE|same-molecule|inflammatory bowel disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "CLOPIDOGREL|same-molecule|immune-mediated hemolytic anemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1997,
+  "intent": "disease-modifying"
+ },
+ "VITAMIN E|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1947,
+  "intent": "disease-modifying"
+ },
+ "MASITINIB|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2011,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BUPRENORPHINE|same-molecule|urethral obstruction": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "KETOPROFEN|same-molecule|acute musculoskeletal pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1986,
+  "intent": "symptomatic-or-preventive"
+ },
+ "EICOSAPENTAENOIC|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2010,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METRONIDAZOLE|same-molecule|inflammatory bowel disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "GLUCOSAMINE|same-molecule|degenerative joint disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2010,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CHONDROITIN|same-molecule|degenerative joint disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2010,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SPIRONOLACTONE|same-molecule|congestive heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1960,
+  "intent": "disease-modifying"
+ },
+ "GEMCITABINE|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "AZACITIDINE|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 2004,
+  "intent": "disease-modifying"
+ },
+ "MITOMYCIN|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 2002,
+  "intent": "disease-modifying"
+ },
+ "PREDNISONE|same-molecule|mast cell tumor": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "HYDROMORPHONE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MORPHINE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "EPINEPHRINE|same-molecule|cardiopulmonary arrest": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "THERAPEUTIC AUTOLOGOUS LYMPHOCYTES|same-molecule|non-hodgkin lymphoma": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "VASOPRESSIN|same-molecule|cardiopulmonary arrest": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 2014,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CYCLOPHOSPHAMIDE|same-molecule|soft tissue sarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1959,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|neurological diagnostic procedures": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "IMMUNE PLASMA|same-molecule|parvovirus infection": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CARVEDILOL|same-molecule|chronic valvular heart disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "VINBLASTINE|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2011,
+  "approval_year": 1965,
+  "intent": "disease-modifying"
+ },
+ "CLOMIPRAMINE|same-molecule|compulsive disorder": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "FLUOXETINE|same-molecule|compulsive disorder": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2010,
+  "approval_year": 1987,
+  "intent": "disease-modifying"
+ },
+ "PRAZIQUANTEL|same-molecule|thelaziosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "ENROFLOXACIN|same-molecule|urinary tract infection": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LEVETIRACETAM|same-molecule|epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|anaesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "IDARUBICIN|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1990,
+  "intent": "disease-modifying"
+ },
+ "CHITOSAN|same-molecule|chronic kidney disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PLERIXAFOR|same-molecule|immunodeficiency virus infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 2008,
+  "intent": "disease-modifying"
+ },
+ "TORSEMIDE|same-molecule|heart failure due to mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1993,
+  "intent": "disease-modifying"
+ },
+ "LISPRO INSULIN|same-molecule|diabetic ketoacidosis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "VECURONIUM|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1984,
+  "intent": "disease-modifying"
+ },
+ "CLINDAMYCIN|same-molecule|pyoderma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1970,
+  "intent": "disease-modifying"
+ },
+ "CEFADROXIL|same-molecule|pyoderma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LEVETIRACETAM|same-molecule|status epilepticus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "AMOXICILLIN|same-molecule|pyoderma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "CLAVULANIC|same-molecule|pyoderma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CHOP|same-molecule|lymphoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2013,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ADEFOVIR|same-molecule|immunodeficiency virus infection": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METHYLPREDNISOLONE|same-molecule|allergic pruritus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1957,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYDROMORPHONE|same-molecule|cranial cruciate ligament disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LIDOCAINE|same-molecule|gastric dilatation volvulus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TRIMETHOPRIM|same-molecule|pyoderma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1973,
+  "intent": "disease-modifying"
+ },
+ "PHENYLEPHRINE|same-molecule|hypotension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1952,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BINDERS|same-molecule|chronic kidney disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TRIAMCINOLONE|same-molecule|allergic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1957,
+  "intent": "disease-modifying"
+ },
+ "PATUPILONE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2013,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MORPHINE|same-molecule|intervertebral disc extrusion": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "IV IMMUNOGLOBULIN|same-molecule|polyradiculoneuritis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2012,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CHLORHEXIDINE|same-molecule|urinary catheter biofilm": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1976,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BUTORPHANOL|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "METAMIZOLE|same-molecule|cancer pain": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2013,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "IOHEXOL|same-molecule|spinal disease": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1985,
+  "intent": "disease-modifying"
+ },
+ "CHLORAMBUCIL|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1957,
+  "intent": "disease-modifying"
+ },
+ "OMEGA 3 FATTY|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2013,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TRAMADOL|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1995,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CYCLOSPORINE|same-molecule|hypersensitivity dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "GABAPENTIN|same-molecule|postoperative pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2012,
+  "approval_year": 1993,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ACETYLCYSTEINE|same-molecule|systemic illness": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "MORPHINE|same-molecule|corneal ulceration": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ATENOLOL|same-molecule|hypertrophic cardiomyopathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1981,
+  "intent": "disease-modifying"
+ },
+ "TRAMADOL|same-molecule|cancer pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1995,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DEXMEDETOMIDINE|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "ATORVASTATIN|same-molecule|congestive heart failure due to mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "BUTORPHANOL|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1978,
+  "intent": "symptomatic-or-preventive"
+ },
+ "VINBLASTINE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1965,
+  "intent": "disease-modifying"
+ },
+ "AUTOLOGOUS PLATELET RICH PLASMA PRP|same-molecule|osteoarthritis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2013,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SUBSTANCE P SAPORIN|same-molecule|bone cancer pain": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2013,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ESSENTIAL OILS|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FLUDROCORTISONE|same-molecule|hyperaldosteronism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "CETIRIZINE|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "SPIRONOLACTONE|same-molecule|heart failure due to valvular disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1960,
+  "intent": "disease-modifying"
+ },
+ "IVABRADINE|same-molecule|hypertrophic cardiomyopathy with lvot obstruction": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 2015,
+  "intent": "disease-modifying"
+ },
+ "ABROCITINIB+BARICITINIB+TOFACITINIB+UPADACITINIB|class-analogue|atopic dermatitis and allergic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 2012,
+  "intent": "disease-modifying"
+ },
+ "ENALAPRIL|same-molecule|hypertension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1985,
+  "intent": "disease-modifying"
+ },
+ "BUDESONIDE|same-molecule|inflammatory bowel disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1994,
+  "intent": "disease-modifying"
+ },
+ "HYDROXYETHYLSTARCH|same-molecule|hemorrhagic shock": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "KETAMINE|same-molecule|pyometra": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1970,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|sedation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2013,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PIROXICAM|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "IODINE|same-molecule|hyperthyroidism": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYPERTONIC SALINE|same-molecule|hemorrhagic shock": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "POLYUNSATURATED FATTY ACIDS|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RHUBARB|same-molecule|chronic kidney disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|neurological conditions": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PRAZIQUANTEL|same-molecule|nematode and cestode infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "ISOFLURANE|same-molecule|intracranial disease": {
+  "type": "procedure-or-regimen",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1979,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PREDNISONE|same-molecule|immune-mediated polyarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "HYDROXYCHLOROQUINE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "TRAZODONE|same-molecule|postsurgical confinement": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DOMPERIDONE|same-molecule|leishmaniosis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SULFAMETHOXAZOLE|same-molecule|bacterial cystitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1965,
+  "intent": "disease-modifying"
+ },
+ "TRIMETHOPRIM|same-molecule|bacterial cystitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1973,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|intracranial disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PREDNISOLONE|same-molecule|mast cell tumour": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "GRANULOCYTE COLONY STIMULATING FACTOR|same-molecule|mitral valve disease": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PERMETHRIN|same-molecule|leishmaniosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1986,
+  "intent": "disease-modifying"
+ },
+ "CYCLOSPORINE|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "INTRAVENOUS LIPID EMULSION|same-molecule|permethrin toxicosis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2015,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CYCLOPHOSPHAMIDE|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2014,
+  "approval_year": 1959,
+  "intent": "disease-modifying"
+ },
+ "NERVE GROWTH FACTOR|same-molecule|osteoarthritis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "NHS IL12|same-molecule|melanoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2015,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FASINUMAB+TANEZUMAB|species-specific-biologic|osteoarthritis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LOMUSTINE|same-molecule|mast cell tumour": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 1976,
+  "intent": "disease-modifying"
+ },
+ "MASITINIB|same-molecule|epitheliotropic lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DIAZEPAM|same-molecule|anaesthesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 1963,
+  "intent": "symptomatic-or-preventive"
+ },
+ "FOSPHENYTOIN|same-molecule|status epilepticus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 1996,
+  "intent": "symptomatic-or-preventive"
+ },
+ "INSULIN DETEMIR|same-molecule|diabetes mellitus": {
+  "type": "biologic",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 2005,
+  "intent": "disease-modifying"
+ },
+ "ESSENTIAL FATTY ACIDS|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2015,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MAGNESIUM|same-molecule|hypomagnesemia": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2014,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "VITAMIN C|same-molecule|muscle pain": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DOXYCYCLINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 1967,
+  "intent": "disease-modifying"
+ },
+ "NON STEROIDAL ANTI INFLAMMATORY DRUG|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2015,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "REGULAR INSULIN|same-molecule|diabetic ketoacidosis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2015,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "POLYETHYLENE GLYCOL|same-molecule|intervertebral disc disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INSULIN GLARGINE|same-molecule|diabetic ketoacidosis": {
+  "type": "biologic",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 2015,
+  "intent": "disease-modifying"
+ },
+ "METHYLPREDNISOLONE|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1957,
+  "intent": "disease-modifying"
+ },
+ "CYCLOSPORINE|same-molecule|immune-mediated polyarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MEGESTROL|same-molecule|eosinophilic keratitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1971,
+  "intent": "disease-modifying"
+ },
+ "BENAZEPRIL|same-molecule|cardiac arrhythmia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "INSULIN ASPART|same-molecule|diabetic ketoacidosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 2015,
+  "intent": "disease-modifying"
+ },
+ "ACUPUNCTURE|same-molecule|thoracolumbar muscular pain": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "GLUCOCORTICOIDS|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2015,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CHONDROITIN|same-molecule|inflammatory bowel disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ADXS31 164|same-molecule|osteosarcoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MASITINIB|same-molecule|oral fibrosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "GRAPIPRANT|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RIVAROXABAN|same-molecule|immune-mediated hemolytic anemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 2011,
+  "intent": "disease-modifying"
+ },
+ "POSACONAZOLE|same-molecule|aspergillosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 2006,
+  "intent": "disease-modifying"
+ },
+ "TELMISARTAN|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2015,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "IMATINIB|same-molecule|oral fibrosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 2001,
+  "intent": "disease-modifying"
+ },
+ "HYDROCORTISONE|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1951,
+  "intent": "disease-modifying"
+ },
+ "METOCLOPRAMIDE|same-molecule|laryngeal paralysis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1979,
+  "intent": "disease-modifying"
+ },
+ "COBALAMIN|same-molecule|chronic enteropathy with hypocobalaminemia": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "EXENATIDE|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DOCOSAHEXAENOIC|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RADIATION THERAPY|same-molecule|urothelial carcinoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "NEMOLIZUMAB|species-specific-biologic|atopic dermatitis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PARTS A B ADRABETADEX|same-molecule|niemann-pick disease type c": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CARNITINE|same-molecule|aging": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "COSYNTROPIN|same-molecule|hyperadrenocorticism": {
+  "type": "biologic",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1970,
+  "intent": "disease-modifying"
+ },
+ "YUNNAN BAIYAO|same-molecule|cardiac masses with pericardial effusion": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "EXENATIDE|same-molecule|obesity": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TRAZODONE|same-molecule|anxiety": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ACALABRUTINIB|same-molecule|b-cell non-hodgkin lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 2017,
+  "intent": "disease-modifying"
+ },
+ "CORN|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AMINOCAPROIC|same-molecule|cardiac masses with pericardial effusion": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1964,
+  "intent": "disease-modifying"
+ },
+ "CISPLATIN|same-molecule|soft tissue sarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "CHICKEN|same-molecule|food allergy in dogs": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CRANBERRY|same-molecule|intervertebral disc disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AUTOLOGOUS BONE MARROW ASPIRATE CONCENTRATE|same-molecule|cranial cruciate ligament tear": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PERMETHRIN|same-molecule|tick infestation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1986,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PROPOFOL|same-molecule|perioperative complications": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RIFAXIMIN|same-molecule|chronic enteropathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 2004,
+  "intent": "disease-modifying"
+ },
+ "CEFOXITIN|same-molecule|parvoviral enteritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "MIGLUSTAT|same-molecule|niemann-pick disease type c": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 2003,
+  "intent": "disease-modifying"
+ },
+ "TERBINAFINE|same-molecule|otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1992,
+  "intent": "disease-modifying"
+ },
+ "RADIATION THERAPY|same-molecule|cardiac neoplasia": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PLATELET RICH PLASMA|same-molecule|cranial cruciate ligament tear": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2016,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TRAZODONE|same-molecule|stress": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SILDENAFIL|same-molecule|myxomatous mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "I 131|same-molecule|hyperthyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1957,
+  "intent": "disease-modifying"
+ },
+ "TERBINAFINE|same-molecule|sino-nasal aspergillosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1992,
+  "intent": "disease-modifying"
+ },
+ "CYANOCOBALAMIN|same-molecule|gastrointestinal disease with cobalamin deficiency": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1947,
+  "intent": "disease-modifying"
+ },
+ "BUPRENORPHINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2001,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BETAMETHASONE|same-molecule|otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1961,
+  "intent": "symptomatic-or-preventive"
+ },
+ "METHADONE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1947,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RIFAMPICIN|same-molecule|leprosy": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METRONIDAZOLE|same-molecule|chronic enteropathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2016,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "CELECOXIB|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "FISH OIL|same-molecule|perioperative analgesia": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 2016,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DESOXYCORTICOSTERONE PIVALATE|same-molecule|hypoadrenocorticism": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METHIONINE|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BUPRENORPHINE|same-molecule|oral disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DIPHENHYDRAMINE|same-molecule|mast cell tumor": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1946,
+  "intent": "disease-modifying"
+ },
+ "LOTILANER|same-molecule|tick infestation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 2023,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CLARITHROMYCIN|same-molecule|leprosy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "BEZAFIBRATE|same-molecule|hyperlipidemia": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BUPIVACAINE|same-molecule|long bone fracture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1972,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MIDAZOLAM|same-molecule|status epilepticus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1985,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MOMETASONE FUROATE|same-molecule|otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1987,
+  "intent": "symptomatic-or-preventive"
+ },
+ "GABAPENTIN|same-molecule|stress": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1993,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MANNITOL|same-molecule|intracranial hypertension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1964,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DIAZEPAM|same-molecule|status epilepticus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1963,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MINOCYCLINE|same-molecule|ehrlichiosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1971,
+  "intent": "disease-modifying"
+ },
+ "CYCLOSPORINE|same-molecule|allergic skin disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "BERAPROST|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ETOPOSIDE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "PEUMUS BOLDUS LEAF|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "GREEN TEA EXTRACT|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "GLYBURIDE|same-molecule|spinal cord injury": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1984,
+  "intent": "disease-modifying"
+ },
+ "CHOLECALCIFEROL|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2000,
+  "intent": "disease-modifying"
+ },
+ "FLUORINE|same-molecule|mast cell tumor": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DOXYCYCLINE|same-molecule|b-cell lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1967,
+  "intent": "disease-modifying"
+ },
+ "FUROSEMIDE|same-molecule|congestive heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2017,
+  "approval_year": 1966,
+  "intent": "disease-modifying"
+ },
+ "TORASEMIDE|same-molecule|congestive heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2017,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MOXIDECTIN|same-molecule|spirocercosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "HL036|same-molecule|keratoconjunctivitis sicca": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROCHLORIC|same-molecule|acidemia": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROXOCOBALAMIN|same-molecule|selective intestinal cobalamin malabsorption": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2006,
+  "intent": "disease-modifying"
+ },
+ "CHLORAMBUCIL|same-molecule|glioma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1957,
+  "intent": "disease-modifying"
+ },
+ "SPINOSAD|same-molecule|cutaneous myiasis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2011,
+  "intent": "disease-modifying"
+ },
+ "TARAXACUM OFFICINALE|same-molecule|chronic kidney disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SPIRONOLACTONE|same-molecule|heart failure due to cardiomyopathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1960,
+  "intent": "disease-modifying"
+ },
+ "CRANBERRY|same-molecule|chronic kidney disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "THALIDOMIDE|same-molecule|mammary carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "SUNITINIB|class-analogue|inflammatory mammary carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FISH OIL|same-molecule|gingivitis": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "MELPHALAN|same-molecule|multiple myeloma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1964,
+  "intent": "disease-modifying"
+ },
+ "LMP400|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PIROXICAM|same-molecule|mammary carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "LMP744|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "EMLA CREAM|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LMP776|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AUTOLOGOUS MICRO FRAGMENTED ADIPOSE TISSUE|same-molecule|osteoarthritis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PASIREOTIDE|same-molecule|pituitary-dependent hyperadrenocorticism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2014,
+  "intent": "disease-modifying"
+ },
+ "ASCOPHYLLUM NODOSUM|same-molecule|periodontal disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROCODONE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1943,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYDROMORPHONE|same-molecule|pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TEMOZOLOMIDE|same-molecule|brain tumor": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|glaucoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CEFPODOXIME|same-molecule|surgical site infection": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PANCREATIC ENZYME SUPPLEMENT|same-molecule|exocrine pancreatic insufficiency": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AUTOLOGOUS PLATELET RICH PLASMA|same-molecule|corneal epithelial defect": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SACUBITRIL|same-molecule|myxomatous mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2015,
+  "intent": "disease-modifying"
+ },
+ "GABAPENTIN|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1993,
+  "intent": "symptomatic-or-preventive"
+ },
+ "NPH INSULIN|same-molecule|diabetes mellitus": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "VALSARTAN|same-molecule|myxomatous mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "PROPARACAINE|same-molecule|infected corneal ulcer": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1953,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PROPOFOL|same-molecule|laryngeal paralysis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MOXIDECTIN|same-molecule|intestinal nematode infections": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "VINCRISTINE|same-molecule|transmissible venereal tumour": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "INSULIN|same-molecule|diabetes mellitus": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CARBOPLATIN|same-molecule|injection-site sarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "MIDAZOLAM|same-molecule|sedation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1985,
+  "intent": "symptomatic-or-preventive"
+ },
+ "COSYNTROPIN|same-molecule|hypoadrenocorticism": {
+  "type": "biologic",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1970,
+  "intent": "disease-modifying"
+ },
+ "MOXIDECTIN|same-molecule|tick infestation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2018,
+  "intent": "symptomatic-or-preventive"
+ },
+ "L THEANINE|same-molecule|stress-related emotional signs": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYPERTONIC SALINE|same-molecule|shock": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LEVOTHYROXINE|same-molecule|hypothyroidism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 2000,
+  "intent": "disease-modifying"
+ },
+ "AMITRIPTYLINE|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1961,
+  "intent": "disease-modifying"
+ },
+ "CIMICOXIB|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROXYETHYL STARCH|same-molecule|shock": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RADIATION THERAPY|same-molecule|intracranial neoplasia": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "THYROID|same-molecule|hyperthyroidism": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MESENCHYMAL STROMAL CELLS|same-molecule|intervertebral disc degeneration": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TEMOZOLOMIDE|same-molecule|glioma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "GABAPENTIN|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1993,
+  "intent": "disease-modifying"
+ },
+ "MOXIDECTIN|same-molecule|thelaziosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "2 OCTYL CYANOACRYLATE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MIRTAZAPINE|same-molecule|weight loss": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1996,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TAURINE|same-molecule|dilated cardiomyopathy": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CYANOCOBALAMIN|same-molecule|cobalamin malabsorption syndrome": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1947,
+  "intent": "disease-modifying"
+ },
+ "ENTEROCOCCUS FAECALIS|same-molecule|atopic dermatitis": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DENDRITIC CELL THERAPY|same-molecule|hemangiosarcoma": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DOXORUBICIN|same-molecule|sarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2018,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "HYPOCHLORITE|same-molecule|pyoderma": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FOLATE|same-molecule|urothelial carcinoma": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2018,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SALICYLIC|same-molecule|pyoderma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MIDAZOLAM|same-molecule|premedication": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1985,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TELMISARTAN|same-molecule|hypertension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "GANCICLOVIR|same-molecule|melanoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "MOXIDECTIN|same-molecule|hookworm infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "AUTOLOGOUS MESENCHYMAL STEM CELLS|same-molecule|chronic kidney disease": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PYRANTEL|same-molecule|intestinal nematode infections": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SUNITINIB|class-analogue|heart base tumour": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RADIOIODINE|same-molecule|hyperthyroidism": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DOXORUBICIN|same-molecule|hemangiosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "PLATELET RICH PLASMA|same-molecule|bone fractures": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PRAZIQUANTEL|same-molecule|hookworm infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "ENTEROCOCCUS FAECIUM|same-molecule|diarrhea": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MIRTAZAPINE|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1996,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ENTEROCOCCUS FAECIUM|same-molecule|atopic dermatitis": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INDOCYANINE GREEN|same-molecule|chylothorax": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1959,
+  "intent": "disease-modifying"
+ },
+ "LEVETIRACETAM|same-molecule|seizures": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "BLEOMYCIN|same-molecule|melanoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1973,
+  "intent": "disease-modifying"
+ },
+ "GRANULOCYTE MACROPHAGE COLONY STIMULATING FACTOR|same-molecule|melanoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FAMCICLOVIR|same-molecule|upper respiratory tract infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1994,
+  "intent": "disease-modifying"
+ },
+ "MELOXICAM|same-molecule|idiopathic cystitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 2000,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CANNABIDIOL|same-molecule|epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "MITOXANTRONE|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1987,
+  "intent": "disease-modifying"
+ },
+ "METOCLOPRAMIDE|same-molecule|gastroesophageal reflux disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1979,
+  "intent": "disease-modifying"
+ },
+ "AURANOFIN|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1985,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|radiotherapy support": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DOXORUBICIN|same-molecule|urinary tract tumors": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "LIDOCAINE|same-molecule|tachycardia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MELATONIN|same-molecule|anaesthesia": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CORN|same-molecule|hypoglycemia": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DEXTROSE SOLUTION|same-molecule|hypoglycemia": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "OZONE|same-molecule|bacterial colonization": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CARVEDILOL|same-molecule|hypertrophic cardiomyopathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "CYCLOSPORINE|same-molecule|chronic hepatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "MASITINIB|same-molecule|malignant melanoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SILDENAFIL|same-molecule|pulmonary hypertension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "UMBILICAL CORD DERIVED MESENCHYMAL STEM CELL|same-molecule|osteoarthritis": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LACTULOSE|same-molecule|hepatic encephalopathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1976,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DICLOFENAC|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1988,
+  "intent": "disease-modifying"
+ },
+ "ELECTROCHEMOTHERAPY|same-molecule|cutaneous squamous cell carcinoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "COR388|same-molecule|periodontal disease": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ANTIOXIDANTS|same-molecule|hyperthyroidism": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2019,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TADALAFIL|same-molecule|pulmonary hypertension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 2003,
+  "intent": "disease-modifying"
+ },
+ "MOXIDECTIN|same-molecule|flea infestation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2018,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BENAZEPRIL|same-molecule|heart disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "PYRANTEL|same-molecule|flea infestation": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "EZN 3042|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CLAVULANIC|same-molecule|acute diarrhea": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MICRONEEDLING|same-molecule|alopecia": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREDNISOLONE|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2019,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "SUNITINIB|class-analogue|thyroid carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREGABALIN|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2004,
+  "intent": "disease-modifying"
+ },
+ "PLATELET RICH PLASMA|same-molecule|alopecia": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AMOXICILLIN|same-molecule|acute diarrhea": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "RAAV2TYF GRK1 HRPGRCO|same-molecule|retinitis pigmentosa": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MOXIDECTIN|same-molecule|heartworm disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "MORPHINE|same-molecule|cataract surgery": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CAR T CELLS|same-molecule|diffuse large b cell lymphoma": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREGABALIN|same-molecule|neuropathic pain related to syringomyelia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2004,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CANNABIDIOL|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2018,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SUNITINIB|class-analogue|adenocarcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RADIOTHERAPY|same-molecule|brain tumor": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ALLOPURINOL|same-molecule|leishmaniosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1966,
+  "intent": "disease-modifying"
+ },
+ "FLURBIPROFEN|same-molecule|postoperative ocular inflammation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1986,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ALMONERTINIB PLUS MICROWAVE ABLATION|same-molecule|osteosarcoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYPERIMMUNE PLASMA|same-molecule|parvoviral enteritis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INTERLEUKIN 2|same-molecule|osteosarcoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MOXIDECTIN|same-molecule|angiostrongylosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "PYRANTEL|same-molecule|angiostrongylosis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MEGLUMINE|same-molecule|leishmaniosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "SORAFENIB|same-molecule|hepatocellular carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DIPHENHYDRAMINE|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1946,
+  "intent": "disease-modifying"
+ },
+ "SUFENTANIL|same-molecule|otitis media": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "AUTOLOGOUS PLATELET RICH FIBRIN|same-molecule|periodontal disease": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROXOCOBALAMIN|same-molecule|cobalamin deficiency and gastrointestinal disease": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2006,
+  "intent": "disease-modifying"
+ },
+ "COENZYME Q10|same-molecule|mitral valve disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PAROMOMYCIN|same-molecule|leishmaniasis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CABERGOLINE|same-molecule|hypersomatotropism and diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "SULFORAPHANE|same-molecule|lymphoma": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROXYETHYL STARCH 130 0 4|same-molecule|hypoalbuminemia": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BICARBONATE|same-molecule|gastroesophageal reflux disease": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LOMUSTINE|same-molecule|gastrointestinal lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1976,
+  "intent": "disease-modifying"
+ },
+ "ACUPUNCTURE|same-molecule|osteoarthritis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "IVERMECTIN|same-molecule|thelaziosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "FENTANYL|same-molecule|ear surgery": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "6 HYDROXYETHYL STARCH 130 0 4|same-molecule|hemoperitoneum": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DOCOSAHEXAENOIC|same-molecule|hypertrophic cardiomyopathy": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LYSINE|same-molecule|hypertension": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "EPINEPHRINE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "EPINEPHRINE|same-molecule|brachycephalic obstructive airway syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MAGNESIUM SULFATE|same-molecule|ventricular arrhythmias": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "L REUTERI|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ACUPUNCTURE|same-molecule|perioperative analgesia": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RAMIPRIL|same-molecule|congestive heart failure due to mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1991,
+  "intent": "disease-modifying"
+ },
+ "MEDIUM CHAIN TRIGLYCERIDES|same-molecule|epilepsy": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "ARTESUNATE|same-molecule|leishmaniasis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2020,
+  "intent": "disease-modifying"
+ },
+ "MELOXICAM|same-molecule|neuropathic pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 2000,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TELMISARTAN|same-molecule|proteinuria": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "ETOPOSIDE|same-molecule|non-hodgkin lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "GABAPENTIN|same-molecule|neuropathic pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1993,
+  "intent": "symptomatic-or-preventive"
+ },
+ "M032|same-molecule|glioma": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LACTOBACILLUS RHAMNOSUS|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "STANOZOLOL|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1962,
+  "intent": "disease-modifying"
+ },
+ "ANTACID|same-molecule|gastroesophageal reflux disease": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CALCIUM SULFATE|same-molecule|surgical site infection of bone and joint": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PROTAMINE|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1969,
+  "intent": "disease-modifying"
+ },
+ "SUBLINGUAL IMMUNOTHERAPY|same-molecule|atopic dermatitis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYALURONAN|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TRIAMCINOLONE ACETONIDE|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1958,
+  "intent": "disease-modifying"
+ },
+ "PLATELET CONCENTRATE|same-molecule|osteoarthritis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ETHYL|same-molecule|head and neck cancer": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FENTANYL|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "FLUTICASONE|same-molecule|asthma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1990,
+  "intent": "disease-modifying"
+ },
+ "CIMICOXIB|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TRIAMCINOLONE HEXACETONIDE|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2020,
+  "approval_year": 1969,
+  "intent": "disease-modifying"
+ },
+ "FENTANYL|same-molecule|orthopaedic surgery": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PREDNISOLONE|same-molecule|asthma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "LIDOCAINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SUNITINIB|class-analogue|chemodectoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "6 HYDROXYETHYL STARCH 130 0 4|same-molecule|acute kidney injury": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "KETAMINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1970,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LOTILANER|same-molecule|gastrointestinal nematode infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2023,
+  "intent": "disease-modifying"
+ },
+ "PROBIOTIC|same-molecule|lymphoma": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ROPIVACAINE|same-molecule|cranial cruciate ligament rupture": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1996,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MOXIDECTIN|same-molecule|filarial infections": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "LOTILANER|same-molecule|heartworm disease prevention": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2023,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYLAN G F 20|same-molecule|osteoarthritis": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2020,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DEXAMETHASONE|same-molecule|hypersensitivity dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1958,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LOTILANER|same-molecule|flea and tick infestation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2023,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MYCOPHENOLATE MOFETIL|same-molecule|tracheal collapse": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "CRANBERRY|same-molecule|idiopathic cystitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DRUG ELUTING BEAD TRANSARTERIAL CHEMOEMBOLIZATION|same-molecule|hepatocellular carcinoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|gastroesophageal reflux": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DIPHENHYDRAMINE|same-molecule|allergic reaction": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1946,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ASCOPHYLLUM NODOSUM|same-molecule|oral health": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "GLUCOCORTICOID|same-molecule|allergic reaction": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYDROMORPHONE|same-molecule|gastroesophageal reflux": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SUNITINIB|class-analogue|insulinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BUPRENORPHINE|same-molecule|squamous cell carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RILZABRUTINIB|same-molecule|pemphigus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2025,
+  "intent": "disease-modifying"
+ },
+ "VEMURAFENIB|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2011,
+  "intent": "disease-modifying"
+ },
+ "LOSARTAN|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "CELECOXIB|same-molecule|back pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1998,
+  "intent": "symptomatic-or-preventive"
+ },
+ "INSULIN GLARGINE|same-molecule|diabetes mellitus": {
+  "type": "biologic",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 2015,
+  "intent": "disease-modifying"
+ },
+ "FENOFIBRATE|same-molecule|hyperlipidemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1993,
+  "intent": "disease-modifying"
+ },
+ "SUNITINIB|class-analogue|nasal carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROXYETHYL STARCH 130 0 4|same-molecule|gastric dilatation volvulus": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SUNITINIB|class-analogue|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AUTOLOGOUS SERUM|same-molecule|corneal epithelial defect": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "OMEPRAZOLE|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "FAMOTIDINE|same-molecule|postoperative nausea and vomiting": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1986,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RED BLOOD CELLS|same-molecule|autoimmune hemolytic anemia": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2021,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "GABAPENTIN|same-molecule|anxiety": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1993,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TELMISARTAN|same-molecule|idiopathic epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "SILDENAFIL|same-molecule|megaesophagus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1998,
+  "intent": "disease-modifying"
+ },
+ "MOGAMULIZUMAB|same-molecule|prostate cancer": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BUPIVACAINE|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1972,
+  "intent": "disease-modifying"
+ },
+ "PREGABALIN|same-molecule|fear and anxiety": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 2004,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LAPATINIB|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ACETAMINOPHEN|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "NSAID|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PRGF|same-molecule|patellar desmopathy": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INTERLEUKIN 2|same-molecule|soft tissue sarcoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "VAPOCOOLANT SPRAY|same-molecule|catheter pain": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DEXMEDETOMIDINE|same-molecule|orthopaedic surgery": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HEPARIN|same-molecule|peritonitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1939,
+  "intent": "symptomatic-or-preventive"
+ },
+ "FENTANYL|same-molecule|postoperative nausea and vomiting": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2021,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PREDNISOLONE|same-molecule|aural hematoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1955,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LACTATED RINGER S SOLUTION|same-molecule|circulatory abnormalities": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "METFORMIN|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "FUROSEMIDE|same-molecule|hypertension and cardiomyopathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1966,
+  "intent": "disease-modifying"
+ },
+ "BUTYL|same-molecule|chylothorax": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LIPIODOL|same-molecule|chylothorax": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BUPRENORPHINE|same-molecule|postoperative hyperthermia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MORPHINE|same-molecule|postoperative hyperthermia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1984,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LOCAL ANAESTHETIC|same-molecule|anaesthesia": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CANNABIDIOL|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "LIDOCAINE|same-molecule|portosystemic shunt": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1948,
+  "intent": "disease-modifying"
+ },
+ "HYPERTONIC SALINE|same-molecule|hypertensive emergency": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CURCUMIN|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SODIUM BENZOATE|same-molecule|malassezia dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1987,
+  "intent": "disease-modifying"
+ },
+ "ALCOHOL|same-molecule|malassezia dermatitis": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1946,
+  "intent": "disease-modifying"
+ },
+ "HYALURONIC|same-molecule|portosystemic shunts": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDRALAZINE|same-molecule|hypertension crisis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1953,
+  "intent": "disease-modifying"
+ },
+ "ASPIRIN|same-molecule|immune mediated haemolytic anaemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1950,
+  "intent": "disease-modifying"
+ },
+ "EMODEPSIDE|same-molecule|ectoparasite infestation": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "KETAMINE|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1970,
+  "intent": "symptomatic-or-preventive"
+ },
+ "FENTANYL|same-molecule|spinal pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PRAZIQUANTEL|same-molecule|ectoparasite infestation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1982,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DEXMEDETOMIDINE|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "EMODEPSIDE|same-molecule|intestinal and lung parasitic infection": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "COBALAMIN|same-molecule|hypocobalaminemia due to chronic enteropathy or exocrine pancreatic insufficiency": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AMMONIA|same-molecule|portosystemic shunt": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METRONIDAZOLE|same-molecule|portosystemic shunts": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "PRAZIQUANTEL|same-molecule|intestinal parasitic infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "FECAL MICROBIAL TRANSPLANT|same-molecule|inflammatory bowel disease": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CEFAZOLIN|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1973,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LACTULOSE|same-molecule|portosystemic shunts": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1976,
+  "intent": "disease-modifying"
+ },
+ "MELATONIN|same-molecule|flank alopecia": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DOXORUBICIN|same-molecule|hepatic carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "CALCIFEDIOL|same-molecule|chronic kidney disease": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1980,
+  "intent": "disease-modifying"
+ },
+ "BETA LACTAM|same-molecule|subclinical bacteriuria": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MELATONIN|same-molecule|anxiety": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "VENETOCLAX|same-molecule|hematological cancer": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "INDOCYANINE GREEN|same-molecule|mast cell tumor": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1959,
+  "intent": "disease-modifying"
+ },
+ "ALLERGEN EXTRACT|same-molecule|atopic dermatitis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "NAVITOCLAX|same-molecule|hematological cancer": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREDNISOLONE|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "HIGH FLOW NASAL CANNULA|same-molecule|hypoxemia": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "METRONIDAZOLE|same-molecule|colitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "METRONIDAZOLE|same-molecule|chronic ulcerative stomatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "CYCLOSPORINE|same-molecule|chronic ulcerative stomatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|endoscopic procedures": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PROPRANOLOL|same-molecule|glioma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1967,
+  "intent": "disease-modifying"
+ },
+ "OMEPRAZOLE|same-molecule|intervertebral disc extrusion": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1989,
+  "intent": "disease-modifying"
+ },
+ "METHYLENE BLUE|same-molecule|methemoglobinemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "LOSARTAN|same-molecule|glioma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "ANGIOTENSIN RECEPTOR BLOCKER|same-molecule|chronic kidney disease proteinuric": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FLUTICASONE|same-molecule|inflammatory airway disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1990,
+  "intent": "disease-modifying"
+ },
+ "INTERLEUKIN 12|same-molecule|soft tissue sarcoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METHIONINE|same-molecule|struvite urolithiasis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CLAVULANIC|same-molecule|struvite urolithiasis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "AMOXICILLIN|same-molecule|struvite urolithiasis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "ROPINIROLE|same-molecule|foreign body or toxin ingestion": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1997,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BROMELAIN|same-molecule|perioperative analgesia": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PROBIOTIC|same-molecule|acute hemorrhagic diarrhea syndrome": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CANNABIDIOL|same-molecule|postoperative pain": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2022,
+  "approval_year": 2018,
+  "intent": "symptomatic-or-preventive"
+ },
+ "INTERLEUKIN 12|same-molecule|mast cell tumor": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BEXAGLIFLOZIN|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 2023,
+  "intent": "disease-modifying"
+ },
+ "ANGIOTENSIN CONVERTING ENZYME INHIBITOR|same-molecule|chronic kidney disease with proteinuria": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2022,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TRICLOSAN|same-molecule|cranial cruciate ligament disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1997,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|allergy testing": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SIROLIMUS|same-molecule|hypertrophic cardiomyopathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "CORTICOSTEROIDS|same-molecule|mastocytosis cutaneous": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "153SM DOTMP|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LIDOCAINE|same-molecule|pulmonic stenosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ANTIHISTAMINES|same-molecule|mastocytosis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "KPT 9274|same-molecule|b cell lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|hypotension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1999,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CHLORHEXIDINE DIGLUCONATE|same-molecule|pyoderma": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TCMCB07|same-molecule|cachexia": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DORZOLAMIDE|same-molecule|ocular hypertension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1994,
+  "intent": "disease-modifying"
+ },
+ "ADRENALINE|same-molecule|brachycephalic obstructive airway syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MOXIDECTIN|same-molecule|sarcoptic mange": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "PYRANTEL|same-molecule|sarcoptic mange": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYMENOPTERA VENOM|same-molecule|anaphylaxis": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "GS 441524|same-molecule|feline infectious peritonitis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2023,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "REMDESIVIR|same-molecule|feline infectious peritonitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 2020,
+  "intent": "disease-modifying"
+ },
+ "FLUCONAZOLE|same-molecule|malassezia dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1990,
+  "intent": "disease-modifying"
+ },
+ "VITAMIN E|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1947,
+  "intent": "disease-modifying"
+ },
+ "DEXMEDETOMIDINE|same-molecule|hypertrophic cardiomyopathy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1999,
+  "intent": "disease-modifying"
+ },
+ "ITRACONAZOLE|same-molecule|malassezia dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1992,
+  "intent": "disease-modifying"
+ },
+ "FLUCONAZOLE|same-molecule|coccidioidomycosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1990,
+  "intent": "disease-modifying"
+ },
+ "AMINOCAPROIC|same-molecule|thrombocytopenia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1964,
+  "intent": "disease-modifying"
+ },
+ "PROPOFOL|same-molecule|status epilepticus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1989,
+  "intent": "symptomatic-or-preventive"
+ },
+ "FLUORIDE|same-molecule|gingivitis": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1997,
+  "intent": "disease-modifying"
+ },
+ "UROKINASE|same-molecule|intracranial tumors": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "ROPIVACAINE|same-molecule|intervertebral disc extrusion": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1996,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CYANOCOBALAMIN|same-molecule|chronic enteropathy": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1947,
+  "intent": "disease-modifying"
+ },
+ "NETARSUDIL|same-molecule|corneal endothelial degeneration": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2017,
+  "intent": "disease-modifying"
+ },
+ "RADIATION|same-molecule|oral carcinoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 1987,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "OLOPATADINE|same-molecule|allergic conjunctivitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1996,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ALPRAZOLAM|same-molecule|perioperative anxiolysis and sedation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BLEOMYCIN|same-molecule|urothelial carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2023,
+  "approval_year": 1973,
+  "intent": "disease-modifying"
+ },
+ "SUNITINIB|class-analogue|mesothelioma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INTERLEUKIN 2|same-molecule|melanoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INTERLEUKIN 12|same-molecule|melanoma": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ONDANSETRON|same-molecule|postoperative nausea": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1991,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SEVOFLURANE|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1995,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ISOFLURANE|same-molecule|intervertebral disc disease": {
+  "type": "procedure-or-regimen",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1979,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYPERBARIC OXYGEN THERAPY|same-molecule|snake envenomation wound complications": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "GRAPIPRANT|same-molecule|postoperative pain": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "GADOXETATE|same-molecule|splenic lesions": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2008,
+  "intent": "disease-modifying"
+ },
+ "ZONISAMIDE|same-molecule|epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2000,
+  "intent": "disease-modifying"
+ },
+ "CARBON DIOXIDE|same-molecule|brachycephalic obstructive airway syndrome": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2013,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CALCITRIOL|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "VERDINEXOR|same-molecule|cutaneous epitheliotropic t-cell lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RIVAROXABAN|same-molecule|thromboembolic disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2011,
+  "intent": "symptomatic-or-preventive"
+ },
+ "METHYLPREDNISOLONE|same-molecule|immune-mediated hemolytic anemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1957,
+  "intent": "disease-modifying"
+ },
+ "MYCOPHENOLATE MOFETIL|same-molecule|immune-mediated hemolytic anemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1995,
+  "intent": "disease-modifying"
+ },
+ "CYCLOSPORINE|same-molecule|immune-mediated hemolytic anemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "CARBONATE|same-molecule|osteoarthritis": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "FECAL MICROBIOTA TRANSPLANTATION|same-molecule|acute hemorrhagic diarrhea syndrome": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ENOXAPARIN|same-molecule|cardiomyopathy-associated thromboembolism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1993,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SELINEXOR|class-analogue|cutaneous epitheliotropic t-cell lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2019,
+  "intent": "disease-modifying"
+ },
+ "CLOPIDOGREL|same-molecule|thromboembolism": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1997,
+  "intent": "symptomatic-or-preventive"
+ },
+ "SUNITINIB|class-analogue|hepatocellular carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ANTIBIOTIC TREATMENT|same-molecule|acute hemorrhagic diarrhea syndrome": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREDNISONE|same-molecule|brain tumor": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "CHLORAMPHENICOL|same-molecule|urinary tract infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1951,
+  "intent": "disease-modifying"
+ },
+ "CYANOCOBALAMIN|same-molecule|chronic gastrointestinal disease or exocrine pancreatic insufficiency": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1947,
+  "intent": "disease-modifying"
+ },
+ "CARPROFEN|same-molecule|mammary carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1987,
+  "intent": "disease-modifying"
+ },
+ "GENTAMICIN|same-molecule|otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1970,
+  "intent": "disease-modifying"
+ },
+ "MICONAZOLE|same-molecule|otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1974,
+  "intent": "disease-modifying"
+ },
+ "MYCOPHENOLATE|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2004,
+  "intent": "disease-modifying"
+ },
+ "CELLULOSE|same-molecule|acute diarrhea": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1982,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PLATELET RICH PLASMA|same-molecule|osteoarthritis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "THYROID|same-molecule|thyroid carcinoma": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CLEVIDIPINE|same-molecule|prostate carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2008,
+  "intent": "disease-modifying"
+ },
+ "GLYCERYL|same-molecule|prostatic carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "STROMAL VASCULAR FRACTION|same-molecule|osteoarthritis": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYDROCORTISONE|same-molecule|otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 1951,
+  "intent": "symptomatic-or-preventive"
+ },
+ "AMIKACIN|same-molecule|wound infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "CISAPRIDE|same-molecule|brachycephalic obstructive airway syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1993,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TURMERIC|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ANTACID|same-molecule|brachycephalic obstructive airway syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CANNABIDIOL|same-molecule|mobility impairment": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2018,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ANTIBIOTICS|same-molecule|pneumonia": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DESLORELIN|same-molecule|estrus induction": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SUNITINIB|class-analogue|adrenal gland tumour": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "IOHEXOL|same-molecule|thyroid carcinoma": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1985,
+  "intent": "disease-modifying"
+ },
+ "MILTEFOSINE|same-molecule|leishmaniasis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2024,
+  "approval_year": 2014,
+  "intent": "disease-modifying"
+ },
+ "ACETATE|same-molecule|dehydration": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HUPERZINE A 0 4 MG|same-molecule|epilepsy": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MOLNUPIRAVIR|same-molecule|feline infectious peritonitis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2024,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METHYLENE BLUE|same-molecule|thyroid carcinoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "TANEZUMAB|species-specific-biologic|musculoskeletal adverse events": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "APOMORPHINE|same-molecule|foreign body ingestion": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 2004,
+  "intent": "symptomatic-or-preventive"
+ },
+ "VITAMIN K1|same-molecule|chronic enteropathy": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INDOCYANINE GREEN|same-molecule|thyroid carcinoma": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1959,
+  "intent": "disease-modifying"
+ },
+ "ROPINIROLE|same-molecule|foreign body ingestion": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1997,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TRAZODONE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "INSULIN DEGLUDEC|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 2015,
+  "intent": "disease-modifying"
+ },
+ "AMINOCAPROIC|same-molecule|hemoperitoneum": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1964,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ALBUTEROL|same-molecule|hyperkalemia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1981,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ABROCITINIB+BARICITINIB+TOFACITINIB+UPADACITINIB|class-analogue|epitheliotropic lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 2012,
+  "intent": "disease-modifying"
+ },
+ "CANNABIDIOL|same-molecule|lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 2018,
+  "intent": "disease-modifying"
+ },
+ "LACTATE|same-molecule|dehydration": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CYCLOSPORINE|same-molecule|chronic pancreatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1983,
+  "intent": "disease-modifying"
+ },
+ "PRAZIQUANTEL|same-molecule|gastrointestinal nematode infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1982,
+  "intent": "disease-modifying"
+ },
+ "METHYLENE BLUE|same-molecule|oral neoplasia": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "DWP16001|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREDNISOLONE|same-molecule|chronic pancreatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1955,
+  "intent": "disease-modifying"
+ },
+ "METRONIDAZOLE|same-molecule|giardiasis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "AMANTADINE|same-molecule|neuropathic pain related to degenerative lumbosacral stenosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1968,
+  "intent": "symptomatic-or-preventive"
+ },
+ "TORSEMIDE|same-molecule|mitral valve disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1993,
+  "intent": "disease-modifying"
+ },
+ "SULFADIAZINE|same-molecule|pyometra": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1941,
+  "intent": "disease-modifying"
+ },
+ "TRIMETHOPRIM|same-molecule|pyometra": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1973,
+  "intent": "disease-modifying"
+ },
+ "BORIC|same-molecule|otitis externa": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "METHADONE|same-molecule|thoracolumbar disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1947,
+  "intent": "symptomatic-or-preventive"
+ },
+ "NICLOSAMIDE|same-molecule|osteosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "MILRINONE|same-molecule|heart failure": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 1985,
+  "approval_year": 1987,
+  "intent": "disease-modifying"
+ },
+ "METAMIZOLE|same-molecule|perioperative analgesia": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LOMUSTINE|same-molecule|central nervous system lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1976,
+  "intent": "disease-modifying"
+ },
+ "GLUTAMINE|same-molecule|parvovirus infection": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ESSENTIAL OIL|same-molecule|pruritus with dermatological lesions": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "AMPICILLIN|same-molecule|post-surgical infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1966,
+  "intent": "symptomatic-or-preventive"
+ },
+ "CORTICOSTEROIDS|same-molecule|lymphoma central nervous system": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "OZONE|same-molecule|otitis externa": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FLUORINE|same-molecule|mast cell tumor metastasis": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ETHYL|same-molecule|superficial bacterial pyoderma": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "DRUG PRESCRIPTION PATTERN|same-molecule|atopic dermatitis": {
+  "type": "not-a-treatment",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "NOREPINEPHRINE|same-molecule|hypotension": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1950,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYALURONIC|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FOSMIDOMYCIN|same-molecule|otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "TACROLIMUS|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1994,
+  "intent": "disease-modifying"
+ },
+ "THERAPEUTIC ULTRASOUND|same-molecule|periodontal disease": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "HYALURONATE|same-molecule|osteoarthritis": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SALICYLIC|same-molecule|pruritus": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PENTOSAN POLYSULFATE|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "ZINC|same-molecule|pruritus": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1986,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ANTIOXIDANTS|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREGABALIN|same-molecule|syringomyelia and chiari-like malformation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 2004,
+  "intent": "disease-modifying"
+ },
+ "IVERMECTIN|same-molecule|transmissible venereal tumor": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "VITAMINS|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CYCLOPHOSPHAMIDE|same-molecule|haemangiosarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2025,
+  "approval_year": 1959,
+  "intent": "disease-modifying"
+ },
+ "WHEY|same-molecule|atopic dermatitis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ULTRASOUND THERAPY COMBINED WITH CHITOSAN NANOPARTICLES GEL|same-molecule|osteoarthritis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PSYLLIUM|same-molecule|constipation": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "FECAL MICROBIOTA TRANSPLANT|same-molecule|parvovirus infection": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RADIATION THERAPY|same-molecule|cystitis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "ACETYLCYSTEINE|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1963,
+  "intent": "disease-modifying"
+ },
+ "ELASTIN|same-molecule|osteoarthritis": {
+  "type": "mineral-or-element",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LIDOCAINE|same-molecule|dysuria": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PRAZIQUANTEL|same-molecule|heartworm disease prevention": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1982,
+  "intent": "symptomatic-or-preventive"
+ },
+ "PYRANTEL|same-molecule|heartworm disease": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SACCHAROMYCES BOULARDII|same-molecule|parvovirus enteritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PREDNISOLONE|same-molecule|polydipsia and polyuria": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1955,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BUTORPHANOL|same-molecule|liver disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1978,
+  "intent": "disease-modifying"
+ },
+ "LORAZEPAM|same-molecule|urethral obstruction": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1977,
+  "intent": "symptomatic-or-preventive"
+ },
+ "BAICALIN|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "LOW FREQUENCY ACUPOINT ELECTRICAL STIMULATION|same-molecule|cranial cruciate ligament rupture": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BOSWELLIA|same-molecule|osteoarthritis": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2025,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BUTORPHANOL|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1978,
+  "intent": "symptomatic-or-preventive"
+ },
+ "LIDOCAINE|same-molecule|intervertebral disc disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1948,
+  "intent": "symptomatic-or-preventive"
+ },
+ "MESENCHYMAL STEM CELLS|same-molecule|kidney disease": {
+  "type": "cell-or-gene-therapy",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FAECAL MICROBIOTA TRANSPLANTATION|same-molecule|atopic dermatitis": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "PICLIDENOSON|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "CHLORHEXIDINE|same-molecule|periodontal disease": {
+  "type": "device-or-material",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1976,
+  "intent": "disease-modifying"
+ },
+ "DAPAGLIFLOZIN|same-molecule|heart disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 2014,
+  "intent": "disease-modifying"
+ },
+ "GABAPENTIN|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1993,
+  "intent": "disease-modifying"
+ },
+ "BRILLIANT BLUE G|same-molecule|spinal cord injury": {
+  "type": "mineral-or-element",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 2019,
+  "intent": "disease-modifying"
+ },
+ "LOMUSTINE|same-molecule|lymphoma of epitheliotropic t-cell type": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1976,
+  "intent": "disease-modifying"
+ },
+ "MIDAZOLAM|same-molecule|chronic kidney disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1985,
+  "intent": "symptomatic-or-preventive"
+ },
+ "DIMENHYDRINATE|same-molecule|emesis and nausea": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "RALTEGRAVIR|same-molecule|feline leukemia virus infection": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 2007,
+  "intent": "disease-modifying"
+ },
+ "TRIAMCINOLONE ACETONIDE|same-molecule|atopic dermatitis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1958,
+  "intent": "disease-modifying"
+ },
+ "TERBINAFINE|same-molecule|malassezia otitis externa": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1992,
+  "intent": "disease-modifying"
+ },
+ "CRIZOTINIB|same-molecule|b-cell lymphoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 2011,
+  "intent": "disease-modifying"
+ },
+ "TACROLIMUS|same-molecule|dry eye disease": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1994,
+  "intent": "disease-modifying"
+ },
+ "CURCUMIN|same-molecule|chronic kidney disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RESVERATROL|same-molecule|cardiac disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BONE GRAFT|same-molecule|periodontal disease": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "ENAMEL MATRIX DERIVATIVE|same-molecule|periodontal disease": {
+  "type": "biologic",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "INTERMEDIATE ACTING INSULIN|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "RADIOTHERAPY|same-molecule|lymphoma": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FECAL MICROBIOTA TRANSPLANTATION|same-molecule|chronic enteropathy": {
+  "type": "procedure-or-regimen",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "SHORT ACTING INSULIN|same-molecule|diabetes mellitus": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "BLEOMYCIN|same-molecule|soft tissue sarcoma": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1997,
+  "approval_year": 1973,
+  "intent": "disease-modifying"
+ },
+ "IVERMECTIN|same-molecule|demodicosis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 1995,
+  "approval_year": 1996,
+  "intent": "disease-modifying"
+ },
+ "HETASTARCH|same-molecule|hypoalbuminemia": {
+  "type": "device-or-material",
+  "timing": "no-us-approval",
+  "vet_year": 1994,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "HYALURONIC|same-molecule|dry eye disease": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "XYLOMETAZOLINE|same-molecule|brachycephalic obstructive airway syndrome": {
+  "type": "small-molecule-drug",
+  "timing": "no-us-approval",
+  "vet_year": 2026,
+  "approval_year": null,
+  "intent": "symptomatic-or-preventive"
+ },
+ "AMIODARONE|same-molecule|atrial fibrillation": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 2026,
+  "approval_year": 1985,
+  "intent": "disease-modifying"
+ },
+ "DEHYDROEPIANDROSTERONE|same-molecule|obesity": {
+  "type": "dietary-supplement",
+  "timing": "no-us-approval",
+  "vet_year": 1998,
+  "approval_year": null,
+  "intent": "disease-modifying"
+ },
+ "FISH OIL|same-molecule|heart failure": {
+  "type": "dietary-supplement",
+  "timing": "human-approval-after-veterinary-evidence",
+  "vet_year": 1998,
+  "approval_year": 2016,
+  "intent": "disease-modifying"
+ },
+ "ETODOLAC|same-molecule|osteoarthritis": {
+  "type": "small-molecule-drug",
+  "timing": "human-approval-before-veterinary-evidence",
+  "vet_year": 1999,
+  "approval_year": 1991,
+  "intent": "symptomatic-or-preventive"
+ }
+}

@@ -472,3 +472,156 @@ made in words was being rendered in the numeric table as a dash for the value an
 "remarkable improvement" in the statistic column, with "not named" under credit. It is now shown
 as the quoted sentence with its section, under a heading that says the paper compared animal and
 human results in words rather than figures and that these cannot enter a numeric score.
+
+## v0.4 step 1 — tier-1 extraction failed its gate (2026-09-14)
+
+**L69 — The cheapest models could not tell a comparison from an animal-only result.** Run on the
+56-study v0.3 corpus with `gemini-2.5-flash-lite` and `gpt-5-nano`, extraction was told explicitly
+that a treatment effect measured in animals alone is not an animal-vs-human comparison. Both models
+extracted such effects anyway: for Perel et al. 2007 they recorded infarct-volume reductions and
+odds ratios, and neither recorded the paper's headline result (3 of 6 interventions concordant).
+Gemini failed outright on 15 of 52 studies and repeated results within the rest; only 156 of 1,138
+extracted items matched between the two models. Of all items, 7 passed every check, a 99% flag
+rate, and canary C1 was missed — two escalation triggers under PLAN §8.2. The run is archived
+in `data/v04/runs/tier1/` and extraction was re-run at tier 2. The verifier stage, which did
+catch many of these errors (123 "not animal-vs-human"), stayed at tier 1.
+
+**L70 — Stalled and silently hung jobs.** OpenRouter keep-alive bytes reset per-read socket
+timeouts, so hung generations blocked jobs for over ten minutes while reporting nothing. All calls
+now have a wall-clock deadline and runs are watched for stalls; the pilot step had also been
+written sequentially and was rewritten to run in parallel.
+
+## v0.4 drug-pair table on reference-data snapshots (2026-09-14)
+
+**L71 — US sources only.** "Exists in human medicine" and human approval are read from Drugs@FDA
+and openFDA labels. A drug approved for humans only elsewhere (pimobendan: human heart failure in
+Japan) counts as absent from human medicine and is not paired. **Direction:** it removes pairs,
+most likely for older drugs and agents developed outside the US. User decision (amendment A5).
+
+**L72 — Label coverage is partial.** Of 262,842 openFDA labels in the 2026-09-11 export, 76,803
+carry a human product type in the harmonised `openfda` block; the rest cannot be attributed to an
+ingredient, so their indications are not seen. Drugs@FDA still lists every approved application,
+so approval status is not lost; only label indication text may be missing for some products.
+
+**L73 — Trial-to-ingredient links are made by name matching.** Intervention names and other names
+are split into word n-grams and matched to salt-stripped ingredient names. This reliably links
+branded or dose-qualified names ("Nab-paclitaxel", "Lotilaner ophthalmic solution, 0.25%"). It also
+links generic words that are FDA ingredients ("water", "oxygen", "iron") to hundreds of trials.
+Such agents are not veterinary test agents in any pair so far; every pair records how its link was
+made (name or other name; exact or salt-stripped) so a wrong link can be audited.
+
+**L74 — Veterinary side read from abstracts in pilot 2.** The test agent's result is extracted from
+the PubMed abstract. Full texts would give response rates and endpoints the abstract omits. For
+pairs entering the final table, the veterinary full text is to be obtained (user-supplied where
+paywalled) and re-extracted.
+
+## v0.4 A6 execution (2026-09-14)
+
+**L75 — Title-only records can be excluded at screening.** About 7,300 of 26,343 expanded-retrieval
+candidates have no abstract in OpenAlex or PubMed. Excluding them on title when both screening models say
+exclude departs from L27 and may lose studies whose titles do not signal an animal–human comparison.
+**Direction:** against older studies and journals without deposited abstracts, the same direction as L2
+and L18.
+
+**L76 — Held-out recall is not yet established for the expanded search.** The first held-out check was
+built from memory and proved unusable as a certificate (see retrieval report). Recall claims wait on a
+held-out set taken from published reviews' reference lists.
+
+**L77 — Headline extraction selects, by design, at most 8 results per paper.** Papers reporting many
+comparable breakdowns (per organ system, per cancer type) contribute their overall and main
+per-species or per-disease results, not every breakdown. Per-breakdown values remain in the paper and
+are cited by page.
+
+**L78 — Narrative reviews that restate translation rates are excluded.** The criterion requires the
+paper's own data or its own systematic or pooled analysis. Reviews that quote others' concordance
+figures ("Lost in translation", "Are animal models as good as we think?") are excluded, even though
+they are widely cited. Their figures enter only through the original studies, if those are retrieved.
+This prevents double counting, but a figure whose original source is not retrieved is lost.
+
+**L79 — The strict screen was calibrated on a small anchor set.** 20 anchors, 18 passing on
+abstract. A 90% sensitivity on 20 papers has a wide confidence interval (exact 95% CI 68–99% for
+18/20). The capture–recapture recall estimate (L76) is the fuller check.
+
+## v0.4 A6: dog and cat drug pairs (2026-09-14)
+
+**L80 — Most drug pairs are human medicines later used in pets.** Of 586 primary pairs, 440 involve a
+drug with US human approval before the veterinary evidence. Concordance in those pairs (83%, exact 95% CI
+76–89%) shows that established human drugs tend to work in dogs and cats with the corresponding disease.
+It does not show that dog or cat results anticipate human results. Pairs where the veterinary evidence
+came first are few: 19 with later US approval (7 concordant, 0 discordant; CI 59–100%) and 127 never
+US-approved (72%, CI 53–87%). Reported as separate strata; the headline must not blur them. **Direction:**
+the pooled primary figure overstates concordance for novel drugs.
+
+**L81 — Veterinary sides are classified from abstracts.** About 58% of primary pairs (339 of 586) are
+indeterminate. Many abstracts of veterinary studies report no response rate or primary-endpoint result.
+Full texts would reclassify some; which way is unknown.
+
+**L82 — Pair labels come from one judge model, with measured reliability.** A blind second judge
+(`gemini-2.5-pro`) on 40 random primary pairs agreed on 88% (Cohen's κ 0.76). All disagreements were
+between a determinate and an indeterminate or mixed label; none reversed concordant and discordant.
+
+**L83 — Non-drug treatments were matched by name and removed from the primary table.** 201 pairs involved
+supplements, minerals, devices or materials, multi-drug regimens, or names that are not treatments
+(e.g. "copper" for hepatic copper accumulation). A treatment-type classification took them out; they are
+reported separately (73%, CI 59–84%).
+
+**L84 — SUPERSEDED (2026-09-14, same day): the first Q4 run below was invalid and is being re-run.** Inspection showed the laboratory-side reader credited studies of other compounds that used the drug only as a benchmark or comparator, counted adverse effects as efficacy failures, and aggregated 25–30 studies with an any-disagreement-is-mixed rule (195 of 343 sides mixed). The figures that follow are kept as the record of that run and must not be cited.
+
+**L84 (first run, invalid) — Q4 (companion animals vs laboratory models, within drug) is underpowered.** Of 343 primary pairs with a
+classifiable human side, only 47 had companion-animal, laboratory and human sides all positive or negative.
+Result:
+- companion animals matched humans in 39 of 47 (83%);
+- laboratory models of the same drug and condition matched in 39 of 47 (83%);
+- of the 10 pairs where only one matched, 5 favoured companion animals (exact 95% CI 19–81%).
+
+Stated per F1: concordance did not differ detectably. The comparison cannot rule out a moderate
+difference in either direction.
+
+Caveats:
+- Laboratory sides were read from abstracts and were mostly mixed (195 of 343).
+- Laboratory literature is biased towards positive results.
+- Most of the 47 pairs are drugs already approved in humans (L80).
+
+**L85 — Q4 laboratory sides depend on an abstract reader whose accuracy is audited.** The first reader
+(gemini-2.5-flash-lite) was correct on 46% of 56 audited reads, mostly by including abstracts that were
+not efficacy studies of the drug in that condition. Q4 results are reported only from a reader that passes
+the same audit, and the audited accuracy is stated beside the result.
+
+**L86 — Q4 result (reader escalated to gemini-2.5-flash, audited 79% correct) cannot answer which model predicts
+human outcomes.** On 108 drug × condition pairs where companion-animal, laboratory and human sides were all positive
+or negative (laboratory side by the 75% rule):
+- companion animals matched humans in 90 (83%) and laboratory models in 100 (93%);
+- where only one matched, laboratory models were the one in 14 of 18 (companion share 22%, exact 95% CI 6–48%).
+
+Stated per F1: in this set, laboratory models agreed with human outcomes more often than companion animals. The
+unanimous-rule sensitivity analysis (65 pairs) found no detectable difference.
+
+The agreement is not evidence of better prediction:
+- 104 of the 108 pairs have a positive human result;
+- the laboratory literature is almost uniformly positive (205 of 214 determinate laboratory sides);
+- a side that nearly always reads "works" agrees with a mostly positive human side automatically.
+
+Only 4 pairs have a negative human result, where predictive value would show. Laboratory models matched 0 of 4 and
+companion animals 1 of 4. 90 of the 108 pairs concern drugs already approved in humans before the veterinary
+evidence; only 2 concern drugs approved later. The first two Q4 runs (L84) were invalid and are not cited.
+
+**L87 — The final result set has two different adjudicators, and half of it rests on one that was not
+independently checked.** 309 of the 572 study-level adjudication calls were made by `claude-sonnet-5`;
+the remaining 263 studies were adjudicated by the reviewing agent by hand after API credit ran out
+(amendment note "Anthropic credit also ran out"). Of the 1,494 final results, **769 (51%) come from the
+manually adjudicated studies**.
+- The two adjudicators cover disjoint sets of studies, so no inter-rater agreement between them can be
+  computed from this data, and none is reported.
+- The manual pass was not blind: the same agent built the pipeline and had seen the verifier's reasons for
+  each result. It is therefore the least independent step in the review.
+- The human spot-check (`spotcheck.md`, 20 results, seed 20260914) is the only external check on it. The
+  spot-check sample is drawn from all final results, so roughly half of it falls on manual decisions; the
+  check should be read as a test of this step in particular.
+- The manual pass dropped a larger share of results than the model adjudicator did (878 of 1,647 decisions,
+  53%). Whether that reflects a stricter reading of the same criteria or a different one is not measured.
+
+**L88 — Species labels in the final set are imperfect.** 879 of the 1,494 final results carry the extractor's
+`grouped-label` (the paper reported several species together and the result was not resolvable to one), and
+15 carry `human`, which is an extraction error that survived both adjudication passes — these are results
+whose animal side is named only in the surrounding text. The evidence map therefore shows a `human` column,
+which should be read as "species not correctly assigned", not as a finding.

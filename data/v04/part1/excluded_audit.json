@@ -1,0 +1,1343 @@
+{
+ "22164278": {
+  "decisions": {
+   "22164278-5": {
+    "id": "22164278-5",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "miR-152 is down regulated in both mouse and human neuroblastoma.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "engineered",
+     "disease_area": "oncology",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "This reflects a directional concordance in miRNA expression between mouse (TH-MYCN model) and human neuroblastoma tumors, a biological similarity without a treatment intervention outcome, as stated on page 5. Kept as a valid C-level correspondence result."
+   }
+  }
+ },
+ "24748377": {
+  "decisions": {
+   "24748377-7": {
+    "id": "24748377-7",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Long-term treatment with olaparib significantly suppressed tumor development in Brca1-deficient but not in Brca1-wild type tumors, similar to the progression free survival benefit observed in patients.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "oncology",
+     "level": "A",
+     "direction": "animal-corresponded",
+     "pdf_page": 12
+    },
+    "rationale": "This is a qualitative statement of concordance between mouse olaparib response and human progression-free survival benefit, matching level A intervention outcome correspondence, correctly attributed on page 12."
+   }
+  }
+ },
+ "17447843": {
+  "decisions": {
+   "17447843-3": {
+    "id": "17447843-3",
+    "decision": "drop",
+    "drop_reason": "This is a human-to-human reproducibility comparison (primary vs secondary independent human sample sets for caudate-to-cerebellum expression), not an animal-vs-human correspondence result; no non-human species is involved despite the mislabeling.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 82% concordance is between two independent human datasets (primary vs secondary caudate/cerebellum samples), described on page 2, not a comparison between animal and human data."
+   }
+  }
+ },
+ "24587351": {
+  "decisions": {
+   "24587351-2": {
+    "id": "24587351-2",
+    "decision": "drop",
+    "drop_reason": "This is a within-human descriptive measurement (percentage of huSMPs expressing MYOD1) with no comparison to a corresponding animal (mouse) value; it is not an animal-vs-human correspondence result but an intermediate characterization statistic.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 5% MYOD1 figure is a standalone human cell culture measurement (page 7) not paired with a quantitative mouse comparison metric, so it does not meet the correspondence-result criteria."
+   }
+  }
+ },
+ "25646150": {
+  "decisions": {
+   "25646150-4": {
+    "id": "25646150-4",
+    "decision": "drop",
+    "drop_reason": "This is a human-only epidemiological statistic quoted from another paper (Muscat et al. 2003) describing PCB-118 levels and breast cancer recurrence in women; it does not measure any animal-human correspondence and is explicitly a figure quoted from another paper, not the current paper's own result.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The statement is a human-only finding cited from a prior epidemiological study, not a comparison between dog and human results; it is explicitly excluded per the 'figures quoted from other papers' criterion (p.8)."
+   }
+  }
+ },
+ "24147065": {
+  "decisions": {
+   "24147065-2": {
+    "id": "24147065-2",
+    "decision": "drop",
+    "drop_reason": "This is a within-human staining result (6/6 human astrocytoma samples positive for IL-13RA2 by western blot), not a comparison of animal findings vs human findings; it does not measure animal-human correspondence.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The statement describes human tissue immunoreactivity only, not a comparison between an animal model and human data, so it does not qualify as a correspondence result (p.6)."
+   }
+  }
+ },
+ "25814248": {
+  "decisions": {
+   "25814248-0": {
+    "id": "25814248-0",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Therapeutic interventions reported to reduce albuminuria and improve renal pathology in animal models of diabetic kidney disease have shown negative results in humans, except for RAAS targeting.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "metabolic-endocrine",
+     "level": "A",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 6
+    },
+    "rationale": "This is a genuine A-level statement that therapeutic effects seen in diabetic nephropathy animal models largely failed to translate to humans, with RAAS blockade being the exception (p.6)."
+   }
+  }
+ },
+ "16493189": {
+  "decisions": {
+   "16493189-5": {
+    "id": "16493189-5",
+    "decision": "drop",
+    "drop_reason": "This is a dog-alone pharmacological finding (QTcB prolongation by cisapride) cited from another paper (ref 24) for comparison with monkey data, not a comparison between animal and human findings; it is an animal treatment effect quoted from another source, not an animal-human correspondence measure.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The dog QTcB data is used to compare across species (monkey vs dog), not animal vs human, and is quoted from another paper (ref 24) rather than being this paper's own human-comparison result (p.497)."
+   }
+  }
+ },
+ "24391755": {
+  "decisions": {
+   "24391755-7": {
+    "id": "24391755-7",
+    "decision": "drop",
+    "drop_reason": "This is a count of species-specific biological functions found in mouse but not human CPE transcriptomics - a descriptive difference in gene expression functional annotation, not a correspondence metric (concordance rate, translation rate, sensitivity/specificity, correlation, or count of interventions agreeing) between animal and human intervention outcomes. It reflects biological similarity/difference in gene expression profiles without any intervention outcome comparison, more akin to an ancillary descriptive statistic than a defined correspondence measure.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The paper describes qualitative functional differences (categories of biological function) between mouse and human CPE gene expression, not a quantitative correspondence metric like concordance/translation rate; page 5 discussion."
+   }
+  }
+ },
+ "25783476": {
+  "decisions": {
+   "25783476-2": {
+    "id": "25783476-2",
+    "decision": "drop",
+    "drop_reason": "This R2X value is a goodness-of-fit statistic for the PLS-DA model distinguishing depressed monkeys from healthy control monkeys within the animal study; it does not measure concordance or similarity between animal and human data/findings and is not a cross-species correspondence metric.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The R2X=0.802 is an intermediate multivariate model quality statistic for discriminating NOD macaques from healthy macaques (p.6), not a comparison to human data, so it fails the correspondence-result criteria."
+   }
+  }
+ },
+ "24270692": {
+  "decisions": {
+   "24270692-2": {
+    "id": "24270692-2",
+    "decision": "drop",
+    "drop_reason": "This is a comparative biological finding of insulin secretion magnitude between species from cited literature (Dai et al., 2012), not a measure of translational concordance/correspondence between animal and human intervention outcomes; it's a C-level biological difference statement, but the metric itself (fold difference in glucose-induced insulin secretion) is quoted from another paper (Dai et al., 2012) rather than the review's own comparative analysis, and represents a basic physiological parameter rather than a correspondence/agreement metric.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 3-fold vs 30-fold insulin secretion figures are quantitative species differences cited from another paper (Dai et al., 2012, p. 8), not a correspondence/agreement statistic between animal and human intervention outcomes as defined by the task criteria."
+   }
+  }
+ },
+ "20028558": {
+  "decisions": {
+   "20028558-2": {
+    "id": "20028558-2",
+    "decision": "drop",
+    "drop_reason": "This is a p-value from a Kaplan-Meier survival analysis conducted entirely in human patients (not a comparison of animal vs human outcomes, concordance rate, or similarity score); p-values are explicitly excluded as correspondence metrics.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The IL-8/SLC1A3 result is a p-value from human-only Kaplan-Meier survival analysis (p.4), not a cross-species concordance, translation rate, or similarity score."
+   }
+  }
+ },
+ "24004841": {
+  "decisions": {
+   "24004841-4": {
+    "id": "24004841-4",
+    "decision": "drop",
+    "drop_reason": "This is a comparison of biomarker expression rates between species (a species difference in receptor expression), not a measure of concordance/agreement/translation between animal and human intervention outcomes; it's an ancillary descriptive statistic of biological similarity without intervention.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "PR positivity rate comparison between FMAs and human breast cancer is a biomarker prevalence comparison, not a correspondence metric like concordance or translation rate (p.9)."
+   },
+   "24004841-2": {
+    "id": "24004841-2",
+    "decision": "drop",
+    "drop_reason": "This is a genetic finding (absence of BRCA mutations) in the animal model, not a measure of concordance/agreement/translation with human data; it's an intermediate biological result rather than a correspondence metric.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The absence of BRCA1/2 mutations in feline tumors is a standalone genetic finding, not a quantitative correspondence measure between animal and human data (p.1)."
+   }
+  }
+ },
+ "26694027": {
+  "decisions": {
+   "26694027-6": {
+    "id": "26694027-6",
+    "decision": "drop",
+    "drop_reason": "This is a qualitative statement that a mouse finding (monocyte % correlated with atherosclerosis) is 'consistent with' human epidemiological studies citing a general association, not a quantitative correspondence/concordance measure comparing animal and human data; no rate, correlation, or agreement statistic is given for this cross-species comparison itself.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "cardiovascular",
+     "level": "C",
+     "direction": "not-applicable",
+     "pdf_page": 25
+    },
+    "rationale": "The claim is a narrative consistency statement rather than a measured concordance/translation rate; per exclusion criteria this is not a correspondence result (p.25)."
+   }
+  }
+ },
+ "24901344": {
+  "decisions": {
+   "24901344-4": {
+    "id": "24901344-4",
+    "decision": "drop",
+    "drop_reason": "This is a single-species human fold-change value (Psme3 expression in S. aureus BSI patients vs healthy controls) rather than a cross-species concordance/correspondence metric; the actual animal-human comparison in the paper is the qualitative consistency of expression direction between mouse and human (Fig 3C), not this isolated human fold value.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 0.78-fold value is a human-only expression measurement (p.2), not a measure of agreement between animal and human findings, so it does not meet the correspondence criteria."
+   }
+  }
+ },
+ "16493187": {
+  "decisions": {
+   "16493187-5": {
+    "id": "16493187-5",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Nifedipine, a negative compound (not associated with QT prolongation in humans), produced a maximum group-mean-difference of 11% increase in QTcF interval in conscious dogs at 3 mg/kg, likely a false-positive signal due to marked heart rate increase, indicating a discordance between the dog model and the expected human (negative) classification.",
+     "value": 11,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "dog",
+     "model_type": "healthy",
+     "disease_area": "cardiovascular",
+     "level": "B",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 9
+    },
+    "rationale": "Nifedipine was classified as a clinically negative compound for QT prolongation, but the conscious dog model showed an 11% QTcF increase, a false-positive signal attributed to heart-rate-related overcorrection (p.9, discussed further p.467-468); level should be B (toxicity/safety concordance) not the invalid 'A-outcome-concordance' code, and model_type is healthy (normal beagles) rather than unspecified."
+   }
+  }
+ },
+ "25925672": {
+  "decisions": {
+   "25925672-5": {
+    "id": "25925672-5",
+    "decision": "drop",
+    "drop_reason": "This is an allometric scaling calculation deriving a human clearance parameter estimate, not a measure of correspondence/agreement between animal and human findings (no comparison of outcomes, just a projected value used as an alternative to MAK's assumption).",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The value represents a theoretical extrapolated human clearance half-time from rat data using allometric scaling equations, not an empirical concordance rate between animal and human results (p.6)."
+   }
+  }
+ },
+ "29035378": {
+  "decisions": {
+   "29035378-1": {
+    "id": "29035378-1",
+    "decision": "drop",
+    "drop_reason": "This is a count of exclusive molecules identified via MALDI imaging (biological similarity/difference in molecular composition), not a correspondence metric like concordance, translation rate, sensitivity/specificity, or agreement rate; it's a raw molecule count from an -omics comparison, an intermediate descriptive statistic rather than a summary correspondence measure.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 83 vs 54 vs 1366 molecule counts (p.4) are descriptive outputs of a Venn diagram comparison, not a correspondence rate/score between animal and human intervention outcomes or safety profiles."
+   }
+  }
+ },
+ "26609560": {
+  "decisions": {
+   "26609560-4": {
+    "id": "26609560-4",
+    "decision": "drop",
+    "drop_reason": "This is an animal-only finding comparing mice/rats/guinea pigs to each other in liver/intestinal tissue; no human recycling data for liver/intestine is presented for comparison, so it is not an animal-vs-human correspondence result (unlike the RBC recycling data which the paper explicitly compares to human levels).",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The statement describes only inter-species (rodent) comparisons in liver/intestine without a human data point for comparison; human comparison is only made for RBC recycling capacity (p.5)."
+   }
+  }
+ },
+ "29623027": {
+  "decisions": {
+   "29623027-3": {
+    "id": "29623027-3",
+    "decision": "drop",
+    "drop_reason": "This is a count of clinical studies (zero) on status epilepticus, not a measure of animal-human correspondence such as concordance, translation rate, or agreement; it merely notes an untested clinical gap.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The statement reflects absence of clinical studies rather than a comparison between animal and human findings, so it does not qualify as a correspondence result (p.7)."
+   }
+  }
+ },
+ "26959227": {
+  "decisions": {
+   "26959227-4": {
+    "id": "26959227-4",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Humanized mice showed selective CD3 downmodulation on T cells upon OKT3 injection, a typical effect of OKT3.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "engineered",
+     "disease_area": "immunology-inflammation",
+     "level": "A",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "The paper reports that humanized mice recapitulated a known human pharmacodynamic effect of OKT3 (CD3 downmodulation), a qualitative intervention-outcome concordance between animal model and human data (p.1,7). Model type corrected to engineered since these are genetically immunodeficient NRG mice reconstituted with human PBMCs, not simply healthy animals."
+   }
+  }
+ },
+ "30008848": {
+  "decisions": {
+   "30008848-7": {
+    "id": "30008848-7",
+    "decision": "drop",
+    "drop_reason": "This is a qualitative descriptive statement about rarity of tumor variant frequency (a biological similarity in tumor classification), not a quantitative correspondence metric like concordance rate, sensitivity, or similarity score; it's a categorical comparison of histological subtype frequencies without any measurable animal-human agreement statistic.",
+    "corrected": {
+     "statement": "Other variants of urothelial carcinoma are rare in both species.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "spontaneous-companion",
+     "disease_area": "oncology",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Table III (p.6) states rare UC subtypes occur in both species but this is a descriptive qualitative claim, not a quantifiable correspondence metric such as concordance rate or similarity score."
+   }
+  }
+ },
+ "29593715": {
+  "decisions": {
+   "29593715-2": {
+    "id": "29593715-2",
+    "decision": "drop",
+    "drop_reason": "This is a human-only descriptive statistic (CD4+CD25+/CD4+ ratio in trauma patients vs healthy volunteers) rather than a measure of concordance/correspondence between animal and human findings; it does not quantify agreement between species.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The statement reports only human clinical values (patients vs healthy volunteers), not a comparison metric between animal and human results, so it does not meet the correspondence-result definition (p.5)."
+   }
+  }
+ },
+ "29362430": {
+  "decisions": {
+   "29362430-5": {
+    "id": "29362430-5",
+    "decision": "drop",
+    "drop_reason": "This is a treatment effect size (SMD) for trabecular separation within animal studies only, not a measure of concordance/correspondence between animal and human findings; the paper's actual animal-vs-human comparison is qualitative (discordant clinical outcomes vs improved bone parameters in animals), not this specific statistic.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "SMD=-1.44 for trabecular separation is an animal-only treatment effect (p.1/7), not a cross-species correspondence metric."
+   },
+   "29362430-1": {
+    "id": "29362430-1",
+    "decision": "drop",
+    "drop_reason": "This is a treatment effect size (MD) for epiphyseal quotients within animal studies only, not a correspondence measure between animal and human outcomes.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "MD=15.32 for epiphyseal quotients is an animal-only outcome statistic (p.1/6), not a comparison to human data."
+   }
+  }
+ },
+ "29255462": {
+  "decisions": {
+   "29255462-1": {
+    "id": "29255462-1",
+    "decision": "drop",
+    "drop_reason": "The extracted metric is a p-value (0.018) describing a within-species statistical comparison (H vs C in dogs), not a cross-species concordance/agreement metric; p-values are explicitly excluded as correspondence results.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "dog",
+     "model_type": "spontaneous-companion",
+     "disease_area": "pain-musculoskeletal",
+     "level": "C",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 5
+    },
+    "rationale": "The reported value is a p-value from an intra-species gene expression comparison, not a species-correspondence metric like concordance or correlation; per the rules p-values are excluded even if the surrounding narrative discusses cross-species divergence (p.5,7)."
+   }
+  }
+ },
+ "30049713": {
+  "decisions": {
+   "30049713-0": {
+    "id": "30049713-0",
+    "decision": "drop",
+    "drop_reason": "This describes a treatment effect in an animal model alone (EAE mice treated with Vi polysaccharide showing decreased disease pathology), not a correspondence measure comparing animal findings to human findings; the paper's human data (Fig 5, 6) are separate experiments not directly statistically compared to this animal outcome.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "This is a within-animal-model treatment effect (EAE mice), not a measured agreement/correlation between animal and human results; per rules, treatment effects in animals alone are not correspondence results (p.7)."
+   }
+  }
+ },
+ "33514394": {
+  "decisions": {
+   "33514394-1": {
+    "id": "33514394-1",
+    "decision": "drop",
+    "drop_reason": "This is a comparison of transcriptomic module divergence between glial and neuronal cell types within a cross-species co-expression analysis, not a measure of correspondence between animal and human intervention outcomes, toxicity, or biological similarity in the defined sense; it is an intermediate/ancillary statistic characterizing which cell types diverge more, not a translational concordance metric between animal and human findings.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The odds ratio reflects relative divergence between glial and neuronal co-expression modules (an internal comparison of cell-type divergence, p.5), not a defined correspondence metric between animal and human data as specified in the task's inclusion criteria."
+   }
+  }
+ },
+ "33282730": {
+  "decisions": {
+   "33282730-5": {
+    "id": "33282730-5",
+    "decision": "drop",
+    "drop_reason": "This is a biological correlation within canine tumors (CA15-3 expression vs histological grade), not a comparison of animal findings to human findings; no human data or correspondence metric is involved.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The statement describes an intra-canine correlation (serum CA15-3 vs histological grade) with no human comparator, so it does not meet the definition of an animal-human correspondence result (page 8)."
+   }
+  }
+ },
+ "32581852": {
+  "decisions": {
+   "32581852-4": {
+    "id": "32581852-4",
+    "decision": "drop",
+    "drop_reason": "This is a within-mouse comparison (Adriamycin-injured vs control kidney Treg percentage) with no human comparison data being matched; it is an intermediate biological finding in the animal model alone, not a cross-species correspondence measurement.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 5.1% vs 0.7% Treg comparison is purely intra-mouse (injured vs control), not a comparison between animal and human findings, so it does not qualify as a correspondence result per the criteria (page 6)."
+   }
+  }
+ },
+ "33614609": {
+  "decisions": {
+   "33614609-5": {
+    "id": "33614609-5",
+    "decision": "drop",
+    "drop_reason": "This is a human clinical trial result (bone density in human patients), not an animal-vs-human correspondence measure; it does not compare animal findings to human findings but reports human data alone.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The value 915.28 HU is a human-only clinical outcome (bone density in patients with atrophy) with no corresponding animal measure being compared, so it fails the correspondence-result criteria (p. 7)."
+   }
+  }
+ },
+ "34376232": {
+  "decisions": {
+   "34376232-7": {
+    "id": "34376232-7",
+    "decision": "drop",
+    "drop_reason": "This is a correlation analysis entirely within human TCGA data (CTLA-4 expression vs CIBERSORT-estimated NK cell proportions across human tumor types) and does not compare animal findings to human findings; it is not an animal-vs-human correspondence result.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The correlation described is between CTLA-4 expression and CIBERSORT NK cell scores solely within human TCGA data (p.17), with no comparison to animal/mouse data, so it fails the correspondence-result criteria."
+   }
+  }
+ },
+ "26892349": {
+  "decisions": {
+   "26892349-6": {
+    "id": "26892349-6",
+    "decision": "drop",
+    "drop_reason": "This result describes the error rate of canine-derived models (FACC/FACCosteo, trained and tested entirely within canine datasets) predicting canine osteosarcoma outcomes; it is an intraspecies (dog-to-dog) model validation metric, not a measure of correspondence between animal findings and human findings.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The cited error rate (0.307) reflects canine cell-line/tumor-trained models predicting outcomes in an independent canine tumor cohort (COS33), with no human data or human clinical outcome involved in this specific comparison (p.8)."
+   }
+  }
+ },
+ "36857322": {
+  "decisions": {
+   "36857322-1": {
+    "id": "36857322-1",
+    "decision": "drop",
+    "drop_reason": "This is a measure of human read purity in PDX tumor sequencing (species read composition), not a correspondence between animal and human findings/outcomes; it does not reflect concordance, translation rate, or biological similarity of disease-relevant data between animal and human.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 87% figure quantifies technical read classification (human vs mouse reads) in PDX RNA-seq, not an animal-human correspondence of biological or clinical findings (p.6)."
+   }
+  }
+ },
+ "28668095": {
+  "decisions": {
+   "28668095-1": {
+    "id": "28668095-1",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The human sequence of CSPG4 had 88% similarity with the canine counterpart.",
+     "value": 88,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "healthy",
+     "disease_area": "oncology",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 10
+    },
+    "rationale": "This is a cross-species protein sequence similarity comparison (human vs canine CSPG4), a biological similarity result without an intervention outcome, so it fits level C; the original 'level' value used a non-conforming string and lacked model_type/disease_area, which are corrected here (p.10)."
+   }
+  }
+ },
+ "36883244": {
+  "decisions": {
+   "36883244-1": {
+    "id": "36883244-1",
+    "decision": "drop",
+    "drop_reason": "This statistic describes the failure rate of human AD drug trials (drug vs placebo comparisons in humans), not a comparison of animal findings to human findings; it is not an animal-human correspondence measure.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 99% failure rate refers to human clinical trials showing no drug-placebo difference, an intrinsic human trial outcome statistic, not an animal-to-human translation/concordance metric (p.2)."
+   }
+  }
+ },
+ "34466750": {
+  "decisions": {
+   "34466750-2": {
+    "id": "34466750-2",
+    "decision": "drop",
+    "drop_reason": "This is a correlation measured entirely within human patients (CLEC4E expression vs peak TnT in ACS patients), not a comparison between animal and human findings; it does not represent translational concordance.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The r=0.52 correlation is between two human biomarkers (CLEC4E expression and TnT) within the same patient cohort, not an animal-human correspondence measure (p.11)."
+   }
+  }
+ },
+ "25896610": {
+  "decisions": {
+   "25896610-1": {
+    "id": "25896610-1",
+    "decision": "drop",
+    "drop_reason": "This is an overall percentage of positive/negative outcomes across all clinical studies (both equine and human combined), not a comparison of animal versus human findings; it is simply a summary statistic of study results (p.3), not a concordance/translation metric.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 43.3% figure describes the proportion of all clinical studies (human+equine) with negative results, not a cross-species correspondence measure; it is a treatment-effect summary, not an animal-vs-human agreement statistic (p.3)."
+   },
+   "25896610-4": {
+    "id": "25896610-4",
+    "decision": "drop",
+    "drop_reason": "This is a treatment-effect statistic describing the proportion of equine trials with positive PRP outcomes, not a direct comparison/agreement rate between animal and human results.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 63.6% figure reflects the rate of positive outcomes among equine clinical trials alone; while the paper later contrasts this with human trial rates, the number itself is an animal-only treatment-effect statistic rather than a concordance or translation metric (p.3)."
+   }
+  }
+ },
+ "32211332": {
+  "decisions": {
+   "32211332-1": {
+    "id": "32211332-1",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Nine of the 11 dogs co-clustered with 97 human DLBCL samples in group 2 (enriched for ABC-DLBCL classifier genes), suggesting an ABC-like phenotype in these dogs, based on K-means clustering of 27-gene GCB/ABC classifiers combining canine RNA-seq and human microarray data.",
+     "value": 9,
+     "unit": "count",
+     "numerator": 9,
+     "denominator": 11,
+     "species": "dog",
+     "model_type": "spontaneous-companion",
+     "disease_area": "oncology",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 3
+    },
+    "rationale": "This reflects a cross-species clustering/biological similarity result (Level C) showing that most canine lymphoma samples co-clustered with human ABC-DLBCL samples using shared classifier genes, supporting molecular correspondence between species (p.3)."
+   }
+  }
+ },
+ "38671057": {
+  "decisions": {
+   "38671057-1": {
+    "id": "38671057-1",
+    "decision": "drop",
+    "drop_reason": "This correlation (r=0.69) measures the within-study relationship between CF and control nPD values (across both animal and human studies combined), not a comparison of animal findings versus human findings; it reflects protocol-dependent covariation of CF vs control values, not animal-human concordance.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The r=0.69 correlation is between CF and control nPD values within studies (pooled across species), not a measure of animal-to-human correspondence; page 8."
+   }
+  }
+ },
+ "38736673": {
+  "decisions": {
+   "38736673-5": {
+    "id": "38736673-5",
+    "decision": "drop",
+    "drop_reason": "This statement describes a human-only clinical finding (biomarker levels in patients with vs without GI injury) with no comparison to animal data; it is not an animal-human correspondence result.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The result compares two human patient subgroups only, not animal vs human findings, so it does not meet the correspondence criteria (page 1)."
+   }
+  }
+ },
+ "40051661": {
+  "decisions": {
+   "40051661-6": {
+    "id": "40051661-6",
+    "decision": "drop",
+    "drop_reason": "This is a purely clinical (human-only) finding about the proportion of patients without significant FDG uptake change; it does not compare animal and human findings, and the species was incorrectly labeled as non-human-primate when these are human GBM patients.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 6/12 statistic describes human patient response variability alone (Table 2, p.10), not a comparison between animal and human data, so it is not a correspondence result."
+   }
+  }
+ },
+ "40534873": {
+  "decisions": {
+   "40534873-2": {
+    "id": "40534873-2",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The study found clear differences in the directionality of pathways that are potentially impacted between mice and humans.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "immunology-inflammation",
+     "level": "C",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 12
+    },
+    "rationale": "This statement directly describes a lack of biological correspondence between mouse and human EV cargo/pathway directionality after burn injury, a level-C comparison without an intervention outcome, supported on page 12."
+   }
+  }
+ },
+ "37394473": {
+  "decisions": {
+   "37394473-5": {
+    "id": "37394473-5",
+    "decision": "drop",
+    "drop_reason": "This describes a biomarker level change within human samples only (TAA vs control), not a comparison of animal findings to human findings; it does not measure animal-human correspondence.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "This is a human-only within-study comparison (TAA vs control samples), not a cross-species correspondence measure; p.3 describes biomarker levels in human tissue alone."
+   }
+  }
+ },
+ "40608428": {
+  "decisions": {
+   "40608428-3": {
+    "id": "40608428-3",
+    "decision": "drop",
+    "drop_reason": "This is a treatment effect observed in human precision-cut lung slices (an ex vivo human model), not a comparison between animal and human findings; there is no animal data being compared for correspondence here. It reflects drug efficacy on cytokine release within a single human-derived system, not an animal-human concordance metric.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The statement describes a drug effect on human PCLS cytokines, which is a treatment-outcome result in a human ex vivo model alone, not a cross-species correspondence comparison (p. 15)."
+   }
+  }
+ },
+ "42101718": {
+  "decisions": {
+   "42101718-2": {
+    "id": "42101718-2",
+    "decision": "drop",
+    "drop_reason": "This is a within-species predictive performance metric (specificity of NfL for predicting neurologic outcomes within the rat model itself), not a measure of concordance between animal and human findings. The paper never reports a specificity value for NfL in human patients to compare against, so this cannot be assessed as an animal-vs-human correspondence result.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 56.0% specificity is an intra-rat ROC statistic (Day 3 NfL predicting good/poor neurologic outcome in rats, p.5), not a comparison to a human specificity value, so it fails the correspondence-result definition."
+   }
+  }
+ },
+ "W2938335835": {
+  "decisions": {
+   "W2938335835-4": {
+    "id": "W2938335835-4",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "There was no correlation between what the genes and responses did in mice versus what they did in humans for inflammatory processes such as sepsis.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "immunology-inflammation",
+     "level": "C",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 15
+    },
+    "rationale": "This reflects the paper's citation of Seok et al. (2013) reporting no correlation between mouse and human gene/response profiles in sepsis, a biological similarity (non-intervention) comparison, page 15."
+   }
+  }
+ },
+ "42509465": {
+  "decisions": {
+   "42509465-5": {
+    "id": "42509465-5",
+    "decision": "drop",
+    "drop_reason": "This is a within-human descriptive statistic (proportion of A3-related variants among missense mutations in human breast cancer samples), not a measure of animal-human correspondence; it does not compare animal findings to human findings but reports a human-only mutational spectrum characteristic (p.4).",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The 33.8% figure describes the proportion of A3-associated missense variants within human breast cancer samples alone, a descriptive intra-human statistic rather than an animal-vs-human concordance measure (p.4)."
+   }
+  }
+ },
+ "41952231": {
+  "decisions": {
+   "41952231-5": {
+    "id": "41952231-5",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The proportion of homologous DEGs associated with 'disease progression' in ICR mice was 9.26%.",
+     "value": 9.26,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "liver-gi",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 6
+    },
+    "rationale": "ICR mice are Mus musculus (same species as C57BL/6J), not a distinct 'other-rodent' species, so species field should be corrected to 'mouse'; the proportion of human disease-progression DEGs also found in ICR mouse upregulated DEGs (9.26%) is a valid biological similarity/correspondence measure reported on page 6."
+   }
+  }
+ },
+ "38717901": {
+  "decisions": {
+   "38717901-5": {
+    "id": "38717901-5",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Human voxels with connectivity profiles most similar to mouse M1 showed higher values on the R2* myelin marker compared to human voxels most similar to mouse ALM, mimicking the same pattern found in mice.",
+     "value": 21.46,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "healthy",
+     "disease_area": "neurology",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 9
+    },
+    "rationale": "This is a legitimate biological similarity (level C) result: the myelin marker difference (M1 > ALM) found in mice was mimicked in human voxels matched by connectivity, per page 9/10 text. The pdf_page field was corrected from 10 to 9 to match the actual location of the quoted text."
+   }
+  }
+ },
+ "W2909316182": {
+  "decisions": {
+   "W2909316182-1": {
+    "id": "W2909316182-1",
+    "decision": "drop",
+    "drop_reason": "This is a treatment effect size within animal studies alone (stem cell vs control infarct size in rodents), not a comparison between animal and human findings; it does not measure concordance, translation, or agreement with human data.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The -1.17 effect size is an animal-only histologic outcome (infarct size) from the preclinical meta-analysis, not a human-animal correspondence metric (p.5)."
+   }
+  }
+ },
+ "40631180": {
+  "decisions": {
+   "40631180-3": {
+    "id": "40631180-3",
+    "decision": "drop",
+    "drop_reason": "This result compares human MASH liver tissue to human isolated steatosis liver tissue (Fig. 4K) — it is a human-only comparison, not a cross-species animal-vs-human correspondence measure.",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "The cited finding (p.11) compares CD4+ T cell subsets between human isolated steatosis and human MASH tissue, not between animal and human data, so it does not meet the correspondence criteria."
+   }
+  }
+ },
+ "42399261": {
+  "decisions": {
+   "42399261-6": {
+    "id": "42399261-6",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Mouse PC2 explained 5.71% of the variance in human entorhinal cortex (GSE147528) microglial gene expression data when projected into the mouse PC space, indicating biological correspondence between the mouse 5xFAD model and human AD microglia.",
+     "value": 5.71,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 17
+    },
+    "rationale": "This reflects variance explained by a mouse-derived PC in human microglial data, a biological similarity (level C) measure, but the species field was mislabeled as 'non-human-primate'/tissue name instead of mouse; corrected to reflect the 5xFAD mouse model (p. 17)."
+   }
+  }
+ },
+ "40839180": {
+  "decisions": {
+   "40839180-0": {
+    "id": "40839180-0",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "When the PLS regression model trained on ovine (sheep) aqueous humour data was applied to predict PMI in human aqueous humour samples, the standard deviation of the error in prediction (SDEP) for the human samples was 300 minutes across the entire PMI window, much higher than the animal cross-validation error (112 min) and the previously published animal model error (99 min).",
+     "value": 300,
+     "unit": "minutes",
+     "numerator": null,
+     "denominator": null,
+     "species": "sheep",
+     "model_type": "healthy",
+     "disease_area": "forensic-postmortem-interval",
+     "level": "A",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 4
+    },
+    "rationale": "This is a genuine translation metric (SDEP) showing poor correspondence between the ovine-trained model's prediction accuracy and its performance on human samples (p.4); the species field was mis-extracted as 'non-human-primate' when the animal model used was ovine (sheep), and model_type/disease_area needed correction since this is a healthy-animal forensic PMI study, not a disease model."
+   }
+  }
+ },
+ "40808951": {
+  "decisions": {
+   "40808951-4": {
+    "id": "40808951-4",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "SOCS3 was significantly upregulated in both mouse models of septic liver injury (CLP and LPS), consistent with its identification as an upregulated core gene in human SLI transcriptomic datasets.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "infectious-disease",
+     "level": "C",
+     "direction": "animal-corresponded",
+     "pdf_page": 8
+    },
+    "rationale": "This is a qualitative biological-similarity finding (gene expression direction concordance) rather than an intervention outcome, so level should be C not the invalid 'A-outcome-concordance'; both CLP and LPS are induced sepsis models (p.8)."
+   }
+  }
+ },
+ "28182759": {
+  "decisions": {
+   "28182759-1": {
+    "id": "28182759-1",
+    "decision": "drop",
+    "drop_reason": "This is a purely human-only outcome rate for disease-modifying interventions (32% of 31 human studies improved), not itself a comparison or concordance metric between animal and human data; it is descriptive data from Table 1 used to set up the later translational-gap comparison, akin to a standalone treatment-effect statistic (p.7).",
+    "corrected": {
+     "statement": "",
+     "value": null,
+     "unit": "",
+     "numerator": null,
+     "denominator": null,
+     "species": "",
+     "model_type": "",
+     "disease_area": "",
+     "level": "",
+     "direction": "",
+     "pdf_page": null
+    },
+    "rationale": "A single-arm human outcome proportion is not a cross-species correspondence measure; it is only meaningful when explicitly paired with an animal rate in the same statement (p.7, Table 1)."
+   },
+   "28182759-5": {
+    "id": "28182759-5",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "For disease-modifying interventions, 84% of macaque studies showed an improved outcome, compared with only 32% of human studies, illustrating the translational gap.",
+     "value": 84,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": 25,
+     "species": "macaque",
+     "model_type": "induced",
+     "disease_area": "neurology",
+     "level": "A",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 7
+    },
+    "rationale": "The paper explicitly contrasts the high 84% improvement rate in macaque disease-modifying studies with the much lower 32% human improvement rate to demonstrate a translational gap, meaning the animal outcome did not correspond to the human outcome (p.7, Table 1), so the direction should be 'animal-did-not-correspond' rather than 'animal-corresponded'; species/model fields were also corrected to match the specific MPTP-induced macaque model and neurology (PD) disease area."
+   }
+  }
+ }
+}

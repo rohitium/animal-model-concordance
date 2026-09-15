@@ -1,0 +1,1322 @@
+[
+ {
+  "n": 1,
+  "sample": "A",
+  "id": "34530926-1",
+  "pmid": "34530926",
+  "title": "Zebrafish toxicological screening could aid Leishmaniosis drug discovery",
+  "year": 2021,
+  "journal": "Laboratory Animal Research",
+  "adjudicator": "hand",
+  "statement": "The zebrafish model did not predict the side effects of carbamazepine and benznidazole, which are common in humans.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "zebrafish",
+  "level": "B",
+  "direction": "animal-did-not-correspond",
+  "disease_area": "cross-cutting-toxicology",
+  "quote": "Thus, the proposed platform was sensible to perform an effective screening for approval of new compounds, however, it did not predict the side effects of the drugs.",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/34530926.pdf",
+  "study_page": "study/34530926.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/34530926/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/s42826-021-00104-1"
+   ]
+  ]
+ },
+ {
+  "n": 2,
+  "sample": "A",
+  "id": "40210624-5",
+  "pmid": "40210624",
+  "title": "Plasma-to-tumour tissue integrated proteomics using nano-omics for biomarker discovery in glioblastoma",
+  "year": 2025,
+  "journal": "Nature Communications",
+  "adjudicator": "hand",
+  "statement": "48 potential glioblastoma biomarker candidates were identified through cross-species correlation.",
+  "value": 48,
+  "unit": "count",
+  "numerator": 48,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "Cross-species correlation identified 48 potential GB biomarker candidates involved in actin cytoskeleton organisation, focal adhesion, platelet activation, leukocyte migration, amino acid biosynthesis, carbon metabolism, and phagosome pathways.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/40210624.pdf",
+  "study_page": "study/40210624.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/40210624/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41467-025-58252-0"
+   ]
+  ]
+ },
+ {
+  "n": 3,
+  "sample": "A",
+  "id": "36253443-0",
+  "pmid": "36253443",
+  "title": "Cntnap2-dependent molecular networks in autism spectrum disorder revealed through an integrative multi-omics analysis",
+  "year": 2022,
+  "journal": "Molecular Psychiatry",
+  "adjudicator": "hand",
+  "statement": "Out of 7413 common genes between mouse proteomic data and human transcriptome data, 48 genes showed the same expression trend.",
+  "value": 48,
+  "unit": "count",
+  "numerator": 48,
+  "denominator": 7413,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "neurology",
+  "quote": "Of the 7413 genes found to be common to both datasets (Fig. 4a), 48 genes (12 upregulated and 36 downregulated DEGs) showed the same trend as the DEPs in our proteomic data (Fig. 4b).",
+  "pdf_page": 3,
+  "pdf_local": "data/raw/fulltext/36253443.pdf",
+  "study_page": "study/36253443.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/36253443/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41380-022-01822-1"
+   ]
+  ]
+ },
+ {
+  "n": 4,
+  "sample": "A",
+  "id": "41442035-1",
+  "pmid": "41442035",
+  "title": "Identification of conserved canonical marker genes in human and mouse adrenal glands using Visium spatial transcriptomics",
+  "year": 2025,
+  "journal": "Histochemistry and Cell Biology",
+  "adjudicator": "hand",
+  "statement": "The Spearman correlation of log2FC values between human ZR and mouse ZF across 18 signature genes was 0.4.",
+  "value": 0.4,
+  "unit": "correlation",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "new",
+  "quote": "The correlations for other clusters were considerably lower (ρ=0.4 for ZF, ZG, and medulla; ρ=−0.8 for CT/WAT), yielding a specificity margin Δρ=0.4 (Fig. 7c).",
+  "pdf_page": 14,
+  "pdf_local": "data/raw/fulltext/41442035.pdf",
+  "study_page": "study/41442035.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/41442035/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1007/s00418-025-02446-6"
+   ]
+  ]
+ },
+ {
+  "n": 5,
+  "sample": "A",
+  "id": "31921858-0",
+  "pmid": "31921858",
+  "title": "Know Thy Model: Charting Molecular Homology in Stromal Reprogramming Between Canine and Human Mammary Tumors",
+  "year": 2019,
+  "journal": "Frontiers in Cell and Developmental Biology",
+  "adjudicator": "model",
+  "statement": "The paper found strong molecular homology in stromal reprogramming between canine and human mammary carcinomas.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "In conclusion, these results clearly demonstrated that stromal reprogramming in canine and human mCA shares significant molecular homology.",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/31921858.pdf",
+  "study_page": "study/31921858.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/31921858/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fcell.2019.00348"
+   ]
+  ]
+ },
+ {
+  "n": 6,
+  "sample": "A",
+  "id": "39055259-4",
+  "pmid": "39055259",
+  "title": "Cross-species single-cell landscapes identify the pathogenic gene characteristics of inherited retinal diseases",
+  "year": 2024,
+  "journal": "Frontiers in Genetics",
+  "adjudicator": "hand",
+  "statement": "The IRDs GNAT2, PDEFG, and CSPG4 displayed highly consistent expression in humans and mice.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "ophthalmology",
+  "quote": "The IRDs (GNAT2, PDEFG, and CSPG4) displayed highly consistent expression in humans and mice (Supplementary Figure 5F).",
+  "pdf_page": 12,
+  "pdf_local": "data/raw/fulltext/39055259.pdf",
+  "study_page": "study/39055259.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/39055259/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fgene.2024.1409016"
+   ]
+  ]
+ },
+ {
+  "n": 7,
+  "sample": "A",
+  "id": "11029269-1",
+  "pmid": "11029269",
+  "title": "Concordance of the Toxicity of Pharmaceuticals in Humans and in Animals",
+  "year": 2000,
+  "journal": "Regulatory Toxicology and Pharmacology",
+  "adjudicator": "model",
+  "statement": "The true positive human toxicity concordance rate for nonrodent species was 63% for human toxicity events.",
+  "value": 63,
+  "unit": "percent",
+  "numerator": null,
+  "denominator": 221,
+  "species": "grouped-label",
+  "level": "B",
+  "direction": "animal-corresponded",
+  "disease_area": "cross-cutting-toxicology",
+  "quote": "Concordance was seen in 63% of nonrodent studies (primarily the dog) and 43% of rodent studies (primarily the rat).",
+  "pdf_page": 5,
+  "pdf_local": "data/raw/fulltext/11029269.pdf",
+  "study_page": "study/11029269.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/11029269/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1006/rtph.2000.1399"
+   ]
+  ]
+ },
+ {
+  "n": 8,
+  "sample": "A",
+  "id": "31945134-4",
+  "pmid": "31945134",
+  "title": "Tripartite factors leading to molecular divergence between human and murine smooth muscle",
+  "year": 2020,
+  "journal": "PLoS ONE",
+  "adjudicator": "model",
+  "statement": "19% of EC non-uniformly conserved proteins were absent in mouse.",
+  "value": 19.0,
+  "unit": "percent",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-did-not-correspond",
+  "disease_area": "cardiovascular",
+  "quote": "Non-uniformly conserved VSMC proteins were much more likely to be absent in mouse than EC or VSMC/EC non-conserved molecules (84.6% for VSMC, compared with 19% for EC proteins and 42.1% for VSMC/EC proteins).",
+  "pdf_page": 10,
+  "pdf_local": "data/raw/fulltext/31945134.pdf",
+  "study_page": "study/31945134.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/31945134/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1371/journal.pone.0227672"
+   ]
+  ]
+ },
+ {
+  "n": 9,
+  "sample": "A",
+  "id": "40691154-0",
+  "pmid": "40691154",
+  "title": "Translating medication effects for alcohol use disorder across preclinical, human laboratory, and clinical trial outcomes using meta-analysis",
+  "year": 2025,
+  "journal": "Translational Psychiatry",
+  "adjudicator": "hand",
+  "statement": "Medications that reduced alcohol preference in preclinical 2-BC studies were associated with lower return to drinking in human clinical trials, with a linear slope of 0.04.",
+  "value": 0.04,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "psychiatry-addiction",
+  "quote": "For the preclinical 2-BC preference endpoint, the linear slope is statistically significant for return to any drinking in RCTs (β = 0.04, SE = 0.02, p=0.004; Fig. 2B), such that medications that reduced alcohol preference in preclinical 2-BC studies were associated with lower return to drinking in RCTs.",
+  "pdf_page": 5,
+  "pdf_local": "data/raw/fulltext/40691154.pdf",
+  "study_page": "study/40691154.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/40691154/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41398-025-03473-6"
+   ]
+  ]
+ },
+ {
+  "n": 10,
+  "sample": "A",
+  "id": "29858598-6",
+  "pmid": "29858598",
+  "title": "An integrated analysis of genes and functional pathways for aggression in human and rodent models",
+  "year": 2018,
+  "journal": "Molecular Psychiatry",
+  "adjudicator": "model",
+  "statement": "The pathway overlap between human GWAS and rodent transcriptome genes was not significant, with 27 pathways in common.",
+  "value": 27,
+  "unit": "count",
+  "numerator": 27,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-did-not-correspond",
+  "disease_area": "psychiatry-addiction",
+  "quote": "In contrast, the pathway overlap between the human GWAS and rodent transcriptome genes was not significant (N = 27, p = 0.20).",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/29858598.pdf",
+  "study_page": "study/29858598.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/29858598/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41380-018-0068-7"
+   ]
+  ]
+ },
+ {
+  "n": 11,
+  "sample": "A",
+  "id": "37953224-7",
+  "pmid": "37953224",
+  "title": "Expression profiles of the autism-related SHANK proteins in the human brain",
+  "year": 2023,
+  "journal": "BMC Biology",
+  "adjudicator": "hand",
+  "statement": "SHANK2 puncta density and sum intensity in the amygdala were considerably higher in mice compared to humans.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-did-not-correspond",
+  "disease_area": "neurology",
+  "quote": "In contrast, puncta density and sum intensity in the AMY were considerably higher in mice compared to humans.",
+  "pdf_page": 12,
+  "pdf_local": "data/raw/fulltext/37953224.pdf",
+  "study_page": "study/37953224.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/37953224/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/s12915-023-01712-0"
+   ]
+  ]
+ },
+ {
+  "n": 12,
+  "sample": "A",
+  "id": "41822479-5",
+  "pmid": "41822479",
+  "title": "Complement response to burn injury: systematic review and meta-analysis of patient and animal studies",
+  "year": 2026,
+  "journal": "Frontiers in Immunology",
+  "adjudicator": "hand",
+  "statement": "Human studies showed markedly higher levels of C3a compared with animal studies, with a standardized mean difference of 2.18 in humans.",
+  "value": 2.18,
+  "unit": "none",
+  "numerator": null,
+  "denominator": 9,
+  "species": "non-human-primate",
+  "level": "A",
+  "direction": "mixed",
+  "disease_area": "immunology-inflammation",
+  "quote": "Compared with animal studies, human studies showed markedly higher levels of C3a (animals: SMD = -1.34; CI95% = -1.78, -0.89; n = 1 study versus humans: SMD = 2.18; CI95% = 1.79, 2.56; n = 9 studies; P< 0.0001)",
+  "pdf_page": 8,
+  "pdf_local": "data/raw/fulltext/41822479.pdf",
+  "study_page": "study/41822479.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/41822479/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fimmu.2026.1793945"
+   ]
+  ]
+ },
+ {
+  "n": 13,
+  "sample": "A",
+  "id": "24886351-3",
+  "pmid": "24886351",
+  "title": "Transcriptomic evidence for immaturity of the prefrontal cortex in patients with schizophrenia",
+  "year": 2014,
+  "journal": "Molecular Brain",
+  "adjudicator": "model",
+  "statement": "110 genes overlapped between human developing MFC and Shn-2 KO mice MFC, indicating significant similarities in the pattern of transcriptome changes between the two groups (P = 0.0063).",
+  "value": 0.0063,
+  "unit": "none",
+  "numerator": 110,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "psychiatry-addiction",
+  "quote": "One hundred and 10 genes overlapped between human developing MFC and Shn-2 KO mice MFC, indicating significant similarities in the pattern of transcriptome changes between the two groups (P = 0.0063, Figure 4a, Additional file 1: Table S22).",
+  "pdf_page": 8,
+  "pdf_local": "data/raw/fulltext/24886351.pdf",
+  "study_page": "study/24886351.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/24886351/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/1756-6606-7-41"
+   ]
+  ]
+ },
+ {
+  "n": 14,
+  "sample": "A",
+  "id": "38168850-1",
+  "pmid": "38168850",
+  "title": "Amphetamine increases motivation of humans and mice as measured by breakpoint, but does not affect an Electroencephalographic biomarker",
+  "year": 2024,
+  "journal": "Cognitive Affective & Behavioral Neuroscience",
+  "adjudicator": "hand",
+  "statement": "Amphetamine increased breakpoint in mice (cohort 2, without EEG tethering) at 0.3 mg/kg.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "neurology",
+  "quote": "In cohort 2, however, 0.3 mg/kg of amphetamine increased breakpoint consistent with human findings.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/38168850.pdf",
+  "study_page": "study/38168850.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/38168850/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3758/s13415-023-01150-z"
+   ]
+  ]
+ },
+ {
+  "n": 15,
+  "sample": "A",
+  "id": "41125606-0",
+  "pmid": "41125606",
+  "title": "A multimodal cross-species comparison of pancreas development",
+  "year": 2025,
+  "journal": "Nature Communications",
+  "adjudicator": "hand",
+  "statement": "Transcription factors regulated by NEUROG3 were over 50% conserved between pig and human.",
+  "value": 0.5,
+  "unit": "percent",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "metabolic-endocrine",
+  "quote": "Transcription factors regulated by NEUROG3, the endocrine master regulator, are over 50% conserved between pig and human, many being validated in human stem cell models.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/41125606.pdf",
+  "study_page": "study/41125606.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/41125606/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41467-025-64774-4"
+   ]
+  ]
+ },
+ {
+  "n": 16,
+  "sample": "A",
+  "id": "30008848-5",
+  "pmid": "30008848",
+  "title": "The dog as an animal model for bladder and urethral urothelial carcinoma: Comparative epidemiology and histology",
+  "year": 2018,
+  "journal": "Oncology Letters",
+  "adjudicator": "model",
+  "statement": "Urothelial carcinoma is the most common type of bladder cancer in both people and dogs with comparable frequencies.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "UC is the most common type of bladder cancer in both people and dogs with comparable frequencies.",
+  "pdf_page": 6,
+  "pdf_local": "data/raw/fulltext/30008848.pdf",
+  "study_page": "study/30008848.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/30008848/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3892/ol.2018.8837"
+   ]
+  ]
+ },
+ {
+  "n": 17,
+  "sample": "A",
+  "id": "34558834-6",
+  "pmid": "34558834",
+  "title": "Transcriptomic Cross‐Species Analysis of Chronic Liver Disease Reveals Consistent Regulation Between Humans and Mice",
+  "year": 2021,
+  "journal": "Hepatology Communications",
+  "adjudicator": "hand",
+  "statement": "The highest precision for human NAFLD was 0.33 in the Western-type diet mouse model.",
+  "value": 0.33,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "liver-gi",
+  "quote": "Among the 12 mouse models analyzed, the WTD presented with the highest precision (0.33) for human NAFLD.",
+  "pdf_page": 15,
+  "pdf_local": "data/raw/fulltext/34558834.pdf",
+  "study_page": "study/34558834.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/34558834/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1002/hep4.1797"
+   ]
+  ]
+ },
+ {
+  "n": 18,
+  "sample": "A",
+  "id": "32982716-0",
+  "pmid": "32982716",
+  "title": "Bridging the Gap Between Fluid Biomarkers for Alzheimer’s Disease, Model Systems, and Patients",
+  "year": 2020,
+  "journal": "Frontiers in Aging Neuroscience",
+  "adjudicator": "model",
+  "statement": "The core Alzheimer's disease biomarkers have been found to translate well across species.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "neurology",
+  "quote": "The core AD biomarkers have been found to translate well across species, whereas biomarkers of neuroinflammation translate to a lesser extent.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/32982716.pdf",
+  "study_page": "study/32982716.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/32982716/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fnagi.2020.00272"
+   ]
+  ]
+ },
+ {
+  "n": 19,
+  "sample": "A",
+  "id": "42581230-1",
+  "pmid": "42581230",
+  "title": "Acquired resistance to the RAS(ON) multi-selective inhibitor daraxonrasib guides rational combination therapy strategies in pancreatic cancer",
+  "year": 2026,
+  "journal": "Nature Medicine",
+  "adjudicator": "hand",
+  "statement": "The majority of key acquired resistance mechanisms identified in human patient ctDNA samples were recapitulated in daraxonrasib-resistant preclinical models.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "The majority of key acquired resistance mechanisms identified in the EOT ctDNA samples (for example, mutant KRASamp, RTK alterations and MYCamp) were recapitulated in daraxonrasib-resistant preclinical models derived following prolonged RAS(ON) inhibition.",
+  "pdf_page": 5,
+  "pdf_local": "data/raw/fulltext/42581230.pdf",
+  "study_page": "study/42581230.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/42581230/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41591-026-04537-w"
+   ]
+  ]
+ },
+ {
+  "n": 20,
+  "sample": "A",
+  "id": "24220145-7",
+  "pmid": "24220145",
+  "title": "Transcriptomic classification of genetically engineered mouse models of breast cancer identifies human subtype counterparts",
+  "year": 2013,
+  "journal": "Genome biology",
+  "adjudicator": "model",
+  "statement": "The murine NeuEx class associated with the human luminal A subtype based on gene set analysis.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "Previously defined as a 'luminal' model [31], the Neu Ex murine class associated with the human luminal A sub-type in this newest analysis; this correlation was somewhat surprising given the lack of ERa and ERa-regulated gene expression in the murine NeuEx class, but does suggest that human luminal A tumors have many ERa-independent features.",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/24220145.pdf",
+  "study_page": "study/24220145.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/24220145/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/gb-2013-14-11-r125"
+   ]
+  ]
+ },
+ {
+  "n": 21,
+  "sample": "A",
+  "id": "31381180-2",
+  "pmid": "31381180",
+  "title": "Phosphoproteomics reveals conserved exercise‐stimulated signaling and AMPK regulation of store‐operated calcium entry",
+  "year": 2019,
+  "journal": "The EMBO Journal",
+  "adjudicator": "model",
+  "statement": "190 phosphosites were regulated in the same region of the protein across human, rat, and mouse datasets.",
+  "value": 190,
+  "unit": "count",
+  "numerator": 190,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "cross-cutting-toxicology",
+  "quote": "Mapping potential orthologs by sequence window resulted in the identification of 190 phosphosites regulated in all three models (114 up- and 76 down-regulated phosphosites), representing 80 proteins (Table EV2).",
+  "pdf_page": 4,
+  "pdf_local": "data/raw/fulltext/31381180.pdf",
+  "study_page": "study/31381180.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/31381180/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.15252/embj.2019102578"
+   ]
+  ]
+ },
+ {
+  "n": 22,
+  "sample": "A",
+  "id": "28149283-0",
+  "pmid": "28149283",
+  "title": "Plasma Chemokines in Patients with Alcohol Use Disorders: Association of CCL11 (Eotaxin-1) with Psychiatric Comorbidity",
+  "year": 2017,
+  "journal": "Frontiers in Psychiatry",
+  "adjudicator": "model",
+  "statement": "The paper found that changes in plasma CXCL12 concentrations in male rats exposed to repeated ethanol were similar to those observed in humans during abstinence.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "psychiatry-addiction",
+  "quote": "studies conducted in male rats exposed to repeated ethanol revealed similar changes in plasma CXCL12 concentra- tions than those observed in humans during abstinence during abstinence and acute ethanol exposure also induced a decrease in CXCL12",
+  "pdf_page": 13,
+  "pdf_local": "data/raw/fulltext/28149283.pdf",
+  "study_page": "study/28149283.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/28149283/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fpsyt.2016.00214"
+   ]
+  ]
+ },
+ {
+  "n": 23,
+  "sample": "A",
+  "id": "22355543-5",
+  "pmid": "22355543",
+  "title": "Comparative HPLC-MSn analysis of canine and human meibomian lipidomes: many similarities, a few differences",
+  "year": 2011,
+  "journal": "Scientific Reports",
+  "adjudicator": "model",
+  "statement": "Canine meibum had a relatively larger proportion of (O-acyl)-omega-hydroxy fatty acids (OAHFA) than human meibum.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "laboratory-dog",
+  "level": "C",
+  "direction": "animal-did-not-correspond",
+  "disease_area": "ophthalmology",
+  "quote": "Canine meibum has a relatively larger proportion of OAHFA (minor HPLC with RT 4–6 min, Fig.1A) than human meibum.",
+  "pdf_page": 11,
+  "pdf_local": "data/raw/fulltext/22355543.pdf",
+  "study_page": "study/22355543.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/22355543/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/srep00024"
+   ]
+  ]
+ },
+ {
+  "n": 24,
+  "sample": "A",
+  "id": "25409824-6",
+  "pmid": "25409824",
+  "title": "A comparative encyclopedia of DNA elements in the mouse genome",
+  "year": 2014,
+  "journal": "Nature",
+  "adjudicator": "model",
+  "statement": "79.6% of chromatin-based promoter predictions in the mouse genome have homologues in the human genome with at least 10% overlapping nucleotides.",
+  "value": 79.6,
+  "unit": "percent",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "cross-cutting-toxicology",
+  "quote": "This analysis showed that 79.3% of chromatin-based enhancer predictions, 79.6% of chromatin-based promoter predictions, 67.1% of the DHS, and 66.7% of the transcription factor binding sites in the mouse genome have homologues in the human genome with at least 10% overlapping nucleotides, while by random chance one expects 51.2%, 52.3%, 44.3% and 39.3%, respectively (Fig. 3a, Supplementary Information for details).",
+  "pdf_page": 4,
+  "pdf_local": "data/raw/fulltext/25409824.pdf",
+  "study_page": "study/25409824.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/25409824/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/nature13992"
+   ]
+  ]
+ },
+ {
+  "n": 25,
+  "sample": "A",
+  "id": "37208698-0",
+  "pmid": "37208698",
+  "title": "Comparative developmental genomics of sex-biased gene expression in early embryogenesis across mammals",
+  "year": 2023,
+  "journal": "Biology of Sex Differences",
+  "adjudicator": "hand",
+  "statement": "The orthologs of 17 transcription factors expressed in mouse were detected in human embryos.",
+  "value": 17,
+  "unit": "count",
+  "numerator": 17,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "mixed",
+  "disease_area": "new",
+  "quote": "Surprisingly, the orthologs of only 17 TFs and 6 EEs expressed in the mouse were detected in human embryos.",
+  "pdf_page": 5,
+  "pdf_local": "data/raw/fulltext/37208698.pdf",
+  "study_page": "study/37208698.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/37208698/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/s13293-023-00520-z"
+   ]
+  ]
+ },
+ {
+  "n": 26,
+  "sample": "A",
+  "id": "31921858-5",
+  "pmid": "31921858",
+  "title": "Know Thy Model: Charting Molecular Homology in Stromal Reprogramming Between Canine and Human Mammary Tumors",
+  "year": 2019,
+  "journal": "Frontiers in Cell and Developmental Biology",
+  "adjudicator": "model",
+  "statement": "Upregulated genes in canine normal stroma were highly enriched among favorably prognostic genes in humans.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "And finally, we demonstrated that the high level of molecular homology between canine and human stromal reprogramming manifested in a prognostic value of the canine CAS signature, with upregulated genes in canine CAS highly enriched among adversely prognostic genes in humans, and upregulated genes in canine normal stroma highly enriched among favorably prognostic genes in humans.",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/31921858.pdf",
+  "study_page": "study/31921858.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/31921858/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fcell.2019.00348"
+   ]
+  ]
+ },
+ {
+  "n": 27,
+  "sample": "A",
+  "id": "28935874-6",
+  "pmid": "28935874",
+  "title": "Concordant and discordant gene expression patterns in mouse strains identify best-fit animal model for human tuberculosis",
+  "year": 2017,
+  "journal": "Scientific Reports",
+  "adjudicator": "model",
+  "statement": "There were no enriched discordant modules in the comparison of human and murine macrophages.",
+  "value": 0,
+  "unit": "count",
+  "numerator": 0,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "infectious-disease",
+  "quote": "Unlike in the case of WB comparisons, there were no enriched discordant modules in this comparison.",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/28935874.pdf",
+  "study_page": "study/28935874.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/28935874/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41598-017-11812-x"
+   ]
+  ]
+ },
+ {
+  "n": 28,
+  "sample": "A",
+  "id": "36345939-7",
+  "pmid": "36345939",
+  "title": "Distinct pathogenic roles for resident and monocyte-derived macrophages in lupus nephritis",
+  "year": 2022,
+  "journal": "JCI Insight",
+  "adjudicator": "hand",
+  "statement": "All top 10 MNP1.4 TF regulons were increased in human TrMacs in lupus nephritis, including STAT1.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "immunology-inflammation",
+  "quote": "All the top 10 MNP1.4 TF regulons were increased in human TrMacs in lupus nephritis, including STAT1 (Supplemental Figure 5A), and many of the top 10 MNP2.3 TF regulons were increased in MoMacs (Supplemental Figure 5B).",
+  "pdf_page": 9,
+  "pdf_local": "data/raw/fulltext/36345939.pdf",
+  "study_page": "study/36345939.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/36345939/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1172/jci.insight.159751"
+   ]
+  ]
+ },
+ {
+  "n": 29,
+  "sample": "A",
+  "id": "35511361-0",
+  "pmid": "35511361",
+  "title": "Cross-species single-cell transcriptomic analysis reveals divergence of cell composition and functions in mammalian ileum epithelium",
+  "year": 2022,
+  "journal": "Cell Regeneration",
+  "adjudicator": "hand",
+  "statement": "The expression of drug metabolism genes in mouse ileum showed a correlation of 0.71 with human ileum.",
+  "value": 0.71,
+  "unit": "correlation",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "cross-cutting-toxicology",
+  "quote": "The expression of drug metabolism genes in mouse ileum showed the highest correlation with that in human (R=0.71), whereas the ones in other species showed lower correlation (R = 0.45-0.48).",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/35511361.pdf",
+  "study_page": "study/35511361.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/35511361/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/s13619-022-00118-7"
+   ]
+  ]
+ },
+ {
+  "n": 30,
+  "sample": "A",
+  "id": "28422076-5",
+  "pmid": "28422076",
+  "title": "ZeGlobalTox: An Innovative Approach to Address Organ Drug Toxicity Using Zebrafish",
+  "year": 2017,
+  "journal": "International Journal of Molecular Sciences",
+  "adjudicator": "model",
+  "statement": "The ZeGlobalTox assay showed a specificity of 100% for neurotoxicity.",
+  "value": 100.0,
+  "unit": "percent",
+  "numerator": null,
+  "denominator": null,
+  "species": "zebrafish",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "neurology",
+  "quote": "Specificity\t90%\t100%\t77%\t89%",
+  "pdf_page": 10,
+  "pdf_local": "data/raw/fulltext/28422076.pdf",
+  "study_page": "study/28422076.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/28422076/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3390/ijms18040864"
+   ]
+  ]
+ },
+ {
+  "n": 1,
+  "sample": "B",
+  "id": "41648068-2",
+  "pmid": "41648068",
+  "title": "Association between early arterial pH, base excess and lactate and 24-h mortality and neurological outcomes after cardiac arrest and cardiopulmonary resuscitation: a translational study",
+  "year": 2026,
+  "journal": "Resuscitation Plus",
+  "adjudicator": "hand",
+  "statement": "The area under the curve for lactate to predict 24-h mortality in rats was 0.959.",
+  "value": 0.959,
+  "unit": "auc",
+  "numerator": null,
+  "denominator": null,
+  "species": "rat",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "cardiovascular",
+  "quote": "In a multivariate regression analysis area under the curve, considering pH, base excess and lactate, for prediction of mortality were respectively: 0.796 (95%CI: 0.635-0.956), 0.980 (95%CI: 0.946-1.000), 0.959 (95%CI: 0.896-1.000) in rats",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/41648068.pdf",
+  "study_page": "study/41648068.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/41648068/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1016/j.resplu.2026.101228"
+   ]
+  ]
+ },
+ {
+  "n": 2,
+  "sample": "B",
+  "id": "40839180-4",
+  "pmid": "40839180",
+  "title": "Translating metabolomic evidence gathered from an animal model to a real human scenario: the post-mortem interval issue",
+  "year": 2025,
+  "journal": "Metabolomics",
+  "adjudicator": "hand",
+  "statement": "Taurine and Hypoxanthine concentrations showed no differences between animal and human samples.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "cross-cutting-toxicology",
+  "quote": "Interestingly, no differences in Taurine and Hypoxanthine concentrations can be seen between animal and humans as shown by Fig. 6.",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/40839180.pdf",
+  "study_page": "study/40839180.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/40839180/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1007/s11306-025-02321-4"
+   ]
+  ]
+ },
+ {
+  "n": 3,
+  "sample": "B",
+  "id": "42172440-5",
+  "pmid": "42172440",
+  "title": "Transcriptional programs diverge in aging mouse and human skeletal muscle",
+  "year": 2026,
+  "journal": "Aging",
+  "adjudicator": "hand",
+  "statement": "Neurogenesis demonstrated opposing or non-significant trends between mouse and human skeletal muscle with aging.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "mixed",
+  "disease_area": "pain-musculoskeletal",
+  "quote": "Hypoxia signaling, VEGFA, and inflammatory pathways showed concordant downregulation with aging in both species; however, angiogenesis, neurogenesis, and myogenesis demonstrated opposing or non-significant trends.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/42172440.pdf",
+  "study_page": "study/42172440.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/42172440/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.18632/aging.206382"
+   ]
+  ]
+ },
+ {
+  "n": 4,
+  "sample": "B",
+  "id": "34376232-0",
+  "pmid": "34376232",
+  "title": "Transfer learning between preclinical models and human tumors identifies a conserved NK cell activation signature in anti-CTLA-4 responsive tumors",
+  "year": 2021,
+  "journal": "Genome Medicine",
+  "adjudicator": "hand",
+  "statement": "The NK cell activation signature was significantly higher in anti-CTLA-4 responsive human tumors than non-responsive tumors.",
+  "value": 1e-15,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "In pre-treatment biopsies, the NK cell activation signature was significantly higher in anti-CTLA-4 responsive tumors than non-responsive tumors (p < 1 × 10-15, Additional file 1: Fig. S2A).",
+  "pdf_page": 10,
+  "pdf_local": "data/raw/fulltext/34376232.pdf",
+  "study_page": "study/34376232.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/34376232/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/s13073-021-00944-5"
+   ]
+  ]
+ },
+ {
+  "n": 5,
+  "sample": "B",
+  "id": "42602169-0",
+  "pmid": "42602169",
+  "title": "From signal to significance: characterizing anthracycline-related hypercoagulable adverse events via pharmacovigilance, animal models, and clinical observation",
+  "year": 2026,
+  "journal": "Frontiers in Pharmacology",
+  "adjudicator": "hand",
+  "statement": "The paper found that pathways related to cyclic adenosine monophosphate (cAMP) signaling and heparan sulfate biosynthesis were directionally consistent between experimental models and clinical samples.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "Exploratory analyses suggested potential involvement of pathways related to cyclic adenosine monophosphate (cAMP) signaling and heparan sulfate biosynthesis, which were directionally consistent with observed alterations in coagulation-related parameters in clinical samples and experimental models.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/42602169.pdf",
+  "study_page": "study/42602169.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/42602169/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fphar.2026.1856410"
+   ]
+  ]
+ },
+ {
+  "n": 6,
+  "sample": "B",
+  "id": "35879783-0",
+  "pmid": "35879783",
+  "title": "Single-cell multimodal analysis identifies common regulatory programs in synovial fibroblasts of rheumatoid arthritis patients and modeled TNF-driven arthritis",
+  "year": 2022,
+  "journal": "Genome Medicine",
+  "adjudicator": "hand",
+  "statement": "17 shared regulons were identified between hTNFtg mice and human RA patients.",
+  "value": 17,
+  "unit": "count",
+  "numerator": 17,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "immunology-inflammation",
+  "quote": "A Regulatory network analysis in mouse and human datasets reveals 17 shared regulons.",
+  "pdf_page": 20,
+  "pdf_local": "data/raw/fulltext/35879783.pdf",
+  "study_page": "study/35879783.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/35879783/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/s13073-022-01081-3"
+   ]
+  ]
+ },
+ {
+  "n": 7,
+  "sample": "B",
+  "id": "34548096-0",
+  "pmid": "34548096",
+  "title": "Activin-A impedes the establishment of CD4+ T cell exhaustion and enhances anti-tumor immunity in the lung",
+  "year": 2021,
+  "journal": "Journal of Experimental & Clinical Cancer Research",
+  "adjudicator": "hand",
+  "statement": "Treatment of activin-A on tumor-infiltrating CD4+ T cells from lung cancer patients augmented their immunostimulatory capacity towards autologous CD4+ and CD8+ T cells, mimicking its anti-tumorigenic effects observed in the mouse lung cancer models.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "Of translational importance, treatment of activin-A on tumor-infiltrating CD4+ T cells from lung cancer patients augmented their immunostimulatory capacity towards autologous CD4+ and CD8+ T cells.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/34548096.pdf",
+  "study_page": "study/34548096.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/34548096/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1186/s13046-021-02092-5"
+   ]
+  ]
+ },
+ {
+  "n": 8,
+  "sample": "B",
+  "id": "37693314-5",
+  "pmid": "37693314",
+  "title": "Pan-glioma analyses reveal species- and tumor-specific regulation of neuron-glioma synapse genes by lncRNAs",
+  "year": 2023,
+  "journal": "Frontiers in Genetics",
+  "adjudicator": "hand",
+  "statement": "NGS genes in mouse PDX models showed similar expression levels to NGS genes in human MB.",
+  "value": null,
+  "unit": "none",
+  "numerator": null,
+  "denominator": null,
+  "species": "grouped-label",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "Fourth, NGS genes in mouse MB PDX showed similar expression levels to NGS genes in human MB",
+  "pdf_page": 8,
+  "pdf_local": "data/raw/fulltext/37693314.pdf",
+  "study_page": "study/37693314.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/37693314/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.3389/fgene.2023.1218408"
+   ]
+  ]
+ },
+ {
+  "n": 9,
+  "sample": "B",
+  "id": "42311422-1",
+  "pmid": "42311422",
+  "title": "Nanomedicine in 2026: Illustrative Quantitative Analyses of EPR Heterogeneity, Clinical Trial Attrition, and Emerging Horizons for Active Nanotherapeutics",
+  "year": 2026,
+  "journal": "International Journal of Nanomedicine",
+  "adjudicator": "hand",
+  "statement": "Median nanoparticle tumour-to-blood ratio was 8.5 in murine models versus 1.8 in human tumours from the same publications (23 studies, 412 patients).",
+  "value": 8.5,
+  "unit": "ratio",
+  "numerator": null,
+  "denominator": null,
+  "species": "mouse",
+  "level": "C",
+  "direction": "animal-did-not-correspond",
+  "disease_area": "oncology",
+  "quote": "compared to a median of 8.5 (IQR: 5.1-14.2) in murine models from the same publications.",
+  "pdf_page": 6,
+  "pdf_local": "data/raw/fulltext/42311422.pdf",
+  "study_page": "study/42311422.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/42311422/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.2147/ijn.s618407"
+   ]
+  ]
+ },
+ {
+  "n": 10,
+  "sample": "B",
+  "id": "36859342-0",
+  "pmid": "36859342",
+  "title": "Translatability of preclinical to early clinical tolerable and pharmacologically active dose ranges for central nervous system active drugs",
+  "year": 2023,
+  "journal": "Translational Psychiatry",
+  "adjudicator": "hand",
+  "statement": "The preclinical data predicted the pharmacologically active range in humans to a high degree, with 18 out of 25 interventions showing an overlap of 80% or more for HED.",
+  "value": 72,
+  "unit": "percent",
+  "numerator": 18,
+  "denominator": 25,
+  "species": "grouped-label",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "neurology",
+  "quote": "Overall, the preclinical data predicted the pharmacologically active range in humans to a high degree, as indicated by an overlap of ≥ 80% in 18 out of 25 (72%) for HED, 15 out of 25 (60%) for Cmax and 19 out of 23 (83%) for AUC.",
+  "pdf_page": 8,
+  "pdf_local": "data/raw/fulltext/36859342.pdf",
+  "study_page": "study/36859342.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/36859342/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1038/s41398-023-02353-1"
+   ]
+  ]
+ }
+]
