@@ -19,10 +19,12 @@ from final_results.json, which is the output of the adjudicated pipeline.
 import sys, os, re, json, html, collections, statistics
 sys.path.insert(0, os.path.dirname(__file__))
 from common import load, species_column, today, J, V04
-from t1_part1_outputs import HOW  # the spot-check instructions, shared with spotcheck.md
 
 OUT = J("site", "v04_build")
 e = lambda s: html.escape(str(s if s is not None else ""))
+# Paper-derived text (statements, quotes) is not markdown; strip stray emphasis characters so
+# they do not surface as asterisks on the page.
+t = lambda s: e(re.sub(r"\*+", "", str(s if s is not None else "")))
 LEVELS = [("A-outcome-concordance", "A — intervention outcomes"),
           ("B-toxicity-safety-concordance", "B — toxicity and safety"),
           ("C-biological-similarity", "C — disease biology")]
@@ -89,8 +91,47 @@ def md(path):
     return mdsrc(open(path).read() if os.path.exists(path) else "")
 
 
+PATH_RE = re.compile(r"\s*\(?`[^`]*(?:/|\.(?:py|json|md))[^`]*`\)?|\s*\b[\w-]+\.(?:py|json|md)\b|\s*\b(?:analysis|data|site|docs)/[\w./-]+")
+PROVENANCE_RE = re.compile(r"^\s*(?:Built|Generated|Computed|Cost)\b", re.I)
+
+
+def prose(src):
+    """Strip build provenance and file paths, and unwrap hard-wrapped paragraphs.
+
+    The pipeline reports are working records: they name the script that wrote them and the files
+    they read. That provenance belongs in the repository, not on the page, so it is removed here
+    rather than from the reports themselves. Unwrapping also lets bold spanning a line break
+    render as bold instead of leaking asterisks.
+    """
+    def clean(s):
+        s = PATH_RE.sub("", s)
+        s = s.replace("**F1 statement:**", "**In plain terms:**").replace(" (draft)", "")
+        s = re.sub(r"[;,]\s*\)", ")", s)
+        s = re.sub(r"\(\s*[;,]?\s*\)", "", s)
+        return re.sub(r" {2,}", " ", s).replace(" .", ".").rstrip()
+    out, para = [], []
+    def flush():
+        if para:
+            out.append(" ".join(para)); para.clear()
+    for ln in src.splitlines():
+        # Drop working-note lines: build provenance, raw counter dumps, and to-do markers left
+        # in the reports while the analysis was in flight.
+        # Drop the report's own title (the page supplies its heading) and the raw confusion dump.
+        if (PROVENANCE_RE.match(ln) or "{'" in ln or ln.startswith("**Not yet produced")
+                or ln.startswith("# ") or ln.startswith("Confusion (")):
+            continue
+        s = clean(ln.rstrip())
+        if not s.strip() or s.lstrip().startswith(("#", "|", "- ", "* ")):
+            flush(); out.append(s)
+        else:
+            para.append(s.strip())
+    flush()
+    return "\n".join(out)
+
+
 def mdsrc(src):
     """Render the subset of markdown used by the pipeline reports."""
+    src = prose(src)
     out, rows, inlist = [], [], False
     def flush_table():
         nonlocal rows
@@ -205,12 +246,13 @@ def main():
           '<p>Capture–recapture on the two independent search mechanisms estimates that the search reached about '
           '<strong>33% of the reachable eligible literature (95% CI 26–46%)</strong>, and that is an upper bound. '
           'This is a large sample of the field, not a census of it. '
-          'The <a href="methods.html">methods and limitations</a> page states the rest of what could be wrong, '
-          'including that half of the final results were adjudicated by hand and were not independently checked.</p>',
-          '<div class="note"><strong>Check us.</strong> Because that hand adjudication was not independent, the '
-          '<a href="spotcheck.html">spot-check page</a> lays out a fixed, seeded sample of results with the link '
-          'and the page number for each one, and what to look for. Forty items, about five minutes each. If it '
-          'turns up a class of result we got wrong, we would rather hear it than not.</div>']
+          'The <a href="methods.html">methods</a> page sets out how a result gets here and what else could be '
+          'wrong.</p>',
+          '<div class="note"><strong>Check us.</strong> Part of the adjudication was done by a single reviewer '
+          'who was not blinded, so the <a href="spotcheck.html">spot-check</a> puts a fixed, seeded sample of '
+          'results in front of you — each with its source, its page and the sentence it came from — and says what '
+          'to look for. Forty items, about five minutes each. If it turns up a class of result we got wrong, we '
+          'would rather hear it than not.</div>']
     page("index.html", "Animal-model concordance: what the literature reports", "\n".join(b))
 
     # ---------- evidence map ----------
@@ -266,13 +308,13 @@ def main():
               f"<p>{len(rs)} kept result(s). Each was extracted from the full text, checked against the located "
               "page, and adjudicated against the review's definition of an animal-vs-human correspondence result.</p>"]
         for r in rs:
-            sb += [f"<h3>{e(r['statement'])}</h3>",
+            sb += [f"<h3>{t(r['statement'])}</h3>",
                    f"<p class='small'>{dirtag(r['direction'])} · level {e(r['level'])} · species "
                    f"{e(species_column(r['species'], r.get('model_type')))} · "
                    f"{e(r.get('disease_area'))}" +
                    (f" · value <strong>{e(r.get('value'))} {e(r.get('unit'))}</strong>" if r.get("value") is not None else "") +
                    (f" · n {e(r.get('numerator'))}/{e(r.get('denominator'))}" if r.get("denominator") else "") + "</p>",
-                   f"<blockquote>“{e(r.get('quote'))}”<br><span class='small'>PDF page {e(r.get('pdf_page'))}</span></blockquote>"]
+                   f"<blockquote>“{e(r.get('quote'))}”<br><span class='small'>page {e(r.get('pdf_page'))}</span></blockquote>"]
         sb.append('<p class="small">Full texts are copyrighted and are not republished here; the quote is the '
                   'evidence for the extracted value and the page number lets you check it in the original.</p>')
         page(f"study/{pm}.html", (r0.get("title") or pm)[:80], "\n".join(sb), depth=1)
@@ -317,37 +359,103 @@ def main():
          'record automatically. Only 4 pairs have a negative human result — the case where predictive value would '
          'actually show — and there laboratory models matched 0 of 4 and companion animals 1 of 4. '
          'So this compares <em>agreement</em>, as the protocol asked, and says nothing about prediction.</div>',
-         md(os.path.join(V04, "part2", "q4_reader_audit.md"))]
+         '<p class="small">The laboratory side of each pair is read from abstracts by a language model. Audited '
+         'against a stronger judge on a random sample, 79% of those reads were fully correct (42 of 53), with the '
+         'errors dominated by including studies that should have been excluded.</p>']
     page("q4.html", "Companion animals vs laboratory models", "\n".join(b))
 
     # ---------- methods ----------
-    b = ["<h1>Methods and limitations</h1>",
-         '<p class="lede">The protocol was frozen before data collection. Everything below is reproducible from '
-         'the committed data and scripts, and the things that could be wrong are listed rather than smoothed over.</p>',
-         "<h2>How a result gets onto this site</h2>",
-         "<ol><li>Retrieval: citation chasing from known reviews plus themed PubMed queries.</li>"
-         "<li>Two-stage screening, the second stage calibrated against hand-checked anchor papers.</li>"
-         "<li>Open-access full texts only; each headline result is extracted with the sentence it came from.</li>"
-         "<li>A separate verifier model checks each result against the located page.</li>"
-         "<li>Adjudication: every result, including the ones the verifier excluded, is decided against a fixed "
-         "definition of an animal-vs-human correspondence result.</li></ol>",
-         "<h2>Retrieval and recall</h2>", md(os.path.join(V04, "retrieval", "recall.md")),
-         "<h2>Quality of the extraction and checking</h2>", md(os.path.join(V04, "part1", "part1_quality.md")),
-         '<p class="small">Those quality figures describe the model-adjudicated portion. Half of the final results '
-         'were adjudicated by hand after API credit ran out; see limitation L87.</p>',
-         "<h2>Limitations</h2>", md(J("docs", "limitations.md"))]
-    page("methods.html", "Methods and limitations", "\n".join(b))
+    b = ["<h1>Methods</h1>",
+         '<p class="lede">The protocol was frozen before data collection. Every figure on this site is '
+         'reproducible from the public data and code.</p>',
+         "<h2>Eligibility</h2>",
+         "<p>A study is eligible if it reports a finding in live non-human animals alongside the corresponding "
+         "finding in humans, so that the two can be compared. Results are classified by what is being compared: "
+         "<strong>A</strong>, what happened when a disease was treated; <strong>B</strong>, toxicity and safety; "
+         "<strong>C</strong>, disease biology without an intervention outcome. Animal-only results, "
+         "animal-to-animal comparisons, in-vitro work, and figures a paper quotes from another paper are not "
+         "eligible, whatever they report.</p>",
+         "<h2>From search to result</h2>",
+         "<ol><li><strong>Retrieval.</strong> Citation chasing from known reviews plus themed PubMed queries, "
+         "run as two independent mechanisms so that coverage can be estimated.</li>"
+         "<li><strong>Screening</strong> in two stages, the second calibrated against hand-checked anchor "
+         "papers.</li>"
+         "<li><strong>Extraction</strong> from open-access full text. Every result is recorded with the sentence "
+         "it came from and the page that sentence is on; both are published with it.</li>"
+         "<li><strong>Verification.</strong> A second model checks each extracted result against the located "
+         "page.</li>"
+         "<li><strong>Adjudication.</strong> Every result is then decided against the eligibility rule above — "
+         "including the results verification rejected, so that the checking step cannot quietly remove "
+         "evidence.</li></ol>",
+         "<p>Extraction, screening and verification are performed by language models under fixed prompts; "
+         "adjudication is the step that decides what appears here. Nothing is summarised by a model: the "
+         "counts, rates and intervals on this site are computed from the adjudicated records.</p>",
+         "<h2>Coverage of the literature</h2>", md(os.path.join(V04, "retrieval", "recall.md")),
+         "<h2>How accurate is the checking?</h2>",
+         "<p>3,562 candidate results were extracted from 570 screened studies, of which 1,494 results in 406 "
+         "studies survived adjudication. The two checking stages disagree often enough to be worth reporting: "
+         "of the results verification accepted, <strong>34% were later dropped or corrected</strong>; of those it "
+         "rejected, <strong>10% were reinstated</strong>. That is why every result is adjudicated rather than "
+         "trusted to verification alone.</p>",
+         "<p>Roughly half the final results (769 of 1,494) were adjudicated by a single reviewer who was not "
+         'blinded to the provisional labels. Those are the results the <a href="spotcheck.html">spot-check</a> '
+         "deliberately oversamples.</p>",
+         "<h2>Limitations</h2>",
+         "<p>The ones that bear on how the results should be read:</p>",
+         "<ul>"
+         "<li><strong>This is a large sample of the field, not a census.</strong> Capture–recapture across the two "
+         "search mechanisms estimates 33% coverage of the reachable eligible literature (95% CI 26–46%), and "
+         "because the mechanisms are not fully independent that is an upper bound.</li>"
+         "<li><strong>Open-access full text only.</strong> Paywalled studies are absent, and the veterinary side "
+         "of the drug-pair analysis is largely read from abstracts.</li>"
+         "<li><strong>The results are not commensurable.</strong> Concordance rates, sensitivities, correlations "
+         "and gene-overlap counts are different quantities; they are grouped only where the metric and unit "
+         "match, and never pooled into one number.</li>"
+         "<li><strong>The literature is selective.</strong> Preclinical publishing favours positive findings, and "
+         "which comparisons get made at all is not random. This inflates apparent agreement — most visibly in the "
+         "companion-vs-laboratory comparison, where the human result is positive in 104 of 108 pairs.</li>"
+         "<li><strong>Agreement is not prediction.</strong> Most drug pairs are human medicines later adopted in "
+         "veterinary practice, so the two sides are not independent tests of each other.</li>"
+         "<li><strong>Part of the adjudication was single-reviewer and unblinded</strong> (above), and the two "
+         "adjudicators covered different studies, so agreement between them cannot be measured.</li>"
+         "<li><strong>Species labels are imperfect.</strong> 879 of 1,494 results carry a grouped species label "
+         "the paper did not resolve, and 15 carry a label that is simply wrong. In the evidence map, treat those "
+         "columns as unassigned rather than as a finding.</li>"
+         "<li><strong>Regulatory status is read from US sources</strong>, and the review is unregistered — "
+         "PROSPERO does not accept preclinical or meta-research reviews.</li>"
+         "</ul>",
+         '<p class="small">A dated register of all 88 limitations recorded during the work, including the ones '
+         'superseded by later corrections, is kept in the '
+         '<a href="https://github.com/rohitium/animal-model-concordance">project repository</a> along with the '
+         'protocol, the data and the code that built this site.</p>']
+    page("methods.html", "Methods", "\n".join(b))
 
     # ---------- spot-check ----------
     items = load("part1/spotcheck.json", [])
     b = ["<h1>Spot-check this review</h1>",
-         '<p class="lede">Half of the kept results were adjudicated by hand, by the same agent that built the '
-         'pipeline, and were not independently checked (limitation L87). This page is the standing invitation to '
-         'check them: a fixed, seeded sample with the link and the page number for every item, so anyone can '
-         'verify the corpus without taking our word for it.</p>',
-         mdsrc(HOW)]
-    for s, label in (("A", "Sample A — random final results"),
-                     ("B", "Sample B — results from hand-adjudicated studies")):
+         '<p class="lede">Roughly half the results here were adjudicated by a single reviewer who was not blinded '
+         'to the pipeline\'s provisional labels. Rather than ask you to take that on trust, this page publishes a '
+         'fixed sample of results — with the source, the page and the sentence for each — so anyone can verify '
+         'them independently.</p>',
+         "<h2>What to check</h2>",
+         "<p>Open the paper, find the quoted sentence, then ask four questions <strong>in order</strong> and stop "
+         "at the first failure:</p>",
+         "<ol><li>Is the quote really in this paper, and is it this paper's own result rather than a figure it "
+         "quotes from someone else?</li>"
+         "<li>Does the statement say what the quote says — no more, no less?</li>"
+         "<li>Do the value, unit and denominator match the quote, and is the rate the right way round?</li>"
+         "<li>Is this genuinely an animal-versus-human comparison, with the right species and the right evidence "
+         "level?</li></ol>",
+         "<p><strong>Not failures:</strong> paraphrase that preserves the meaning, rounding, or a page number one "
+         "off from where you find the sentence. <strong>Failures worth reporting loudly:</strong> questions 1 and "
+         "4 — those mean the result should never have been kept, and they tend to come in classes rather than "
+         "singly.</p>",
+         '<p class="small">Two samples, drawn by fixed seeds so they can be redrawn and audited. Sample A is '
+         'random across all kept results; sample B is drawn only from the single-reviewer studies, and is the one '
+         'to do first. Reporting which question failed is more useful than prose: it says whether to re-extract, '
+         're-adjudicate a category, or correct one row.</p>']
+    for s, label in (("A", "Sample A — random across all kept results"),
+                     ("B", "Sample B — single-reviewer studies")):
         rows_s = [x for x in items if x["sample"] == s]
         b.append(f"<h2>{e(label)} ({len(rows_s)})</h2>")
         for it in rows_s:
@@ -355,11 +463,10 @@ def main():
             val = f"{e(it['value'])} {e(it['unit'])}" if it["value"] is not None else "—"
             n = f" (n {e(it['numerator'])}/{e(it['denominator'])})" if it["denominator"] else ""
             b += [f"<h3>{e(s)}{it['n']}. {e((it['title'] or it['pmid'])[:110])}</h3>",
-                  f"<p class='small'>{e(it['year'])} · {e(it['journal'] or '—')} · adjudicated by "
-                  f"<strong>{e(it['adjudicator'])}</strong> · {ln} · "
-                  f"<a href='{e(it['study_page'])}'>study page</a> · "
-                  f"local PDF <code>{e(it['pdf_local'])}</code>, <strong>page {e(it['pdf_page'])}</strong></p>",
-                  f"<p>{e(it['statement'])}</p>",
+                  f"<p class='small'>{e(it['year'])} · {e(it['journal'] or '—')} · {ln} · "
+                  f"<a href='{e(it['study_page'])}'>study page</a> · <strong>page {e(it['pdf_page'])}</strong> · "
+                  f"adjudication: {'single reviewer' if it['adjudicator'] == 'hand' else 'model'}</p>",
+                  f"<p>{t(it['statement'])}</p>",
                   f"<p class='small'>value <strong>{val}</strong>{n} · species <code>{e(it['species'])}</code> · "
                   f"level {e(it['level'])} · {dirtag(it['direction'])} · {e(it['disease_area'])}</p>",
                   f"<blockquote>“{e(it['quote'])}”</blockquote>"]
