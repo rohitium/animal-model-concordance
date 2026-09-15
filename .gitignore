@@ -35,6 +35,8 @@ data/v04/**
 !data/v04/part1/table_draft.md
 !data/v04/part1/spotcheck.md
 !data/v04/part1/spotcheck.json
+!data/v04/part1/model_type_overrides.json
+!data/v04/retrieval/fulltext_status.json
 !data/v04/part2/
 !data/v04/part2/pairs.json
 !data/v04/part2/pair_attributes.json

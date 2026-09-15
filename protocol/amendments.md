@@ -368,3 +368,27 @@ falls to zero.
 The pairs table now also defaults to alphabetical order by drug rather than grouping by verdict,
 and every row can be opened to show the veterinary and human evidence behind its verdict, with
 links to each cited study on PubMed and each cited US label on DailyMed.
+
+## A10 — model_type resolved from the full texts for dog and cat studies (2026-09-15)
+
+`model_type` decides whether a result appears in the companion or the laboratory column, and the
+extractor left it as `mixed-or-not-stated` on 51 dog and cat results across 20 studies. The species
+rule (A7/A8) routes those to the laboratory column, so studies of naturally occurring disease in
+client-owned animals were being counted as laboratory evidence — a misclassification running in one
+direction, and directly against the review's central comparison (L90).
+
+No text rule could fix it: none of the 51 results contains "spontaneous" or "client-owned" language
+in its own statement, quote or title. The full texts were held for all 20 studies, so each was read
+and decided from its own methods and framing, with the deciding phrase recorded in
+`model_type_overrides.json`.
+
+Outcome: 16 studies are companion-animal work ("recruited at the RVC", "with informed consent from
+their owners", "naturally occurring canine invasive urothelial carcinoma"), and 4 are laboratory:
+three are regulatory-database analyses of preclinical toxicity studies (26753942, 29730448,
+30823899, 30364994 — animal tests required by regulators, not patients), and one is the RPE65
+gene-therapy work in maintained colonies of affected dogs (25671556), which is a purpose-maintained
+research population rather than client-owned patients even though the mutation arose spontaneously.
+
+Applied at build time per study; the stored records keep what the extractor recorded. This corrects
+the companion/laboratory split in the evidence map, which is the comparison the review exists to
+make, so it is recorded here rather than treated as a display detail.

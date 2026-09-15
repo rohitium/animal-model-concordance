@@ -138786,5 +138786,2588 @@
   ],
   "model": "openai/gpt-5-mini",
   "date": "2026-09-14"
+ },
+ "17936056-1": {
+  "pmid": "17936056",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page contains the sentence word-for-word stating none of these drugs have shown comparable success in patients as seen in the bleomycin model."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "This sentence explicitly compares animal (bleomycin model) outcomes to patient outcomes (translation/concordance)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "This is the authors' statement in the paper, not a quoted external pooled result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result specifically refers to the bleomycin model (grouped-label)."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "It compares intervention outcomes in animals versus humans (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The checked statement accurately reflects the page text without adding information."
+   }
+  },
+  "pages_shown": [
+   11
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "10858325-2": {
+  "pmid": "10858325",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an animal observed vs expected comparison, not a measure of animal–human concordance.",
+   "level_correct: no — This is an animal outcome only, not a comparison of animal vs human outcomes."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 4 shows expt I (72 days) expected 56 (28–112) and observed 138 (96–180) pmol/g."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an animal observed vs expected comparison, not a measure of animal–human concordance."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "Values are reported in the paper's Table 4 from the authors' experiments."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "Table 4 is for rats (expt I)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "This is an animal outcome only, not a comparison of animal vs human outcomes."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately restates the table values and confidence intervals without adding information."
+   }
+  },
+  "pages_shown": [
+   5,
+   2,
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-7": {
+  "pmid": "14519650",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The abstract explicitly states the human xenograft model 'was predictive for non-small cell lung and ovarian cancers when panels of xenografts were used.'"
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The statement refers to the xenograft model being predictive of clinical (Phase II) outcomes, i.e., correspondence between preclinical and human results as stated in the abstract."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The paper's abstract reports this result as part of the authors' analysis of preclinical models versus Phase II trials."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text specifically refers to the 'human xenograft model,' matching the reported species label."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The claim concerns prediction of clinical trial outcomes from the preclinical (xenograft) model, which is outcome concordance (Level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The provided statement matches verbatim the sentence in the paper's abstract without adding information."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-4": {
+  "pmid": "14519650",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The abstract explicitly states 'The mouse allograft model was not predictive.'"
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "This statement refers to the model's ability to predict clinical (human) trial outcomes, i.e., animal-to-human concordance."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The wording appears as a result reported in the paper's abstract from the authors' analysis."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The paper refers specifically to the 'mouse allograft model,' matching the recorded species."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The claim concerns prediction of clinical trial outcomes from an animal (mouse) model, i.e., outcome concordance (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement faithfully reproduces the paper's sentence without adding information."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15508657-3": {
+  "pmid": "15508657",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This number is an animal survival result, not a measure of correspondence between animal and human findings.",
+   "level_correct: no — The reported value is an animal outcome only, not an outcome comparing animals to humans."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly reports one of seven (17%) for 30 breaths/min with 5% CO2/95% O2 in Protocol 2."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This number is an animal survival result, not a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The survival data are reported as Protocol 2 results from this paper."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The paper reports the result in pigs (porcine model), matching the reported 'pigs'."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The reported value is an animal outcome only, not an outcome comparing animals to humans."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the page text exactly, including denominator and percentage."
+   }
+  },
+  "pages_shown": [
+   4,
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-1": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This WMD is an animal treatment effect and not a measure of correspondence between animal and human findings.",
+   "level_correct: no — The reported metric is an animal intervention outcome only; it is not an animal-versus-human concordance measure (so level A is incorrect)."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly states the WMD for anti-apoptotic drugs was 11 days (95% CI 3.2, 18.8), matching the reported value."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This WMD is an animal treatment effect and not a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The WMD is reported as part of this paper's meta-analysis (its pooled result), not quoted from another study."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for SOD1 mice (mouse), matching the recorded species."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The reported metric is an animal intervention outcome only; it is not an animal-versus-human concordance measure (so level A is incorrect)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text (WMD 11 days for anti-apoptotic drugs) without adding information."
+   }
+  },
+  "pages_shown": [
+   4,
+   1,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15508657-4": {
+  "pmid": "15508657",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is a human observational measurement, not a concordance/translation metric between animal and human findings.",
+   "level_correct: no — Level A denotes cross-species outcome concordance; this statement reports a human-only measurement, not an animal–human outcome concordance."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly states the average ventilation rate for 13 consecutive adults was 30 ⫾ 3.2 breaths/min (range 15–49), matching the reported value."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is a human observational measurement, not a concordance/translation metric between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The value is reported from the paper's own clinical observational study of 13 consecutive adults."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text identifies the subjects as 13 consecutive adults (human patients)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A denotes cross-species outcome concordance; this statement reports a human-only measurement, not an animal–human outcome concordance."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text (sample size and mean ventilation rate), though it omits the reported SD and range."
+   }
+  },
+  "pages_shown": [
+   1,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-5": {
+  "pmid": "14519650",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — No — the text gives a qualitative statement of nonpredictive status, not a numeric concordance/translation measure."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Yes — the abstract states the human xenograft model was not predictive for breast cancers."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "No — the text gives a qualitative statement of nonpredictive status, not a numeric concordance/translation measure."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "Yes — this statement appears as a result reported in the paper's abstract from the authors' analysis."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "Yes — the text specifically refers to the human xenograft model."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "Yes — the paper compares preclinical model activity to Phase II clinical outcomes (outcome concordance)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "Yes — the statement accurately reflects the paper's wording that the human xenograft was not predictive for breast cancer."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-1": {
+  "pmid": "18250315",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an animal-only treatment effect, not a measure of concordance between animal and human findings.",
+   "level_correct: no — Level A denotes animal–human outcome concordance, but the quoted result is an animal-only intervention outcome."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text states disease duration increased from a mean of 9 days to >38 days (>300%; Fig. 1b; P < 0.05)."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an animal-only treatment effect, not a measure of concordance between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The increase is reported in the paper's Results section as the authors' experimental finding in G93A mice."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text explicitly refers to G93A mice."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A denotes animal–human outcome concordance, but the quoted result is an animal-only intervention outcome."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text (from 9 days to >38 days, >300%, compared with saline-treated G93A mice)."
+   }
+  },
+  "pages_shown": [
+   1,
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "12642353-1": {
+  "pmid": "12642353",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text states, 'Of 23 such drugs tested, 18 were positive in this initial screen.' which matches the reported value and counts."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "This proportion quantifies how many drugs known to prolong QT in humans were positive in the zebrafish assay (a translation/concordance measure)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The numbers derive from the authors' own screen of small molecules described in the paper."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The assay and results are reported for zebrafish (Danio rerio) on the page."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome concordance between human QT-prolonging drugs and the zebrafish assay (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reproduces the page text wording and denominators ('initial screen', 18 of 23) without additions."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17936056-3": {
+  "pmid": "17936056",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The text gives no concordance/translation metric between animal and human findings; it simply reports trial termination.",
+   "own_result: no — INSPIRE is described as an external clinical trial, not as the authors' own result or pooled analysis.",
+   "level_correct: no — The statement reports a human trial outcome and is not an animal-versus-human outcome concordance."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly states INSPIRE was terminated in early 2007 because of inefficacy in an interim analysis."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The text gives no concordance/translation metric between animal and human findings; it simply reports trial termination."
+   },
+   "own_result": {
+    "answer": "no",
+    "note": "INSPIRE is described as an external clinical trial, not as the authors' own result or pooled analysis."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to more than 800 patients (humans) in the INSPIRE trial."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The statement reports a human trial outcome and is not an animal-versus-human outcome concordance."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement faithfully reproduces the page text including trial name, timing, and reason for termination."
+   }
+  },
+  "pages_shown": [
+   12
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15508657-2": {
+  "pmid": "15508657",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — Page text does not provide a quantified concordance or translation rate between animal and human findings."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Page text states one of seven (17%) survival for pigs ventilated at 30 breaths/min with 100% oxygen."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "Page text does not provide a quantified concordance or translation rate between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "This is reported in the paper's Protocol 2 results (the authors' own animal study)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The page text refers to a porcine model and 'pigs' for these results."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper presents human observations and corresponding animal intervention outcomes, so level A (intervention outcomes animals vs humans) is appropriate."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement exactly matches the sentence in the page text reporting one of seven (17%)."
+   }
+  },
+  "pages_shown": [
+   4,
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "10858325-3": {
+  "pmid": "10858325",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — These numbers compare expected vs observed in rats, not a measure of animal–human correspondence.",
+   "level_correct: no — Level A denotes animal vs human outcome concordance, but the data are within rat experiments only."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 4 on page 5 lists Expt II (30 days) expected 42 (21-84) and observed 61 (25-99) pmol/g."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "These numbers compare expected vs observed in rats, not a measure of animal–human correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The table and text present the authors' estimated expected and measured observed adduct levels."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "Table 4 labels the experiment as rats (Expt II)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A denotes animal vs human outcome concordance, but the data are within rat experiments only."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately restates the table entries for Expt II without adding information."
+   }
+  },
+  "pages_shown": [
+   5,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-6": {
+  "pmid": "14519650",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The page gives a binary predictive/nonpredictive statement, not a numeric concordance/translation rate."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Abstract explicitly states 'The human xenograft model was not predictive for breast or colon cancers.'"
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The page gives a binary predictive/nonpredictive statement, not a numeric concordance/translation rate."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "This statement appears in the paper's Abstract as the authors' result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The page refers specifically to the 'human xenograft model' and colon cancers."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper assesses preclinical model predictivity versus Phase II clinical outcomes, matching outcome-concordance (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the wording in the Abstract without adding information."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "10858325-0": {
+  "pmid": "10858325",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page explicitly states the background level as 40 (20-60) pmol/g of globin and uses this to describe similarity with experimental animals."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The text directly compares raised CEV levels in experimental animals with the background level in nonsmoking humans, stating they are of similar magnitude."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The sentence refers to CEV levels observed in the authors' experimental animals (rats) reported in this paper."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The paper describes 'experimental animals' (rats) and the statement uses the grouped-label 'experimental animals'."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is a comparison of an animal intervention outcome (raised CEV in fed animals) to human background levels (outcome), matching level A."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the page text verbatim and does not add information beyond the text."
+   }
+  },
+  "pages_shown": [
+   1,
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "25122639-0": {
+  "pmid": "25122639",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an animal treatment outcome, not a measure of correspondence between animal and human findings.",
+   "level_correct: no — The finding is an animal-only intervention outcome, not an animal-versus-human concordance metric."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The paper states 6 of 16 dogs (37.5%) with 95% CI 15.2–64.6% and three complete and three partial responses."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an animal treatment outcome, not a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The 6 of 16 (37.5%) objective response rate is reported as the study’s own result from the canine trial."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result explicitly refers to dogs (canine spontaneous solid tumors) in the text."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The finding is an animal-only intervention outcome, not an animal-versus-human concordance metric."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text including the denominator and response breakdown."
+   }
+  },
+  "pages_shown": [
+   1,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-1": {
+  "pmid": "14519650",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The page text reports significant negative correlations and refers to correlation coefficients in Fig. 1, but does not report the numeric value -0.64.",
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The page text reports significant negative correlations and refers to correlation coefficients in Fig. 1, but does not report the numeric value -0.64."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "This is a correlation between preclinical (in vitro) activity and Phase II (human) activity, i.e., a concordance measure."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The correlations described are the paper’s own analysis (Fig. 1 and accompanying text)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to the in vitro cell line model, which matches the reported species/grouped label."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This compares preclinical (in vitro) outcomes with clinical Phase II outcomes (outcome concordance, level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The text states significant negative correlations for breast cell lines versus overall Phase II activity in the other three tumor types, matching the statement’s claim."
+   }
+  },
+  "pages_shown": [
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "21673092-0": {
+  "pmid": "21673092",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page states 'The objective response rate was 88%' and specifies 'Overall, 11 of 14 patients achieved a PR.'"
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "This reports clinical response for treatments deemed effective by the tumorgraft model, i.e., translation between model (mouse) and patients."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "This 88% response is reported as results from this pilot study."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to the tumorgraft model propagated in mice and the human patients, matching the grouped-label species."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome concordance comparing intervention results in the animal model versus human patients (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text, including the implied denominator (11 of 14 patients) and adds nothing."
+   }
+  },
+  "pages_shown": [
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15508657-1": {
+  "pmid": "15508657",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The text reports animal survival results only and gives no measure of correspondence with human data.",
+   "level_correct: no — The paper presents an animal outcome but does not provide an animal–human outcome concordance as implied by level A."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly states 'six of seven (86%)' for pigs at 12 breaths/min with 100% oxygen."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The text reports animal survival results only and gives no measure of correspondence with human data."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "This survival result is reported as Protocol 2 results within the paper."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to 'pigs' as the species for this result."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The paper presents an animal outcome but does not provide an animal–human outcome concordance as implied by level A."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the page text exactly, including numerator, denominator, and percent."
+   }
+  },
+  "pages_shown": [
+   4,
+   7
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "12642353-0": {
+  "pmid": "12642353",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The Methods and Results state 'Overall, 22 of 23 compounds that cause repolarization abnormalities were positive in this assay.'"
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The text explains these were drugs known to cause QT prolongation in humans and reports 22/23 were positive in the zebrafish assay, indicating animal–human concordance."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "This finding is reported as the authors' own result from their screen of 23 drugs, not quoted from another study."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The assay is repeatedly described as a zebrafish assay in the paper."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The comparison is between human drug effects (QT prolongation) and outcomes in the animal assay, i.e., outcome concordance (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the paper's wording and context that the tested compounds cause repolarization abnormalities in humans and were positive in the zebrafish assay."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18175748-3": {
+  "pmid": "18175748",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The 17.0% is the animal result itself, not a metric of concordance or translation between animals and humans."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 2 and the text report a 17.0% relative increase in V̇O2max in the unsupplemented (rat) group after 6 wk of training."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The 17.0% is the animal result itself, not a metric of concordance or translation between animals and humans."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The paper reports this as the authors' own rat study result (Table 2 and accompanying text)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for animals/ rats in Table 2 and the text refers to rats."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper presents intervention outcomes in animals and compares them with human outcomes, consistent with level A."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the text, which states a 17.0% V̇O2max increase in unsupplemented trained rats."
+   }
+  },
+  "pages_shown": [
+   4,
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-3": {
+  "pmid": "14519650",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The page text states significant negative correlations and that the model was predictive for all four tumor types together but does not report a correlation coefficient of −0.73.",
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The page text states significant negative correlations and that the model was predictive for all four tumor types together but does not report a correlation coefficient of −0.73."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The paper reports correlation analyses between in vitro preclinical activity and Phase II (human) overall response rates, so a correlation coefficient would measure correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The correlations were computed by the authors from NCI cell line and Phase II data as part of this study."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is attributed to the in vitro cell line model as stated in the paper."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This compares preclinical (in vitro) activity with human Phase II clinical outcomes (intervention outcome concordance)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The abstract explicitly states the in vitro cell line model was predictive for all four tumor types together."
+   }
+  },
+  "pages_shown": [
+   1,
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15508657-0": {
+  "pmid": "15508657",
+  "status": "needs-adjudication",
+  "reasons": [
+   "is_correspondence: no — The paper reports animal outcomes and human observations and links them qualitatively but provides no quantitative concordance/translation metric between species.",
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The paper's abstract and conclusions state that pig studies showed excessive ventilation rates significantly decreased coronary perfusion pressures and survival, and link this to observed hyperventilation in humans."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The paper reports animal outcomes and human observations and links them qualitatively but provides no quantitative concordance/translation metric between species."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The described pig hemodynamic and survival findings and the human ventilation observations are reported as this paper's own experimental and clinical results."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The results for decreased coronary perfusion pressure and survival are reported for pigs, and the human component documents hyperventilation in patients."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an A-level statement linking animal (intervention/outcome) findings to human observations of ventilation during CPR."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the paper's wording that pig studies showed decreased CPP and survival with excessive ventilation and that clinical patients were hyperventilated."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18175748-1": {
+  "pmid": "18175748",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The 22.0% value is a human training result, not a measure of correspondence or concordance between animal and human findings."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 2 and the text explicitly report a 22.0% V̇O2max increase in the unsupplemented group of men after training."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The 22.0% value is a human training result, not a measure of correspondence or concordance between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The table and accompanying text present this as the study's own human result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for men (human subjects) in the paper."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper presents intervention outcomes for both animals and humans, so the A (outcome concordance) level is appropriate."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the paper's wording about a 22.0% increase in unsupplemented men and adds no extra claims."
+   }
+  },
+  "pages_shown": [
+   4,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "25122639-1": {
+  "pmid": "25122639",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The page reports a human treatment effect but provides no concordance/translation metric between animal and human findings."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page explicitly states the human patient was treated and that “This treatment reduced the tumor within and surrounding the bone.”"
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The page reports a human treatment effect but provides no concordance/translation metric between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The text says “we treated a human patient,” indicating this is the paper’s own reported case."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The page text specifies a human patient with advanced leiomyosarcoma."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an intervention outcome reported in the paper after animal/canine studies, consistent with level A (intervention outcomes animals vs humans)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text and adds no additional information."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-4": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an animal-only treatment effect, not a measure of animal–human correspondence.",
+   "level_correct: no — Level A implies animal vs human outcome concordance, but this is an animal-only outcome."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Page reports WMD 8.4 days (4.4, 12.3) for drugs with anti-oxidant effect on age of onset."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an animal-only treatment effect, not a measure of animal–human correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The 8.4 days WMD is from the paper's pooled meta-analysis results."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The analysis refers to G93A SOD1 mice (mouse)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A implies animal vs human outcome concordance, but this is an animal-only outcome."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the paper text (WMD for antioxidant drugs = 8.4 days)."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15508657-5": {
+  "pmid": "15508657",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The statement reports a human survival count and does not provide a measure of correspondence between animal and human findings."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The paper explicitly states 'In 13 consecutive adults ... No patient survived,' confirming 0/13."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The statement reports a human survival count and does not provide a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The survival outcome is reported as part of the paper's own clinical observational study."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to human patients ('13 consecutive adults') as reported in the paper."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper presents both human and animal survival outcomes as part of an outcome-concordance (intervention outcome) comparison."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the paper's wording and denominator exactly and adds nothing."
+   }
+  },
+  "pages_shown": [
+   1,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17936056-0": {
+  "pmid": "17936056",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Abstract states that after identifying 240 experimental studies, none of these compounds are used in the clinical management of IPF."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "Abstract explicitly says none has shown a comparable antifibrotic effect in humans, indicating zero correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The paper reports performing a systematic review and identified 240 experimental studies (their own result)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The 240 studies refer to bleomycin animal models (rodents and other animals) as described in the paper."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The statement compares animal intervention outcomes to human clinical outcomes, matching level A (outcome concordance)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement faithfully repeats the paper's abstract wording about 240 compounds and none being used clinically or showing comparable human effect."
+   }
+  },
+  "pages_shown": [
+   1,
+   4,
+   10
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "10858325-1": {
+  "pmid": "10858325",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The 40 pmol/g value is a human background level, not a quantitative concordance/translation metric between animals and humans.",
+   "species_correct: no — The page text refers to nonsmoking humans, not non-human primates."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text states the background CEV level in nonsmoking humans is about 40 (20–60) pmol/g of globin."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The 40 pmol/g value is a human background level, not a quantitative concordance/translation metric between animals and humans."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The paper reports this as the observed background level in their studies (cited as their/unpublished work)."
+   },
+   "species_correct": {
+    "answer": "no",
+    "note": "The page text refers to nonsmoking humans, not non-human primates."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The text directly compares raised animal CEV levels to the human background, i.e. an animal–human outcome comparison."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text (background CEV ≈ 40 pmol/g globin in nonsmoking humans)."
+   }
+  },
+  "pages_shown": [
+   1,
+   5,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-5": {
+  "pmid": "18250315",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The provided page text does not contain the value '10.6%' or the quoted phrase 'and 10.6% in those receiving lithium.'",
+   "is_correspondence: no — The text reports patient outcomes but contains no concordance/translation rate comparing animal and human findings.",
+   "own_result: unclear — The page shows the study's own patient data generally, but it does not present the specific 10.6% value to confirm it is an original result.",
+   "level_correct: unclear — The page includes both animal and human intervention outcomes, but it does not show that this specific numeric result is part of an animals-vs-humans outcome concordance.",
+   "statement_faithful: no — The statement gives a specific percent decrement and denominator not present on the provided page, so it is not verifiable as stated."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The provided page text does not contain the value '10.6%' or the quoted phrase 'and 10.6% in those receiving lithium.'"
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The text reports patient outcomes but contains no concordance/translation rate comparing animal and human findings."
+   },
+   "own_result": {
+    "answer": "unclear",
+    "note": "The page shows the study's own patient data generally, but it does not present the specific 10.6% value to confirm it is an original result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for 'patients' and the page text describes effects in treated patients."
+   },
+   "level_correct": {
+    "answer": "unclear",
+    "note": "The page includes both animal and human intervention outcomes, but it does not show that this specific numeric result is part of an animals-vs-humans outcome concordance."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "The statement gives a specific percent decrement and denominator not present on the provided page, so it is not verifiable as stated."
+   }
+  },
+  "pages_shown": [
+   4,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-2": {
+  "pmid": "18250315",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is a human treatment outcome, not a measure of animal–human concordance or translation rate.",
+   "level_correct: no — The assigned level A implies cross-species outcome concordance; the text reports the human outcome but does not provide an explicit concordance metric."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Text states ‘None of the patients died in the lithium-treated group’ over the 15 months (i.e., 100% survival)."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is a human treatment outcome, not a measure of animal–human concordance or translation rate."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The survival result is reported by the paper itself (Fig. 5 and accompanying text)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The page text refers to human patients (lithium plus riluzole-treated patients)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The assigned level A implies cross-species outcome concordance; the text reports the human outcome but does not provide an explicit concordance metric."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately restates the page text that none of the lithium-treated patients died by 15 months."
+   }
+  },
+  "pages_shown": [
+   4,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18175748-4": {
+  "pmid": "18175748",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The 4.7% is an animal treatment effect, not a metric of correspondence between animal and human findings."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 2 and the text state a 4.7% relative increase in V̇O2max for the vitamin C–supplemented animals (rats)."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The 4.7% is an animal treatment effect, not a metric of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The 4.7% value is reported from the paper's own rat experiment (n = 6) in Table 2."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for animals (rats) in the text and Table 2."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper reports intervention outcomes for both animals and humans, so level A (outcome concordance) is appropriate."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text and denominator (rats) without adding information."
+   }
+  },
+  "pages_shown": [
+   4,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-2": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This WMD is an animal treatment effect, not a measure of animal–human concordance or translation.",
+   "level_correct: no — The reported value is an animal intervention outcome only, not a comparison between animal and human outcomes."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text states WMD 11.9 days with CI (4.8, 19.0) for anti-inflammatory drugs, matching the result."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This WMD is an animal treatment effect, not a measure of animal–human concordance or translation."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The WMD is reported as the paper's pooled meta-analysis result in the text."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The analysis refers to G93A transgenic mice (a SOD1 model) in presymptomatic treatment studies."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The reported value is an animal intervention outcome only, not a comparison between animal and human outcomes."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the page text (WMD 11.9 days for anti-inflammatory drugs) with no added information."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "21673092-1": {
+  "pmid": "21673092",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The 11/14 figure is a patient outcome (PR count), not itself a quantified concordance metric between animal and human data."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly states, 'Overall, 11 of 14 patients achieved a PR.'"
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The 11/14 figure is a patient outcome (PR count), not itself a quantified concordance metric between animal and human data."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The paper reports these outcomes as results of its pilot study (appearing in the abstract and discussion)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The reported subjects are human patients, which matches 'patients' in the page text."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The result is presented as an intervention outcome used to support animal–human outcome concordance (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the page text exactly and does not add additional information."
+   }
+  },
+  "pages_shown": [
+   5,
+   1,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-0": {
+  "pmid": "14519650",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The page text reports a significant negative correlation for NSCLC but does not give the numeric correlation coefficient (-0.65).",
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The page text reports a significant negative correlation for NSCLC but does not give the numeric correlation coefficient (-0.65)."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The correlation between mean Log10GI50 (preclinical) and Phase II overall RR (clinical) is a measure of predictive correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The correlation analysis and statement about significant negative correlations for NSCLC are presented as the paper's own results (Fig. 1 and text)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for the in vitro cell line model (as stated in the text)."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an intervention outcome concordance analysis (preclinical activity versus clinical Phase II response), corresponding to level A."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The text states significant negative correlations were found for NSCLC, which supports the claim that the in vitro model was predictive for NSCLC."
+   }
+  },
+  "pages_shown": [
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18175748-0": {
+  "pmid": "18175748",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This metric reports a treatment effect in rats only and is not a measure of correspondence between animal and human findings.",
+   "level_correct: no — The reported endurance capacity outcome is from animals only, so labeling it as an animals-vs-humans outcome-concordance is incorrect."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text and Table 2 explicitly report a 26.5% increase in supplemented animals (101.2 → 128.0 min) and a 186.7% increase in unsupplemented animals (99.2 → 284.3 min)."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This metric reports a treatment effect in rats only and is not a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The values come from the authors' own rat experiments reported in the paper (Table 2 and main text)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to these results in rats (reported as 'animals' in the paper) and the numbers match the rat data."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The reported endurance capacity outcome is from animals only, so labeling it as an animals-vs-humans outcome-concordance is incorrect."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the paper's wording and reported percentages for the specified groups without adding information."
+   }
+  },
+  "pages_shown": [
+   4,
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "14519650-2": {
+  "pmid": "14519650",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The text states significant negative correlations but does not report the correlation coefficient value -0.63 on this page.",
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The text states significant negative correlations but does not report the correlation coefficient value -0.63 on this page."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The paper reports correlation analyses comparing preclinical (in vitro) activity with Phase II clinical activity, which is a correspondence measure."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The correlations are presented as results of this paper's analyses rather than quoted from another study."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to the in vitro cell line model (breast or ovarian cell lines) as described in the text."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The comparison is between preclinical activity and Phase II clinical outcomes, matching outcome-concordance (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The page text explicitly says significant negative correlations were found for ovarian cell lines versus overall Phase II activity in the other three tumor types."
+   }
+  },
+  "pages_shown": [
+   5
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18175748-2": {
+  "pmid": "18175748",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — The 10.8% is a human treatment effect, not a measure of correspondence between animal and human findings."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 2 and the text report a 10.8% relative increase in V̇O2max in the vitamin C–supplemented men after 8 weeks of training."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The 10.8% is a human treatment effect, not a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The V̇O2max values and percentages are from the authors' own human study (n=5 supplemented men) reported in the paper."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is explicitly reported for men in the human study."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper presents intervention outcomes for both animals and humans (V̇O2max changes), so labeling this as outcome concordance is appropriate."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the paper's text that training produced a 10.8% V̇O2max increase in the supplemented men and does not add information beyond the text."
+   }
+  },
+  "pages_shown": [
+   4,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-0": {
+  "pmid": "18250315",
+  "status": "needs-adjudication",
+  "reasons": [
+   "is_correspondence: no — This is a treatment effect reported in mice, not a metric of animal–human correspondence.",
+   "level_correct: no — The item is an animal intervention outcome only, not an animal-vs-human outcome concordance (so level A is incorrect).",
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page gives means (110.8 ± 5.0 to 148 ± 4.3, n=20 each) and reports ≈36% increase, matching the computed 33.6%."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is a treatment effect reported in mice, not a metric of animal–human correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The survival data are from the authors' own experiment on G93A mice reported in the paper."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result specifically refers to G93A male mice as stated on the page."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The item is an animal intervention outcome only, not an animal-vs-human outcome concordance (so level A is incorrect)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The page explicitly states lithium significantly prolonged mean survival time versus saline (P < 0.001)."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-3": {
+  "pmid": "18250315",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This value is a human mortality rate, not a measure of animal-human concordance or translation."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly states 'in the group receiving riluzole only, 29% of subjects did not survive (Fig. 5c)'."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This value is a human mortality rate, not a measure of animal-human concordance or translation."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The 29% mortality is reported by the paper itself as part of its clinical results (Fig. 5c)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to 'subjects'/'patients' (humans), matching the reported species_as_reported."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper presents intervention outcomes in animals and in human patients, so level A (outcome concordance) is appropriate."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the page text (29% died in the riluzole-only group over the 15-month follow-up) without adding information."
+   }
+  },
+  "pages_shown": [
+   4,
+   6
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-7": {
+  "pmid": "28945830",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 1 lists Sensitivity 96% (51/53) with 95% CI 86%–99% for 'Treatment follows other therapies received after tumor collection'."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "Sensitivity here quantifies how well PDX drug responses matched patient clinical outcomes (animal-to-human correspondence)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The values are calculated in Table 1 from the study's own 129 correlations and stratified analyses."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for PDX drug screens (grouped-label patient-derived xenograft models) as shown in the text."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an intervention outcome concordance measure comparing PDX responses to patient outcomes (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement exactly matches the Table 1 entry and includes the numerator/denominator and context provided."
+   }
+  },
+  "pages_shown": [
+   8,
+   7
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-3": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an animal treatment effect (WMD), not a measure of animal–human correspondence.",
+   "level_correct: no — Level A denotes outcome concordance across species, but the reported value is an animal-only intervention outcome."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page reports 10.1 days (6.5, 13.7) for drugs with a neurotrophic effect."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an animal treatment effect (WMD), not a measure of animal–human correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The WMD is presented as part of the paper's own meta-analysis."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for mice (the text refers to G93A mouse studies)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A denotes outcome concordance across species, but the reported value is an animal-only intervention outcome."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the page text's reported WMD and denominator; the page context refers to G93A (SOD1) mice."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17936056-2": {
+  "pmid": "17936056",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is a human treatment effect from an RCT, not a measure of animal–human concordance.",
+   "own_result: no — The review reports the IFIGENIA trial's findings; these are results from that study, not the review authors' own data.",
+   "level_correct: no — Level A denotes intervention outcomes comparing animals and humans, but the statement reports a human trial outcome only.",
+   "statement_faithful: no — While the result is reported accurately, the text notes NAC was given in combination with prednisone and azathioprine and other caveats, which the statement omits."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Text states the IFIGENIA RCT (182 IPF patients) found a small but significant delay in FVC and DLCO deterioration over one year with NAC vs placebo; no survival benefit."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is a human treatment effect from an RCT, not a measure of animal–human concordance."
+   },
+   "own_result": {
+    "answer": "no",
+    "note": "The review reports the IFIGENIA trial's findings; these are results from that study, not the review authors' own data."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The trial enrolled IPF patients (humans) as stated on the page."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A denotes intervention outcomes comparing animals and humans, but the statement reports a human trial outcome only."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "While the result is reported accurately, the text notes NAC was given in combination with prednisone and azathioprine and other caveats, which the statement omits."
+   }
+  },
+  "pages_shown": [
+   12
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-6": {
+  "pmid": "18250315",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The page mentions ALSFRS-R decreased in riluzole-treated patients but does not report 39.8% on this page.",
+   "is_correspondence: no — The number is a human outcome, not a measure of concordance between animal and human findings.",
+   "own_result: unclear — The page reports the study's patient outcomes but does not show the 39.8% value to confirm it is the paper's own result.",
+   "level_correct: no — This is a human outcome only, not an animal-vs-human outcome concordance metric (level A).",
+   "statement_faithful: no — The statement gives a specific percent (39.8%) that is not present in the provided page text."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The page mentions ALSFRS-R decreased in riluzole-treated patients but does not report 39.8% on this page."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The number is a human outcome, not a measure of concordance between animal and human findings."
+   },
+   "own_result": {
+    "answer": "unclear",
+    "note": "The page reports the study's patient outcomes but does not show the 39.8% value to confirm it is the paper's own result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to riluzole-treated patients (humans)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "This is a human outcome only, not an animal-vs-human outcome concordance metric (level A)."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "The statement gives a specific percent (39.8%) that is not present in the provided page text."
+   }
+  },
+  "pages_shown": [
+   4,
+   1,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-0": {
+  "pmid": "28945830",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text states '87% (112/129) of the therapeutic outcomes' showing the association, matching the reported value and counts."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The metric is an association/concordance rate between patient and corresponding PDX drug responses, explicitly reported on the page."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The sentence is presented as the authors' analysis ('A significant association was observed...'), not a quotation from another study."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to 'patient and corresponding PDXs', matching the reported grouped-label species."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome concordance between animal PDX models and patient clinical responses (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The provided statement matches the page text verbatim, including numerator, denominator, and percentage."
+   }
+  },
+  "pages_shown": [
+   7
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-5": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is a treatment effect in animal studies, not a concordance/translation metric between animals and humans.",
+   "level_correct: no — The reported statistic is an animal intervention outcome, not an animal–human concordance/translation measure."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Page text reports a post hoc subgroup WMD of 21.2 days (13.7, 38.7) for minocycline, matching the value and CI."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is a treatment effect in animal studies, not a concordance/translation metric between animals and humans."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The WMD is reported as the paper's own post hoc pooled analysis of seven trials (Fig. 2)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The analysis concerns presymptomatic treatment studies in G93A/SOD1 mouse models (context and figure caption indicate mice)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The reported statistic is an animal intervention outcome, not an animal–human concordance/translation measure."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately restates the paper's post hoc subgroup result for minocycline (seven trials) on age of onset."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-3": {
+  "pmid": "28945830",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 1 reports PPV 85% (80/94) with 95% CI 76%–91%."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "PPV here measures how well positive PDX responses predicted patient responses (animal-to-human correspondence)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "Table 1 and accompanying text state these values were calculated from the paper's own 129 correlations."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for PDX model drug screening (PDX grouped-label) in the table and figure."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome concordance between PDX (animal) responses and patient outcomes (Level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement precisely matches the table entry and its context without adding information."
+   }
+  },
+  "pages_shown": [
+   8,
+   7,
+   2
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-7": {
+  "pmid": "18250315",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The page text does not report the 14.3% value or the quoted 39.8% vs 14.3% comparison.",
+   "is_correspondence: no — The text shows a human treatment effect (riluzole vs lithium), not a cross-species concordance metric.",
+   "own_result: unclear — The paper describes its patient outcomes but the 14.3% figure is not present on the provided page, so cannot confirm it is the paper's own reported value.",
+   "level_correct: no — Level A denotes intervention outcome concordance between animals and humans; the statement is a human treatment comparison only.",
+   "statement_faithful: no — The provided page text does not contain the stated percentage comparison, so the statement is not clearly faithful to the shown text."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The page text does not report the 14.3% value or the quoted 39.8% vs 14.3% comparison."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "The text shows a human treatment effect (riluzole vs lithium), not a cross-species concordance metric."
+   },
+   "own_result": {
+    "answer": "unclear",
+    "note": "The paper describes its patient outcomes but the 14.3% figure is not present on the provided page, so cannot confirm it is the paper's own reported value."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to patients, which matches the 'patients' label in the page text."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A denotes intervention outcome concordance between animals and humans; the statement is a human treatment comparison only."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "The provided page text does not contain the stated percentage comparison, so the statement is not clearly faithful to the shown text."
+   }
+  },
+  "pages_shown": [
+   4,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-4": {
+  "pmid": "28945830",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 1 reports Overall NPV 91% (32/35) with 95% CI 76%–98%."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "NPV here reflects how well negative PDX responses predicted matched patient outcomes (correlations between PDX and patient responses)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "Table 1 states these values were calculated from the authors' test population (129 correlations)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for PDX drug screens (grouped-label 'PDX')."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome concordance measure between PDX responses and patient clinical outcomes (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the table entry exactly (NPV 91% (32/35))."
+   }
+  },
+  "pages_shown": [
+   8,
+   7
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-6": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an animal pooled treatment effect, not a measure of correspondence between animal and human findings.",
+   "species_correct: unclear — The page mentions G93A mice but does not explicitly use the term 'SOD1 mouse' on this page.",
+   "level_correct: no — The result is an animal intervention outcome only; it is not an outcome-concordance measure between animals and humans.",
+   "statement_faithful: unclear — The text supports 12.2 days for all presymptomatic studies, but the page does not explicitly state 'SOD1 mice', so inclusion of that species name cannot be confirmed from this page."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text states WMD 12.2 days (8.7, 16.8) for all studies combined in the presymptomatic survival analysis."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an animal pooled treatment effect, not a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The 12.2 days (8.7, 16.8) is reported as the paper's pooled WMD for the included studies."
+   },
+   "species_correct": {
+    "answer": "unclear",
+    "note": "The page mentions G93A mice but does not explicitly use the term 'SOD1 mouse' on this page."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The result is an animal intervention outcome only; it is not an outcome-concordance measure between animals and humans."
+   },
+   "statement_faithful": {
+    "answer": "unclear",
+    "note": "The text supports 12.2 days for all presymptomatic studies, but the page does not explicitly state 'SOD1 mice', so inclusion of that species name cannot be confirmed from this page."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-6": {
+  "pmid": "28945830",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 1 (page 8) lists Specificity 89% (16/18) for 'Treatment is first therapy received after tumor collection', matching the statement."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The specificity is derived from contingency tables correlating PDX responses with patient responses, i.e., a measure of concordance between animal (PDX) and human outcomes."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "Table 1 presents parameters calculated from the study's own 129 correlations and stratified subsets, so this specificity is the paper's own result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to PDX model drug screening (patient-derived xenografts), matching the recorded 'PDX drug screens' grouped label."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome-concordance measure between PDX responses and patient clinical outcomes (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reproduces the table entry, including the denominator (16/18) and context ('first therapy received after tumor collection')."
+   }
+  },
+  "pages_shown": [
+   8,
+   7
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18250315-4": {
+  "pmid": "18250315",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — The page does not show the 46.1% figure; it reports Norris raw scores (86.6 vs 55.3) but not a 46.1% normalized decrement.",
+   "is_correspondence: no — This is a human treatment outcome, not a concordance/translation metric between animal and human findings.",
+   "statement_faithful: unclear — The exact quoted sentence and the 46.1% value do not appear on the provided page, so faithfulness cannot be confirmed."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "The page does not show the 46.1% figure; it reports Norris raw scores (86.6 vs 55.3) but not a 46.1% normalized decrement."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is a human treatment outcome, not a concordance/translation metric between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The page describes these patient data (Fig. 5) as results from the authors' treated and control patients."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to patients (humans), matching the reported species 'patients'."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The paper presents both animal and human intervention outcomes, so level A (outcome-concordance) is appropriate."
+   },
+   "statement_faithful": {
+    "answer": "unclear",
+    "note": "The exact quoted sentence and the 46.1% value do not appear on the provided page, so faithfulness cannot be confirmed."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "18055474-0": {
+  "pmid": "18055474",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value/quote not located on the PDF text layer"
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The abstract explicitly states that therapeutic efficacy in AIA and CIA models was more predictive of clinical efficacy in human RA than either model alone."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The sentence asserts predictive correspondence between animal model efficacy and human clinical efficacy."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "This conclusion is presented as the authors' finding from their retrospective review."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to AIA and CIA animal models (rats and mice), matching the 'animals' grouping."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The claim compares intervention outcomes in animal models with clinical outcomes in humans (outcome concordance)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately mirrors the abstract sentence without adding details."
+   }
+  },
+  "pages_shown": [
+   1
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-0": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an animal treatment effect (WMD) not a measure of animal–human concordance.",
+   "species_correct: unclear — The page refers to G93A mice but does not explicitly state 'SOD1 mouse'.",
+   "level_correct: no — The reported result is an animal intervention outcome, not an animal–human concordance measure.",
+   "statement_faithful: no — The statement adds 'SOD1 mice' which is not explicitly stated on the page despite matching the WMD value."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page states 'The overall WMD was 11.8 days (9.1, 14.5)'."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an animal treatment effect (WMD) not a measure of animal–human concordance."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The value is reported as the paper's pooled meta-analysis result (Fig. 2)."
+   },
+   "species_correct": {
+    "answer": "unclear",
+    "note": "The page refers to G93A mice but does not explicitly state 'SOD1 mouse'."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The reported result is an animal intervention outcome, not an animal–human concordance measure."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "The statement adds 'SOD1 mice' which is not explicitly stated on the page despite matching the WMD value."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-5": {
+  "pmid": "28945830",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 1 shows Sensitivity 97% (29/30) with 95% CI 81%–99% for treatment given first after tumor collection."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "Sensitivity here quantifies how well PDX drug responses (animal models) predict patient responses (human concordance)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The value appears in the paper's Table 1 as part of the authors' calculated parameters."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result is reported for PDX drug screens (the grouped-label used in the paper)."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an intervention outcome concordance between PDX models and patient outcomes (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the table wording and denominator (29/30 positive patient responses) without adding information."
+   }
+  },
+  "pages_shown": [
+   8
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-2": {
+  "pmid": "28945830",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: unclear — The page text reports specificity 70% with a lower 95% CI of 54% but does not show the numerator/denominator (32/46) or an upper CI of 82% on this page.",
+   "statement_faithful: no — The statement adds counts (32/46) and an upper CI (82%) that do not appear in the provided page text."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "unclear",
+    "note": "The page text reports specificity 70% with a lower 95% CI of 54% but does not show the numerator/denominator (32/46) or an upper CI of 82% on this page."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "Specificity is reported as a measure of concordance between PDX drug screens and patient clinical responses."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The text states 'Our analysis revealed...', indicating this is the paper's own result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to PDX models (patient-derived xenografts), matching the grouped-label 'PDX drug screens'."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "The metric compares PDX (animal) drug-screen outcomes to patient (human) clinical outcomes, i.e., intervention outcome concordance."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "The statement adds counts (32/46) and an upper CI (82%) that do not appear in the provided page text."
+   }
+  },
+  "pages_shown": [
+   7,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "28945830-1": {
+  "pmid": "28945830",
+  "status": "needs-adjudication",
+  "reasons": [
+   "value_correct: no — Text reports 96% sensitivity with a lower 95% CI of 89% but does not provide the numerator/denominator (80/83) or an upper CI on this page.",
+   "statement_faithful: no — The statement adds specific counts (80/83) and an upper CI not shown on the page; the page only gives 96% and a lower 95% CI of 89%."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "no",
+    "note": "Text reports 96% sensitivity with a lower 95% CI of 89% but does not provide the numerator/denominator (80/83) or an upper CI on this page."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The sensitivity quantifies concordance between PDX drug responses and the patients' clinical responses."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The text states 'Our analysis revealed...' indicating this is the paper's own result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to PDX models ('PDX drug screens') as reported in the text (grouped-label)."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This measures outcome concordance between PDX (animal) responses and human clinical outcomes (level A)."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "The statement adds specific counts (80/83) and an upper CI not shown on the page; the page only gives 96% and a lower 95% CI of 89%."
+   }
+  },
+  "pages_shown": [
+   7,
+   8
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-3": {
+  "pmid": "15120036",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This compares in vitro TCA to in vivo activity in corresponding xenografts (mouse models), not animal-to-human concordance.",
+   "level_correct: no — Level A denotes animal vs human outcome concordance, but this result compares in vitro and in vivo within xenografts in mice."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Abstract states 90% for resistance when tumours tested after serial passage in nude mice in the TCA were compared to in vivo activity in corresponding xenografts."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This compares in vitro TCA to in vivo activity in corresponding xenografts (mouse models), not animal-to-human concordance."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The percentage is reported in the paper's abstract as the authors' own finding."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The paper refers to tumours after serial passage in nude mice (human tumour xenografts in mice), matching the reported species."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "Level A denotes animal vs human outcome concordance, but this result compares in vitro and in vivo within xenografts in mice."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the abstract sentence and does not add extra information."
+   }
+  },
+  "pages_shown": [
+   1,
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-4": {
+  "pmid": "15120036",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Yes — the abstract states: 'Of 80 comparisons performed... correct prediction for tumour sensitivity in 90%.'"
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "Yes — this reports concordance between clinical (patient) responses and their explants established and treated in nude mice (translation between human and animal results)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "Yes — this is presented as the authors' own finding in the paper's abstract. "
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "Yes — the text refers to 'human tumour xenografts in the nude mouse,' matching the reported species. "
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "Yes — this is an outcome concordance comparing human clinical responses to animal (nude mouse xenograft) in vivo responses (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "Yes — the statement matches the page text exactly, including the denominator of 80 and the 90% sensitivity figure."
+   }
+  },
+  "pages_shown": [
+   1,
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-0": {
+  "pmid": "15120036",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The abstract explicitly reports 62% of the comparisons for drug sensitivity were correct when comparing xenograft TCA results to clinical response."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "The percentage expresses concordance between xenograft-derived TCA results (animal model) and clinical (human) response."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The figure is reported by the authors in the paper's abstract as their own comparison result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text specifies 'human tumours established as xenografts in nude mice,' matching the reported species."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome concordance between preclinical xenograft results and clinical human response (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reflects the paper's wording about 62% correct comparisons for drug sensitivity and uses the same denominator 'comparisons.'"
+   }
+  },
+  "pages_shown": [
+   1,
+   6
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "17300945-7": {
+  "pmid": "17300945",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This WMD is an animal treatment effect from a meta-analysis, not a measure of correspondence between animal and human findings.",
+   "level_correct: no — The result is an animal intervention outcome only; it is not an animal-versus-human concordance measure.",
+   "statement_faithful: no — The statement omits that this was a post hoc subgroup analysis of seven trials (and omits the reported confidence interval and that some trials combined other drugs)."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The page text explicitly states a post hoc subgroup WMD of 22.1 days (14.6, 29.6) for seven minocycline trials."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This WMD is an animal treatment effect from a meta-analysis, not a measure of correspondence between animal and human findings."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The WMD is reported as a post hoc subgroup result from this paper's meta-analysis (pooled analysis)."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The analysis refers to mouse experiments (including G93A mice), so the result applies to mice (SOD1/G93A model)."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The result is an animal intervention outcome only; it is not an animal-versus-human concordance measure."
+   },
+   "statement_faithful": {
+    "answer": "no",
+    "note": "The statement omits that this was a post hoc subgroup analysis of seven trials (and omits the reported confidence interval and that some trials combined other drugs)."
+   }
+  },
+  "pages_shown": [
+   4
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-5": {
+  "pmid": "15120036",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The paper explicitly states ‘Of 80 comparisons performed, we observed a correct prediction for tumour resistance in 97%’ (Table 14 shows 57/59 = 97%)."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "This is a concordance measure comparing nude mouse xenograft (in vivo) response with patient clinical response (animal vs human)."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The authors report performing 80 comparisons themselves and present the 97% correct prediction for resistance as their result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to human tumours established as xenografts in nude mice, matching the reported species."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This compares intervention outcomes in animals (xenografts in mice) versus humans (patients), i.e. level A."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the paper's wording: ‘Of 80 comparisons performed, we observed a correct prediction for tumour resistance in 97%.’"
+   }
+  },
+  "pages_shown": [
+   1,
+   12
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-2": {
+  "pmid": "15120036",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This comparison is between in vitro TCA and in vivo xenografts in mice, not animal-to-human correspondence.",
+   "level_correct: no — The comparison is between assay/model outcomes in mice, not animal versus human outcome concordance."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The abstract explicitly reports 60% correct for sensitivity after serial passage compared to in vivo xenograft activity."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This comparison is between in vitro TCA and in vivo xenografts in mice, not animal-to-human correspondence."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The sentence is reported in the paper's abstract as the authors' own findings."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The text refers to human tumours established as xenografts in nude mice."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The comparison is between assay/model outcomes in mice, not animal versus human outcome concordance."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately restates the paper's claim that 60% of sensitivity comparisons were correct after serial passage."
+   }
+  },
+  "pages_shown": [
+   1,
+   3
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-6": {
+  "pmid": "15120036",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an in vitro versus patient (human) comparison, not an animal-to-human correspondence measure.",
+   "own_result: no — Table footnote states the data are taken from reference [3], so these are not the paper's original data.",
+   "level_correct: no — The item is an in vitro vs patient (human) outcome comparison, not an animal-to-human outcome concordance (level A)."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "Table 11 and the adjacent text state 18/29 = 62% for tumour sensitivity."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an in vitro versus patient (human) comparison, not an animal-to-human correspondence measure."
+   },
+   "own_result": {
+    "answer": "no",
+    "note": "Table footnote states the data are taken from reference [3], so these are not the paper's original data."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The comparison is explicitly versus the patient (human) in Table 11 and the text."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The item is an in vitro vs patient (human) outcome comparison, not an animal-to-human outcome concordance (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement matches the text exactly, including numerator and denominator (18/29 = 62%)."
+   }
+  },
+  "pages_shown": [
+   11,
+   1,
+   6
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-7": {
+  "pmid": "15120036",
+  "status": "excluded",
+  "reasons": [
+   "is_correspondence: no — This is an in vitro assay versus patient (human) comparison, not an animal-to-human correspondence measure.",
+   "own_result: no — The table and text indicate these data were taken from reference [3], not generated as the paper’s own new result.",
+   "level_correct: no — The comparison is clonogenic assay (in vitro) versus patient (in vivo), not an animal-to-human intervention outcome (level A)."
+  ],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The text and Table 11 state 34 true negatives out of 37 resistant cases = 92% for tumour resistance."
+   },
+   "is_correspondence": {
+    "answer": "no",
+    "note": "This is an in vitro assay versus patient (human) comparison, not an animal-to-human correspondence measure."
+   },
+   "own_result": {
+    "answer": "no",
+    "note": "The table and text indicate these data were taken from reference [3], not generated as the paper’s own new result."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result explicitly refers to patients (human) in the table and text."
+   },
+   "level_correct": {
+    "answer": "no",
+    "note": "The comparison is clonogenic assay (in vitro) versus patient (in vivo), not an animal-to-human intervention outcome (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement exactly reflects the text including the denominator (34/37 = 92%)."
+   }
+  },
+  "pages_shown": [
+   11,
+   1,
+   6
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
+ },
+ "15120036-1": {
+  "pmid": "15120036",
+  "status": "verified",
+  "reasons": [],
+  "checks": {
+   "value_correct": {
+    "answer": "yes",
+    "note": "The abstract states 92% of comparisons for drug resistance were correct when comparing xenograft TCA to clinical response."
+   },
+   "is_correspondence": {
+    "answer": "yes",
+    "note": "This is a concordance rate comparing xenograft TCA results to human clinical responses."
+   },
+   "own_result": {
+    "answer": "yes",
+    "note": "The text says 'When we compared...' indicating these are the authors' own comparisons."
+   },
+   "species_correct": {
+    "answer": "yes",
+    "note": "The result refers to human tumours established as xenografts in nude mice, matching the reported species."
+   },
+   "level_correct": {
+    "answer": "yes",
+    "note": "This is an outcome concordance between animal-model assay and human clinical response (level A)."
+   },
+   "statement_faithful": {
+    "answer": "yes",
+    "note": "The statement accurately reproduces the paper's sentence that 92% of drug-resistance comparisons were correct."
+   }
+  },
+  "pages_shown": [
+   1,
+   6
+  ],
+  "model": "openai/gpt-5-mini",
+  "date": "2026-09-15"
  }
 }

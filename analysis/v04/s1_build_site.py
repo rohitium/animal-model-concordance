@@ -723,6 +723,14 @@ def main():
     global ART
     ART = load_artifacts()
     fin = [r for r in load("part1/final_results.json") if r["status"] == "final"]
+    # Amendment A10: model_type decides the companion/laboratory column, and the extractor left it
+    # unfilled on dog and cat results across 20 studies, defaulting them all to laboratory. Each
+    # study was read and resolved from its own full text; the evidence is in the overrides file.
+    mt_over = {k: v for k, v in load("part1/model_type_overrides.json").items() if not k.startswith("_")}
+    for r in fin:
+        ov = mt_over.get(r["pmid"])
+        if ov and r.get("model_type") == "mixed-or-not-stated":
+            r["model_type"] = ov["model_type"]
     studies = collections.defaultdict(list)
     for r in fin:
         studies[r["pmid"]].append(r)
