@@ -4,7 +4,7 @@
     {
       "name": "site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8811", "--directory", "site/_build"],
+      "runtimeArgs": ["-m", "http.server", "8811", "--directory", "site/v04_build"],
       "port": 8811
     }
   ]
