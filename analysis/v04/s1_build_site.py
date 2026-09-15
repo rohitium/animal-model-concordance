@@ -1,14 +1,15 @@
-"""Build the v0.4 site: one long-form report, plus searchable browsers over the underlying records.
+"""Build the v0.4 site from editable content files plus the frozen v0.4 outputs.
+
+All prose lives in content/*.md and is edited there, never here. This module supplies the data,
+draws the things that cannot be written by hand (the heatmap, the tables, the browsers), and
+renders the markdown around them. content/README.md documents every token for the writer.
 
 Structure
-  index.html        the report, read top to bottom, with a section rail: summary, evidence map,
-                    what the results say, drug pairs, companion vs laboratory, methods,
-                    limitations, verify
-  results.html      all final results, searchable and sortable, filterable by level, species,
-                    disease area and direction
-  pairs.html        all classified dog and cat drug pairs, same machinery
+  index.html        the report, from content/report.md, with a section rail built from its headings
+  results.html      all final results, searchable and sortable
+  pairs.html        all classified dog and cat drug pairs
   spotcheck.html    the seeded sample anyone can check the review against
-  study/<id>.html   one page per study: its kept results, each with quote and page
+  study/<id>.html   one page per study, wrapped by content/study.md
   assets/           one stylesheet and one script, shared by every page
   api/*.json        the same content as data
 
@@ -27,6 +28,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from common import load, species_column, today, J, V04
 
 OUT = J("site", "v04_build")
+CONTENT = J("content")
 e = lambda s: html.escape(str(s if s is not None else ""))
 # Paper-derived text (statements) is not markdown; strip stray emphasis characters so they do not
 # surface as asterisks. Quotes are never passed through this: they are reproduced exactly.
@@ -39,8 +41,6 @@ DIR_LABEL = {"animal-corresponded": "corresponded", "animal-did-not-correspond":
              "mixed": "mixed", "not-applicable": "not applicable"}
 DIR_CLASS = {"animal-corresponded": "ok", "animal-did-not-correspond": "no", "mixed": "mid"}
 
-# Display-only normalisation. The frozen vocabulary is in common.py; these are spellings that
-# reached the final set without folding onto it.
 SPECIES_FIX = {"guinea pig": "other-rodent", "cynomolgus monkey": "non-human-primate",
                "Macaca fascicularis": "non-human-primate", "sheep": "sheep-goat"}
 UNRESOLVED = {"grouped-label", "human"}
@@ -102,11 +102,18 @@ h3{font-size:18px;margin:1.8em 0 .4em;font-weight:600}
 h4{font-size:15px;margin:1.4em 0 .3em;font-weight:600;font-family:var(--sans)}
 p,li{max-width:68ch}
 p{margin:.75em 0}
-.lede{font-size:20px;line-height:1.5;color:#3b424a;max-width:60ch}
+ol,ul{max-width:68ch}
+li{margin:.3em 0}
+.lede{font-size:20px;line-height:1.5;color:#3b424a;max-width:60ch;margin:.6em 0 1em}
+.lede p{margin:.35em 0;max-width:none}
+.lede p:first-child{margin-top:0}
 .dek{font-family:var(--sans);font-size:13px;color:var(--faint);text-transform:uppercase;
   letter-spacing:.08em;margin:0 0 6px}
+.dek p{margin:0}
 a{color:var(--accent)}
 .small{font-size:14.5px;color:var(--dim);font-family:var(--sans);line-height:1.5}
+.small p{margin:.4em 0;max-width:72ch}
+.small p:first-child{margin-top:0}
 code{font-family:var(--mono);font-size:13px;background:#f1f3f5;padding:1px 5px;border-radius:3px}
 hr{border:0;border-top:1px solid var(--line);margin:2.6em 0}
 
@@ -138,12 +145,12 @@ caption{caption-side:top;text-align:left;font-family:var(--sans);font-size:13px;
 .note{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
   padding:14px 18px;margin:22px 0;max-width:72ch}
 .note p{margin:.4em 0}
+.note p:first-of-type{margin-top:0}
 .note .h{font-family:var(--sans);font-size:13px;font-weight:600;text-transform:uppercase;
   letter-spacing:.06em;color:var(--accent);margin-bottom:4px}
 blockquote{margin:.6em 0;padding:.3em 0 .3em 14px;border-left:2px solid var(--line);color:#3b424a;
   font-size:16px}
 
-/* heatmap */
 .hmwrap{overflow-x:auto;margin:18px 0;border:1px solid var(--line);background:var(--card)}
 table.hm{font-size:13px;margin:0;border:0}
 table.hm th{font-weight:500;font-size:12.5px;color:var(--dim);background:var(--card);
@@ -158,11 +165,10 @@ table.hm td a sup{font-size:9px;opacity:.75;margin-left:1px}
 table.hm td.empty{background:repeating-linear-gradient(45deg,#fcfcfc,#fcfcfc 4px,#f6f7f8 4px,#f6f7f8 8px)}
 table.hm td.tot a,table.hm td.tot{background:#f7f8f9;color:var(--dim);font-weight:600}
 .legend{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:12.5px;
-  color:var(--dim);margin:10px 0 0}
+  color:var(--dim);margin:10px 0 0;flex-wrap:wrap}
 .legend .ramp{display:flex}
 .legend .ramp i{width:22px;height:11px;display:block}
 
-/* data browser */
 .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 10px;
   font-family:var(--sans);font-size:14px}
 .controls input[type=search]{flex:1 1 260px;min-width:200px;padding:8px 11px;border:1px solid var(--line);
@@ -261,8 +267,9 @@ window.initTable = function (cfg) {
     }
     var q = search.value.trim().toLowerCase();
     if (!q) return true;
-    for (var j = 0; j < q.split(/\s+/).length; j++) {
-      var term = q.split(/\s+/)[j], hit = false;
+    var terms = q.split(/\s+/);
+    for (var j = 0; j < terms.length; j++) {
+      var term = terms[j], hit = false;
       for (var k = 0; k < cfg.searchKeys.length; k++) {
         var v = r[cfg.searchKeys[k]];
         if (v && String(v).toLowerCase().indexOf(term) >= 0) { hit = true; break; }
@@ -327,16 +334,15 @@ def page(fname, title, body, depth=0, rail=None, cls="page"):
     up = "../" * depth
     here = fname if depth == 0 else ""
     nav = "".join(f'<a href="{up}{h}"{" class=\"on\"" if h == here else ""}>{lab}</a>' for h, lab in NAV)
-    railhtml = ""
     if rail:
         railhtml = '<div class="rail">' + "".join(
-            f'<a href="#{i}">{lab}</a>' for i, lab in rail) + "</div>"
+            f'<a href="#{i}">{e(lab)}</a>' for i, lab in rail) + "</div>"
         body = f'<div class="wrap">{railhtml}<div class="doc">{body}</div></div>'
     else:
         body = f'<div class="doc {cls}">{body}</div>'
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title}</title>
+<title>{e(title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <link rel="stylesheet" href="{up}assets/site.css">
@@ -357,12 +363,11 @@ PATH_RE = re.compile(r"\s*\(?`[^`]*(?:/|\.(?:py|json|md))[^`]*`\)?|\s*\b[\w-]+\.
 PROVENANCE_RE = re.compile(r"^\s*(?:Built|Generated|Computed|Cost)\b", re.I)
 
 
-def prose(src):
-    """Strip build provenance and file paths, and unwrap hard-wrapped paragraphs.
+def strip_working_notes(src):
+    """Remove build provenance and file paths from a pipeline report, and unwrap its hard wrapping.
 
-    The pipeline reports are working records: they name the script that wrote them and the files
-    they read. That provenance belongs in the repository, not on the page, so it is removed here
-    rather than from the reports themselves.
+    The reports are working records: they name the script that wrote them and the files they read.
+    That provenance belongs in the repository, not on the page.
     """
     def clean(s):
         s = PATH_RE.sub("", s)
@@ -387,14 +392,34 @@ def prose(src):
     return "\n".join(out)
 
 
-def md(path):
-    return mdsrc(open(path).read() if os.path.exists(path) else "")
+def report_md(path):
+    """A pipeline report, cleaned and rendered."""
+    return render(strip_working_notes(open(path).read() if os.path.exists(path) else ""))[0]
 
 
-def mdsrc(src):
-    """Render the subset of markdown used by the pipeline reports."""
-    src = prose(src)
-    out, rows, inlist = [], [], False
+SLUG = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+HEAD_META = re.compile(r"\s*\{#([^}|]+)(?:\|([^}]+))?\}\s*$")
+
+
+def inline(x):
+    """Markdown inline: escaping first, then bold, italic, code, links."""
+    x = e(x)
+    x = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", x)
+    x = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"<em>\1</em>", x)
+    x = re.sub(r"`(.+?)`", r"<code>\1</code>", x)
+    x = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', x)
+    return x
+
+
+def render(src):
+    """Render the markdown subset used by the content files and the pipeline reports.
+
+    Returns (html, sections) where sections are the (id, rail label) pairs of the h2 headings, so
+    the report's rail follows whatever the writer puts in the file.
+    """
+    out, sections, rows = [], [], []
+    listtag, box = None, None
+
     def flush_table():
         nonlocal rows
         if not rows:
@@ -404,51 +429,121 @@ def mdsrc(src):
         out.append('<div class="scroll"><table><thead><tr>'
                    + "".join(f"<th>{inline(c)}</th>" for c in cells(head)) + "</tr></thead><tbody>")
         for r in body:
-            cs = cells(r)
             out.append("<tr>" + "".join(
                 f'<td{" class=\"num\"" if i and re.match(r"^[\d.,%–\-() ]+$", c) else ""}>{inline(c)}</td>'
-                for i, c in enumerate(cs)) + "</tr>")
+                for i, c in enumerate(cells(r))) + "</tr>")
         out.append("</tbody></table></div>")
         rows = []
-    def inline(x):
-        x = e(x)
-        x = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", x)
-        x = re.sub(r"`(.+?)`", r"<code>\1</code>", x)
-        return x
+
+    def close_list():
+        nonlocal listtag
+        if listtag:
+            out.append(f"</{listtag}>"); listtag = None
+
     for line in src.splitlines():
         if line.startswith("|"):
             rows.append(line); continue
         flush_table()
         s = line.strip()
-        if not s:
-            if inlist: out.append("</ul>"); inlist = False
+
+        if s.startswith(":::"):
+            close_list()
+            rest = s[3:].strip()
+            if box and not rest:
+                out.append("</div>"); box = None
+            elif rest:
+                kind, _, title = rest.partition(" ")
+                box = kind
+                if kind == "note":
+                    out.append('<div class="note">'
+                               + (f'<div class="h">{inline(title)}</div>' if title.strip() else ""))
+                else:
+                    out.append(f'<div class="{e(kind)}">')
             continue
+
+        if not s:
+            close_list(); continue
+
         if s.startswith("#"):
-            if inlist: out.append("</ul>"); inlist = False
+            close_list()
             n = len(s) - len(s.lstrip("#"))
-            out.append(f"<h{min(n+2,4)}>{inline(s.lstrip('# '))}</h{min(n+2,4)}>")
-        elif s.startswith(("- ", "* ")):
-            if not inlist: out.append("<ul>"); inlist = True
-            out.append(f"<li>{inline(s[2:])}</li>")
+            text = s.lstrip("# ")
+            hid, label = "", ""
+            m = HEAD_META.search(text)
+            if m:
+                hid, label = m.group(1), (m.group(2) or "")
+                text = HEAD_META.sub("", text)
+            if n == 2:
+                hid = hid or SLUG(text)
+                sections.append((hid, label or text))
+                out.append(f'<h2 id="{e(hid)}">{inline(text)}</h2>')
+            else:
+                idattr = f' id="{e(hid)}"' if hid else ""
+                out.append(f"<h{min(n,4)}{idattr}>{inline(text)}</h{min(n,4)}>")
+            continue
+
+        m = re.match(r"^(\d+)\.\s+(.*)$", s)
+        if m:
+            if listtag != "ol":
+                close_list(); out.append("<ol>"); listtag = "ol"
+            out.append(f"<li>{inline(m.group(2))}</li>"); continue
+        if s.startswith(("- ", "* ")):
+            if listtag != "ul":
+                close_list(); out.append("<ul>"); listtag = "ul"
+            out.append(f"<li>{inline(s[2:])}</li>"); continue
+
+        if listtag:
+            # a wrapped continuation line inside a list item
+            out[-1] = out[-1][:-5] + " " + inline(s) + "</li>"
+            continue
+        if out and out[-1].startswith("<p>") and out[-1].endswith("</p>"):
+            out[-1] = out[-1][:-4] + " " + inline(s) + "</p>"
         else:
-            if inlist: out.append("</ul>"); inlist = False
             out.append(f"<p>{inline(s)}</p>")
-    flush_table()
-    if inlist: out.append("</ul>")
-    return "\n".join(out)
+
+    flush_table(); close_list()
+    if box:
+        out.append("</div>")
+    return "\n".join(out), sections
+
+
+def compose(name, scalars, blocks):
+    """Read a content file, fill in its tokens, and render it."""
+    src = open(os.path.join(CONTENT, name)).read()
+    src = re.sub(r"\{\{(\w+)\}\}", lambda m: str(scalars.get(m.group(1), m.group(0))), src)
+    parts, buf = [], []
+    for line in src.splitlines():
+        key = line.strip()[2:-2] if line.strip().startswith("{{") and line.strip().endswith("}}") else None
+        if key and key in blocks:
+            parts.append(("md", "\n".join(buf))); buf = []
+            parts.append(("html", blocks[key]))
+        else:
+            buf.append(line)
+    parts.append(("md", "\n".join(buf)))
+    html_out, sections, title = [], [], ""
+    for kind, chunk in parts:
+        if kind == "html":
+            html_out.append(chunk)
+        else:
+            h, secs = render(chunk)
+            html_out.append(h); sections += secs
+            m = re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S)
+            if m and not title:
+                title = re.sub(r"<[^>]+>", "", m.group(1))
+    return "\n".join(html_out), sections, title
 
 
 def dirtag(d):
     return f'<span class="tag {DIR_CLASS.get(d, "")}">{e(DIR_LABEL.get(d, d or "—"))}</span>'
 
 
-def figures(pairs):
+def figures_block(pairs):
     return '<div class="figs">' + "".join(
         f'<div><div class="n">{n}</div><div class="l">{l}</div></div>' for n, l in pairs) + "</div>"
 
 
 def ramp(ratio):
-    """Single-hue navy ramp. Square-root scaled: the median cell holds 2 studies and the largest
+    """Single-hue navy ramp, square-root scaled: the median cell holds 2 studies and the largest
     holds 67, so a linear ramp would render one dark square and a hundred white ones."""
     a, b = (238, 243, 248), (29, 78, 121)
     c = [round(a[i] + (b[i] - a[i]) * ratio) for i in range(3)]
@@ -467,7 +562,7 @@ def heatmap(fin):
     coltot = {c: len({p for (_, cc), g in grid.items() if cc == c for p in g["s"]}) for c in cols}
 
     h = ['<div class="hmwrap"><table class="hm"><thead><tr><th class="rowh">disease area</th>']
-    h += [f'<th>{e(c)}</th>' for c in cols]
+    h += [f"<th>{e(c)}</th>" for c in cols]
     h.append('<th class="tot">all</th></tr></thead><tbody>')
     for a in areas:
         h.append(f'<tr><th class="rowh">{e(a)}</th>')
@@ -478,20 +573,18 @@ def heatmap(fin):
             n = len(g["s"])
             bg, fg = ramp((n / mx) ** 0.5)
             lv = min(g["lv"])
-            # Filter keys must match the browser's select keys, not the display names.
-            href = f"results.html?ar={a}&sp={c}"
             ttl = f"{a} · {c}: {n} studies, highest evidence level {lv}"
-            h.append(f'<td><a href="{e(href)}" style="background:{bg};color:{fg}" '
-                     f'title="{e(ttl)}">{n}<sup>{lv}</sup></a></td>')
+            h.append(f'<td><a href="results.html?ar={e(a)}&amp;sp={e(c)}" '
+                     f'style="background:{bg};color:{fg}" title="{e(ttl)}">{n}<sup>{lv}</sup></a></td>')
         h.append(f'<td class="tot"><a href="results.html?ar={e(a)}">{rowtot[a]}</a></td></tr>')
     h.append('<tr><th class="rowh">all</th>'
              + "".join(f'<td class="tot"><a href="results.html?sp={e(c)}">{coltot[c]}</a></td>' for c in cols)
              + f'<td class="tot">{len({r["pmid"] for r in fin})}</td></tr>')
     h.append("</tbody></table></div>")
-    steps = "".join(f'<i style="background:{ramp(i / 5) [0]}"></i>' for i in range(6))
+    steps = "".join(f'<i style="background:{ramp(i / 5)[0]}"></i>' for i in range(6))
     h.append(f'<div class="legend"><span>fewer studies</span><span class="ramp">{steps}</span>'
-             f'<span>more ({mx} at most)</span><span>· superscript = highest evidence level in the cell '
-             f'· click a cell to see those results</span></div>')
+             f"<span>more ({mx} at most)</span><span>· superscript = highest evidence level in the "
+             f"cell · click a cell to see those results</span></div>")
     return "\n".join(h)
 
 
@@ -508,8 +601,8 @@ def browser(tid, data_id, rows_json, columns, filters, noun, search_keys, row_js
         ctl.append(f'<th class="{cls}" data-sort="{c["key"]}">{e(c["label"])}</th>')
     ctl.append("</tr></thead><tbody></tbody></table></div></div>")
     ctl.append(f'<script type="application/json" id="{data_id}">{rows_json}</script>')
-    # site.js is deferred, so it has not run while this inline script is parsed. Wait for the
-    # document to finish: DOMContentLoaded fires after every deferred script has executed.
+    # site.js is deferred, so it has not run while this inline script is parsed. DOMContentLoaded
+    # fires after every deferred script has executed.
     ctl.append(f"""<script>document.addEventListener("DOMContentLoaded",function(){{
 initTable({{id:"{tid}",dataId:"{data_id}",cols:{len(columns)},
 noun:"{noun}",searchKeys:{json.dumps(search_keys)},row:{row_js}}});}});</script>""")
@@ -529,180 +622,69 @@ def main():
         lvl_dir[r["level"]][r["direction"]] += 1
     unresolved = sum(1 for r in fin if sp_display(r) == "not resolved")
 
+    heads = load("part1/headlines.json")
+    adj = load("part1/adjudicated.json")
+    manual = {k.rsplit("|", 1)[0] for k in adj if k.endswith("|manual")}
+    n_single = sum(1 for r in fin if r["pmid"] in manual)
+    n_extracted = sum(len(h.get("items") or []) for h in heads.values())
+    # Studies whose full text was read, and the subset judged eligible at that stage. These are two
+    # different numbers and the page must not conflate them.
+    n_extraction_studies = len(heads)
+    n_eligible = sum(1 for h in heads.values() if h.get("eligible"))
+    # L84 appears twice in the register (superseded, plus the invalid first run), so count distinct
+    # limitation numbers rather than heading lines.
+    n_limits = len(set(re.findall(r"^\*\*(L\d+)", open(J("docs", "limitations.md")).read(), re.M)))
+
+    pairs = load("part2/pairs.json")
+    attrs = load("part2/pair_attributes.json")
+    classified = {k: v for k, v in pairs.items()
+                  if (v.get("judgement") or {}).get("pair") in ("concordant", "discordant", "mixed", "indeterminate")}
+
     os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
     open(os.path.join(OUT, "assets", "site.css"), "w").write(CSS)
     open(os.path.join(OUT, "assets", "site.js"), "w").write(JS)
 
-    # ---------------- the report ----------------
-    rail = [("summary", "Summary"), ("map", "Evidence map"), ("results", "What the results say"),
-            ("pairs", "Drug pairs"), ("q4", "Companion vs laboratory"), ("methods", "Methods"),
-            ("limits", "Limitations"), ("verify", "Verify this work")]
-    b = ['<p class="dek">Systematic review</p>',
-         "<h1>What the published literature reports about animal-to-human concordance</h1>",
-         '<p class="lede">We read every study we could find that compares a finding in live '
-         'non-human animals with the corresponding finding in humans, and recorded what it found — '
-         'one result at a time, each with the sentence and page it came from.</p>',
-         figures([(f"{len(fin):,}", "results kept after checking"), (f"{n_stud}", "studies"),
-                  (f"{by_level['A-outcome-concordance']}", "level A · intervention outcomes"),
-                  (f"{by_level['B-toxicity-safety-concordance']}", "level B · toxicity and safety"),
-                  (f"{by_level['C-biological-similarity']}", "level C · disease biology")]),
-         '<h2 id="summary">Summary</h2>',
-         "<p>Across every result we kept, the animal finding matched the human finding "
-         f"<strong>{by_dir['animal-corresponded']:,}</strong> times, failed to match "
-         f"<strong>{by_dir['animal-did-not-correspond']}</strong> times, and was mixed "
-         f"<strong>{by_dir['mixed']}</strong> times.</p>",
-         '<div class="note"><div class="h">Why there is no headline percentage</div>'
-         "<p>Those counts are not a concordance rate and we do not report one. The studies do not "
-         "measure the same thing: they report concordance rates, sensitivities, correlation "
-         "coefficients, gene-overlap counts and qualitative similarity claims, across different "
-         "diseases and species. Pooling them would produce a number with no referent.</p>"
-         "<p>The literature is also selective about what gets published and about which comparisons "
-         "get made at all, so the balance above reflects what authors chose to report. Values are "
-         "grouped only where metric and unit match, and spreads are shown rather than averages.</p></div>",
-         '<div class="scroll"><table><caption>Results by evidence level, and how they came out.</caption>'
-         "<thead><tr><th>Evidence level</th><th class='num'>studies</th><th class='num'>results</th>"
-         "<th class='num'>corresponded</th><th class='num'>did not</th><th class='num'>mixed</th>"
-         "</tr></thead><tbody>"]
+    scalars = {"n_results": f"{len(fin):,}", "n_studies": f"{n_stud:,}",
+               "n_level_a": f"{by_level['A-outcome-concordance']:,}",
+               "n_level_b": f"{by_level['B-toxicity-safety-concordance']:,}",
+               "n_level_c": f"{by_level['C-biological-similarity']:,}",
+               "n_corresponded": f"{by_dir['animal-corresponded']:,}",
+               "n_not_corresponded": f"{by_dir['animal-did-not-correspond']:,}",
+               "n_mixed": f"{by_dir['mixed']:,}", "n_unresolved": f"{unresolved:,}",
+               "n_pairs": f"{len(classified):,}", "n_single_reviewer": f"{n_single:,}",
+               "n_extracted": f"{n_extracted:,}", "n_extraction_studies": f"{n_extraction_studies:,}",
+               "n_eligible": f"{n_eligible:,}",
+               "n_limitations": f"{n_limits:,}", "built_date": today()}
+
+    # ---------------- blocks the writer cannot type by hand ----------------
+    lt = ['<div class="scroll"><table><caption>Results by evidence level, and how they came out.'
+          "</caption><thead><tr><th>Evidence level</th><th class='num'>studies</th>"
+          "<th class='num'>results</th><th class='num'>corresponded</th><th class='num'>did not</th>"
+          "<th class='num'>mixed</th></tr></thead><tbody>"]
     for key, letter, label in LEVELS:
         rs = [r for r in fin if r["level"] == key]
         c = lvl_dir[key]
-        b.append(f"<tr><td><strong>{letter}</strong> — {label}</td>"
-                 f"<td class='num'>{len({r['pmid'] for r in rs})}</td><td class='num'>{len(rs):,}</td>"
-                 f"<td class='num'>{c['animal-corresponded']:,}</td>"
-                 f"<td class='num'>{c['animal-did-not-correspond']}</td>"
-                 f"<td class='num'>{c['mixed']}</td></tr>")
-    b.append("</tbody></table></div>")
-    b += ["<p>Most of the evidence is level C: how similar the biology looks, rather than what "
-          "happened when a disease was treated. That distribution is itself a finding about the "
-          "field — the comparison that matters most for drug development is the one made least "
-          "often.</p>",
+        lt.append(f"<tr><td><strong>{letter}</strong> — {label}</td>"
+                  f"<td class='num'>{len({r['pmid'] for r in rs})}</td><td class='num'>{len(rs):,}</td>"
+                  f"<td class='num'>{c['animal-corresponded']:,}</td>"
+                  f"<td class='num'>{c['animal-did-not-correspond']}</td>"
+                  f"<td class='num'>{c['mixed']}</td></tr>")
+    lt.append("</tbody></table></div>")
 
-          '<h2 id="map">Evidence map</h2>',
-          "<p>Where the evidence actually is. Each cell counts the distinct studies with a kept "
-          "result for that disease area and species; the superscript is the highest evidence level "
-          "present. Companion dogs and cats — client-owned animals with naturally occurring "
-          "disease — are kept separate from laboratory dogs and cats throughout.</p>",
-          heatmap(fin),
-          f'<p class="small">{unresolved:,} of {len(fin):,} results sit in the '
-          "<em>not resolved</em> column: the paper reported several species together, or the "
-          "species label is wrong. That column means the species could not be pinned down, not "
-          "that something was found. The grid is sparse by nature — most disease-area and species "
-          "combinations have never been studied this way.</p>",
-
-          '<h2 id="results">What the results say</h2>',
-          "<p>Every kept result is browsable: filter by evidence level, species, disease area or "
-          "direction, or search the findings themselves. Each row links to its study page, which "
-          "carries the quote and the page number the value came from.</p>",
-          f'<p><a href="results.html"><strong>Browse all {len(fin):,} results →</strong></a></p>',
-
-          '<h2 id="pairs">Dog and cat drug pairs</h2>',
-          "<p>For agents used both in companion animals with naturally occurring disease and in "
-          "people: does the veterinary evidence point the same way as the human evidence? "
-          "Concordance is concordant / (concordant + discordant); mixed and indeterminate pairs are "
-          "counted in the table and never dropped.</p>",
-          md(os.path.join(V04, "part2", "summary_v2.md")),
-          '<div class="note"><div class="h">How to read this</div>'
-          "<p>Most of these are human medicines later adopted in veterinary practice. The agreement "
-          "therefore mostly shows that veterinary medicine adopts drugs that already work — not "
-          "that animal evidence predicted the human result. “Discordant” is used only where all the "
-          "available evidence points the opposite way.</p></div>",
-          '<p><a href="pairs.html"><strong>Browse all classified pairs →</strong></a></p>',
-
-          '<h2 id="q4">Companion animals vs laboratory models</h2>',
-          "<p>For the same agent and condition, did the companion-animal evidence and the "
-          "laboratory-model evidence each match what happened in people?</p>",
-          md(os.path.join(V04, "part2", "q4_report.md")),
-          '<div class="note"><div class="h">What this cannot tell you</div>'
-          "<p>104 of the 108 pairs have a positive human result, and the laboratory literature is "
-          "almost uniformly positive (205 of 214 determinate laboratory sides). A body of evidence "
-          "that nearly always reads “it works” will agree with a mostly positive human record "
-          "automatically.</p>"
-          "<p>Only 4 pairs have a negative human result — the case where predictive value would "
-          "actually show — and there laboratory models matched 0 of 4 and companion animals 1 of 4. "
-          "This compares <em>agreement</em>, as the protocol asked. It says nothing about "
-          "prediction.</p></div>",
-          '<p class="small">The laboratory side of each pair is read from abstracts by a language '
-          "model. Audited against a stronger judge on a random sample, 79% of those reads were "
-          "fully correct (42 of 53), with errors dominated by including studies that should have "
-          "been excluded.</p>",
-
-          '<h2 id="methods">Methods</h2>',
-          "<h3>Eligibility</h3>",
-          "<p>A study is eligible if it reports a finding in live non-human animals alongside the "
-          "corresponding finding in humans, so that the two can be compared. Results are classified "
-          "by what is being compared: <strong>A</strong>, what happened when a disease was treated; "
-          "<strong>B</strong>, toxicity and safety; <strong>C</strong>, disease biology without an "
-          "intervention outcome. Animal-only results, animal-to-animal comparisons, in-vitro work, "
-          "and figures a paper quotes from another paper are not eligible, whatever they report.</p>",
-          "<h3>From search to result</h3>",
-          "<ol><li><strong>Retrieval.</strong> Citation chasing from known reviews plus themed "
-          "PubMed queries, run as two independent mechanisms so that coverage can be estimated.</li>"
-          "<li><strong>Screening</strong> in two stages, the second calibrated against hand-checked "
-          "anchor papers.</li>"
-          "<li><strong>Extraction</strong> from open-access full text. Every result is recorded with "
-          "the sentence it came from and the page that sentence is on; both are published with "
-          "it.</li>"
-          "<li><strong>Verification.</strong> A second model checks each extracted result against "
-          "the located page.</li>"
-          "<li><strong>Adjudication.</strong> Every result is then decided against the eligibility "
-          "rule above — including the results verification rejected, so that the checking step "
-          "cannot quietly remove evidence.</li></ol>",
-          "<p>Extraction, screening and verification are performed by language models under fixed "
-          "prompts; adjudication decides what appears here. Nothing on this site is summarised by a "
-          "model: the counts, rates and intervals are computed from the adjudicated records.</p>",
-          "<h3>Coverage of the literature</h3>",
-          md(os.path.join(V04, "retrieval", "recall.md")),
-          "<h3>How accurate is the checking?</h3>",
-          "<p>3,562 candidate results were extracted from 570 screened studies, of which "
-          f"{len(fin):,} results in {n_stud} studies survived adjudication. The two checking stages "
-          "disagree often enough to be worth reporting: of the results verification accepted, "
-          "<strong>34% were later dropped or corrected</strong>; of those it rejected, "
-          "<strong>10% were reinstated</strong>. That is why every result is adjudicated rather than "
-          "trusted to verification alone.</p>",
-          "<p>Roughly half the final results (769 of 1,494) were adjudicated by a single reviewer "
-          'who was not blinded to the provisional labels. Those are the results the '
-          '<a href="spotcheck.html">spot-check</a> deliberately oversamples.</p>',
-
-          '<h2 id="limits">Limitations</h2>',
-          "<p>The ones that bear on how these results should be read:</p>",
-          "<ul>"
-          "<li><strong>This is a large sample of the field, not a census.</strong> Capture–recapture "
-          "across the two search mechanisms estimates 33% coverage of the reachable eligible "
-          "literature (95% CI 26–46%), and because the mechanisms are not fully independent that is "
-          "an upper bound.</li>"
-          "<li><strong>Open-access full text only.</strong> Paywalled studies are absent, and the "
-          "veterinary side of the drug-pair analysis is largely read from abstracts.</li>"
-          "<li><strong>The results are not commensurable.</strong> Concordance rates, sensitivities, "
-          "correlations and gene-overlap counts are different quantities; they are grouped only "
-          "where metric and unit match, and never pooled.</li>"
-          "<li><strong>The literature is selective.</strong> Preclinical publishing favours positive "
-          "findings, and which comparisons get made at all is not random. This inflates apparent "
-          "agreement — most visibly in the companion-versus-laboratory comparison.</li>"
-          "<li><strong>Agreement is not prediction.</strong> Most drug pairs are human medicines "
-          "later adopted in veterinary practice, so the two sides are not independent tests of each "
-          "other.</li>"
-          "<li><strong>Part of the adjudication was single-reviewer and unblinded</strong>, and the "
-          "two adjudicators covered different studies, so agreement between them cannot be "
-          "measured.</li>"
-          f"<li><strong>Species labels are imperfect.</strong> {unresolved:,} of {len(fin):,} "
-          "results could not be resolved to one species, and a handful carry a label that is simply "
-          "wrong. In the evidence map, treat that column as unassigned rather than as a "
-          "finding.</li>"
-          "<li><strong>Regulatory status is read from US sources</strong>, and the review is "
-          "unregistered — PROSPERO does not accept preclinical or meta-research reviews.</li>"
-          "</ul>",
-          '<p class="small">A dated register of all 88 limitations recorded during the work, '
-          "including those superseded by later corrections, is kept in the "
-          '<a href="https://github.com/rohitium/animal-model-concordance">project repository</a> '
-          "along with the protocol, the data and the code that built this site.</p>",
-
-          '<h2 id="verify">Verify this work</h2>',
-          "<p>Because part of the adjudication was single-reviewer and unblinded, the review "
-          "publishes a fixed, seeded sample of its own results — each with its source, its page and "
-          "the sentence it came from — so that anyone can check it rather than take it on trust. "
-          "Forty items, about five minutes each.</p>",
-          '<p><a href="spotcheck.html"><strong>Open the spot-check →</strong></a></p>']
-    page("index.html", "Animal-model concordance: what the literature reports", "\n".join(b), rail=rail)
+    blocks = {
+        "figures": figures_block([
+            (f"{len(fin):,}", "results kept after checking"), (f"{n_stud}", "studies"),
+            (f"{by_level['A-outcome-concordance']}", "level A · intervention outcomes"),
+            (f"{by_level['B-toxicity-safety-concordance']}", "level B · toxicity and safety"),
+            (f"{by_level['C-biological-similarity']}", "level C · disease biology")]),
+        "level_table": "\n".join(lt),
+        "heatmap": heatmap(fin),
+        "pairs_strata": report_md(os.path.join(V04, "part2", "summary_v2.md")),
+        "q4_tables": report_md(os.path.join(V04, "part2", "q4_report.md")),
+        "recall": report_md(os.path.join(V04, "retrieval", "recall.md")),
+    }
+    body, sections, title = compose("report.md", scalars, blocks)
+    page("index.html", "Animal-model concordance: what the literature reports", body, rail=sections)
 
     # ---------------- results browser ----------------
     rows = []
@@ -726,23 +708,13 @@ def main():
             {"key": "sp", "label": "Species"}, {"key": "ar", "label": "Disease area"},
             {"key": "dr", "label": "Direction"}, {"key": "vn", "label": "Value", "num": True},
             {"key": "ti", "label": "Study"}]
-    b = ["<h1>Every result we kept</h1>",
-         f'<p class="lede">{len(fin):,} results from {n_stud} studies. Search the findings, sort any '
-         "column, or filter down to a species, a disease area or an evidence level. Each row links "
-         "to the study page, which carries the quote and the page it came from.</p>",
-         browser("results", "resultdata", json.dumps(rows, separators=(",", ":")), cols,
-                 [("lv", "Level"), ("sp", "Species"), ("ar", "Disease area"), ("dr", "Direction")],
-                 "results", ["st", "ti", "sp", "ar"], row_js),
-         '<p class="small">Level A: what happened when a disease was treated. B: toxicity and '
-         "safety. C: disease biology, without an intervention outcome. “Not resolved” species means "
-         "the paper reported several species together, or the label is wrong — not a finding.</p>"]
-    page("results.html", "Results", "\n".join(b))
+    body, _, title = compose("results.md", scalars, {
+        "results_table": browser("results", "resultdata", json.dumps(rows, separators=(",", ":")), cols,
+                                 [("lv", "Level"), ("sp", "Species"), ("ar", "Disease area"),
+                                  ("dr", "Direction")], "results", ["st", "ti", "sp", "ar"], row_js)})
+    page("results.html", title or "Results", body)
 
     # ---------------- pairs browser ----------------
-    pairs = load("part2/pairs.json")
-    attrs = load("part2/pair_attributes.json")
-    classified = {k: v for k, v in pairs.items()
-                  if (v.get("judgement") or {}).get("pair") in ("concordant", "discordant", "mixed", "indeterminate")}
     prow = []
     vclass = {"concordant": "ok", "discordant": "no", "mixed": "mid"}
     for k, v in classified.items():
@@ -760,32 +732,20 @@ def main():
              {"key": "ind", "label": "Veterinary indication"}, {"key": "vd", "label": "Verdict"},
              {"key": "vet", "label": "Veterinary"}, {"key": "hu", "label": "Human"},
              {"key": "ty", "label": "Type"}, {"key": "ti", "label": "Timing"}]
-    b = ["<h1>Dog and cat drug pairs</h1>",
-         f'<p class="lede">{len(classified)} agent-and-indication pairs used both in companion '
-         "animals with naturally occurring disease and in people, classified by whether the "
-         "veterinary and human evidence point the same way.</p>",
-         browser("pairs", "pairdata", json.dumps(prow, separators=(",", ":")), pcols,
-                 [("vd", "Verdict"), ("sp", "Species"), ("ty", "Type"), ("ti", "Timing")],
-                 "pairs", ["ag", "ind", "vet", "hu"], prow_js),
-         '<p class="small">“Discordant” is used only where all the available evidence points the '
-         "opposite way; “indeterminate” means the evidence on one side was not strong enough to "
-         "call, and those pairs are kept in view rather than dropped. Timing says whether the drug "
-         "was approved in humans before or after the veterinary evidence — most were approved "
-         'first. The strata and confidence intervals are on the <a href="index.html#pairs">report '
-         "page</a>.</p>"]
-    page("pairs.html", "Dog and cat drug pairs", "\n".join(b))
+    body, _, title = compose("pairs.md", scalars, {
+        "pairs_table": browser("pairs", "pairdata", json.dumps(prow, separators=(",", ":")), pcols,
+                               [("vd", "Verdict"), ("sp", "Species"), ("ty", "Type"), ("ti", "Timing")],
+                               "pairs", ["ag", "ind", "vet", "hu"], prow_js)})
+    page("pairs.html", title or "Dog and cat drug pairs", body)
 
     # ---------------- study pages ----------------
     for pm, rs in studies.items():
         r0 = rs[0]
-        sb = [f'<p class="dek">Study</p><h1>{e(r0.get("title") or pm)}</h1>',
-              f'<p class="small">{e(r0.get("year"))} · {e(r0.get("design"))} · peer reviewed: '
-              f'{e(r0.get("peer_reviewed"))} · record {e(pm)} · '
-              f'<a href="https://pubmed.ncbi.nlm.nih.gov/{e(pm)}/">PubMed</a> · '
-              f'<a href="../results.html?q={e((r0.get("title") or "")[:40])}">in the results table</a></p>',
-              f"<p>{len(rs)} kept result{'s' if len(rs) != 1 else ''}. Each was extracted from the "
-              "full text, checked against the located page, and adjudicated against the review's "
-              "definition of an animal-versus-human comparison.</p>"]
+        header = (f'<p class="dek">Study</p><h1>{e(r0.get("title") or pm)}</h1>'
+                  f'<p class="small">{e(r0.get("year"))} · {e(r0.get("design"))} · peer reviewed: '
+                  f'{e(r0.get("peer_reviewed"))} · record {e(pm)} · '
+                  f'<a href="https://pubmed.ncbi.nlm.nih.gov/{e(pm)}/">PubMed</a></p>')
+        rblocks = []
         for r in rs:
             meta = [dirtag(r["direction"]), f'level {e((r["level"] or "?")[:1])}',
                     e(sp_display(r)), e(area_display(r))]
@@ -794,45 +754,22 @@ def main():
                 meta.append(f"<strong>{e(r.get('value'))}{unit}</strong>")
             if r.get("denominator"):
                 meta.append(f"n {e(r.get('numerator'))}/{e(r.get('denominator'))}")
-            sb += [f"<h3>{t(r['statement'])}</h3>",
-                   f'<p class="small">' + " · ".join(meta) + "</p>",
-                   f"<blockquote>“{e(r.get('quote'))}”<br><span class='small'>page "
-                   f"{e(r.get('pdf_page'))}</span></blockquote>"]
-        sb.append('<p class="small">Full texts are copyrighted and are not republished here. The '
-                  "quote is the evidence for the extracted value, and the page number lets you "
-                  "check it in the original.</p>")
-        page(f"study/{pm}.html", (r0.get("title") or pm)[:80], "\n".join(sb), depth=1)
+            rblocks.append(f"<h3>{t(r['statement'])}</h3>"
+                           f'<p class="small">' + " · ".join(meta) + "</p>"
+                           f"<blockquote>“{e(r.get('quote'))}”<br><span class='small'>page "
+                           f"{e(r.get('pdf_page'))}</span></blockquote>")
+        body, _, _ = compose("study.md", {**scalars, "n_results": str(len(rs)),
+                                          "result_word": "result" if len(rs) == 1 else "results"},
+                             {"study_header": header, "study_results": "\n".join(rblocks)})
+        page(f"study/{pm}.html", (r0.get("title") or pm)[:80], body, depth=1)
 
     # ---------------- spot-check ----------------
     items = load("part1/spotcheck.json", [])
-    b = ["<h1>Spot-check this review</h1>",
-         '<p class="lede">Roughly half the results here were adjudicated by a single reviewer who '
-         "was not blinded to the pipeline's provisional labels. Rather than ask you to take that on "
-         "trust, this page publishes a fixed sample of results — with the source, the page and the "
-         "sentence for each — so anyone can verify them independently.</p>",
-         "<h2>What to check</h2>",
-         "<p>Open the paper, find the quoted sentence, then ask four questions <strong>in "
-         "order</strong> and stop at the first failure:</p>",
-         "<ol><li>Is the quote really in this paper, and is it this paper's own result rather than a "
-         "figure it quotes from someone else?</li>"
-         "<li>Does the statement say what the quote says — no more, no less?</li>"
-         "<li>Do the value, unit and denominator match the quote, and is the rate the right way "
-         "round?</li>"
-         "<li>Is this genuinely an animal-versus-human comparison, with the right species and the "
-         "right evidence level?</li></ol>",
-         "<p><strong>Not failures:</strong> paraphrase that preserves the meaning, rounding, or a "
-         "page number one off from where you find the sentence. <strong>Failures worth reporting "
-         "loudly:</strong> questions 1 and 4 — those mean the result should never have been kept, "
-         "and they tend to come in classes rather than singly.</p>",
-         '<p class="small">Two samples, drawn by fixed seeds so they can be redrawn and audited. '
-         "Sample A is random across all kept results; sample B is drawn only from the "
-         "single-reviewer studies, and is the one to do first. Reporting which question failed is "
-         "more useful than prose: it says whether to re-extract, re-adjudicate a category, or "
-         "correct one row.</p>"]
+    sb = []
     for s, label in (("A", "Sample A — random across all kept results"),
                      ("B", "Sample B — single-reviewer studies")):
         rows_s = [x for x in items if x["sample"] == s]
-        b.append(f'<h2 id="sample{s}">{e(label)} ({len(rows_s)})</h2>')
+        sb.append(f'<h2 id="sample{s}">{e(label)} ({len(rows_s)})</h2>')
         for it in rows_s:
             ln = " · ".join(f'<a href="{e(u)}">{e(lbl)}</a>' for lbl, u in it["links"])
             val = ""
@@ -841,18 +778,17 @@ def main():
                 val = f" · <strong>{e(it['value'])}{unit}</strong>"
                 if it["denominator"]:
                     val += f" (n {e(it['numerator'])}/{e(it['denominator'])})"
-            b += [f"<h3>{e(s)}{it['n']}. {e((it['title'] or it['pmid'])[:110])}</h3>",
-                  f'<p class="small">{e(it["year"])} · {e(it["journal"] or "—")} · {ln} · '
-                  f'<a href="study/{e(it["pmid"])}.html">study page</a> · <strong>page '
-                  f'{e(it["pdf_page"])}</strong> · adjudication: '
-                  f'{"single reviewer" if it["adjudicator"] == "hand" else "model"}</p>',
-                  f"<p>{t(it['statement'])}</p>",
-                  f'<p class="small">species {e(it["species"])} · level {e(it["level"])} · '
-                  f'{dirtag(it["direction"])}{val}</p>',
-                  f"<blockquote>“{e(it['quote'])}”</blockquote>"]
-    b.append('<p class="small">Found something wrong? The item number, the question that failed and '
-             "one line of what you saw is enough to act on — that is what the check is for.</p>")
-    page("spotcheck.html", "Spot-check this review", "\n".join(b))
+            sb.append(f"<h3>{e(s)}{it['n']}. {e((it['title'] or it['pmid'])[:110])}</h3>"
+                      f'<p class="small">{e(it["year"])} · {e(it["journal"] or "—")} · {ln} · '
+                      f'<a href="study/{e(it["pmid"])}.html">study page</a> · <strong>page '
+                      f'{e(it["pdf_page"])}</strong> · adjudication: '
+                      f'{"single reviewer" if it["adjudicator"] == "hand" else "model"}</p>'
+                      f"<p>{t(it['statement'])}</p>"
+                      f'<p class="small">species {e(it["species"])} · level {e(it["level"])} · '
+                      f'{dirtag(it["direction"])}{val}</p>'
+                      f"<blockquote>“{e(it['quote'])}”</blockquote>")
+    body, _, title = compose("spotcheck.md", scalars, {"spotcheck_items": "\n".join(sb)})
+    page("spotcheck.html", title or "Spot-check this review", body)
 
     # ---------------- api ----------------
     os.makedirs(os.path.join(OUT, "api"), exist_ok=True)
@@ -863,6 +799,9 @@ def main():
                "pairs_classified": len(classified)},
               open(os.path.join(OUT, "api", "summary.json"), "w"), indent=1)
     print(f"built {OUT}: {len(fin)} results, {n_stud} study pages, {len(classified)} pairs")
+    print(f"tokens: extracted={n_extracted} extraction_studies={n_extraction_studies} "
+          f"eligible={n_eligible} single_reviewer={n_single} limitations={n_limits} "
+          f"unresolved={unresolved}")
 
 
 if __name__ == "__main__":
