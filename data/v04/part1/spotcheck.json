@@ -35,6 +35,39 @@
  {
   "n": 2,
   "sample": "A",
+  "id": "28945830-3",
+  "pmid": "28945830",
+  "title": "Patient-derived xenografts effectively capture responses to oncology therapy in a heterogeneous cohort of patients with solid tumors",
+  "year": 2017,
+  "journal": "Annals of Oncology",
+  "adjudicator": "hand",
+  "statement": "The positive predictive value (PPV) for PDX drug screens was 85% (80/94).",
+  "value": 85,
+  "unit": "percent",
+  "numerator": 80,
+  "denominator": 94,
+  "species": "mouse",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "This resulted in positive and negative predictive values (PPVs and NPVs) of 85% and 91%, respectively. ... Table 1. Values and confidence intervals for parameters of analytical and clinical accuracy for PDX model drug screening ... Overall ... PPV 85% (80/94) 76%-91%",
+  "pdf_page": 7,
+  "pdf_local": "data/raw/fulltext/28945830.pdf",
+  "study_page": "study/28945830.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/28945830/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1093/annonc/mdx416"
+   ]
+  ]
+ },
+ {
+  "n": 3,
+  "sample": "A",
   "id": "40210624-5",
   "pmid": "40210624",
   "title": "Plasma-to-tumour tissue integrated proteomics using nano-omics for biomarker discovery in glioblastoma",
@@ -66,7 +99,7 @@
   ]
  },
  {
-  "n": 3,
+  "n": 4,
   "sample": "A",
   "id": "36253443-0",
   "pmid": "36253443",
@@ -99,7 +132,7 @@
   ]
  },
  {
-  "n": 4,
+  "n": 5,
   "sample": "A",
   "id": "41442035-1",
   "pmid": "41442035",
@@ -132,7 +165,7 @@
   ]
  },
  {
-  "n": 5,
+  "n": 6,
   "sample": "A",
   "id": "31921858-0",
   "pmid": "31921858",
@@ -165,7 +198,7 @@
   ]
  },
  {
-  "n": 6,
+  "n": 7,
   "sample": "A",
   "id": "39055259-4",
   "pmid": "39055259",
@@ -198,7 +231,7 @@
   ]
  },
  {
-  "n": 7,
+  "n": 8,
   "sample": "A",
   "id": "11029269-1",
   "pmid": "11029269",
@@ -231,7 +264,7 @@
   ]
  },
  {
-  "n": 8,
+  "n": 9,
   "sample": "A",
   "id": "31945134-4",
   "pmid": "31945134",
@@ -264,7 +297,40 @@
   ]
  },
  {
-  "n": 9,
+  "n": 10,
+  "sample": "A",
+  "id": "28945830-7",
+  "pmid": "28945830",
+  "title": "Patient-derived xenografts effectively capture responses to oncology therapy in a heterogeneous cohort of patients with solid tumors",
+  "year": 2017,
+  "journal": "Annals of Oncology",
+  "adjudicator": "hand",
+  "statement": "When treatment followed other therapies received after tumor collection, the sensitivity of PDX drug screens was 96% (51/53).",
+  "value": 96,
+  "unit": "percent",
+  "numerator": 51,
+  "denominator": 53,
+  "species": "mouse",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "Table 1. Values and confidence intervals for parameters of analytical and clinical accuracy for PDX model drug screening ... Treatment follows other therapies received after tumor collection ... Sensitivity 96% (51/53) 86%-99%",
+  "pdf_page": 8,
+  "pdf_local": "data/raw/fulltext/28945830.pdf",
+  "study_page": "study/28945830.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/28945830/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1093/annonc/mdx416"
+   ]
+  ]
+ },
+ {
+  "n": 11,
   "sample": "A",
   "id": "40691154-0",
   "pmid": "40691154",
@@ -297,7 +363,7 @@
   ]
  },
  {
-  "n": 10,
+  "n": 12,
   "sample": "A",
   "id": "29858598-6",
   "pmid": "29858598",
@@ -330,7 +396,7 @@
   ]
  },
  {
-  "n": 11,
+  "n": 13,
   "sample": "A",
   "id": "37953224-7",
   "pmid": "37953224",
@@ -363,7 +429,7 @@
   ]
  },
  {
-  "n": 12,
+  "n": 14,
   "sample": "A",
   "id": "41822479-5",
   "pmid": "41822479",
@@ -396,7 +462,7 @@
   ]
  },
  {
-  "n": 13,
+  "n": 15,
   "sample": "A",
   "id": "24886351-3",
   "pmid": "24886351",
@@ -429,7 +495,7 @@
   ]
  },
  {
-  "n": 14,
+  "n": 16,
   "sample": "A",
   "id": "38168850-1",
   "pmid": "38168850",
@@ -462,7 +528,7 @@
   ]
  },
  {
-  "n": 15,
+  "n": 17,
   "sample": "A",
   "id": "41125606-0",
   "pmid": "41125606",
@@ -495,7 +561,7 @@
   ]
  },
  {
-  "n": 16,
+  "n": 18,
   "sample": "A",
   "id": "30008848-5",
   "pmid": "30008848",
@@ -528,7 +594,7 @@
   ]
  },
  {
-  "n": 17,
+  "n": 19,
   "sample": "A",
   "id": "34558834-6",
   "pmid": "34558834",
@@ -561,7 +627,7 @@
   ]
  },
  {
-  "n": 18,
+  "n": 20,
   "sample": "A",
   "id": "32982716-0",
   "pmid": "32982716",
@@ -594,7 +660,7 @@
   ]
  },
  {
-  "n": 19,
+  "n": 21,
   "sample": "A",
   "id": "42581230-1",
   "pmid": "42581230",
@@ -627,7 +693,7 @@
   ]
  },
  {
-  "n": 20,
+  "n": 22,
   "sample": "A",
   "id": "24220145-7",
   "pmid": "24220145",
@@ -660,7 +726,7 @@
   ]
  },
  {
-  "n": 21,
+  "n": 23,
   "sample": "A",
   "id": "31381180-2",
   "pmid": "31381180",
@@ -693,7 +759,7 @@
   ]
  },
  {
-  "n": 22,
+  "n": 24,
   "sample": "A",
   "id": "28149283-0",
   "pmid": "28149283",
@@ -726,7 +792,7 @@
   ]
  },
  {
-  "n": 23,
+  "n": 25,
   "sample": "A",
   "id": "22355543-5",
   "pmid": "22355543",
@@ -759,7 +825,7 @@
   ]
  },
  {
-  "n": 24,
+  "n": 26,
   "sample": "A",
   "id": "25409824-6",
   "pmid": "25409824",
@@ -792,7 +858,7 @@
   ]
  },
  {
-  "n": 25,
+  "n": 27,
   "sample": "A",
   "id": "37208698-0",
   "pmid": "37208698",
@@ -825,7 +891,7 @@
   ]
  },
  {
-  "n": 26,
+  "n": 28,
   "sample": "A",
   "id": "31921858-5",
   "pmid": "31921858",
@@ -858,7 +924,7 @@
   ]
  },
  {
-  "n": 27,
+  "n": 29,
   "sample": "A",
   "id": "28935874-6",
   "pmid": "28935874",
@@ -891,7 +957,7 @@
   ]
  },
  {
-  "n": 28,
+  "n": 30,
   "sample": "A",
   "id": "36345939-7",
   "pmid": "36345939",
@@ -920,72 +986,6 @@
    [
     "DOI",
     "https://doi.org/10.1172/jci.insight.159751"
-   ]
-  ]
- },
- {
-  "n": 29,
-  "sample": "A",
-  "id": "35511361-0",
-  "pmid": "35511361",
-  "title": "Cross-species single-cell transcriptomic analysis reveals divergence of cell composition and functions in mammalian ileum epithelium",
-  "year": 2022,
-  "journal": "Cell Regeneration",
-  "adjudicator": "hand",
-  "statement": "The expression of drug metabolism genes in mouse ileum showed a correlation of 0.71 with human ileum.",
-  "value": 0.71,
-  "unit": "correlation",
-  "numerator": null,
-  "denominator": null,
-  "species": "mouse",
-  "level": "C",
-  "direction": "animal-corresponded",
-  "disease_area": "cross-cutting-toxicology",
-  "quote": "The expression of drug metabolism genes in mouse ileum showed the highest correlation with that in human (R=0.71), whereas the ones in other species showed lower correlation (R = 0.45-0.48).",
-  "pdf_page": 7,
-  "pdf_local": "data/raw/fulltext/35511361.pdf",
-  "study_page": "study/35511361.html",
-  "links": [
-   [
-    "PubMed",
-    "https://pubmed.ncbi.nlm.nih.gov/35511361/"
-   ],
-   [
-    "DOI",
-    "https://doi.org/10.1186/s13619-022-00118-7"
-   ]
-  ]
- },
- {
-  "n": 30,
-  "sample": "A",
-  "id": "28422076-5",
-  "pmid": "28422076",
-  "title": "ZeGlobalTox: An Innovative Approach to Address Organ Drug Toxicity Using Zebrafish",
-  "year": 2017,
-  "journal": "International Journal of Molecular Sciences",
-  "adjudicator": "model",
-  "statement": "The ZeGlobalTox assay showed a specificity of 100% for neurotoxicity.",
-  "value": 100.0,
-  "unit": "percent",
-  "numerator": null,
-  "denominator": null,
-  "species": "zebrafish",
-  "level": "A",
-  "direction": "animal-corresponded",
-  "disease_area": "neurology",
-  "quote": "Specificity\t90%\t100%\t77%\t89%",
-  "pdf_page": 10,
-  "pdf_local": "data/raw/fulltext/28422076.pdf",
-  "study_page": "study/28422076.html",
-  "links": [
-   [
-    "PubMed",
-    "https://pubmed.ncbi.nlm.nih.gov/28422076/"
-   ],
-   [
-    "DOI",
-    "https://doi.org/10.3390/ijms18040864"
    ]
   ]
  },

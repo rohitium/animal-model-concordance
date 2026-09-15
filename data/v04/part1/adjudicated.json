@@ -73024,5 +73024,1363 @@
   "missing": [],
   "model": "manual: reviewing agent (Claude Opus 5, in-session)",
   "date": "2026-09-14"
+ },
+ "17936056|manual": {
+  "kind": "manual",
+  "decisions": {
+   "17936056-0": {
+    "id": "17936056-0",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "None of the 240 antifibrotic compounds shown to inhibit fibrosis in the bleomycin animal model are currently used in the clinical management of idiopathic pulmonary fibrosis.",
+     "value": 0,
+     "unit": "count",
+     "numerator": 0,
+     "denominator": 240,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "respiratory",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 1
+    },
+    "rationale": "Animal-vs-human translation failure: compounds effective in the bleomycin model, none effective in IPF patients."
+   },
+   "17936056-1": {
+    "id": "17936056-1",
+    "decision": "drop",
+    "drop_reason": "Restates 17936056-0 qualitatively from a later page; same finding counted twice.",
+    "corrected": {
+     "statement": "None of the drugs that showed comparable success in the bleomycin animal model have shown comparable success in patients.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "respiratory",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 11
+    },
+    "rationale": "Restates 17936056-0 qualitatively from a later page; same finding counted twice."
+   },
+   "17936056-2": {
+    "id": "17936056-2",
+    "decision": "drop",
+    "drop_reason": "Human RCT result (NAC in IFIGENIA) with no animal comparison in the statement.",
+    "corrected": {
+     "statement": "The IFIGENIA study found a small but significant delay of functional deterioration over one year with NAC treatment compared to placebo.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "other-species",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "respiratory",
+     "level": "A-outcome-concordance",
+     "direction": "mixed",
+     "pdf_page": 12
+    },
+    "rationale": "Human RCT result (NAC in IFIGENIA) with no animal comparison in the statement."
+   },
+   "17936056-3": {
+    "id": "17936056-3",
+    "decision": "drop",
+    "drop_reason": "Human trial termination (INSPIRE) with no animal comparison.",
+    "corrected": {
+     "statement": "The INSPIRE trial, investigating the effect of interferon-1β, was terminated in early 2007 because of inefficacy in an interim analysis.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "other-species",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "respiratory",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 12
+    },
+    "rationale": "Human trial termination (INSPIRE) with no animal comparison."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "18175748|manual": {
+  "kind": "manual",
+  "decisions": {
+   "18175748-1": {
+    "id": "18175748-1",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Vitamin C supplementation blunted training-induced VO2max gains almost identically in rats (17.0% to 4.7%) and in men (22.0% to 10.8%).",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "rat",
+     "model_type": "healthy",
+     "disease_area": "cross-cutting-physiology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Paired single-species arms recast as one comparison, as the paper states an almost-identical result in both species."
+   },
+   "18175748-0": {
+    "id": "18175748-0",
+    "decision": "drop",
+    "drop_reason": "Rat-only endurance effect; superseded by the recast comparison in 18175748-1.",
+    "corrected": {
+     "statement": "Vitamin C administration significantly hampered endurance capacity in rats, with running time increasing by 26.5% in supplemented animals compared to 186.7% in unsupplemented animals.",
+     "value": 26.5,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "rat",
+     "model_type": "healthy",
+     "disease_area": "new",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 4
+    },
+    "rationale": "Rat-only endurance effect; superseded by the recast comparison in 18175748-1."
+   },
+   "18175748-2": {
+    "id": "18175748-2",
+    "decision": "drop",
+    "drop_reason": "Human-only VO2max value; superseded by the recast comparison.",
+    "corrected": {
+     "statement": "Training increased VO2max by 10.8% in vitamin C supplemented men.",
+     "value": 10.8,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "healthy",
+     "disease_area": "new",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 4
+    },
+    "rationale": "Human-only VO2max value; superseded by the recast comparison."
+   },
+   "18175748-3": {
+    "id": "18175748-3",
+    "decision": "drop",
+    "drop_reason": "Rat-only VO2max value; superseded by the recast comparison.",
+    "corrected": {
+     "statement": "Training increased VO2max by 17.0% in unsupplemented rats.",
+     "value": 17.0,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "rat",
+     "model_type": "healthy",
+     "disease_area": "new",
+     "level": "A-outcome-concordance",
+     "direction": "not-applicable",
+     "pdf_page": 4
+    },
+    "rationale": "Rat-only VO2max value; superseded by the recast comparison."
+   },
+   "18175748-4": {
+    "id": "18175748-4",
+    "decision": "drop",
+    "drop_reason": "Rat-only VO2max value; superseded by the recast comparison.",
+    "corrected": {
+     "statement": "Training increased VO2max by 4.7% in vitamin C supplemented rats.",
+     "value": 4.7,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "rat",
+     "model_type": "healthy",
+     "disease_area": "new",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 4
+    },
+    "rationale": "Rat-only VO2max value; superseded by the recast comparison."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "15508657|manual": {
+  "kind": "manual",
+  "decisions": {
+   "15508657-0": {
+    "id": "15508657-0",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The paper found that excessive ventilation rates significantly decreased coronary perfusion pressures and survival rates in pigs, corresponding to observations of hyperventilation in human CPR patients.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "pig-minipig",
+     "model_type": "induced",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Genuine pig-to-human correspondence; species was grouped but the animal side is pig only."
+   },
+   "15508657-1": {
+    "id": "15508657-1",
+    "decision": "drop",
+    "drop_reason": "Pig-only survival rate with no human comparison in the statement.",
+    "corrected": {
+     "statement": "The survival rate in pigs ventilated at 12 breaths/min with 100% oxygen was 86% (6 out of 7).",
+     "value": 0.86,
+     "unit": "percent",
+     "numerator": 6,
+     "denominator": 7,
+     "species": "pig-minipig",
+     "model_type": "induced",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Pig-only survival rate with no human comparison in the statement."
+   },
+   "15508657-2": {
+    "id": "15508657-2",
+    "decision": "drop",
+    "drop_reason": "Pig-only survival rate.",
+    "corrected": {
+     "statement": "The survival rate in pigs ventilated at 30 breaths/min with 100% oxygen was 17% (1 out of 7).",
+     "value": 0.17,
+     "unit": "percent",
+     "numerator": 1,
+     "denominator": 7,
+     "species": "pig-minipig",
+     "model_type": "induced",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 4
+    },
+    "rationale": "Pig-only survival rate."
+   },
+   "15508657-3": {
+    "id": "15508657-3",
+    "decision": "drop",
+    "drop_reason": "Pig-only survival rate.",
+    "corrected": {
+     "statement": "The survival rate in pigs ventilated at 30 breaths/min with 5% CO2 and 95% oxygen was 17% (1 out of 7).",
+     "value": 0.17,
+     "unit": "percent",
+     "numerator": 1,
+     "denominator": 7,
+     "species": "pig-minipig",
+     "model_type": "induced",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 4
+    },
+    "rationale": "Pig-only survival rate."
+   },
+   "15508657-4": {
+    "id": "15508657-4",
+    "decision": "drop",
+    "drop_reason": "Human-only ventilation rate.",
+    "corrected": {
+     "statement": "The average ventilation rate for 13 human patients receiving CPR was 30 breaths/min.",
+     "value": 30,
+     "unit": "count",
+     "numerator": null,
+     "denominator": 13,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "not-applicable",
+     "pdf_page": 1
+    },
+    "rationale": "Human-only ventilation rate."
+   },
+   "15508657-5": {
+    "id": "15508657-5",
+    "decision": "drop",
+    "drop_reason": "Human-only survival count.",
+    "corrected": {
+     "statement": "No human patient survived among the 13 consecutive adults receiving CPR.",
+     "value": 0,
+     "unit": "percent",
+     "numerator": 0,
+     "denominator": 13,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "not-applicable",
+     "pdf_page": 1
+    },
+    "rationale": "Human-only survival count."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "18250315|manual": {
+  "kind": "manual",
+  "decisions": {
+   "18250315-0": {
+    "id": "18250315-0",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Lithium delayed progression in both G93A mice (mean survival 110.8 to 148 days) and ALS patients (no deaths and slower Norris/ALSFRS-R decline over 15 months).",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Paired arms recast as one comparison: the paper reports lithium in G93A mice alongside its ALS patient cohort."
+   },
+   "18250315-1": {
+    "id": "18250315-1",
+    "decision": "drop",
+    "drop_reason": "Mouse-only disease-duration effect; superseded by the recast comparison.",
+    "corrected": {
+     "statement": "Lithium treatment increased disease duration in G93A mice by more than 300% compared with saline-treated G93A mice.",
+     "value": 300.0,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Mouse-only disease-duration effect; superseded by the recast comparison."
+   },
+   "18250315-2": {
+    "id": "18250315-2",
+    "decision": "drop",
+    "drop_reason": "Human-only survival statement.",
+    "corrected": {
+     "statement": "All patients treated with lithium were alive at the end of the 15-month study.",
+     "value": 100.0,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Human-only survival statement."
+   },
+   "18250315-3": {
+    "id": "18250315-3",
+    "decision": "drop",
+    "drop_reason": "Human-only mortality rate.",
+    "corrected": {
+     "statement": "29% of subjects receiving riluzole only did not survive during the 15-month study.",
+     "value": 29.0,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Human-only mortality rate."
+   },
+   "18250315-4": {
+    "id": "18250315-4",
+    "decision": "drop",
+    "drop_reason": "Human-only Norris score decrement; verifier also could not locate the value.",
+    "corrected": {
+     "statement": "The mean decrement in the normalized Norris score was 46.1% in patients receiving riluzole only.",
+     "value": 46.1,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Human-only Norris score decrement; verifier also could not locate the value."
+   },
+   "18250315-5": {
+    "id": "18250315-5",
+    "decision": "drop",
+    "drop_reason": "Human-only Norris score decrement; verifier also could not locate the value.",
+    "corrected": {
+     "statement": "The mean decrement in the normalized Norris score was 10.6% in patients receiving lithium.",
+     "value": 10.6,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Human-only Norris score decrement; verifier also could not locate the value."
+   },
+   "18250315-6": {
+    "id": "18250315-6",
+    "decision": "drop",
+    "drop_reason": "Human-only ALSFRS-R decrement; verifier also could not locate the value.",
+    "corrected": {
+     "statement": "The decrease in the normalized ALSFRS-R was 39.8% in patients receiving riluzole only.",
+     "value": 39.8,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Human-only ALSFRS-R decrement; verifier also could not locate the value."
+   },
+   "18250315-7": {
+    "id": "18250315-7",
+    "decision": "drop",
+    "drop_reason": "Human-only ALSFRS-R decrement.",
+    "corrected": {
+     "statement": "The decrease in the normalized ALSFRS-R was 14.3% in patients receiving lithium.",
+     "value": 14.3,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Human-only ALSFRS-R decrement."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "10858325|manual": {
+  "kind": "manual",
+  "decisions": {
+   "10858325-0": {
+    "id": "10858325-0",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The raised CEV adduct levels observed in experimental animals are of a magnitude that is similar to the background level in nonsmoking humans.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "cross-cutting-toxicology",
+     "level": "C-biological-similarity",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "Animal-vs-human comparison of internal dose, not a toxicity outcome, so level C rather than A."
+   },
+   "10858325-1": {
+    "id": "10858325-1",
+    "decision": "drop",
+    "drop_reason": "Human background adduct level only; species label (non-human-primate) is also wrong.",
+    "corrected": {
+     "statement": "The background level of CEV in nonsmoking humans is about 40 pmol/g of globin.",
+     "value": 40,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "non-human-primate",
+     "model_type": "healthy",
+     "disease_area": "cross-cutting-toxicology",
+     "level": "A-outcome-concordance",
+     "direction": "not-applicable",
+     "pdf_page": 5
+    },
+    "rationale": "Human background adduct level only; species label (non-human-primate) is also wrong."
+   },
+   "10858325-2": {
+    "id": "10858325-2",
+    "decision": "drop",
+    "drop_reason": "Rat observed-versus-expected adduct levels; an animal-only internal comparison.",
+    "corrected": {
+     "statement": "The expected adduct levels in rats (Expt I) after 72 days of feeding were 56 pmol/g (95% confidence interval 28-112 pmol/g), compared to observed levels of 138 pmol/g (95% confidence interval 96-180 pmol/g).",
+     "value": 56,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "rat",
+     "model_type": "healthy",
+     "disease_area": "cross-cutting-toxicology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 5
+    },
+    "rationale": "Rat observed-versus-expected adduct levels; an animal-only internal comparison."
+   },
+   "10858325-3": {
+    "id": "10858325-3",
+    "decision": "drop",
+    "drop_reason": "Rat observed-versus-expected adduct levels; animal-only.",
+    "corrected": {
+     "statement": "The expected adduct levels in rats (Expt II) after 30 days of feeding were 42 pmol/g (95% confidence interval 21-84 pmol/g), compared to observed levels of 61 pmol/g (95% confidence interval 25-99 pmol/g).",
+     "value": 42,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "rat",
+     "model_type": "healthy",
+     "disease_area": "cross-cutting-toxicology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "Rat observed-versus-expected adduct levels; animal-only."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "14519650|manual": {
+  "kind": "manual",
+  "decisions": {
+   "14519650-0": {
+    "id": "14519650-0",
+    "decision": "drop",
+    "drop_reason": "In vitro cell line model: not a live non-human animal, so out of scope whatever it predicts.",
+    "corrected": {
+     "statement": "The in vitro cell line model was predictive for non-small cell lung cancer.",
+     "value": -0.65,
+     "unit": "correlation",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "In vitro cell line model: not a live non-human animal, so out of scope whatever it predicts."
+   },
+   "14519650-1": {
+    "id": "14519650-1",
+    "decision": "drop",
+    "drop_reason": "In vitro cell line model; out of scope.",
+    "corrected": {
+     "statement": "The in vitro cell line model was predictive for breast cancer when considering overall Phase II activity in the other three tumor types combined.",
+     "value": -0.64,
+     "unit": "correlation",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "In vitro cell line model; out of scope."
+   },
+   "14519650-2": {
+    "id": "14519650-2",
+    "decision": "drop",
+    "drop_reason": "In vitro cell line model; out of scope.",
+    "corrected": {
+     "statement": "The in vitro cell line model was predictive for ovarian cancer when considering overall Phase II activity in the other three tumor types combined.",
+     "value": -0.63,
+     "unit": "correlation",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "In vitro cell line model; out of scope."
+   },
+   "14519650-3": {
+    "id": "14519650-3",
+    "decision": "drop",
+    "drop_reason": "In vitro cell line model; out of scope.",
+    "corrected": {
+     "statement": "The in vitro cell line model was predictive for all four tumor types together.",
+     "value": -0.73,
+     "unit": "correlation",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "In vitro cell line model; out of scope."
+   },
+   "14519650-4": {
+    "id": "14519650-4",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The mouse allograft model was not predictive.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 1
+    },
+    "rationale": "Live mouse allograft model against Phase II clinical activity: a genuine animal-vs-human predictive comparison."
+   },
+   "14519650-5": {
+    "id": "14519650-5",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The human xenograft model was not predictive for breast cancer.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 1
+    },
+    "rationale": "Xenograft is a live mouse host; qualitative comparisons are evidence (L66/L68), so the verifier exclusion is overridden."
+   },
+   "14519650-6": {
+    "id": "14519650-6",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The human xenograft model was not predictive for colon cancer.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 1
+    },
+    "rationale": "As above, for colon cancer; a separate tumour type, not a duplicate."
+   },
+   "14519650-7": {
+    "id": "14519650-7",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The human xenograft model was predictive for non-small cell lung and ovarian cancers when panels of xenografts were used.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Xenograft panels predictive for NSCLC and ovarian cancer; species is the mouse host."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "12642353|manual": {
+  "kind": "manual",
+  "decisions": {
+   "12642353-0": {
+    "id": "12642353-0",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Overall, 22 out of 23 compounds that cause repolarization abnormalities in humans were positive in the zebrafish assay.",
+     "value": 0.9565,
+     "unit": "proportion",
+     "numerator": 22,
+     "denominator": 23,
+     "species": "zebrafish",
+     "model_type": "healthy",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "22 of 23 human QT-prolonging drugs positive in the zebrafish assay: a direct concordance rate. The sentence is on the page; only mechanical location failed."
+   },
+   "12642353-1": {
+    "id": "12642353-1",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "In the initial screen, 18 out of 23 drugs that cause QT prolongation in humans were positive in the zebrafish assay.",
+     "value": 0.7826,
+     "unit": "proportion",
+     "numerator": 18,
+     "denominator": 23,
+     "species": "zebrafish",
+     "model_type": "healthy",
+     "disease_area": "cardiovascular",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "18 of 23 in the initial screen, before absorption was addressed by microinjection: a distinct measurement of the same comparison, not a duplicate."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "21673092|manual": {
+  "kind": "manual",
+  "decisions": {
+   "21673092-0": {
+    "id": "21673092-0",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The objective response rate for treatments deemed effective by the mouse model and tested in human patients was 88%.",
+     "value": 88,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "Tumorgraft-guided treatment response in patients: the animal side is the mouse host."
+   },
+   "21673092-1": {
+    "id": "21673092-1",
+    "decision": "drop",
+    "drop_reason": "Human-only partial-response count; the comparison is captured in 21673092-0.",
+    "corrected": {
+     "statement": "11 out of 14 human patients achieved a partial remission (PR) with treatments guided by personalized tumorgrafts.",
+     "value": 11,
+     "unit": "count",
+     "numerator": 11,
+     "denominator": 14,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 5
+    },
+    "rationale": "Human-only partial-response count; the comparison is captured in 21673092-0."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "25122639|manual": {
+  "kind": "manual",
+  "decisions": {
+   "25122639-0": {
+    "id": "25122639-0",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Intratumoral C. novyi-NT produced objective responses in 6 of 16 companion dogs with spontaneous solid tumours, and tumour reduction in the first human patient treated on that basis.",
+     "value": 37.5,
+     "unit": "percent",
+     "numerator": 6,
+     "denominator": 16,
+     "species": "dog",
+     "model_type": "spontaneous-companion",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Recast as the comparison the paper actually makes: the dog trial motivated and preceded the first human treatment."
+   },
+   "25122639-1": {
+    "id": "25122639-1",
+    "decision": "drop",
+    "drop_reason": "Human-only outcome; superseded by the recast comparison in 25122639-0.",
+    "corrected": {
+     "statement": "The first human patient treated with intratumoral injection of C. novyi-NT spores for advanced leiomyosarcoma experienced tumor reduction.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "other-species",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Human-only outcome; superseded by the recast comparison in 25122639-0."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "17300945|manual": {
+  "kind": "manual",
+  "decisions": {
+   "17300945-0": {
+    "id": "17300945-0",
+    "decision": "drop",
+    "drop_reason": "Mouse-only pooled treatment effect (weighted mean difference in onset); the paper's translation claim is not in this statement or its quote.",
+    "corrected": {
+     "statement": "The overall weighted mean difference in age of onset for presymptomatic treatment in SOD1 mice was 11.8 days.",
+     "value": 11.8,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only pooled treatment effect (weighted mean difference in onset); the paper's translation claim is not in this statement or its quote."
+   },
+   "17300945-1": {
+    "id": "17300945-1",
+    "decision": "drop",
+    "drop_reason": "Mouse-only pooled effect by drug class.",
+    "corrected": {
+     "statement": "The overall weighted mean difference in age of onset for drugs with an anti-apoptotic effect in SOD1 mice was 11 days.",
+     "value": 11.0,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only pooled effect by drug class."
+   },
+   "17300945-2": {
+    "id": "17300945-2",
+    "decision": "drop",
+    "drop_reason": "Mouse-only pooled effect by drug class.",
+    "corrected": {
+     "statement": "The overall weighted mean difference in age of onset for drugs with an anti-inflammatory effect in SOD1 mice was 11.9 days.",
+     "value": 11.9,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only pooled effect by drug class."
+   },
+   "17300945-3": {
+    "id": "17300945-3",
+    "decision": "drop",
+    "drop_reason": "Mouse-only pooled effect by drug class.",
+    "corrected": {
+     "statement": "The overall weighted mean difference in age of onset for drugs with a neurotrophic effect in SOD1 mice was 10.1 days.",
+     "value": 10.1,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only pooled effect by drug class."
+   },
+   "17300945-4": {
+    "id": "17300945-4",
+    "decision": "drop",
+    "drop_reason": "Mouse-only pooled effect by drug class.",
+    "corrected": {
+     "statement": "The overall weighted mean difference in age of onset for drugs with an anti-oxidant effect in SOD1 mice was 8.4 days.",
+     "value": 8.4,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only pooled effect by drug class."
+   },
+   "17300945-5": {
+    "id": "17300945-5",
+    "decision": "drop",
+    "drop_reason": "Mouse-only minocycline effect; the human trial outcome is not quoted.",
+    "corrected": {
+     "statement": "Minocycline treatment in SOD1 mice resulted in a weighted mean difference in age of onset of 21.2 days.",
+     "value": 21.2,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only minocycline effect; the human trial outcome is not quoted."
+   },
+   "17300945-6": {
+    "id": "17300945-6",
+    "decision": "drop",
+    "drop_reason": "Mouse-only pooled survival effect.",
+    "corrected": {
+     "statement": "The overall weighted mean difference in survival for presymptomatic treatment in SOD1 mice was 12.2 days.",
+     "value": 12.2,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only pooled survival effect."
+   },
+   "17300945-7": {
+    "id": "17300945-7",
+    "decision": "drop",
+    "drop_reason": "Mouse-only minocycline survival effect.",
+    "corrected": {
+     "statement": "Minocycline treatment in SOD1 mice resulted in a weighted mean difference in survival of 22.1 days.",
+     "value": 22.1,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 4
+    },
+    "rationale": "Mouse-only minocycline survival effect."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "28945830|manual": {
+  "kind": "manual",
+  "decisions": {
+   "28945830-0": {
+    "id": "28945830-0",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "87% of 129 therapeutic outcomes showed a significant association between drug responses in patient-derived xenografts and corresponding patients.",
+     "value": 87,
+     "unit": "percent",
+     "numerator": 112,
+     "denominator": 129,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 7
+    },
+    "rationale": "PDX-to-patient response association; the animal side is the mouse host."
+   },
+   "28945830-1": {
+    "id": "28945830-1",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The sensitivity for the PDX drug screens was 96% (80/83).",
+     "value": 96,
+     "unit": "percent",
+     "numerator": 80,
+     "denominator": 83,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 7
+    },
+    "rationale": "Sensitivity of PDX screens against patient response. The fraction 80/83 is in Table 1, quoted in full by item 5."
+   },
+   "28945830-2": {
+    "id": "28945830-2",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The specificity for the PDX drug screens was 70% (32/46).",
+     "value": 70,
+     "unit": "percent",
+     "numerator": 32,
+     "denominator": 46,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 7
+    },
+    "rationale": "Specificity against patient response; fraction in Table 1."
+   },
+   "28945830-3": {
+    "id": "28945830-3",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The positive predictive value (PPV) for PDX drug screens was 85% (80/94).",
+     "value": 85,
+     "unit": "percent",
+     "numerator": 80,
+     "denominator": 94,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 7
+    },
+    "rationale": "PPV against patient response; value in Table 1."
+   },
+   "28945830-4": {
+    "id": "28945830-4",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The negative predictive value (NPV) for PDX drug screens was 91% (32/35).",
+     "value": 91,
+     "unit": "percent",
+     "numerator": 32,
+     "denominator": 35,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 7
+    },
+    "rationale": "NPV against patient response; value in Table 1."
+   },
+   "28945830-5": {
+    "id": "28945830-5",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "When the first systemic therapy was received after tumor collection, the sensitivity of PDX drug screens was 97% (29/30).",
+     "value": 97,
+     "unit": "percent",
+     "numerator": 29,
+     "denominator": 30,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 8
+    },
+    "rationale": "Sensitivity in the first-therapy subgroup; a distinct stratum, not a duplicate."
+   },
+   "28945830-6": {
+    "id": "28945830-6",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "When the first systemic therapy was received after tumor collection, the specificity of PDX drug screens was 89% (16/18).",
+     "value": 89,
+     "unit": "percent",
+     "numerator": 16,
+     "denominator": 18,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 8
+    },
+    "rationale": "Specificity in the first-therapy subgroup."
+   },
+   "28945830-7": {
+    "id": "28945830-7",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "When treatment followed other therapies received after tumor collection, the sensitivity of PDX drug screens was 96% (51/53).",
+     "value": 96,
+     "unit": "percent",
+     "numerator": 51,
+     "denominator": 53,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 8
+    },
+    "rationale": "Sensitivity in the later-therapy subgroup."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "18055474|manual": {
+  "kind": "manual",
+  "decisions": {
+   "18055474-0": {
+    "id": "18055474-0",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The paper found that a compound's therapeutic efficacy in adjuvant-induced arthritis (AIA) and collagen-induced arthritis (CIA) models was more predictive of clinical efficacy in human rheumatoid arthritis than data from either model alone.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "immunology-inflammation",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Qualitative animal-to-human predictive claim for AIA and CIA models; qualitative comparisons are evidence, and the location failure is mechanical."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
+ },
+ "15120036|manual": {
+  "kind": "manual",
+  "decisions": {
+   "15120036-4": {
+    "id": "15120036-4",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "90% of 80 comparisons between clinical response of tumors and their explants established in nude mice and treated in vivo showed correct prediction for tumor sensitivity.",
+     "value": 90,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": 80,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Xenograft explants treated in vivo in nude mice versus clinical response: a live-animal comparison."
+   },
+   "15120036-5": {
+    "id": "15120036-5",
+    "decision": "keep-with-correction",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "97% of 80 comparisons between clinical response of tumors and their explants established in nude mice and treated in vivo showed correct prediction for tumor resistance.",
+     "value": 97,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": 80,
+     "species": "mouse",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Same in vivo comparison, resistance rather than sensitivity."
+   },
+   "15120036-0": {
+    "id": "15120036-0",
+    "decision": "drop",
+    "drop_reason": "Clonogenic assay run in vitro on xenograft-derived tumour against clinical response; in vitro work is out of scope.",
+    "corrected": {
+     "statement": "62% of comparisons for drug sensitivity between human tumor xenografts in clonogenic assay and clinical response were correct.",
+     "value": 62,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "Clonogenic assay run in vitro on xenograft-derived tumour against clinical response; in vitro work is out of scope."
+   },
+   "15120036-1": {
+    "id": "15120036-1",
+    "decision": "drop",
+    "drop_reason": "In vitro assay against clinical response; out of scope.",
+    "corrected": {
+     "statement": "92% of comparisons for drug resistance between human tumor xenografts in clonogenic assay and clinical response were correct.",
+     "value": 92,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "In vitro assay against clinical response; out of scope."
+   },
+   "15120036-2": {
+    "id": "15120036-2",
+    "decision": "drop",
+    "drop_reason": "In vitro assay against in vivo xenograft: animal-versus-animal and in vitro.",
+    "corrected": {
+     "statement": "60% of comparisons for drug sensitivity between human tumor xenografts in clonogenic assay after serial passage and in vivo activity in corresponding xenografts were correct.",
+     "value": 60,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "In vitro assay against in vivo xenograft: animal-versus-animal and in vitro."
+   },
+   "15120036-3": {
+    "id": "15120036-3",
+    "decision": "drop",
+    "drop_reason": "In vitro assay against in vivo xenograft; out of scope.",
+    "corrected": {
+     "statement": "90% of comparisons for drug resistance between human tumor xenografts in clonogenic assay after serial passage and in vivo activity in corresponding xenografts were correct.",
+     "value": 90,
+     "unit": "percent",
+     "numerator": null,
+     "denominator": null,
+     "species": "grouped-label",
+     "model_type": "induced",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 1
+    },
+    "rationale": "In vitro assay against in vivo xenograft; out of scope."
+   },
+   "15120036-6": {
+    "id": "15120036-6",
+    "decision": "drop",
+    "drop_reason": "In vitro assay against patient tissue; out of scope.",
+    "corrected": {
+     "statement": "The correct prediction for tumor sensitivity of the clonogenic assay (in vitro) versus patient (in vivo) was 62% (18 true positives out of 29 sensitive cases).",
+     "value": 62,
+     "unit": "percent",
+     "numerator": 18,
+     "denominator": 29,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 11
+    },
+    "rationale": "In vitro assay against patient tissue; out of scope."
+   },
+   "15120036-7": {
+    "id": "15120036-7",
+    "decision": "drop",
+    "drop_reason": "In vitro assay against patient tissue; out of scope.",
+    "corrected": {
+     "statement": "The correct prediction for tumor resistance of the clonogenic assay (in vitro) versus patient (in vivo) was 92% (34 true negatives out of 37 resistant cases).",
+     "value": 92,
+     "unit": "percent",
+     "numerator": 34,
+     "denominator": 37,
+     "species": "grouped-label",
+     "model_type": "mixed-or-not-stated",
+     "disease_area": "oncology",
+     "level": "A-outcome-concordance",
+     "direction": "animal-corresponded",
+     "pdf_page": 11
+    },
+    "rationale": "In vitro assay against patient tissue; out of scope."
+   }
+  },
+  "missing": [],
+  "model": "manual: reviewing agent (Claude Opus 5, in-session)",
+  "date": "2026-09-15"
  }
 }

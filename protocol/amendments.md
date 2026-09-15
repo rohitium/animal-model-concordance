@@ -392,3 +392,30 @@ research population rather than client-owned patients even though the mutation a
 Applied at build time per study; the stored records keep what the extractor recorded. This corrects
 the companion/laboratory split in the evidence map, which is the comparison the review exists to
 make, so it is recorded here rather than treated as a display detail.
+
+## A11 — Thirteen supplied full texts incorporated (2026-09-15)
+
+The author supplied full texts for ranks 1-13 of the wanted list, all previously unreachable by
+open-access routes. They were registered in `studies.json`, marked user-supplied in the full-text
+status record, extracted (66 candidate results, all 13 studies judged eligible; $0.06), verified
+($0.21), and adjudicated by hand by the reviewing agent under the same criteria as the earlier
+manual pass.
+
+24 results were kept from 12 studies; 42 were dropped. The drops are dominated by two patterns the
+extractor repeats on parallel-design papers: single-arm values with no cross-species comparison in
+the statement (vitamin C, lithium, hyperventilation, C. novyi-NT), and in vitro assays, which fail
+eligibility whatever they predict (four cell-line rows in 14519650, six clonogenic-assay rows in
+15120036). Where a paper reported the animal arm and the human arm separately but stated the
+correspondence in its own words, the arms were recast into one comparison, as in the earlier pass.
+
+One study contributed nothing. 17300945 ("Lost in translation: treatment trials in the SOD1 mouse
+and in human ALS") is precisely the kind of paper this review exists to capture, but every extracted
+result was a mouse-side pooled effect size, and no extracted quote contained the human trial
+outcome. Rather than attach a translation claim to a quote that does not support it, all eight were
+dropped. The paper is a candidate for re-extraction with a question aimed at the comparison.
+
+23 of the 24 kept results are level A (intervention outcomes), against 28% level A in the corpus as
+a whole - supplied full texts are disproportionately the evidence the review is thinnest on, which
+is an argument for supplying more.
+
+Corpus after incorporation: 1,518 results in 418 studies.

@@ -1,13 +1,13 @@
 # Page-15 replacement: draft rows
 
-Built 2026-09-14 from 1494 final results in 406 studies.
+Built 2026-09-15 from 1518 final results in 418 studies.
 Values are grouped only where the unit and metric match; spreads are reported, never a single blended number.
 
-## Efficacy / intervention outcomes: 150 studies, 422 results
+## Efficacy / intervention outcomes: 161 studies, 445 results
 
 | metric | unit | species | studies | results | median | range |
 |---|---|---|---|---|---|---|
-| count | count | grouped-label | 21 | 30 | 27 | 0–709 |
+| count | count | grouped-label | 22 | 31 | 25 | 0–709 |
 | count | count | mouse | 9 | 21 | 10 | 0–87716 |
 | auc | auc | grouped-label | 5 | 18 | 0.7885 | 0.5–0.93 |
 | overlap | percent | grouped-label | 4 | 9 | 40 | 0.5–83 |
@@ -106,8 +106,17 @@ Values are grouped only where the unit and metric match; spreads are reported, n
 | partial concordance | count | grouped-label | 1 | 1 | 5 | 5–5 |
 | c score | none | mouse | 1 | 4 | 0.155 | 0.081–0.2 |
 | failure rate | percent | grouped-label | 1 | 1 | 92 | 92–92 |
+| positive rate | proportion | zebrafish | 1 | 2 | 0.86955 | 0.7826–0.9565 |
+| objective response rate | percent | mouse | 1 | 1 | 88 | 88–88 |
+| objective response rate | percent | companion-dog | 1 | 1 | 37.5 | 37.5–37.5 |
+| association rate | percent | mouse | 1 | 1 | 87 | 87–87 |
+| sensitivity | percent | mouse | 1 | 3 | 96 | 96–97 |
+| specificity | percent | mouse | 1 | 2 | 79.5 | 70–89 |
+| ppv | percent | mouse | 1 | 1 | 85 | 85–85 |
+| npv | percent | mouse | 1 | 1 | 91 | 91–91 |
+| correct prediction | percent | mouse | 1 | 2 | 93.5 | 90–97 |
 
-Direction of results (as judged per result): {'mixed': 28, 'animal-did-not-correspond': 120, 'animal-corresponded': 274}
+Direction of results (as judged per result): {'mixed': 28, 'animal-did-not-correspond': 124, 'animal-corresponded': 293}
 
 ## Toxicology and safety: 20 studies, 107 results
 
@@ -159,7 +168,7 @@ Direction of results (as judged per result): {'mixed': 28, 'animal-did-not-corre
 
 Direction of results (as judged per result): {'animal-corresponded': 64, 'animal-did-not-correspond': 21, 'mixed': 22}
 
-## Disease biology: 259 studies, 965 results
+## Disease biology: 260 studies, 966 results
 
 | metric | unit | species | studies | results | median | range |
 |---|---|---|---|---|---|---|
@@ -333,5 +342,5 @@ Direction of results (as judged per result): {'animal-corresponded': 64, 'animal
 | median tumor to blood ratio | ratio | mouse | 1 | 1 | 8.5 | 8.5–8.5 |
 | detection rate | percent | companion-dog | 1 | 1 | 0 | 0–0 |
 
-Direction of results (as judged per result): {'animal-did-not-correspond': 207, 'mixed': 60, 'animal-corresponded': 694, 'not-applicable': 4}
+Direction of results (as judged per result): {'animal-did-not-correspond': 207, 'mixed': 60, 'animal-corresponded': 695, 'not-applicable': 4}
 
