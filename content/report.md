@@ -2,12 +2,10 @@
 Systematic review
 :::
 
-# What the published literature reports about animal-to-human concordance
+# Brief survey of animal-to-human concordance in the biomedical literature
 
 ::: lede
-We read every study we could find that compares a finding in live non-human animals with the
-corresponding finding in humans, and recorded what it found — one result at a time, each with the
-sentence and page it came from.
+We compared findings in live non-human animals with corresponding findings in humans, and recorded what they found.
 :::
 
 {{figures}}
@@ -17,22 +15,20 @@ sentence and page it came from.
 Across every result we kept, the animal finding matched the human finding **{{n_corresponded}}**
 times, failed to match **{{n_not_corresponded}}** times, and was mixed **{{n_mixed}}** times.
 
-::: note Why there is no headline percentage
-Those counts are not a concordance rate and we do not report one. The studies do not measure the
-same thing: they report concordance rates, sensitivities, correlation coefficients, gene-overlap
-counts and qualitative similarity claims, across different diseases and species. Pooling them
-would produce a number with no referent.
+{{level_table}}
+
+::: note Caveats
+Most of the evidence is level C: how similar the biology looks, rather than what happened when a
+disease was treated.
+
+Different studies report concordance rates, sensitivities, correlation coefficients, gene-overlap
+counts and qualitative similarity claims, across different diseases and species. Pooling all these
+together is not necessarily kosher.
 
 The literature is also selective about what gets published and about which comparisons get made at
 all, so the balance above reflects what authors chose to report. Values are grouped only where
 metric and unit match, and spreads are shown rather than averages.
 :::
-
-{{level_table}}
-
-Most of the evidence is level C: how similar the biology looks, rather than what happened when a
-disease was treated. That distribution is itself a finding about the field — the comparison that
-matters most for drug development is the one made least often.
 
 ## Evidence map {#map}
 
