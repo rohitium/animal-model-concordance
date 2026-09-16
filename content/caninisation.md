@@ -75,12 +75,26 @@ Befrena and five cyclosporine products. That is the distinction worth acting on:
 is not an open market.
 
 ::: note What is not checked
-No register of approved veterinary medicines is in the loop. The FDA Green Book publishes no
+**No register of approved veterinary medicines is in the loop.** The FDA Green Book publishes no
 machine-readable export, openFDA's animal endpoint returns adverse events rather than approved
 products, and the EMA veterinary dataset has moved behind a portal with no download. A molecule
-approved for dogs or cats outside the supplied list would show here as "not found". Absence of a
-finding is never evidence of absence, and adding a veterinary registry is the single most valuable
-fix available to this analysis.
+approved for dogs or cats outside the supplied list would show here as "not found".
+
+**The patent and halted-programme search is not systematic.** Both are recorded per mechanism with
+their sources, but only for the mechanisms where someone looked. No automated sweep is currently
+possible: Google Patents returns errors to scripted querying and blocks a real browser as automated
+traffic, while the patent APIs that would replace it require registered credentials. **A mechanism
+carrying no patent entry has not been searched, and must not be read as free of intellectual
+property.** Anti-IL-4Rα shows what that costs: it read as an open mechanism until someone looked,
+and four companies had filed on it.
+
+**No systematic sweep of abandoned companion-animal programmes.** These surface in quarterly results
+and press releases rather than in any register. A competitor having tried a mechanism and dropped it
+is among the most informative signals available for this decision, and it is the one this analysis
+is least equipped to find.
+
+Absence of a finding is never evidence of absence. A veterinary drug registry and a patent API
+credential are the two highest-value additions available to this work.
 :::
 
 ::: note Why route 3 is so small
