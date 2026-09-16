@@ -525,3 +525,37 @@ myosin and transthyretin candidates here. Spelled `(?<!cardio)myopath`. Third pa
 mapping after the `[ae]` digraph and the `\bthall\b` stem: a regex that looks right and silently
 routes a whole class of terms to the wrong bucket is the characteristic failure of this approach,
 and is only ever caught by reading what landed where, never by the summary.
+
+## A15 — Claimed targets kept, and the whole human pipeline admitted (2026-09-16)
+
+Two corrections from the author, both of which widened the analysis rather than narrowing it.
+
+**A target already worked in companion animals is not a reason to exclude it.** The first version
+treated "target already claimed in a companion-animal programme" as a hard gate and silently dropped
+159 programmes. That is backwards: a claimed target means the indication has a validated market.
+Canine atopic dermatitis carries nine companion-animal programmes and osteoarthritis twenty-five,
+and Elanco entered atopic dermatitis against Zoetis's Apoquel and Cytopoint with Zenrelia and
+Befrena. Claimed targets are now annotated, not removed, with the holding programmes named and the
+crowding recorded, because "claimed" runs from a two-player field to twenty programmes on
+praziquantel.
+
+**The pipeline and the discontinued assets belong in scope.** The first version used only the 561
+approved programmes and discarded 1,388 of the 1,949 supplied. Of those, 387 are discontinued, 336
+with a named target, 77 having reached Phase 3 and 131 Phase 2. A human asset shelved after Phase 3
+carries a safety package, which is the expensive part of a development programme, and usually failed
+on efficacy against a human comparator or on commercial grounds - neither of which need apply in a
+dog. Every programme is now in scope, carrying its stage and status, classified as white space,
+me-too into a claimed target, or shelved asset.
+
+**The clearest instance of the thesis in the data is a shelved asset.** Fasinumab, an anti-NGF
+antibody, reached Phase 3 at Regeneron and was discontinued. Anti-NGF is the mechanism Zoetis has
+built four companion-animal antibodies on. Revusiran (TTR, Phase 3, Alnylam, discontinued) is a
+second, against a target its own successor now holds.
+
+**A limitation this creates.** The source list does not say why a programme was discontinued, and
+the distinction decides whether an asset is a candidate at all: shelved for futility or commercial
+reasons is licensable, shelved for toxicity is not. Anti-NGF is the live example - the human
+programmes were halted partly over rapidly progressive osteoarthritis and joint safety signals,
+which is a real question for a dog programme and not a footnote. Every discontinued candidate
+carries `discontinuation_reason: not stated in the source list` so the gap cannot be read as
+clearance.
