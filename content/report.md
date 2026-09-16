@@ -74,6 +74,11 @@ opposite way.
 
 [**Browse all classified pairs →**](pairs.html)
 
+Most of these pairs are human medicines adopted into veterinary practice decades later. Read the
+other way, that lag is a question about which human molecules to develop for dogs and cats next.
+
+[**Licensing human molecules for dogs and cats →**](caninisation.html)
+
 ## Companion animals vs laboratory models {#q4|Companion vs laboratory}
 
 For the same agent and condition, did the companion-animal evidence and the laboratory-model

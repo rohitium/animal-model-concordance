@@ -3,9 +3,15 @@
 The question: which human molecules, already shown to work in people, are the best candidates to
 license and develop for dogs or cats?
 
-The premise is sound and the corpus says so: of 799 classified drug pairs, 477 run
-human-approval-then-veterinary-evidence and only 22 the other way, with a median lag of 30 years.
-Companion-animal medicine overwhelmingly adopts human drugs, slowly. This ranks what to adopt next.
+Of the classified drug pairs in the review, 477 run human approval first and the veterinary evidence
+later; 22 run the other way, at a median gap of 30 years. Companion-animal medicine adopts human
+drugs, and adopts them late. This selects what to adopt next.
+
+A candidate needs both legs of human evidence - safety AND efficacy - and then either no
+companion-animal programme against its target, or a stop unrelated to clinical performance. An
+approval carries both legs by definition. A discontinued asset carries them only if it reached a
+stage where efficacy could show and was stopped for some other reason; an efficacy failure is
+disqualifying, because demonstrated efficacy is the premise of the approach.
 
 Inputs
   ~/Downloads/human_drug_programs.csv   human pipeline: company, drug, status, indication, target
@@ -69,7 +75,11 @@ NOT_A_DOG_DISEASE = re.compile(
     r"covid|influenza vaccine|human papilloma|menopaus|endometrio|preterm|fertility|"
     r"psoriasis|ulcerative colitis|crohn|gout|osteoporosis|macular degeneration|"
     r"smallpox|mpox|vaccinia|hypophosphat|osteomalacia|sarcoidosis|"
-    r"narcoleps|tardive|myasthenia", re.I)
+    r"narcoleps|tardive|myasthenia|"
+    # Human allergy to an animal is a human indication with no companion-animal counterpart: the
+    # patient is a person. REGN1908-1909 (anti-Fel d 1, for people allergic to cats) reached the
+    # candidate list because the area rules read "cat allergy" as immunology.
+    r"cat allergy|allergy to cats|peanut allergy|allergic rhinitis", re.I)
 # Not excluded, deliberately: pulmonary hypertension is a recognised and common canine condition,
 # secondary to mitral valve disease and to heartworm, so the PAH agents stay in.
 
@@ -247,6 +257,16 @@ def main():
                 return label
         return "not legible from the source"
 
+    # Amendment A18. The signal above reads a headline's framing, not a cause, and it was wrong on
+    # the molecule that mattered most: fasinumab's slug says "pulls-the-plug", scored commercial,
+    # for a programme that carried an FDA partial clinical hold, an FDA-halted Phase IIb after an
+    # adjudicated arthropathy, and IDMC-halted high-dose arms. Only hand-verified reasons decide
+    # eligibility; the regex signal is kept for display and labelled as unverified.
+    REASONS = (load("part2/discontinuation_reasons.json") or {}).get("reasons") or {}
+
+    def verified_reason(r):
+        return REASONS.get((r.get("drug_name") or "").strip())
+
     candidates, skipped = [], collections.Counter()
     for r in human:
         target, indication = r.get("target") or "", r.get("indication") or ""
@@ -269,6 +289,13 @@ def main():
         # was halted after patient deaths; both were presented as shelved assets before this gate.
         if discontinued(r) and disc_signal(r) == "safety or withdrawal":
             skipped["discontinued over safety or withdrawn"] += 1
+            continue
+        vr = verified_reason(r)
+        if vr and vr["reason"] == "safety":
+            skipped["discontinued over safety or withdrawn"] += 1
+            continue
+        if vr and vr["reason"] == "not-a-dog-indication":
+            skipped["disease dogs do not get"] += 1
             continue
         if NOT_A_THERAPEUTIC.search(r.get("drug_name") or "") or NOT_A_THERAPEUTIC.search(target):
             skipped["diagnostic or imaging agent, not a therapeutic"] += 1
@@ -384,8 +411,16 @@ def main():
             # over a survival detriment is not licensable inventory. Safety withdrawals are
             # excluded outright below; the rest carry their signal so a reader can weigh it.
             "discontinuation_signal": disc_signal(r) if discontinued(r) else None,
+            "discontinuation_reason": (vr or {}).get("reason") if discontinued(r) else None,
+            "discontinuation_note": (vr or {}).get("note") if discontinued(r) else None,
+            "discontinuation_verified": bool(vr and vr.get("verified")),
             "source": r.get("source_link"),
         })
+
+    # Row-level gates above are applied per supplied programme; the gates below are applied per
+    # molecule, after dedup. The funnel has to show the dedup step between them or its arithmetic
+    # cannot reconcile: subtracting molecule-level counts from a row-level total does not work.
+    n_rows_surviving = len(candidates)
 
     # One row per molecule: biosimilars and repeat listings are the same licensing opportunity
     # (Mvasi and Alymsys are both bevacizumab; Eliquis is listed twice).
@@ -397,6 +432,56 @@ def main():
             continue
         best[key] = c
 
+    # Routes. A candidate needs BOTH legs of human evidence - safety and efficacy - and then either
+    # no companion-animal programme against its target, or a stop unrelated to clinical performance.
+    #
+    # An approval carries both legs by definition. A discontinued asset carries them only if it
+    # reached a stage where efficacy could show AND was stopped for some other reason: an efficacy
+    # failure is disqualifying, because demonstrated efficacy is the premise of the whole approach.
+    # Active Phase 2/3 assets have no approval behind them, so they are a watch list, not candidates.
+    def route_of(c):
+        if c["human_status"] == "active" and c["human_stage"] == "Approved":
+            return "route2" if c["competitor_count"] else "route1"
+        if (c["human_status"] == "discontinued" and c.get("discontinuation_verified")
+                and c.get("discontinuation_reason") == "non-clinical"
+                and STAGE_RANK[c["human_stage"]] <= 2):
+            return "route3"
+        if c["human_status"] == "active" and c["human_stage"] in ("Phase 2", "Phase 3"):
+            return "watch"
+        return None
+
+    for c in best.values():
+        c["route"] = route_of(c)
+    ROUTE_LABEL = {
+        "route1": "Approved, no companion-animal programme",
+        "route2": "Approved, target already claimed",
+        "route3": "Shelved for a verified non-clinical reason",
+        "watch": "Human pipeline, not yet approved",
+    }
+    for c in best.values():
+        c["route_label"] = ROUTE_LABEL.get(c["route"])
+    held = [c for c in best.values() if c["route"] is None]
+    for c in held:
+        skipped["discontinued on clinical performance, or reason not established"] += 1
+
+    # Companion-animal crowding, computed here and stored, because the two programme CSVs live
+    # outside the repository and the site build in CI reads only committed data.
+    CROWD = [("Parasites", r"flea|tick|worm|mite|parasit"),
+             ("Infection", r"bacterial|infection|otitis"),
+             ("Osteoarthritis and joints", r"osteoarthritis|joint|lameness|mobility"),
+             ("Oncology", r"tumou?r|cancer|lymphoma|sarcoma|mast cell"),
+             ("Endocrine and metabolic", r"diabet|thyroid|addison|cushing|obesity|weight"),
+             ("Atopic dermatitis and pruritus", r"atopic|pruritus|allerg"),
+             ("Cardiac", r"heart failure|cardi|mmvd|\bdcm\b"),
+             ("Behaviour and anxiety", r"anxiet|noise|behavio|stress"),
+             ("Gastrointestinal", r"diarrh|vomit|nausea"),
+             ("Renal", r"kidney|renal|\bckd\b")]
+    crowding = sorted(
+        [{"indication": lab,
+          "programmes": sum(1 for r in pet if re.search(pat, r.get("indication") or "", re.I))}
+         for lab, pat in CROWD],
+        key=lambda x: -x["programmes"])
+
     # Areas ranked on the review's evidence; candidates grouped under the area they belong to.
     def area_rank(a):
         e = ev[a]
@@ -405,29 +490,41 @@ def main():
 
     grouped = collections.defaultdict(list)
     for c in best.values():
-        grouped[c["area"]].append(c)
+        if c["route"]:
+            grouped[c["area"]].append(c)
     # Phase 1 and preclinical assets have no human efficacy yet, which is the whole premise, so they
     # are carried in the data as a watch list rather than presented as candidates.
-    PRESENTED = {"Approved", "Phase 3", "Phase 2"}
+    PRESENTED_ROUTES = {"route1", "route2", "route3"}
+    is_presented = lambda c: c["route"] in PRESENTED_ROUTES
+    ROUTE_ORDER = {"route1": 0, "route2": 1, "route3": 2}
     areas = [{"area": a, "evidence_rank": area_rank(a),
-              "candidates": len([c for c in v if c["human_stage"] in PRESENTED]),
-              "watch_list": len([c for c in v if c["human_stage"] not in PRESENTED]),
+              "candidates": len([c for c in v if is_presented(c)]),
+              "watch_list": len([c for c in v if c["route"] == "watch"]),
               "evidence": ev[a],
-              "molecules": sorted([c for c in v if c["human_stage"] in PRESENTED],
-                                  key=lambda c: (not c["precedent"],
-                                                 c["human_status"] != "discontinued",
-                                                 STAGE_RANK[c["human_stage"]],
-                                                 -(c["years_since_approval"] or 0))),
-              "watch": sorted([c for c in v if c["human_stage"] not in PRESENTED],
-                              key=lambda c: STAGE_RANK[c["human_stage"]])}
+              "molecules": sorted([c for c in v if is_presented(c)],
+                                  key=lambda c: (ROUTE_ORDER[c["route"]],
+                                                 not c["precedent"],
+                                                 (c["drug"] or "").lower())),
+              "watch": sorted([c for c in v if c["route"] == "watch"],
+                              key=lambda c: (c["drug"] or "").lower())}
              for a, v in grouped.items()]
     areas.sort(key=lambda x: -x["evidence_rank"])
     candidates = [c for a in areas for c in a["molecules"]]
+    watch = [c for a in areas for c in a["watch"]]
+    route_counts = collections.Counter(c["route"] for c in candidates)
     out = {
         "built": today(),
         "inputs": {"human_programs": len(human), "pet_programs": len(pet),
                    "review_results": len(results)},
         "skipped": dict(skipped),
+        "rows_surviving": n_rows_surviving,
+        "molecules_after_dedup": len(best),
+        "deduplicated": n_rows_surviving - len(best),
+        "route_labels": ROUTE_LABEL,
+        "route_counts": {k: route_counts.get(k, 0) for k in ("route1", "route2", "route3")},
+        "watch_count": len(watch),
+        "watch": watch,
+        "crowding": crowding,
         "missing_inputs": [
             "Canine and feline disease prevalence: no epidemiological source is held in this "
             "repository, so no candidate is weighted by how many animals have the disease. This is "
@@ -447,7 +544,8 @@ def main():
         "candidates": candidates,
     }
     save(out, "part2/caninisation_candidates.json")
-    print(f"candidates: {len(candidates)} molecules (from {len(human)} approved human programs)")
+    print(f"candidates: {len(candidates)} molecules (from {len(human)} human programmes)")
+    print("routes:", dict(route_counts), "| watch list:", len(watch))
     print("skipped:", dict(skipped))
     for a in areas:
         e = a["evidence"]

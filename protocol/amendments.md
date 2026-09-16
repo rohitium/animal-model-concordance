@@ -610,3 +610,47 @@ The general lesson is the one this project keeps relearning. "Not stated in the 
 assertion about the data I had not checked, and it was wrong in the direction that mattered - it
 presented withdrawn-for-harm molecules as unknowns rather than as exclusions. A declared limitation
 is only honest if the thing it declares unknowable actually is.
+
+## A18 — A headline verb is not a reason, and candidacy requires both legs of evidence (2026-09-16)
+
+A17 classified why each programme was discontinued with a regex over the `source_link` slug, the
+phase note and the indication, and concluded: "Fasinumab survives: its source is a strategic
+pipeline decision, not a safety action." **That conclusion is withdrawn.** Reading the source rather
+than its URL: Regeneron gave no reason for the final discontinuation, and the programme's history is
+a safety history — an FDA partial clinical hold in 2012 over sympathetic nervous system toxicity, an
+FDA-halted Phase IIb in 2016 after an adjudicated arthropathy, and high-dose arms halted in 2018 by
+the independent data monitoring committee. The anti-NGF class carries dose-related rapidly
+progressive osteoarthritis and osteonecrosis signals, and an FDA advisory committee rejected
+tanezumab 19-1 on joint-destruction risk. The regex scored `regeneron-pulls-the-plug` as commercial
+because that is the verb a trade publication chose.
+
+The classifier is also unstable, which is the stronger argument against it. The same code returned
+15/75/53/8/236 across safety, efficacy, commercial, supply and not-legible under A17, and
+16/73/98/8/192 after one separator fix to the patterns: the commercial bucket nearly doubled on a
+regex tweak. A classifier whose largest bucket moves that far on a pattern change cannot decide
+whether a molecule is licensable inventory.
+
+Discontinuation reasons are therefore hand-verified in `part2/discontinuation_reasons.json`, each
+read from the cited source, and only a verified non-clinical reason makes an asset eligible. Two
+further exclusions follow: **glembatumumab vedotin** on efficacy (the randomised METRIC study missed
+its primary endpoint, median PFS 2.9 vs 2.8 months, HR 0.95, p=0.76 — the pipeline cut followed the
+failure rather than causing it), and **REGN1908-1909**, an antibody for humans allergic to cats,
+where the patient is a person and no companion-animal counterpart indication exists.
+
+Candidacy is redefined to require **both legs of human evidence, safety and efficacy**, and then
+either no companion-animal programme against the target or a stop unrelated to clinical performance.
+An approval carries both legs by definition; a discontinued asset carries them only if it reached a
+stage where efficacy could show and was dropped for another reason. An efficacy failure is
+disqualifying, because demonstrated efficacy is the premise of the approach. Active Phase 2 and
+Phase 3 assets become a watch list rather than candidates.
+
+The result is 80 candidates — 54 approved with no companion-animal programme, 25 approved into a
+claimed target, 1 shelved for a verified non-clinical reason — plus 82 pipeline assets held as a
+watch list. Route 3 collapsing to a single molecule (DepoCyt, approved 2007 and withdrawn over
+manufacturing) is a finding, not a gap: most discontinuations are clinical, and most of the rest
+cannot be established from the sources held.
+
+One reporting bug is fixed alongside. The selection funnel subtracted molecule-level counts from a
+row-level total, so its column could not reconcile. Row-level gates are now shown against surviving
+programme rows (400), the dedup step is shown explicitly (-25), and molecule-level gates are
+subtracted from distinct molecules (375).

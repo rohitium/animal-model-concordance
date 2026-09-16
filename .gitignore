@@ -44,6 +44,7 @@ data/v04/**
 !data/v04/part2/indication_areas.json
 !data/v04/part2/species_safety_exclusions.json
 !data/v04/part2/caninisation_candidates.json
+!data/v04/part2/discontinuation_reasons.json
 !data/v04/part2/pet_target_holders.json
 !data/v04/part2/quality.json
 !data/v04/part2/summary.json

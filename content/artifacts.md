@@ -96,3 +96,55 @@ ev_phase-2 :: Phase 2 trial
 ev_earlier :: Earlier-phase or observational
 ev_none :: No human evidence retrieved
 ev_note :: A US label means the FDA reviewed adequate and well-controlled trials, so it is strong evidence. It is also only ever positive: a label exists because the drug worked. Pairs resting on a label can therefore disagree in one direction only.
+
+## caninisation
+
+fig_candidates :: Candidates
+fig_route1 :: Approved, no companion-animal programme
+fig_route2 :: Approved, target already claimed
+fig_route3 :: Shelved for non-clinical reasons
+fig_watch :: Pipeline watch list
+lag_caption :: Years between human approval and the veterinary evidence, for the 499 pairs where both dates are known
+lag_before :: Veterinary evidence came first
+lag_note :: Each bar counts drug-and-indication pairs. Bars to the right are drugs veterinary medicine took decades to adopt.
+routes_caption :: How each candidate qualifies
+route1_name :: Route 1 · Approved, no companion-animal programme
+route1_desc :: Both legs of human evidence established by the approval itself, and no programme in the supplied list targets it in dogs or cats.
+route2_name :: Route 2 · Approved, target already claimed
+route2_desc :: The same evidence, but a companion-animal programme already holds the target. Crowding is market validation, and the incumbents are named for each.
+route3_name :: Route 3 · Shelved for a verified non-clinical reason
+route3_desc :: Stopped for supply, portfolio or corporate reasons with clinical performance not the stated cause, verified by reading the source rather than the headline.
+watch_name :: Held back · Human pipeline, not yet approved
+watch_desc :: Phase 2 and Phase 3 assets still active. Efficacy is not yet established, so they are a watch list rather than candidates.
+areas_caption :: Condition areas ranked on the review's dog evidence
+areas_conc :: dog results corresponded
+areas_levela :: are intervention outcomes
+areas_studies :: studies
+areas_cands :: candidates
+crowding_caption :: Companion-animal programmes per indication, from the supplied programme list
+crowding_note :: The most crowded indications are the validated ones. An entrant needs a better asset, not an empty field.
+funnel_caption :: From supplied programmes to presented candidates
+table_caption :: Every presented candidate
+noun :: molecules
+placeholder :: Search by molecule, target, company or indication…
+empty :: Nothing matches those filters.
+reset :: Reset
+col_drug :: Molecule
+col_target :: Target
+col_area :: Condition area
+col_route :: Route
+col_stage :: Human stage
+col_comp :: Companion-animal programmes
+filter_area :: Condition area
+filter_route :: Route
+filter_stage :: Human stage
+detail_ind :: Human indication
+detail_ev :: Dog evidence for this condition area
+detail_comp :: Companion-animal programmes on this target
+detail_comp_none :: No programme in the supplied list targets this in dogs or cats.
+detail_safety :: Species safety caution
+detail_precedent :: Class precedent in companion animals
+detail_disc :: Why the human programme stopped
+detail_formulary :: Already in routine veterinary use as a generic, so the absence of a company programme does not mean an open field.
+detail_vague :: The human indication is too general to place a specific companion-animal tumour type.
+detail_source :: Programme source

@@ -1,0 +1,85 @@
+{
+  "_README": [
+    "Amendment A18. Why each discontinued human programme was actually stopped, read from its own",
+    "source link rather than inferred from the headline's verb.",
+    "",
+    "WHY THIS FILE EXISTS. The reason was previously classified by regex over the source URL, the",
+    "phase note and the indication. That classifier reads journalistic framing, not causation, and it",
+    "was wrong on the molecule it mattered most for: fasinumab's source slug says",
+    "'regeneron-pulls-the-plug', which the regex scored 'commercial or strategic', when the anti-NGF",
+    "programme carried an FDA partial clinical hold (2012), an FDA-halted Phase IIb after an",
+    "adjudicated arthropathy (2016), and IDMC-halted high-dose arms (2018). A headline verb is not a",
+    "reason. Only hand-verified entries here are eligible for the shelved-asset route; everything",
+    "else is held as unverified and is not presented as licensable inventory.",
+    "",
+    "reason: safety | efficacy | non-clinical | not-a-dog-indication | unverified",
+    "  safety             stopped over harm, a clinical hold, or a withdrawal. Never a candidate.",
+    "  efficacy           stopped because it did not work in people. Not a starting point: the",
+    "                     premise of caninisation is a molecule that HAS shown efficacy.",
+    "  non-clinical       stopped for supply, portfolio, partnership, financing or corporate",
+    "                     reasons, with clinical performance not the stated cause. Eligible.",
+    "  not-a-dog-indication  the human indication has no companion-animal counterpart.",
+    "  unverified         the source does not state a reason and none was established by hand.",
+    "",
+    "verified: true only where the cited source was read and states the reason. An entry with",
+    "verified: false is a placeholder carrying the regex guess and must not be relied on."
+  ],
+
+  "reasons": {
+    "Fasinumab": {
+      "reason": "safety",
+      "verified": true,
+      "note": "Regeneron gave no official reason for the final discontinuation, but the programme's history is a safety history: FDA partial clinical hold in 2012 over sympathetic nervous system toxicity; FDA halted a Phase IIb in 2016 after an adjudicated arthropathy; the Independent Data Monitoring Committee halted high-dose arms in 2018 on risk-benefit. The anti-NGF class carries rapidly progressive osteoarthritis and osteonecrosis signals, dose-related for both fasinumab and tanezumab, and an FDA advisory committee rejected tanezumab 19-1 on joint-destruction risk.",
+      "source": "https://www.biospace.com/regeneron-pulls-the-plug-on-osteoarthritis-and-cat-allergy-therapies"
+    },
+    "glembatumumab vedotin (CDX-011)": {
+      "reason": "efficacy",
+      "verified": true,
+      "note": "The randomised Phase 2b METRIC study in gpNMB-overexpressing metastatic triple-negative breast cancer missed its primary endpoint of progression-free survival (HR 0.95; median PFS 2.9 months vs capecitabine 2.8; p=0.76), with no advantage on response rate, duration of response or overall survival. Celldex then discontinued the programme across all indications and cut staff. The pipeline cut followed the trial failure; it did not cause it.",
+      "source": "https://ir.celldex.com/news-releases/news-release-details/celldexs-metric-study-metastatic-triple-negative-breast-cancer-0"
+    },
+    "DepoCyt (cytarabine liposome injection)": {
+      "reason": "non-clinical",
+      "verified": true,
+      "note": "Approved by FDA in 2007 for intrathecal treatment of lymphomatous meningitis and discontinued because Pacira stopped manufacturing it over persistent technical production problems. Neither efficacy nor safety was the stated cause. This is the cleanest instance of the pattern the shelved-asset route is looking for: an approved molecule, both legs of evidence already established, off the market for a reason that has nothing to do with whether it works.",
+      "source": "https://www.biospace.com/article/production-problems-lead-pacira-to-cut-jobs-in-san-diego-/"
+    },
+    "REGN1908-1909": {
+      "reason": "not-a-dog-indication",
+      "verified": true,
+      "note": "An anti-Fel d 1 antibody for humans allergic to cats. The patient is a person, not an animal; there is no companion-animal counterpart indication. It reached the candidate list because the indication rules read 'cat allergy' as an immunology indication, which the disease-exclusion list did not catch.",
+      "source": "https://www.fiercebiotech.com/biotech/2-regeneron-drugs-get-boot-including-ngf-inhibitor-and-cat-allergy-therapy"
+    },
+
+    "SD-101": {
+      "reason": "non-clinical", "verified": false,
+      "note": "Source headline describes Dynavax axing its immuno-oncology pipeline and 82 staff, which reads as a corporate exit rather than a trial result, but the underlying trial record was not read. Unverified.",
+      "source": "https://www.fiercebiotech.com/biotech/dynavax-axes-immuno-oncology-pipeline-and-82-staff"
+    },
+    "IDE705 (GSK101)": {
+      "reason": "non-clinical", "verified": false,
+      "note": "GSK ended a five-year collaboration with IDEAYA. A partnership ending is a commercial event, but whether the asset also underperformed was not established. Unverified.",
+      "source": "https://www.biospace.com/business/gsk-cuts-five-year-old-cancer-collaboration-with-ideaya"
+    },
+    "domvanalimab (AB154)": {
+      "reason": "unverified", "verified": false,
+      "note": "Dropped in an Arcus quarterly pipeline update. TIGIT as a class has failed repeatedly in late-phase trials, so a clinical cause is at least as likely as a portfolio one. Not eligible without reading the trial record.",
+      "source": "https://www.businesswire.com/news/home/20260805395862/en/Arcus-Biosciences-Reports-Second-Quarter-2026-Financial-Results-and-Provides-a-Pipeline-Update"
+    },
+    "etrumadenant (AB928)": {
+      "reason": "unverified", "verified": false,
+      "note": "Same Arcus pipeline update; same reasoning as domvanalimab.",
+      "source": "https://www.businesswire.com/news/home/20260805395862/en/Arcus-Biosciences-Reports-Second-Quarter-2026-Financial-Results-and-Provides-a-Pipeline-Update"
+    },
+    "solnerstotug (formerly SNS-101)": {
+      "reason": "non-clinical", "verified": false,
+      "note": "Source describes a strategic review to maximise shareholder value, i.e. a company wind-down. Note also that the company field reads Faeth Therapeutics while the source is a Sensei Biotherapeutics release, so the row itself is suspect.",
+      "source": "https://www.biospace.com/press-releases/sensei-biotherapeutics-announces-initiation-of-strategic-review-to-maximize-shareholder-value"
+    },
+    "pacmilimab (CX-072) (inferred)": {
+      "reason": "unverified", "verified": false,
+      "note": "Source is a CytomX update on COVID-19 impact on its clinical-stage pipeline. The drug name is marked inferred in the supplied data, so both the identity and the reason are uncertain.",
+      "source": "https://www.biospace.com/cytomx-therapeutics-announces-milestone-achievement-in-abbvie-cd71-partnership-and-provides-update-on-impact-of-covid-19-on-clinical-stage-pipeline"
+    }
+  }
+}

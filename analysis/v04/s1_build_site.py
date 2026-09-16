@@ -250,7 +250,55 @@ tr.det>td{background:#fafbfc;padding:0}
 footer{border-top:1px solid var(--line);margin-top:60px;padding:22px;color:var(--faint);
   font-family:var(--sans);font-size:13px}
 footer .in{max-width:1180px;margin:0 auto}
+/* charts: horizontal bars, area cards, funnel. One hue, same tokens as everything else. */
+figure.chart{margin:20px 0;padding:0}
+figure.chart figcaption{font-family:var(--sans);font-size:13px;color:var(--dim);margin:0 0 10px}
+.bars{display:flex;flex-direction:column;gap:3px}
+.brow{display:grid;grid-template-columns:minmax(90px,190px) minmax(0,1fr) 52px;gap:10px;
+  align-items:center;font-family:var(--sans);font-size:13.5px}
+.brow .bl{color:var(--ink);line-height:1.3}
+.brow .bt{background:#f0f2f4;height:17px;display:block;border-radius:1px;overflow:hidden}
+.brow .bt i{display:block;height:100%;background:var(--accent)}
+.brow .bt i.alt{background:#8aa8c0}
+.brow .bn{text-align:right;font-variant-numeric:tabular-nums;color:var(--dim)}
+.cnote{font-family:var(--sans);font-size:12.5px;color:var(--dim);margin:10px 0 0;max-width:72ch}
+
+.areas{display:grid;gap:14px;margin:20px 0}
+.acard{background:var(--card);border:1px solid var(--line);padding:16px 18px}
+.atop{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;justify-content:space-between}
+.atop h3{margin:0;font-size:17px}
+.rank{font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--accent);
+  background:var(--accent-soft);padding:3px 9px;border-radius:2px;white-space:nowrap}
+.acard .bar{display:flex;height:9px;margin:13px 0 7px;background:var(--line);overflow:hidden}
+.acard .bar i{display:block;height:100%}
+.acard .bar i.ok{background:var(--accent)}
+.acard .bar i.no{background:var(--no)}
+.alegend{font-family:var(--sans);font-size:12.5px;color:var(--dim);display:flex;flex-wrap:wrap;
+  gap:4px 18px}
+
+.routes{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin:22px 0}
+.rcard{background:var(--card);padding:16px 18px;display:grid;
+  grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start}
+.rcard .rn{font-family:var(--sans);font-size:27px;font-weight:600;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;line-height:1.1;color:var(--accent)}
+.rcard.held .rn{color:var(--dim)}
+.rcard h3{margin:0 0 3px;font-size:15px;font-family:var(--sans)}
+.rcard p{margin:0;font-family:var(--sans);font-size:13.5px;color:var(--dim);line-height:1.5;
+  max-width:72ch}
+
+.funnel{font-family:var(--sans);font-size:13.5px;margin:18px 0;border-left:2px solid var(--line)}
+.funnel div{display:flex;justify-content:space-between;gap:18px;padding:7px 0 7px 16px;
+  border-bottom:1px solid var(--line)}
+.funnel div:last-child{border-bottom:0;font-weight:600;color:var(--accent)}
+.funnel span:last-child{font-variant-numeric:tabular-nums;color:var(--dim);white-space:nowrap}
+.funnel div:last-child span:last-child{color:var(--accent)}
+.chip{display:inline-block;font-family:var(--sans);font-size:11.5px;font-weight:600;padding:1px 7px;
+  border-radius:2px;white-space:nowrap;background:var(--accent-soft);color:var(--accent)}
+.chip.warn{background:#fcf9ef;color:var(--mid)}
+
 @media (max-width:900px){
+  .brow{grid-template-columns:minmax(80px,130px) minmax(0,1fr) 44px;font-size:12.5px}
+  .rcard{grid-template-columns:52px minmax(0,1fr);gap:12px}
   .wrap{grid-template-columns:1fr;gap:0}
   .rail{position:static;padding:22px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px;
     border-bottom:1px solid var(--line);padding-bottom:12px}
@@ -403,7 +451,7 @@ window.initTable = function (cfg) {
 """
 
 NAV = [("index.html", "Report"), ("results.html", "Results"), ("pairs.html", "Drug pairs"),
-       ("spotcheck.html", "Verify")]
+       ("caninisation.html", "Programme selection"), ("spotcheck.html", "Verify")]
 
 
 def page(fname, title, body, depth=0, rail=None, cls="page"):
@@ -709,6 +757,119 @@ def heatmap(fin):
     return "\n".join(h)
 
 
+def hbars(rows, caption="", note="", alt_before=None):
+    """Horizontal bar chart. rows are (label, n); alt_before shades the first n bars differently."""
+    mx = max([n for _, n in rows] or [1])
+    h = ['<figure class="chart">']
+    if caption:
+        h.append(f"<figcaption>{e(caption)}</figcaption>")
+    h.append('<div class="bars">')
+    for i, (label, n) in enumerate(rows):
+        cls = " alt" if alt_before is not None and i < alt_before else ""
+        # A zero-width bar reads as a missing row rather than an empty one, so keep a hairline.
+        w = max(n / mx * 100, 0.7) if mx else 0.7
+        h.append(f'<div class="brow"><span class="bl">{e(label)}</span>'
+                 f'<span class="bt"><i class="{cls.strip()}" style="width:{w:.1f}%"></i></span>'
+                 f'<span class="bn">{n:,}</span></div>')
+    h.append("</div>")
+    if note:
+        h.append(f'<p class="cnote">{e(note)}</p>')
+    h.append("</figure>")
+    return "\n".join(h)
+
+
+def cand_lag(attrs):
+    """How long companion-animal medicine took to adopt each human drug."""
+    lags = [v["vet_year"] - v["approval_year"] for v in attrs.values()
+            if v.get("vet_year") and v.get("approval_year")]
+    buckets = [("Veterinary evidence first", -10**6, -1), ("0–4 years", 0, 4), ("5–9", 5, 9),
+               ("10–19", 10, 19), ("20–29", 20, 29), ("30–39", 30, 39), ("40–49", 40, 49),
+               ("50 or more", 50, 10**6)]
+    rows = [(lab, sum(1 for l in lags if lo <= l <= hi)) for lab, lo, hi in buckets]
+    return hbars(rows, A("caninisation", "lag_caption",
+                         f"Years between human approval and the veterinary evidence, "
+                         f"for the {len(lags)} pairs where both dates are known"),
+                 A("caninisation", "lag_note", ""), alt_before=1)
+
+
+def cand_routes(d):
+    counts, labels = d.get("route_counts") or {}, d.get("route_labels") or {}
+    items = [(k, counts.get(k, 0)) for k in ("route1", "route2", "route3")]
+    h = ['<div class="routes">']
+    for k, n in items:
+        h.append(f'<div class="rcard"><div class="rn">{n}</div><div>'
+                 f'<h3>{e(A("caninisation", f"{k}_name", labels.get(k, k)))}</h3>'
+                 f'<p>{e(A("caninisation", f"{k}_desc", ""))}</p></div></div>')
+    h.append(f'<div class="rcard held"><div class="rn">{d.get("watch_count", 0)}</div><div>'
+             f'<h3>{e(A("caninisation", "watch_name", "Held back"))}</h3>'
+             f'<p>{e(A("caninisation", "watch_desc", ""))}</p></div></div>')
+    h.append("</div>")
+    return "\n".join(h)
+
+
+def cand_areas(d):
+    h = ['<div class="areas">']
+    for a in d.get("areas", []):
+        ev = a["evidence"]
+        det = ev["corresponded"] + ev["did_not"]
+        h.append(
+            f'<div class="acard"><div class="atop"><h3>{e(a["area"])}</h3>'
+            f'<span class="rank">{a["candidates"]} '
+            f'{e(A("caninisation", "areas_cands", "candidates"))}</span></div>'
+            f'<div class="bar"><i class="ok" style="flex:{ev["corresponded"]}"></i>'
+            f'<i class="no" style="flex:{ev["did_not"]}"></i></div>'
+            f'<div class="alegend">'
+            f'<span>{ev["corresponded"]} of {det} '
+            f'{e(A("caninisation", "areas_conc", "of dog results corresponded"))}</span>'
+            f'<span><strong>{ev["level_A"]} of {ev["results"]}</strong> '
+            f'{e(A("caninisation", "areas_levela", "are intervention outcomes"))}</span>'
+            f'<span>{ev["studies"]} {e(A("caninisation", "areas_studies", "studies"))}</span>'
+            f"</div></div>")
+    h.append("</div>")
+    return "\n".join(h)
+
+
+def cand_crowding(d):
+    rows = [(c["indication"], c["programmes"]) for c in d.get("crowding", [])]
+    return hbars(rows, A("caninisation", "crowding_caption", ""),
+                 A("caninisation", "crowding_note", ""))
+
+
+def cand_funnel(d):
+    sk, inp = d.get("skipped") or {}, d.get("inputs") or {}
+    order = [
+        ("no dog evidence for this area", "No dog evidence in the review for that condition area"),
+        ("disease dogs do not get", "A disease dogs do not get, or a human-only indication"),
+        ("human tumour type dogs do not get", "A human tumour type dogs do not get"),
+        ("oncology indication too unspecific to place in a dog",
+         "Oncology indication too unspecific to place in a dog"),
+        ("dog evidence says biology does not correspond",
+         "Dog evidence says the biology does not correspond"),
+        ("discontinued over safety or withdrawn", "Discontinued over safety, or withdrawn"),
+        ("known species toxicity", "Known toxicity in the target species"),
+        ("diagnostic or imaging agent, not a therapeutic", "Diagnostic or imaging agent"),
+    ]
+    # The gates above are per supplied programme; the gates below are per molecule. The dedup step
+    # sits between them, and without it the column does not add up.
+    h = ['<div class="funnel">',
+         f'<div><span>Human programmes supplied</span>'
+         f'<span>{inp.get("human_programs", 0):,}</span></div>']
+    for key, label in order:
+        if sk.get(key):
+            h.append(f"<div><span>{e(label)}</span><span>−{sk[key]:,}</span></div>")
+    if d.get("deduplicated"):
+        h.append(f'<div><span>The same molecule listed more than once (biosimilars, repeat '
+                 f'listings)</span><span>−{d["deduplicated"]:,}</span></div>')
+    held = sk.get("discontinued on clinical performance, or reason not established")
+    if held:
+        h.append(f'<div><span>Stopped on clinical performance, or the reason could not be '
+                 f'established</span><span>−{held:,}</span></div>')
+    h.append(f'<div><span>Held as a watch list — no human approval yet</span>'
+             f'<span>−{d.get("watch_count", 0):,}</span></div>')
+    h.append(f'<div><span>Candidates</span><span>{len(d.get("candidates", [])):,}</span></div></div>')
+    return "\n".join(h)
+
+
 def browser(tid, data_id, rows_json, columns, filters, noun, search_keys, row_js,
             placeholder="", empty="", reset="Reset"):
     """A searchable, sortable table. Rows render client-side from JSON embedded in the page."""
@@ -806,6 +967,27 @@ def main():
                # per cell type, per tissue). Counting distinct quotes says how many findings there
                # actually are, so the prose need not imply that every row is a separate one.
                "n_distinct_findings": f"{len({(r['pmid'], (r.get('quote') or '')[:120]) for r in fin}):,}"}
+
+    # Programme-selection scalars. The timing counts and the median lag come from the pair
+    # attributes computed by d4, never recomputed here.
+    _timing = collections.Counter(v.get("timing") for v in attrs.values())
+    _lags = sorted(v["vet_year"] - v["approval_year"] for v in attrs.values()
+                   if v.get("vet_year") and v.get("approval_year"))
+    _cand = load("part2/caninisation_candidates.json") or {}
+    _rc = _cand.get("route_counts") or {}
+    scalars.update({
+        "n_human_first": f"{_timing['human-approval-before-veterinary-evidence']:,}",
+        "n_vet_first": f"{_timing['human-approval-after-veterinary-evidence']:,}",
+        "median_lag": f"{_lags[len(_lags) // 2]:,}" if _lags else "—",
+        "n_lag_pairs": f"{len(_lags):,}",
+        "n_human_programs": f"{(_cand.get('inputs') or {}).get('human_programs', 0):,}",
+        "n_pet_programs": f"{(_cand.get('inputs') or {}).get('pet_programs', 0):,}",
+        "n_candidates": f"{len(_cand.get('candidates') or []):,}",
+        "n_route1": f"{_rc.get('route1', 0):,}", "n_route2": f"{_rc.get('route2', 0):,}",
+        "n_route3": f"{_rc.get('route3', 0):,}",
+        "n_watch": f"{_cand.get('watch_count', 0):,}",
+        "n_formulary": f"{sum(1 for c in (_cand.get('candidates') or []) if c.get('route') == 'route1' and c.get('in_veterinary_formulary')):,}",
+    })
 
     # ---------------- blocks the writer cannot type by hand ----------------
     lt = [f'<div class="scroll"><table><caption>'
@@ -961,6 +1143,92 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
                                prow_js, placeholder=A("pairs_table", "placeholder", ""),
                                empty=A("pairs_table", "empty", ""), reset=A("pairs_table", "reset", "Reset"))})
     page("pairs.html", title or "Dog and cat drug pairs", body)
+
+    # ---------------- programme selection ----------------
+    crow = []
+    # The watch list is browsable alongside the candidates rather than being a number the page
+    # quotes and then hides. It also makes the stage filter mean something: every candidate is
+    # approved, so on the candidates alone that control offered a single option.
+    for c in (_cand.get("candidates") or []) + (_cand.get("watch") or []):
+        ev = c.get("evidence") or {}
+        det = ev.get("corresponded", 0) + ev.get("did_not", 0)
+        crow.append({
+            "dr": c.get("drug") or "", "ing": c.get("ingredient") or "",
+            "tg": c.get("target") or "", "ar": c.get("area") or "",
+            "rt": c.get("route_label") or "", "st": c.get("human_stage") or "",
+            "cn": c.get("competitor_count") or 0, "co": c.get("company") or "",
+            "ind": c.get("indication") or "", "yr": c.get("first_us_approval"),
+            "ev": (f'{ev.get("corresponded", 0)} of {det} dog results corresponded · '
+                   f'{ev.get("level_A", 0)} of {ev.get("results", 0)} are intervention outcomes · '
+                   f'{ev.get("studies", 0)} studies'),
+            "cp": [h.get("drug") for h in (c.get("competitors") or [])][:14],
+            "sf": [f'{f.get("effect")}' for f in (c.get("safety_flags") or [])],
+            "pr": c.get("precedent") or "", "dn": c.get("discontinuation_note") or "",
+            "fm": bool(c.get("in_veterinary_formulary")),
+            "vg": bool(c.get("indication_is_vague")),
+            "src": c.get("source") or ""})
+    crow.sort(key=lambda r: r["dr"].lower())
+    CL = {k: A("caninisation", k, d) for k, d in (
+        ("detail_ind", "Human indication"),
+        ("detail_ev", "Dog evidence for this condition area"),
+        ("detail_comp", "Companion-animal programmes on this target"),
+        ("detail_comp_none", "No programme in the supplied list targets this in dogs or cats."),
+        ("detail_safety", "Species safety caution"),
+        ("detail_precedent", "Class precedent in companion animals"),
+        ("detail_disc", "Why the human programme stopped"),
+        ("detail_formulary", "Already in routine veterinary use as a generic."),
+        ("detail_vague", "The human indication is too general to place a tumour type."),
+        ("detail_source", "Programme source"))}
+    crow_js = ("""function(r){
+var L=""" + json.dumps(CL) + """;
+var d='<div class="pd">';
+d+='<h4>'+L.detail_ind+'</h4><p>'+esc(r.ind)+(r.co?' · '+esc(r.co):'')+'</p>';
+if(r.vg){d+='<p class="src">'+L.detail_vague+'</p>';}
+d+='<h4>'+L.detail_ev+'</h4><p class="src">'+esc(r.ev)+'</p>';
+d+='<h4>'+L.detail_comp+'</h4><p class="src">'+(r.cp.length?r.cp.map(esc).join(', '):L.detail_comp_none)+'</p>';
+if(r.fm){d+='<p class="src"><span class="chip warn">in veterinary use</span> '+L.detail_formulary+'</p>';}
+if(r.pr){d+='<h4>'+L.detail_precedent+'</h4><p class="src">'+esc(r.pr)+'</p>';}
+if(r.sf.length){d+='<h4>'+L.detail_safety+'</h4><p class="src">'+r.sf.map(esc).join(' ')+'</p>';}
+if(r.dn){d+='<h4>'+L.detail_disc+'</h4><p class="src">'+esc(r.dn)+'</p>';}
+if(r.src){d+='<p class="src">'+L.detail_source+': <a href="'+esc(r.src)+'">'+esc(r.src.slice(0,74))+'</a></p>';}
+d+='</div>';
+return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
++(r.ing&&r.ing.toLowerCase()!==r.dr.toLowerCase()?'<br><span class="src">'+esc(r.ing)+'</span>':'')
++(r.fm?' <span class="chip warn">in veterinary use</span>':'')+'</td>'
++'<td>'+esc(r.tg)+'</td><td>'+esc(r.ar)+'</td><td>'+esc(r.rt)+'</td>'
++'<td>'+esc(r.st)+(r.yr?' <span class="src">'+r.yr+'</span>':'')+'</td>'
++'<td class="num">'+(r.cn||'—')+'</td></tr>'
++'<tr class="det" hidden><td colspan="6">'+d+'</td></tr>';}""")
+    ccols = [{"key": "dr", "label": A("caninisation", "col_drug", "Molecule")},
+             {"key": "tg", "label": A("caninisation", "col_target", "Target")},
+             {"key": "ar", "label": A("caninisation", "col_area", "Condition area")},
+             {"key": "rt", "label": A("caninisation", "col_route", "Route")},
+             {"key": "st", "label": A("caninisation", "col_stage", "Human stage")},
+             {"key": "cn", "label": A("caninisation", "col_comp", "Companion-animal programmes"),
+              "num": True}]
+    body, sections, title = compose("caninisation.md", scalars, {
+        "cand_figures": figures_block([
+            (scalars["n_candidates"], A("caninisation", "fig_candidates", "candidates")),
+            (scalars["n_route1"], A("caninisation", "fig_route1", "approved, no companion programme")),
+            (scalars["n_route2"], A("caninisation", "fig_route2", "approved, target claimed")),
+            (scalars["n_route3"], A("caninisation", "fig_route3", "shelved, non-clinical")),
+            (scalars["n_watch"], A("caninisation", "fig_watch", "pipeline watch list"))]),
+        "cand_routes": cand_routes(_cand),
+        "cand_lag": cand_lag(attrs),
+        "cand_areas": cand_areas(_cand),
+        "cand_crowding": cand_crowding(_cand),
+        "cand_funnel": cand_funnel(_cand),
+        "cand_table": browser("cands", "canddata", json.dumps(crow, separators=(",", ":")), ccols,
+                              [("ar", A("caninisation", "filter_area", "Condition area")),
+                               ("rt", A("caninisation", "filter_route", "Route")),
+                               ("st", A("caninisation", "filter_stage", "Human stage"))],
+                              A("caninisation", "noun", "candidates"),
+                              ["dr", "ing", "tg", "ind", "co"], crow_js,
+                              placeholder=A("caninisation", "placeholder", ""),
+                              empty=A("caninisation", "empty", ""),
+                              reset=A("caninisation", "reset", "Reset"))})
+    page("caninisation.html", title or "Licensing human molecules for dogs and cats", body,
+         rail=sections)
 
     # ---------------- study pages ----------------
     for pm, rs in studies.items():
