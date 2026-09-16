@@ -176,12 +176,15 @@ retrieval to-do list.
   is held here. This is probably the largest single determinant of programme value and it is
   absent. The veterinary literature's attention is deliberately not substituted for prevalence: it
   measures what researchers study, not what animals get.
-- **"No companion-animal programme" means absent from the supplied {{n_pet_programs}}-programme
-  list, not absent from veterinary practice.** That list is branded company programmes, not the
-  formulary. Molecules in routine generic veterinary use are flagged separately, but that flag is
-  hand-written and incomplete.
-- **Patent and exclusivity status is unknown.** Years since first approval is a crude proxy for
-  whether a molecule can be licensed cheaply, and says nothing about who controls it now.
+- **"Not found" is a statement about the checks that were run.** Presence is established from the
+  supplied {{n_pet_programs}}-programme list, the corresponding companion condition, the veterinary
+  literature, this review's own pair records, and hand-curated patents and halted programmes. That
+  list is branded company programmes rather than the formulary, so molecules in routine generic
+  veterinary use are flagged separately — and that flag is hand-written and incomplete.
+- **Patent and exclusivity status is recorded only where it was searched.** Where filings are shown
+  they are named with their sources; where none are shown, the mechanism has not been searched
+  rather than found clear. Years since first approval is a crude proxy for whether a molecule can be
+  licensed cheaply, and says nothing about who controls it now.
 - **Target-animal safety is not systematically checked.** The species exclusion list is
   reviewer-supplied and incomplete. An absent flag means not checked, never safe.
 - **Molecules within an area are not ranked.** Every candidate in an area inherits the same
