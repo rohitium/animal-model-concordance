@@ -453,3 +453,35 @@ with the comparison left unextracted - was visible across the supplied batch (vi
 hyperventilation, C. novyi-NT) and was handled there by recasting. A systematic re-check of studies
 that contributed zero kept results is warranted; there may be other papers dropped for the
 extractor's reasons rather than their own.
+
+## A13 — Condition areas for the drug-pair browser (2026-09-15)
+
+The pairs table could be filtered by verdict, species, type and timing, but not by what the drug was
+for — and the obvious filter was unusable: 339 distinct veterinary indications across 799 pairs, 206
+of them appearing exactly once. Indications are therefore grouped into 21 condition areas by ordered
+regex rules in `indication_areas.json`, first match winning, with the indication itself still
+reachable by search. 797 of 799 pairs are assigned (99.7%); `radiography` and `systemic illness`
+remain in `other`.
+
+Order encodes the judgements that matter: oncology precedes reproductive so a mammary carcinoma is
+cancer rather than a reproductive condition, and musculoskeletal precedes anaesthesia-analgesia so
+"orthopaedic surgery" is not swallowed by the generic surgery and pain terms.
+
+**A spelling bug worth recording.** The first version of these rules used `[ae]` for the ae digraph —
+`an[ae]sthe`, `an[ae]mia`, `h[ae]morrhag`, `orthop[ae]dic`. A character class matches exactly one
+character, so every one of those matched the American spelling and missed the British one:
+"anesthesia" matched, "anaesthesia" did not. British spellings fell silently into `other`, which is
+how a mapping can look 92% complete while being systematically wrong about a whole class of terms.
+Spelled `ana?e?sthe` and so on, coverage went from 92% to 99.7%. The failure was invisible in the
+output - `other` is a plausible-looking bucket - and was only caught by reading the unmatched list
+rather than the summary.
+
+The browser also now shows what the human side of each verdict rests on, as a badge in the evidence
+panel and as a filter: US label indication (169 pairs), phase 3 or meta-analysis (283), phase 2
+(31), earlier-phase or observational (40), none retrieved (276). Where the badge reads "US label
+indication" the panel adds that a label means the FDA reviewed adequate and well-controlled trials,
+and that such pairs can only disagree in one direction, since a label exists because the drug
+worked (L91).
+
+All of it is display-only: the pair records are unchanged, and both the area rules and every label
+are editable without touching Python.

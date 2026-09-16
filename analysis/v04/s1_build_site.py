@@ -188,6 +188,7 @@ caption{caption-side:top;text-align:left;font-family:var(--sans);font-size:13px;
 .tag.ok{color:var(--ok);border-color:#c3dbcd;background:#f4f9f6}
 .tag.no{color:var(--no);border-color:#e3c4bd;background:#fdf6f4}
 .tag.mid{color:var(--mid);border-color:#e4d7a9;background:#fcf9ef}
+.tag.ev{color:var(--accent);border-color:#c5d6e4;background:var(--accent-soft);font-weight:500}
 
 .note{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
   padding:14px 18px;margin:22px 0;max-width:72ch}
@@ -258,6 +259,10 @@ footer .in{max-width:1180px;margin:0 auto}
   body{font-size:16px}
   h1{font-size:28px}
   .lede{font-size:18px}
+  /* Six filters stack one per row on a phone and push the data off screen; pair them up. */
+  .controls input[type=search]{flex:1 1 100%}
+  .controls select{flex:1 1 44%;min-width:0;max-width:100%}
+  .count{margin-left:0;flex:1 1 100%}
 }
 """
 
@@ -578,6 +583,15 @@ def render(src):
     return "\n".join(out), sections
 
 
+def indication_area(rules, indication):
+    """Condition area for a veterinary indication (amendment A13). First matching rule wins."""
+    s = (indication or "").lower()
+    for r in rules:
+        if re.search(r["pattern"], s):
+            return r["area"]
+    return "other"
+
+
 def load_artifacts():
     """The wording inside the generated artifacts, from content/artifacts.md.
 
@@ -868,6 +882,7 @@ def main():
 
     # ---------------- pairs browser ----------------
     prow = []
+    area_rules = (load("part2/indication_areas.json") or {}).get("rules") or []
     vclass = {"concordant": "ok", "discordant": "no", "mixed": "mid"}
     for k, v in classified.items():
         j, a = v["judgement"], attrs.get(k, {})
@@ -889,7 +904,11 @@ def main():
         vrecs = [{"t": rec.split(":", 1)[1], "u": f"https://pubmed.ncbi.nlm.nih.gov/{rec.split(':', 1)[1]}/"}
                  for rec in (v.get("records") or []) if rec.startswith("PMID:")]
         prow.append({"ag": v.get("ingredient") or "", "sp": ", ".join(sp) if isinstance(sp, list) else str(sp or ""),
-                     "ind": v.get("veterinary_indication") or "", "vd": j["pair"],
+                     "ind": v.get("veterinary_indication") or "",
+                     "ar": indication_area(area_rules, v.get("veterinary_indication")),
+                     "ev": A("pairs_table", f"ev_{j.get('human_top_level') or 'none'}",
+                             j.get("human_top_level") or "none"),
+                     "vd": j["pair"],
                      "vc": vclass.get(j["pair"], ""), "vet": j.get("veterinary") or "",
                      "hu": j.get("human") or "", "ty": a.get("type") or "", "ti": a.get("timing") or "",
                      "vb": j.get("veterinary_basis") or "", "hb": j.get("human_basis") or "",
@@ -903,6 +922,7 @@ def main():
         ("detail_vet_records", "Veterinary studies behind this verdict"),
         ("detail_human_records", "Human evidence cited"),
         ("detail_toplevel", "Strongest human evidence found"),
+        ("ev_note", ""),
         ("detail_none", "No human evidence was retrieved for this drug and indication."))}
     prow_js = ("""function(r){
 var link=function(x){return '<a href="'+x.u+'">'+esc(x.t)+'</a>';};
@@ -912,7 +932,8 @@ var det='<div class="pd"><h4>'+L.detail_vet+'</h4><p>'+esc(r.vb)+'</p>'
 +'<h4>'+L.detail_human+'</h4><p>'+esc(r.hb)+'</p>'
 +(r.hc.length?'<p class="src">'+L.detail_human_records+': '+r.hc.map(link).join(', ')+'</p>'
   :'<p class="src">'+L.detail_none+'</p>')
-+(r.tl?'<p class="src">'+L.detail_toplevel+': '+esc(r.tl)+'</p>':'')
++(r.ev?'<p class="src">'+L.detail_toplevel+': <span class="tag ev">'+esc(r.ev)+'</span>'
+  +(r.tl==='us-approval'&&L.ev_note?' '+esc(L.ev_note):'')+'</p>':'')
 +(r.cv?'<h4>'+L.detail_caveats+'</h4><p>'+esc(r.cv)+'</p>':'')+'</div>';
 return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'</td>'
 +'<td>'+esc(r.ind)+'</td><td><span class="tag '+r.vc+'">'+r.vd+'</span></td>'
@@ -931,6 +952,8 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
         "pairs_table": (f'<p class="hint">{e(hint)}</p>' if hint else "") +
                        browser("pairs", "pairdata", json.dumps(prow, separators=(",", ":")), pcols,
                                [("vd", A("pairs_table", "filter_vd", "Verdict")),
+                                ("ar", A("pairs_table", "filter_ar", "Condition area")),
+                                ("ev", A("pairs_table", "filter_ev", "Human evidence")),
                                 ("sp", A("pairs_table", "filter_sp", "Species")),
                                 ("ty", A("pairs_table", "filter_ty", "Type")),
                                 ("ti", A("pairs_table", "filter_ti", "Timing"))],

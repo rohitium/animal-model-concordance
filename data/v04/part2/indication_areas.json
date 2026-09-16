@@ -1,0 +1,95 @@
+{
+ "_README": [
+  "Veterinary indication -> condition area, for the drug-pairs filter (amendment A13).",
+  "339 distinct indications, 206 appearing once, make a raw indication filter unusable.",
+  "Ordered regexes, first match wins, so specific areas precede general ones: a mammary",
+  "carcinoma is oncology, an orthopaedic surgery is musculoskeletal rather than anaesthesia.",
+  "Patterns spell the ae digraph as a?e? so British and American spellings both match -",
+  "an earlier version used [ae], which matched 'anesthesia' but not 'anaesthesia' and",
+  "silently sent British spellings to 'other'.",
+  "Display only: pair records are unchanged and the indication itself stays searchable."
+ ],
+ "rules": [
+  {
+   "area": "oncology",
+   "pattern": "lymphoma|sarcoma|carcinoma|melanoma|tumou?r|cancer|mast cell|leuka?e?mia|myeloma|glioma|neoplas|histiocyt|adenoma|mesothelioma|insulinoma|thymoma|chemodectoma|mastocytosis|malignant|splenic lesion|radiotherapy support"
+  },
+  {
+   "area": "musculoskeletal",
+   "pattern": "osteoarthrit|arthrit|cruciate|desmopath|lameness|intervertebral disc|myopath|fracture|hip dysplasia|tendin|patellar|degenerative joint|orthopa?e?dic|musculoskeletal|trauma|myositis|osteochondr|back pain|spinal pain|muscle pain|thoracolumbar|mobility impairment|osteolysis"
+  },
+  {
+   "area": "anaesthesia-analgesia",
+   "pattern": "analgesi|ana?e?sthe|sedation|premedicat|postoperative pain|postoperative nausea|postoperative hyperthermia|emesis|vomiting|intubation|perioperative|catheter pain|\\bpain\\b|endoscopic procedure|postsurgical|ear surgery|\\bsurgery\\b"
+  },
+  {
+   "area": "dermatology",
+   "pattern": "dermatit|pyoderma|malassezia|pruritus|otitis|alopecia|seborrh|dermatophyt|skin|wound|pemphigus|lupus|acral lick|mange|leproid|leprosy|abscess|aural ha?e?matoma|myiasis"
+  },
+  {
+   "area": "urogenital",
+   "pattern": "cystitis|urethral|prostat|incontinen|urolith|urinary|nephrolith|feline lower urinary|dysuria|polydipsia|polyuria"
+  },
+  {
+   "area": "renal",
+   "pattern": "kidney|renal|azota?e?mia|glomerul|proteinuria"
+  },
+  {
+   "area": "cardiovascular",
+   "pattern": "heart|cardiomyopath|cardiac|hypertensi|hypotension|arrhythm|mitral|congestive|thromboembol|atrial fibrillation|cardiopulmonary|shock|syncope|ha?e?moperitoneum|tachycardia|pulmonic stenosis|circulatory"
+  },
+  {
+   "area": "neurology",
+   "pattern": "epilep|seizure|myelopath|encephal|cognitive dysfunction|vestibular|neuropath|meningit|syringomyelia|paresis|spinal cord|spinal disease|intracranial|niemann-pick|narcoleps|polyradiculoneuritis|neurologic"
+  },
+  {
+   "area": "metabolic-endocrine",
+   "pattern": "diabet|hyperthyroid|hypothyroid|cushing|hypercortisol|hyperadrenocortic|hypoadrenocortic|obesity|insulin|hyperlipid|hypercalc|hypoglyc|hypoalbumin|acromegal|copper storage|hyperaldosteron|taurine|hypomagnes|hyperkal|acida?e?mia"
+  },
+  {
+   "area": "infectious-parasitic",
+   "pattern": "parvo|ehrlichi|leishman|giardia|hookworm|babesi|infect|bacteri|viral|virus|fung|sepsis|septic|leptospir|heartworm|dirofilar|coccidi|toxoplasm|immunodeficiency|panleukopenia|kennel cough|\\btick\\b|flea|mite|demodic|scabies|helminth|parasit|thelazi|spirocerc|angiostrongyl|colonization|pythiosis|anaplasm|bartonell|borreli|aspergill|papilloma"
+  },
+  {
+   "area": "liver-gi",
+   "pattern": "diarrh|pancreatit|hepat|liver|colitis|gastr|inflammatory bowel|portosystemic|constipat|megaesoph|cholang|enteropath|dysbiosis|foreign body|ileus|ulcer|peritonitis|cobalamin|exocrine pancreatic|malabsorption"
+  },
+  {
+   "area": "ophthalmology",
+   "pattern": "keratoconjunctiv|glaucoma|uveitis|corneal|retin|cataract|ocular|\\beye\\b|dry eye|entropion|conjunctiv|keratitis"
+  },
+  {
+   "area": "respiratory",
+   "pattern": "asthma|brachycephalic|tracheal|rhinit|pneumon|airway|bronch|laryngeal|chylothorax|pulmonary|hypoxa?e?mia|sino-nasal"
+  },
+  {
+   "area": "haematology",
+   "pattern": "ana?e?mia|thrombocytopen|coagulopath|ha?e?mophilia|ha?e?morrhag|transfusion|neutropen|polycyth|metha?e?moglobin|ha?e?molytic"
+  },
+  {
+   "area": "dental-oral",
+   "pattern": "periodontal|dental|stomatit|gingiv|tooth|oral health|oral disease"
+  },
+  {
+   "area": "toxicology",
+   "pattern": "toxicosis|poisoning|intoxicat|overdose"
+  },
+  {
+   "area": "behaviour",
+   "pattern": "anxiety|aggress|noise aversion|compulsive|behaviou?r|\\bstress\\b|\\bfear\\b"
+  },
+  {
+   "area": "reproductive",
+   "pattern": "pyometra|pregnan|parturition|oestrus|estrus|fertility|castrat|\\bspay\\b|mammary hyperplasia"
+  },
+  {
+   "area": "immunology-inflammation",
+   "pattern": "immune.mediated|allerg|anaphyla|inflammat|atopy|autoimmun|vaccin"
+  },
+  {
+   "area": "nutrition-supportive",
+   "pattern": "nutrition|appetite|cachexia|weight|dehydration|fluid|body condition|palatab|hydration|aging"
+  }
+ ],
+ "fallback": "other"
+}
