@@ -700,3 +700,41 @@ adverse events rather than approved products, and the EMA veterinary dataset has
 portal with no download. A molecule approved for dogs or cats outside the supplied list would not be
 detected. Separately, a human prophylactic vaccine or vaccine adjuvant is not a caninisation
 candidate, and 40 such programmes (including mRESVIA and CpG 1018) are now excluded.
+
+## A20 — A mechanism can be occupied by patents and abandoned assets, not only by products (2026-09-16)
+
+A19 replaced token matching with a curated map and required four named checks before asserting that
+a mechanism was unclaimed in companion animals. The map still asked only one question — which
+*marketed* companion-animal product works this mechanism — and published "unoccupied" when the
+answer was none. For programme selection that is the wrong question, and it produced a wrong answer
+on the clearest case in the list.
+
+Anti-IL-4Rα was published as an unoccupied mechanism. It is not. No IL-4R product is marketed for
+dogs, but:
+
+- **Merck Animal Health (Intervet)** holds a granted patent on antibodies against canine IL-4
+  receptor alpha (JP7854420B2, priority 2015-04-02), and has further filings including caninized
+  human antibodies to IL-4Rα (US20250206830A1, filed 2024-12-30), an antibody to canine IL-4Rα
+  (JP2024010002A), bispecific caninized antibodies, and a fusion protein for atopic dermatitis.
+- **Vetoquinol SA** filed anti-canine IL-4Rα antibodies for canine atopic dermatitis
+  (WO2025114614A1, 2024-12-02).
+- **Kindred Biosciences** filed veterinary anti-IL-4 receptor antibodies (CN113164593A, 2019-09-14).
+- **Elanco Animal Health** terminated its own pet-health IL-4R asset, taking a $53 million IPR&D
+  impairment in Q2 2024 and stating that the reason was future commercial viability — not efficacy
+  and not safety.
+
+That last point is the one a marketed-products view can never reach: a mechanism that a competitor
+has already tried and abandoned for commercial reasons is a different proposition from one nobody
+has attempted, and it is arguably the most informative signal available for this decision.
+
+The map therefore records `patents` and `halted` per mechanism, each entry naming its assignee or
+company and carrying its source, and a mechanism with either is no longer reported as unoccupied. A
+new status sits between occupied and open: "no marketed product, but the mechanism is claimed or was
+attempted".
+
+The check is hand-curated, and that limit is declared rather than implied (L97). Google Patents
+returns 503 to scripted querying and serves an automated-traffic block page to a real browser;
+PatentsView now requires a registered API key and EPO OPS requires OAuth credentials. So patents are
+recorded for the mechanisms where someone looked, and a mechanism with no patent entry has not been
+searched. Reading an empty patent list as "no intellectual property" would repeat exactly the error
+this amendment corrects.

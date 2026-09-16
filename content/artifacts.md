@@ -144,6 +144,8 @@ detail_mechanism :: Mechanism in companion animals
 detail_mechanism_none :: No companion-animal programme in the supplied list works this mechanism.
 detail_condition :: Corresponding condition in dogs or cats
 detail_condition_none :: No corresponding companion-animal condition was mapped for this indication.
+detail_patents :: Patent filings on this mechanism in companion animals
+detail_halted :: Halted or written-off companion-animal programmes on this mechanism
 detail_vetlit :: Veterinary literature (PubMed)
 detail_vetlit_none :: No veterinary publications found under this molecule's name.
 detail_corpus :: This review's own drug-pair records

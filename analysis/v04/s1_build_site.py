@@ -817,6 +817,7 @@ def sankey(stages, links, caption="", note="", height=330):
 
 PRESENCE_ORDER = [
     ("a companion-animal programme works this mechanism", False),
+    ("no marketed product, but the mechanism is claimed or was attempted", False),
     ("mechanism unoccupied, but the condition is contested", False),
     ("no programme found, but used or studied in dogs or cats", False),
     ("no programme, and no veterinary literature found", True),
@@ -1301,6 +1302,10 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
             **(lambda p: {
                 "mc": p.get("target_class") or "",
                 "mh": p.get("target_holders") if p.get("target_holders") is not None else None,
+                "mp": [{"a": x.get("assignee"), "w": x.get("what"), "u": x.get("source"),
+                        "p": x.get("publication")} for x in (p.get("target_patents") or [])],
+                "mx": [{"a": x.get("company"), "w": x.get("what"), "u": x.get("source"),
+                        "p": x.get("programme")} for x in (p.get("target_halted") or [])],
                 "mn": p.get("target_note") or "",
                 "cc": p.get("companion_condition") or "",
                 "ch": p.get("condition_holders") or [],
@@ -1325,6 +1330,8 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
         ("detail_presence", "What is known about companion-animal presence"),
         ("detail_mechanism", "Mechanism in companion animals"),
         ("detail_mechanism_none", "No companion-animal programme works this mechanism."),
+        ("detail_patents", "Patent filings on this mechanism in companion animals"),
+        ("detail_halted", "Halted or written-off companion-animal programmes on this mechanism"),
         ("detail_condition", "Corresponding condition in dogs or cats"),
         ("detail_condition_none", "No corresponding companion-animal condition was mapped."),
         ("detail_vetlit", "Veterinary literature (PubMed)"),
@@ -1344,6 +1351,12 @@ d+='<p class="src">'+L.detail_mechanism+': '
  +(r.mc?'<em>'+esc(r.mc)+'</em> — ':'')
  +(r.mh&&r.mh.length?r.mh.map(esc).join('; ')
    :(r.mh?L.detail_mechanism_none:'not classified'))+'</p>';
+if(r.mx&&r.mx.length){d+='<p class="src">'+L.detail_halted+': '+r.mx.map(function(x){
+  return '<strong>'+esc(x.a)+'</strong>'+(x.p?' — '+esc(x.p):'')+(x.w?'. '+esc(x.w):'')
+   +(x.u?' <a href="'+esc(x.u)+'">source</a>':'');}).join(' ')+'</p>';}
+if(r.mp&&r.mp.length){d+='<p class="src">'+L.detail_patents+': '+r.mp.map(function(x){
+  return '<strong>'+esc(x.a)+'</strong>'+(x.p?' ('+esc(x.p)+')':'')+(x.w?' — '+esc(x.w):'')
+   +(x.u?' <a href="'+esc(x.u)+'">source</a>':'');}).join(' ')+'</p>';}
 if(r.mn){d+='<p class="src">'+esc(r.mn)+'</p>';}
 d+='<p class="src">'+L.detail_condition+': '
  +(r.cc?'<em>'+esc(r.cc)+'</em> — ':'')

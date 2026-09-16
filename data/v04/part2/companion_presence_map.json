@@ -43,7 +43,26 @@
 
     {"class": "IL-4 receptor alpha / type 2 cytokine", "match": "il-?4r|il-?4 receptor|il-?13\\b|dupilumab|tralokinumab|lebrikizumab",
      "holders": [],
-     "note": "No companion-animal programme targets IL-4Ralpha or IL-13. The type-2 axis in dogs is served through IL-31 (Cytopoint, Befrena) and JAK (Apoquel, Zenrelia), which treat the same disease by a different mechanism. Read this as an unoccupied mechanism inside a heavily occupied indication, not as an empty market."},
+     "halted": [
+       {"company": "Elanco Animal Health", "programme": "pet health IL-4R asset",
+        "what": "Terminated. Elanco recorded a $53 million impairment charge on a pet-health IPR&D asset (IL-4R) in Q2 2024, stating that management terminated future R&D activities over concerns about the asset's future commercial viability — not efficacy and not safety.",
+        "source": "https://www.prnewswire.com/news-releases/elanco-animal-health-reports-second-quarter-2024-results-302217343.html"}
+     ],
+     "patents": [
+       {"assignee": "Intervet International B.V. (Merck Animal Health)", "publication": "JP7854420B2",
+        "what": "Granted. Antibodies against canine IL-4 receptor alpha, priority 2015-04-02, for canine atopic dermatitis.",
+        "source": "https://patents.google.com/patent/JP7854420B2/en"},
+       {"assignee": "Intervet Inc. (Merck Animal Health)", "publication": "US20250206830A1",
+        "what": "Caninized human antibodies to human IL-4R alpha, filed 2024-12-30.",
+        "source": "https://patents.google.com/patent/US20250206830A1/en"},
+       {"assignee": "Vetoquinol SA", "publication": "WO2025114614A1",
+        "what": "Anti-canine IL-4Ralpha antibodies for canine atopic dermatitis, filed 2024-12-02.",
+        "source": "https://patents.google.com/patent/WO2025114614A1/en"},
+       {"assignee": "Kindred Biosciences", "publication": "CN113164593A",
+        "what": "Veterinary anti-IL-4 receptor antibodies, filed 2019-09-14.",
+        "source": "https://patents.google.com/patent/CN113164593A/en"}
+     ],
+     "note": "This mechanism is contested in dogs even though no product has reached the market. At least four companies have filed on anti-canine IL-4Ralpha - Merck Animal Health (Intervet) holds a granted patent with 2015 priority, plus caninized anti-IL-4Ralpha and an atopic-dermatitis fusion protein; Vetoquinol and Kindred Biosciences have their own filings - and Elanco terminated its own IL-4R pet asset in 2024 for commercial reasons. A mechanism can be crowded with intellectual property and abandoned assets while the marketed-product column stays empty, which is why patents and halted programmes are recorded separately from holders."},
 
     {"class": "nerve growth factor", "match": "\\bngf\\b|nerve growth factor|tanezumab|fasinumab",
      "holders": ["Librela (bedinvetmab), Zoetis", "Solensia (frunevetmab), Zoetis", "Lenivia (izenivetmab)", "Portela (relfovetmab)"]},

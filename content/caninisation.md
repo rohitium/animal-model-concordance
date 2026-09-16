@@ -53,9 +53,17 @@ A route says whether a *company programme* holds the molecule's mechanism. It do
 dogs and cats already receive the drug, nor whether the disease is already served by something else.
 Those are different questions, and answering only the first overstates how open a space is.
 
-Every molecule is therefore checked against four sources, and the table reports what each one found:
-the mechanism it works, the corresponding condition in dogs or cats, the veterinary literature under
-its own name, and this review's own drug-pair records.
+Neither does a marketed-products view capture a mechanism that companies have filed patents on, or
+tried and abandoned. Anti-IL-4Rα is the clearest case: no IL-4R product is marketed for dogs, yet
+Merck Animal Health holds a granted patent on anti-canine IL-4Rα with 2015 priority, Vetoquinol and
+Kindred Biosciences have their own filings, and Elanco wrote off its own IL-4R pet asset in 2024 for
+commercial reasons. A mechanism can be thick with intellectual property and abandoned assets while
+the marketed-product column stays empty.
+
+Every molecule is therefore checked against several sources, and the table reports what each one
+found: the mechanism it works, patents and halted programmes recorded against that mechanism, the
+corresponding condition in dogs or cats, the veterinary literature under its own name, and this
+review's own drug-pair records.
 
 {{cand_presence}}
 

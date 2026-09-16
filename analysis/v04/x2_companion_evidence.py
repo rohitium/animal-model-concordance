@@ -112,9 +112,18 @@ def main():
         key = norm(c.get("ingredient")) or norm(c.get("drug"))
         in_corpus = corpus.get(key) or corpus.get(norm(c.get("drug"))) or []
 
-        # The verdict is a summary of the four checks, never a claim beyond them.
+        # Patents and halted programmes are separate evidence from marketed products, and they
+        # change the answer. Elanco wrote off a pet-health IL-4R asset in 2024 and at least four
+        # companies have filed on anti-canine IL-4Ralpha, yet no IL-4R product is marketed for dogs,
+        # so a marketed-products-only view called that mechanism unoccupied.
+        patents = (klass or {}).get("patents") or []
+        halted = (klass or {}).get("halted") or []
+
+        # The verdict is a summary of the checks, never a claim beyond them.
         if klass and klass["holders"]:
             status = "a companion-animal programme works this mechanism"
+        elif patents or halted:
+            status = "no marketed product, but the mechanism is claimed or was attempted"
         elif ind and ind["holders"]:
             status = "mechanism unoccupied, but the condition is contested"
         elif (lit and lit.get("clinical")) or in_corpus:
@@ -130,6 +139,8 @@ def main():
             "searched_as": nm,
             "target_class": klass["class"] if klass else None,
             "target_holders": klass["holders"] if klass else None,
+            "target_patents": patents,
+            "target_halted": halted,
             "target_note": (klass or {}).get("note"),
             "companion_condition": ind["companion_condition"] if ind else None,
             "condition_holders": ind["holders"] if ind else None,
@@ -148,12 +159,21 @@ def main():
             "Curated human-indication to companion-condition map over the same list",
             "PubMed veterinary literature search, deterministic and cached",
             "This review's own classified drug-pair corpus",
+            "Curated patent filings and halted or written-off companion-animal programmes, for the "
+            "mechanisms where these were searched by hand, each carrying its source",
         ],
         "sources_not_checked": [
             "No approved-animal-drug registry. The FDA Green Book publishes no machine-readable "
             "export, openFDA's animal endpoint carries adverse events rather than approved products, "
             "and the EMA veterinary dataset has no download. A molecule approved for dogs or cats "
             "outside the supplied list would not be detected here.",
+            "No systematic patent search. Google Patents has no documented public API and rate-limits "
+            "automated querying, so patent evidence is hand-curated per mechanism rather than swept "
+            "across every candidate. A mechanism with no patent entry has not been searched, and "
+            "must not be read as free of intellectual property.",
+            "No systematic sweep of discontinued or written-off companion-animal programmes. These "
+            "surface in company results and press releases rather than in any register, and are "
+            "recorded per mechanism as they are found.",
         ],
         "status_counts": counts,
         "molecules": out,

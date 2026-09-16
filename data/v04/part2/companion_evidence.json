@@ -4,16 +4,20 @@
   "Curated target-mechanism map over the supplied companion-animal programme list",
   "Curated human-indication to companion-condition map over the same list",
   "PubMed veterinary literature search, deterministic and cached",
-  "This review's own classified drug-pair corpus"
+  "This review's own classified drug-pair corpus",
+  "Curated patent filings and halted or written-off companion-animal programmes, for the mechanisms where these were searched by hand, each carrying its source"
  ],
  "sources_not_checked": [
-  "No approved-animal-drug registry. The FDA Green Book publishes no machine-readable export, openFDA's animal endpoint carries adverse events rather than approved products, and the EMA veterinary dataset has no download. A molecule approved for dogs or cats outside the supplied list would not be detected here."
+  "No approved-animal-drug registry. The FDA Green Book publishes no machine-readable export, openFDA's animal endpoint carries adverse events rather than approved products, and the EMA veterinary dataset has no download. A molecule approved for dogs or cats outside the supplied list would not be detected here.",
+  "No systematic patent search. Google Patents has no documented public API and rate-limits automated querying, so patent evidence is hand-curated per mechanism rather than swept across every candidate. A mechanism with no patent entry has not been searched, and must not be read as free of intellectual property.",
+  "No systematic sweep of discontinued or written-off companion-animal programmes. These surface in company results and press releases rather than in any register, and are recorded per mechanism as they are found."
  ],
  "status_counts": {
-  "mechanism unoccupied, but the condition is contested": 81,
+  "mechanism unoccupied, but the condition is contested": 80,
   "a companion-animal programme works this mechanism": 57,
   "no programme found, but used or studied in dogs or cats": 2,
   "no programme, and no veterinary literature found": 6,
+  "no marketed product, but the mechanism is claimed or was attempted": 1,
   "not classified": 7
  },
  "molecules": {
@@ -22,6 +26,8 @@
    "searched_as": "TADALAFIL",
    "target_class": "PDE5",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal company programme, but sildenafil is standard off-label therapy for canine pulmonary hypertension and tadalafil carries veterinary literature. Unoccupied as a branded programme only.",
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -50,6 +56,8 @@
    "searched_as": "RIOCIGUAT",
    "target_class": "soluble guanylate cyclase",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -79,6 +87,8 @@
    "searched_as": "VUTRISIRAN",
    "target_class": "transthyretin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -104,6 +114,8 @@
    "searched_as": "ACORAMIDIS",
    "target_class": "transthyretin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -129,6 +141,8 @@
    "searched_as": "MAVACAMTEN",
    "target_class": "cardiac myosin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -158,6 +172,8 @@
    "searched_as": "IVABRADINE",
    "target_class": "HCN / funny-current channel",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Heart-rate reduction without negative inotropy is attractive in canine mitral valve disease, where pimobendan is the incumbent by a different mechanism.",
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -189,6 +205,8 @@
    "target_holders": [
     "Semintra (telmisartan), Boehringer Ingelheim — cat"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -215,6 +233,8 @@
    "searched_as": "APIXABAN",
    "target_class": "factor Xa / anticoagulant",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
    "condition_holders": [],
@@ -240,6 +260,8 @@
     "UpCard (torasemide), Vetoquinol",
     "Isemid (torasemide)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -272,6 +294,8 @@
    "searched_as": "AMBRISENTAN",
    "target_class": "endothelin receptor antagonist",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -301,6 +325,8 @@
     "CARDALIS (spironolactone + benazepril), Ceva",
     "Prilactone Next (spironolactone)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -325,6 +351,8 @@
    "searched_as": "AFICAMTEN",
    "target_class": "cardiac myosin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -354,6 +382,8 @@
    "searched_as": "MACITENTAN",
    "target_class": "endothelin receptor antagonist",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -380,6 +410,8 @@
    "searched_as": "Treprostinil injection",
    "target_class": "prostacyclin / IP receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -402,6 +434,8 @@
    "searched_as": "SELEXIPAG",
    "target_class": "prostacyclin / IP receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -430,6 +464,8 @@
    "target_holders": [
     "Clevor (ropinirole), Vetoquinol — emesis induction"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Epinephrine and vasopressin are emergency drugs in routine veterinary use with large veterinary literatures; they are not branded companion-animal programmes.",
    "companion_condition": "critical care and shock in dogs and cats",
    "condition_holders": [],
@@ -454,6 +490,8 @@
    "searched_as": "TREPROSTINIL",
    "target_class": "prostacyclin / IP receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -482,6 +520,8 @@
    "target_holders": [
     "Senvelgo (velagliflozin), Boehringer Ingelheim"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -509,6 +549,8 @@
    "target_holders": [
     "Clevor (ropinirole), Vetoquinol — emesis induction"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Epinephrine and vasopressin are emergency drugs in routine veterinary use with large veterinary literatures; they are not branded companion-animal programmes.",
    "companion_condition": "critical care and shock in dogs and cats",
    "condition_holders": [],
@@ -539,6 +581,8 @@
     "Benazecare (benazepril)",
     "CARDALIS (benazepril + spironolactone)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -578,6 +622,8 @@
     "Tessie (tasipimidine)",
     "Antisedan / Atipam / Revertor (atipamezole)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -604,6 +650,8 @@
    "searched_as": "AMLODIPINE",
    "target_class": "calcium channel blocker",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Amlodipine is the standard first-line agent for feline systemic hypertension in practice, but as a generic it is not a branded companion-animal programme.",
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -632,6 +680,8 @@
    "target_holders": [
     "RJB-01 (FGF21 + sTGFbetaR2 AAV gene therapy) — canine mitral valve disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -654,6 +704,8 @@
    "searched_as": "IBRUTINIB",
    "target_class": "BTK",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal BTK programme exists in the supplied list. Canine lymphoma is held by Laverdia-CA1 (verdinexor, XPO1).",
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -681,6 +733,8 @@
    "searched_as": "PIRTOBRUTINIB",
    "target_class": "BTK",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal BTK programme exists in the supplied list. Canine lymphoma is held by Laverdia-CA1 (verdinexor, XPO1).",
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -702,6 +756,8 @@
    "searched_as": "PACLITAXEL",
    "target_class": "cytotoxic chemotherapy",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -733,6 +789,8 @@
    "searched_as": "BRENTUXIMAB VEDOTIN",
    "target_class": "antibody-drug conjugate",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -756,6 +814,8 @@
    "searched_as": "ANKTIVA",
    "target_class": "IL-2 / IL-15 cytokine therapy",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -783,6 +843,8 @@
    "searched_as": "ERDAFITINIB",
    "target_class": "FGFR",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -813,6 +875,8 @@
    "searched_as": "ENCORAFENIB",
    "target_class": "BRAF / MEK / RAF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Canine urothelial carcinoma carries a high BRAF V595E mutation rate, so this is a named and unoccupied mechanism with a clear canine rationale.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -844,6 +908,8 @@
    "target_holders": [
     "Palladia (toceranib), Zoetis — dog, mast cell tumour"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -875,6 +941,8 @@
    "searched_as": "COBIMETINIB",
    "target_class": "BRAF / MEK / RAF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Canine urothelial carcinoma carries a high BRAF V595E mutation rate, so this is a named and unoccupied mechanism with a clear canine rationale.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -908,6 +976,8 @@
    "target_holders": [
     "Palladia (toceranib), Zoetis — dog, mast cell tumour"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -935,6 +1005,8 @@
    "searched_as": "PALBOCICLIB",
    "target_class": "CDK4/6",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -971,6 +1043,8 @@
     "Undisclosed oncolytic immunotherapy candidate",
     "Adoptive T-cell therapy (canine oral melanoma pilot)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -998,6 +1072,8 @@
    "searched_as": "GEMCITABINE",
    "target_class": "cytotoxic chemotherapy",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1029,6 +1105,8 @@
    "searched_as": "IMLUNESTRANT",
    "target_class": "oestrogen receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1056,6 +1134,8 @@
    "searched_as": "TRASTUZUMAB",
    "target_class": "HER2",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1089,6 +1169,8 @@
    "target_holders": [
     "Palladia (toceranib), Zoetis — dog, mast cell tumour"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1120,6 +1202,8 @@
    "searched_as": "DENILEUKIN DIFTITOX",
    "target_class": "IL-2 / IL-15 cytokine therapy",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -1145,6 +1229,8 @@
    "searched_as": "OLAPARIB",
    "target_class": "PARP",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1178,6 +1264,8 @@
    "target_holders": [
     "Palladia (toceranib), Zoetis — dog, mast cell tumour"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1209,6 +1297,8 @@
    "searched_as": "TOVORAFENIB",
    "target_class": "BRAF / MEK / RAF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Canine urothelial carcinoma carries a high BRAF V595E mutation rate, so this is a named and unoccupied mechanism with a clear canine rationale.",
    "companion_condition": "canine glioma and intracranial tumours",
    "condition_holders": [],
@@ -1227,6 +1317,8 @@
    "searched_as": "PERTUZUMAB",
    "target_class": "HER2",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1257,6 +1349,8 @@
    "searched_as": "ALDESLEUKIN",
    "target_class": "IL-2 / IL-15 cytokine therapy",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1284,6 +1378,8 @@
    "searched_as": "TALAZOPARIB",
    "target_class": "PARP",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1313,6 +1409,8 @@
    "searched_as": "VEPDEGESTRANT",
    "target_class": "oestrogen receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1343,6 +1441,8 @@
    "searched_as": "ABEMACICLIB",
    "target_class": "CDK4/6",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1377,6 +1477,8 @@
     "VGS-001 (anti-canine CTLA-4), Vetigenics — dog, oral melanoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Abatacept is CTLA-4-Ig, a T-cell costimulation blocker, and is the opposite pharmacology from an anti-CTLA-4 checkpoint antibody. It is matched separately.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1412,6 +1514,8 @@
     "Undisclosed oncolytic immunotherapy candidate",
     "Adoptive T-cell therapy (canine oral melanoma pilot)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1441,6 +1545,8 @@
    "target_holders": [
     "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -1465,6 +1571,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1495,6 +1603,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1525,6 +1635,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1554,6 +1666,8 @@
    "target_holders": [
     "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -1578,6 +1692,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1610,6 +1726,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1642,6 +1760,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1676,6 +1796,8 @@
     "Undisclosed oncolytic immunotherapy candidate",
     "Adoptive T-cell therapy (canine oral melanoma pilot)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1706,6 +1828,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1731,6 +1855,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -1760,6 +1886,8 @@
    "target_holders": [
     "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -1781,6 +1909,8 @@
    "searched_as": "CYTARABINE",
    "target_class": "cytotoxic chemotherapy",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use.",
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -1806,6 +1936,8 @@
    "searched_as": "SARILUMAB",
    "target_class": "IL-6 receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -1830,6 +1962,8 @@
     "VGS-001 (anti-canine CTLA-4), Vetigenics — dog, oral melanoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Abatacept is CTLA-4-Ig, a T-cell costimulation blocker, and is the opposite pharmacology from an anti-CTLA-4 checkpoint antibody. It is matched separately.",
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -1861,6 +1995,8 @@
     "EASOTIC (hydrocortisone aceponate)",
     "Surolan (prednisolone)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline osteoarthritis",
    "condition_holders": [
@@ -1912,6 +2048,8 @@
     "Firox (firocoxib)",
     "Tolfedine (tolfenamic acid)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline osteoarthritis",
    "condition_holders": [
@@ -1959,6 +2097,8 @@
     "Firox (firocoxib)",
     "Tolfedine (tolfenamic acid)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline osteoarthritis",
    "condition_holders": [
@@ -2003,6 +2143,8 @@
     "Apoquel (oclacitinib), Zoetis",
     "Zenrelia (ilunocitinib), Elanco"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -2027,6 +2169,8 @@
     "Apoquel (oclacitinib), Zoetis",
     "Zenrelia (ilunocitinib), Elanco"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -2060,6 +2204,8 @@
     "EASOTIC (hydrocortisone aceponate)",
     "Surolan (prednisolone)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline immune-mediated inflammatory disease",
    "condition_holders": [
@@ -2093,6 +2239,8 @@
     "EASOTIC (hydrocortisone aceponate)",
     "Surolan (prednisolone)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline immune-mediated inflammatory disease",
    "condition_holders": [
@@ -2122,7 +2270,41 @@
    "searched_as": "DUPILUMAB",
    "target_class": "IL-4 receptor alpha / type 2 cytokine",
    "target_holders": [],
-   "target_note": "No companion-animal programme targets IL-4Ralpha or IL-13. The type-2 axis in dogs is served through IL-31 (Cytopoint, Befrena) and JAK (Apoquel, Zenrelia), which treat the same disease by a different mechanism. Read this as an unoccupied mechanism inside a heavily occupied indication, not as an empty market.",
+   "target_patents": [
+    {
+     "assignee": "Intervet International B.V. (Merck Animal Health)",
+     "publication": "JP7854420B2",
+     "what": "Granted. Antibodies against canine IL-4 receptor alpha, priority 2015-04-02, for canine atopic dermatitis.",
+     "source": "https://patents.google.com/patent/JP7854420B2/en"
+    },
+    {
+     "assignee": "Intervet Inc. (Merck Animal Health)",
+     "publication": "US20250206830A1",
+     "what": "Caninized human antibodies to human IL-4R alpha, filed 2024-12-30.",
+     "source": "https://patents.google.com/patent/US20250206830A1/en"
+    },
+    {
+     "assignee": "Vetoquinol SA",
+     "publication": "WO2025114614A1",
+     "what": "Anti-canine IL-4Ralpha antibodies for canine atopic dermatitis, filed 2024-12-02.",
+     "source": "https://patents.google.com/patent/WO2025114614A1/en"
+    },
+    {
+     "assignee": "Kindred Biosciences",
+     "publication": "CN113164593A",
+     "what": "Veterinary anti-IL-4 receptor antibodies, filed 2019-09-14.",
+     "source": "https://patents.google.com/patent/CN113164593A/en"
+    }
+   ],
+   "target_halted": [
+    {
+     "company": "Elanco Animal Health",
+     "programme": "pet health IL-4R asset",
+     "what": "Terminated. Elanco recorded a $53 million impairment charge on a pet-health IPR&D asset (IL-4R) in Q2 2024, stating that management terminated future R&D activities over concerns about the asset's future commercial viability — not efficacy and not safety.",
+     "source": "https://www.prnewswire.com/news-releases/elanco-animal-health-reports-second-quarter-2024-results-302217343.html"
+    }
+   ],
+   "target_note": "This mechanism is contested in dogs even though no product has reached the market. At least four companies have filed on anti-canine IL-4Ralpha - Merck Animal Health (Intervet) holds a granted patent with 2015 priority, plus caninized anti-IL-4Ralpha and an atopic-dermatitis fusion protein; Vetoquinol and Kindred Biosciences have their own filings - and Elanco terminated its own IL-4R pet asset in 2024 for commercial reasons. A mechanism can be crowded with intellectual property and abandoned assets while the marketed-product column stays empty, which is why patents and halted programmes are recorded separately from holders.",
    "companion_condition": "canine and feline atopic dermatitis and allergic pruritus",
    "condition_holders": [
     "Apoquel (oclacitinib)",
@@ -2146,13 +2328,15 @@
     ]
    },
    "pair_corpus": [],
-   "status": "mechanism unoccupied, but the condition is contested"
+   "status": "no marketed product, but the mechanism is claimed or was attempted"
   },
   "Enbrel": {
    "ingredient": "ETANERCEPT",
    "searched_as": "ETANERCEPT",
    "target_class": "TNF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -2178,6 +2362,8 @@
    "searched_as": "ADALIMUMAB",
    "target_class": "TNF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -2203,6 +2389,8 @@
    "searched_as": "INFLIXIMAB",
    "target_class": "TNF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -2228,6 +2416,8 @@
    "searched_as": "GOLIMUMAB",
    "target_class": "TNF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -2252,6 +2442,8 @@
     "Apoquel (oclacitinib), Zoetis",
     "Zenrelia (ilunocitinib), Elanco"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -2277,6 +2469,8 @@
    "searched_as": "REGN9933",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
    "condition_holders": [],
@@ -2295,6 +2489,8 @@
    "searched_as": "AVIM therapy",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2317,6 +2513,8 @@
    "searched_as": "danicamtiv",
    "target_class": "cardiac myosin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2346,6 +2544,8 @@
    "searched_as": "EDG-7500",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2371,6 +2571,8 @@
    "searched_as": "eplontersen",
    "target_class": "transthyretin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2396,6 +2598,8 @@
    "searched_as": "L606",
    "target_class": "prostacyclin / IP receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2418,6 +2622,8 @@
    "searched_as": "GP-1",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
    "condition_holders": [],
@@ -2440,6 +2646,8 @@
    "searched_as": "Milvexian",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
    "condition_holders": [],
@@ -2458,6 +2666,8 @@
    "searched_as": "MK-5475",
    "target_class": "soluble guanylate cyclase",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2482,6 +2692,8 @@
    "target_holders": [
     "RJB-01 (FGF21 + sTGFbetaR2 AAV gene therapy) — canine mitral valve disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2504,6 +2716,8 @@
    "searched_as": "mosliciguat",
    "target_class": "soluble guanylate cyclase",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2526,6 +2740,8 @@
    "searched_as": "NTLA-2001",
    "target_class": "transthyretin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2551,6 +2767,8 @@
    "searched_as": "omecamtiv mecarbil",
    "target_class": "cardiac myosin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2582,6 +2800,8 @@
    "target_holders": [
     "Palladia (toceranib), Zoetis — dog, mast cell tumour"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2606,6 +2826,8 @@
    "target_holders": [
     "Vetmedin (pimobendan), Boehringer Ingelheim"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2631,6 +2853,8 @@
    "searched_as": "tonlamarsen",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2653,6 +2877,8 @@
    "searched_as": "TX45",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2678,6 +2904,8 @@
    "searched_as": "CK-586",
    "target_class": "cardiac myosin",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
    "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
    "condition_holders": [
@@ -2706,6 +2934,8 @@
    "searched_as": null,
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline systemic hypertension",
    "condition_holders": [
@@ -2723,6 +2953,8 @@
    "searched_as": "PF-07220060",
    "target_class": "CDK4/6",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2750,6 +2982,8 @@
    "searched_as": "AU-011",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2780,6 +3014,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2812,6 +3048,8 @@
     "Undisclosed oncolytic immunotherapy candidate",
     "Adoptive T-cell therapy (canine oral melanoma pilot)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2842,6 +3080,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2869,6 +3109,8 @@
    "searched_as": "Darovasertib",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2896,6 +3138,8 @@
    "searched_as": "Disitamab vedotin",
    "target_class": "HER2",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2926,6 +3170,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2956,6 +3202,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -2983,6 +3231,8 @@
    "searched_as": "IDE161",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3010,6 +3260,8 @@
    "searched_as": "IDE397",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3037,6 +3289,8 @@
    "searched_as": "Imlunestrant",
    "target_class": "oestrogen receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3064,6 +3318,8 @@
    "searched_as": "IOV-3001",
    "target_class": "IL-2 / IL-15 cytokine therapy",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3094,6 +3350,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3123,6 +3381,8 @@
    "target_holders": [
     "Palladia (toceranib), Zoetis — dog, mast cell tumour"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3150,6 +3410,8 @@
    "searched_as": "MK-6440",
    "target_class": "antibody-drug conjugate",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3177,6 +3439,8 @@
    "searched_as": "Lasofoxifene",
    "target_class": "oestrogen receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3204,6 +3468,8 @@
    "searched_as": "LNTH-2403",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3231,6 +3497,8 @@
    "searched_as": "mRNA-4359",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3258,6 +3526,8 @@
    "searched_as": "NEO100",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine glioma and intracranial tumours",
    "condition_holders": [],
@@ -3279,6 +3549,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3310,6 +3582,8 @@
    "target_holders": [
     "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -3331,6 +3605,8 @@
    "searched_as": "olutasidenib",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine glioma and intracranial tumours",
    "condition_holders": [],
@@ -3349,6 +3625,8 @@
    "searched_as": "OST-HER2",
    "target_class": "HER2",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3376,6 +3654,8 @@
    "searched_as": "INBRX-109",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3403,6 +3683,8 @@
    "searched_as": "ENFORTUMAB VEDOTIN",
    "target_class": "antibody-drug conjugate",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3430,6 +3712,8 @@
    "searched_as": "OP-1250",
    "target_class": "oestrogen receptor",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3457,6 +3741,8 @@
    "searched_as": "Pivekimab Sunirine",
    "target_class": "antibody-drug conjugate",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3484,6 +3770,8 @@
    "searched_as": "PRGN-2009",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3514,6 +3802,8 @@
     "VGS-001 (anti-canine CTLA-4), Vetigenics — dog, oral melanoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Abatacept is CTLA-4-Ig, a T-cell costimulation blocker, and is the opposite pharmacology from an anti-CTLA-4 checkpoint antibody. It is matched separately.",
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3541,6 +3831,8 @@
    "searched_as": "LYL314",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine lymphoma and leukaemia",
    "condition_holders": [
@@ -3562,6 +3854,8 @@
    "searched_as": "Safusidenib",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine glioma and intracranial tumours",
    "condition_holders": [],
@@ -3583,6 +3877,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3610,6 +3906,8 @@
    "searched_as": "SACITUZUMAB GOVITECAN",
    "target_class": "antibody-drug conjugate",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3637,6 +3935,8 @@
    "searched_as": "TUCATINIB",
    "target_class": "HER2",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3666,6 +3966,8 @@
    "searched_as": "TYRA-430",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3696,6 +3998,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine mast cell tumour and solid tumours",
    "condition_holders": [
@@ -3723,6 +4027,8 @@
    "searched_as": "BHV-1300",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -3744,6 +4050,8 @@
    "searched_as": "Eloralintide",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline osteoarthritis",
    "condition_holders": [
@@ -3780,6 +4088,8 @@
    "target_holders": [
     "OKV-119 (exenatide implant), Okava — cat and dog, preclinical"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -3801,6 +4111,8 @@
    "searched_as": "JNJ-4804",
    "target_class": "TNF",
    "target_holders": [],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -3822,6 +4134,8 @@
    "searched_as": "LTG-321",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline osteoarthritis",
    "condition_holders": [
@@ -3856,6 +4170,8 @@
    "searched_as": "MK-6024",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -3877,6 +4193,8 @@
    "searched_as": "enekinragene inzadenovec",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline osteoarthritis",
    "condition_holders": [
@@ -3913,6 +4231,8 @@
    "target_holders": [
     "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
@@ -3934,6 +4254,8 @@
     "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
     "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -3955,6 +4277,8 @@
    "searched_as": "ABC008",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
@@ -3973,6 +4297,8 @@
    "searched_as": "UX016",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
@@ -3991,6 +4317,8 @@
    "searched_as": "Vilamakitug",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
@@ -4009,6 +4337,8 @@
    "searched_as": "VK5211",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
@@ -4027,6 +4357,8 @@
    "searched_as": "Clazakizumab",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
@@ -4047,6 +4379,8 @@
    "target_holders": [
     "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -4070,6 +4404,8 @@
    "target_holders": [
     "Palladia (toceranib), Zoetis — dog, mast cell tumour"
    ],
+   "target_patents": [],
+   "target_halted": [],
    "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
    "companion_condition": null,
    "condition_holders": null,
@@ -4088,6 +4424,8 @@
    "searched_as": "LY5625573",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
@@ -4106,6 +4444,8 @@
    "searched_as": "mezagitamab",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
    "condition_holders": [
@@ -4127,6 +4467,8 @@
    "searched_as": "PTC844",
    "target_class": null,
    "target_holders": null,
+   "target_patents": [],
+   "target_halted": [],
    "target_note": null,
    "companion_condition": null,
    "condition_holders": null,
