@@ -7,7 +7,8 @@
   "Patterns spell the ae digraph as a?e? so British and American spellings both match -",
   "an earlier version used [ae], which matched 'anesthesia' but not 'anaesthesia' and",
   "silently sent British spellings to 'other'.",
-  "Display only: pair records are unchanged and the indication itself stays searchable."
+  "Display only: pair records are unchanged and the indication itself stays searchable.",
+  "2026-09-16: musculoskeletal's 'myopath' fired before cardiovascular's 'cardiomyopath' and swallowed every cardiomyopathy - 11 classified pairs, including feline hypertrophic cardiomyopathy, were filed under musculoskeletal. Spelled '(?<!cardio)myopath'."
  ],
  "rules": [
   {
@@ -16,7 +17,7 @@
   },
   {
    "area": "musculoskeletal",
-   "pattern": "osteoarthrit|arthrit|cruciate|desmopath|lameness|intervertebral disc|myopath|fracture|hip dysplasia|tendin|patellar|degenerative joint|orthopa?e?dic|musculoskeletal|trauma|myositis|osteochondr|back pain|spinal pain|muscle pain|thoracolumbar|mobility impairment|osteolysis"
+   "pattern": "osteoarthrit|arthrit|cruciate|desmopath|lameness|intervertebral disc|(?<!cardio)myopath|fracture|hip dysplasia|tendin|patellar|degenerative joint|orthopa?e?dic|musculoskeletal|trauma|myositis|osteochondr|back pain|spinal pain|muscle pain|thoracolumbar|mobility impairment|osteolysis"
   },
   {
    "area": "anaesthesia-analgesia",

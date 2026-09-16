@@ -1,0 +1,63 @@
+{
+  "_README": [
+    "Hard exclusions and cautions for caninisation candidates: molecules or classes with known",
+    "species-specific toxicity or pharmacology in dogs or cats.",
+    "",
+    "PROVENANCE: this list is reviewer-supplied from established veterinary pharmacology, NOT from a",
+    "systematic source, and it is certainly incomplete. It exists so that a candidate ranking cannot",
+    "silently surface a molecule that is known to be dangerous in the target species. Treat an absent",
+    "entry as 'not checked', never as 'safe' - the absence of an exclusion here is not evidence of",
+    "tolerability, and every shortlisted candidate needs a real target-animal safety review.",
+    "",
+    "A proper version of this file should be rebuilt from FDA CVM target animal safety reviews, the",
+    "Plumb's/veterinary formulary literature, and the MDR1 pharmacogenomics literature.",
+    "",
+    "Fields: class or molecule, species affected, effect, action (exclude | caution)."
+  ],
+
+  "exclusions": [
+    {"match": "ivermectin|milbemycin|moxidectin|selamectin|macrocyclic lactone",
+     "species": ["dog"], "action": "caution",
+     "effect": "MDR1 (ABCB1-1delta) homozygous dogs - Collies, Australian Shepherds, Shelties and related breeds - accumulate macrocyclic lactones in the CNS and develop severe neurotoxicity at doses tolerated by other dogs. Usable, but requires genotype-aware dosing and labelling."},
+
+    {"match": "acetaminophen|paracetamol",
+     "species": ["cat", "dog"], "action": "exclude",
+     "effect": "Cats lack sufficient glucuronyl transferase and develop methaemoglobinaemia and hepatotoxicity at low doses; narrow margin in dogs. Not a viable companion-animal analgesic."},
+
+    {"match": "aspirin|salicylate",
+     "species": ["cat"], "action": "exclude",
+     "effect": "Greatly prolonged half-life in cats through deficient glucuronidation; toxic accumulation on repeat dosing."},
+
+    {"match": "\\bNSAID\\b|ibuprofen|naproxen|diclofenac|indomethacin|piroxicam|COX-2|COX inhibitor",
+     "species": ["dog", "cat"], "action": "caution",
+     "effect": "Human NSAIDs have markedly narrower gastrointestinal and renal safety margins in dogs and cats than in people; several are contraindicated outright. Veterinary-specific NSAIDs exist, so this space is largely claimed and the bar for a new entrant is tolerability, not efficacy."},
+
+    {"match": "calcium channel blocker|diltiazem|amlodipine|verapamil",
+     "species": ["dog"], "action": "caution",
+     "effect": "Species differences in sensitivity and first-pass metabolism; used in veterinary practice but with different dosing than humans. Not an exclusion, a dosing-study requirement."},
+
+    {"match": "xylitol",
+     "species": ["dog"], "action": "exclude",
+     "effect": "Potent insulin secretagogue in dogs causing hypoglycaemia and hepatic necrosis. Relevant as a formulation excipient, not only as an active."},
+
+    {"match": "permethrin|pyrethroid",
+     "species": ["cat"], "action": "exclude",
+     "effect": "Cats cannot glucuronidate pyrethroids efficiently; concentrated permethrin causes severe, often fatal neurotoxicity. Dog-only products routinely poison cats in the same household."},
+
+    {"match": "fluoroquinolone|enrofloxacin|ciprofloxacin|marbofloxacin",
+     "species": ["cat", "dog"], "action": "caution",
+     "effect": "Retinal degeneration and blindness in cats at higher doses; cartilage lesions in growing dogs. Dose-capped rather than excluded."},
+
+    {"match": "opioid|morphine|hydromorphone|fentanyl",
+     "species": ["cat"], "action": "caution",
+     "effect": "Cats show excitation and hyperthermia at doses routine in dogs; species-specific dosing required."},
+
+    {"match": "5-fluorouracil|fluorouracil",
+     "species": ["cat", "dog"], "action": "exclude",
+     "effect": "Severe, frequently fatal neurotoxicity in cats; narrow margin in dogs. A recurring accidental-exposure toxicosis."},
+
+    {"match": "benzyl alcohol|propylene glycol",
+     "species": ["cat"], "action": "caution",
+     "effect": "Formulation excipients tolerated in humans that cause Heinz-body anaemia (propylene glycol) or toxicity in cats. A caninisation programme must re-examine the excipient package, not only the active."}
+  ]
+}

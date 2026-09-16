@@ -1,0 +1,3744 @@
+{
+ "built": "2026-09-16",
+ "inputs": {
+  "human_programs": 561,
+  "pet_programs": 328,
+  "review_results": 1520
+ },
+ "skipped": {
+  "no dog evidence for this area": 181,
+  "disease dogs do not get": 115,
+  "target already in companion animals": 159,
+  "dog evidence says biology does not correspond": 8,
+  "diagnostic or imaging agent, not a therapeutic": 5
+ },
+ "missing_inputs": [
+  "Canine and feline disease prevalence: no epidemiological source is held in this repository, so no candidate is weighted by how many animals have the disease. This is probably the largest single determinant of programme value and it is absent. The veterinary literature's attention (osteoarthritis 42 pairs, atopic dermatitis 31, lymphoma 25) measures what researchers study, not what dogs get, and is deliberately NOT used as a substitute.",
+  "Willingness to pay and market size by indication.",
+  "Patent and exclusivity status: years since first approval is a crude proxy for whether a molecule can be licensed cheaply, and says nothing about who controls it now.",
+  "Target animal safety: the exclusion list is reviewer-supplied and incomplete. An absent flag means not checked, never safe.",
+  "Formulation and route feasibility, palatability, and dosing interval in the target species."
+ ],
+ "dog_evidence_by_area": {
+  "toxicology": {
+   "results": 4,
+   "studies": 3,
+   "corresponded": 1,
+   "did_not": 3,
+   "mixed": 0,
+   "level_A": 2,
+   "level_B": 2,
+   "level_C": 0,
+   "weighted_concordance": 0.2
+  },
+  "oncology": {
+   "results": 111,
+   "studies": 34,
+   "corresponded": 93,
+   "did_not": 14,
+   "mixed": 4,
+   "level_A": 5,
+   "level_B": 0,
+   "level_C": 106,
+   "weighted_concordance": 0.88
+  },
+  "ophthalmology": {
+   "results": 16,
+   "studies": 4,
+   "corresponded": 6,
+   "did_not": 9,
+   "mixed": 1,
+   "level_A": 3,
+   "level_B": 0,
+   "level_C": 13,
+   "weighted_concordance": 0.286
+  },
+  "cardiovascular": {
+   "results": 19,
+   "studies": 8,
+   "corresponded": 13,
+   "did_not": 6,
+   "mixed": 0,
+   "level_A": 16,
+   "level_B": 3,
+   "level_C": 0,
+   "weighted_concordance": 0.685
+  },
+  "neurology": {
+   "results": 13,
+   "studies": 4,
+   "corresponded": 4,
+   "did_not": 9,
+   "mixed": 0,
+   "level_A": 4,
+   "level_B": 0,
+   "level_C": 9,
+   "weighted_concordance": 0.286
+  },
+  "musculoskeletal": {
+   "results": 7,
+   "studies": 3,
+   "corresponded": 6,
+   "did_not": 1,
+   "mixed": 0,
+   "level_A": 5,
+   "level_B": 0,
+   "level_C": 2,
+   "weighted_concordance": 0.824
+  },
+  "immunology-inflammation": {
+   "results": 20,
+   "studies": 5,
+   "corresponded": 16,
+   "did_not": 1,
+   "mixed": 2,
+   "level_A": 0,
+   "level_B": 0,
+   "level_C": 20,
+   "weighted_concordance": 0.941
+  },
+  "liver-gi": {
+   "results": 2,
+   "studies": 2,
+   "corresponded": 1,
+   "did_not": 1,
+   "mixed": 0,
+   "level_A": 1,
+   "level_B": 0,
+   "level_C": 1,
+   "weighted_concordance": 0.25
+  }
+ },
+ "areas": [
+  {
+   "area": "cardiovascular",
+   "evidence_rank": 78.0,
+   "candidates": 12,
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "mixed": 0,
+    "level_A": 16,
+    "level_B": 3,
+    "level_C": 0,
+    "weighted_concordance": 0.685
+   },
+   "molecules": [
+    {
+     "drug": "Cozaar/Hyzaar (losartan; losartan/hydrochlorothiazide)",
+     "ingredient": "LOSARTAN POTASSIUM",
+     "target": "Angiotensin II receptor blocker (ARB)",
+     "indication": "Hypertension",
+     "company": "Organon",
+     "source": "https://www.morningstar.com/news/business-wire/20260212249326/organon-reports-results-for-the-fourth-quarter-and-full-year-ended-december-31-2025",
+     "area": "cardiovascular",
+     "first_us_approval": 1995,
+     "years_since_approval": 31,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Letairis",
+     "ingredient": "AMBRISENTAN",
+     "target": "ambrisentan (endothelin receptor antagonist)",
+     "indication": "pulmonary arterial hypertension (PAH, WHO Group I)",
+     "company": "Gilead",
+     "source": "https://www.gilead.com/en-hk/science/medicines",
+     "area": "cardiovascular",
+     "first_us_approval": 2007,
+     "years_since_approval": 19,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Eliquis",
+     "ingredient": "APIXABAN",
+     "target": "Factor Xa",
+     "indication": "Atrial fibrillation and VTE",
+     "company": "Pfizer",
+     "source": "https://en.wikipedia.org/wiki/Pfizer",
+     "area": "cardiovascular",
+     "first_us_approval": 2012,
+     "years_since_approval": 14,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     },
+     "also_marketed_as": [
+      "Eliquis"
+     ]
+    },
+    {
+     "drug": "Opsumit",
+     "ingredient": "MACITENTAN",
+     "target": "Endothelin receptor",
+     "indication": "Pulmonary arterial hypertension",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2946033/jjs-innovative-medicine-business-in-q2-heres-what-to-watch",
+     "area": "cardiovascular",
+     "first_us_approval": 2013,
+     "years_since_approval": 13,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Adempas/Verquvo",
+     "ingredient": "RIOCIGUAT",
+     "target": "soluble guanylate cyclase (sGC)",
+     "indication": "Pulmonary hypertension and heart failure",
+     "company": "Merck",
+     "source": "https://www.merck.com/wp-content/uploads/sites/124/2025/10/3Q25-Merck-Other-Financial-Disclosures.pdf",
+     "area": "cardiovascular",
+     "first_us_approval": 2013,
+     "years_since_approval": 13,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Uptravi",
+     "ingredient": "SELEXIPAG",
+     "target": "IP receptor",
+     "indication": "Pulmonary arterial hypertension",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2946033/jjs-innovative-medicine-business-in-q2-heres-what-to-watch",
+     "area": "cardiovascular",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Corlanor",
+     "ingredient": "IVABRADINE HYDROCHLORIDE",
+     "target": "ivabradine (HCN/If channel blocker)",
+     "indication": "worsening chronic heart failure; inappropriate sinus tachycardia",
+     "company": "Amgen",
+     "source": "http://www.amgen.com/products/safety-data-sheets",
+     "area": "cardiovascular",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Camzyos",
+     "ingredient": "MAVACAMTEN",
+     "target": "Cardiac myosin",
+     "indication": "Obstructive hypertrophic cardiomyopathy",
+     "company": "Bristol Myers Squibb",
+     "source": "https://www.reuters.com/business/healthcare-pharmaceuticals/bristol-myers-raises-2026-forecast-eliquis-newer-medicines-power-results-2026-07-30/",
+     "area": "cardiovascular",
+     "first_us_approval": 2022,
+     "years_since_approval": 4,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "AMVUTTRA (vutrisiran)",
+     "ingredient": "VUTRISIRAN SODIUM",
+     "target": "TTR",
+     "indication": "hATTR polyneuropathy and ATTR cardiomyopathy",
+     "company": "Alnylam Pharmaceuticals",
+     "source": "https://www.alnylam.com/sites/default/files/2025-04/ALNY_Corp_Backgrounder_ALNYCB04-25.pdf",
+     "area": "cardiovascular",
+     "first_us_approval": 2022,
+     "years_since_approval": 4,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Attruby (acoramidis)",
+     "ingredient": "ACORAMIDIS HYDROCHLORIDE",
+     "target": "TTR stabilizer",
+     "indication": "Transthyretin amyloid cardiomyopathy (ATTR-CM)",
+     "company": "BridgeBio Pharma",
+     "source": "https://bridgebio.com/?p=3519",
+     "area": "cardiovascular",
+     "first_us_approval": 2024,
+     "years_since_approval": 2,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "MYQORZO (aficamten)",
+     "ingredient": "AFICAMTEN",
+     "target": "Cardiac myosin",
+     "indication": "Symptomatic obstructive hypertrophic cardiomyopathy",
+     "company": "Cytokinetics",
+     "source": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-drug-improve-functional-capacity-and-symptoms-adults-rare-inherited-heart-condition",
+     "area": "cardiovascular",
+     "first_us_approval": 2025,
+     "years_since_approval": 1,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    },
+    {
+     "drug": "Minnebro (esaxerenone)",
+     "ingredient": "esaxerenone",
+     "target": "Mineralocorticoid receptor",
+     "indication": "Hypertension in Japan (partnered with Daiichi Sankyo)",
+     "company": "Exelixis",
+     "source": "https://online.hl.co.uk/content/factsheet_pdf/sedol/2576941",
+     "area": "cardiovascular",
+     "first_us_approval": null,
+     "years_since_approval": null,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 19,
+      "studies": 8,
+      "corresponded": 13,
+      "did_not": 6,
+      "level_A": 16,
+      "weighted_concordance": 0.685
+     }
+    }
+   ]
+  },
+  {
+   "area": "oncology",
+   "evidence_rank": 56.5,
+   "candidates": 58,
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "mixed": 4,
+    "level_A": 5,
+    "level_B": 0,
+    "level_C": 106,
+    "weighted_concordance": 0.88
+   },
+   "molecules": [
+    {
+     "drug": "Imbruvica",
+     "ingredient": "IBRUTINIB",
+     "target": "BTK",
+     "indication": "CLL and lymphoma",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2960352/jjs-innovative-medicine-unit-proves-its-resilience-in-q2?cid=CS-STOCKNEWSAPI-FT-analyst_blog|quick_take-2960352",
+     "area": "oncology",
+     "first_us_approval": 2013,
+     "years_since_approval": 13,
+     "precedent": "ibrutinib (dog 2010, human 2013), acalabrutinib (2016, 2017) and rilzabrutinib (canine pemphigus 2021, human 2025) all reached dogs at or before human approval",
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Jaypirca",
+     "ingredient": "PIRTOBRUTINIB",
+     "target": "BTK",
+     "indication": "CLL and mantle cell lymphoma",
+     "company": "Eli Lilly",
+     "source": "https://www.lilly.com/science/research-development/pipeline",
+     "area": "oncology",
+     "first_us_approval": 2023,
+     "years_since_approval": 3,
+     "precedent": "ibrutinib (dog 2010, human 2013), acalabrutinib (2016, 2017) and rilzabrutinib (canine pemphigus 2021, human 2025) all reached dogs at or before human approval",
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Abraxane",
+     "ingredient": "PACLITAXEL",
+     "target": "",
+     "indication": "Cancer",
+     "company": "Bristol Myers Squibb",
+     "source": "https://www.zacks.com/stock/news/2810636/can-bmys-growth-portfolio-drive-top-line-expansion-in-2026",
+     "area": "oncology",
+     "first_us_approval": 1992,
+     "years_since_approval": 34,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Proleukin (aldesleukin)",
+     "ingredient": "ALDESLEUKIN",
+     "target": "IL-2 (recombinant)",
+     "indication": "Metastatic renal cell carcinoma; metastatic melanoma",
+     "company": "Iovance Biotherapeutics",
+     "source": "https://www.globenewswire.com/news-release/2026/05/07/3289839/0/en/Iovance-Biotherapeutics-Highlights-Positive-First-Quarter-2026-Results-Business-Achievements-and-Corporate-Updates.html",
+     "area": "oncology",
+     "first_us_approval": 1992,
+     "years_since_approval": 34,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Inlexzo",
+     "ingredient": "GEMCITABINE HYDROCHLORIDE",
+     "target": "gemcitabine (sustained-release intravesical)",
+     "indication": "Bladder cancer",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2979052/jjs-strong-pipeline-momentum-offers-multiple-growth-catalysts-ahead",
+     "area": "oncology",
+     "first_us_approval": 1996,
+     "years_since_approval": 30,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Kanjinti",
+     "ingredient": "TRASTUZUMAB-ANNS",
+     "target": "trastuzumab-anns (anti-HER2 biosimilar)",
+     "indication": "HER2-positive breast and gastric cancer",
+     "company": "Amgen",
+     "source": "http://www.amgen.com/products/safety-data-sheets",
+     "area": "oncology",
+     "first_us_approval": 1998,
+     "years_since_approval": 28,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "LYMPHIR (denileukin diftitox-cxdl)",
+     "ingredient": "DENILEUKIN DIFTITOX-CXDL",
+     "target": "IL-2 receptor-directed fusion toxin",
+     "indication": "Relapsed/refractory Stage I-III cutaneous T-cell lymphoma (CTCL)",
+     "company": "Citius Oncology",
+     "source": "https://www.morningstar.com/news/pr-newswire/20251201ny34309/citius-oncology-announces-us-commercial-launch-of-lymphir-a-novel-cancer-immunotherapy-for-cutaneous-t-cell-lymphoma-ctcl",
+     "area": "oncology",
+     "first_us_approval": 1999,
+     "years_since_approval": 27,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Alimta",
+     "ingredient": "PEMETREXED DISODIUM",
+     "target": "Antifolate",
+     "indication": "NSCLC and mesothelioma",
+     "company": "Eli Lilly",
+     "source": "https://investor.Lilly.Com/static-files/3039632a-fb64-4803-b081-31689cbac13a",
+     "area": "oncology",
+     "first_us_approval": 2004,
+     "years_since_approval": 22,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Mvasi",
+     "ingredient": "BEVACIZUMAB-AWWB",
+     "target": "VEGF",
+     "indication": "Cancer",
+     "company": "Amgen",
+     "source": "http://en.wikipedia.org/wiki/Amgen",
+     "area": "oncology",
+     "first_us_approval": 2004,
+     "years_since_approval": 22,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     },
+     "also_marketed_as": [
+      "Alymsys"
+     ]
+    },
+    {
+     "drug": "Onureg",
+     "ingredient": "AZACITIDINE",
+     "target": "azacitidine tablets (hypomethylating agent)",
+     "indication": "acute myeloid leukemia (continuation/maintenance therapy)",
+     "company": "Bristol Myers Squibb",
+     "source": "https://www.mims.co.uk/manufacturers/bristol-myers-squibb-pharmaceuticals-ltd",
+     "area": "oncology",
+     "first_us_approval": 2004,
+     "years_since_approval": 22,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Revlimid",
+     "ingredient": "LENALIDOMIDE",
+     "target": "IMiD",
+     "indication": "Multiple myeloma",
+     "company": "Bristol Myers Squibb",
+     "source": "https://www.reuters.com/business/healthcare-pharmaceuticals/bristol-myers-beats-quarterly-revenue-estimates-strong-opdivo-sales-2025-10-30/",
+     "area": "oncology",
+     "first_us_approval": 2005,
+     "years_since_approval": 21,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Sprycel",
+     "ingredient": "DASATINIB",
+     "target": "BCR-ABL",
+     "indication": "Chronic myeloid leukemia",
+     "company": "Bristol Myers Squibb",
+     "source": "https://www.zacks.com/stock/news/2810636/can-bmys-growth-portfolio-drive-top-line-expansion-in-2026",
+     "area": "oncology",
+     "first_us_approval": 2006,
+     "years_since_approval": 20,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Zytiga",
+     "ingredient": "ABIRATERONE ACETATE",
+     "target": "CYP17",
+     "indication": "Prostate cancer",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2960352/jjs-innovative-medicine-unit-proves-its-resilience-in-q2?cid=CS-STOCKNEWSAPI-FT-analyst_blog|quick_take-2960352",
+     "area": "oncology",
+     "first_us_approval": 2011,
+     "years_since_approval": 15,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Akeega",
+     "ingredient": "ABIRATERONE ACETATE; NIRAPARIB TOSYLATE",
+     "target": "PARP/CYP17",
+     "indication": "Prostate cancer",
+     "company": "Johnson & Johnson",
+     "source": "https://www.labiotech.eu/in-depth/jj-pipeline/",
+     "area": "oncology",
+     "first_us_approval": 2011,
+     "years_since_approval": 15,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Yervoy",
+     "ingredient": "IPILIMUMAB",
+     "target": "CTLA-4",
+     "indication": "Cancer",
+     "company": "Bristol Myers Squibb",
+     "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+     "area": "oncology",
+     "first_us_approval": 2011,
+     "years_since_approval": 15,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Adcetris",
+     "ingredient": "BRENTUXIMAB VEDOTIN",
+     "target": "brentuximab vedotin (CD30 ADC)",
+     "indication": "Hodgkin lymphoma; systemic ALCL; CTCL; PTCL",
+     "company": "Pfizer",
+     "source": "https://www.pfizer.com/products",
+     "area": "oncology",
+     "first_us_approval": 2011,
+     "years_since_approval": 15,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Kyprolis",
+     "ingredient": "CARFILZOMIB",
+     "target": "Proteasome",
+     "indication": "Multiple myeloma",
+     "company": "Amgen",
+     "source": "http://en.wikipedia.org/wiki/Amgen",
+     "area": "oncology",
+     "first_us_approval": 2012,
+     "years_since_approval": 14,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     },
+     "also_marketed_as": [
+      "Kyprolis (carfilzomib)"
+     ]
+    },
+    {
+     "drug": "Xtandi",
+     "ingredient": "ENZALUTAMIDE",
+     "target": "Androgen receptor",
+     "indication": "Prostate cancer",
+     "company": "Pfizer",
+     "source": "https://www.zacks.com/stock/news/2900642/pfizers-non-oncology-portfolio-in-focus-ahead-of-q1-earnings",
+     "area": "oncology",
+     "first_us_approval": 2012,
+     "years_since_approval": 14,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Cabometyx (cabozantinib)",
+     "ingredient": "CABOZANTINIB S-MALATE",
+     "target": "MET/AXL/VEGFR/RET",
+     "indication": "Advanced neuroendocrine tumors",
+     "company": "Exelixis",
+     "source": "https://files.quartr.com/reports/be12d-2025-07-28-08-52-11.pdf?ref=c21hcnRrYXJtYQ==",
+     "area": "oncology",
+     "first_us_approval": 2012,
+     "years_since_approval": 14,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     },
+     "also_marketed_as": [
+      "Cometriq (cabozantinib)"
+     ]
+    },
+    {
+     "drug": "Phesgo (pertuzumab/trastuzumab + rHuPH20)",
+     "ingredient": "PERTUZUMAB, TRASTUZUMAB, AND HYALURONIDASE-ZZXF",
+     "target": "HER2 (ENHANZE subcutaneous)",
+     "indication": "HER2-positive breast cancer",
+     "company": "Halozyme Therapeutics",
+     "source": "https://ir.halozyme.com/news/news-details/2025/HALOZYME-RAISES-2025-FINANCIAL-GUIDANCE-RANGES-AND-REPORTS-STRONG-FIRST-QUARTER-2025-RESULTS/default.aspx",
+     "area": "oncology",
+     "first_us_approval": 2012,
+     "years_since_approval": 14,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Inlyta",
+     "ingredient": "AXITINIB",
+     "target": "axitinib (VEGFR 1/2/3 inhibitor)",
+     "indication": "advanced renal cell carcinoma",
+     "company": "Pfizer",
+     "source": "https://www.pfizer.com/products",
+     "area": "oncology",
+     "first_us_approval": 2012,
+     "years_since_approval": 14,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Pomalyst",
+     "ingredient": "POMALIDOMIDE",
+     "target": "IMiD",
+     "indication": "Multiple myeloma",
+     "company": "Bristol Myers Squibb",
+     "source": "https://www.zacks.com/stock/news/2810636/can-bmys-growth-portfolio-drive-top-line-expansion-in-2026",
+     "area": "oncology",
+     "first_us_approval": 2013,
+     "years_since_approval": 13,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Cyramza",
+     "ingredient": "RAMUCIRUMAB",
+     "target": "VEGFR2",
+     "indication": "Cancer",
+     "company": "Eli Lilly",
+     "source": "http://en.wikipedia.org/wiki/Eli_Lilly_and_Company",
+     "area": "oncology",
+     "first_us_approval": 2014,
+     "years_since_approval": 12,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Lynparza",
+     "ingredient": "OLAPARIB",
+     "target": "PARP",
+     "indication": "Cancer",
+     "company": "Merck",
+     "source": "https://www.merck.com/news/merck-highlights-key-regulatory-and-clinical-milestones-across-broad-diverse-pipeline/",
+     "area": "oncology",
+     "first_us_approval": 2014,
+     "years_since_approval": 12,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Darzalex",
+     "ingredient": "DARATUMUMAB",
+     "target": "CD38",
+     "indication": "Multiple myeloma",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2841213/jj-posts-innovative-medicine-growth-in-2025-amid-stelara-patent-loss",
+     "area": "oncology",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Lenvima",
+     "ingredient": "LENVATINIB MESYLATE",
+     "target": "VEGFR",
+     "indication": "Cancer",
+     "company": "Merck",
+     "source": "https://www.sec.gov/Archives/edgar/data/310158/000110465926090045/tm2621496d1_ex99-1.htm",
+     "area": "oncology",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Ibrance",
+     "ingredient": "PALBOCICLIB",
+     "target": "CDK4/6",
+     "indication": "Breast cancer",
+     "company": "Pfizer",
+     "source": "https://en.wikipedia.org/wiki/Pfizer",
+     "area": "oncology",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Cotellic (cobimetinib)",
+     "ingredient": "COBIMETINIB FUMARATE",
+     "target": "MEK",
+     "indication": "Advanced melanoma (in combination regimens)",
+     "company": "Exelixis",
+     "source": "https://online.hl.co.uk/content/factsheet_pdf/sedol/2576941",
+     "area": "oncology",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Darzalex SC (daratumumab + rHuPH20)",
+     "ingredient": "daratumumab + rHuPH20",
+     "target": "CD38 (ENHANZE subcutaneous)",
+     "indication": "Multiple myeloma",
+     "company": "Halozyme Therapeutics",
+     "source": "https://ir.halozyme.com/news/news-details/2025/HALOZYME-RAISES-2025-FINANCIAL-GUIDANCE-RANGES-AND-REPORTS-STRONG-FIRST-QUARTER-2025-RESULTS/default.aspx",
+     "area": "oncology",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Empliciti",
+     "ingredient": "ELOTUZUMAB",
+     "target": "elotuzumab (anti-SLAMF7 monoclonal antibody)",
+     "indication": "multiple myeloma",
+     "company": "Bristol Myers Squibb",
+     "source": "https://www.mims.co.uk/manufacturers/bristol-myers-squibb-pharmaceuticals-ltd",
+     "area": "oncology",
+     "first_us_approval": 2015,
+     "years_since_approval": 11,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Tecentriq Hybreza (atezolizumab + rHuPH20)",
+     "ingredient": "ATEZOLIZUMAB AND HYALURONIDASE-TQJS",
+     "target": "PD-L1 (ENHANZE subcutaneous)",
+     "indication": "Solid tumors",
+     "company": "Halozyme Therapeutics",
+     "source": "https://ir.halozyme.com/news/news-details/2025/HALOZYME-RAISES-2025-FINANCIAL-GUIDANCE-RANGES-AND-REPORTS-STRONG-FIRST-QUARTER-2025-RESULTS/default.aspx",
+     "area": "oncology",
+     "first_us_approval": 2016,
+     "years_since_approval": 10,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Verzenio",
+     "ingredient": "ABEMACICLIB",
+     "target": "CDK4/6",
+     "indication": "Breast cancer",
+     "company": "Eli Lilly",
+     "source": "http://en.wikipedia.org/wiki/Eli_Lilly_and_Company",
+     "area": "oncology",
+     "first_us_approval": 2017,
+     "years_since_approval": 9,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Mylotarg",
+     "ingredient": "GEMTUZUMAB OZOGAMICIN",
+     "target": "gemtuzumab ozogamicin (CD33 ADC)",
+     "indication": "CD33-positive acute myeloid leukemia",
+     "company": "Pfizer",
+     "source": "https://www.pfizer.com/products",
+     "area": "oncology",
+     "first_us_approval": 2017,
+     "years_since_approval": 9,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Erleada",
+     "ingredient": "APALUTAMIDE",
+     "target": "Androgen receptor",
+     "indication": "Prostate cancer",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2841213/jj-posts-innovative-medicine-growth-in-2025-amid-stelara-patent-loss",
+     "area": "oncology",
+     "first_us_approval": 2018,
+     "years_since_approval": 8,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Lorbrena",
+     "ingredient": "LORLATINIB",
+     "target": "ALK",
+     "indication": "Non-small cell lung cancer",
+     "company": "Pfizer",
+     "source": "https://www.zacks.com/stock/news/2900642/pfizers-non-oncology-portfolio-in-focus-ahead-of-q1-earnings",
+     "area": "oncology",
+     "first_us_approval": 2018,
+     "years_since_approval": 8,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Braftovi/Mektovi",
+     "ingredient": "ENCORAFENIB",
+     "target": "BRAF/MEK",
+     "indication": "Melanoma",
+     "company": "Pfizer",
+     "source": "https://www.zacks.com/stock/news/2900642/pfizers-non-oncology-portfolio-in-focus-ahead-of-q1-earnings",
+     "area": "oncology",
+     "first_us_approval": 2018,
+     "years_since_approval": 8,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Crysvita (burosumab)",
+     "ingredient": "BUROSUMAB-TWZA",
+     "target": "FGF23",
+     "indication": "X-linked hypophosphatemia; tumor-induced osteomalacia",
+     "company": "Ultragenyx Pharmaceutical",
+     "source": "https://www.globenewswire.com/news-release/2026/08/04/3338827/20739/en/Ultragenyx-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html",
+     "area": "oncology",
+     "first_us_approval": 2018,
+     "years_since_approval": 8,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Talzenna",
+     "ingredient": "TALAZOPARIB TOSYLATE",
+     "target": "talazoparib (PARP inhibitor)",
+     "indication": "BRCA-mutated HER2-negative breast cancer; HRR-mutated mCRPC",
+     "company": "Pfizer",
+     "source": "https://www.pfizer.com/products",
+     "area": "oncology",
+     "first_us_approval": 2018,
+     "years_since_approval": 8,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Balversa",
+     "ingredient": "ERDAFITINIB",
+     "target": "FGFR",
+     "indication": "Bladder cancer",
+     "company": "Johnson & Johnson",
+     "source": "https://www.labiotech.eu/in-depth/jj-pipeline/",
+     "area": "oncology",
+     "first_us_approval": 2019,
+     "years_since_approval": 7,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Retevmo",
+     "ingredient": "SELPERCATINIB",
+     "target": "RET",
+     "indication": "RET-driven cancers",
+     "company": "Eli Lilly",
+     "source": "https://www.zacks.com/stock/news/2980919/can-eli-lillys-oncology-portfolio-drive-growth-beyond-glp-1-drugs",
+     "area": "oncology",
+     "first_us_approval": 2020,
+     "years_since_approval": 6,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Tukysa (tucatinib)",
+     "ingredient": "TUCATINIB",
+     "target": "HER2",
+     "indication": "HER2-positive cancers",
+     "company": "Merck",
+     "source": "https://www.merck.com/news/merck-to-hold-investor-event-to-highlight-oncology-portfolio-and-pipeline/",
+     "area": "oncology",
+     "first_us_approval": 2020,
+     "years_since_approval": 6,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "PEMAZYRE (pemigatinib)",
+     "ingredient": "PEMIGATINIB",
+     "target": "FGFR1/2/3",
+     "indication": "Cholangiocarcinoma, FGFR1-rearranged myeloid/lymphoid neoplasms",
+     "company": "Incyte",
+     "source": "https://incyte.com/Assets/Pipeline/portfolio.pdf",
+     "area": "oncology",
+     "first_us_approval": 2020,
+     "years_since_approval": 6,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Rybrevant",
+     "ingredient": "AMIVANTAMAB-VMJW",
+     "target": "EGFR-MET",
+     "indication": "Non-small cell lung cancer",
+     "company": "Johnson & Johnson",
+     "source": "https://www.labiotech.eu/in-depth/jj-pipeline/",
+     "area": "oncology",
+     "first_us_approval": 2021,
+     "years_since_approval": 5,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Lumakras",
+     "ingredient": "SOTORASIB",
+     "target": "KRAS G12C",
+     "indication": "Non-small cell lung cancer",
+     "company": "Amgen",
+     "source": "http://en.wikipedia.org/wiki/Amgen",
+     "area": "oncology",
+     "first_us_approval": 2021,
+     "years_since_approval": 5,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Tecvayli",
+     "ingredient": "TECLISTAMAB-CQYV",
+     "target": "BCMA x CD3",
+     "indication": "Multiple myeloma",
+     "company": "Johnson & Johnson",
+     "source": "https://WWW.ZACKS.COM/stock/news/2783539/jjs-innovative-medicines-unit-shows-resilience-amid-stelara-loe",
+     "area": "oncology",
+     "first_us_approval": 2022,
+     "years_since_approval": 4,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Krazati",
+     "ingredient": "ADAGRASIB",
+     "target": "KRAS G12C",
+     "indication": "Non-small cell lung cancer",
+     "company": "Bristol Myers Squibb",
+     "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+     "area": "oncology",
+     "first_us_approval": 2022,
+     "years_since_approval": 4,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Talvey",
+     "ingredient": "TALQUETAMAB-TGVS",
+     "target": "GPRC5D x CD3",
+     "indication": "Multiple myeloma",
+     "company": "Johnson & Johnson",
+     "source": "https://WWW.ZACKS.COM/stock/news/2783539/jjs-innovative-medicines-unit-shows-resilience-amid-stelara-loe",
+     "area": "oncology",
+     "first_us_approval": 2023,
+     "years_since_approval": 3,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Elrexfio",
+     "ingredient": "ELRANATAMAB",
+     "target": "BCMA",
+     "indication": "Multiple myeloma",
+     "company": "Pfizer",
+     "source": "https://WWW.ZACKS.COM/stock/news/2984490/pfizers-pipeline-strategy-centers-on-obesity-and-oncology",
+     "area": "oncology",
+     "first_us_approval": 2023,
+     "years_since_approval": 3,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Augtyro",
+     "ingredient": "REPOTRECTINIB",
+     "target": "repotrectinib (ROS1/TRK inhibitor)",
+     "indication": "ROS1-positive NSCLC; NTRK fusion-positive solid tumors",
+     "company": "Bristol Myers Squibb",
+     "source": "https://news.bms.com/news/details/2024/U.S.-Food-and-Drug-Administration-Approves-Augtyro-repotrectinib-a-Next-Generation-Tyrosine-Kinase-Inhibitor-TKI-for-the-Treatment-of-Patients-with-NTRK-Positive-Locally-Advanced-or-Metastatic-Solid-Tumors/default.aspx",
+     "area": "oncology",
+     "first_us_approval": 2023,
+     "years_since_approval": 3,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Imdelltra",
+     "ingredient": "TARLATAMAB-DLLE",
+     "target": "DLL3/CD3",
+     "indication": "Small cell lung cancer",
+     "company": "Amgen",
+     "source": "http://en.wikipedia.org/wiki/Amgen",
+     "area": "oncology",
+     "first_us_approval": 2024,
+     "years_since_approval": 2,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "ANKTIVA (nogapendekin alfa inbakicept)",
+     "ingredient": "nogapendekin alfa inbakicept-pmln",
+     "target": "IL-15",
+     "indication": "Lung cancer",
+     "company": "ImmunityBio",
+     "source": "https://www.businesswire.com/news/home/20260223889360/en/ImmunityBio-Reports-700-Year-Over-Year-Revenue-Growth-Expanded-ANKTIVA-Approvals-in-Lung-Cancer-and-Global-Commercial-Partnerships-in-33-Countries-with-Label-Expansion-Plans-Globally",
+     "area": "oncology",
+     "first_us_approval": 2024,
+     "years_since_approval": 2,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Ojemda (tovorafenib)",
+     "ingredient": "TOVORAFENIB",
+     "target": "RAF",
+     "indication": "pediatric low-grade glioma (BRAF-altered)",
+     "company": "Ligand Pharmaceuticals",
+     "source": "https://www.biospace.com/press-releases/ligand-completes-acquisition-of-xoma-royalty-creating-a-portfolio-of-more-than-200-biopharmaceutical-royalty-assets",
+     "area": "oncology",
+     "first_us_approval": 2024,
+     "years_since_approval": 2,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Inluriyo",
+     "ingredient": "IMLUNESTRANT TOSYLATE",
+     "target": "Estrogen receptor",
+     "indication": "Breast cancer",
+     "company": "Eli Lilly",
+     "source": "https://www.zacks.com/stock/news/2980919/can-eli-lillys-oncology-portfolio-drive-growth-beyond-glp-1-drugs",
+     "area": "oncology",
+     "first_us_approval": 2025,
+     "years_since_approval": 1,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Lynozyfic (linvoseltamab)",
+     "ingredient": "LINVOSELTAMAB-GCPT",
+     "target": "BCMA/CD3",
+     "indication": "Relapsed/refractory multiple myeloma",
+     "company": "Regeneron",
+     "source": "https://investor.regeneron.com/node/31156/pdf",
+     "area": "oncology",
+     "first_us_approval": 2025,
+     "years_since_approval": 1,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Carvykti",
+     "ingredient": null,
+     "target": "BCMA CAR-T",
+     "indication": "Multiple myeloma",
+     "company": "Johnson & Johnson",
+     "source": "https://WWW.ZACKS.COM/stock/news/2783539/jjs-innovative-medicines-unit-shows-resilience-amid-stelara-loe",
+     "area": "oncology",
+     "first_us_approval": null,
+     "years_since_approval": null,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Veppanu (vepdegestrant)",
+     "ingredient": "VEPDEGESTRANT",
+     "target": "PROTAC ER",
+     "indication": "ESR1-mutant ER+/HER2- breast cancer",
+     "company": "Pfizer",
+     "source": "https://www.drugs.com/clinical_trials/arvinas-pfizer-s-vepdegestrant-significantly-improves-progression-free-survival-patients-esr1-22056.html",
+     "area": "oncology",
+     "first_us_approval": 2026,
+     "years_since_approval": 0,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     },
+     "also_marketed_as": [
+      "VEPPANU (vepdegestrant)",
+      "VEPPANU (vepdegestrant)"
+     ]
+    },
+    {
+     "drug": "Abecma",
+     "ingredient": null,
+     "target": "BCMA",
+     "indication": "Multiple myeloma CAR-T",
+     "company": "Bristol Myers Squibb",
+     "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+     "area": "oncology",
+     "first_us_approval": null,
+     "years_since_approval": null,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    },
+    {
+     "drug": "Imlygic",
+     "ingredient": null,
+     "target": "talimogene laherparepvec (oncolytic herpesvirus)",
+     "indication": "unresectable melanoma lesions",
+     "company": "Amgen",
+     "source": "http://www.amgen.com/products/safety-data-sheets",
+     "area": "oncology",
+     "first_us_approval": null,
+     "years_since_approval": null,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 111,
+      "studies": 34,
+      "corresponded": 93,
+      "did_not": 14,
+      "level_A": 5,
+      "weighted_concordance": 0.88
+     }
+    }
+   ]
+  },
+  {
+   "area": "musculoskeletal",
+   "evidence_rank": 53.7,
+   "candidates": 3,
+   "evidence": {
+    "results": 7,
+    "studies": 3,
+    "corresponded": 6,
+    "did_not": 1,
+    "mixed": 0,
+    "level_A": 5,
+    "level_B": 0,
+    "level_C": 2,
+    "weighted_concordance": 0.824
+   },
+   "molecules": [
+    {
+     "drug": "CELEBREX (celecoxib)",
+     "ingredient": "CELECOXIB",
+     "target": "COX-2",
+     "indication": "Arthritis pain",
+     "company": "Viatris",
+     "source": "https://www.viatris.com/-/media/project/common/viatris/pdf/us/us_upjohn_product-chart.pdf?hcp=true",
+     "area": "musculoskeletal",
+     "first_us_approval": 1998,
+     "years_since_approval": 28,
+     "precedent": null,
+     "safety_flags": [
+      {
+       "action": "caution",
+       "species": [
+        "dog",
+        "cat"
+       ],
+       "effect": "Human NSAIDs have markedly narrower gastrointestinal and renal safety margins in dogs and cats than in people; several are contraindicated outright. Veterinary-specific NSAIDs exist, so this space is largely claimed and the bar for a new entrant is tolerability, not efficacy."
+      }
+     ],
+     "evidence": {
+      "results": 7,
+      "studies": 3,
+      "corresponded": 6,
+      "did_not": 1,
+      "level_A": 5,
+      "weighted_concordance": 0.824
+     }
+    },
+    {
+     "drug": "Orencia",
+     "ingredient": "ABATACEPT",
+     "target": "CTLA-4-Ig",
+     "indication": "Rheumatoid arthritis",
+     "company": "Bristol Myers Squibb",
+     "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+     "area": "musculoskeletal",
+     "first_us_approval": 2005,
+     "years_since_approval": 21,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 7,
+      "studies": 3,
+      "corresponded": 6,
+      "did_not": 1,
+      "level_A": 5,
+      "weighted_concordance": 0.824
+     }
+    },
+    {
+     "drug": "Kevzara",
+     "ingredient": "SARILUMAB",
+     "target": "IL-6R",
+     "indication": "Rheumatoid arthritis",
+     "company": "Regeneron",
+     "source": "https://investor.regeneron.com/node/31721/pdf",
+     "area": "musculoskeletal",
+     "first_us_approval": 2017,
+     "years_since_approval": 9,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 7,
+      "studies": 3,
+      "corresponded": 6,
+      "did_not": 1,
+      "level_A": 5,
+      "weighted_concordance": 0.824
+     }
+    }
+   ]
+  },
+  {
+   "area": "immunology-inflammation",
+   "evidence_rank": 47.0,
+   "candidates": 10,
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "mixed": 2,
+    "level_A": 0,
+    "level_B": 0,
+    "level_C": 20,
+    "weighted_concordance": 0.941
+   },
+   "molecules": [
+    {
+     "drug": "Diprospan (betamethasone)",
+     "ingredient": "betamethasone",
+     "target": "Glucocorticoid",
+     "indication": "Inflammatory, allergic and rheumatic disorders (injectable corticosteroid)",
+     "company": "Organon",
+     "source": "https://www.morningstar.com/news/business-wire/20260212249326/organon-reports-results-for-the-fourth-quarter-and-full-year-ended-december-31-2025",
+     "area": "immunology-inflammation",
+     "first_us_approval": 1961,
+     "years_since_approval": 65,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     }
+    },
+    {
+     "drug": "Remicade",
+     "ingredient": "INFLIXIMAB",
+     "target": "TNF",
+     "indication": "Autoimmune disease",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2960352/jjs-innovative-medicine-unit-proves-its-resilience-in-q2?cid=CS-STOCKNEWSAPI-FT-analyst_blog|quick_take-2960352",
+     "area": "immunology-inflammation",
+     "first_us_approval": 1998,
+     "years_since_approval": 28,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     },
+     "also_marketed_as": [
+      "FLIXABI (infliximab biosimilar)"
+     ]
+    },
+    {
+     "drug": "Enbrel",
+     "ingredient": "ETANERCEPT",
+     "target": "TNF",
+     "indication": "Autoimmune diseases",
+     "company": "Amgen",
+     "source": "http://en.wikipedia.org/wiki/Amgen",
+     "area": "immunology-inflammation",
+     "first_us_approval": 1998,
+     "years_since_approval": 28,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     },
+     "also_marketed_as": [
+      "Enbrel",
+      "BENEPALI (etanercept biosimilar)"
+     ]
+    },
+    {
+     "drug": "Humira",
+     "ingredient": "ADALIMUMAB",
+     "target": "TNF",
+     "indication": "Autoimmune disease",
+     "company": "AbbVie",
+     "source": "https://investors.abbvie.com/static-files/d9f96450-a1f3-431a-998f-1510cefacda4",
+     "area": "immunology-inflammation",
+     "first_us_approval": 2002,
+     "years_since_approval": 24,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     },
+     "also_marketed_as": [
+      "IMRALDI (adalimumab biosimilar)"
+     ]
+    },
+    {
+     "drug": "Simponi",
+     "ingredient": "GOLIMUMAB",
+     "target": "TNF",
+     "indication": "Autoimmune disease",
+     "company": "Johnson & Johnson",
+     "source": "https://www.zacks.com/stock/news/2612210/jj-innovative-medicine-unit-shines-again-in-q2-will-this-continue",
+     "area": "immunology-inflammation",
+     "first_us_approval": 2009,
+     "years_since_approval": 17,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     }
+    },
+    {
+     "drug": "Xeljanz",
+     "ingredient": "TOFACITINIB CITRATE",
+     "target": "JAK",
+     "indication": "Autoimmune diseases",
+     "company": "Pfizer",
+     "source": "https://www.zacks.com/stock/news/2915104/pfizer-beats-on-q1-earnings-new-acquired-drugs-drive-sales-growth",
+     "area": "immunology-inflammation",
+     "first_us_approval": 2012,
+     "years_since_approval": 14,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     }
+    },
+    {
+     "drug": "Dupixent",
+     "ingredient": "DUPILUMAB",
+     "target": "IL-4Ralpha",
+     "indication": "Type 2 inflammatory diseases",
+     "company": "Regeneron",
+     "source": "https://investor.regeneron.com/node/31721/pdf",
+     "area": "immunology-inflammation",
+     "first_us_approval": 2017,
+     "years_since_approval": 9,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     }
+    },
+    {
+     "drug": "Cortrophin Gel",
+     "ingredient": null,
+     "target": "melanocortin (ACTH) receptor",
+     "indication": "purified corticotropin (ACTH) gel - multiple inflammatory/immune indications",
+     "company": "ANI Pharmaceuticals",
+     "source": "https://www.zacks.com/stock/news/2935443/anip-pharmaceuticals-cortrophin-gel-drives-2026-growth",
+     "area": "immunology-inflammation",
+     "first_us_approval": null,
+     "years_since_approval": null,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     }
+    },
+    {
+     "drug": "ACAM2000",
+     "ingredient": null,
+     "target": "",
+     "indication": "smallpox/mpox (vaccinia)",
+     "company": "Emergent BioSolutions",
+     "source": "https://markets.financialcontent.com/stocks/article/gnwcq-2026-8-5-emergent-biosolutions-reports-second-quarter-2026-financial-results",
+     "area": "immunology-inflammation",
+     "first_us_approval": null,
+     "years_since_approval": null,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     }
+    },
+    {
+     "drug": "CNJ-016 (VIGIV)",
+     "ingredient": "VIGIV",
+     "target": "",
+     "indication": "vaccinia complications",
+     "company": "Emergent BioSolutions",
+     "source": "https://markets.financialcontent.com/stocks/article/gnwcq-2026-8-5-emergent-biosolutions-reports-second-quarter-2026-financial-results",
+     "area": "immunology-inflammation",
+     "first_us_approval": null,
+     "years_since_approval": null,
+     "precedent": null,
+     "safety_flags": [],
+     "evidence": {
+      "results": 20,
+      "studies": 5,
+      "corresponded": 16,
+      "did_not": 1,
+      "level_A": 0,
+      "weighted_concordance": 0.941
+     }
+    }
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "drug": "Cozaar/Hyzaar (losartan; losartan/hydrochlorothiazide)",
+   "ingredient": "LOSARTAN POTASSIUM",
+   "target": "Angiotensin II receptor blocker (ARB)",
+   "indication": "Hypertension",
+   "company": "Organon",
+   "source": "https://www.morningstar.com/news/business-wire/20260212249326/organon-reports-results-for-the-fourth-quarter-and-full-year-ended-december-31-2025",
+   "area": "cardiovascular",
+   "first_us_approval": 1995,
+   "years_since_approval": 31,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Letairis",
+   "ingredient": "AMBRISENTAN",
+   "target": "ambrisentan (endothelin receptor antagonist)",
+   "indication": "pulmonary arterial hypertension (PAH, WHO Group I)",
+   "company": "Gilead",
+   "source": "https://www.gilead.com/en-hk/science/medicines",
+   "area": "cardiovascular",
+   "first_us_approval": 2007,
+   "years_since_approval": 19,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Eliquis",
+   "ingredient": "APIXABAN",
+   "target": "Factor Xa",
+   "indication": "Atrial fibrillation and VTE",
+   "company": "Pfizer",
+   "source": "https://en.wikipedia.org/wiki/Pfizer",
+   "area": "cardiovascular",
+   "first_us_approval": 2012,
+   "years_since_approval": 14,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   },
+   "also_marketed_as": [
+    "Eliquis"
+   ]
+  },
+  {
+   "drug": "Opsumit",
+   "ingredient": "MACITENTAN",
+   "target": "Endothelin receptor",
+   "indication": "Pulmonary arterial hypertension",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2946033/jjs-innovative-medicine-business-in-q2-heres-what-to-watch",
+   "area": "cardiovascular",
+   "first_us_approval": 2013,
+   "years_since_approval": 13,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Adempas/Verquvo",
+   "ingredient": "RIOCIGUAT",
+   "target": "soluble guanylate cyclase (sGC)",
+   "indication": "Pulmonary hypertension and heart failure",
+   "company": "Merck",
+   "source": "https://www.merck.com/wp-content/uploads/sites/124/2025/10/3Q25-Merck-Other-Financial-Disclosures.pdf",
+   "area": "cardiovascular",
+   "first_us_approval": 2013,
+   "years_since_approval": 13,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Uptravi",
+   "ingredient": "SELEXIPAG",
+   "target": "IP receptor",
+   "indication": "Pulmonary arterial hypertension",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2946033/jjs-innovative-medicine-business-in-q2-heres-what-to-watch",
+   "area": "cardiovascular",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Corlanor",
+   "ingredient": "IVABRADINE HYDROCHLORIDE",
+   "target": "ivabradine (HCN/If channel blocker)",
+   "indication": "worsening chronic heart failure; inappropriate sinus tachycardia",
+   "company": "Amgen",
+   "source": "http://www.amgen.com/products/safety-data-sheets",
+   "area": "cardiovascular",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Camzyos",
+   "ingredient": "MAVACAMTEN",
+   "target": "Cardiac myosin",
+   "indication": "Obstructive hypertrophic cardiomyopathy",
+   "company": "Bristol Myers Squibb",
+   "source": "https://www.reuters.com/business/healthcare-pharmaceuticals/bristol-myers-raises-2026-forecast-eliquis-newer-medicines-power-results-2026-07-30/",
+   "area": "cardiovascular",
+   "first_us_approval": 2022,
+   "years_since_approval": 4,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "AMVUTTRA (vutrisiran)",
+   "ingredient": "VUTRISIRAN SODIUM",
+   "target": "TTR",
+   "indication": "hATTR polyneuropathy and ATTR cardiomyopathy",
+   "company": "Alnylam Pharmaceuticals",
+   "source": "https://www.alnylam.com/sites/default/files/2025-04/ALNY_Corp_Backgrounder_ALNYCB04-25.pdf",
+   "area": "cardiovascular",
+   "first_us_approval": 2022,
+   "years_since_approval": 4,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Attruby (acoramidis)",
+   "ingredient": "ACORAMIDIS HYDROCHLORIDE",
+   "target": "TTR stabilizer",
+   "indication": "Transthyretin amyloid cardiomyopathy (ATTR-CM)",
+   "company": "BridgeBio Pharma",
+   "source": "https://bridgebio.com/?p=3519",
+   "area": "cardiovascular",
+   "first_us_approval": 2024,
+   "years_since_approval": 2,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "MYQORZO (aficamten)",
+   "ingredient": "AFICAMTEN",
+   "target": "Cardiac myosin",
+   "indication": "Symptomatic obstructive hypertrophic cardiomyopathy",
+   "company": "Cytokinetics",
+   "source": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-drug-improve-functional-capacity-and-symptoms-adults-rare-inherited-heart-condition",
+   "area": "cardiovascular",
+   "first_us_approval": 2025,
+   "years_since_approval": 1,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Minnebro (esaxerenone)",
+   "ingredient": "esaxerenone",
+   "target": "Mineralocorticoid receptor",
+   "indication": "Hypertension in Japan (partnered with Daiichi Sankyo)",
+   "company": "Exelixis",
+   "source": "https://online.hl.co.uk/content/factsheet_pdf/sedol/2576941",
+   "area": "cardiovascular",
+   "first_us_approval": null,
+   "years_since_approval": null,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 19,
+    "studies": 8,
+    "corresponded": 13,
+    "did_not": 6,
+    "level_A": 16,
+    "weighted_concordance": 0.685
+   }
+  },
+  {
+   "drug": "Imbruvica",
+   "ingredient": "IBRUTINIB",
+   "target": "BTK",
+   "indication": "CLL and lymphoma",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2960352/jjs-innovative-medicine-unit-proves-its-resilience-in-q2?cid=CS-STOCKNEWSAPI-FT-analyst_blog|quick_take-2960352",
+   "area": "oncology",
+   "first_us_approval": 2013,
+   "years_since_approval": 13,
+   "precedent": "ibrutinib (dog 2010, human 2013), acalabrutinib (2016, 2017) and rilzabrutinib (canine pemphigus 2021, human 2025) all reached dogs at or before human approval",
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Jaypirca",
+   "ingredient": "PIRTOBRUTINIB",
+   "target": "BTK",
+   "indication": "CLL and mantle cell lymphoma",
+   "company": "Eli Lilly",
+   "source": "https://www.lilly.com/science/research-development/pipeline",
+   "area": "oncology",
+   "first_us_approval": 2023,
+   "years_since_approval": 3,
+   "precedent": "ibrutinib (dog 2010, human 2013), acalabrutinib (2016, 2017) and rilzabrutinib (canine pemphigus 2021, human 2025) all reached dogs at or before human approval",
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Abraxane",
+   "ingredient": "PACLITAXEL",
+   "target": "",
+   "indication": "Cancer",
+   "company": "Bristol Myers Squibb",
+   "source": "https://www.zacks.com/stock/news/2810636/can-bmys-growth-portfolio-drive-top-line-expansion-in-2026",
+   "area": "oncology",
+   "first_us_approval": 1992,
+   "years_since_approval": 34,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Proleukin (aldesleukin)",
+   "ingredient": "ALDESLEUKIN",
+   "target": "IL-2 (recombinant)",
+   "indication": "Metastatic renal cell carcinoma; metastatic melanoma",
+   "company": "Iovance Biotherapeutics",
+   "source": "https://www.globenewswire.com/news-release/2026/05/07/3289839/0/en/Iovance-Biotherapeutics-Highlights-Positive-First-Quarter-2026-Results-Business-Achievements-and-Corporate-Updates.html",
+   "area": "oncology",
+   "first_us_approval": 1992,
+   "years_since_approval": 34,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Inlexzo",
+   "ingredient": "GEMCITABINE HYDROCHLORIDE",
+   "target": "gemcitabine (sustained-release intravesical)",
+   "indication": "Bladder cancer",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2979052/jjs-strong-pipeline-momentum-offers-multiple-growth-catalysts-ahead",
+   "area": "oncology",
+   "first_us_approval": 1996,
+   "years_since_approval": 30,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Kanjinti",
+   "ingredient": "TRASTUZUMAB-ANNS",
+   "target": "trastuzumab-anns (anti-HER2 biosimilar)",
+   "indication": "HER2-positive breast and gastric cancer",
+   "company": "Amgen",
+   "source": "http://www.amgen.com/products/safety-data-sheets",
+   "area": "oncology",
+   "first_us_approval": 1998,
+   "years_since_approval": 28,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "LYMPHIR (denileukin diftitox-cxdl)",
+   "ingredient": "DENILEUKIN DIFTITOX-CXDL",
+   "target": "IL-2 receptor-directed fusion toxin",
+   "indication": "Relapsed/refractory Stage I-III cutaneous T-cell lymphoma (CTCL)",
+   "company": "Citius Oncology",
+   "source": "https://www.morningstar.com/news/pr-newswire/20251201ny34309/citius-oncology-announces-us-commercial-launch-of-lymphir-a-novel-cancer-immunotherapy-for-cutaneous-t-cell-lymphoma-ctcl",
+   "area": "oncology",
+   "first_us_approval": 1999,
+   "years_since_approval": 27,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Alimta",
+   "ingredient": "PEMETREXED DISODIUM",
+   "target": "Antifolate",
+   "indication": "NSCLC and mesothelioma",
+   "company": "Eli Lilly",
+   "source": "https://investor.Lilly.Com/static-files/3039632a-fb64-4803-b081-31689cbac13a",
+   "area": "oncology",
+   "first_us_approval": 2004,
+   "years_since_approval": 22,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Mvasi",
+   "ingredient": "BEVACIZUMAB-AWWB",
+   "target": "VEGF",
+   "indication": "Cancer",
+   "company": "Amgen",
+   "source": "http://en.wikipedia.org/wiki/Amgen",
+   "area": "oncology",
+   "first_us_approval": 2004,
+   "years_since_approval": 22,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   },
+   "also_marketed_as": [
+    "Alymsys"
+   ]
+  },
+  {
+   "drug": "Onureg",
+   "ingredient": "AZACITIDINE",
+   "target": "azacitidine tablets (hypomethylating agent)",
+   "indication": "acute myeloid leukemia (continuation/maintenance therapy)",
+   "company": "Bristol Myers Squibb",
+   "source": "https://www.mims.co.uk/manufacturers/bristol-myers-squibb-pharmaceuticals-ltd",
+   "area": "oncology",
+   "first_us_approval": 2004,
+   "years_since_approval": 22,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Revlimid",
+   "ingredient": "LENALIDOMIDE",
+   "target": "IMiD",
+   "indication": "Multiple myeloma",
+   "company": "Bristol Myers Squibb",
+   "source": "https://www.reuters.com/business/healthcare-pharmaceuticals/bristol-myers-beats-quarterly-revenue-estimates-strong-opdivo-sales-2025-10-30/",
+   "area": "oncology",
+   "first_us_approval": 2005,
+   "years_since_approval": 21,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Sprycel",
+   "ingredient": "DASATINIB",
+   "target": "BCR-ABL",
+   "indication": "Chronic myeloid leukemia",
+   "company": "Bristol Myers Squibb",
+   "source": "https://www.zacks.com/stock/news/2810636/can-bmys-growth-portfolio-drive-top-line-expansion-in-2026",
+   "area": "oncology",
+   "first_us_approval": 2006,
+   "years_since_approval": 20,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Zytiga",
+   "ingredient": "ABIRATERONE ACETATE",
+   "target": "CYP17",
+   "indication": "Prostate cancer",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2960352/jjs-innovative-medicine-unit-proves-its-resilience-in-q2?cid=CS-STOCKNEWSAPI-FT-analyst_blog|quick_take-2960352",
+   "area": "oncology",
+   "first_us_approval": 2011,
+   "years_since_approval": 15,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Akeega",
+   "ingredient": "ABIRATERONE ACETATE; NIRAPARIB TOSYLATE",
+   "target": "PARP/CYP17",
+   "indication": "Prostate cancer",
+   "company": "Johnson & Johnson",
+   "source": "https://www.labiotech.eu/in-depth/jj-pipeline/",
+   "area": "oncology",
+   "first_us_approval": 2011,
+   "years_since_approval": 15,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Yervoy",
+   "ingredient": "IPILIMUMAB",
+   "target": "CTLA-4",
+   "indication": "Cancer",
+   "company": "Bristol Myers Squibb",
+   "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+   "area": "oncology",
+   "first_us_approval": 2011,
+   "years_since_approval": 15,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Adcetris",
+   "ingredient": "BRENTUXIMAB VEDOTIN",
+   "target": "brentuximab vedotin (CD30 ADC)",
+   "indication": "Hodgkin lymphoma; systemic ALCL; CTCL; PTCL",
+   "company": "Pfizer",
+   "source": "https://www.pfizer.com/products",
+   "area": "oncology",
+   "first_us_approval": 2011,
+   "years_since_approval": 15,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Kyprolis",
+   "ingredient": "CARFILZOMIB",
+   "target": "Proteasome",
+   "indication": "Multiple myeloma",
+   "company": "Amgen",
+   "source": "http://en.wikipedia.org/wiki/Amgen",
+   "area": "oncology",
+   "first_us_approval": 2012,
+   "years_since_approval": 14,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   },
+   "also_marketed_as": [
+    "Kyprolis (carfilzomib)"
+   ]
+  },
+  {
+   "drug": "Xtandi",
+   "ingredient": "ENZALUTAMIDE",
+   "target": "Androgen receptor",
+   "indication": "Prostate cancer",
+   "company": "Pfizer",
+   "source": "https://www.zacks.com/stock/news/2900642/pfizers-non-oncology-portfolio-in-focus-ahead-of-q1-earnings",
+   "area": "oncology",
+   "first_us_approval": 2012,
+   "years_since_approval": 14,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Cabometyx (cabozantinib)",
+   "ingredient": "CABOZANTINIB S-MALATE",
+   "target": "MET/AXL/VEGFR/RET",
+   "indication": "Advanced neuroendocrine tumors",
+   "company": "Exelixis",
+   "source": "https://files.quartr.com/reports/be12d-2025-07-28-08-52-11.pdf?ref=c21hcnRrYXJtYQ==",
+   "area": "oncology",
+   "first_us_approval": 2012,
+   "years_since_approval": 14,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   },
+   "also_marketed_as": [
+    "Cometriq (cabozantinib)"
+   ]
+  },
+  {
+   "drug": "Phesgo (pertuzumab/trastuzumab + rHuPH20)",
+   "ingredient": "PERTUZUMAB, TRASTUZUMAB, AND HYALURONIDASE-ZZXF",
+   "target": "HER2 (ENHANZE subcutaneous)",
+   "indication": "HER2-positive breast cancer",
+   "company": "Halozyme Therapeutics",
+   "source": "https://ir.halozyme.com/news/news-details/2025/HALOZYME-RAISES-2025-FINANCIAL-GUIDANCE-RANGES-AND-REPORTS-STRONG-FIRST-QUARTER-2025-RESULTS/default.aspx",
+   "area": "oncology",
+   "first_us_approval": 2012,
+   "years_since_approval": 14,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Inlyta",
+   "ingredient": "AXITINIB",
+   "target": "axitinib (VEGFR 1/2/3 inhibitor)",
+   "indication": "advanced renal cell carcinoma",
+   "company": "Pfizer",
+   "source": "https://www.pfizer.com/products",
+   "area": "oncology",
+   "first_us_approval": 2012,
+   "years_since_approval": 14,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Pomalyst",
+   "ingredient": "POMALIDOMIDE",
+   "target": "IMiD",
+   "indication": "Multiple myeloma",
+   "company": "Bristol Myers Squibb",
+   "source": "https://www.zacks.com/stock/news/2810636/can-bmys-growth-portfolio-drive-top-line-expansion-in-2026",
+   "area": "oncology",
+   "first_us_approval": 2013,
+   "years_since_approval": 13,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Cyramza",
+   "ingredient": "RAMUCIRUMAB",
+   "target": "VEGFR2",
+   "indication": "Cancer",
+   "company": "Eli Lilly",
+   "source": "http://en.wikipedia.org/wiki/Eli_Lilly_and_Company",
+   "area": "oncology",
+   "first_us_approval": 2014,
+   "years_since_approval": 12,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Lynparza",
+   "ingredient": "OLAPARIB",
+   "target": "PARP",
+   "indication": "Cancer",
+   "company": "Merck",
+   "source": "https://www.merck.com/news/merck-highlights-key-regulatory-and-clinical-milestones-across-broad-diverse-pipeline/",
+   "area": "oncology",
+   "first_us_approval": 2014,
+   "years_since_approval": 12,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Darzalex",
+   "ingredient": "DARATUMUMAB",
+   "target": "CD38",
+   "indication": "Multiple myeloma",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2841213/jj-posts-innovative-medicine-growth-in-2025-amid-stelara-patent-loss",
+   "area": "oncology",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Lenvima",
+   "ingredient": "LENVATINIB MESYLATE",
+   "target": "VEGFR",
+   "indication": "Cancer",
+   "company": "Merck",
+   "source": "https://www.sec.gov/Archives/edgar/data/310158/000110465926090045/tm2621496d1_ex99-1.htm",
+   "area": "oncology",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Ibrance",
+   "ingredient": "PALBOCICLIB",
+   "target": "CDK4/6",
+   "indication": "Breast cancer",
+   "company": "Pfizer",
+   "source": "https://en.wikipedia.org/wiki/Pfizer",
+   "area": "oncology",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Cotellic (cobimetinib)",
+   "ingredient": "COBIMETINIB FUMARATE",
+   "target": "MEK",
+   "indication": "Advanced melanoma (in combination regimens)",
+   "company": "Exelixis",
+   "source": "https://online.hl.co.uk/content/factsheet_pdf/sedol/2576941",
+   "area": "oncology",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Darzalex SC (daratumumab + rHuPH20)",
+   "ingredient": "daratumumab + rHuPH20",
+   "target": "CD38 (ENHANZE subcutaneous)",
+   "indication": "Multiple myeloma",
+   "company": "Halozyme Therapeutics",
+   "source": "https://ir.halozyme.com/news/news-details/2025/HALOZYME-RAISES-2025-FINANCIAL-GUIDANCE-RANGES-AND-REPORTS-STRONG-FIRST-QUARTER-2025-RESULTS/default.aspx",
+   "area": "oncology",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Empliciti",
+   "ingredient": "ELOTUZUMAB",
+   "target": "elotuzumab (anti-SLAMF7 monoclonal antibody)",
+   "indication": "multiple myeloma",
+   "company": "Bristol Myers Squibb",
+   "source": "https://www.mims.co.uk/manufacturers/bristol-myers-squibb-pharmaceuticals-ltd",
+   "area": "oncology",
+   "first_us_approval": 2015,
+   "years_since_approval": 11,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Tecentriq Hybreza (atezolizumab + rHuPH20)",
+   "ingredient": "ATEZOLIZUMAB AND HYALURONIDASE-TQJS",
+   "target": "PD-L1 (ENHANZE subcutaneous)",
+   "indication": "Solid tumors",
+   "company": "Halozyme Therapeutics",
+   "source": "https://ir.halozyme.com/news/news-details/2025/HALOZYME-RAISES-2025-FINANCIAL-GUIDANCE-RANGES-AND-REPORTS-STRONG-FIRST-QUARTER-2025-RESULTS/default.aspx",
+   "area": "oncology",
+   "first_us_approval": 2016,
+   "years_since_approval": 10,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Verzenio",
+   "ingredient": "ABEMACICLIB",
+   "target": "CDK4/6",
+   "indication": "Breast cancer",
+   "company": "Eli Lilly",
+   "source": "http://en.wikipedia.org/wiki/Eli_Lilly_and_Company",
+   "area": "oncology",
+   "first_us_approval": 2017,
+   "years_since_approval": 9,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Mylotarg",
+   "ingredient": "GEMTUZUMAB OZOGAMICIN",
+   "target": "gemtuzumab ozogamicin (CD33 ADC)",
+   "indication": "CD33-positive acute myeloid leukemia",
+   "company": "Pfizer",
+   "source": "https://www.pfizer.com/products",
+   "area": "oncology",
+   "first_us_approval": 2017,
+   "years_since_approval": 9,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Erleada",
+   "ingredient": "APALUTAMIDE",
+   "target": "Androgen receptor",
+   "indication": "Prostate cancer",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2841213/jj-posts-innovative-medicine-growth-in-2025-amid-stelara-patent-loss",
+   "area": "oncology",
+   "first_us_approval": 2018,
+   "years_since_approval": 8,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Lorbrena",
+   "ingredient": "LORLATINIB",
+   "target": "ALK",
+   "indication": "Non-small cell lung cancer",
+   "company": "Pfizer",
+   "source": "https://www.zacks.com/stock/news/2900642/pfizers-non-oncology-portfolio-in-focus-ahead-of-q1-earnings",
+   "area": "oncology",
+   "first_us_approval": 2018,
+   "years_since_approval": 8,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Braftovi/Mektovi",
+   "ingredient": "ENCORAFENIB",
+   "target": "BRAF/MEK",
+   "indication": "Melanoma",
+   "company": "Pfizer",
+   "source": "https://www.zacks.com/stock/news/2900642/pfizers-non-oncology-portfolio-in-focus-ahead-of-q1-earnings",
+   "area": "oncology",
+   "first_us_approval": 2018,
+   "years_since_approval": 8,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Crysvita (burosumab)",
+   "ingredient": "BUROSUMAB-TWZA",
+   "target": "FGF23",
+   "indication": "X-linked hypophosphatemia; tumor-induced osteomalacia",
+   "company": "Ultragenyx Pharmaceutical",
+   "source": "https://www.globenewswire.com/news-release/2026/08/04/3338827/20739/en/Ultragenyx-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html",
+   "area": "oncology",
+   "first_us_approval": 2018,
+   "years_since_approval": 8,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Talzenna",
+   "ingredient": "TALAZOPARIB TOSYLATE",
+   "target": "talazoparib (PARP inhibitor)",
+   "indication": "BRCA-mutated HER2-negative breast cancer; HRR-mutated mCRPC",
+   "company": "Pfizer",
+   "source": "https://www.pfizer.com/products",
+   "area": "oncology",
+   "first_us_approval": 2018,
+   "years_since_approval": 8,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Balversa",
+   "ingredient": "ERDAFITINIB",
+   "target": "FGFR",
+   "indication": "Bladder cancer",
+   "company": "Johnson & Johnson",
+   "source": "https://www.labiotech.eu/in-depth/jj-pipeline/",
+   "area": "oncology",
+   "first_us_approval": 2019,
+   "years_since_approval": 7,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Retevmo",
+   "ingredient": "SELPERCATINIB",
+   "target": "RET",
+   "indication": "RET-driven cancers",
+   "company": "Eli Lilly",
+   "source": "https://www.zacks.com/stock/news/2980919/can-eli-lillys-oncology-portfolio-drive-growth-beyond-glp-1-drugs",
+   "area": "oncology",
+   "first_us_approval": 2020,
+   "years_since_approval": 6,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Tukysa (tucatinib)",
+   "ingredient": "TUCATINIB",
+   "target": "HER2",
+   "indication": "HER2-positive cancers",
+   "company": "Merck",
+   "source": "https://www.merck.com/news/merck-to-hold-investor-event-to-highlight-oncology-portfolio-and-pipeline/",
+   "area": "oncology",
+   "first_us_approval": 2020,
+   "years_since_approval": 6,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "PEMAZYRE (pemigatinib)",
+   "ingredient": "PEMIGATINIB",
+   "target": "FGFR1/2/3",
+   "indication": "Cholangiocarcinoma, FGFR1-rearranged myeloid/lymphoid neoplasms",
+   "company": "Incyte",
+   "source": "https://incyte.com/Assets/Pipeline/portfolio.pdf",
+   "area": "oncology",
+   "first_us_approval": 2020,
+   "years_since_approval": 6,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Rybrevant",
+   "ingredient": "AMIVANTAMAB-VMJW",
+   "target": "EGFR-MET",
+   "indication": "Non-small cell lung cancer",
+   "company": "Johnson & Johnson",
+   "source": "https://www.labiotech.eu/in-depth/jj-pipeline/",
+   "area": "oncology",
+   "first_us_approval": 2021,
+   "years_since_approval": 5,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Lumakras",
+   "ingredient": "SOTORASIB",
+   "target": "KRAS G12C",
+   "indication": "Non-small cell lung cancer",
+   "company": "Amgen",
+   "source": "http://en.wikipedia.org/wiki/Amgen",
+   "area": "oncology",
+   "first_us_approval": 2021,
+   "years_since_approval": 5,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Tecvayli",
+   "ingredient": "TECLISTAMAB-CQYV",
+   "target": "BCMA x CD3",
+   "indication": "Multiple myeloma",
+   "company": "Johnson & Johnson",
+   "source": "https://WWW.ZACKS.COM/stock/news/2783539/jjs-innovative-medicines-unit-shows-resilience-amid-stelara-loe",
+   "area": "oncology",
+   "first_us_approval": 2022,
+   "years_since_approval": 4,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Krazati",
+   "ingredient": "ADAGRASIB",
+   "target": "KRAS G12C",
+   "indication": "Non-small cell lung cancer",
+   "company": "Bristol Myers Squibb",
+   "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+   "area": "oncology",
+   "first_us_approval": 2022,
+   "years_since_approval": 4,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Talvey",
+   "ingredient": "TALQUETAMAB-TGVS",
+   "target": "GPRC5D x CD3",
+   "indication": "Multiple myeloma",
+   "company": "Johnson & Johnson",
+   "source": "https://WWW.ZACKS.COM/stock/news/2783539/jjs-innovative-medicines-unit-shows-resilience-amid-stelara-loe",
+   "area": "oncology",
+   "first_us_approval": 2023,
+   "years_since_approval": 3,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Elrexfio",
+   "ingredient": "ELRANATAMAB",
+   "target": "BCMA",
+   "indication": "Multiple myeloma",
+   "company": "Pfizer",
+   "source": "https://WWW.ZACKS.COM/stock/news/2984490/pfizers-pipeline-strategy-centers-on-obesity-and-oncology",
+   "area": "oncology",
+   "first_us_approval": 2023,
+   "years_since_approval": 3,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Augtyro",
+   "ingredient": "REPOTRECTINIB",
+   "target": "repotrectinib (ROS1/TRK inhibitor)",
+   "indication": "ROS1-positive NSCLC; NTRK fusion-positive solid tumors",
+   "company": "Bristol Myers Squibb",
+   "source": "https://news.bms.com/news/details/2024/U.S.-Food-and-Drug-Administration-Approves-Augtyro-repotrectinib-a-Next-Generation-Tyrosine-Kinase-Inhibitor-TKI-for-the-Treatment-of-Patients-with-NTRK-Positive-Locally-Advanced-or-Metastatic-Solid-Tumors/default.aspx",
+   "area": "oncology",
+   "first_us_approval": 2023,
+   "years_since_approval": 3,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Imdelltra",
+   "ingredient": "TARLATAMAB-DLLE",
+   "target": "DLL3/CD3",
+   "indication": "Small cell lung cancer",
+   "company": "Amgen",
+   "source": "http://en.wikipedia.org/wiki/Amgen",
+   "area": "oncology",
+   "first_us_approval": 2024,
+   "years_since_approval": 2,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "ANKTIVA (nogapendekin alfa inbakicept)",
+   "ingredient": "nogapendekin alfa inbakicept-pmln",
+   "target": "IL-15",
+   "indication": "Lung cancer",
+   "company": "ImmunityBio",
+   "source": "https://www.businesswire.com/news/home/20260223889360/en/ImmunityBio-Reports-700-Year-Over-Year-Revenue-Growth-Expanded-ANKTIVA-Approvals-in-Lung-Cancer-and-Global-Commercial-Partnerships-in-33-Countries-with-Label-Expansion-Plans-Globally",
+   "area": "oncology",
+   "first_us_approval": 2024,
+   "years_since_approval": 2,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Ojemda (tovorafenib)",
+   "ingredient": "TOVORAFENIB",
+   "target": "RAF",
+   "indication": "pediatric low-grade glioma (BRAF-altered)",
+   "company": "Ligand Pharmaceuticals",
+   "source": "https://www.biospace.com/press-releases/ligand-completes-acquisition-of-xoma-royalty-creating-a-portfolio-of-more-than-200-biopharmaceutical-royalty-assets",
+   "area": "oncology",
+   "first_us_approval": 2024,
+   "years_since_approval": 2,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Inluriyo",
+   "ingredient": "IMLUNESTRANT TOSYLATE",
+   "target": "Estrogen receptor",
+   "indication": "Breast cancer",
+   "company": "Eli Lilly",
+   "source": "https://www.zacks.com/stock/news/2980919/can-eli-lillys-oncology-portfolio-drive-growth-beyond-glp-1-drugs",
+   "area": "oncology",
+   "first_us_approval": 2025,
+   "years_since_approval": 1,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Lynozyfic (linvoseltamab)",
+   "ingredient": "LINVOSELTAMAB-GCPT",
+   "target": "BCMA/CD3",
+   "indication": "Relapsed/refractory multiple myeloma",
+   "company": "Regeneron",
+   "source": "https://investor.regeneron.com/node/31156/pdf",
+   "area": "oncology",
+   "first_us_approval": 2025,
+   "years_since_approval": 1,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Carvykti",
+   "ingredient": null,
+   "target": "BCMA CAR-T",
+   "indication": "Multiple myeloma",
+   "company": "Johnson & Johnson",
+   "source": "https://WWW.ZACKS.COM/stock/news/2783539/jjs-innovative-medicines-unit-shows-resilience-amid-stelara-loe",
+   "area": "oncology",
+   "first_us_approval": null,
+   "years_since_approval": null,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Veppanu (vepdegestrant)",
+   "ingredient": "VEPDEGESTRANT",
+   "target": "PROTAC ER",
+   "indication": "ESR1-mutant ER+/HER2- breast cancer",
+   "company": "Pfizer",
+   "source": "https://www.drugs.com/clinical_trials/arvinas-pfizer-s-vepdegestrant-significantly-improves-progression-free-survival-patients-esr1-22056.html",
+   "area": "oncology",
+   "first_us_approval": 2026,
+   "years_since_approval": 0,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   },
+   "also_marketed_as": [
+    "VEPPANU (vepdegestrant)",
+    "VEPPANU (vepdegestrant)"
+   ]
+  },
+  {
+   "drug": "Abecma",
+   "ingredient": null,
+   "target": "BCMA",
+   "indication": "Multiple myeloma CAR-T",
+   "company": "Bristol Myers Squibb",
+   "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+   "area": "oncology",
+   "first_us_approval": null,
+   "years_since_approval": null,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "Imlygic",
+   "ingredient": null,
+   "target": "talimogene laherparepvec (oncolytic herpesvirus)",
+   "indication": "unresectable melanoma lesions",
+   "company": "Amgen",
+   "source": "http://www.amgen.com/products/safety-data-sheets",
+   "area": "oncology",
+   "first_us_approval": null,
+   "years_since_approval": null,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 111,
+    "studies": 34,
+    "corresponded": 93,
+    "did_not": 14,
+    "level_A": 5,
+    "weighted_concordance": 0.88
+   }
+  },
+  {
+   "drug": "CELEBREX (celecoxib)",
+   "ingredient": "CELECOXIB",
+   "target": "COX-2",
+   "indication": "Arthritis pain",
+   "company": "Viatris",
+   "source": "https://www.viatris.com/-/media/project/common/viatris/pdf/us/us_upjohn_product-chart.pdf?hcp=true",
+   "area": "musculoskeletal",
+   "first_us_approval": 1998,
+   "years_since_approval": 28,
+   "precedent": null,
+   "safety_flags": [
+    {
+     "action": "caution",
+     "species": [
+      "dog",
+      "cat"
+     ],
+     "effect": "Human NSAIDs have markedly narrower gastrointestinal and renal safety margins in dogs and cats than in people; several are contraindicated outright. Veterinary-specific NSAIDs exist, so this space is largely claimed and the bar for a new entrant is tolerability, not efficacy."
+    }
+   ],
+   "evidence": {
+    "results": 7,
+    "studies": 3,
+    "corresponded": 6,
+    "did_not": 1,
+    "level_A": 5,
+    "weighted_concordance": 0.824
+   }
+  },
+  {
+   "drug": "Orencia",
+   "ingredient": "ABATACEPT",
+   "target": "CTLA-4-Ig",
+   "indication": "Rheumatoid arthritis",
+   "company": "Bristol Myers Squibb",
+   "source": "https://WWW.ZACKS.COM/stock/news/2903706/can-bmys-growth-portfolio-counter-legacy-drugs-decline-in-q1",
+   "area": "musculoskeletal",
+   "first_us_approval": 2005,
+   "years_since_approval": 21,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 7,
+    "studies": 3,
+    "corresponded": 6,
+    "did_not": 1,
+    "level_A": 5,
+    "weighted_concordance": 0.824
+   }
+  },
+  {
+   "drug": "Kevzara",
+   "ingredient": "SARILUMAB",
+   "target": "IL-6R",
+   "indication": "Rheumatoid arthritis",
+   "company": "Regeneron",
+   "source": "https://investor.regeneron.com/node/31721/pdf",
+   "area": "musculoskeletal",
+   "first_us_approval": 2017,
+   "years_since_approval": 9,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 7,
+    "studies": 3,
+    "corresponded": 6,
+    "did_not": 1,
+    "level_A": 5,
+    "weighted_concordance": 0.824
+   }
+  },
+  {
+   "drug": "Diprospan (betamethasone)",
+   "ingredient": "betamethasone",
+   "target": "Glucocorticoid",
+   "indication": "Inflammatory, allergic and rheumatic disorders (injectable corticosteroid)",
+   "company": "Organon",
+   "source": "https://www.morningstar.com/news/business-wire/20260212249326/organon-reports-results-for-the-fourth-quarter-and-full-year-ended-december-31-2025",
+   "area": "immunology-inflammation",
+   "first_us_approval": 1961,
+   "years_since_approval": 65,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   }
+  },
+  {
+   "drug": "Remicade",
+   "ingredient": "INFLIXIMAB",
+   "target": "TNF",
+   "indication": "Autoimmune disease",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2960352/jjs-innovative-medicine-unit-proves-its-resilience-in-q2?cid=CS-STOCKNEWSAPI-FT-analyst_blog|quick_take-2960352",
+   "area": "immunology-inflammation",
+   "first_us_approval": 1998,
+   "years_since_approval": 28,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   },
+   "also_marketed_as": [
+    "FLIXABI (infliximab biosimilar)"
+   ]
+  },
+  {
+   "drug": "Enbrel",
+   "ingredient": "ETANERCEPT",
+   "target": "TNF",
+   "indication": "Autoimmune diseases",
+   "company": "Amgen",
+   "source": "http://en.wikipedia.org/wiki/Amgen",
+   "area": "immunology-inflammation",
+   "first_us_approval": 1998,
+   "years_since_approval": 28,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   },
+   "also_marketed_as": [
+    "Enbrel",
+    "BENEPALI (etanercept biosimilar)"
+   ]
+  },
+  {
+   "drug": "Humira",
+   "ingredient": "ADALIMUMAB",
+   "target": "TNF",
+   "indication": "Autoimmune disease",
+   "company": "AbbVie",
+   "source": "https://investors.abbvie.com/static-files/d9f96450-a1f3-431a-998f-1510cefacda4",
+   "area": "immunology-inflammation",
+   "first_us_approval": 2002,
+   "years_since_approval": 24,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   },
+   "also_marketed_as": [
+    "IMRALDI (adalimumab biosimilar)"
+   ]
+  },
+  {
+   "drug": "Simponi",
+   "ingredient": "GOLIMUMAB",
+   "target": "TNF",
+   "indication": "Autoimmune disease",
+   "company": "Johnson & Johnson",
+   "source": "https://www.zacks.com/stock/news/2612210/jj-innovative-medicine-unit-shines-again-in-q2-will-this-continue",
+   "area": "immunology-inflammation",
+   "first_us_approval": 2009,
+   "years_since_approval": 17,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   }
+  },
+  {
+   "drug": "Xeljanz",
+   "ingredient": "TOFACITINIB CITRATE",
+   "target": "JAK",
+   "indication": "Autoimmune diseases",
+   "company": "Pfizer",
+   "source": "https://www.zacks.com/stock/news/2915104/pfizer-beats-on-q1-earnings-new-acquired-drugs-drive-sales-growth",
+   "area": "immunology-inflammation",
+   "first_us_approval": 2012,
+   "years_since_approval": 14,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   }
+  },
+  {
+   "drug": "Dupixent",
+   "ingredient": "DUPILUMAB",
+   "target": "IL-4Ralpha",
+   "indication": "Type 2 inflammatory diseases",
+   "company": "Regeneron",
+   "source": "https://investor.regeneron.com/node/31721/pdf",
+   "area": "immunology-inflammation",
+   "first_us_approval": 2017,
+   "years_since_approval": 9,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   }
+  },
+  {
+   "drug": "Cortrophin Gel",
+   "ingredient": null,
+   "target": "melanocortin (ACTH) receptor",
+   "indication": "purified corticotropin (ACTH) gel - multiple inflammatory/immune indications",
+   "company": "ANI Pharmaceuticals",
+   "source": "https://www.zacks.com/stock/news/2935443/anip-pharmaceuticals-cortrophin-gel-drives-2026-growth",
+   "area": "immunology-inflammation",
+   "first_us_approval": null,
+   "years_since_approval": null,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   }
+  },
+  {
+   "drug": "ACAM2000",
+   "ingredient": null,
+   "target": "",
+   "indication": "smallpox/mpox (vaccinia)",
+   "company": "Emergent BioSolutions",
+   "source": "https://markets.financialcontent.com/stocks/article/gnwcq-2026-8-5-emergent-biosolutions-reports-second-quarter-2026-financial-results",
+   "area": "immunology-inflammation",
+   "first_us_approval": null,
+   "years_since_approval": null,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   }
+  },
+  {
+   "drug": "CNJ-016 (VIGIV)",
+   "ingredient": "VIGIV",
+   "target": "",
+   "indication": "vaccinia complications",
+   "company": "Emergent BioSolutions",
+   "source": "https://markets.financialcontent.com/stocks/article/gnwcq-2026-8-5-emergent-biosolutions-reports-second-quarter-2026-financial-results",
+   "area": "immunology-inflammation",
+   "first_us_approval": null,
+   "years_since_approval": null,
+   "precedent": null,
+   "safety_flags": [],
+   "evidence": {
+    "results": 20,
+    "studies": 5,
+    "corresponded": 16,
+    "did_not": 1,
+    "level_A": 0,
+    "weighted_concordance": 0.941
+   }
+  }
+ ]
+}

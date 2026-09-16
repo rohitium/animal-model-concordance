@@ -485,3 +485,43 @@ worked (L91).
 
 All of it is display-only: the pair records are unchanged, and both the area rules and every label
 are editable without touching Python.
+
+## A14 — Caninisation candidates: areas ranked, molecules not (2026-09-16)
+
+A separate question from the review itself: which human-approved molecules are the best candidates
+to license and develop for dogs or cats. The review answers one input to it — whether a disease
+area's biology corresponds between dog and human — and the corpus supports the premise, since 477
+of 799 classified pairs run human-approval-then-veterinary-evidence against 22 the other way, at a
+median lag of 30 years.
+
+`x1_caninisation_candidates.py` crosses two supplied programme lists (1,949 human, 328 companion
+animal) against the review, the condition-area rules (A13), a species-safety exclusion list and
+Drugs@FDA. Of 561 approved human programmes, 83 molecules survive: target not already claimed in
+companion animals, disease one dogs actually get, an area where the review has dog evidence that
+corresponds, not a diagnostic agent, and no known species toxicity.
+
+**No molecule-level score is emitted, and that is the substantive decision.** Every candidate in an
+area inherits identical evidence — all nine cardiovascular assets carry the same 13/19 corresponded,
+16 of 19 results being intervention outcomes. The only attributes that vary between molecules in an
+area are approval age, precedent and safety flags. A blended score would therefore have ordered
+molecules by how old they are while appearing to order them by evidence: an early version ranked
+Cozaar above ivabradine purely on a 1995 approval date. Areas are ranked on the review's evidence,
+which is real; within an area candidates are an unranked set carrying the attributes that differ.
+
+Evidence rank weights direction and depth equally, so an area that agrees often on weak evidence
+does not beat one that agrees less often on strong evidence. Cardiovascular (13/19 corresponded, 16
+intervention outcomes) ranks above oncology (93/107 corresponded, but only 5 of 111 results are
+intervention outcomes).
+
+**Declared missing.** No canine or feline prevalence, market size or willingness to pay is held
+here, and the veterinary literature's attention is deliberately not substituted for prevalence — it
+measures what researchers study. Patent status is proxied only by years since approval. The safety
+exclusions are reviewer-supplied and incomplete: an absent flag means not checked, never safe.
+
+**Correction to A13 found while doing this.** The musculoskeletal rule's `myopath` fired before
+cardiovascular's `cardiomyopath`, so every cardiomyopathy was filed under musculoskeletal — 11
+classified pairs on the live site, including feline hypertrophic cardiomyopathy, plus the cardiac
+myosin and transthyretin candidates here. Spelled `(?<!cardio)myopath`. Third pattern bug in this
+mapping after the `[ae]` digraph and the `\bthall\b` stem: a regex that looks right and silently
+routes a whole class of terms to the wrong bucket is the characteristic failure of this approach,
+and is only ever caught by reading what landed where, never by the summary.
