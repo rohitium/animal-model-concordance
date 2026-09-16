@@ -559,3 +559,26 @@ programmes were halted partly over rapidly progressive osteoarthritis and joint 
 which is a real question for a dog programme and not a footnote. Every discontinued candidate
 carries `discontinuation_reason: not stated in the source list` so the gap cannot be read as
 clearance.
+
+## A16 — "White space" means absent from the supplied programme list, not from veterinary practice (2026-09-16)
+
+The candidate routes classify a molecule as white space when no companion-animal programme in the
+supplied list claims its target. That list holds 328 branded company programmes. It is not the
+veterinary formulary, and the difference matters.
+
+The run surfaced furosemide and tadalafil as cardiovascular white space. Furosemide is the standard
+diuretic in canine congestive heart failure and sildenafil and tadalafil are standard for canine
+pulmonary hypertension. They appear unclaimed because a generic in routine veterinary use is not a
+company programme, not because the space is open. A reader taking the white-space route at face
+value would be pointed at drugs every small-animal clinician already prescribes.
+
+Molecules in routine veterinary use are therefore flagged. The flag is a hand-written list of common
+veterinary generics and is certainly incomplete: treat an unflagged white-space candidate as
+"no company programme found", never as "not used in dogs". Establishing actual veterinary use
+requires a formulary source this repository does not hold - the same class of gap as canine
+prevalence (A14).
+
+This is the fourth pattern-matching correction in this analysis, after the [ae] digraph, the
+\bthall\b stem and the cardiomyopathy routing. Each looked right, matched wrongly, and was caught by
+reading the output rather than the summary. That is now the expected failure mode of this approach
+and the reason every list here is read line by line before it ships.

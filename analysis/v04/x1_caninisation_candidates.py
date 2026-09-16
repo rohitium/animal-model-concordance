@@ -325,6 +325,21 @@ def main():
                       else "me-too into a claimed target" if competitors
                       else "white space"),
             "competitor_count": len(competitors),
+            # "White space" means absent from the 328 branded companion-animal programmes supplied,
+            # NOT absent from veterinary practice. Furosemide is the standard diuretic in canine
+            # heart failure and sildenafil is standard for canine pulmonary hypertension; both look
+            # unclaimed here because a generic in the veterinary formulary is not a company
+            # programme. Molecules already in routine veterinary use are flagged so the white-space
+            # route cannot be read as an open field.
+            "in_veterinary_formulary": bool(re.search(
+                r"furosemide|frusemide|sildenafil|tadalafil|enalapril|benazepril|amlodipine|"
+                r"losartan|triamcinolone|betamethasone|prednisolone|methylprednisolone|"
+                r"chlorambucil|vincristine|mitoxantrone|azathioprine|toceranib|"
+                r"spironolactone|digoxin|diltiazem|atenolol|clonidine|epinephrine|prednisolone|"
+                r"dexamethasone|cyclosporine|ketoconazole|metronidazole|doxycycline|gabapentin|"
+                r"tramadol|buprenorphine|methimazole|levothyroxine|insulin|phenobarbital|"
+                r"cytarabine|doxorubicin|vincristine|cyclophosphamide|carboplatin|lomustine",
+                (ingredient or "") + " " + (r.get("drug_name") or ""), re.I)),
             # "License and caninise" assumes a molecule that can be licensed and reformulated.
             # Cell and gene therapies are a different programme shape entirely.
             "not_a_licensing_shape": bool(re.search(
