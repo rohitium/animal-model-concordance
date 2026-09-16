@@ -67,7 +67,32 @@ NOT_A_DOG_DISEASE = re.compile(
     r"sickle cell|thalass|huntington|duchenne|spinal muscular atrophy|multiple sclerosis|"
     r"alzheimer|parkinson|schizophren|bipolar|depress|migraine|opioid use|alcohol use|"
     r"covid|influenza vaccine|human papilloma|menopaus|endometrio|preterm|fertility|"
-    r"psoriasis|ulcerative colitis|crohn|gout|osteoporosis|macular degeneration", re.I)
+    r"psoriasis|ulcerative colitis|crohn|gout|osteoporosis|macular degeneration|"
+    r"smallpox|mpox|vaccinia|hypophosphat|osteomalacia|sarcoidosis|"
+    r"narcoleps|tardive|myasthenia", re.I)
+# Not excluded, deliberately: pulmonary hypertension is a recognised and common canine condition,
+# secondary to mitral valve disease and to heartworm, so the PAH agents stay in.
+
+# Dogs and cats get a specific set of cancers, and it is not the human set. Lymphoma,
+# osteosarcoma, haemangiosarcoma, mast cell tumour, oral melanoma, urothelial carcinoma, mammary
+# carcinoma and soft-tissue sarcoma are common and well characterised; multiple myeloma, prostate
+# adenocarcinoma, NSCLC and cervical cancer are rare, absent, or biologically different. Without
+# this gate the oncology list leads with myeloma bispecifics and prostate antiandrogens, which
+# would be wrong on the biology and obviously wrong to any veterinary oncologist.
+CANINE_CANCER = re.compile(
+    r"lymphoma|leukae?mia|osteosarcoma|h[ae]mangiosarcoma|mast cell|melanoma|urothelial|"
+    r"bladder|mammary|breast|soft tissue sarcoma|sarcoma|glioma|histiocytic|"
+    r"solid tumou?r|\bcancer\b|carcinoma|neoplas|oral tumou?r|nasal", re.I)
+# Human tumour types that dogs do not get, or get too rarely and too differently to build a
+# programme on. Thyroid carcinoma and hepatocellular carcinoma are NOT here: both are real canine
+# indications carried by the drug-pair corpus (5 and 3 pairs), so excluding them would drop
+# evidence this review actually holds.
+HUMAN_ONLY_CANCER = re.compile(
+    r"multiple myeloma|\bmyeloma\b|prostat|cervical|ovarian|non-small cell|small cell lung|"
+    r"nsclc|sclc|colorectal|gastric|oesophag|esophag|pancreatic|cholangio|"
+    r"myelodysplas|myelofibros|mantle cell|marginal zone|"
+    r"acute myeloid|chronic myeloid|hodgkin|neuroendocrine|renal cell|head and neck|"
+    r"biliary|uveal|merkel|testicular|endometrial", re.I)
 
 
 def norm(s):
@@ -179,6 +204,21 @@ def main():
         if NOT_A_THERAPEUTIC.search(r.get("drug_name") or "") or NOT_A_THERAPEUTIC.search(target):
             skipped["diagnostic or imaging agent, not a therapeutic"] += 1
             continue
+        # An oncology indication has to name a tumour type dogs actually get. A canine tumour type
+        # named anywhere in the indication wins over a human-only term in the same string: killing
+        # pirtobrutinib for the words "mantle cell" would drop the canine BTK opportunity, which is
+        # the best-evidenced one in the whole list, over a phrase that also says "CLL and lymphoma".
+        if area_of(indication) == "oncology":
+            canine_named = CANINE_CANCER.search(indication)
+            if not canine_named:
+                skipped["oncology indication too unspecific to place in a dog"] += 1
+                continue
+            if HUMAN_ONLY_CANCER.search(indication) and not re.search(
+                    r"lymphoma|leukae?mia|osteosarcoma|h[ae]mangiosarcoma|mast cell|melanoma|"
+                    r"urothelial|bladder|mammary|breast|soft tissue sarcoma|glioma|histiocytic",
+                    indication, re.I):
+                skipped["human tumour type dogs do not get"] += 1
+                continue
         area = area_of(indication)
         e = ev.get(area)
         if not e or e["results"] < 5 or not e["weighted_concordance"]:
@@ -224,6 +264,10 @@ def main():
             "years_since_approval": age, "precedent": precedent, "safety_flags": flags,
             "evidence": {k: e[k] for k in ("results", "studies", "corresponded", "did_not",
                                            "level_A", "weighted_concordance")},
+            # "Cancer" or "Solid tumors" as an indication places nothing in a dog: the molecule
+            # passes the tumour gate on a word, and which canine tumour it might treat is unknown.
+            "indication_is_vague": bool(re.fullmatch(
+                r"\s*(cancer|solid tumou?rs?|advanced cancer|oncology)\s*", indication, re.I)),
         })
 
     # One row per molecule: biosimilars and repeat listings are the same licensing opportunity
