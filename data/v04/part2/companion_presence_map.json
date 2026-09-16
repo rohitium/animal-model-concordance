@@ -1,0 +1,306 @@
+{
+  "_README": [
+    "Amendment A19. Curated map from a human molecule's target class, and from its human indication,",
+    "to the companion-animal programmes that already occupy that space.",
+    "",
+    "WHY THIS FILE EXISTS. Competitor detection previously joined a human programme to a",
+    "companion-animal one by sharing word tokens between their free-text `target` fields. That method",
+    "fails in both directions and cannot be tuned out of failing:",
+    "  - FALSE NEGATIVES: dupilumab (target 'IL-4Ralpha') matched nothing, so the page reported no",
+    "    companion-animal competition for a human atopic-dermatitis drug while canine atopic dermatitis",
+    "    carries Apoquel, Cytopoint, Zenrelia, Befrena and five cyclosporine products. Ipilimumab",
+    "    ('CTLA-4') matched nothing although VGS-001 is an anti-canine CTLA-4 antibody. ZILRETTA",
+    "    ('corticosteroid') matched nothing although its own ingredient, triamcinolone acetonide, is the",
+    "    active in GENESIS Topical Spray, which was already in the indexed list.",
+    "  - FALSE POSITIVES, when the join was widened to ingredient and brand tokens: vutrisiran matched a",
+    "    saline infusion through the token 'sodium', ivabradine and gemcitabine matched a dexmedetomidine",
+    "    injection through 'hydrochloride', and Cortrophin Gel matched ear gel and laxative gel through",
+    "    'gel'. A frequency guard did not fix this; treprostinil still matched inhaled anaesthetics.",
+    "",
+    "Inventing a competitor is worse than reporting none, so token joining is replaced by the explicit",
+    "map below. Every entry names the companion-animal products it asserts, so a wrong entry is visible",
+    "and correctable rather than emergent from a regex.",
+    "",
+    "target_classes: `match` is tested against the human programme's target, ingredient and brand.",
+    "  `holders` are the companion-animal products occupying that mechanism, from the supplied list.",
+    "  An empty `holders` list is a POSITIVE FINDING: the mechanism is named, checked, and unoccupied.",
+    "",
+    "indication_map: `match` is tested against the human indication. `companion_condition` is the",
+    "  corresponding condition in dogs or cats, and `holders` are the programmes treating it. This is",
+    "  the crowding a developer actually faces, which is not the same question as who holds the target.",
+    "",
+    "SCOPE. Holders are drawn from the supplied 328-programme list only. Absence here means absent from",
+    "that list, never absent from veterinary practice; the veterinary-literature and pair-corpus checks",
+    "in x2_companion_evidence.py exist because this list alone cannot support a claim of absence."
+  ],
+
+  "target_classes": [
+    {"class": "JAK", "match": "\\bjak\\b|\\bjak1\\b|\\bjak2\\b|janus kinase|tyk2|tofacitinib|baricitinib|upadacitinib|abrocitinib|brepocitinib|ruxolitinib",
+     "holders": ["Apoquel (oclacitinib), Zoetis", "Zenrelia (ilunocitinib), Elanco"]},
+
+    {"class": "IL-31", "match": "il-?31|nemolizumab|lokivetmab",
+     "holders": ["Cytopoint (lokivetmab), Zoetis", "Befrena (tirnovetmab), Zoetis"]},
+
+    {"class": "IL-4 receptor alpha / type 2 cytokine", "match": "il-?4r|il-?4 receptor|il-?13\\b|dupilumab|tralokinumab|lebrikizumab",
+     "holders": [],
+     "note": "No companion-animal programme targets IL-4Ralpha or IL-13. The type-2 axis in dogs is served through IL-31 (Cytopoint, Befrena) and JAK (Apoquel, Zenrelia), which treat the same disease by a different mechanism. Read this as an unoccupied mechanism inside a heavily occupied indication, not as an empty market."},
+
+    {"class": "nerve growth factor", "match": "\\bngf\\b|nerve growth factor|tanezumab|fasinumab",
+     "holders": ["Librela (bedinvetmab), Zoetis", "Solensia (frunevetmab), Zoetis", "Lenivia (izenivetmab)", "Portela (relfovetmab)"]},
+
+    {"class": "calcineurin", "match": "calcineurin|cyclosporin|ciclosporin|tacrolimus|voclosporin",
+     "holders": ["Atopica (cyclosporine), Elanco", "Sporimune (cyclosporine)", "CYCLAVANCE (cyclosporine)", "Modulis for Dogs / for Cats (cyclosporine)"]},
+
+    {"class": "COX / prostaglandin analgesia", "match": "\\bcox-?1\\b|\\bcox-?2\\b|\\bnsaid\\b|celecoxib|etoricoxib|naproxen|ibuprofen|diclofenac|\\bep4\\b|prostaglandin e",
+     "holders": ["Rimadyl / Carprieve / Carprovet / MOVODYL / Canidryl (carprofen)", "Metacam / Loxicom / Rheumocam (meloxicam)", "Onsior (robenacoxib)", "Deramaxx (deracoxib)", "Galliprant (grapiprant, EP4)", "Cimalgex (cimicoxib)", "Daxocox (enflicoxib)", "Firox (firocoxib)", "Tolfedine (tolfenamic acid)"]},
+
+    {"class": "SGLT2", "match": "sglt|gliflozin",
+     "holders": ["Senvelgo (velagliflozin), Boehringer Ingelheim"]},
+
+    {"class": "GLP-1 / GIP", "match": "glp-?1|\\bgip\\b|exenatide|semaglutide|tirzepatide|liraglutide|dulaglutide",
+     "holders": ["OKV-119 (exenatide implant), Okava — cat and dog, preclinical"]},
+
+    {"class": "ACE inhibitor", "match": "\\bace\\b inhibitor|angiotensin.converting|enalapril|benazepril|ramipril|lisinopril|captopril",
+     "holders": ["Fortekor (benazepril), Elanco", "Benazecare (benazepril)", "CARDALIS (benazepril + spironolactone)"]},
+
+    {"class": "angiotensin receptor blocker", "match": "angiotensin ii receptor|\\barb\\b|losartan|telmisartan|valsartan|irbesartan|candesartan",
+     "holders": ["Semintra (telmisartan), Boehringer Ingelheim — cat"]},
+
+    {"class": "loop diuretic", "match": "loop diuretic|furosemide|frusemide|torasemide|torsemide|bumetanide",
+     "holders": ["UpCard (torasemide), Vetoquinol", "Isemid (torasemide)"]},
+
+    {"class": "mineralocorticoid receptor / aldosterone", "match": "mineralocorticoid|aldosterone|spironolactone|eplerenone|esaxerenone|finerenone",
+     "holders": ["CARDALIS (spironolactone + benazepril), Ceva", "Prilactone Next (spironolactone)"]},
+
+    {"class": "inotrope / PDE3", "match": "\\bpde-?3\\b|inodilator|pimobendan|milrinone|levosimendan",
+     "holders": ["Vetmedin (pimobendan), Boehringer Ingelheim"]},
+
+    {"class": "PDE5", "match": "\\bpde-?5\\b|sildenafil|tadalafil|vardenafil",
+     "holders": [],
+     "note": "No companion-animal company programme, but sildenafil is standard off-label therapy for canine pulmonary hypertension and tadalafil carries veterinary literature. Unoccupied as a branded programme only."},
+
+    {"class": "endothelin receptor antagonist", "match": "endothelin|bosentan|macitentan|ambrisentan",
+     "holders": []},
+
+    {"class": "prostacyclin / IP receptor", "match": "prostacyclin|\\bip receptor\\b|treprostinil|epoprostenol|selexipag|iloprost",
+     "holders": []},
+
+    {"class": "soluble guanylate cyclase", "match": "guanylate cyclase|\\bsgc\\b|riociguat|vericiguat",
+     "holders": []},
+
+    {"class": "cardiac myosin", "match": "cardiac myosin|myosin inhibitor|mavacamten|aficamten",
+     "holders": [],
+     "note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature."},
+
+    {"class": "transthyretin", "match": "\\bttr\\b|transthyretin|tafamidis|acoramidis|vutrisiran|patisiran",
+     "holders": []},
+
+    {"class": "factor Xa / anticoagulant", "match": "factor xa|\\bfxa\\b|apixaban|rivaroxaban|edoxaban|clopidogrel",
+     "holders": []},
+
+    {"class": "HIF prolyl hydroxylase", "match": "hif-?p|prolyl hydroxylase|molidustat|roxadustat|daprodustat",
+     "holders": ["Varenzin-CA1 (molidustat), Elanco — cat"]},
+
+    {"class": "BTK", "match": "\\bbtk\\b|bruton|ibrutinib|acalabrutinib|zanubrutinib|pirtobrutinib|rilzabrutinib",
+     "holders": [],
+     "note": "No companion-animal BTK programme exists in the supplied list. Canine lymphoma is held by Laverdia-CA1 (verdinexor, XPO1)."},
+
+    {"class": "XPO1", "match": "\\bxpo1\\b|exportin|selinexor|verdinexor",
+     "holders": ["Laverdia-CA1 (verdinexor), Dechra — dog"]},
+
+    {"class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)", "match": "vegfr|\\bvegf\\b|pdgfr|\\bkit\\b|\\bmet/|\\baxl\\b|\\bret\\b|sunitinib|toceranib|masitinib|lenvatinib|cabozantinib|ramucirumab|axitinib|sorafenib|regorafenib",
+     "holders": ["Palladia (toceranib), Zoetis — dog, mast cell tumour"],
+     "note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs."},
+
+    {"class": "CTLA-4 checkpoint", "match": "ctla-?4|ipilimumab|tremelimumab",
+     "holders": ["VGS-001 (anti-canine CTLA-4), Vetigenics — dog, oral melanoma", "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"],
+     "note": "Abatacept is CTLA-4-Ig, a T-cell costimulation blocker, and is the opposite pharmacology from an anti-CTLA-4 checkpoint antibody. It is matched separately."},
+
+    {"class": "CTLA-4-Ig costimulation blockade", "match": "ctla-?4-ig|abatacept|belatacept",
+     "holders": []},
+
+    {"class": "PD-1 / PD-L1 checkpoint", "match": "\\bpd-?1\\b|\\bpd-?l1\\b|pembrolizumab|nivolumab|atezolizumab|cemiplimab|durvalumab|sintilimab|relatlimab|\\blag-?3\\b",
+     "holders": ["VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma", "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"]},
+
+    {"class": "CD19 / CD20 / B-cell depletion", "match": "\\bcd19\\b|\\bcd20\\b|rituximab|tafasitamab|blinatumomab",
+     "holders": ["VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"]},
+
+    {"class": "TNF", "match": "\\btnf\\b|etanercept|infliximab|adalimumab|golimumab|certolizumab",
+     "holders": [],
+     "note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition."},
+
+    {"class": "IL-6 receptor", "match": "il-?6r|il-?6 receptor|tocilizumab|sarilumab",
+     "holders": []},
+
+    {"class": "CDK4/6", "match": "cdk4|cdk6|cdk4/6|palbociclib|ribociclib|abemaciclib",
+     "holders": []},
+
+    {"class": "PARP", "match": "\\bparp\\b|olaparib|talazoparib|niraparib|rucaparib",
+     "holders": []},
+
+    {"class": "HER2", "match": "\\bher2\\b|trastuzumab|pertuzumab|tucatinib|lapatinib",
+     "holders": []},
+
+    {"class": "oestrogen receptor", "match": "estrogen receptor|oestrogen receptor|\\bser[dm]\\b|fulvestrant|imlunestrant|vepdegestrant|elacestrant",
+     "holders": []},
+
+    {"class": "BRAF / MEK / RAF", "match": "\\bbraf\\b|\\bmek\\b|\\braf\\b|encorafenib|binimetinib|cobimetinib|trametinib|dabrafenib|tovorafenib|vemurafenib",
+     "holders": [],
+     "note": "Canine urothelial carcinoma carries a high BRAF V595E mutation rate, so this is a named and unoccupied mechanism with a clear canine rationale."},
+
+    {"class": "FGFR", "match": "\\bfgfr\\b|erdafitinib|pemigatinib|infigratinib",
+     "holders": []},
+
+    {"class": "IL-2 / IL-15 cytokine therapy", "match": "\\bil-?2\\b|\\bil-?15\\b|aldesleukin|nogapendekin|denileukin",
+     "holders": []},
+
+    {"class": "oncolytic virus / cancer vaccine", "match": "oncolytic|talimogene|vusolimogene|autologous whole-cell|tumor vaccine|tumour vaccine|\\bcar-?t\\b|lifileucel|tumor infiltrating",
+     "holders": ["VetiVax (VVax-001) autologous tumour vaccine", "ECI (ELIAS Cancer Immunotherapy), osteosarcoma", "Undisclosed oncolytic immunotherapy candidate", "Adoptive T-cell therapy (canine oral melanoma pilot)"]},
+
+    {"class": "corticosteroid", "match": "corticosteroid|glucocorticoid|triamcinolone|betamethasone|dexamethasone|prednisolone|prednisone|methylprednisolone|hydrocortisone|budesonide|\\bacth\\b|corticotropin|melanocortin",
+     "holders": ["GENESIS Topical Spray (triamcinolone), Virbac", "Animax ointment (triamcinolone)", "Isaderm gel / Betafuse (betamethasone)", "Recicort / Dermanolon (betamethasone)", "Osurnia (betamethasone)", "Petflogin Flavour (prednisolone)", "Prednisolone Kela", "EASOTIC (hydrocortisone aceponate)", "Surolan (prednisolone)"]},
+
+    {"class": "alpha-2 adrenergic", "match": "alpha-?2|dexmedetomidine|medetomidine|clonidine|xylazine|tasipimidine|atipamezole",
+     "holders": ["Sileo (dexmedetomidine), Zoetis", "Sedadex / Parnell dexmedetomidine", "Domitor / Medetor (medetomidine)", "Tessie (tasipimidine)", "Antisedan / Atipam / Revertor (atipamezole)"]},
+
+    {"class": "NK1 antiemetic", "match": "\\bnk-?1\\b|neurokinin|maropitant|aprepitant|fosaprepitant",
+     "holders": ["Cerenia (maropitant), Zoetis", "Vominil / Maropitant Bioveta"]},
+
+    {"class": "thyroid synthesis inhibitor", "match": "methimazole|thiamazole|carbimazole|propylthiouracil",
+     "holders": ["Felimazole (thiamazole), Dechra", "Felanorm (methimazole)", "Thiamacare (thiamazole)", "ZM-006 (transdermal methimazole)"]},
+
+    {"class": "adrenal steroidogenesis", "match": "trilostane|ketoconazole|mitotane|osilodrostat|levoketoconazole",
+     "holders": ["Vetoryl (trilostane), Dechra", "Adrestan (trilostane)"]},
+
+    {"class": "mineralocorticoid replacement", "match": "desoxycorticosterone|desoxycortone|fludrocortisone",
+     "holders": ["Percorten-V (desoxycorticosterone pivalate), Elanco", "Zycortal (desoxycortone pivalate), Dechra"]},
+
+    {"class": "vasopressin / catecholamine", "match": "vasopressin|desmopressin|epinephrine|adrenaline|norepinephrine|dopamine agonist|ropinirole",
+     "holders": ["Clevor (ropinirole), Vetoquinol — emesis induction"],
+     "note": "Epinephrine and vasopressin are emergency drugs in routine veterinary use with large veterinary literatures; they are not branded companion-animal programmes."},
+
+    {"class": "cytotoxic chemotherapy", "match": "paclitaxel|docetaxel|doxorubicin|cytarabine|gemcitabine|carboplatin|cisplatin|vincristine|vinblastine|cyclophosphamide|lomustine|mitoxantrone|chlorambucil",
+     "holders": [],
+     "note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use."},
+
+    {"class": "antibody-drug conjugate", "match": "vedotin|deruxtecan|govitecan|emtansine|ravtansine|\\badc\\b|brentuximab",
+     "holders": []},
+
+    {"class": "IGF-1 / longevity", "match": "igf-?1|sirt6|longevity|lifespan|healthspan|sarcopenia",
+     "holders": ["LOY-001 / LOY-003 (IGF-1 reduction), Loyal — dog", "LOY-002, Loyal — senior dogs", "GF-1004 (SIRT6 gene therapy)", "PURR-001 (feline sarcopenia)"]},
+
+    {"class": "MTP / weight management", "match": "\\bmtp\\b|dirlotapide|obesity|weight management|lomitapide",
+     "holders": ["Slentrol (dirlotapide), Zoetis — dog", "OKV-119 (exenatide), Okava"]},
+
+    {"class": "mesenchymal stromal cell therapy", "match": "mesenchymal|\\bmsc\\b|stromal vascular|adipose-derived|stem cell",
+     "holders": ["Allogeneic adipose-derived MSC therapy (canine OA)", "VetStem Cell Therapy", "Unnamed UMSC candidates (canine and feline OA)", "sonruvetcel (feline gingivostomatitis)"]},
+
+    {"class": "HCN / funny-current channel", "match": "\\bhcn\\b|funny current|\\bif channel\\b|ivabradine",
+     "holders": [],
+     "note": "Heart-rate reduction without negative inotropy is attractive in canine mitral valve disease, where pimobendan is the incumbent by a different mechanism."},
+
+    {"class": "calcium channel blocker", "match": "calcium channel|amlodipine|diltiazem|verapamil|nifedipine|felodipine",
+     "holders": [],
+     "note": "Amlodipine is the standard first-line agent for feline systemic hypertension in practice, but as a generic it is not a branded companion-animal programme."},
+
+    {"class": "activin / TGF-beta signalling", "match": "activin|\\btgf-?beta\\b|sotatercept|luspatercept",
+     "holders": ["RJB-01 (FGF21 + sTGFbetaR2 AAV gene therapy) — canine mitral valve disease"]},
+
+    {"class": "TLR agonist / immune adjuvant", "match": "\\btlr-?[0-9]\\b|toll-like receptor|\\bcpg\\b|imiquimod",
+     "holders": ["VetiVax (VVax-001) autologous tumour vaccine with adjuvant"]}
+  ],
+
+  "indication_map": [
+    {"companion_condition": "canine and feline atopic dermatitis and allergic pruritus",
+     "match": "atopic dermatitis|eczema|type 2 inflammat|pruritus|prurigo|chronic spontaneous urticaria|allergic dermatit",
+     "holders": ["Apoquel (oclacitinib)", "Cytopoint (lokivetmab)", "Zenrelia (ilunocitinib)", "Befrena (tirnovetmab)", "Atopica / Sporimune / CYCLAVANCE / Modulis (cyclosporine)", "GENESIS Topical Spray (triamcinolone)", "DOUXO S3 (skin barrier)", "Invetx half-life-extended mAb pipeline"]},
+
+    {"companion_condition": "canine and feline osteoarthritis",
+     "match": "osteoarthritis|\\boa\\b|arthritis pain|joint pain|degenerative joint",
+     "holders": ["Librela (bedinvetmab)", "Solensia (frunevetmab)", "Lenivia (izenivetmab)", "Portela (relfovetmab)", "Galliprant (grapiprant)", "Rimadyl / Carprieve / Carprovet (carprofen)", "Metacam / Loxicom / Rheumocam (meloxicam)", "Onsior (robenacoxib)", "Deramaxx (deracoxib)", "Cimalgex (cimicoxib)", "Daxocox (enflicoxib)", "Firox (firocoxib)", "Zydax / Osteopen (pentosan polysulfate)", "MOVOFLEX (joint supplement)", "adipose-derived MSC therapies"]},
+
+    {"companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+     "match": "rheumatoid arthritis|ankylosing spondylitis|psoriatic arthritis|dermatomyositis|lupus|autoimmune disease",
+     "holders": ["VGS-003 (anti-canine CD19)", "corticosteroids and cyclosporine (formulary, not branded programmes)"]},
+
+    {"companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+     "match": "heart failure|cardiomyopathy|\\bhfref\\b|\\bhfpef\\b|cardiac amyloid|attr-cm",
+     "holders": ["Vetmedin (pimobendan)", "CARDALIS (benazepril + spironolactone)", "Prilactone Next (spironolactone)", "Fortekor / Benazecare (benazepril)", "UpCard / Isemid (torasemide)", "RJB-01 (AAV gene therapy for MMVD)"]},
+
+    {"companion_condition": "canine and feline systemic hypertension",
+     "match": "hypertension(?!.*pulmonary)|blood pressure",
+     "holders": ["Semintra (telmisartan) — cat", "Fortekor (benazepril)", "amlodipine (formulary, not a branded programme)"]},
+
+    {"companion_condition": "canine and feline pulmonary hypertension",
+     "match": "pulmonary (arterial )?hypertension|\\bpah\\b",
+     "holders": [],
+     "note": "Recognised in dogs secondary to mitral valve disease and heartworm, and managed off-label with sildenafil. No branded companion-animal programme."},
+
+    {"companion_condition": "canine lymphoma and leukaemia",
+     "match": "lymphoma|\\bcll\\b|\\bnhl\\b|\\bdlbcl\\b|leukemia|leukaemia|lymphomatous",
+     "holders": ["Laverdia-CA1 (verdinexor)", "conventional CHOP chemotherapy (formulary)"]},
+
+    {"companion_condition": "canine mast cell tumour and solid tumours",
+     "match": "solid tumor|solid tumour|mast cell|melanoma|sarcoma|osteosarcoma|carcinoma|\\bcancer\\b|neoplas",
+     "holders": ["Palladia (toceranib)", "STELFONTA (tigilanol tiglate)", "Laverdia-CA1 (verdinexor)", "VGS-001 / VGS-002 (checkpoint antibodies)", "VetiVax (VVax-001)", "ECI (ELIAS Cancer Immunotherapy)", "eBAT (hemangiosarcoma)", "Immunocidin (mammary tumour)"]},
+
+    {"companion_condition": "canine urothelial / bladder carcinoma",
+     "match": "bladder cancer|urothelial|\\bnmibc\\b",
+     "holders": ["VGS-002 (anti-canine PD-1)", "FidoCure undisclosed targeted therapy", "piroxicam (formulary)"]},
+
+    {"companion_condition": "feline chronic kidney disease and anaemia",
+     "match": "chronic kidney|renal anemia|renal anaemia|\\bckd\\b|proteinuria|nephropathy",
+     "holders": ["Varenzin-CA1 (molidustat)", "Semintra (telmisartan)", "Fortekor (benazepril)", "Piedmont feline CKD biologic", "autologous adipose-derived stem cell therapy (feline CKD)"]},
+
+    {"companion_condition": "canine and feline diabetes mellitus",
+     "match": "type 2 diabetes|type 1 diabetes|diabetes mellitus|glycaemic|glycemic",
+     "holders": ["Senvelgo (velagliflozin) — cat", "Vetsulin / Insistor (porcine insulin zinc)", "OKV-119 (exenatide)"]},
+
+    {"companion_condition": "feline hyperthyroidism and canine hypothyroidism",
+     "match": "hyperthyroid|hypothyroid|thyroid",
+     "holders": ["Felimazole / Felanorm / Thiamacare (thiamazole)", "ZM-006 (transdermal methimazole)"]},
+
+    {"companion_condition": "canine hyperadrenocorticism and hypoadrenocorticism",
+     "match": "cushing|hyperadrenocortic|addison|adrenal insufficiency",
+     "holders": ["Vetoryl / Adrestan (trilostane)", "Percorten-V / Zycortal (desoxycorticosterone)"]},
+
+    {"companion_condition": "canine idiopathic epilepsy",
+     "match": "epilep|seizure|convuls",
+     "holders": ["Pexion (imepitoin)", "Epityl (phenobarbital)"]},
+
+    {"companion_condition": "canine and feline anxiety and behaviour",
+     "match": "anxiety|depress|noise aversion|behavio|insomnia",
+     "holders": ["Sileo (dexmedetomidine)", "Tessie (tasipimidine)", "CLOMICALM (clomipramine)", "ZM-011 (transdermal fluoxetine)", "ADAPTIL / FELIWAY (pheromones)", "Zylkene (alpha-casozepine)"]},
+
+    {"companion_condition": "perioperative and chronic pain in dogs and cats",
+     "match": "acute pain|chronic pain|postoperative pain|low back pain|analgesi|neuropathic pain",
+     "holders": ["Nocita (bupivacaine liposome)", "Buprecare / Bupredine / Beniv (buprenorphine)", "Comfortan / Insistor (methadone)", "Torphadine / Butador (butorphanol)", "Tralieve / Nulli (tramadol)", "the veterinary NSAID class"]},
+
+    {"companion_condition": "canine and feline diarrhoea and vomiting",
+     "match": "diarrhea|diarrhoea|vomit|nausea|emesis|irritable bowel|gastro",
+     "holders": ["Cerenia (maropitant)", "Canalevia / Canalevia-CA1 (crofelemer)", "ZM-007 / ZM-012 (metronidazole)", "Clevor (ropinirole)"]},
+
+    {"companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
+     "match": "atrial fibrillation|thromboembol|\\bvte\\b|deep vein|stroke prevention|anticoagul|thrombosis|thromboprophylaxis",
+     "holders": [],
+     "note": "Feline arterial thromboembolism secondary to hypertrophic cardiomyopathy is a common, devastating and poorly served feline condition, managed with clopidogrel off-label. No branded companion-animal programme addresses it."},
+
+    {"companion_condition": "canine glioma and intracranial tumours",
+     "match": "glioma|glioblastoma|astrocytoma|meningioma|brain tumor|brain tumour|cns lymphoma|intracranial",
+     "holders": [],
+     "note": "Canine glioma occurs spontaneously, notably in brachycephalic breeds, and is a recognised comparative model. No companion-animal programme addresses it."},
+
+    {"companion_condition": "critical care and shock in dogs and cats",
+     "match": "septic shock|vasodilatory shock|anaphylaxis|cardiac arrest|resuscitation|hypotension",
+     "holders": [],
+     "note": "Emergency drugs used routinely in veterinary critical care as generics; no branded companion-animal programme."},
+
+    {"companion_condition": "canine and feline immune-mediated inflammatory disease",
+     "match": "inflammatory, allergic|immune-mediated|rheumatic disorder|multiple inflammatory|corticotropin",
+     "holders": ["Petflogin Flavour / Prednisolone Kela (prednisolone)", "Atopica / Sporimune / CYCLAVANCE (cyclosporine)", "Apoquel (oclacitinib)", "VGS-003 (anti-canine CD19)"]},
+
+    {"companion_condition": "canine and feline bacterial and fungal infection",
+     "match": "bacterial infection|antibiotic|antifungal|pneumonia|sepsis|septic shock|skin infection",
+     "holders": ["Convenia (cefovecin)", "Baytril / Enroflox (enrofloxacin)", "Veraflox (pradofloxacin)", "Clavaseptin / Noroclav (amoxicillin-clavulanate)", "RILEXINE / Cephacare (cephalexin)", "ITRAFUNGOL (itraconazole)", "the veterinary antibacterial class"]}
+  ]
+}

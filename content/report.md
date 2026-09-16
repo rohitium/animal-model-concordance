@@ -34,6 +34,30 @@ all, so the balance above reflects what authors chose to report. Values are grou
 metric and unit match, and spreads are shown rather than averages.
 :::
 
+## What this is for: choosing the next programme {#selection|Programme selection}
+
+The practical question behind this review is which human molecules to develop for dogs and cats.
+The corpus answers it directly. Of {{n_pairs}} classified drug pairs, {{n_human_first}} run human
+approval first and the veterinary evidence later; {{n_vet_first}} run the other way, at a median gap
+of **{{median_lag}} years**. Companion-animal medicine adopts human drugs, and adopts them late.
+
+Crossing {{n_human_programs}} human programmes against {{n_pet_programs}} companion-animal
+programmes, filtered on where this review finds dog biology corresponds, leaves
+**{{n_candidates}} candidates**: {{n_route1}} approved with no companion-animal programme on their
+mechanism, {{n_route2}} approved into a mechanism already worked in dogs or cats, and {{n_route3}}
+shelved for a verified non-clinical reason. A further {{n_watch}} human pipeline assets are held
+back for want of an approval.
+
+[**Programme selection: licensing human molecules for dogs and cats →**](caninisation.html)
+
+::: note What a candidate is, and is not
+A candidate needs both legs of human evidence — safety and efficacy — and then either no
+companion-animal programme on its mechanism, or a stop unrelated to clinical performance. An
+efficacy failure is disqualifying, because demonstrated efficacy is the premise. Nothing here is
+weighted by canine prevalence, market size or patent status: none of those inputs is held, and none
+is proxied.
+:::
+
 ## Evidence map {#map}
 
 Where the evidence actually is. Each cell counts the distinct studies with a kept result for that

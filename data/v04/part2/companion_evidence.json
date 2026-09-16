@@ -1,0 +1,4144 @@
+{
+ "built": "2026-09-16",
+ "sources_checked": [
+  "Curated target-mechanism map over the supplied companion-animal programme list",
+  "Curated human-indication to companion-condition map over the same list",
+  "PubMed veterinary literature search, deterministic and cached",
+  "This review's own classified drug-pair corpus"
+ ],
+ "sources_not_checked": [
+  "No approved-animal-drug registry. The FDA Green Book publishes no machine-readable export, openFDA's animal endpoint carries adverse events rather than approved products, and the EMA veterinary dataset has no download. A molecule approved for dogs or cats outside the supplied list would not be detected here."
+ ],
+ "status_counts": {
+  "mechanism unoccupied, but the condition is contested": 81,
+  "a companion-animal programme works this mechanism": 57,
+  "no programme found, but used or studied in dogs or cats": 2,
+  "no programme, and no veterinary literature found": 6,
+  "not classified": 7
+ },
+ "molecules": {
+  "Adcirca": {
+   "ingredient": "TADALAFIL",
+   "searched_as": "TADALAFIL",
+   "target_class": "PDE5",
+   "target_holders": [],
+   "target_note": "No companion-animal company programme, but sildenafil is standard off-label therapy for canine pulmonary hypertension and tadalafil carries veterinary literature. Unoccupied as a branded programme only.",
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TADALAFIL\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 12,
+    "clinical": 10,
+    "pmids": [
+     "37577366",
+     "31711694",
+     "31410874"
+    ]
+   },
+   "pair_corpus": [
+    "pulmonary hypertension"
+   ],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Adempas/Verquvo": {
+   "ingredient": "RIOCIGUAT",
+   "searched_as": "RIOCIGUAT",
+   "target_class": "soluble guanylate cyclase",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"RIOCIGUAT\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 7,
+    "clinical": 5,
+    "pmids": [
+     "37170767",
+     "36851463",
+     "31411766"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "AMVUTTRA (vutrisiran)": {
+   "ingredient": "VUTRISIRAN SODIUM",
+   "searched_as": "VUTRISIRAN",
+   "target_class": "transthyretin",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"VUTRISIRAN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Attruby (acoramidis)": {
+   "ingredient": "ACORAMIDIS HYDROCHLORIDE",
+   "searched_as": "ACORAMIDIS",
+   "target_class": "transthyretin",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ACORAMIDIS\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Camzyos": {
+   "ingredient": "MAVACAMTEN",
+   "searched_as": "MAVACAMTEN",
+   "target_class": "cardiac myosin",
+   "target_holders": [],
+   "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"MAVACAMTEN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 4,
+    "clinical": 4,
+    "pmids": [
+     "41196692",
+     "39196032",
+     "37414693"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Corlanor": {
+   "ingredient": "IVABRADINE HYDROCHLORIDE",
+   "searched_as": "IVABRADINE",
+   "target_class": "HCN / funny-current channel",
+   "target_holders": [],
+   "target_note": "Heart-rate reduction without negative inotropy is attractive in canine mitral valve disease, where pimobendan is the incumbent by a different mechanism.",
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IVABRADINE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 28,
+    "clinical": 16,
+    "pmids": [
+     "41603367",
+     "38479593",
+     "34059459"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Cozaar/Hyzaar (losartan; losartan/hydrochlorothiazide)": {
+   "ingredient": "LOSARTAN POTASSIUM",
+   "searched_as": "LOSARTAN",
+   "target_class": "angiotensin receptor blocker",
+   "target_holders": [
+    "Semintra (telmisartan), Boehringer Ingelheim — cat"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"LOSARTAN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 131,
+    "clinical": 45,
+    "pmids": [
+     "41772701",
+     "41657319",
+     "41295704"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Eliquis": {
+   "ingredient": "APIXABAN",
+   "searched_as": "APIXABAN",
+   "target_class": "factor Xa / anticoagulant",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
+   "condition_holders": [],
+   "condition_note": "Feline arterial thromboembolism secondary to hypertrophic cardiomyopathy is a common, devastating and poorly served feline condition, managed with clopidogrel off-label. No branded companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"APIXABAN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 16,
+    "clinical": 10,
+    "pmids": [
+     "41655312",
+     "39417527",
+     "36232073"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "no programme found, but used or studied in dogs or cats"
+  },
+  "FUROSCIX (furosemide injection)": {
+   "ingredient": "FUROSEMIDE",
+   "searched_as": "FUROSEMIDE",
+   "target_class": "loop diuretic",
+   "target_holders": [
+    "UpCard (torasemide), Vetoquinol",
+    "Isemid (torasemide)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"FUROSEMIDE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 800,
+    "clinical": 353,
+    "pmids": [
+     "42738489",
+     "42486645",
+     "42385769"
+    ]
+   },
+   "pair_corpus": [
+    "congestive heart failure",
+    "hypertension and cardiomyopathy"
+   ],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Letairis": {
+   "ingredient": "AMBRISENTAN",
+   "searched_as": "AMBRISENTAN",
+   "target_class": "endothelin receptor antagonist",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"AMBRISENTAN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 4,
+    "clinical": 4,
+    "pmids": [
+     "42241925",
+     "35502246",
+     "31134659"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Minnebro (esaxerenone)": {
+   "ingredient": "esaxerenone",
+   "searched_as": "esaxerenone",
+   "target_class": "mineralocorticoid receptor / aldosterone",
+   "target_holders": [
+    "CARDALIS (spironolactone + benazepril), Ceva",
+    "Prilactone Next (spironolactone)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"esaxerenone\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 0,
+    "pmids": [
+     "41301427"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "MYQORZO (aficamten)": {
+   "ingredient": "AFICAMTEN",
+   "searched_as": "AFICAMTEN",
+   "target_class": "cardiac myosin",
+   "target_holders": [],
+   "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"AFICAMTEN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 6,
+    "clinical": 5,
+    "pmids": [
+     "42362932",
+     "39196032",
+     "39102472"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Opsumit": {
+   "ingredient": "MACITENTAN",
+   "searched_as": "MACITENTAN",
+   "target_class": "endothelin receptor antagonist",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"MACITENTAN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 4,
+    "clinical": 3,
+    "pmids": [
+     "32613761",
+     "26337830",
+     "24769543"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Treprostinil injection (generic)": {
+   "ingredient": "generic",
+   "searched_as": "Treprostinil injection",
+   "target_class": "prostacyclin / IP receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Treprostinil injection\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Uptravi": {
+   "ingredient": "SELEXIPAG",
+   "searched_as": "SELEXIPAG",
+   "target_class": "prostacyclin / IP receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"SELEXIPAG\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 4,
+    "clinical": 2,
+    "pmids": [
+     "34860644",
+     "29468921",
+     "28277164"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "VASOSTRICT (vasopressin injection)": {
+   "ingredient": "VASOPRESSIN",
+   "searched_as": "VASOPRESSIN",
+   "target_class": "vasopressin / catecholamine",
+   "target_holders": [
+    "Clevor (ropinirole), Vetoquinol — emesis induction"
+   ],
+   "target_note": "Epinephrine and vasopressin are emergency drugs in routine veterinary use with large veterinary literatures; they are not branded companion-animal programmes.",
+   "companion_condition": "critical care and shock in dogs and cats",
+   "condition_holders": [],
+   "condition_note": "Emergency drugs used routinely in veterinary critical care as generics; no branded companion-animal programme.",
+   "vet_literature": {
+    "query": "\"VASOPRESSIN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1785,
+    "clinical": 328,
+    "pmids": [
+     "42069268",
+     "41383092",
+     "40996125"
+    ]
+   },
+   "pair_corpus": [
+    "cardiopulmonary arrest"
+   ],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "YUTREPIA (treprostinil inhalation powder)": {
+   "ingredient": "TREPROSTINIL SODIUM",
+   "searched_as": "TREPROSTINIL",
+   "target_class": "prostacyclin / IP receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TREPROSTINIL\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 5,
+    "clinical": 4,
+    "pmids": [
+     "33596473",
+     "29791923",
+     "29421665"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "INPEFA (sotagliflozin)": {
+   "ingredient": "SOTAGLIFLOZIN",
+   "searched_as": "SOTAGLIFLOZIN",
+   "target_class": "SGLT2",
+   "target_holders": [
+    "Senvelgo (velagliflozin), Boehringer Ingelheim"
+   ],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"SOTAGLIFLOZIN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Epinephrine Injection (epinephrine)": {
+   "ingredient": "EPINEPHRINE",
+   "searched_as": "EPINEPHRINE",
+   "target_class": "vasopressin / catecholamine",
+   "target_holders": [
+    "Clevor (ropinirole), Vetoquinol — emesis induction"
+   ],
+   "target_note": "Epinephrine and vasopressin are emergency drugs in routine veterinary use with large veterinary literatures; they are not branded companion-animal programmes.",
+   "companion_condition": "critical care and shock in dogs and cats",
+   "condition_holders": [],
+   "condition_note": "Emergency drugs used routinely in veterinary critical care as generics; no branded companion-animal programme.",
+   "vet_literature": {
+    "query": "\"EPINEPHRINE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 3071,
+    "clinical": 589,
+    "pmids": [
+     "42738496",
+     "42640815",
+     "42186627"
+    ]
+   },
+   "pair_corpus": [
+    "brachycephalic obstructive airway syndrome",
+    "cardiopulmonary arrest",
+    "perioperative analgesia"
+   ],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Innovace (enalapril)": {
+   "ingredient": "enalapril",
+   "searched_as": "enalapril",
+   "target_class": "ACE inhibitor",
+   "target_holders": [
+    "Fortekor (benazepril), Elanco",
+    "Benazecare (benazepril)",
+    "CARDALIS (benazepril + spironolactone)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"enalapril\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 218,
+    "clinical": 142,
+    "pmids": [
+     "41200353",
+     "40874198",
+     "39837966"
+    ]
+   },
+   "pair_corpus": [
+    "glomerulonephritis",
+    "hypertension",
+    "mitral valve disease"
+   ],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Javadin (clonidine hydrochloride oral solution)": {
+   "ingredient": "CLONIDINE HYDROCHLORIDE",
+   "searched_as": "CLONIDINE",
+   "target_class": "alpha-2 adrenergic",
+   "target_holders": [
+    "Sileo (dexmedetomidine), Zoetis",
+    "Sedadex / Parnell dexmedetomidine",
+    "Domitor / Medetor (medetomidine)",
+    "Tessie (tasipimidine)",
+    "Antisedan / Atipam / Revertor (atipamezole)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"CLONIDINE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 881,
+    "clinical": 153,
+    "pmids": [
+     "42338095",
+     "42276124",
+     "39349382"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "NORVASC (amlodipine)": {
+   "ingredient": "AMLODIPINE BESYLATE",
+   "searched_as": "AMLODIPINE",
+   "target_class": "calcium channel blocker",
+   "target_holders": [],
+   "target_note": "Amlodipine is the standard first-line agent for feline systemic hypertension in practice, but as a generic it is not a branded companion-animal programme.",
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"AMLODIPINE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 162,
+    "clinical": 114,
+    "pmids": [
+     "42241925",
+     "42117720",
+     "41630730"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Winrevair": {
+   "ingredient": "SOTATERCEPT-CSRK",
+   "searched_as": "SOTATERCEPT",
+   "target_class": "activin / TGF-beta signalling",
+   "target_holders": [
+    "RJB-01 (FGF21 + sTGFbetaR2 AAV gene therapy) — canine mitral valve disease"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"SOTATERCEPT\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Imbruvica": {
+   "ingredient": "IBRUTINIB",
+   "searched_as": "IBRUTINIB",
+   "target_class": "BTK",
+   "target_holders": [],
+   "target_note": "No companion-animal BTK programme exists in the supplied list. Canine lymphoma is held by Laverdia-CA1 (verdinexor, XPO1).",
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IBRUTINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 16,
+    "clinical": 10,
+    "pmids": [
+     "40351764",
+     "36094354",
+     "34884478"
+    ]
+   },
+   "pair_corpus": [
+    "b-cell non-hodgkin lymphoma"
+   ],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Jaypirca": {
+   "ingredient": "PIRTOBRUTINIB",
+   "searched_as": "PIRTOBRUTINIB",
+   "target_class": "BTK",
+   "target_holders": [],
+   "target_note": "No companion-animal BTK programme exists in the supplied list. Canine lymphoma is held by Laverdia-CA1 (verdinexor, XPO1).",
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PIRTOBRUTINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Abraxane": {
+   "ingredient": "PACLITAXEL",
+   "searched_as": "PACLITAXEL",
+   "target_class": "cytotoxic chemotherapy",
+   "target_holders": [],
+   "target_note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PACLITAXEL\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 156,
+    "clinical": 107,
+    "pmids": [
+     "42210794",
+     "41903397",
+     "41655312"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Adcetris": {
+   "ingredient": "BRENTUXIMAB VEDOTIN",
+   "searched_as": "BRENTUXIMAB VEDOTIN",
+   "target_class": "antibody-drug conjugate",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"BRENTUXIMAB VEDOTIN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 0,
+    "pmids": [
+     "27507155"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "ANKTIVA (nogapendekin alfa inbakicept)": {
+   "ingredient": "nogapendekin alfa inbakicept-pmln",
+   "searched_as": "ANKTIVA",
+   "target_class": "IL-2 / IL-15 cytokine therapy",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ANKTIVA\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Balversa": {
+   "ingredient": "ERDAFITINIB",
+   "searched_as": "ERDAFITINIB",
+   "target_class": "FGFR",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ERDAFITINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 2,
+    "clinical": 0,
+    "pmids": [
+     "34876808",
+     "32902324"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Braftovi/Mektovi": {
+   "ingredient": "ENCORAFENIB",
+   "searched_as": "ENCORAFENIB",
+   "target_class": "BRAF / MEK / RAF",
+   "target_holders": [],
+   "target_note": "Canine urothelial carcinoma carries a high BRAF V595E mutation rate, so this is a named and unoccupied mechanism with a clear canine rationale.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ENCORAFENIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 0,
+    "pmids": [
+     "29155017"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Cometriq (cabozantinib)": {
+   "ingredient": "CABOZANTINIB S-MALATE",
+   "searched_as": "CABOZANTINIB",
+   "target_class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)",
+   "target_holders": [
+    "Palladia (toceranib), Zoetis — dog, mast cell tumour"
+   ],
+   "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"CABOZANTINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 3,
+    "clinical": 2,
+    "pmids": [
+     "37189222",
+     "29704617",
+     "26015560"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Cotellic (cobimetinib)": {
+   "ingredient": "COBIMETINIB FUMARATE",
+   "searched_as": "COBIMETINIB",
+   "target_class": "BRAF / MEK / RAF",
+   "target_holders": [],
+   "target_note": "Canine urothelial carcinoma carries a high BRAF V595E mutation rate, so this is a named and unoccupied mechanism with a clear canine rationale.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"COBIMETINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 4,
+    "clinical": 3,
+    "pmids": [
+     "39202410",
+     "36745053",
+     "33780623"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Cyramza": {
+   "ingredient": "RAMUCIRUMAB",
+   "searched_as": "RAMUCIRUMAB",
+   "target_class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)",
+   "target_holders": [
+    "Palladia (toceranib), Zoetis — dog, mast cell tumour"
+   ],
+   "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"RAMUCIRUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Ibrance": {
+   "ingredient": "PALBOCICLIB",
+   "searched_as": "PALBOCICLIB",
+   "target_class": "CDK4/6",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PALBOCICLIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 11,
+    "clinical": 11,
+    "pmids": [
+     "41594421",
+     "40738893",
+     "36450591"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Imlygic": {
+   "ingredient": null,
+   "searched_as": "Imlygic",
+   "target_class": "oncolytic virus / cancer vaccine",
+   "target_holders": [
+    "VetiVax (VVax-001) autologous tumour vaccine",
+    "ECI (ELIAS Cancer Immunotherapy), osteosarcoma",
+    "Undisclosed oncolytic immunotherapy candidate",
+    "Adoptive T-cell therapy (canine oral melanoma pilot)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Imlygic\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Inlexzo": {
+   "ingredient": "GEMCITABINE HYDROCHLORIDE",
+   "searched_as": "GEMCITABINE",
+   "target_class": "cytotoxic chemotherapy",
+   "target_holders": [],
+   "target_note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"GEMCITABINE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 63,
+    "clinical": 47,
+    "pmids": [
+     "41717674",
+     "41560866",
+     "40309702"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Inluriyo": {
+   "ingredient": "IMLUNESTRANT TOSYLATE",
+   "searched_as": "IMLUNESTRANT",
+   "target_class": "oestrogen receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IMLUNESTRANT\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Kanjinti": {
+   "ingredient": "TRASTUZUMAB-ANNS",
+   "searched_as": "TRASTUZUMAB",
+   "target_class": "HER2",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TRASTUZUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 18,
+    "clinical": 13,
+    "pmids": [
+     "40128930",
+     "38564578",
+     "38502572"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Lenvima": {
+   "ingredient": "LENVATINIB MESYLATE",
+   "searched_as": "LENVATINIB",
+   "target_class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)",
+   "target_holders": [
+    "Palladia (toceranib), Zoetis — dog, mast cell tumour"
+   ],
+   "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"LENVATINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 7,
+    "clinical": 6,
+    "pmids": [
+     "38423788",
+     "37221226",
+     "29704617"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "LYMPHIR (denileukin diftitox-cxdl)": {
+   "ingredient": "DENILEUKIN DIFTITOX-CXDL",
+   "searched_as": "DENILEUKIN DIFTITOX",
+   "target_class": "IL-2 / IL-15 cytokine therapy",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"DENILEUKIN DIFTITOX\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 3,
+    "clinical": 1,
+    "pmids": [
+     "22173275",
+     "21220032",
+     "16920555"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Lynparza": {
+   "ingredient": "OLAPARIB",
+   "searched_as": "OLAPARIB",
+   "target_class": "PARP",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"OLAPARIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 8,
+    "clinical": 5,
+    "pmids": [
+     "41728128",
+     "41126009",
+     "40616061"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Mvasi": {
+   "ingredient": "BEVACIZUMAB-AWWB",
+   "searched_as": "BEVACIZUMAB",
+   "target_class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)",
+   "target_holders": [
+    "Palladia (toceranib), Zoetis — dog, mast cell tumour"
+   ],
+   "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"BEVACIZUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 12,
+    "clinical": 10,
+    "pmids": [
+     "41845976",
+     "37570315",
+     "34998814"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Ojemda (tovorafenib)": {
+   "ingredient": "TOVORAFENIB",
+   "searched_as": "TOVORAFENIB",
+   "target_class": "BRAF / MEK / RAF",
+   "target_holders": [],
+   "target_note": "Canine urothelial carcinoma carries a high BRAF V595E mutation rate, so this is a named and unoccupied mechanism with a clear canine rationale.",
+   "companion_condition": "canine glioma and intracranial tumours",
+   "condition_holders": [],
+   "condition_note": "Canine glioma occurs spontaneously, notably in brachycephalic breeds, and is a recognised comparative model. No companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"TOVORAFENIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "no programme, and no veterinary literature found"
+  },
+  "Phesgo (pertuzumab/trastuzumab + rHuPH20)": {
+   "ingredient": "PERTUZUMAB, TRASTUZUMAB, AND HYALURONIDASE-ZZXF",
+   "searched_as": "PERTUZUMAB",
+   "target_class": "HER2",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PERTUZUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 2,
+    "clinical": 1,
+    "pmids": [
+     "35222017",
+     "33919468"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Proleukin (aldesleukin)": {
+   "ingredient": "ALDESLEUKIN",
+   "searched_as": "ALDESLEUKIN",
+   "target_class": "IL-2 / IL-15 cytokine therapy",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ALDESLEUKIN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Talzenna": {
+   "ingredient": "TALAZOPARIB TOSYLATE",
+   "searched_as": "TALAZOPARIB",
+   "target_class": "PARP",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TALAZOPARIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 1,
+    "pmids": [
+     "39655996"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Veppanu (vepdegestrant)": {
+   "ingredient": "VEPDEGESTRANT",
+   "searched_as": "VEPDEGESTRANT",
+   "target_class": "oestrogen receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"VEPDEGESTRANT\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 2,
+    "clinical": 1,
+    "pmids": [
+     "41619699",
+     "38830773"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Verzenio": {
+   "ingredient": "ABEMACICLIB",
+   "searched_as": "ABEMACICLIB",
+   "target_class": "CDK4/6",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ABEMACICLIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 5,
+    "clinical": 5,
+    "pmids": [
+     "40642276",
+     "36450591",
+     "34700018"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Yervoy": {
+   "ingredient": "IPILIMUMAB",
+   "searched_as": "IPILIMUMAB",
+   "target_class": "CTLA-4 checkpoint",
+   "target_holders": [
+    "VGS-001 (anti-canine CTLA-4), Vetigenics — dog, oral melanoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": "Abatacept is CTLA-4-Ig, a T-cell costimulation blocker, and is the opposite pharmacology from an anti-CTLA-4 checkpoint antibody. It is matched separately.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IPILIMUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 2,
+    "clinical": 2,
+    "pmids": [
+     "34856888",
+     "33610587"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Amtagvi (lifileucel)": {
+   "ingredient": "lifileucel",
+   "searched_as": "lifileucel",
+   "target_class": "oncolytic virus / cancer vaccine",
+   "target_holders": [
+    "VetiVax (VVax-001) autologous tumour vaccine",
+    "ECI (ELIAS Cancer Immunotherapy), osteosarcoma",
+    "Undisclosed oncolytic immunotherapy candidate",
+    "Adoptive T-cell therapy (canine oral melanoma pilot)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"lifileucel\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Breyanzi": {
+   "ingredient": null,
+   "searched_as": "Breyanzi",
+   "target_class": "CD19 / CD20 / B-cell depletion",
+   "target_holders": [
+    "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
+   ],
+   "target_note": null,
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Breyanzi\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Keytruda": {
+   "ingredient": "PEMBROLIZUMAB",
+   "searched_as": "PEMBROLIZUMAB",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PEMBROLIZUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Keytruda Qlex": {
+   "ingredient": "PEMBROLIZUMAB;BERAHYALURONIDASE ALFA-PMPH",
+   "searched_as": "PEMBROLIZUMAB",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PEMBROLIZUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Libtayo": {
+   "ingredient": "CEMIPLIMAB-RWLC",
+   "searched_as": "CEMIPLIMAB",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"CEMIPLIMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "MONJUVI/MINJUVI (tafasitamab)": {
+   "ingredient": "TAFASITAMAB-CXIX",
+   "searched_as": "TAFASITAMAB",
+   "target_class": "CD19 / CD20 / B-cell depletion",
+   "target_holders": [
+    "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
+   ],
+   "target_note": null,
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TAFASITAMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Opdivo": {
+   "ingredient": "NIVOLUMAB",
+   "searched_as": "NIVOLUMAB",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"NIVOLUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 1,
+    "pmids": [
+     "38959326"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Opdivo Qvantig": {
+   "ingredient": "NIVOLUMAB;HYALURONIDASE-NVHY",
+   "searched_as": "NIVOLUMAB",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"NIVOLUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 1,
+    "pmids": [
+     "38959326"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Opdualag": {
+   "ingredient": "NIVOLUMAB;RELATLIMAB-RMBW",
+   "searched_as": "NIVOLUMAB",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"NIVOLUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 1,
+    "pmids": [
+     "38959326"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "RP1 (vusolimogene oderparepvec; TUDRIQEV)": {
+   "ingredient": "vusolimogene oderparepvec; TUDRIQEV",
+   "searched_as": "vusolimogene oderparepvec",
+   "target_class": "oncolytic virus / cancer vaccine",
+   "target_holders": [
+    "VetiVax (VVax-001) autologous tumour vaccine",
+    "ECI (ELIAS Cancer Immunotherapy), osteosarcoma",
+    "Undisclosed oncolytic immunotherapy candidate",
+    "Adoptive T-cell therapy (canine oral melanoma pilot)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"vusolimogene oderparepvec\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Tecentriq Hybreza (atezolizumab + rHuPH20)": {
+   "ingredient": "ATEZOLIZUMAB AND HYALURONIDASE-TQJS",
+   "searched_as": null,
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": null,
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Tyvyt": {
+   "ingredient": null,
+   "searched_as": "Tyvyt",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Tyvyt\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Yescarta": {
+   "ingredient": null,
+   "searched_as": "Yescarta",
+   "target_class": "CD19 / CD20 / B-cell depletion",
+   "target_holders": [
+    "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
+   ],
+   "target_note": null,
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Yescarta\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "DepoCyt (cytarabine liposome injection)": {
+   "ingredient": "CYTARABINE",
+   "searched_as": "CYTARABINE",
+   "target_class": "cytotoxic chemotherapy",
+   "target_holders": [],
+   "target_note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use.",
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"CYTARABINE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 58,
+    "clinical": 48,
+    "pmids": [
+     "42613071",
+     "41405191",
+     "40254461"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Kevzara": {
+   "ingredient": "SARILUMAB",
+   "searched_as": "SARILUMAB",
+   "target_class": "IL-6 receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"SARILUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Orencia": {
+   "ingredient": "ABATACEPT",
+   "searched_as": "ABATACEPT",
+   "target_class": "CTLA-4 checkpoint",
+   "target_holders": [
+    "VGS-001 (anti-canine CTLA-4), Vetigenics — dog, oral melanoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": "Abatacept is CTLA-4-Ig, a T-cell costimulation blocker, and is the opposite pharmacology from an anti-CTLA-4 checkpoint antibody. It is matched separately.",
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ABATACEPT\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "ZILRETTA (triamcinolone acetonide extended-release injectable suspension)": {
+   "ingredient": "TRIAMCINOLONE ACETONIDE",
+   "searched_as": "TRIAMCINOLONE",
+   "target_class": "corticosteroid",
+   "target_holders": [
+    "GENESIS Topical Spray (triamcinolone), Virbac",
+    "Animax ointment (triamcinolone)",
+    "Isaderm gel / Betafuse (betamethasone)",
+    "Recicort / Dermanolon (betamethasone)",
+    "Osurnia (betamethasone)",
+    "Petflogin Flavour (prednisolone)",
+    "Prednisolone Kela",
+    "EASOTIC (hydrocortisone aceponate)",
+    "Surolan (prednisolone)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline osteoarthritis",
+   "condition_holders": [
+    "Librela (bedinvetmab)",
+    "Solensia (frunevetmab)",
+    "Lenivia (izenivetmab)",
+    "Portela (relfovetmab)",
+    "Galliprant (grapiprant)",
+    "Rimadyl / Carprieve / Carprovet (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Zydax / Osteopen (pentosan polysulfate)",
+    "MOVOFLEX (joint supplement)",
+    "adipose-derived MSC therapies"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TRIAMCINOLONE\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 122,
+    "clinical": 87,
+    "pmids": [
+     "42480621",
+     "42419388",
+     "42358183"
+    ]
+   },
+   "pair_corpus": [
+    "atopic dermatitis",
+    "osteoarthritis"
+   ],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Arcoxia (etoricoxib)": {
+   "ingredient": "etoricoxib",
+   "searched_as": "etoricoxib",
+   "target_class": "COX / prostaglandin analgesia",
+   "target_holders": [
+    "Rimadyl / Carprieve / Carprovet / MOVODYL / Canidryl (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Galliprant (grapiprant, EP4)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Tolfedine (tolfenamic acid)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline osteoarthritis",
+   "condition_holders": [
+    "Librela (bedinvetmab)",
+    "Solensia (frunevetmab)",
+    "Lenivia (izenivetmab)",
+    "Portela (relfovetmab)",
+    "Galliprant (grapiprant)",
+    "Rimadyl / Carprieve / Carprovet (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Zydax / Osteopen (pentosan polysulfate)",
+    "MOVOFLEX (joint supplement)",
+    "adipose-derived MSC therapies"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"etoricoxib\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 2,
+    "clinical": 1,
+    "pmids": [
+     "23058927",
+     "16083531"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "CELEBREX (celecoxib)": {
+   "ingredient": "CELECOXIB",
+   "searched_as": "CELECOXIB",
+   "target_class": "COX / prostaglandin analgesia",
+   "target_holders": [
+    "Rimadyl / Carprieve / Carprovet / MOVODYL / Canidryl (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Galliprant (grapiprant, EP4)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Tolfedine (tolfenamic acid)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline osteoarthritis",
+   "condition_holders": [
+    "Librela (bedinvetmab)",
+    "Solensia (frunevetmab)",
+    "Lenivia (izenivetmab)",
+    "Portela (relfovetmab)",
+    "Galliprant (grapiprant)",
+    "Rimadyl / Carprieve / Carprovet (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Zydax / Osteopen (pentosan polysulfate)",
+    "MOVOFLEX (joint supplement)",
+    "adipose-derived MSC therapies"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"CELECOXIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 67,
+    "clinical": 41,
+    "pmids": [
+     "41893705",
+     "40436212",
+     "39843845"
+    ]
+   },
+   "pair_corpus": [
+    "back pain",
+    "intervertebral disc disease"
+   ],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "LISRAYA (brepocitinib)": {
+   "ingredient": "brepocitinib",
+   "searched_as": "brepocitinib",
+   "target_class": "JAK",
+   "target_holders": [
+    "Apoquel (oclacitinib), Zoetis",
+    "Zenrelia (ilunocitinib), Elanco"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"brepocitinib\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Olumiant": {
+   "ingredient": "BARICITINIB",
+   "searched_as": "BARICITINIB",
+   "target_class": "JAK",
+   "target_holders": [
+    "Apoquel (oclacitinib), Zoetis",
+    "Zenrelia (ilunocitinib), Elanco"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"BARICITINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 0,
+    "pmids": [
+     "34502566"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Cortrophin Gel": {
+   "ingredient": null,
+   "searched_as": "Cortrophin Gel",
+   "target_class": "corticosteroid",
+   "target_holders": [
+    "GENESIS Topical Spray (triamcinolone), Virbac",
+    "Animax ointment (triamcinolone)",
+    "Isaderm gel / Betafuse (betamethasone)",
+    "Recicort / Dermanolon (betamethasone)",
+    "Osurnia (betamethasone)",
+    "Petflogin Flavour (prednisolone)",
+    "Prednisolone Kela",
+    "EASOTIC (hydrocortisone aceponate)",
+    "Surolan (prednisolone)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline immune-mediated inflammatory disease",
+   "condition_holders": [
+    "Petflogin Flavour / Prednisolone Kela (prednisolone)",
+    "Atopica / Sporimune / CYCLAVANCE (cyclosporine)",
+    "Apoquel (oclacitinib)",
+    "VGS-003 (anti-canine CD19)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Cortrophin Gel\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Diprospan (betamethasone)": {
+   "ingredient": "betamethasone",
+   "searched_as": "betamethasone",
+   "target_class": "corticosteroid",
+   "target_holders": [
+    "GENESIS Topical Spray (triamcinolone), Virbac",
+    "Animax ointment (triamcinolone)",
+    "Isaderm gel / Betafuse (betamethasone)",
+    "Recicort / Dermanolon (betamethasone)",
+    "Osurnia (betamethasone)",
+    "Petflogin Flavour (prednisolone)",
+    "Prednisolone Kela",
+    "EASOTIC (hydrocortisone aceponate)",
+    "Surolan (prednisolone)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline immune-mediated inflammatory disease",
+   "condition_holders": [
+    "Petflogin Flavour / Prednisolone Kela (prednisolone)",
+    "Atopica / Sporimune / CYCLAVANCE (cyclosporine)",
+    "Apoquel (oclacitinib)",
+    "VGS-003 (anti-canine CD19)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"betamethasone\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 70,
+    "clinical": 48,
+    "pmids": [
+     "42638346",
+     "42582328",
+     "42385686"
+    ]
+   },
+   "pair_corpus": [
+    "otitis externa"
+   ],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Dupixent": {
+   "ingredient": "DUPILUMAB",
+   "searched_as": "DUPILUMAB",
+   "target_class": "IL-4 receptor alpha / type 2 cytokine",
+   "target_holders": [],
+   "target_note": "No companion-animal programme targets IL-4Ralpha or IL-13. The type-2 axis in dogs is served through IL-31 (Cytopoint, Befrena) and JAK (Apoquel, Zenrelia), which treat the same disease by a different mechanism. Read this as an unoccupied mechanism inside a heavily occupied indication, not as an empty market.",
+   "companion_condition": "canine and feline atopic dermatitis and allergic pruritus",
+   "condition_holders": [
+    "Apoquel (oclacitinib)",
+    "Cytopoint (lokivetmab)",
+    "Zenrelia (ilunocitinib)",
+    "Befrena (tirnovetmab)",
+    "Atopica / Sporimune / CYCLAVANCE / Modulis (cyclosporine)",
+    "GENESIS Topical Spray (triamcinolone)",
+    "DOUXO S3 (skin barrier)",
+    "Invetx half-life-extended mAb pipeline"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"DUPILUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 3,
+    "clinical": 2,
+    "pmids": [
+     "41032398",
+     "40785403",
+     "39323043"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Enbrel": {
+   "ingredient": "ETANERCEPT",
+   "searched_as": "ETANERCEPT",
+   "target_class": "TNF",
+   "target_holders": [],
+   "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ETANERCEPT\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 9,
+    "clinical": 7,
+    "pmids": [
+     "28378814",
+     "19572976",
+     "19387178"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Humira": {
+   "ingredient": "ADALIMUMAB",
+   "searched_as": "ADALIMUMAB",
+   "target_class": "TNF",
+   "target_holders": [],
+   "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ADALIMUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 6,
+    "clinical": 6,
+    "pmids": [
+     "38111376",
+     "32236683",
+     "32112722"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Remicade": {
+   "ingredient": "INFLIXIMAB",
+   "searched_as": "INFLIXIMAB",
+   "target_class": "TNF",
+   "target_holders": [],
+   "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"INFLIXIMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 4,
+    "clinical": 4,
+    "pmids": [
+     "34998814",
+     "26028002",
+     "25443540"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Simponi": {
+   "ingredient": "GOLIMUMAB",
+   "searched_as": "GOLIMUMAB",
+   "target_class": "TNF",
+   "target_holders": [],
+   "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"GOLIMUMAB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Xeljanz": {
+   "ingredient": "TOFACITINIB CITRATE",
+   "searched_as": "TOFACITINIB",
+   "target_class": "JAK",
+   "target_holders": [
+    "Apoquel (oclacitinib), Zoetis",
+    "Zenrelia (ilunocitinib), Elanco"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TOFACITINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 5,
+    "clinical": 4,
+    "pmids": [
+     "42091763",
+     "33827581",
+     "29512229"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Amrecibart (REGN9933)": {
+   "ingredient": "REGN9933",
+   "searched_as": "REGN9933",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
+   "condition_holders": [],
+   "condition_note": "Feline arterial thromboembolism secondary to hypertrophic cardiomyopathy is a common, devastating and poorly served feline condition, managed with clopidogrel off-label. No branded companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"REGN9933\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "no programme, and no veterinary literature found"
+  },
+  "AVIM therapy": {
+   "ingredient": null,
+   "searched_as": "AVIM therapy",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"AVIM therapy\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "danicamtiv": {
+   "ingredient": null,
+   "searched_as": "danicamtiv",
+   "target_class": "cardiac myosin",
+   "target_holders": [],
+   "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"danicamtiv\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 3,
+    "clinical": 3,
+    "pmids": [
+     "36613900",
+     "33078965",
+     "32558989"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "EDG-7500": {
+   "ingredient": null,
+   "searched_as": "EDG-7500",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"EDG-7500\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "eplontersen": {
+   "ingredient": null,
+   "searched_as": "eplontersen",
+   "target_class": "transthyretin",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"eplontersen\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "L606": {
+   "ingredient": null,
+   "searched_as": "L606",
+   "target_class": "prostacyclin / IP receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"L606\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "LNTH-2513 (GP-1)": {
+   "ingredient": "GP-1",
+   "searched_as": "GP-1",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
+   "condition_holders": [],
+   "condition_note": "Feline arterial thromboembolism secondary to hypertrophic cardiomyopathy is a common, devastating and poorly served feline condition, managed with clopidogrel off-label. No branded companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"GP-1\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 6,
+    "clinical": 3,
+    "pmids": [
+     "37198956",
+     "9342421",
+     "9228929"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "no programme found, but used or studied in dogs or cats"
+  },
+  "Milvexian": {
+   "ingredient": null,
+   "searched_as": "Milvexian",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
+   "condition_holders": [],
+   "condition_note": "Feline arterial thromboembolism secondary to hypertrophic cardiomyopathy is a common, devastating and poorly served feline condition, managed with clopidogrel off-label. No branded companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"Milvexian\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "no programme, and no veterinary literature found"
+  },
+  "MK-5475": {
+   "ingredient": null,
+   "searched_as": "MK-5475",
+   "target_class": "soluble guanylate cyclase",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"MK-5475\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "MK-7962": {
+   "ingredient": null,
+   "searched_as": "MK-7962",
+   "target_class": "activin / TGF-beta signalling",
+   "target_holders": [
+    "RJB-01 (FGF21 + sTGFbetaR2 AAV gene therapy) — canine mitral valve disease"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"MK-7962\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "mosliciguat": {
+   "ingredient": null,
+   "searched_as": "mosliciguat",
+   "target_class": "soluble guanylate cyclase",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"mosliciguat\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "nexiguran ziclumeran (NTLA-2001)": {
+   "ingredient": "NTLA-2001",
+   "searched_as": "NTLA-2001",
+   "target_class": "transthyretin",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"NTLA-2001\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "omecamtiv mecarbil": {
+   "ingredient": null,
+   "searched_as": "omecamtiv mecarbil",
+   "target_class": "cardiac myosin",
+   "target_holders": [],
+   "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"omecamtiv mecarbil\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 15,
+    "clinical": 14,
+    "pmids": [
+     "39927371",
+     "36722665",
+     "33955165"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Seralutinib": {
+   "ingredient": null,
+   "searched_as": "Seralutinib",
+   "target_class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)",
+   "target_holders": [
+    "Palladia (toceranib), Zoetis — dog, mast cell tumour"
+   ],
+   "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Seralutinib\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "TNX-103 (oral levosimendan)": {
+   "ingredient": "oral levosimendan",
+   "searched_as": "oral levosimendan",
+   "target_class": "inotrope / PDE3",
+   "target_holders": [
+    "Vetmedin (pimobendan), Boehringer Ingelheim"
+   ],
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"oral levosimendan\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "tonlamarsen": {
+   "ingredient": null,
+   "searched_as": "tonlamarsen",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"tonlamarsen\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "TX45": {
+   "ingredient": null,
+   "searched_as": "TX45",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TX45\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "ulacamten (CK-586)": {
+   "ingredient": "CK-586",
+   "searched_as": "CK-586",
+   "target_class": "cardiac myosin",
+   "target_holders": [],
+   "target_note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature.",
+   "companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
+   "condition_holders": [
+    "Vetmedin (pimobendan)",
+    "CARDALIS (benazepril + spironolactone)",
+    "Prilactone Next (spironolactone)",
+    "Fortekor / Benazecare (benazepril)",
+    "UpCard / Isemid (torasemide)",
+    "RJB-01 (AAV gene therapy for MMVD)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"CK-586\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 2,
+    "clinical": 2,
+    "pmids": [
+     "42083784",
+     "38802475"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "zilebesiran ± REVERSIR": {
+   "ingredient": null,
+   "searched_as": null,
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline systemic hypertension",
+   "condition_holders": [
+    "Semintra (telmisartan) — cat",
+    "Fortekor (benazepril)",
+    "amlodipine (formulary, not a branded programme)"
+   ],
+   "condition_note": null,
+   "vet_literature": null,
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Atirmociclib (PF-07220060)": {
+   "ingredient": "PF-07220060",
+   "searched_as": "PF-07220060",
+   "target_class": "CDK4/6",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PF-07220060\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "bel-sar (AU-011)": {
+   "ingredient": "AU-011",
+   "searched_as": "AU-011",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"AU-011\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Budigalimab": {
+   "ingredient": null,
+   "searched_as": "Budigalimab",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Budigalimab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Cretostimogene grenadenorepvec": {
+   "ingredient": null,
+   "searched_as": "Cretostimogene grenadenorepvec",
+   "target_class": "oncolytic virus / cancer vaccine",
+   "target_holders": [
+    "VetiVax (VVax-001) autologous tumour vaccine",
+    "ECI (ELIAS Cancer Immunotherapy), osteosarcoma",
+    "Undisclosed oncolytic immunotherapy candidate",
+    "Adoptive T-cell therapy (canine oral melanoma pilot)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Cretostimogene grenadenorepvec\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Cretostimogene grenadenorepvec + pembrolizumab": {
+   "ingredient": null,
+   "searched_as": "Cretostimogene grenadenorepvec",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Cretostimogene grenadenorepvec\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Darovasertib": {
+   "ingredient": null,
+   "searched_as": "Darovasertib",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Darovasertib\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Disitamab vedotin": {
+   "ingredient": null,
+   "searched_as": "Disitamab vedotin",
+   "target_class": "HER2",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Disitamab vedotin\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Favezelimab + pembrolizumab": {
+   "ingredient": null,
+   "searched_as": "Favezelimab",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Favezelimab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Fianlimab": {
+   "ingredient": null,
+   "searched_as": "Fianlimab",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Fianlimab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "IDE161": {
+   "ingredient": null,
+   "searched_as": "IDE161",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IDE161\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "IDE397": {
+   "ingredient": null,
+   "searched_as": "IDE397",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IDE397\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Imlunestrant": {
+   "ingredient": null,
+   "searched_as": "Imlunestrant",
+   "target_class": "oestrogen receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Imlunestrant\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "IOV-3001": {
+   "ingredient": null,
+   "searched_as": "IOV-3001",
+   "target_class": "IL-2 / IL-15 cytokine therapy",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IOV-3001\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "IOV-4001": {
+   "ingredient": null,
+   "searched_as": "IOV-4001",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"IOV-4001\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Ivonescimab (SMT112)": {
+   "ingredient": "SMT112",
+   "searched_as": "SMT112",
+   "target_class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)",
+   "target_holders": [
+    "Palladia (toceranib), Zoetis — dog, mast cell tumour"
+   ],
+   "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"SMT112\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Ladiratuzumab vedotin (MK-6440)": {
+   "ingredient": "MK-6440",
+   "searched_as": "MK-6440",
+   "target_class": "antibody-drug conjugate",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"MK-6440\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Lasofoxifene": {
+   "ingredient": null,
+   "searched_as": "Lasofoxifene",
+   "target_class": "oestrogen receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Lasofoxifene\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "LNTH-2403": {
+   "ingredient": null,
+   "searched_as": "LNTH-2403",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"LNTH-2403\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "mRNA-4359": {
+   "ingredient": null,
+   "searched_as": "mRNA-4359",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"mRNA-4359\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "NEO100": {
+   "ingredient": null,
+   "searched_as": "NEO100",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine glioma and intracranial tumours",
+   "condition_holders": [],
+   "condition_note": "Canine glioma occurs spontaneously, notably in brachycephalic breeds, and is a recognised comparative model. No companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"NEO100\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "no programme, and no veterinary literature found"
+  },
+  "Nivolumab + relatlimab SC (BMS)": {
+   "ingredient": "BMS",
+   "searched_as": "Nivolumab",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Nivolumab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 1,
+    "pmids": [
+     "38959326"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Odronextamab": {
+   "ingredient": null,
+   "searched_as": "Odronextamab",
+   "target_class": "CD19 / CD20 / B-cell depletion",
+   "target_holders": [
+    "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
+   ],
+   "target_note": null,
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Odronextamab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "olutasidenib + temozolomide": {
+   "ingredient": null,
+   "searched_as": "olutasidenib",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine glioma and intracranial tumours",
+   "condition_holders": [],
+   "condition_note": "Canine glioma occurs spontaneously, notably in brachycephalic breeds, and is a recognised comparative model. No companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"olutasidenib\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "no programme, and no veterinary literature found"
+  },
+  "OST-HER2": {
+   "ingredient": null,
+   "searched_as": "OST-HER2",
+   "target_class": "HER2",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"OST-HER2\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "ozekibart (INBRX-109)": {
+   "ingredient": "INBRX-109",
+   "searched_as": "INBRX-109",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"INBRX-109\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Padcev": {
+   "ingredient": "ENFORTUMAB VEDOTIN-EJFV",
+   "searched_as": "ENFORTUMAB VEDOTIN",
+   "target_class": "antibody-drug conjugate",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ENFORTUMAB VEDOTIN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "palazestrant (OP-1250)": {
+   "ingredient": "OP-1250",
+   "searched_as": "OP-1250",
+   "target_class": "oestrogen receptor",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"OP-1250\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Pivekimab Sunirine": {
+   "ingredient": null,
+   "searched_as": "Pivekimab Sunirine",
+   "target_class": "antibody-drug conjugate",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Pivekimab Sunirine\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "PRGN-2009": {
+   "ingredient": null,
+   "searched_as": "PRGN-2009",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PRGN-2009\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Quavonlimab + pembrolizumab": {
+   "ingredient": null,
+   "searched_as": "Quavonlimab",
+   "target_class": "CTLA-4 checkpoint",
+   "target_holders": [
+    "VGS-001 (anti-canine CTLA-4), Vetigenics — dog, oral melanoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": "Abatacept is CTLA-4-Ig, a T-cell costimulation blocker, and is the opposite pharmacology from an anti-CTLA-4 checkpoint antibody. It is matched separately.",
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Quavonlimab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "ronde-cel (LYL314)": {
+   "ingredient": "LYL314",
+   "searched_as": "LYL314",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine lymphoma and leukaemia",
+   "condition_holders": [
+    "Laverdia-CA1 (verdinexor)",
+    "conventional CHOP chemotherapy (formulary)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"LYL314\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Safusidenib": {
+   "ingredient": null,
+   "searched_as": "Safusidenib",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine glioma and intracranial tumours",
+   "condition_holders": [],
+   "condition_note": "Canine glioma occurs spontaneously, notably in brachycephalic breeds, and is a recognised comparative model. No companion-animal programme addresses it.",
+   "vet_literature": {
+    "query": "\"Safusidenib\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "no programme, and no veterinary literature found"
+  },
+  "Sasanlimab": {
+   "ingredient": null,
+   "searched_as": "Sasanlimab",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Sasanlimab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "Trodelvy": {
+   "ingredient": "SACITUZUMAB GOVITECAN-HZIY",
+   "searched_as": "SACITUZUMAB GOVITECAN",
+   "target_class": "antibody-drug conjugate",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"SACITUZUMAB GOVITECAN\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Tukysa (tucatinib)": {
+   "ingredient": "TUCATINIB",
+   "searched_as": "TUCATINIB",
+   "target_class": "HER2",
+   "target_holders": [],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TUCATINIB\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 1,
+    "clinical": 1,
+    "pmids": [
+     "32989831"
+    ]
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "TYRA-430": {
+   "ingredient": null,
+   "searched_as": "TYRA-430",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"TYRA-430\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Vibostolimab + pembrolizumab": {
+   "ingredient": null,
+   "searched_as": "Vibostolimab",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine mast cell tumour and solid tumours",
+   "condition_holders": [
+    "Palladia (toceranib)",
+    "STELFONTA (tigilanol tiglate)",
+    "Laverdia-CA1 (verdinexor)",
+    "VGS-001 / VGS-002 (checkpoint antibodies)",
+    "VetiVax (VVax-001)",
+    "ECI (ELIAS Cancer Immunotherapy)",
+    "eBAT (hemangiosarcoma)",
+    "Immunocidin (mammary tumour)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Vibostolimab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "BHV-1300": {
+   "ingredient": null,
+   "searched_as": "BHV-1300",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"BHV-1300\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Eloralintide": {
+   "ingredient": null,
+   "searched_as": "Eloralintide",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline osteoarthritis",
+   "condition_holders": [
+    "Librela (bedinvetmab)",
+    "Solensia (frunevetmab)",
+    "Lenivia (izenivetmab)",
+    "Portela (relfovetmab)",
+    "Galliprant (grapiprant)",
+    "Rimadyl / Carprieve / Carprovet (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Zydax / Osteopen (pentosan polysulfate)",
+    "MOVOFLEX (joint supplement)",
+    "adipose-derived MSC therapies"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Eloralintide\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "Ixekizumab + Tirzepatide": {
+   "ingredient": null,
+   "searched_as": "Ixekizumab",
+   "target_class": "GLP-1 / GIP",
+   "target_holders": [
+    "OKV-119 (exenatide implant), Okava — cat and dog, preclinical"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Ixekizumab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "JNJ-4804": {
+   "ingredient": null,
+   "searched_as": "JNJ-4804",
+   "target_class": "TNF",
+   "target_holders": [],
+   "target_note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition.",
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"JNJ-4804\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "LTG-321": {
+   "ingredient": null,
+   "searched_as": "LTG-321",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline osteoarthritis",
+   "condition_holders": [
+    "Librela (bedinvetmab)",
+    "Solensia (frunevetmab)",
+    "Lenivia (izenivetmab)",
+    "Portela (relfovetmab)",
+    "Galliprant (grapiprant)",
+    "Rimadyl / Carprieve / Carprovet (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Zydax / Osteopen (pentosan polysulfate)",
+    "MOVOFLEX (joint supplement)",
+    "adipose-derived MSC therapies"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"LTG-321\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "MK-6024": {
+   "ingredient": null,
+   "searched_as": "MK-6024",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"MK-6024\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "PCRX-201 (enekinragene inzadenovec)": {
+   "ingredient": "enekinragene inzadenovec",
+   "searched_as": "enekinragene inzadenovec",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline osteoarthritis",
+   "condition_holders": [
+    "Librela (bedinvetmab)",
+    "Solensia (frunevetmab)",
+    "Lenivia (izenivetmab)",
+    "Portela (relfovetmab)",
+    "Galliprant (grapiprant)",
+    "Rimadyl / Carprieve / Carprovet (carprofen)",
+    "Metacam / Loxicom / Rheumocam (meloxicam)",
+    "Onsior (robenacoxib)",
+    "Deramaxx (deracoxib)",
+    "Cimalgex (cimicoxib)",
+    "Daxocox (enflicoxib)",
+    "Firox (firocoxib)",
+    "Zydax / Osteopen (pentosan polysulfate)",
+    "MOVOFLEX (joint supplement)",
+    "adipose-derived MSC therapies"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"enekinragene inzadenovec\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "rese-cel": {
+   "ingredient": null,
+   "searched_as": "rese-cel",
+   "target_class": "CD19 / CD20 / B-cell depletion",
+   "target_holders": [
+    "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
+   ],
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"rese-cel\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "rosnilimab": {
+   "ingredient": null,
+   "searched_as": "rosnilimab",
+   "target_class": "PD-1 / PD-L1 checkpoint",
+   "target_holders": [
+    "VGS-002 (anti-canine PD-1), Vetigenics — dog, urothelial carcinoma",
+    "VGS-001 + VGS-002 (CHECKMATE-K9 combination)"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"rosnilimab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "ulviprubart (ABC008)": {
+   "ingredient": "ABC008",
+   "searched_as": "ABC008",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"ABC008\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "not classified"
+  },
+  "UX016": {
+   "ingredient": null,
+   "searched_as": "UX016",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"UX016\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "not classified"
+  },
+  "Vilamakitug": {
+   "ingredient": null,
+   "searched_as": "Vilamakitug",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Vilamakitug\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "not classified"
+  },
+  "VK5211": {
+   "ingredient": null,
+   "searched_as": "VK5211",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"VK5211\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "not classified"
+  },
+  "Clazakizumab": {
+   "ingredient": null,
+   "searched_as": "Clazakizumab",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"Clazakizumab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "not classified"
+  },
+  "in vivo CAR-T product candidate (CD19 eRNA, IND-enabling)": {
+   "ingredient": "CD19 eRNA, IND-enabling",
+   "searched_as": "CD19 eRNA",
+   "target_class": "CD19 / CD20 / B-cell depletion",
+   "target_holders": [
+    "VGS-003 (anti-canine CD19), Vetigenics — dog, autoimmune disease"
+   ],
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"CD19 eRNA\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "KSI-101": {
+   "ingredient": null,
+   "searched_as": "KSI-101",
+   "target_class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)",
+   "target_holders": [
+    "Palladia (toceranib), Zoetis — dog, mast cell tumour"
+   ],
+   "target_note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs.",
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"KSI-101\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "a companion-animal programme works this mechanism"
+  },
+  "LY5625573 (NLRP3 Inhibitor VTX3232)": {
+   "ingredient": "NLRP3 Inhibitor VTX3232",
+   "searched_as": "LY5625573",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"LY5625573\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "not classified"
+  },
+  "mezagitamab": {
+   "ingredient": null,
+   "searched_as": "mezagitamab",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
+   "condition_holders": [
+    "VGS-003 (anti-canine CD19)",
+    "corticosteroids and cyclosporine (formulary, not branded programmes)"
+   ],
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"mezagitamab\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "mechanism unoccupied, but the condition is contested"
+  },
+  "PTC844": {
+   "ingredient": null,
+   "searched_as": "PTC844",
+   "target_class": null,
+   "target_holders": null,
+   "target_note": null,
+   "companion_condition": null,
+   "condition_holders": null,
+   "condition_note": null,
+   "vet_literature": {
+    "query": "\"PTC844\"[tiab] AND (dogs[mh] OR cats[mh] OR canine[tiab] OR feline[tiab])",
+    "hits": 0,
+    "clinical": 0,
+    "pmids": []
+   },
+   "pair_corpus": [],
+   "status": "not classified"
+  }
+ }
+}

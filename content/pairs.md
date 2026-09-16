@@ -5,6 +5,8 @@
 disease and in people, classified by whether the veterinary and human evidence point the same way.
 :::
 
+{{pairs_flow}}
+
 {{pairs_table}}
 
 ::: note Why there are this many

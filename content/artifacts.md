@@ -138,6 +138,21 @@ col_comp :: Companion-animal programmes
 filter_area :: Condition area
 filter_route :: Route
 filter_stage :: Human stage
+col_ind :: Human indication
+detail_presence :: What is known about companion-animal presence
+detail_mechanism :: Mechanism in companion animals
+detail_mechanism_none :: No companion-animal programme in the supplied list works this mechanism.
+detail_condition :: Corresponding condition in dogs or cats
+detail_condition_none :: No corresponding companion-animal condition was mapped for this indication.
+detail_vetlit :: Veterinary literature (PubMed)
+detail_vetlit_none :: No veterinary publications found under this molecule's name.
+detail_corpus :: This review's own drug-pair records
+detail_notchecked :: Not checked: no approved-animal-drug registry is machine-readable, so a drug approved for dogs or cats outside the supplied list would not appear here. Absence of a finding is not evidence of absence.
+sankey_caption :: From supplied human programmes to candidates
+sankey_note :: Width is proportional to the number of programmes. Every branch that leaves the flow is an exclusion the page names.
+pairsflow_caption :: How the classified drug pairs divide, by which species got there first and how the evidence came out
+pairsflow_note :: Most pairs are human medicines adopted into veterinary practice later, so agreement mostly records adoption rather than prediction.
+levelflow_caption :: Results by evidence level and how the animal finding came out
 detail_ind :: Human indication
 detail_ev :: Dog evidence for this condition area
 detail_comp :: Companion-animal programmes on this target

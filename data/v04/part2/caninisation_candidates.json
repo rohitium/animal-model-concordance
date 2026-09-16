@@ -6,17 +6,18 @@
   "review_results": 1520
  },
  "skipped": {
-  "no dog evidence for this area": 893,
+  "no dog evidence for this area": 867,
   "disease dogs do not get": 389,
   "oncology indication too unspecific to place in a dog": 68,
   "human tumour type dogs do not get": 124,
   "dog evidence says biology does not correspond": 58,
+  "human vaccine or adjuvant, not a licensing candidate": 40,
   "discontinued over safety or withdrawn": 12,
   "diagnostic or imaging agent, not a therapeutic": 5,
-  "discontinued on clinical performance, or reason not established": 213
+  "discontinued on clinical performance, or reason not established": 208
  },
- "rows_surviving": 400,
- "molecules_after_dedup": 375,
+ "rows_surviving": 386,
+ "molecules_after_dedup": 361,
  "deduplicated": 25,
  "route_labels": {
   "route1": "Approved, no companion-animal programme",
@@ -25,11 +26,11 @@
   "watch": "Human pipeline, not yet approved"
  },
  "route_counts": {
-  "route1": 54,
-  "route2": 25,
+  "route1": 53,
+  "route2": 24,
   "route3": 1
  },
- "watch_count": 82,
+ "watch_count": 75,
  "watch": [
   {
    "drug": "Amrecibart (REGN9933)",
@@ -1253,53 +1254,6 @@
    "route_label": "Human pipeline, not yet approved"
   },
   {
-   "drug": "Intismeran autogene (V940)",
-   "ingredient": "V940",
-   "target": "mRNA vaccine",
-   "indication": "Melanoma",
-   "company": "Merck",
-   "source": "https://www.merck.com/wp-content/uploads/sites/124/2026/05/Public-Pipeline-2Q2026-Merck.pdf",
-   "area": "oncology",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 111,
-    "studies": 34,
-    "corresponded": 93,
-    "did_not": 14,
-    "level_A": 5,
-    "weighted_concordance": 0.88
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 3",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "watch",
-   "competitor_count": 1,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": true,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Human pipeline, not yet approved"
-  },
-  {
    "drug": "IOV-3001",
    "ingredient": null,
    "target": "Modified IL-2 analog",
@@ -1570,53 +1524,6 @@
    ],
    "route": "watch",
    "competitor_count": 0,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": false,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Human pipeline, not yet approved"
-  },
-  {
-   "drug": "mRNA-4157",
-   "ingredient": null,
-   "target": "neoantigen mRNA",
-   "indication": "Melanoma, NSCLC and other solid tumors (personalized cancer vaccine)",
-   "company": "Moderna",
-   "source": "https://www.modernatx.com/pipeline",
-   "area": "oncology",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 111,
-    "studies": 34,
-    "corresponded": 93,
-    "did_not": 14,
-    "level_A": 5,
-    "weighted_concordance": 0.88
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 3",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "watch",
-   "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
    "discontinuation_signal": null,
@@ -3179,241 +3086,6 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Human pipeline, not yet approved"
-  },
-  {
-   "drug": "mRNA-1195",
-   "ingredient": null,
-   "target": "mRNA vaccine",
-   "indication": "EBV-related sequelae vaccine",
-   "company": "Moderna",
-   "source": "https://www.modernatx.com/pipeline",
-   "area": "immunology-inflammation",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 20,
-    "studies": 5,
-    "corresponded": 16,
-    "did_not": 1,
-    "level_A": 0,
-    "weighted_concordance": 0.941
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 2",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "watch",
-   "competitor_count": 1,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": true,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Human pipeline, not yet approved"
-  },
-  {
-   "drug": "mRNA-1345",
-   "ingredient": null,
-   "target": "mRNA vaccine",
-   "indication": "Pediatric RSV vaccine",
-   "company": "Moderna",
-   "source": "https://www.modernatx.com/pipeline",
-   "area": "immunology-inflammation",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 20,
-    "studies": 5,
-    "corresponded": 16,
-    "did_not": 1,
-    "level_A": 0,
-    "weighted_concordance": 0.941
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 2",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "watch",
-   "competitor_count": 1,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": true,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Human pipeline, not yet approved"
-  },
-  {
-   "drug": "mRNA-1647",
-   "ingredient": null,
-   "target": "mRNA vaccine",
-   "indication": "CMV vaccine in transplant recipients",
-   "company": "Moderna",
-   "source": "https://www.modernatx.com/pipeline",
-   "area": "immunology-inflammation",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 20,
-    "studies": 5,
-    "corresponded": 16,
-    "did_not": 1,
-    "level_A": 0,
-    "weighted_concordance": 0.941
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 2",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "watch",
-   "competitor_count": 1,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": true,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Human pipeline, not yet approved"
-  },
-  {
-   "drug": "mRNA-1975",
-   "ingredient": null,
-   "target": "mRNA vaccine",
-   "indication": "Lyme disease vaccine",
-   "company": "Moderna",
-   "source": "https://www.modernatx.com/pipeline",
-   "area": "immunology-inflammation",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 20,
-    "studies": 5,
-    "corresponded": 16,
-    "did_not": 1,
-    "level_A": 0,
-    "weighted_concordance": 0.941
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 2",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "watch",
-   "competitor_count": 1,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": true,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Human pipeline, not yet approved"
-  },
-  {
-   "drug": "mRNA-1982",
-   "ingredient": null,
-   "target": "mRNA vaccine",
-   "indication": "Lyme disease vaccine",
-   "company": "Moderna",
-   "source": "https://www.modernatx.com/pipeline",
-   "area": "immunology-inflammation",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 20,
-    "studies": 5,
-    "corresponded": 16,
-    "did_not": 1,
-    "level_A": 0,
-    "weighted_concordance": 0.941
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 2",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "watch",
-   "competitor_count": 1,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": true,
    "discontinuation_signal": null,
    "discontinuation_reason": null,
    "discontinuation_note": null,
@@ -5343,7 +5015,7 @@
    "area": "oncology",
    "evidence_rank": 56.5,
    "candidates": 40,
-   "watch_list": 39,
+   "watch_list": 37,
    "evidence": {
     "results": 111,
     "studies": 34,
@@ -7588,53 +7260,6 @@
      "route_label": "Human pipeline, not yet approved"
     },
     {
-     "drug": "Intismeran autogene (V940)",
-     "ingredient": "V940",
-     "target": "mRNA vaccine",
-     "indication": "Melanoma",
-     "company": "Merck",
-     "source": "https://www.merck.com/wp-content/uploads/sites/124/2026/05/Public-Pipeline-2Q2026-Merck.pdf",
-     "area": "oncology",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 111,
-      "studies": 34,
-      "corresponded": 93,
-      "did_not": 14,
-      "level_A": 5,
-      "weighted_concordance": 0.88
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 3",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "watch",
-     "competitor_count": 1,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": true,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Human pipeline, not yet approved"
-    },
-    {
      "drug": "IOV-3001",
      "ingredient": null,
      "target": "Modified IL-2 analog",
@@ -7905,53 +7530,6 @@
      ],
      "route": "watch",
      "competitor_count": 0,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": false,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Human pipeline, not yet approved"
-    },
-    {
-     "drug": "mRNA-4157",
-     "ingredient": null,
-     "target": "neoantigen mRNA",
-     "indication": "Melanoma, NSCLC and other solid tumors (personalized cancer vaccine)",
-     "company": "Moderna",
-     "source": "https://www.modernatx.com/pipeline",
-     "area": "oncology",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 111,
-      "studies": 34,
-      "corresponded": 93,
-      "did_not": 14,
-      "level_A": 5,
-      "weighted_concordance": 0.88
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 3",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "watch",
-     "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
      "discontinuation_signal": null,
@@ -9981,8 +9559,8 @@
   {
    "area": "immunology-inflammation",
    "evidence_rank": 47.0,
-   "candidates": 10,
-   "watch_list": 11,
+   "candidates": 8,
+   "watch_list": 6,
    "evidence": {
     "results": 20,
     "studies": 5,
@@ -10002,44 +9580,6 @@
      "indication": "purified corticotropin (ACTH) gel - multiple inflammatory/immune indications",
      "company": "ANI Pharmaceuticals",
      "source": "https://www.zacks.com/stock/news/2935443/anip-pharmaceuticals-cortrophin-gel-drives-2026-growth",
-     "area": "immunology-inflammation",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 20,
-      "studies": 5,
-      "corresponded": 16,
-      "did_not": 1,
-      "level_A": 0,
-      "weighted_concordance": 0.941
-     },
-     "indication_is_vague": false,
-     "human_stage": "Approved",
-     "human_status": "active",
-     "competitors": [],
-     "routes": [
-      null,
-      "white space"
-     ],
-     "route": "route1",
-     "competitor_count": 0,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": false,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
-    },
-    {
-     "drug": "CpG 1018 adjuvant",
-     "ingredient": null,
-     "target": "TLR9 agonist",
-     "indication": "Vaccine adjuvant (commercial)",
-     "company": "Dynavax Technologies",
-     "source": "https://www.nasdaq.com/articles/dynavax-technologies-nasdaq-dvax-promising-biopharma-option-despite-recent-challenges",
      "area": "immunology-inflammation",
      "first_us_approval": null,
      "years_since_approval": null,
@@ -10310,53 +9850,6 @@
      "route_label": "Approved, no companion-animal programme"
     },
     {
-     "drug": "mRESVIA",
-     "ingredient": null,
-     "target": "mRNA vaccine",
-     "indication": "RSV vaccine",
-     "company": "Moderna",
-     "source": "https://www.modernatx.com/pipeline",
-     "area": "immunology-inflammation",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 20,
-      "studies": 5,
-      "corresponded": 16,
-      "did_not": 1,
-      "level_A": 0,
-      "weighted_concordance": 0.941
-     },
-     "indication_is_vague": false,
-     "human_stage": "Approved",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "route2",
-     "competitor_count": 1,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": true,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
-    },
-    {
      "drug": "Xeljanz",
      "ingredient": "TOFACITINIB CITRATE",
      "target": "JAK",
@@ -10615,241 +10108,6 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Human pipeline, not yet approved"
-    },
-    {
-     "drug": "mRNA-1195",
-     "ingredient": null,
-     "target": "mRNA vaccine",
-     "indication": "EBV-related sequelae vaccine",
-     "company": "Moderna",
-     "source": "https://www.modernatx.com/pipeline",
-     "area": "immunology-inflammation",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 20,
-      "studies": 5,
-      "corresponded": 16,
-      "did_not": 1,
-      "level_A": 0,
-      "weighted_concordance": 0.941
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 2",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "watch",
-     "competitor_count": 1,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": true,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Human pipeline, not yet approved"
-    },
-    {
-     "drug": "mRNA-1345",
-     "ingredient": null,
-     "target": "mRNA vaccine",
-     "indication": "Pediatric RSV vaccine",
-     "company": "Moderna",
-     "source": "https://www.modernatx.com/pipeline",
-     "area": "immunology-inflammation",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 20,
-      "studies": 5,
-      "corresponded": 16,
-      "did_not": 1,
-      "level_A": 0,
-      "weighted_concordance": 0.941
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 2",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "watch",
-     "competitor_count": 1,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": true,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Human pipeline, not yet approved"
-    },
-    {
-     "drug": "mRNA-1647",
-     "ingredient": null,
-     "target": "mRNA vaccine",
-     "indication": "CMV vaccine in transplant recipients",
-     "company": "Moderna",
-     "source": "https://www.modernatx.com/pipeline",
-     "area": "immunology-inflammation",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 20,
-      "studies": 5,
-      "corresponded": 16,
-      "did_not": 1,
-      "level_A": 0,
-      "weighted_concordance": 0.941
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 2",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "watch",
-     "competitor_count": 1,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": true,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Human pipeline, not yet approved"
-    },
-    {
-     "drug": "mRNA-1975",
-     "ingredient": null,
-     "target": "mRNA vaccine",
-     "indication": "Lyme disease vaccine",
-     "company": "Moderna",
-     "source": "https://www.modernatx.com/pipeline",
-     "area": "immunology-inflammation",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 20,
-      "studies": 5,
-      "corresponded": 16,
-      "did_not": 1,
-      "level_A": 0,
-      "weighted_concordance": 0.941
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 2",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "watch",
-     "competitor_count": 1,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": true,
-     "discontinuation_signal": null,
-     "discontinuation_reason": null,
-     "discontinuation_note": null,
-     "discontinuation_verified": false,
-     "route_label": "Human pipeline, not yet approved"
-    },
-    {
-     "drug": "mRNA-1982",
-     "ingredient": null,
-     "target": "mRNA vaccine",
-     "indication": "Lyme disease vaccine",
-     "company": "Moderna",
-     "source": "https://www.modernatx.com/pipeline",
-     "area": "immunology-inflammation",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 20,
-      "studies": 5,
-      "corresponded": 16,
-      "did_not": 1,
-      "level_A": 0,
-      "weighted_concordance": 0.941
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 2",
-     "human_status": "active",
-     "competitors": [
-      {
-       "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-       "company": "Adiverna LLC",
-       "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-       "species": "both",
-       "phase": "Preclinical",
-       "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-      }
-     ],
-     "routes": [
-      null,
-      "me-too into a claimed target"
-     ],
-     "route": "watch",
-     "competitor_count": 1,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": true,
      "discontinuation_signal": null,
      "discontinuation_reason": null,
      "discontinuation_note": null,
@@ -14307,44 +13565,6 @@
    "route_label": "Approved, no companion-animal programme"
   },
   {
-   "drug": "CpG 1018 adjuvant",
-   "ingredient": null,
-   "target": "TLR9 agonist",
-   "indication": "Vaccine adjuvant (commercial)",
-   "company": "Dynavax Technologies",
-   "source": "https://www.nasdaq.com/articles/dynavax-technologies-nasdaq-dvax-promising-biopharma-option-despite-recent-challenges",
-   "area": "immunology-inflammation",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 20,
-    "studies": 5,
-    "corresponded": 16,
-    "did_not": 1,
-    "level_A": 0,
-    "weighted_concordance": 0.941
-   },
-   "indication_is_vague": false,
-   "human_stage": "Approved",
-   "human_status": "active",
-   "competitors": [],
-   "routes": [
-    null,
-    "white space"
-   ],
-   "route": "route1",
-   "competitor_count": 0,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": false,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
-  },
-  {
    "drug": "Diprospan (betamethasone)",
    "ingredient": "betamethasone",
    "target": "Glucocorticoid",
@@ -14581,53 +13801,6 @@
    "discontinuation_note": null,
    "discontinuation_verified": false,
    "route_label": "Approved, no companion-animal programme"
-  },
-  {
-   "drug": "mRESVIA",
-   "ingredient": null,
-   "target": "mRNA vaccine",
-   "indication": "RSV vaccine",
-   "company": "Moderna",
-   "source": "https://www.modernatx.com/pipeline",
-   "area": "immunology-inflammation",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 20,
-    "studies": 5,
-    "corresponded": 16,
-    "did_not": 1,
-    "level_A": 0,
-    "weighted_concordance": 0.941
-   },
-   "indication_is_vague": false,
-   "human_stage": "Approved",
-   "human_status": "active",
-   "competitors": [
-    {
-     "drug": "Undisclosed mRNA vaccine candidates (rabies / leptospirosis / FIV)",
-     "company": "Adiverna LLC",
-     "indication": "rabies; leptospirosis; feline immunodeficiency virus",
-     "species": "both",
-     "phase": "Preclinical",
-     "source": "https://webfiles.thecse.com/20260310_BIOV_NR_Adiverna_to_Develop_Vaccines_for_Animals.pdf?ZIARWmjIboPHiUBSZnD93.C70ci7x2ZU="
-    }
-   ],
-   "routes": [
-    null,
-    "me-too into a claimed target"
-   ],
-   "route": "route2",
-   "competitor_count": 1,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": true,
-   "discontinuation_signal": null,
-   "discontinuation_reason": null,
-   "discontinuation_note": null,
-   "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
   },
   {
    "drug": "Xeljanz",

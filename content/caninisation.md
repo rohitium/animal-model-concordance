@@ -47,6 +47,34 @@ dog being given them. Each is flagged in the table below. Treat route 1 as "no b
 found", never as "untried in dogs".
 :::
 
+## What "no companion-animal programme" actually means {#presence}
+
+A route says whether a *company programme* holds the molecule's mechanism. It does not say whether
+dogs and cats already receive the drug, nor whether the disease is already served by something else.
+Those are different questions, and answering only the first overstates how open a space is.
+
+Every molecule is therefore checked against four sources, and the table reports what each one found:
+the mechanism it works, the corresponding condition in dogs or cats, the veterinary literature under
+its own name, and this review's own drug-pair records.
+
+{{cand_presence}}
+
+Only **{{n_nothing_found}}** of the {{n_candidates}} candidates return nothing on any check.
+{{n_occupied}} have a companion-animal programme working the same mechanism. {{n_mech_open}} have an
+unoccupied mechanism inside a condition that is already contested — an anti-IL-4Rα antibody faces no
+IL-4Rα competitor in dogs, but canine atopic dermatitis is held by Apoquel, Cytopoint, Zenrelia,
+Befrena and five cyclosporine products. That is the distinction worth acting on: an open mechanism
+is not an open market.
+
+::: note What is not checked
+No register of approved veterinary medicines is in the loop. The FDA Green Book publishes no
+machine-readable export, openFDA's animal endpoint returns adverse events rather than approved
+products, and the EMA veterinary dataset has moved behind a portal with no download. A molecule
+approved for dogs or cats outside the supplied list would show here as "not found". Absence of a
+finding is never evidence of absence, and adding a veterinary registry is the single most valuable
+fix available to this analysis.
+:::
+
 ::: note Why route 3 is so small
 Most discontinuations are clinical. Reading each source link rather than pattern-matching its
 headline leaves very few assets that were genuinely shelved for non-clinical reasons, and only one

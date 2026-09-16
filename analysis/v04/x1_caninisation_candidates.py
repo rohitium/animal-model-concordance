@@ -300,6 +300,14 @@ def main():
         if NOT_A_THERAPEUTIC.search(r.get("drug_name") or "") or NOT_A_THERAPEUTIC.search(target):
             skipped["diagnostic or imaging agent, not a therapeutic"] += 1
             continue
+        # A human prophylactic vaccine is not a molecule to license and caninise: the companion
+        # vaccine market is built on the pathogens dogs and cats actually meet (parvovirus,
+        # distemper, leptospirosis, rabies), not on RSV or human papillomavirus. mRESVIA and the
+        # CpG adjuvant reached the candidate list because the area rules read them as immunology.
+        if re.search(r"\bvaccine\b|\bmrna vaccine\b|respiratory syncytial|\brsv\b",
+                     (indication + " " + target), re.I):
+            skipped["human vaccine or adjuvant, not a licensing candidate"] += 1
+            continue
         # Indications the area rules place wrongly, caught by reading what landed where: travoprost
         # for glaucoma was sitting in cardiovascular (prostaglandin analogue), and chenodiol, a bile
         # acid, in musculoskeletal.

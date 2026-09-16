@@ -262,6 +262,15 @@ figure.chart figcaption{font-family:var(--sans);font-size:13px;color:var(--dim);
 .brow .bt i.alt{background:#8aa8c0}
 .brow .bn{text-align:right;font-variant-numeric:tabular-nums;color:var(--dim)}
 .cnote{font-family:var(--sans);font-size:12.5px;color:var(--dim);margin:10px 0 0;max-width:72ch}
+.sankeywrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);padding:10px 12px}
+.sankeywrap svg{display:block;min-width:620px;width:100%;height:auto}
+text.sl{font-family:var(--sans);font-size:11px;fill:var(--dim);paint-order:stroke;
+  stroke:var(--card);stroke-width:3px;stroke-linejoin:round}
+.pres{display:grid;gap:8px;margin:18px 0}
+.pres .p{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+  padding:11px 14px;font-family:var(--sans);font-size:13.5px}
+.pres .p b{font-size:19px;font-variant-numeric:tabular-nums;margin-right:8px;color:var(--accent)}
+.pres .p.none{border-left-color:var(--mid)}
 
 .areas{display:grid;gap:14px;margin:20px 0}
 .acard{background:var(--card);border:1px solid var(--line);padding:16px 18px}
@@ -757,6 +766,110 @@ def heatmap(fin):
     return "\n".join(h)
 
 
+def sankey(stages, links, caption="", note="", height=330):
+    """Flow diagram. stages: [[(label, value), ...], ...]; links: [[(from_i, to_i, value), ...], ...]
+    between consecutive stages. Drawn only over stages where every item is accounted for, so the
+    ribbon widths mean what they look like they mean."""
+    W, NODE, GAP, RIGHT = 780, 13, 9, 196
+    mx = max(sum(v for _, v in s) for s in stages) or 1
+    ngap = max(len(s) for s in stages) - 1
+    scale = (height - ngap * GAP) / mx
+    span = W - NODE - RIGHT
+    xs = [round(i * span / max(len(stages) - 1, 1)) for i in range(len(stages))]
+    pos = []
+    for s in stages:
+        y = (height - (sum(v for _, v in s) * scale + (len(s) - 1) * GAP)) / 2
+        row = []
+        for lab, v in s:
+            h = max(v * scale, 1.5)
+            row.append({"lab": lab, "v": v, "y": y, "h": h})
+            y += h + GAP
+        pos.append(row)
+    out = ['<figure class="chart">']
+    if caption:
+        out.append(f"<figcaption>{e(caption)}</figcaption>")
+    out.append(f'<div class="sankeywrap"><svg viewBox="0 0 {W} {height}" '
+               f'preserveAspectRatio="xMidYMid meet" role="img">')
+    so = [[0.0] * len(s) for s in stages]
+    do = [[0.0] * len(s) for s in stages]
+    for li, lk in enumerate(links):
+        for a, b, v in lk:
+            h = v * scale
+            y1 = pos[li][a]["y"] + so[li][a]; so[li][a] += h
+            y2 = pos[li + 1][b]["y"] + do[li + 1][b]; do[li + 1][b] += h
+            x1, x2 = xs[li] + NODE, xs[li + 1]
+            m = (x1 + x2) / 2
+            out.append(f'<path d="M{x1},{y1:.1f} C{m},{y1:.1f} {m},{y2:.1f} {x2},{y2:.1f} '
+                       f'L{x2},{y2 + h:.1f} C{m},{y2 + h:.1f} {m},{y1 + h:.1f} {x1},{y1 + h:.1f} Z" '
+                       f'fill="var(--accent)" opacity=".16"/>')
+    for si, row in enumerate(pos):
+        for n in row:
+            out.append(f'<rect x="{xs[si]}" y="{n["y"]:.1f}" width="{NODE}" '
+                       f'height="{n["h"]:.1f}" fill="var(--accent)" rx="1"/>')
+            out.append(f'<text class="sl" x="{xs[si] + NODE + 6}" '
+                       f'y="{n["y"] + n["h"] / 2 + 4:.1f}">{e(n["lab"])} · {n["v"]:,}</text>')
+    out.append("</svg></div>")
+    if note:
+        out.append(f'<p class="cnote">{e(note)}</p>')
+    out.append("</figure>")
+    return "\n".join(out)
+
+
+PRESENCE_ORDER = [
+    ("a companion-animal programme works this mechanism", False),
+    ("mechanism unoccupied, but the condition is contested", False),
+    ("no programme found, but used or studied in dogs or cats", False),
+    ("no programme, and no veterinary literature found", True),
+    ("not classified", True),
+]
+
+
+def cand_presence(counts):
+    """What the four presence checks found, as counts. The last two rows are the honest tail."""
+    h = ['<div class="pres">']
+    for status, muted in PRESENCE_ORDER:
+        n = counts.get(status, 0)
+        if not n:
+            continue
+        h.append(f'<div class="p{" none" if muted else ""}"><b>{n}</b>{e(status)}</div>')
+    h.append("</div>")
+    return "\n".join(h)
+
+
+def pairs_flow(classified, attrs):
+    """799 pairs, by which species got there first and how the evidence came out.
+
+    Drawn because every pair lands in exactly one timing and one verdict, so the ribbon widths are
+    complete. The equivalent flow over all 1,949 human programmes is NOT drawn: three quarters of
+    them fall outside the curated mechanism map, so the chart would render the map's coverage as
+    though it were a finding (L96)."""
+    TL = {"human-approval-before-veterinary-evidence": "Human approval first",
+          "no-us-approval": "No US human approval",
+          "human-approval-after-veterinary-evidence": "Veterinary evidence first"}
+    VL = ["concordant", "discordant", "mixed", "indeterminate"]
+    pairs_t, cross = collections.Counter(), collections.Counter()
+    for k, v in classified.items():
+        t = TL.get((attrs.get(k) or {}).get("timing"), "Timing unknown")
+        verdict = (v.get("judgement") or {}).get("pair")
+        if verdict not in VL:
+            continue
+        pairs_t[t] += 1
+        cross[(t, verdict)] += 1
+    timings = [t for t in TL.values() if pairs_t.get(t)] + (
+        ["Timing unknown"] if pairs_t.get("Timing unknown") else [])
+    verdicts = [v for v in VL if any(cross.get((t, v)) for t in timings)]
+    total = sum(pairs_t[t] for t in timings)
+    stages = [[(A("caninisation", "flow_root", "Classified pairs"), total)],
+              [(t, pairs_t[t]) for t in timings],
+              [(v, sum(cross.get((t, v), 0) for t in timings)) for v in verdicts]]
+    l0 = [(0, i, pairs_t[t]) for i, t in enumerate(timings)]
+    l1 = [(i, j, cross[(t, v)]) for i, t in enumerate(timings)
+          for j, v in enumerate(verdicts) if cross.get((t, v))]
+    return sankey(stages, [l0, l1],
+                  A("caninisation", "pairsflow_caption", ""),
+                  A("caninisation", "pairsflow_note", ""))
+
+
 def hbars(rows, caption="", note="", alt_before=None):
     """Horizontal bar chart. rows are (label, n); alt_before shades the first n bars differently."""
     mx = max([n for _, n in rows] or [1])
@@ -988,6 +1101,19 @@ def main():
         "n_watch": f"{_cand.get('watch_count', 0):,}",
         "n_formulary": f"{sum(1 for c in (_cand.get('candidates') or []) if c.get('route') == 'route1' and c.get('in_veterinary_formulary')):,}",
     })
+    # Companion-animal presence, candidate-only (A19). The counts in the evidence file span the
+    # watch list too, and the page's prose is about candidates.
+    _cevf = load("part2/companion_evidence.json") or {}
+    _cnames = {c["drug"] for c in (_cand.get("candidates") or [])}
+    _pcounts = collections.Counter(v.get("status") for k, v in (_cevf.get("molecules") or {}).items()
+                                   if k in _cnames)
+    scalars.update({
+        "n_occupied": f"{_pcounts.get('a companion-animal programme works this mechanism', 0):,}",
+        "n_mech_open": f"{_pcounts.get('mechanism unoccupied, but the condition is contested', 0):,}",
+        "n_used_no_programme": f"{_pcounts.get('no programme found, but used or studied in dogs or cats', 0):,}",
+        "n_nothing_found": f"{_pcounts.get('no programme, and no veterinary literature found', 0):,}",
+        "n_unclassified": f"{_pcounts.get('not classified', 0):,}",
+    })
 
     # ---------------- blocks the writer cannot type by hand ----------------
     lt = [f'<div class="scroll"><table><caption>'
@@ -1131,6 +1257,7 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
              {"key": "ti", "label": A("pairs_table", "col_ti", "Timing")}]
     hint = A("pairs_table", "hint", "")
     body, _, title = compose("pairs.md", scalars, {
+        "pairs_flow": pairs_flow(classified, attrs),
         "pairs_table": (f'<p class="hint">{e(hint)}</p>' if hint else "") +
                        browser("pairs", "pairdata", json.dumps(prow, separators=(",", ":")), pcols,
                                [("vd", A("pairs_table", "filter_vd", "Verdict")),
@@ -1146,6 +1273,10 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
 
     # ---------------- programme selection ----------------
     crow = []
+    # Companion-animal presence, established from four named sources rather than from one supplied
+    # spreadsheet joined on shared word tokens (A19). Each row carries what every check found, so
+    # the page can report absence as "not found by these checks" instead of asserting it.
+    _cev = (load("part2/companion_evidence.json") or {}).get("molecules") or {}
     # The watch list is browsable alongside the candidates rather than being a number the page
     # quotes and then hides. It also makes the stage filter mean something: every candidate is
     # approved, so on the candidates alone that control offered a single option.
@@ -1166,7 +1297,20 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
             "pr": c.get("precedent") or "", "dn": c.get("discontinuation_note") or "",
             "fm": bool(c.get("in_veterinary_formulary")),
             "vg": bool(c.get("indication_is_vague")),
-            "src": c.get("source") or ""})
+            "src": c.get("source") or "",
+            **(lambda p: {
+                "mc": p.get("target_class") or "",
+                "mh": p.get("target_holders") if p.get("target_holders") is not None else None,
+                "mn": p.get("target_note") or "",
+                "cc": p.get("companion_condition") or "",
+                "ch": p.get("condition_holders") or [],
+                "cnn": p.get("condition_note") or "",
+                "vl": (p.get("vet_literature") or {}).get("hits"),
+                "vc": (p.get("vet_literature") or {}).get("clinical"),
+                "vp": (p.get("vet_literature") or {}).get("pmids") or [],
+                "pc": p.get("pair_corpus") or [],
+                "ps": p.get("status") or "",
+            })(_cev.get(c.get("drug")) or {})})
     crow.sort(key=lambda r: r["dr"].lower())
     CL = {k: A("caninisation", k, d) for k, d in (
         ("detail_ind", "Human indication"),
@@ -1178,6 +1322,15 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
         ("detail_disc", "Why the human programme stopped"),
         ("detail_formulary", "Already in routine veterinary use as a generic."),
         ("detail_vague", "The human indication is too general to place a tumour type."),
+        ("detail_presence", "What is known about companion-animal presence"),
+        ("detail_mechanism", "Mechanism in companion animals"),
+        ("detail_mechanism_none", "No companion-animal programme works this mechanism."),
+        ("detail_condition", "Corresponding condition in dogs or cats"),
+        ("detail_condition_none", "No corresponding companion-animal condition was mapped."),
+        ("detail_vetlit", "Veterinary literature (PubMed)"),
+        ("detail_vetlit_none", "No veterinary publications found under this molecule's name."),
+        ("detail_corpus", "This review's own drug-pair records"),
+        ("detail_notchecked", "Not checked: no approved-animal-drug registry is machine-readable."),
         ("detail_source", "Programme source"))}
     crow_js = ("""function(r){
 var L=""" + json.dumps(CL) + """;
@@ -1185,7 +1338,24 @@ var d='<div class="pd">';
 d+='<h4>'+L.detail_ind+'</h4><p>'+esc(r.ind)+(r.co?' · '+esc(r.co):'')+'</p>';
 if(r.vg){d+='<p class="src">'+L.detail_vague+'</p>';}
 d+='<h4>'+L.detail_ev+'</h4><p class="src">'+esc(r.ev)+'</p>';
-d+='<h4>'+L.detail_comp+'</h4><p class="src">'+(r.cp.length?r.cp.map(esc).join(', '):L.detail_comp_none)+'</p>';
+d+='<h4>'+L.detail_presence+'</h4>';
+d+='<p class="src"><strong>'+esc(r.ps)+'</strong></p>';
+d+='<p class="src">'+L.detail_mechanism+': '
+ +(r.mc?'<em>'+esc(r.mc)+'</em> — ':'')
+ +(r.mh&&r.mh.length?r.mh.map(esc).join('; ')
+   :(r.mh?L.detail_mechanism_none:'not classified'))+'</p>';
+if(r.mn){d+='<p class="src">'+esc(r.mn)+'</p>';}
+d+='<p class="src">'+L.detail_condition+': '
+ +(r.cc?'<em>'+esc(r.cc)+'</em> — ':'')
+ +(r.ch.length?r.ch.map(esc).join('; '):L.detail_condition_none)+'</p>';
+if(r.cnn){d+='<p class="src">'+esc(r.cnn)+'</p>';}
+d+='<p class="src">'+L.detail_vetlit+': '
+ +(r.vl===null||r.vl===undefined?'name could not be resolved for search'
+   :(r.vl?r.vl+' publications, '+r.vc+' clinical'
+     +(r.vp.length?' — '+r.vp.map(function(p){return '<a href="https://pubmed.ncbi.nlm.nih.gov/'+p+'/">'+p+'</a>';}).join(', '):'')
+     :L.detail_vetlit_none))+'</p>';
+if(r.pc.length){d+='<p class="src">'+L.detail_corpus+': '+r.pc.map(esc).join('; ')+'</p>';}
+d+='<p class="src">'+L.detail_notchecked+'</p>';
 if(r.fm){d+='<p class="src"><span class="chip warn">in veterinary use</span> '+L.detail_formulary+'</p>';}
 if(r.pr){d+='<h4>'+L.detail_precedent+'</h4><p class="src">'+esc(r.pr)+'</p>';}
 if(r.sf.length){d+='<h4>'+L.detail_safety+'</h4><p class="src">'+r.sf.map(esc).join(' ')+'</p>';}
@@ -1195,12 +1365,13 @@ d+='</div>';
 return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
 +(r.ing&&r.ing.toLowerCase()!==r.dr.toLowerCase()?'<br><span class="src">'+esc(r.ing)+'</span>':'')
 +(r.fm?' <span class="chip warn">in veterinary use</span>':'')+'</td>'
-+'<td>'+esc(r.tg)+'</td><td>'+esc(r.ar)+'</td><td>'+esc(r.rt)+'</td>'
++'<td>'+esc(r.tg)+'</td><td>'+esc(r.ind)+'</td><td>'+esc(r.ar)+'</td><td>'+esc(r.rt)+'</td>'
 +'<td>'+esc(r.st)+(r.yr?' <span class="src">'+r.yr+'</span>':'')+'</td>'
-+'<td class="num">'+(r.cn||'—')+'</td></tr>'
-+'<tr class="det" hidden><td colspan="6">'+d+'</td></tr>';}""")
++'<td class="num">'+((r.mh&&r.mh.length)||r.ch.length?((r.mh?r.mh.length:0)+r.ch.length):'—')+'</td></tr>'
++'<tr class="det" hidden><td colspan="7">'+d+'</td></tr>';}""")
     ccols = [{"key": "dr", "label": A("caninisation", "col_drug", "Molecule")},
              {"key": "tg", "label": A("caninisation", "col_target", "Target")},
+             {"key": "ind", "label": A("caninisation", "col_ind", "Human indication")},
              {"key": "ar", "label": A("caninisation", "col_area", "Condition area")},
              {"key": "rt", "label": A("caninisation", "col_route", "Route")},
              {"key": "st", "label": A("caninisation", "col_stage", "Human stage")},
@@ -1214,6 +1385,8 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
             (scalars["n_route3"], A("caninisation", "fig_route3", "shelved, non-clinical")),
             (scalars["n_watch"], A("caninisation", "fig_watch", "pipeline watch list"))]),
         "cand_routes": cand_routes(_cand),
+        "cand_presence": cand_presence(_pcounts),
+        "pairs_flow": pairs_flow(classified, attrs),
         "cand_lag": cand_lag(attrs),
         "cand_areas": cand_areas(_cand),
         "cand_crowding": cand_crowding(_cand),

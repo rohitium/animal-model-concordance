@@ -654,3 +654,49 @@ One reporting bug is fixed alongside. The selection funnel subtracted molecule-l
 row-level total, so its column could not reconcile. Row-level gates are now shown against surviving
 programme rows (400), the dedup step is shown explicitly (-25), and molecule-level gates are
 subtracted from distinct molecules (375).
+
+## A19 — "No programme found" is a claim about our sources, and it must name them (2026-09-16)
+
+The caninisation page answered "is this mechanism claimed in dogs or cats?" from a single supplied
+list of 328 branded companion-animal programmes, joined by shared word tokens between free-text
+`target` fields, and printed "No programme in the supplied list targets this in dogs or cats" when
+the join found nothing. Both halves were wrong.
+
+The join failed in both directions. **False negatives:** dupilumab (target "IL-4Ralpha") matched
+nothing, so a human atopic-dermatitis antibody was presented as facing no companion-animal
+competition, while canine atopic dermatitis carries Apoquel, Cytopoint, Zenrelia, Befrena and five
+cyclosporine products. Ipilimumab ("CTLA-4") matched nothing although VGS-001 is an anti-canine
+CTLA-4 antibody. ZILRETTA ("corticosteroid") matched nothing although its own active, triamcinolone
+acetonide, is the active in GENESIS Topical Spray, which was already in the indexed list. Lenvatinib
+and ramucirumab ignored Palladia (toceranib), an approved canine VEGFR/PDGFR/KIT inhibitor.
+**False positives,** when the join was widened to ingredient and brand tokens to fix the above:
+vutrisiran matched a saline infusion through the token "sodium", ivabradine and gemcitabine matched
+a dexmedetomidine injection through "hydrochloride", and Cortrophin Gel matched ear gel and laxative
+gel through "gel". A document-frequency guard did not rescue it; treprostinil still matched inhaled
+anaesthetics. This is the same failure as the earlier `inhibitor`/`receptor` collapse, in salt and
+dosage-form clothing.
+
+Token joining is therefore abandoned rather than tuned. Inventing a competitor is worse than
+reporting none. `part2/companion_presence_map.json` names, explicitly, which companion-animal
+products occupy each mechanism and each companion condition; an empty holder list is now a positive
+finding — the mechanism was named, looked for, and found unoccupied — rather than a silent miss.
+
+Absence is asserted only after four named checks, each shown on the page: the curated mechanism map,
+the curated human-indication to companion-condition map, a deterministic cached PubMed veterinary
+literature search, and this review's own pair corpus. Molecule names are normalised before searching:
+querying the salt form returned zero veterinary literature for ivabradine, cabozantinib, lenvatinib,
+trastuzumab, bevacizumab, treprostinil, cobimetinib, denileukin diftitox and talazoparib, every one
+of which has canine literature under its base name. That error would have been published as "no
+veterinary literature found".
+
+The result reframes the page. Of 153 molecules assessed, 57 have a companion-animal programme on
+their mechanism, 81 have an unoccupied mechanism inside a contested condition, 2 are used or studied
+in dogs without a branded programme, and only **6** return nothing on any of the four checks. The
+previous page presented 55 candidates as having no companion-animal competition at all.
+
+One check is declared absent rather than faked: there is no approved-animal-drug registry in the
+loop. The FDA Green Book publishes no machine-readable export, openFDA's animal endpoint carries
+adverse events rather than approved products, and the EMA veterinary dataset has moved behind a
+portal with no download. A molecule approved for dogs or cats outside the supplied list would not be
+detected. Separately, a human prophylactic vaccine or vaccine adjuvant is not a caninisation
+candidate, and 40 such programmes (including mRESVIA and CpG 1018) are now excluded.
