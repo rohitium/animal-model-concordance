@@ -460,9 +460,12 @@ def main():
 
     for c in best.values():
         c["route"] = route_of(c)
+    # Route names say what was actually established: that no branded programme works the molecule's
+    # MECHANISM. "No companion-animal programme" read as "untried in dogs", which is a different and
+    # much stronger claim - paclitaxel has 156 veterinary publications and no branded programme (A19).
     ROUTE_LABEL = {
-        "route1": "Approved, no companion-animal programme",
-        "route2": "Approved, target already claimed",
+        "route1": "Approved, mechanism unclaimed in dogs or cats",
+        "route2": "Approved, mechanism already worked",
         "route3": "Shelved for a verified non-clinical reason",
         "watch": "Human pipeline, not yet approved",
     }

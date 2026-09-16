@@ -29,7 +29,7 @@ independent tests of each other. The opportunity here is adoption, not predictio
 ## How candidates are selected {#selection}
 
 A molecule is a candidate when it has **both** legs of human evidence — safety and efficacy — and
-either has no companion-animal programme against its target, or was stopped for a reason unrelated
+either has no companion-animal programme on its mechanism, or was stopped for a reason unrelated
 to how it performed clinically.
 
 An approved drug carries both legs by definition: the approval is the evidence. A discontinued drug

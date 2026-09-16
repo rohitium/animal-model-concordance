@@ -100,18 +100,18 @@ ev_note :: A US label means the FDA reviewed adequate and well-controlled trials
 ## caninisation
 
 fig_candidates :: Candidates
-fig_route1 :: Approved, no companion-animal programme
-fig_route2 :: Approved, target already claimed
-fig_route3 :: Shelved for non-clinical reasons
+fig_route1 :: Approved, mechanism unclaimed in dogs or cats
+fig_route2 :: Approved, mechanism already worked
+fig_route3 :: Shelved for a verified non-clinical reason
 fig_watch :: Pipeline watch list
 lag_caption :: Years between human approval and the veterinary evidence, for the 499 pairs where both dates are known
 lag_before :: Veterinary evidence came first
 lag_note :: Each bar counts drug-and-indication pairs. Bars to the right are drugs veterinary medicine took decades to adopt.
 routes_caption :: How each candidate qualifies
-route1_name :: Route 1 · Approved, no companion-animal programme
-route1_desc :: Both legs of human evidence established by the approval itself, and no programme in the supplied list targets it in dogs or cats.
-route2_name :: Route 2 · Approved, target already claimed
-route2_desc :: The same evidence, but a companion-animal programme already holds the target. Crowding is market validation, and the incumbents are named for each.
+route1_name :: Route 1 · Approved, mechanism unclaimed in dogs or cats
+route1_desc :: Both legs of human evidence established by the approval itself, and no branded companion-animal programme works this mechanism. That is not the same as untried in dogs — see what each of the four presence checks found, per molecule, in the table below.
+route2_name :: Route 2 · Approved, mechanism already worked
+route2_desc :: The same evidence, but a companion-animal programme already works this mechanism. Crowding is market validation, and the incumbents are named for each.
 route3_name :: Route 3 · Shelved for a verified non-clinical reason
 route3_desc :: Stopped for supply, portfolio or corporate reasons with clinical performance not the stated cause, verified by reading the source rather than the headline.
 watch_name :: Held back · Human pipeline, not yet approved

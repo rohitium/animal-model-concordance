@@ -20,8 +20,8 @@
  "molecules_after_dedup": 361,
  "deduplicated": 25,
  "route_labels": {
-  "route1": "Approved, no companion-animal programme",
-  "route2": "Approved, target already claimed",
+  "route1": "Approved, mechanism unclaimed in dogs or cats",
+  "route2": "Approved, mechanism already worked",
   "route3": "Shelved for a verified non-clinical reason",
   "watch": "Human pipeline, not yet approved"
  },
@@ -3324,7 +3324,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Adempas/Verquvo",
@@ -3362,7 +3362,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "AMVUTTRA (vutrisiran)",
@@ -3400,7 +3400,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Attruby (acoramidis)",
@@ -3438,7 +3438,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Camzyos",
@@ -3476,7 +3476,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Corlanor",
@@ -3514,7 +3514,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Cozaar/Hyzaar (losartan; losartan/hydrochlorothiazide)",
@@ -3552,7 +3552,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Eliquis",
@@ -3593,7 +3593,7 @@
      "also_marketed_as": [
       "Eliquis"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "FUROSCIX (furosemide injection)",
@@ -3631,7 +3631,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Letairis",
@@ -3669,7 +3669,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Minnebro (esaxerenone)",
@@ -3707,7 +3707,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "MYQORZO (aficamten)",
@@ -3748,7 +3748,7 @@
      "also_marketed_as": [
       "aficamten"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Opsumit",
@@ -3786,7 +3786,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Treprostinil injection (generic)",
@@ -3824,7 +3824,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Uptravi",
@@ -3862,7 +3862,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "VASOSTRICT (vasopressin injection)",
@@ -3900,7 +3900,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "YUTREPIA (treprostinil inhalation powder)",
@@ -3938,7 +3938,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "INPEFA (sotagliflozin)",
@@ -3988,7 +3988,7 @@
      "also_marketed_as": [
       "sotagliflozin"
      ],
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Epinephrine Injection (epinephrine)",
@@ -4046,7 +4046,7 @@
      "also_marketed_as": [
       "ADRENALIN (epinephrine injection / RTU bag)"
      ],
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Innovace (enalapril)",
@@ -4109,7 +4109,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Javadin (clonidine hydrochloride oral solution)",
@@ -4164,7 +4164,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "NORVASC (amlodipine)",
@@ -4219,7 +4219,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Winrevair",
@@ -4274,7 +4274,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     }
    ],
    "watch": [
@@ -5064,7 +5064,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Jaypirca",
@@ -5105,7 +5105,7 @@
      "also_marketed_as": [
       "Pirtobrutinib"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Abraxane",
@@ -5143,7 +5143,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Adcetris",
@@ -5181,7 +5181,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "ANKTIVA (nogapendekin alfa inbakicept)",
@@ -5219,7 +5219,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Balversa",
@@ -5257,7 +5257,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Braftovi/Mektovi",
@@ -5295,7 +5295,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Cometriq (cabozantinib)",
@@ -5333,7 +5333,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Cotellic (cobimetinib)",
@@ -5371,7 +5371,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Cyramza",
@@ -5409,7 +5409,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Ibrance",
@@ -5447,7 +5447,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Imlygic",
@@ -5485,7 +5485,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Inlexzo",
@@ -5523,7 +5523,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Inluriyo",
@@ -5561,7 +5561,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Kanjinti",
@@ -5599,7 +5599,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Lenvima",
@@ -5637,7 +5637,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "LYMPHIR (denileukin diftitox-cxdl)",
@@ -5675,7 +5675,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Lynparza",
@@ -5713,7 +5713,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Mvasi",
@@ -5754,7 +5754,7 @@
      "also_marketed_as": [
       "Alymsys"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Ojemda (tovorafenib)",
@@ -5792,7 +5792,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Phesgo (pertuzumab/trastuzumab + rHuPH20)",
@@ -5830,7 +5830,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Proleukin (aldesleukin)",
@@ -5868,7 +5868,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Talzenna",
@@ -5906,7 +5906,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Veppanu (vepdegestrant)",
@@ -5948,7 +5948,7 @@
       "VEPPANU (vepdegestrant)",
       "VEPPANU (vepdegestrant)"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Verzenio",
@@ -5986,7 +5986,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Yervoy",
@@ -6024,7 +6024,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Amtagvi (lifileucel)",
@@ -6090,7 +6090,7 @@
      "also_marketed_as": [
       "Lifileucel"
      ],
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Breyanzi",
@@ -6137,7 +6137,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Keytruda",
@@ -6192,7 +6192,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Keytruda Qlex",
@@ -6247,7 +6247,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Libtayo",
@@ -6302,7 +6302,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "MONJUVI/MINJUVI (tafasitamab)",
@@ -6352,7 +6352,7 @@
      "also_marketed_as": [
       "Monjuvi/Minjuvi (tafasitamab-cxix) [partnered: MorphoSys/Incyte]"
      ],
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Opdivo",
@@ -6410,7 +6410,7 @@
      "also_marketed_as": [
       "Opdivo (nivolumab) post-sorafenib HCC monotherapy indication"
      ],
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Opdivo Qvantig",
@@ -6468,7 +6468,7 @@
      "also_marketed_as": [
       "Opdivo Qvantig (nivolumab + rHuPH20)"
      ],
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Opdualag",
@@ -6523,7 +6523,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "RP1 (vusolimogene oderparepvec; TUDRIQEV)",
@@ -6570,7 +6570,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Tecentriq Hybreza (atezolizumab + rHuPH20)",
@@ -6625,7 +6625,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Tyvyt",
@@ -6680,7 +6680,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Yescarta",
@@ -6727,7 +6727,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "DepoCyt (cytarabine liposome injection)",
@@ -8370,7 +8370,7 @@
      "also_marketed_as": [
       "Sarilumab"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Orencia",
@@ -8408,7 +8408,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "ZILRETTA (triamcinolone acetonide extended-release injectable suspension)",
@@ -8446,7 +8446,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Arcoxia (etoricoxib)",
@@ -8654,7 +8654,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "CELEBREX (celecoxib)",
@@ -8862,7 +8862,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "LISRAYA (brepocitinib)",
@@ -8917,7 +8917,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     },
     {
      "drug": "Olumiant",
@@ -8972,7 +8972,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     }
    ],
    "watch": [
@@ -9609,7 +9609,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Diprospan (betamethasone)",
@@ -9647,7 +9647,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Dupixent",
@@ -9685,7 +9685,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Enbrel",
@@ -9727,7 +9727,7 @@
       "Enbrel",
       "BENEPALI (etanercept biosimilar)"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Humira",
@@ -9768,7 +9768,7 @@
      "also_marketed_as": [
       "IMRALDI (adalimumab biosimilar)"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Remicade",
@@ -9809,7 +9809,7 @@
      "also_marketed_as": [
       "FLIXABI (infliximab biosimilar)"
      ],
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Simponi",
@@ -9847,7 +9847,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, no companion-animal programme"
+     "route_label": "Approved, mechanism unclaimed in dogs or cats"
     },
     {
      "drug": "Xeljanz",
@@ -9902,7 +9902,7 @@
      "discontinuation_reason": null,
      "discontinuation_note": null,
      "discontinuation_verified": false,
-     "route_label": "Approved, target already claimed"
+     "route_label": "Approved, mechanism already worked"
     }
    ],
    "watch": [
@@ -10192,7 +10192,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Adempas/Verquvo",
@@ -10230,7 +10230,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "AMVUTTRA (vutrisiran)",
@@ -10268,7 +10268,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Attruby (acoramidis)",
@@ -10306,7 +10306,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Camzyos",
@@ -10344,7 +10344,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Corlanor",
@@ -10382,7 +10382,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Cozaar/Hyzaar (losartan; losartan/hydrochlorothiazide)",
@@ -10420,7 +10420,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Eliquis",
@@ -10461,7 +10461,7 @@
    "also_marketed_as": [
     "Eliquis"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "FUROSCIX (furosemide injection)",
@@ -10499,7 +10499,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Letairis",
@@ -10537,7 +10537,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Minnebro (esaxerenone)",
@@ -10575,7 +10575,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "MYQORZO (aficamten)",
@@ -10616,7 +10616,7 @@
    "also_marketed_as": [
     "aficamten"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Opsumit",
@@ -10654,7 +10654,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Treprostinil injection (generic)",
@@ -10692,7 +10692,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Uptravi",
@@ -10730,7 +10730,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "VASOSTRICT (vasopressin injection)",
@@ -10768,7 +10768,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "YUTREPIA (treprostinil inhalation powder)",
@@ -10806,7 +10806,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "INPEFA (sotagliflozin)",
@@ -10856,7 +10856,7 @@
    "also_marketed_as": [
     "sotagliflozin"
    ],
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Epinephrine Injection (epinephrine)",
@@ -10914,7 +10914,7 @@
    "also_marketed_as": [
     "ADRENALIN (epinephrine injection / RTU bag)"
    ],
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Innovace (enalapril)",
@@ -10977,7 +10977,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Javadin (clonidine hydrochloride oral solution)",
@@ -11032,7 +11032,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "NORVASC (amlodipine)",
@@ -11087,7 +11087,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Winrevair",
@@ -11142,7 +11142,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Imbruvica",
@@ -11180,7 +11180,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Jaypirca",
@@ -11221,7 +11221,7 @@
    "also_marketed_as": [
     "Pirtobrutinib"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Abraxane",
@@ -11259,7 +11259,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Adcetris",
@@ -11297,7 +11297,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "ANKTIVA (nogapendekin alfa inbakicept)",
@@ -11335,7 +11335,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Balversa",
@@ -11373,7 +11373,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Braftovi/Mektovi",
@@ -11411,7 +11411,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Cometriq (cabozantinib)",
@@ -11449,7 +11449,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Cotellic (cobimetinib)",
@@ -11487,7 +11487,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Cyramza",
@@ -11525,7 +11525,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Ibrance",
@@ -11563,7 +11563,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Imlygic",
@@ -11601,7 +11601,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Inlexzo",
@@ -11639,7 +11639,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Inluriyo",
@@ -11677,7 +11677,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Kanjinti",
@@ -11715,7 +11715,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Lenvima",
@@ -11753,7 +11753,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "LYMPHIR (denileukin diftitox-cxdl)",
@@ -11791,7 +11791,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Lynparza",
@@ -11829,7 +11829,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Mvasi",
@@ -11870,7 +11870,7 @@
    "also_marketed_as": [
     "Alymsys"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Ojemda (tovorafenib)",
@@ -11908,7 +11908,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Phesgo (pertuzumab/trastuzumab + rHuPH20)",
@@ -11946,7 +11946,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Proleukin (aldesleukin)",
@@ -11984,7 +11984,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Talzenna",
@@ -12022,7 +12022,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Veppanu (vepdegestrant)",
@@ -12064,7 +12064,7 @@
     "VEPPANU (vepdegestrant)",
     "VEPPANU (vepdegestrant)"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Verzenio",
@@ -12102,7 +12102,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Yervoy",
@@ -12140,7 +12140,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Amtagvi (lifileucel)",
@@ -12206,7 +12206,7 @@
    "also_marketed_as": [
     "Lifileucel"
    ],
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Breyanzi",
@@ -12253,7 +12253,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Keytruda",
@@ -12308,7 +12308,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Keytruda Qlex",
@@ -12363,7 +12363,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Libtayo",
@@ -12418,7 +12418,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "MONJUVI/MINJUVI (tafasitamab)",
@@ -12468,7 +12468,7 @@
    "also_marketed_as": [
     "Monjuvi/Minjuvi (tafasitamab-cxix) [partnered: MorphoSys/Incyte]"
    ],
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Opdivo",
@@ -12526,7 +12526,7 @@
    "also_marketed_as": [
     "Opdivo (nivolumab) post-sorafenib HCC monotherapy indication"
    ],
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Opdivo Qvantig",
@@ -12584,7 +12584,7 @@
    "also_marketed_as": [
     "Opdivo Qvantig (nivolumab + rHuPH20)"
    ],
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Opdualag",
@@ -12639,7 +12639,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "RP1 (vusolimogene oderparepvec; TUDRIQEV)",
@@ -12686,7 +12686,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Tecentriq Hybreza (atezolizumab + rHuPH20)",
@@ -12741,7 +12741,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Tyvyt",
@@ -12796,7 +12796,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Yescarta",
@@ -12843,7 +12843,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "DepoCyt (cytarabine liposome injection)",
@@ -12922,7 +12922,7 @@
    "also_marketed_as": [
     "Sarilumab"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Orencia",
@@ -12960,7 +12960,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "ZILRETTA (triamcinolone acetonide extended-release injectable suspension)",
@@ -12998,7 +12998,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Arcoxia (etoricoxib)",
@@ -13206,7 +13206,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "CELEBREX (celecoxib)",
@@ -13414,7 +13414,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "LISRAYA (brepocitinib)",
@@ -13469,7 +13469,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Olumiant",
@@ -13524,7 +13524,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   },
   {
    "drug": "Cortrophin Gel",
@@ -13562,7 +13562,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Diprospan (betamethasone)",
@@ -13600,7 +13600,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Dupixent",
@@ -13638,7 +13638,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Enbrel",
@@ -13680,7 +13680,7 @@
     "Enbrel",
     "BENEPALI (etanercept biosimilar)"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Humira",
@@ -13721,7 +13721,7 @@
    "also_marketed_as": [
     "IMRALDI (adalimumab biosimilar)"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Remicade",
@@ -13762,7 +13762,7 @@
    "also_marketed_as": [
     "FLIXABI (infliximab biosimilar)"
    ],
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Simponi",
@@ -13800,7 +13800,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, no companion-animal programme"
+   "route_label": "Approved, mechanism unclaimed in dogs or cats"
   },
   {
    "drug": "Xeljanz",
@@ -13855,7 +13855,7 @@
    "discontinuation_reason": null,
    "discontinuation_note": null,
    "discontinuation_verified": false,
-   "route_label": "Approved, target already claimed"
+   "route_label": "Approved, mechanism already worked"
   }
  ]
 }
