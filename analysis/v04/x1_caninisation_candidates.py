@@ -186,24 +186,68 @@ def main():
                 return r["area"]
         return "other"
 
-    human = [r for r in csv.DictReader(open(HUMAN_CSV)) if "approv" in (r.get("phase") or "").lower()]
+    # Every programme, not only the approved ones. A human asset shelved after Phase 3 carries a
+    # safety package - the expensive part - and usually failed on efficacy against a human
+    # comparator or on commercial grounds, neither of which need apply in a dog.
+    human = list(csv.DictReader(open(HUMAN_CSV)))
     pet = list(csv.DictReader(open(PET_CSV)))
-    pet_targets = set()
-    for r in pet:
-        pet_targets |= toks(r.get("target"))
+    holder_file = load("part2/pet_target_holders.json") or {}
+    holders = holder_file.get("by_target_token") or {}
+    # One definition drives both sides of the join: the index was built with these same patterns.
+    # Matching raw words alone failed in both directions - generic tokens like "inhibitor" matched
+    # everything, while Apoquel ("JAK1 inhibitor") and Librela ("anti-NGF monoclonal antibody")
+    # matched nothing, so a human JAK or NGF asset appeared to face no competition at all.
+    class_patterns = holder_file.get("class_patterns") or {}
+
+    def class_stems(*texts):
+        hay = " ".join(t or "" for t in texts).lower()
+        return {f"class:{k}" for k, pat in class_patterns.items() if re.search(pat, hay)}
+
+    def stage_of(r):
+        q = (r.get("phase") or "").lower()
+        if "approv" in q or "market" in q:
+            return "Approved"
+        for n, label in (("3", "Phase 3"), ("2", "Phase 2"), ("1", "Phase 1")):
+            if n in q:
+                return label
+        return "Preclinical" if "preclin" in q else "unstated"
+
+    def discontinued(r):
+        s = (r.get("status") or "").lower()
+        return "discontinu" in s or "inactive" in s
+
+    STAGE_RANK = {"Approved": 0, "Phase 3": 1, "Phase 2": 2, "Phase 1": 3,
+                  "Preclinical": 4, "unstated": 5}
 
     candidates, skipped = [], collections.Counter()
     for r in human:
         target, indication = r.get("target") or "", r.get("indication") or ""
-        if toks(target) & pet_targets:
-            skipped["target already in companion animals"] += 1
-            continue
+        # A target already worked in companion animals is NOT excluded. It means the indication has
+        # a validated market: atopic dermatitis carries 9 companion-animal programmes and
+        # osteoarthritis 25, and Elanco entered atopic dermatitis against Zoetis's Apoquel and
+        # Cytopoint. Crowding is recorded so a two-player field can be told from a twenty-player
+        # commodity, and the holders are named.
+        keys = toks(target) | class_stems(target, r.get("drug_name"))
+        claim = [h for t in keys for h in holders.get(t, [])]
+        seen, competitors = set(), []
+        for h in claim:
+            if h["drug"] not in seen:
+                seen.add(h["drug"]); competitors.append(h)
         if NOT_A_DOG_DISEASE.search(indication):
             skipped["disease dogs do not get"] += 1
             continue
         if NOT_A_THERAPEUTIC.search(r.get("drug_name") or "") or NOT_A_THERAPEUTIC.search(target):
             skipped["diagnostic or imaging agent, not a therapeutic"] += 1
             continue
+        # Indications the area rules place wrongly, caught by reading what landed where: travoprost
+        # for glaucoma was sitting in cardiovascular (prostaglandin analogue), and chenodiol, a bile
+        # acid, in musculoskeletal.
+        if re.search(r"glaucoma|intraocular pressure|dry eye|keratoconjunctivitis", indication, re.I):
+            area_override = "ophthalmology"
+        elif re.search(r"bile acid|cholesterol ester storage|xanthomatosis", indication, re.I):
+            area_override = "liver-gi"
+        else:
+            area_override = None
         # An oncology indication has to name a tumour type dogs actually get. A canine tumour type
         # named anywhere in the indication wins over a human-only term in the same string: killing
         # pirtobrutinib for the words "mantle cell" would drop the canine BTK opportunity, which is
@@ -219,7 +263,7 @@ def main():
                     indication, re.I):
                 skipped["human tumour type dogs do not get"] += 1
                 continue
-        area = area_of(indication)
+        area = area_override or area_of(indication)
         e = ev.get(area)
         if not e or e["results"] < 5 or not e["weighted_concordance"]:
             skipped["no dog evidence for this area"] += 1
@@ -268,6 +312,28 @@ def main():
             # passes the tumour gate on a word, and which canine tumour it might treat is unknown.
             "indication_is_vague": bool(re.fullmatch(
                 r"\s*(cancer|solid tumou?rs?|advanced cancer|oncology)\s*", indication, re.I)),
+            "human_stage": stage_of(r),
+            "human_status": "discontinued" if discontinued(r) else "active",
+            "competitors": competitors,
+            # Routes are not exclusive, and forcing one label hid the interesting case. Fasinumab
+            # is a shelved Phase 3 asset AND faces four companion-animal anti-NGF antibodies; the
+            # question about it is not whether the target is free but whether a shelved human asset
+            # can beat Librela, which only shows if both facts are carried.
+            "routes": ([("shelved asset" if discontinued(r) and STAGE_RANK[stage_of(r)] <= 2 else None),
+                        ("me-too into a claimed target" if competitors else "white space")]),
+            "route": ("shelved asset" if discontinued(r) and STAGE_RANK[stage_of(r)] <= 2
+                      else "me-too into a claimed target" if competitors
+                      else "white space"),
+            "competitor_count": len(competitors),
+            # "License and caninise" assumes a molecule that can be licensed and reformulated.
+            # Cell and gene therapies are a different programme shape entirely.
+            "not_a_licensing_shape": bool(re.search(
+                r"\bCAR-?T\b|autologous|multicellular|cell therapy|gene therapy|oncolytic|"
+                r"\bsiRNA\b|vaccine", (target or "") + " " + (r.get("drug_name") or ""), re.I)),
+            # Why a programme was dropped is not in the source. Shelved for futility or on
+            # commercial grounds is a fine caninisation candidate; shelved for toxicity is not,
+            # and the distinction has to be established per molecule before anything is licensed.
+            "discontinuation_reason": "not stated in the source list" if discontinued(r) else None,
         })
 
     # One row per molecule: biosimilars and repeat listings are the same licensing opportunity
@@ -289,10 +355,20 @@ def main():
     grouped = collections.defaultdict(list)
     for c in best.values():
         grouped[c["area"]].append(c)
-    areas = [{"area": a, "evidence_rank": area_rank(a), "candidates": len(v),
+    # Phase 1 and preclinical assets have no human efficacy yet, which is the whole premise, so they
+    # are carried in the data as a watch list rather than presented as candidates.
+    PRESENTED = {"Approved", "Phase 3", "Phase 2"}
+    areas = [{"area": a, "evidence_rank": area_rank(a),
+              "candidates": len([c for c in v if c["human_stage"] in PRESENTED]),
+              "watch_list": len([c for c in v if c["human_stage"] not in PRESENTED]),
               "evidence": ev[a],
-              "molecules": sorted(v, key=lambda c: (not c["precedent"],
-                                                    -(c["years_since_approval"] or 0)))}
+              "molecules": sorted([c for c in v if c["human_stage"] in PRESENTED],
+                                  key=lambda c: (not c["precedent"],
+                                                 c["human_status"] != "discontinued",
+                                                 STAGE_RANK[c["human_stage"]],
+                                                 -(c["years_since_approval"] or 0))),
+              "watch": sorted([c for c in v if c["human_stage"] not in PRESENTED],
+                              key=lambda c: STAGE_RANK[c["human_stage"]])}
              for a, v in grouped.items()]
     areas.sort(key=lambda x: -x["evidence_rank"])
     candidates = [c for a in areas for c in a["molecules"]]
