@@ -582,3 +582,31 @@ This is the fourth pattern-matching correction in this analysis, after the [ae] 
 \bthall\b stem and the cardiomyopathy routing. Each looked right, matched wrongly, and was caught by
 reading the output rather than the summary. That is now the expected failure mode of this approach
 and the reason every list here is read line by line before it ships.
+
+## A17 — Discontinuation reasons are partly recoverable, and safety withdrawals are excluded (2026-09-16)
+
+A15 recorded that the supplied list does not say why a programme was discontinued, and every
+discontinued candidate carried `discontinuation_reason: not stated in the source list`. That was
+too weak a claim: the reason is often legible in the `source_link` column, which was already in the
+data and which I had not read.
+
+Reading it changes two candidates that had already been published. **UKONIQ (umbralisib)** links to
+an FDA drug-safety page - it was withdrawn over a survival detriment in UNITY-CLL. **GB5121** links
+to a report headlined "patient deaths and partial hold". Both appeared in the shelved-assets table
+of the published page as available inventory, and GB5121 sat beside the claim that BTK is the
+best-evidenced unclaimed opportunity, where it reads as supporting evidence for the very thing it
+undermines.
+
+Discontinuation signals are now classified from the source: of 387 discontinued programmes, 15 are
+safety or withdrawal, 75 efficacy failure, 53 commercial or strategic, 8 production or supply, and
+236 genuinely not legible. Safety withdrawals are excluded from candidates outright - a molecule
+pulled because patients on it fared worse is not licensable whatever the biology says - and the
+remainder carry their signal and their source link so a reader can weigh it.
+
+Fasinumab survives: its source is a strategic pipeline decision, not a safety action. The anti-NGF
+class caveat on the page stands on its own evidence and is unaffected.
+
+The general lesson is the one this project keeps relearning. "Not stated in the source" was an
+assertion about the data I had not checked, and it was wrong in the direction that mattered - it
+presented withdrawn-for-harm molecules as unknowns rather than as exclusions. A declared limitation
+is only honest if the thing it declares unknowable actually is.

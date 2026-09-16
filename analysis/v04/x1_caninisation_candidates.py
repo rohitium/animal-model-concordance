@@ -219,6 +219,34 @@ def main():
     STAGE_RANK = {"Approved": 0, "Phase 3": 1, "Phase 2": 2, "Phase 1": 3,
                   "Preclinical": 4, "unstated": 5}
 
+    # Why an asset was dropped, read from the source link and the phase note. Withdrawn over a
+    # survival detriment (umbralisib) or halted after patient deaths (GB5121) is the opposite
+    # signal from shelved on strategy, and pooling them under "shelved" would present a drug
+    # pulled for harm as available inventory.
+    SIGNALS = [
+        ("safety or withdrawal",
+         r"safety|withdraw|death|mortality|survival|toxicit|adverse|abuse|overdose|recall|"
+         r"partial.?hold|clinical.?hold|black.?box"),
+        ("production or supply", r"production|supply|manufactur|ceased"),
+        # Signals are read mostly from URL slugs, where words are hyphen-joined: "pulls the plug"
+        # never matched "pulls-the-plug", which left fasinumab - the clearest candidate here -
+        # reading as "not legible". Separators are [-\s] throughout for that reason. Fifth bug of
+        # this exact shape in this analysis, after [ae], \bthall\b, cardiomyopath and myopath.
+        ("efficacy failure", r"fail|miss|did[-\s]not[-\s]meet|futility|endpoint|topline|halt|"
+                             r"wipes?[-\s]out|cancel"),
+        ("commercial or strategic", r"lay-?offs?|restructur|shelv|pipeline|strateg|"
+                                    r"pulls?[-\s]the[-\s]plug|cut(s|backs)?|priorit|"
+                                    r"abandon|deprioriti|ends?[-\s]|drops?[-\s]"),
+    ]
+
+    def disc_signal(r):
+        hay = " ".join([r.get("source_link") or "", r.get("phase") or "",
+                        r.get("indication") or ""]).lower()
+        for label, pat in SIGNALS:
+            if re.search(pat, hay):
+                return label
+        return "not legible from the source"
+
     candidates, skipped = [], collections.Counter()
     for r in human:
         target, indication = r.get("target") or "", r.get("indication") or ""
@@ -235,6 +263,12 @@ def main():
                 seen.add(h["drug"]); competitors.append(h)
         if NOT_A_DOG_DISEASE.search(indication):
             skipped["disease dogs do not get"] += 1
+            continue
+        # A molecule withdrawn or halted over harm is not a licensing candidate, whatever the
+        # biology says. Umbralisib was withdrawn over a survival detriment in UNITY-CLL and GB5121
+        # was halted after patient deaths; both were presented as shelved assets before this gate.
+        if discontinued(r) and disc_signal(r) == "safety or withdrawal":
+            skipped["discontinued over safety or withdrawn"] += 1
             continue
         if NOT_A_THERAPEUTIC.search(r.get("drug_name") or "") or NOT_A_THERAPEUTIC.search(target):
             skipped["diagnostic or imaging agent, not a therapeutic"] += 1
@@ -345,10 +379,12 @@ def main():
             "not_a_licensing_shape": bool(re.search(
                 r"\bCAR-?T\b|autologous|multicellular|cell therapy|gene therapy|oncolytic|"
                 r"\bsiRNA\b|vaccine", (target or "") + " " + (r.get("drug_name") or ""), re.I)),
-            # Why a programme was dropped is not in the source. Shelved for futility or on
-            # commercial grounds is a fine caninisation candidate; shelved for toxicity is not,
-            # and the distinction has to be established per molecule before anything is licensed.
-            "discontinuation_reason": "not stated in the source list" if discontinued(r) else None,
+            # Why a programme was dropped decides whether it is a candidate at all, and it is
+            # partly recoverable from the source link rather than unknowable: a molecule withdrawn
+            # over a survival detriment is not licensable inventory. Safety withdrawals are
+            # excluded outright below; the rest carry their signal so a reader can weigh it.
+            "discontinuation_signal": disc_signal(r) if discontinued(r) else None,
+            "source": r.get("source_link"),
         })
 
     # One row per molecule: biosimilars and repeat listings are the same licensing opportunity

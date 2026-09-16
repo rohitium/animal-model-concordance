@@ -6,11 +6,12 @@
   "review_results": 1520
  },
  "skipped": {
-  "no dog evidence for this area": 904,
+  "no dog evidence for this area": 897,
   "disease dogs do not get": 384,
   "oncology indication too unspecific to place in a dog": 68,
-  "human tumour type dogs do not get": 126,
+  "human tumour type dogs do not get": 124,
   "dog evidence says biology does not correspond": 58,
+  "discontinued over safety or withdrawn": 11,
   "diagnostic or imaging agent, not a therapeutic": 5
  },
  "missing_inputs": [
@@ -169,7 +170,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "sotagliflozin"
      ]
@@ -206,7 +207,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "revusiran",
@@ -240,7 +241,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "Gencaro (bucindolol) (inferred)",
@@ -274,7 +275,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "lorundrostat",
@@ -308,7 +309,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "ixmyelocel-T",
@@ -367,7 +368,7 @@
      "competitor_count": 3,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "AV-101",
@@ -401,7 +402,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "Epinephrine Injection (epinephrine)",
@@ -452,7 +453,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "ADRENALIN (epinephrine injection / RTU bag)"
      ]
@@ -489,7 +490,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Javadin (clonidine hydrochloride oral solution)",
@@ -540,7 +541,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Innovace (enalapril)",
@@ -599,7 +600,7 @@
      "competitor_count": 3,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "NORVASC (amlodipine)",
@@ -650,7 +651,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Cozaar/Hyzaar (losartan; losartan/hydrochlorothiazide)",
@@ -684,7 +685,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "YUTREPIA (treprostinil inhalation powder)",
@@ -718,7 +719,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Adcirca",
@@ -752,7 +753,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Letairis",
@@ -786,7 +787,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Eliquis",
@@ -820,7 +821,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Eliquis"
      ]
@@ -857,7 +858,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Adempas/Verquvo",
@@ -891,7 +892,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "VASOSTRICT (vasopressin injection)",
@@ -925,7 +926,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Uptravi",
@@ -959,7 +960,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Corlanor",
@@ -993,7 +994,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Camzyos",
@@ -1027,7 +1028,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "AMVUTTRA (vutrisiran)",
@@ -1061,7 +1062,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Winrevair",
@@ -1112,7 +1113,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Attruby (acoramidis)",
@@ -1146,7 +1147,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "MYQORZO (aficamten)",
@@ -1180,7 +1181,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "aficamten"
      ]
@@ -1217,7 +1218,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Treprostinil injection (generic)",
@@ -1251,7 +1252,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Milvexian",
@@ -1285,7 +1286,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "zilebesiran ± REVERSIR",
@@ -1319,7 +1320,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mosliciguat",
@@ -1353,7 +1354,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "omecamtiv mecarbil",
@@ -1387,7 +1388,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "eplontersen",
@@ -1430,7 +1431,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "L606",
@@ -1464,7 +1465,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "AVIM therapy",
@@ -1498,7 +1499,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "nexiguran ziclumeran (NTLA-2001)",
@@ -1532,7 +1533,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Seralutinib",
@@ -1566,7 +1567,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TNX-103 (oral levosimendan)",
@@ -1600,7 +1601,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "MK-5475",
@@ -1634,7 +1635,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "MK-7962",
@@ -1668,7 +1669,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Amrecibart (REGN9933)",
@@ -1702,7 +1703,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ulacamten (CK-586)",
@@ -1736,7 +1737,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LNTH-2513 (GP-1)",
@@ -1770,7 +1771,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "EDG-7500",
@@ -1804,7 +1805,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "danicamtiv",
@@ -1838,7 +1839,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "tonlamarsen",
@@ -1872,7 +1873,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TX45",
@@ -1906,7 +1907,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     }
    ],
    "watch": [
@@ -1942,7 +1943,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "EDG-15400",
@@ -1976,7 +1977,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "BHB-1893",
@@ -2010,7 +2011,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "BHV-1600",
@@ -2061,7 +2062,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "RP-A601",
@@ -2095,7 +2096,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "BMN 293",
@@ -2129,7 +2130,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "BMN 365",
@@ -2163,7 +2164,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ATR 1086",
@@ -2197,7 +2198,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ONPATTRO (patisiran)",
@@ -2231,7 +2232,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "LNTH-2515 (florbetaben)",
@@ -2265,7 +2266,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Trevyent (treprostinil)",
@@ -2299,7 +2300,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list",
+     "discontinuation_signal": "not legible from the source",
      "also_marketed_as": [
       "Tyvaso DPI (treprostinil inhalation powder)"
      ]
@@ -2336,7 +2337,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "cibotercept (KER-012)",
@@ -2370,14 +2371,14 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     }
    ]
   },
   {
    "area": "oncology",
    "evidence_rank": 56.5,
-   "candidates": 100,
+   "candidates": 98,
    "watch_list": 131,
    "evidence": {
     "results": 111,
@@ -2391,40 +2392,6 @@
     "weighted_concordance": 0.88
    },
    "molecules": [
-    {
-     "drug": "GB5121",
-     "ingredient": null,
-     "target": "BTK",
-     "indication": "Primary central nervous system lymphoma",
-     "company": "Gossamer Bio",
-     "source": "https://medcitynews.com/2023/04/patient-deaths-and-partial-hold-prompt-gossamer-bio-to-stop-work-on-cancer-drug/",
-     "area": "oncology",
-     "first_us_approval": null,
-     "years_since_approval": null,
-     "precedent": "ibrutinib (dog 2010, human 2013), acalabrutinib (2016, 2017) and rilzabrutinib (canine pemphigus 2021, human 2025) all reached dogs at or before human approval",
-     "safety_flags": [],
-     "evidence": {
-      "results": 111,
-      "studies": 34,
-      "corresponded": 93,
-      "did_not": 14,
-      "level_A": 5,
-      "weighted_concordance": 0.88
-     },
-     "indication_is_vague": false,
-     "human_stage": "Phase 2",
-     "human_status": "discontinued",
-     "competitors": [],
-     "routes": [
-      "shelved asset",
-      "white space"
-     ],
-     "route": "shelved asset",
-     "competitor_count": 0,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
-    },
     {
      "drug": "Imbruvica",
      "ingredient": "IBRUTINIB",
@@ -2457,7 +2424,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Jaypirca",
@@ -2491,7 +2458,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Pirtobrutinib"
      ]
@@ -2528,41 +2495,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
-    },
-    {
-     "drug": "UKONIQ (umbralisib)",
-     "ingredient": "UMBRALISIB TOSYLATE",
-     "target": "PI3K delta and CK1 epsilon",
-     "indication": "Marginal zone and follicular lymphoma",
-     "company": "TG Therapeutics",
-     "source": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-approval-lymphoma-medicine-ukoniq-umbralisib-withdrawn-due-safety-concerns",
-     "area": "oncology",
-     "first_us_approval": 2021,
-     "years_since_approval": 5,
-     "precedent": null,
-     "safety_flags": [],
-     "evidence": {
-      "results": 111,
-      "studies": 34,
-      "corresponded": 93,
-      "did_not": 14,
-      "level_A": 5,
-      "weighted_concordance": 0.88
-     },
-     "indication_is_vague": false,
-     "human_stage": "Approved",
-     "human_status": "discontinued",
-     "competitors": [],
-     "routes": [
-      "shelved asset",
-      "white space"
-     ],
-     "route": "shelved asset",
-     "competitor_count": 0,
-     "in_veterinary_formulary": false,
-     "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "production or supply"
     },
     {
      "drug": "epacadostat",
@@ -2596,7 +2529,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "domvanalimab (AB154)",
@@ -2630,7 +2563,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "bempegaldesleukin (NKTR-214)",
@@ -2664,7 +2597,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "etirinotecan pegol (NKTR-102) (inferred)",
@@ -2698,7 +2631,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "entinostat",
@@ -2732,7 +2665,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "Validive",
@@ -2783,7 +2716,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "KB707",
@@ -2817,7 +2750,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "N-803 monotherapy",
@@ -2851,7 +2784,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "Lirafugratinib (RLY-4008)",
@@ -2885,7 +2818,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "TNG908",
@@ -2919,7 +2852,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "IDE705 (GSK101)",
@@ -2953,7 +2886,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "etrumadenant (AB928)",
@@ -2987,7 +2920,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "glembatumumab vedotin (CDX-011)",
@@ -3021,7 +2954,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "SD-101",
@@ -3055,7 +2988,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "solnerstotug (formerly SNS-101)",
@@ -3089,7 +3022,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "praluzatamab ravtansine (CX-2009)",
@@ -3123,7 +3056,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "pacmilimab (CX-072) (inferred)",
@@ -3174,7 +3107,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "CFT8634",
@@ -3208,7 +3141,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "XTX202",
@@ -3242,7 +3175,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "Abraxane",
@@ -3276,7 +3209,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Proleukin (aldesleukin)",
@@ -3310,7 +3243,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Inlexzo",
@@ -3344,7 +3277,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Kanjinti",
@@ -3378,7 +3311,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LYMPHIR (denileukin diftitox-cxdl)",
@@ -3412,7 +3345,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Mvasi",
@@ -3446,7 +3379,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Alymsys"
      ]
@@ -3483,7 +3416,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Adcetris",
@@ -3517,7 +3450,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Cometriq (cabozantinib)",
@@ -3551,7 +3484,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Phesgo (pertuzumab/trastuzumab + rHuPH20)",
@@ -3585,7 +3518,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Cyramza",
@@ -3619,7 +3552,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Keytruda",
@@ -3670,7 +3603,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Keytruda Qlex",
@@ -3721,7 +3654,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Lynparza",
@@ -3755,7 +3688,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Opdivo",
@@ -3806,7 +3739,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Opdivo (nivolumab) post-sorafenib HCC monotherapy indication"
      ]
@@ -3860,7 +3793,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Opdivo Qvantig (nivolumab + rHuPH20)"
      ]
@@ -3914,7 +3847,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Lenvima",
@@ -3948,7 +3881,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Ibrance",
@@ -3982,7 +3915,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Cotellic (cobimetinib)",
@@ -4016,7 +3949,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Tecentriq Hybreza (atezolizumab + rHuPH20)",
@@ -4067,7 +4000,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Verzenio",
@@ -4101,7 +4034,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Braftovi/Mektovi",
@@ -4135,7 +4068,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Libtayo",
@@ -4186,7 +4119,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Talzenna",
@@ -4220,7 +4153,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Balversa",
@@ -4254,7 +4187,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "MONJUVI/MINJUVI (tafasitamab)",
@@ -4297,7 +4230,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Monjuvi/Minjuvi (tafasitamab-cxix) [partnered: MorphoSys/Incyte]"
      ]
@@ -4334,7 +4267,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Ojemda (tovorafenib)",
@@ -4368,7 +4301,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Inluriyo",
@@ -4402,7 +4335,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Tyvyt",
@@ -4453,7 +4386,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Yescarta",
@@ -4496,7 +4429,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Veppanu (vepdegestrant)",
@@ -4530,7 +4463,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "VEPPANU (vepdegestrant)",
       "VEPPANU (vepdegestrant)"
@@ -4577,7 +4510,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Amtagvi (lifileucel)",
@@ -4636,7 +4569,7 @@
      "competitor_count": 3,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Lifileucel"
      ]
@@ -4682,7 +4615,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Imlygic",
@@ -4716,7 +4649,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Padcev",
@@ -4750,7 +4683,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Trodelvy",
@@ -4784,7 +4717,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Tukysa (tucatinib)",
@@ -4818,7 +4751,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Imlunestrant",
@@ -4852,7 +4785,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Pivekimab Sunirine",
@@ -4886,7 +4819,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Intismeran autogene (V940)",
@@ -4929,7 +4862,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Favezelimab + pembrolizumab",
@@ -4963,7 +4896,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Quavonlimab + pembrolizumab",
@@ -4997,7 +4930,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Vibostolimab + pembrolizumab",
@@ -5031,7 +4964,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Atirmociclib (PF-07220060)",
@@ -5065,7 +4998,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Sasanlimab",
@@ -5116,7 +5049,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Disitamab vedotin",
@@ -5150,7 +5083,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Odronextamab",
@@ -5184,7 +5117,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Fianlimab",
@@ -5218,7 +5151,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-4157",
@@ -5261,7 +5194,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Nivolumab + relatlimab SC (BMS)",
@@ -5312,7 +5245,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TYRA-430",
@@ -5346,7 +5279,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "palazestrant (OP-1250)",
@@ -5380,7 +5313,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "bel-sar (AU-011)",
@@ -5414,7 +5347,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ronde-cel (LYL314)",
@@ -5448,7 +5381,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Lasofoxifene",
@@ -5482,7 +5415,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Budigalimab",
@@ -5533,7 +5466,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Ladiratuzumab vedotin (MK-6440)",
@@ -5567,7 +5500,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-4359",
@@ -5610,7 +5543,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Ivonescimab (SMT112)",
@@ -5637,14 +5570,6 @@
      "human_status": "active",
      "competitors": [
       {
-       "drug": "eBAT (investigational treatment)",
-       "company": "Anivive Lifesciences",
-       "indication": "Hemangiosarcoma",
-       "species": "dog",
-       "phase": "",
-       "source": "https://anivive.com/treatments"
-      },
-      {
        "drug": "VGS-001 + VGS-002 (CHECKMATE-K9)",
        "company": "Vetigenics",
        "indication": "cancer (combination checkpoint blockade)",
@@ -5659,6 +5584,14 @@
        "species": "dog",
        "phase": "Phase 1",
        "source": "https://www.biospace.com/press-releases/vetigenics-secures-6-million-seed-financing-sees-meaningful-clinical-progress"
+      },
+      {
+       "drug": "eBAT (investigational treatment)",
+       "company": "Anivive Lifesciences",
+       "indication": "Hemangiosarcoma",
+       "species": "dog",
+       "phase": "",
+       "source": "https://anivive.com/treatments"
       }
      ],
      "routes": [
@@ -5669,7 +5602,7 @@
      "competitor_count": 3,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LNTH-2403",
@@ -5703,7 +5636,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Cretostimogene grenadenorepvec",
@@ -5737,7 +5670,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Cretostimogene grenadenorepvec + pembrolizumab",
@@ -5788,7 +5721,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IOV-4001",
@@ -5839,7 +5772,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IOV-3001",
@@ -5882,7 +5815,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Darovasertib",
@@ -5916,7 +5849,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IDE161",
@@ -5950,7 +5883,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IDE397",
@@ -5984,7 +5917,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "PRGN-2009",
@@ -6018,7 +5951,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Safusidenib",
@@ -6052,7 +5985,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ozekibart (INBRX-109)",
@@ -6086,7 +6019,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "olutasidenib + temozolomide",
@@ -6120,7 +6053,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "NEO100",
@@ -6154,7 +6087,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "OST-HER2",
@@ -6197,7 +6130,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     }
    ],
    "watch": [
@@ -6233,7 +6166,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ABBV-CLS-579",
@@ -6267,7 +6200,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ABBV-CLS-484",
@@ -6301,7 +6234,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ABBV-514",
@@ -6335,7 +6268,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ABBV-303",
@@ -6369,7 +6302,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ABBV-101",
@@ -6403,7 +6336,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "MRTX0902",
@@ -6437,7 +6370,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "mRNA-4106",
@@ -6480,7 +6413,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-4200",
@@ -6523,7 +6456,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-4194",
@@ -6566,7 +6499,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-4203 + anzu-cel",
@@ -6609,7 +6542,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-5671",
@@ -6643,7 +6576,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "mRNA-2752",
@@ -6677,7 +6610,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "zoldonrasib (RMC-9805)",
@@ -6711,7 +6644,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "RMC-5127",
@@ -6745,7 +6678,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ALN-BCAT",
@@ -6779,7 +6712,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XL309",
@@ -6813,7 +6746,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XB010",
@@ -6847,7 +6780,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XB628",
@@ -6874,14 +6807,6 @@
      "human_status": "active",
      "competitors": [
       {
-       "drug": "eBAT (investigational treatment)",
-       "company": "Anivive Lifesciences",
-       "indication": "Hemangiosarcoma",
-       "species": "dog",
-       "phase": "",
-       "source": "https://anivive.com/treatments"
-      },
-      {
        "drug": "VGS-001 + VGS-002 (CHECKMATE-K9)",
        "company": "Vetigenics",
        "indication": "cancer (combination checkpoint blockade)",
@@ -6896,6 +6821,14 @@
        "species": "dog",
        "phase": "Phase 1",
        "source": "https://www.biospace.com/press-releases/vetigenics-secures-6-million-seed-financing-sees-meaningful-clinical-progress"
+      },
+      {
+       "drug": "eBAT (investigational treatment)",
+       "company": "Anivive Lifesciences",
+       "indication": "Hemangiosarcoma",
+       "species": "dog",
+       "phase": "",
+       "source": "https://anivive.com/treatments"
       }
      ],
      "routes": [
@@ -6906,7 +6839,7 @@
      "competitor_count": 3,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XB371",
@@ -6940,7 +6873,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XB002",
@@ -6974,7 +6907,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "KT-413",
@@ -7008,7 +6941,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "KT-333",
@@ -7042,7 +6975,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "PD-L1 t-haNK",
@@ -7093,7 +7026,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CGT4859",
@@ -7127,7 +7060,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "CGT4255",
@@ -7161,7 +7094,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CGT6297",
@@ -7195,7 +7128,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "naporafenib",
@@ -7229,7 +7162,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ERAS-4001",
@@ -7263,7 +7196,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ERAS-601 (SHP2 inhibitor)",
@@ -7297,7 +7230,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "ERAS-3490",
@@ -7331,7 +7264,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "RLY-8161",
@@ -7365,7 +7298,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Migoprotafib (RLY-1971)",
@@ -7399,7 +7332,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "ELVN-002",
@@ -7433,7 +7366,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "IDE034",
@@ -7467,7 +7400,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IDE574",
@@ -7501,7 +7434,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IDE275",
@@ -7535,7 +7468,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "AMG 193 + IDE397 combination",
@@ -7569,7 +7502,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "zimberelimab (AB122)",
@@ -7620,7 +7553,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CDX-1401",
@@ -7654,7 +7587,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "CDX-1140",
@@ -7688,7 +7621,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "IM-1021",
@@ -7722,7 +7655,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IM-1617",
@@ -7756,7 +7689,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IM-3050",
@@ -7790,7 +7723,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "NX-1607",
@@ -7824,7 +7757,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "PRGN-3007",
@@ -7858,7 +7791,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "NKTR-255",
@@ -7892,7 +7825,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "NKTR-262",
@@ -7926,7 +7859,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "NUV-1511",
@@ -7960,7 +7893,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "NUV-868",
@@ -7994,7 +7927,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "NUV-422",
@@ -8028,7 +7961,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "GB-4362",
@@ -8062,7 +7995,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "BHV-1530",
@@ -8096,7 +8029,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "SEP-631",
@@ -8130,7 +8063,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "VIR-5818",
@@ -8164,7 +8097,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "VIR-5525",
@@ -8207,7 +8140,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XmAb808",
@@ -8241,7 +8174,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XmAb104",
@@ -8292,7 +8225,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "XmAb841",
@@ -8326,7 +8259,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "REC-1245",
@@ -8360,7 +8293,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "REC-617",
@@ -8394,7 +8327,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "REC-7735",
@@ -8428,7 +8361,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ficerafusp alfa (BCA101)",
@@ -8471,7 +8404,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CLN-418",
@@ -8514,7 +8447,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "JANX008",
@@ -8548,7 +8481,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IAM1363",
@@ -8582,7 +8515,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CAN-3110",
@@ -8625,7 +8558,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ATI-2231 (oncology program)",
@@ -8659,7 +8592,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "CX-801",
@@ -8702,7 +8635,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CX-904",
@@ -8745,7 +8678,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ARV-806",
@@ -8779,7 +8712,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ARV-393",
@@ -8813,7 +8746,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CNTY-101",
@@ -8847,7 +8780,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "LYL797",
@@ -8881,7 +8814,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "LYL845",
@@ -8915,7 +8848,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "FT516",
@@ -8949,7 +8882,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "FT596",
@@ -8983,7 +8916,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "FT536",
@@ -9017,7 +8950,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "BDTX-4933",
@@ -9051,7 +8984,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Alpha-lactalbumin breast cancer vaccine",
@@ -9085,7 +9018,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ALRN-6924",
@@ -9119,7 +9052,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "BBI-355",
@@ -9153,7 +9086,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "FX-909",
@@ -9187,7 +9120,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "NDI-101150",
@@ -9221,7 +9154,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TLN-121",
@@ -9255,7 +9188,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TLN-254",
@@ -9289,7 +9222,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TLN-372",
@@ -9323,7 +9256,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "FMC-376",
@@ -9357,7 +9290,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "SAB01",
@@ -9391,7 +9324,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "DR-01",
@@ -9425,7 +9358,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "DR-0202",
@@ -9459,7 +9392,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "AB248 (etakafusp alfa)",
@@ -9493,7 +9426,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "AB821",
@@ -9527,7 +9460,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TER-2013",
@@ -9561,7 +9494,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ALTA2618",
@@ -9595,7 +9528,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ALTA3263",
@@ -9629,7 +9562,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ERAS-2/3 (RAS switch-II)",
@@ -9663,7 +9596,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "ERAS-11 (MYC)",
@@ -9697,7 +9630,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "RMC-0708",
@@ -9731,7 +9664,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "RMC-8839",
@@ -9765,7 +9698,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CGT1815",
@@ -9799,7 +9732,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CGT1145",
@@ -9850,7 +9783,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ERAS-4",
@@ -9884,7 +9817,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "ERAS-9 (SOS1)",
@@ -9918,7 +9851,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "beta-catenin degrader",
@@ -9952,7 +9885,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "RLY-2139",
@@ -9986,7 +9919,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "IOV-5001",
@@ -10020,7 +9953,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IM-1335",
@@ -10054,7 +9987,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IM-1340",
@@ -10088,7 +10021,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "pan-mutant BRAF degrader",
@@ -10122,7 +10055,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "AURKA degrader",
@@ -10156,7 +10089,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CBL-B degrader",
@@ -10190,7 +10123,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "PRO-XTEN TCE discovery programs",
@@ -10224,7 +10157,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "DMR-002",
@@ -10258,7 +10191,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "DMR-003",
@@ -10292,7 +10225,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "REC-102",
@@ -10326,7 +10259,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "JANX013",
@@ -10369,7 +10302,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "dual CDK2/4 inhibitor",
@@ -10403,7 +10336,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "EDO-B278",
@@ -10437,7 +10370,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "SG293",
@@ -10471,7 +10404,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ARV-6723",
@@ -10505,7 +10438,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "FHT-171",
@@ -10539,7 +10472,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "selective EP300 degrader",
@@ -10573,7 +10506,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ORCA program",
@@ -10607,7 +10540,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "FMC-242",
@@ -10641,7 +10574,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "(Z)-endoxifen",
@@ -10675,7 +10608,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LNTH-2503",
@@ -10709,7 +10642,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LNTH-1363S",
@@ -10743,7 +10676,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "INBRX-105",
@@ -10777,7 +10710,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "Nectin-4 miniprotein radioconjugate (candidate ID undisclosed)",
@@ -10811,7 +10744,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mupadolimab",
@@ -10845,7 +10778,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     }
    ]
   },
@@ -10931,7 +10864,7 @@
      "competitor_count": 4,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "commercial or strategic"
     },
     {
      "drug": "AXS-02 (disodium zoledronate)",
@@ -10965,7 +10898,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "NKTR-181 (loxicodegol)",
@@ -11007,7 +10940,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "VX-210",
@@ -11041,7 +10974,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "axomadol",
@@ -11075,7 +11008,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "efficacy failure"
     },
     {
      "drug": "zunsemetinib (ATI-450) (immunoinflammatory program)",
@@ -11109,7 +11042,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "ZILRETTA (triamcinolone acetonide extended-release injectable suspension)",
@@ -11143,7 +11076,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CELEBREX (celecoxib)",
@@ -11347,7 +11280,7 @@
      "competitor_count": 20,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Orencia",
@@ -11381,7 +11314,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Kevzara",
@@ -11415,7 +11348,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Sarilumab"
      ]
@@ -11469,7 +11402,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LISRAYA (brepocitinib)",
@@ -11520,7 +11453,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Arcoxia (etoricoxib)",
@@ -11724,7 +11657,7 @@
      "competitor_count": 20,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Eloralintide",
@@ -11758,7 +11691,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Ixekizumab + Tirzepatide",
@@ -11801,7 +11734,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "BHV-1300",
@@ -11835,7 +11768,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ulviprubart (ABC008)",
@@ -11869,7 +11802,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "JNJ-4804",
@@ -11903,7 +11836,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "MK-6024",
@@ -11937,7 +11870,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "VK5211",
@@ -11971,7 +11904,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LTG-321",
@@ -12054,7 +11987,7 @@
      "competitor_count": 6,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "UX016",
@@ -12088,7 +12021,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "rosnilimab",
@@ -12139,7 +12072,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "PCRX-201 (enekinragene inzadenovec)",
@@ -12173,7 +12106,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "rese-cel",
@@ -12216,7 +12149,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Vilamakitug",
@@ -12250,7 +12183,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     }
    ],
    "watch": [
@@ -12286,7 +12219,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Plamotamab (XmAb13676)",
@@ -12320,7 +12253,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "XmAb657",
@@ -12363,7 +12296,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CLN-978",
@@ -12406,7 +12339,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "SBT-77-7101",
@@ -12440,7 +12373,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "GS-6791 (NX-0479)",
@@ -12474,7 +12407,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "SAB03",
@@ -12525,7 +12458,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "abatacept biosimilar",
@@ -12559,7 +12492,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "lenabasum",
@@ -12593,7 +12526,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     }
    ]
   },
@@ -12646,7 +12579,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "Diprospan (betamethasone)",
@@ -12680,7 +12613,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": true,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Remicade",
@@ -12714,7 +12647,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "FLIXABI (infliximab biosimilar)"
      ]
@@ -12751,7 +12684,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "Enbrel",
       "BENEPALI (etanercept biosimilar)"
@@ -12789,7 +12722,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "IMRALDI (adalimumab biosimilar)"
      ]
@@ -12826,7 +12759,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Xeljanz",
@@ -12877,7 +12810,7 @@
      "competitor_count": 2,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Dupixent",
@@ -12911,7 +12844,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRESVIA",
@@ -12954,7 +12887,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "CpG 1018 adjuvant",
@@ -12988,7 +12921,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Cortrophin Gel",
@@ -13022,7 +12955,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mezagitamab",
@@ -13056,7 +12989,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "KSI-101",
@@ -13099,7 +13032,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "Clazakizumab",
@@ -13133,7 +13066,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LY5625573 (NLRP3 Inhibitor VTX3232)",
@@ -13167,7 +13100,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-1345",
@@ -13210,7 +13143,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-1647",
@@ -13253,7 +13186,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-1195",
@@ -13296,7 +13229,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-1975",
@@ -13339,7 +13272,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-1982",
@@ -13382,7 +13315,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "PTC844",
@@ -13416,7 +13349,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "in vivo CAR-T product candidate (CD19 eRNA, IND-enabling)",
@@ -13459,7 +13392,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     }
    ],
    "watch": [
@@ -13495,7 +13428,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "mRNA-1365",
@@ -13538,7 +13471,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": true,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "mRNA-6231",
@@ -13572,7 +13505,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "KT-474",
@@ -13606,7 +13539,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "PTC612",
@@ -13640,7 +13573,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "bexobrutideg tablet (NX-5948)",
@@ -13674,7 +13607,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ANB101",
@@ -13708,7 +13641,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null,
+     "discontinuation_signal": null,
      "also_marketed_as": [
       "ANB101"
      ]
@@ -13754,7 +13687,7 @@
      "competitor_count": 1,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "MRT-6160",
@@ -13788,7 +13721,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "SC291",
@@ -13822,7 +13755,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list"
+     "discontinuation_signal": "not legible from the source"
     },
     {
      "drug": "SBT-11-5301",
@@ -13856,7 +13789,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "PN-881",
@@ -13890,7 +13823,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "KT-294",
@@ -13924,7 +13857,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "DNTH312",
@@ -13958,7 +13891,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "STAT6 degrader",
@@ -13992,7 +13925,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "VRDN-006",
@@ -14026,7 +13959,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "VRDN-008",
@@ -14060,7 +13993,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TL1A program",
@@ -14094,7 +14027,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "OX40L program",
@@ -14128,7 +14061,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TSLP/IL-13 combination program",
@@ -14162,7 +14095,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "TL1A/IL-23 combination program",
@@ -14196,7 +14129,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "BHV-1320",
@@ -14230,7 +14163,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "OD-002",
@@ -14264,7 +14197,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "OD-003",
@@ -14298,7 +14231,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "SAB05",
@@ -14332,7 +14265,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "LNK01006",
@@ -14366,7 +14299,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "ZB-006 (inferred)",
@@ -14400,7 +14333,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": "not stated in the source list",
+     "discontinuation_signal": "not legible from the source",
      "also_marketed_as": [
       "SAIL-0804 (inferred)",
       "SL-279252 (inferred)",
@@ -14442,7 +14375,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IRAK4 program",
@@ -14476,7 +14409,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     },
     {
      "drug": "IRF5 program",
@@ -14510,7 +14443,7 @@
      "competitor_count": 0,
      "in_veterinary_formulary": false,
      "not_a_licensing_shape": false,
-     "discontinuation_reason": null
+     "discontinuation_signal": null
     }
    ]
   }
@@ -14557,7 +14490,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "sotagliflozin"
    ]
@@ -14594,7 +14527,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "revusiran",
@@ -14628,7 +14561,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "Gencaro (bucindolol) (inferred)",
@@ -14662,7 +14595,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "lorundrostat",
@@ -14696,7 +14629,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "ixmyelocel-T",
@@ -14755,7 +14688,7 @@
    "competitor_count": 3,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "AV-101",
@@ -14789,7 +14722,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "Epinephrine Injection (epinephrine)",
@@ -14840,7 +14773,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "ADRENALIN (epinephrine injection / RTU bag)"
    ]
@@ -14877,7 +14810,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Javadin (clonidine hydrochloride oral solution)",
@@ -14928,7 +14861,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Innovace (enalapril)",
@@ -14987,7 +14920,7 @@
    "competitor_count": 3,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "NORVASC (amlodipine)",
@@ -15038,7 +14971,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Cozaar/Hyzaar (losartan; losartan/hydrochlorothiazide)",
@@ -15072,7 +15005,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "YUTREPIA (treprostinil inhalation powder)",
@@ -15106,7 +15039,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Adcirca",
@@ -15140,7 +15073,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Letairis",
@@ -15174,7 +15107,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Eliquis",
@@ -15208,7 +15141,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Eliquis"
    ]
@@ -15245,7 +15178,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Adempas/Verquvo",
@@ -15279,7 +15212,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "VASOSTRICT (vasopressin injection)",
@@ -15313,7 +15246,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Uptravi",
@@ -15347,7 +15280,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Corlanor",
@@ -15381,7 +15314,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Camzyos",
@@ -15415,7 +15348,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "AMVUTTRA (vutrisiran)",
@@ -15449,7 +15382,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Winrevair",
@@ -15500,7 +15433,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Attruby (acoramidis)",
@@ -15534,7 +15467,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "MYQORZO (aficamten)",
@@ -15568,7 +15501,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "aficamten"
    ]
@@ -15605,7 +15538,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Treprostinil injection (generic)",
@@ -15639,7 +15572,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Milvexian",
@@ -15673,7 +15606,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "zilebesiran ± REVERSIR",
@@ -15707,7 +15640,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mosliciguat",
@@ -15741,7 +15674,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "omecamtiv mecarbil",
@@ -15775,7 +15708,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "eplontersen",
@@ -15818,7 +15751,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "L606",
@@ -15852,7 +15785,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "AVIM therapy",
@@ -15886,7 +15819,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "nexiguran ziclumeran (NTLA-2001)",
@@ -15920,7 +15853,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Seralutinib",
@@ -15954,7 +15887,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "TNX-103 (oral levosimendan)",
@@ -15988,7 +15921,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "MK-5475",
@@ -16022,7 +15955,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "MK-7962",
@@ -16056,7 +15989,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Amrecibart (REGN9933)",
@@ -16090,7 +16023,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "ulacamten (CK-586)",
@@ -16124,7 +16057,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "LNTH-2513 (GP-1)",
@@ -16158,7 +16091,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "EDG-7500",
@@ -16192,7 +16125,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "danicamtiv",
@@ -16226,7 +16159,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "tonlamarsen",
@@ -16260,7 +16193,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "TX45",
@@ -16294,41 +16227,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
-  },
-  {
-   "drug": "GB5121",
-   "ingredient": null,
-   "target": "BTK",
-   "indication": "Primary central nervous system lymphoma",
-   "company": "Gossamer Bio",
-   "source": "https://medcitynews.com/2023/04/patient-deaths-and-partial-hold-prompt-gossamer-bio-to-stop-work-on-cancer-drug/",
-   "area": "oncology",
-   "first_us_approval": null,
-   "years_since_approval": null,
-   "precedent": "ibrutinib (dog 2010, human 2013), acalabrutinib (2016, 2017) and rilzabrutinib (canine pemphigus 2021, human 2025) all reached dogs at or before human approval",
-   "safety_flags": [],
-   "evidence": {
-    "results": 111,
-    "studies": 34,
-    "corresponded": 93,
-    "did_not": 14,
-    "level_A": 5,
-    "weighted_concordance": 0.88
-   },
-   "indication_is_vague": false,
-   "human_stage": "Phase 2",
-   "human_status": "discontinued",
-   "competitors": [],
-   "routes": [
-    "shelved asset",
-    "white space"
-   ],
-   "route": "shelved asset",
-   "competitor_count": 0,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": null
   },
   {
    "drug": "Imbruvica",
@@ -16362,7 +16261,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Jaypirca",
@@ -16396,7 +16295,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Pirtobrutinib"
    ]
@@ -16433,41 +16332,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
-  },
-  {
-   "drug": "UKONIQ (umbralisib)",
-   "ingredient": "UMBRALISIB TOSYLATE",
-   "target": "PI3K delta and CK1 epsilon",
-   "indication": "Marginal zone and follicular lymphoma",
-   "company": "TG Therapeutics",
-   "source": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-approval-lymphoma-medicine-ukoniq-umbralisib-withdrawn-due-safety-concerns",
-   "area": "oncology",
-   "first_us_approval": 2021,
-   "years_since_approval": 5,
-   "precedent": null,
-   "safety_flags": [],
-   "evidence": {
-    "results": 111,
-    "studies": 34,
-    "corresponded": 93,
-    "did_not": 14,
-    "level_A": 5,
-    "weighted_concordance": 0.88
-   },
-   "indication_is_vague": false,
-   "human_stage": "Approved",
-   "human_status": "discontinued",
-   "competitors": [],
-   "routes": [
-    "shelved asset",
-    "white space"
-   ],
-   "route": "shelved asset",
-   "competitor_count": 0,
-   "in_veterinary_formulary": false,
-   "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "production or supply"
   },
   {
    "drug": "epacadostat",
@@ -16501,7 +16366,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "domvanalimab (AB154)",
@@ -16535,7 +16400,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "bempegaldesleukin (NKTR-214)",
@@ -16569,7 +16434,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "etirinotecan pegol (NKTR-102) (inferred)",
@@ -16603,7 +16468,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "entinostat",
@@ -16637,7 +16502,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "Validive",
@@ -16688,7 +16553,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "KB707",
@@ -16722,7 +16587,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "N-803 monotherapy",
@@ -16756,7 +16621,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "Lirafugratinib (RLY-4008)",
@@ -16790,7 +16655,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "TNG908",
@@ -16824,7 +16689,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "IDE705 (GSK101)",
@@ -16858,7 +16723,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "etrumadenant (AB928)",
@@ -16892,7 +16757,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "glembatumumab vedotin (CDX-011)",
@@ -16926,7 +16791,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "SD-101",
@@ -16960,7 +16825,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "solnerstotug (formerly SNS-101)",
@@ -16994,7 +16859,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "praluzatamab ravtansine (CX-2009)",
@@ -17028,7 +16893,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "pacmilimab (CX-072) (inferred)",
@@ -17079,7 +16944,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "CFT8634",
@@ -17113,7 +16978,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "XTX202",
@@ -17147,7 +17012,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "Abraxane",
@@ -17181,7 +17046,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Proleukin (aldesleukin)",
@@ -17215,7 +17080,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Inlexzo",
@@ -17249,7 +17114,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Kanjinti",
@@ -17283,7 +17148,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "LYMPHIR (denileukin diftitox-cxdl)",
@@ -17317,7 +17182,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Mvasi",
@@ -17351,7 +17216,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Alymsys"
    ]
@@ -17388,7 +17253,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Adcetris",
@@ -17422,7 +17287,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Cometriq (cabozantinib)",
@@ -17456,7 +17321,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Phesgo (pertuzumab/trastuzumab + rHuPH20)",
@@ -17490,7 +17355,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Cyramza",
@@ -17524,7 +17389,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Keytruda",
@@ -17575,7 +17440,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Keytruda Qlex",
@@ -17626,7 +17491,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Lynparza",
@@ -17660,7 +17525,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Opdivo",
@@ -17711,7 +17576,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Opdivo (nivolumab) post-sorafenib HCC monotherapy indication"
    ]
@@ -17765,7 +17630,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Opdivo Qvantig (nivolumab + rHuPH20)"
    ]
@@ -17819,7 +17684,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Lenvima",
@@ -17853,7 +17718,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Ibrance",
@@ -17887,7 +17752,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Cotellic (cobimetinib)",
@@ -17921,7 +17786,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Tecentriq Hybreza (atezolizumab + rHuPH20)",
@@ -17972,7 +17837,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Verzenio",
@@ -18006,7 +17871,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Braftovi/Mektovi",
@@ -18040,7 +17905,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Libtayo",
@@ -18091,7 +17956,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Talzenna",
@@ -18125,7 +17990,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Balversa",
@@ -18159,7 +18024,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "MONJUVI/MINJUVI (tafasitamab)",
@@ -18202,7 +18067,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Monjuvi/Minjuvi (tafasitamab-cxix) [partnered: MorphoSys/Incyte]"
    ]
@@ -18239,7 +18104,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Ojemda (tovorafenib)",
@@ -18273,7 +18138,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Inluriyo",
@@ -18307,7 +18172,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Tyvyt",
@@ -18358,7 +18223,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Yescarta",
@@ -18401,7 +18266,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Veppanu (vepdegestrant)",
@@ -18435,7 +18300,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "VEPPANU (vepdegestrant)",
     "VEPPANU (vepdegestrant)"
@@ -18482,7 +18347,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Amtagvi (lifileucel)",
@@ -18541,7 +18406,7 @@
    "competitor_count": 3,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Lifileucel"
    ]
@@ -18587,7 +18452,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Imlygic",
@@ -18621,7 +18486,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Padcev",
@@ -18655,7 +18520,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Trodelvy",
@@ -18689,7 +18554,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Tukysa (tucatinib)",
@@ -18723,7 +18588,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Imlunestrant",
@@ -18757,7 +18622,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Pivekimab Sunirine",
@@ -18791,7 +18656,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Intismeran autogene (V940)",
@@ -18834,7 +18699,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Favezelimab + pembrolizumab",
@@ -18868,7 +18733,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Quavonlimab + pembrolizumab",
@@ -18902,7 +18767,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Vibostolimab + pembrolizumab",
@@ -18936,7 +18801,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Atirmociclib (PF-07220060)",
@@ -18970,7 +18835,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Sasanlimab",
@@ -19021,7 +18886,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Disitamab vedotin",
@@ -19055,7 +18920,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Odronextamab",
@@ -19089,7 +18954,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Fianlimab",
@@ -19123,7 +18988,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRNA-4157",
@@ -19166,7 +19031,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Nivolumab + relatlimab SC (BMS)",
@@ -19217,7 +19082,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "TYRA-430",
@@ -19251,7 +19116,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "palazestrant (OP-1250)",
@@ -19285,7 +19150,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "bel-sar (AU-011)",
@@ -19319,7 +19184,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "ronde-cel (LYL314)",
@@ -19353,7 +19218,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Lasofoxifene",
@@ -19387,7 +19252,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Budigalimab",
@@ -19438,7 +19303,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Ladiratuzumab vedotin (MK-6440)",
@@ -19472,7 +19337,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRNA-4359",
@@ -19515,7 +19380,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Ivonescimab (SMT112)",
@@ -19542,14 +19407,6 @@
    "human_status": "active",
    "competitors": [
     {
-     "drug": "eBAT (investigational treatment)",
-     "company": "Anivive Lifesciences",
-     "indication": "Hemangiosarcoma",
-     "species": "dog",
-     "phase": "",
-     "source": "https://anivive.com/treatments"
-    },
-    {
      "drug": "VGS-001 + VGS-002 (CHECKMATE-K9)",
      "company": "Vetigenics",
      "indication": "cancer (combination checkpoint blockade)",
@@ -19564,6 +19421,14 @@
      "species": "dog",
      "phase": "Phase 1",
      "source": "https://www.biospace.com/press-releases/vetigenics-secures-6-million-seed-financing-sees-meaningful-clinical-progress"
+    },
+    {
+     "drug": "eBAT (investigational treatment)",
+     "company": "Anivive Lifesciences",
+     "indication": "Hemangiosarcoma",
+     "species": "dog",
+     "phase": "",
+     "source": "https://anivive.com/treatments"
     }
    ],
    "routes": [
@@ -19574,7 +19439,7 @@
    "competitor_count": 3,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "LNTH-2403",
@@ -19608,7 +19473,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Cretostimogene grenadenorepvec",
@@ -19642,7 +19507,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Cretostimogene grenadenorepvec + pembrolizumab",
@@ -19693,7 +19558,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "IOV-4001",
@@ -19744,7 +19609,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "IOV-3001",
@@ -19787,7 +19652,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Darovasertib",
@@ -19821,7 +19686,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "IDE161",
@@ -19855,7 +19720,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "IDE397",
@@ -19889,7 +19754,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "PRGN-2009",
@@ -19923,7 +19788,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Safusidenib",
@@ -19957,7 +19822,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "ozekibart (INBRX-109)",
@@ -19991,7 +19856,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "olutasidenib + temozolomide",
@@ -20025,7 +19890,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "NEO100",
@@ -20059,7 +19924,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "OST-HER2",
@@ -20102,7 +19967,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Fasinumab",
@@ -20169,7 +20034,7 @@
    "competitor_count": 4,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "commercial or strategic"
   },
   {
    "drug": "AXS-02 (disodium zoledronate)",
@@ -20203,7 +20068,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "NKTR-181 (loxicodegol)",
@@ -20245,7 +20110,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "VX-210",
@@ -20279,7 +20144,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "axomadol",
@@ -20313,7 +20178,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "efficacy failure"
   },
   {
    "drug": "zunsemetinib (ATI-450) (immunoinflammatory program)",
@@ -20347,7 +20212,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "ZILRETTA (triamcinolone acetonide extended-release injectable suspension)",
@@ -20381,7 +20246,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "CELEBREX (celecoxib)",
@@ -20585,7 +20450,7 @@
    "competitor_count": 20,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Orencia",
@@ -20619,7 +20484,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Kevzara",
@@ -20653,7 +20518,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Sarilumab"
    ]
@@ -20707,7 +20572,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "LISRAYA (brepocitinib)",
@@ -20758,7 +20623,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Arcoxia (etoricoxib)",
@@ -20962,7 +20827,7 @@
    "competitor_count": 20,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Eloralintide",
@@ -20996,7 +20861,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Ixekizumab + Tirzepatide",
@@ -21039,7 +20904,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "BHV-1300",
@@ -21073,7 +20938,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "ulviprubart (ABC008)",
@@ -21107,7 +20972,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "JNJ-4804",
@@ -21141,7 +21006,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "MK-6024",
@@ -21175,7 +21040,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "VK5211",
@@ -21209,7 +21074,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "LTG-321",
@@ -21292,7 +21157,7 @@
    "competitor_count": 6,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "UX016",
@@ -21326,7 +21191,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "rosnilimab",
@@ -21377,7 +21242,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "PCRX-201 (enekinragene inzadenovec)",
@@ -21411,7 +21276,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "rese-cel",
@@ -21454,7 +21319,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Vilamakitug",
@@ -21488,7 +21353,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "REGN1908-1909",
@@ -21522,7 +21387,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": "not stated in the source list"
+   "discontinuation_signal": "not legible from the source"
   },
   {
    "drug": "Diprospan (betamethasone)",
@@ -21556,7 +21421,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": true,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Remicade",
@@ -21590,7 +21455,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "FLIXABI (infliximab biosimilar)"
    ]
@@ -21627,7 +21492,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "Enbrel",
     "BENEPALI (etanercept biosimilar)"
@@ -21665,7 +21530,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null,
+   "discontinuation_signal": null,
    "also_marketed_as": [
     "IMRALDI (adalimumab biosimilar)"
    ]
@@ -21702,7 +21567,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Xeljanz",
@@ -21753,7 +21618,7 @@
    "competitor_count": 2,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Dupixent",
@@ -21787,7 +21652,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRESVIA",
@@ -21830,7 +21695,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "CpG 1018 adjuvant",
@@ -21864,7 +21729,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Cortrophin Gel",
@@ -21898,7 +21763,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mezagitamab",
@@ -21932,7 +21797,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "KSI-101",
@@ -21975,7 +21840,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "Clazakizumab",
@@ -22009,7 +21874,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "LY5625573 (NLRP3 Inhibitor VTX3232)",
@@ -22043,7 +21908,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRNA-1345",
@@ -22086,7 +21951,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRNA-1647",
@@ -22129,7 +21994,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRNA-1195",
@@ -22172,7 +22037,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRNA-1975",
@@ -22215,7 +22080,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "mRNA-1982",
@@ -22258,7 +22123,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "PTC844",
@@ -22292,7 +22157,7 @@
    "competitor_count": 0,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": false,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   },
   {
    "drug": "in vivo CAR-T product candidate (CD19 eRNA, IND-enabling)",
@@ -22335,7 +22200,7 @@
    "competitor_count": 1,
    "in_veterinary_formulary": false,
    "not_a_licensing_shape": true,
-   "discontinuation_reason": null
+   "discontinuation_signal": null
   }
  ]
 }
