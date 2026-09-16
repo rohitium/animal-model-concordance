@@ -19,7 +19,7 @@ Each cell: highest evidence level present (A outcome > B toxicity/safety > C bio
 | metabolic-endocrine |  |  |  |  |  | A·11 |  |  | A·1 |  | A·5 |  |  | C·1 |  | A·1 |  | C·1 |  |
 | molecular-biology |  |  |  |  |  | C·1 |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | multiple |  |  |  |  |  | A·1 |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| neurology |  |  | A·4 |  | C·1 | A·53 | C·1 |  | C·2 |  | A·16 | C·3 |  | C·2 |  | A·5 |  | C·1 | A·2 |
+| neurology |  |  | A·4 |  | C·1 | A·53 | C·1 |  | C·2 |  | A·17 | C·3 |  | C·2 |  | A·5 |  | C·1 | A·2 |
 | new |  |  |  |  |  | A·6 |  |  |  |  | C·1 |  |  |  |  |  |  |  | C·1 |
 | oncology |  | C·1 | A·15 |  |  | A·67 |  |  | A·2 | C·2 | A·30 | B·1 | A·1 | C·1 |  | C·2 |  |  | A·3 |
 | ophthalmology |  |  | C·1 |  |  | A·3 |  |  |  | C·3 | C·1 | C·1 |  |  |  |  |  |  |  |

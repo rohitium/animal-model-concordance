@@ -1,9 +1,9 @@
 # Page-15 replacement: draft rows
 
-Built 2026-09-15 from 1518 final results in 418 studies.
+Built 2026-09-15 from 1520 final results in 419 studies.
 Values are grouped only where the unit and metric match; spreads are reported, never a single blended number.
 
-## Efficacy / intervention outcomes: 161 studies, 445 results
+## Efficacy / intervention outcomes: 162 studies, 447 results
 
 | metric | unit | species | studies | results | median | range |
 |---|---|---|---|---|---|---|
@@ -116,7 +116,7 @@ Values are grouped only where the unit and metric match; spreads are reported, n
 | npv | percent | mouse | 1 | 1 | 91 | 91–91 |
 | correct prediction | percent | mouse | 1 | 2 | 93.5 | 90–97 |
 
-Direction of results (as judged per result): {'mixed': 28, 'animal-did-not-correspond': 124, 'animal-corresponded': 293}
+Direction of results (as judged per result): {'mixed': 28, 'animal-did-not-correspond': 125, 'animal-corresponded': 294}
 
 ## Toxicology and safety: 20 studies, 107 results
 

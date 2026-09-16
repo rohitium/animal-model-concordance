@@ -125350,6 +125350,64 @@
      "text_layer": true
     },
     "located": true
+   },
+   {
+    "id": "17300945-8",
+    "statement": "Therapeutic success in the SOD1 mouse model of ALS has not translated into effective therapy for human ALS.",
+    "metric": "qualitative translation outcome",
+    "value": null,
+    "unit": "none",
+    "ci_low": null,
+    "ci_high": null,
+    "numerator": null,
+    "denominator": null,
+    "denominator_counts": null,
+    "species": "mouse",
+    "species_as_reported": "SOD1 mouse and human ALS",
+    "model_type": "engineered",
+    "disease_area": "neurology",
+    "level": "A",
+    "direction": "animal-did-not-correspond",
+    "quote": "Therapeutic success in the superoxide dismutase (SOD1) mouse model of amyotrophic lateral sclerosis (ALS) has not translated into effective therapy for human ALS, calling into question the utility of such preclinical data for identifying therapeutic agents that are worthy of further study in humans.",
+    "pdf_page": 1,
+    "extracted_by": "manual: reviewing agent read the PDF (amendment A12)",
+    "locate": {
+     "pages_all_values": [],
+     "best_quote_page": 1,
+     "quote_score": 0.902,
+     "n_pages": 13,
+     "text_layer": true
+    },
+    "located": true
+   },
+   {
+    "id": "17300945-9",
+    "statement": "The pooled survival-interval gain in SOD1 mice (WMD 3.3 days, a 10% prolongation) translates to a 3-4 month prolongation in humans, the same order of magnitude as riluzole achieves in sporadic ALS.",
+    "metric": "mouse effect size translated to human scale",
+    "value": null,
+    "unit": "none",
+    "ci_low": null,
+    "ci_high": null,
+    "numerator": null,
+    "denominator": null,
+    "denominator_counts": null,
+    "species": "mouse",
+    "species_as_reported": "SOD1 mouse and humans",
+    "model_type": "engineered",
+    "disease_area": "neurology",
+    "level": "A",
+    "direction": "animal-corresponded",
+    "quote": "Finally, the overall WMD of 3.3 days in survival interval in the SOD1 mouse represents a 10% prolongation in the duration of disease, which translates into a 3-4 month prolongation of survival in humans, based on the average disease duration of 3 years. Such a delay in the rate of progression of the disease is of the same order of magnitude as that seen with Riluzole in sporadic ALS",
+    "pdf_page": 11,
+    "extracted_by": "manual: reviewing agent read the PDF (amendment A12)",
+    "locate": {
+     "pages_all_values": [],
+     "best_quote_page": 11,
+     "quote_score": 0.776,
+     "n_pages": 13,
+     "text_layer": true
+    },
+    "located": true
    }
   ]
  },

@@ -419,3 +419,37 @@ a whole - supplied full texts are disproportionately the evidence the review is 
 is an argument for supplying more.
 
 Corpus after incorporation: 1,518 results in 418 studies.
+
+## A12 — Manual extraction where the automated pass missed the comparison (2026-09-15)
+
+17300945 ("Lost in translation: treatment trials in the SOD1 mouse and in human ALS") was dropped
+entirely under A11 because all eight extracted results were mouse-side pooled effect sizes and no
+extracted quote carried a human outcome. That was a failure of the extraction, not of the paper:
+it is a random-effects meta-analysis of treatment trials in the most-used ALS model, and its subject
+is precisely the animal-to-human question this review exists to measure.
+
+Two results were therefore extracted by hand from the held full text and recorded with their
+verbatim sentences and pages: the abstract's finding that therapeutic success in the SOD1 mouse has
+not translated into effective therapy for human ALS (page 1), and the translation of the pooled
+mouse survival-interval gain onto the human scale - a 10% prolongation of disease duration, or 3-4
+months, the same order of magnitude as riluzole achieves in sporadic ALS (page 11). Mechanical
+location against the PDF text layer scores 0.90 and 0.78 respectively, so the quotes are where they
+are said to be. Items carry `extracted_by: manual`.
+
+A third candidate on page 10, that the benefits of riluzole in the SOD1 mouse are comparable to
+those seen in humans, was not taken: the paper attributes it to Gurney 1997 and immediately notes
+there are no direct data supporting comparisons of that sort, so it is a quoted figure, not this
+paper's own result.
+
+**The rule this establishes.** Where the automated extraction captured only single-species values
+from a paper whose subject is the comparison, the reviewing agent may extract directly from the held
+full text, recording the verbatim quote and page and marking the item as manually extracted. This is
+narrower than it sounds and more dangerous than adjudication: it lets the reviewer add evidence
+rather than only remove it. It is used only on studies already screened in, only from full texts we
+hold, and every such item is marked so it can be audited or removed as a class.
+
+**What it implies.** The same failure mode - parallel-design papers split into single-arm values
+with the comparison left unextracted - was visible across the supplied batch (vitamin C, lithium,
+hyperventilation, C. novyi-NT) and was handled there by recasting. A systematic re-check of studies
+that contributed zero kept results is warranted; there may be other papers dropped for the
+extractor's reasons rather than their own.

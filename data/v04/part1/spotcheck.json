@@ -35,22 +35,22 @@
  {
   "n": 2,
   "sample": "A",
-  "id": "28945830-3",
+  "id": "28945830-1",
   "pmid": "28945830",
   "title": "Patient-derived xenografts effectively capture responses to oncology therapy in a heterogeneous cohort of patients with solid tumors",
   "year": 2017,
   "journal": "Annals of Oncology",
   "adjudicator": "hand",
-  "statement": "The positive predictive value (PPV) for PDX drug screens was 85% (80/94).",
-  "value": 85,
+  "statement": "The sensitivity for the PDX drug screens was 96% (80/83).",
+  "value": 96,
   "unit": "percent",
   "numerator": 80,
-  "denominator": 94,
+  "denominator": 83,
   "species": "mouse",
   "level": "A",
   "direction": "animal-corresponded",
   "disease_area": "oncology",
-  "quote": "This resulted in positive and negative predictive values (PPVs and NPVs) of 85% and 91%, respectively. ... Table 1. Values and confidence intervals for parameters of analytical and clinical accuracy for PDX model drug screening ... Overall ... PPV 85% (80/94) 76%-91%",
+  "quote": "Our analysis revealed a sensitivity for the PDX drug screens of 96%, with a lower 95% confidence interval (CI) of 89% (which meets the acceptance criteria of 80%), and specificity of 70%, with a lower 95% CI of 54% (Table 1, top panel).",
   "pdf_page": 7,
   "pdf_local": "data/raw/fulltext/28945830.pdf",
   "study_page": "study/28945830.html",
@@ -266,6 +266,39 @@
  {
   "n": 9,
   "sample": "A",
+  "id": "15120036-5",
+  "pmid": "15120036",
+  "title": "Clonogenic assay with established human tumour xenografts",
+  "year": 2004,
+  "journal": "European Journal of Cancer",
+  "adjudicator": "hand",
+  "statement": "97% of 80 comparisons between clinical response of tumors and their explants established in nude mice and treated in vivo showed correct prediction for tumor resistance.",
+  "value": 97,
+  "unit": "percent",
+  "numerator": null,
+  "denominator": 80,
+  "species": "mouse",
+  "level": "A",
+  "direction": "animal-corresponded",
+  "disease_area": "oncology",
+  "quote": "Of 80 comparisons performed, we observed a correct prediction for tumour resistance in 97% and for tumour sensitivity in 90%.",
+  "pdf_page": 1,
+  "pdf_local": "data/raw/fulltext/15120036.pdf",
+  "study_page": "study/15120036.html",
+  "links": [
+   [
+    "PubMed",
+    "https://pubmed.ncbi.nlm.nih.gov/15120036/"
+   ],
+   [
+    "DOI",
+    "https://doi.org/10.1016/j.ejca.2004.01.009"
+   ]
+  ]
+ },
+ {
+  "n": 10,
+  "sample": "A",
   "id": "31945134-4",
   "pmid": "31945134",
   "title": "Tripartite factors leading to molecular divergence between human and murine smooth muscle",
@@ -297,24 +330,24 @@
   ]
  },
  {
-  "n": 10,
+  "n": 11,
   "sample": "A",
-  "id": "28945830-7",
+  "id": "28945830-5",
   "pmid": "28945830",
   "title": "Patient-derived xenografts effectively capture responses to oncology therapy in a heterogeneous cohort of patients with solid tumors",
   "year": 2017,
   "journal": "Annals of Oncology",
   "adjudicator": "hand",
-  "statement": "When treatment followed other therapies received after tumor collection, the sensitivity of PDX drug screens was 96% (51/53).",
-  "value": 96,
+  "statement": "When the first systemic therapy was received after tumor collection, the sensitivity of PDX drug screens was 97% (29/30).",
+  "value": 97,
   "unit": "percent",
-  "numerator": 51,
-  "denominator": 53,
+  "numerator": 29,
+  "denominator": 30,
   "species": "mouse",
   "level": "A",
   "direction": "animal-corresponded",
   "disease_area": "oncology",
-  "quote": "Table 1. Values and confidence intervals for parameters of analytical and clinical accuracy for PDX model drug screening ... Treatment follows other therapies received after tumor collection ... Sensitivity 96% (51/53) 86%-99%",
+  "quote": "Table 1. Values and confidence intervals for parameters of analytical and clinical accuracy for PDX model drug screening ... Treatment is first therapy received after tumor collection ... Sensitivity 97% (29/30) 81%-99%",
   "pdf_page": 8,
   "pdf_local": "data/raw/fulltext/28945830.pdf",
   "study_page": "study/28945830.html",
@@ -330,7 +363,7 @@
   ]
  },
  {
-  "n": 11,
+  "n": 12,
   "sample": "A",
   "id": "40691154-0",
   "pmid": "40691154",
@@ -363,7 +396,7 @@
   ]
  },
  {
-  "n": 12,
+  "n": 13,
   "sample": "A",
   "id": "29858598-6",
   "pmid": "29858598",
@@ -396,7 +429,7 @@
   ]
  },
  {
-  "n": 13,
+  "n": 14,
   "sample": "A",
   "id": "37953224-7",
   "pmid": "37953224",
@@ -429,7 +462,7 @@
   ]
  },
  {
-  "n": 14,
+  "n": 15,
   "sample": "A",
   "id": "41822479-5",
   "pmid": "41822479",
@@ -462,7 +495,7 @@
   ]
  },
  {
-  "n": 15,
+  "n": 16,
   "sample": "A",
   "id": "24886351-3",
   "pmid": "24886351",
@@ -495,7 +528,7 @@
   ]
  },
  {
-  "n": 16,
+  "n": 17,
   "sample": "A",
   "id": "38168850-1",
   "pmid": "38168850",
@@ -528,7 +561,7 @@
   ]
  },
  {
-  "n": 17,
+  "n": 18,
   "sample": "A",
   "id": "41125606-0",
   "pmid": "41125606",
@@ -561,7 +594,7 @@
   ]
  },
  {
-  "n": 18,
+  "n": 19,
   "sample": "A",
   "id": "30008848-5",
   "pmid": "30008848",
@@ -594,7 +627,7 @@
   ]
  },
  {
-  "n": 19,
+  "n": 20,
   "sample": "A",
   "id": "34558834-6",
   "pmid": "34558834",
@@ -627,7 +660,7 @@
   ]
  },
  {
-  "n": 20,
+  "n": 21,
   "sample": "A",
   "id": "32982716-0",
   "pmid": "32982716",
@@ -660,7 +693,7 @@
   ]
  },
  {
-  "n": 21,
+  "n": 22,
   "sample": "A",
   "id": "42581230-1",
   "pmid": "42581230",
@@ -693,7 +726,7 @@
   ]
  },
  {
-  "n": 22,
+  "n": 23,
   "sample": "A",
   "id": "24220145-7",
   "pmid": "24220145",
@@ -726,7 +759,7 @@
   ]
  },
  {
-  "n": 23,
+  "n": 24,
   "sample": "A",
   "id": "31381180-2",
   "pmid": "31381180",
@@ -759,7 +792,7 @@
   ]
  },
  {
-  "n": 24,
+  "n": 25,
   "sample": "A",
   "id": "28149283-0",
   "pmid": "28149283",
@@ -792,7 +825,7 @@
   ]
  },
  {
-  "n": 25,
+  "n": 26,
   "sample": "A",
   "id": "22355543-5",
   "pmid": "22355543",
@@ -825,7 +858,7 @@
   ]
  },
  {
-  "n": 26,
+  "n": 27,
   "sample": "A",
   "id": "25409824-6",
   "pmid": "25409824",
@@ -858,7 +891,7 @@
   ]
  },
  {
-  "n": 27,
+  "n": 28,
   "sample": "A",
   "id": "37208698-0",
   "pmid": "37208698",
@@ -891,7 +924,7 @@
   ]
  },
  {
-  "n": 28,
+  "n": 29,
   "sample": "A",
   "id": "31921858-5",
   "pmid": "31921858",
@@ -924,7 +957,7 @@
   ]
  },
  {
-  "n": 29,
+  "n": 30,
   "sample": "A",
   "id": "28935874-6",
   "pmid": "28935874",
@@ -953,39 +986,6 @@
    [
     "DOI",
     "https://doi.org/10.1038/s41598-017-11812-x"
-   ]
-  ]
- },
- {
-  "n": 30,
-  "sample": "A",
-  "id": "36345939-7",
-  "pmid": "36345939",
-  "title": "Distinct pathogenic roles for resident and monocyte-derived macrophages in lupus nephritis",
-  "year": 2022,
-  "journal": "JCI Insight",
-  "adjudicator": "hand",
-  "statement": "All top 10 MNP1.4 TF regulons were increased in human TrMacs in lupus nephritis, including STAT1.",
-  "value": null,
-  "unit": "none",
-  "numerator": null,
-  "denominator": null,
-  "species": "mouse",
-  "level": "C",
-  "direction": "animal-corresponded",
-  "disease_area": "immunology-inflammation",
-  "quote": "All the top 10 MNP1.4 TF regulons were increased in human TrMacs in lupus nephritis, including STAT1 (Supplemental Figure 5A), and many of the top 10 MNP2.3 TF regulons were increased in MoMacs (Supplemental Figure 5B).",
-  "pdf_page": 9,
-  "pdf_local": "data/raw/fulltext/36345939.pdf",
-  "study_page": "study/36345939.html",
-  "links": [
-   [
-    "PubMed",
-    "https://pubmed.ncbi.nlm.nih.gov/36345939/"
-   ],
-   [
-    "DOI",
-    "https://doi.org/10.1172/jci.insight.159751"
    ]
   ]
  },

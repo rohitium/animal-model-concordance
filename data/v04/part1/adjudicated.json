@@ -74030,6 +74030,44 @@
      "pdf_page": 4
     },
     "rationale": "Mouse-only minocycline survival effect."
+   },
+   "17300945-8": {
+    "id": "17300945-8",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "Therapeutic success in the SOD1 mouse model of ALS has not translated into effective therapy for human ALS.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A",
+     "direction": "animal-did-not-correspond",
+     "pdf_page": 1
+    },
+    "rationale": "The paper's central finding, stated in its own abstract: success in the SOD1 mouse did not translate to human ALS. Manually extracted after the automated pass captured only mouse-side effect sizes."
+   },
+   "17300945-9": {
+    "id": "17300945-9",
+    "decision": "keep",
+    "drop_reason": null,
+    "corrected": {
+     "statement": "The pooled survival-interval gain in SOD1 mice (WMD 3.3 days, a 10% prolongation) translates to a 3-4 month prolongation in humans, the same order of magnitude as riluzole achieves in sporadic ALS.",
+     "value": null,
+     "unit": "none",
+     "numerator": null,
+     "denominator": null,
+     "species": "mouse",
+     "model_type": "engineered",
+     "disease_area": "neurology",
+     "level": "A",
+     "direction": "animal-corresponded",
+     "pdf_page": 11
+    },
+    "rationale": "Quantitative translation of the pooled mouse effect onto the human scale, benchmarked against riluzole's real effect in patients."
    }
   },
   "missing": [],

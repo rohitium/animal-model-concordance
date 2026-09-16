@@ -1082,11 +1082,11 @@
   "disease_area": "neurology",
   "species": "mouse",
   "level": "A-outcome-concordance",
-  "n_studies": 6,
-  "n_results": 17,
+  "n_studies": 7,
+  "n_results": 19,
   "direction": {
-   "animal-did-not-correspond": 3,
-   "animal-corresponded": 14
+   "animal-did-not-correspond": 4,
+   "animal-corresponded": 15
   }
  },
  {
