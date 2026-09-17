@@ -71,17 +71,29 @@ the most evidence and the weakest kind. Cardiovascular has the least and the bes
 
 {{cand_crowding}}
 
-## BTK: evidence without a program {#btk}
+## BTK: the dogs came first {#btk}
 
-| Molecule | Canine evidence | Human |
+| Molecule | Canine study | Human |
 |---|---|---|
-| Ibrutinib | Spontaneous canine B-cell lymphoma; one dose-finding study | Approved 2013 |
-| Acalabrutinib | n=20, 25% response, median progression-free survival **22.5 days** | Approved 2017 |
-| Rilzabrutinib | Canine pemphigus; one sentence in a review, no trial | Phase 3 **missed** |
+| Ibrutinib | 2010, pet dogs with spontaneous B-cell lymphoma | Approved 2013 |
+| Acalabrutinib | 2016, 20 dogs, 25% response, median PFS 22.5 days | Approved 2017 |
+| Rilzabrutinib | 2021, canine pemphigus | Phase 3 missed its endpoint |
 
-All three reached dogs at or before human approval. No companion-animal BTK program exists. But
-three weeks of progression-free survival is not a product. These are early signals that nobody has
-taken to a registrational trial.
+The paper that introduced ibrutinib ends on dogs: "PCI-32765 induced objective clinical responses in
+dogs with spontaneous B-cell non-Hodgkin lymphoma. These findings support Btk inhibition as a
+therapeutic approach for the treatment of human diseases associated with activation of the BCR
+pathway." Human trials had already started, so the dogs did not launch the program. They carried it.
+
+The acalabrutinib trial says so in its title: "Preclinical Evaluation of the Novel BTK Inhibitor
+Acalabrutinib in Canine Models of B-Cell Non-Hodgkin Lymphoma." It ran a year before human approval
+and reported doses, tolerability and efficacy "comparable with that observed in ibrutinib-treated
+DLBCL patients."
+
+These were pet dogs with naturally occurring lymphoma, in trials designed to inform human
+development. Untreated survival is about six weeks, which is why the model reads out fast.
+
+Three of this review's 22 veterinary-first pairs are BTK inhibitors. No companion-animal BTK product
+exists.
 
 ## Every candidate {#browse}
 

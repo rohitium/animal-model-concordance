@@ -738,3 +738,33 @@ PatentsView now requires a registered API key and EPO OPS requires OAuth credent
 recorded for the mechanisms where someone looked, and a mechanism with no patent entry has not been
 searched. Reading an empty patent list as "no intellectual property" would repeat exactly the error
 this amendment corrects.
+
+## A21 — The BTK dog studies were translational, not a missed veterinary product (2026-09-16)
+
+The program selection page described canine BTK work as "early signals that nobody has taken to a
+registrational trial" and dismissed acalabrutinib's 22.5-day median PFS with "three weeks of
+progression-free survival is not a product." Both readings judge the studies against a purpose they
+never had.
+
+The canine trials were built to inform human development, and the sources say so plainly. The paper
+introducing ibrutinib (PMID 20615965) ends: "PCI-32765 induced objective clinical responses in dogs
+with spontaneous B-cell non-Hodgkin lymphoma. These findings support Btk inhibition as a therapeutic
+approach for the treatment of human diseases associated with activation of the BCR pathway." The
+acalabrutinib study (PMID 27434128) is titled "Preclinical Evaluation of the Novel BTK Inhibitor
+Acalabrutinib in Canine Models of B-Cell Non-Hodgkin Lymphoma", ran in 2016 against a 2017 human
+approval, and concluded its results were "comparable with that observed in ibrutinib-treated DLBCL
+patients".
+
+This review's own pair attributes already recorded all three BTK pairs as
+human-approval-after-veterinary-evidence - ibrutinib 2010/2013, acalabrutinib 2016/2017,
+rilzabrutinib 2021/2025 - three of only 22 veterinary-first pairs in the corpus. The page contradicted
+its own data.
+
+Not overcorrected: the 2010 abstract states the molecule was "currently under clinical development in
+patients with B-cell non-Hodgkin lymphoma", so the canine work did not initiate the program. It
+supported and validated it. The claim on the page is that the dog studies were enabling translational
+evidence for the class, which is what the sources support, and no more.
+
+The wider lesson repeats A19 and A20: the page kept asking whether a veterinary PRODUCT exists, when
+the question that mattered was what the evidence was for. A study can be a success at its own purpose
+and still leave the veterinary market empty.
