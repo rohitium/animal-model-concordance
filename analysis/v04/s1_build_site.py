@@ -43,6 +43,11 @@ DIR_CLASS = {"animal-corresponded": "ok", "animal-did-not-correspond": "no", "mi
 
 SPECIES_FIX = {"guinea pig": "other-rodent", "cynomolgus monkey": "non-human-primate",
                "Macaca fascicularis": "non-human-primate", "sheep": "sheep-goat"}
+# "other-species" is not a category, it is whatever the extractor could not place. Where the
+# reported label names an animal the vocabulary does have, use it; what is left keeps the honest
+# catch-all name rather than being quietly assigned somewhere.
+OTHER_FIX = {r"guinea ?pig": "other-rodent", r"hamster|gerbil": "other-rodent",
+             r"ferret": "other-species", r"chicken|chick\b|avian": "other-species"}
 UNRESOLVED = {"grouped-label", "human"}
 
 # Recovering species from species_as_reported (amendment A7).
@@ -68,8 +73,22 @@ ANIMAL_WORDS = {
 ANIMAL_WORDS["mouse"] += r"|\bGEMMs?\b"
 
 
+# "guinea pig" contains "pig", so the pig-minipig pattern fires on it and a guinea-pig result is
+# read as a pig result too. Mask the compound term before any animal matching.
+GUINEA = re.compile(r"guinea[ -]?pigs?", re.I)
+
+
+def animals_named(text):
+    """Every animal from the frozen vocabulary named in this text."""
+    t = GUINEA.sub("GUINEAPIG", text or "")
+    found = {k for k, pat in ANIMAL_WORDS.items() if re.search(pat, t, re.I)}
+    if GUINEA.search(text or ""):
+        found.add("other-rodent")
+    return found
+
+
 def _one_animal(text):
-    found = {k for k, pat in ANIMAL_WORDS.items() if re.search(pat, text or "", re.I)}
+    found = animals_named(text)
     return found.pop() if len(found) == 1 else None
 
 
@@ -106,6 +125,12 @@ def sp_display(r):
         s = recovered_species(r)
         if not s:
             return "not resolved"
+    if s == "other-species":
+        rep = str(r.get("species_as_reported") or "")
+        for pat, to in OTHER_FIX.items():
+            if re.search(pat, rep, re.I):
+                s = to
+                break
     return species_column(SPECIES_FIX.get(s, s), r.get("model_type"))
 
 
@@ -113,6 +138,31 @@ def sp_display(r):
 # mapping afterwards produced a value that was no longer in AREA_ORDER, so the heatmap dropped the
 # row and its 10 studies without a word. A display map has to run before whatever matches on it.
 AREA_FIX = {"haematology": "hematology"}
+
+
+# 21 of the 419 studies are keyed by an OpenAlex work id rather than a PubMed id, because that is
+# where retrieval found them. Building "pubmed.ncbi.nlm.nih.gov/<id>/" from those produced 21 study
+# pages linking to a record that does not exist. Route each id to the registry it belongs to.
+OPENALEX = {}
+
+
+def record_link(pid):
+    """The registry a study id actually belongs to.
+
+    21 studies are keyed by an OpenAlex work id, and building a PubMed URL from those linked to a
+    record that does not exist. Resolved through the OpenAlex API (part1/openalex_ids.json): none
+    carry a PubMed id, 20 of 21 carry a DOI, so those link to doi.org. openalex.org itself is not
+    used as a destination - it serves a bot-protection challenge to automated clients.
+    """
+    pid = str(pid)
+    if pid.isdigit():
+        return f"https://pubmed.ncbi.nlm.nih.gov/{pid}/", A("study", "pubmed", "PubMed")
+    rec = OPENALEX.get(pid) or {}
+    if rec.get("pmid"):
+        return f"https://pubmed.ncbi.nlm.nih.gov/{rec['pmid']}/", A("study", "pubmed", "PubMed")
+    if rec.get("doi"):
+        return f"https://doi.org/{rec['doi']}", A("study", "doi", "DOI")
+    return f"https://api.openalex.org/works/{pid}", A("study", "openalex", "OpenAlex record")
 
 
 def area_display(r):
@@ -1172,8 +1222,9 @@ noun:"{noun}",searchKeys:{json.dumps(search_keys)},row:{row_js}}});}});</script>
 
 
 def main():
-    global ART
+    global ART, OPENALEX
     ART = load_artifacts()
+    OPENALEX = (load("part1/openalex_ids.json") or {}).get("works") or {}
     fin = [r for r in load("part1/final_results.json") if r["status"] == "final"]
     # Amendment A10: model_type decides the companion/laboratory column, and the extractor left it
     # unfilled on dog and cat results across 20 studies, defaulting them all to laboratory. Each
@@ -1327,13 +1378,14 @@ def main():
                      "sp": sp_display(r), "ar": area_display(r),
                      "dr": dir_label(r.get("direction")),
                      "dc": DIR_CLASS.get(r.get("direction"), ""), "v": val,
+                     "ru": record_link(r["pmid"])[0], "rl": record_link(r["pmid"])[1],
                      "vn": r["value"] if isinstance(r.get("value"), (int, float)) else None})
     row_js = ("""function(r){return '<tr><td><span class="stmt">'+esc(r.st)+'</span></td>'
 +'<td>'+r.lv+'</td><td>'+esc(r.sp)+'</td><td>'+esc(r.ar)+'</td>'
 +'<td><span class="tag '+r.dc+'">'+r.dr+'</span></td>'
 +'<td class="num">'+esc(r.v||'')+'</td>'
 +'<td><a href="study/'+encodeURIComponent(r.pm)+'.html">'+esc(r.ti)+'</a><br><span class="src">'
-+(r.y||'')+' · <a href="https://pubmed.ncbi.nlm.nih.gov/'+encodeURIComponent(r.pm)+'/">PubMed</a>'
++(r.y||'')+' · <a href="'+esc(r.ru)+'">'+esc(r.rl)+'</a>'
 +'</span></td></tr>';}""")
     cols = [{"key": "st", "label": A("results_table", "col_st", "Finding")},
             {"key": "lv", "label": A("results_table", "col_lv", "Level")},
@@ -1587,7 +1639,7 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
         header = (f'<p class="dek">Study</p><h1>{e(r0.get("title") or pm)}</h1>'
                   f'<p class="small">{e(r0.get("year"))} · {e(r0.get("design"))} · peer reviewed: '
                   f'{e(r0.get("peer_reviewed"))} · record {e(pm)} · '
-                  f'<a href="https://pubmed.ncbi.nlm.nih.gov/{e(pm)}/">PubMed</a></p>')
+                  f'<a href="{e(record_link(pm)[0])}">{e(record_link(pm)[1])}</a></p>')
         rblocks = []
         for r in rs:
             meta = [dirtag(r["direction"]), f'level {e((r["level"] or "?")[:1])}',

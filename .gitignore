@@ -36,6 +36,7 @@ data/v04/**
 !data/v04/part1/spotcheck.md
 !data/v04/part1/spotcheck.json
 !data/v04/part1/model_type_overrides.json
+!data/v04/part1/openalex_ids.json
 !data/v04/retrieval/fulltext_status.json
 !data/v04/part2/
 !data/v04/part2/pairs.json
@@ -52,6 +53,7 @@ data/v04/**
 !data/v04/part2/summary.json
 !data/v04/part2/summary.md
 !data/v04/part2/summary_v2.md
+!data/v04/part2/strata.json
 !data/v04/part2/pairs_report.md
 !data/v04/part2/q4_report.md
 !data/v04/part2/q4_summary.json

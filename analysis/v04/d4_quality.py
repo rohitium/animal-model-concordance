@@ -135,6 +135,16 @@ def main():
           f"Treatment types among classified pairs: {dict(collections.Counter(p['_type'] for p in cl.values()))}", "",
           "**Not yet produced:** Q4 (within-drug comparison with laboratory models, protocol §7.6); F1 cannot be stated yet."]
     open(os.path.join(V04, "part2", "summary_v2.md"), "w").write("\n".join(L) + "\n")
+    # The site renders these strata rather than re-deriving them. part2/summary.json is d3's
+    # pre-quality-pass run and disagrees with this one, so the post-pass numbers are emitted here
+    # by the same code that writes the report (A24).
+    save({"built": today(),
+          "definition": "Concordance = concordant / (concordant + discordant), exact 95% CI. "
+                        "Mixed and indeterminate are counted, never dropped.",
+          "strata": [{"stratum": k, **t} for k, t in T.items()],
+          "reliability": {"judge": SECOND_JUDGE, "pairs": len(agree_pairs),
+                          "agreement": po, "kappa": kap} if agree_pairs else None},
+         "part2/strata.json")
     save({k: {"type": p["_type"], "timing": p["_timing"], "vet_year": p["_vet_year"], "approval_year": p["_approval_year"],
               "intent": p["_intent"]} for k, p in cl.items()}, "part2/pair_attributes.json")
     print("\n".join(L))

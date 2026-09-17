@@ -181,3 +181,9 @@ reader :: Laboratory side read from abstracts by
 
 rows :: Rows
 all :: All
+
+## study
+
+pubmed :: PubMed
+doi :: DOI
+openalex :: OpenAlex record

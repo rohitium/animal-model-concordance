@@ -1,0 +1,120 @@
+{
+ "_README": [
+  "Amendment A23. 21 of the 419 studies are keyed by an OpenAlex work id rather than a PubMed id,",
+  "because that is where retrieval found them. The site built pubmed.ncbi.nlm.nih.gov/<id>/ from",
+  "those ids unconditionally, so 21 study pages linked to a PubMed record that does not exist.",
+  "",
+  "Resolved through the OpenAlex API: 0 of the 21 have a PubMed id, 20 have a DOI. Links therefore",
+  "go to doi.org, which resolves. openalex.org itself is not used: it sits behind bot protection and",
+  "serves a challenge page to automated clients, so it is not a dependable destination for a reader.",
+  "",
+  "Committed as data so the site build needs no network access."
+ ],
+ "works": {
+  "W2341969153": {
+   "doi": "10.5897/ajpp2015.4517",
+   "pmid": "",
+   "title": "Efficacy and effectiveness of drug treatments in amyotrophic lateral s"
+  },
+  "W2345531363": {
+   "doi": "10.1101/051979",
+   "pmid": "",
+   "title": "Refined biomimetic model of chronic pain is healed with erythropoietin"
+  },
+  "W2530211929": {
+   "doi": "10.12688/f1000research.9544.2",
+   "pmid": "",
+   "title": "The refined biomimetic NeuroDigm GEL\u2122 model of neuropathic pain in a m"
+  },
+  "W2680258457": {
+   "doi": "10.2491/jjsth.26.633",
+   "pmid": "",
+   "title": "Genomic responses in mouse models greatly mimic human inflammatory dis"
+  },
+  "W2767107740": {
+   "doi": "10.1101/196337",
+   "pmid": "",
+   "title": "Somatic inactivating PTPRJ mutations and dysregulated pathways identif"
+  },
+  "W2808215319": {
+   "doi": "10.1101/346122",
+   "pmid": "",
+   "title": "A framework for translation of genomic responses from mouse models to "
+  },
+  "W2883526453": {
+   "doi": "10.1101/376962",
+   "pmid": "",
+   "title": "Transdiagnostic characterization of neuropsychiatric disorders by hype"
+  },
+  "W2887131306": {
+   "doi": "10.1101/382366",
+   "pmid": "",
+   "title": "A standardised framework to identify optimal animal models for efficac"
+  },
+  "W2894945506": {
+   "doi": "",
+   "pmid": "",
+   "title": "Identifying New Therapeutics in Experimental Subarachnoid Hemorrhage"
+  },
+  "W2916001696": {
+   "doi": "10.1101/558882",
+   "pmid": "",
+   "title": "Discordant gene responses to radiation in humans and mice: hematopoiet"
+  },
+  "W2938335835": {
+   "doi": "10.1163/9789004391192_018",
+   "pmid": "",
+   "title": "The Scientific Problems with Using Non-Human Animals to Predict Human "
+  },
+  "W2950502635": {
+   "doi": "10.1101/165431",
+   "pmid": "",
+   "title": "Comparative transcriptome profiling of the human and mouse dorsal root"
+  },
+  "W2951746858": {
+   "doi": "10.1101/676791",
+   "pmid": "",
+   "title": "A New Mathematical Model for Tumor Growth, Reduction and Metastasis, V"
+  },
+  "W3214547677": {
+   "doi": "10.48550/arxiv.2111.07348",
+   "pmid": "",
+   "title": "Invariant Risk Minimisation for Cross-Organism Inference: Substituting"
+  },
+  "W4241628985": {
+   "doi": "10.2741/e470",
+   "pmid": "",
+   "title": "Inflammatory bowel disease in veterinary medicine"
+  },
+  "W4280597566": {
+   "doi": "10.21203/rs.3.rs-1634088/v1",
+   "pmid": "",
+   "title": "Ocular Morphologic Traits in the American Cocker Spaniel May Confer Pr"
+  },
+  "W4283761033": {
+   "doi": "10.35616/jemsm.2022.00010",
+   "pmid": "",
+   "title": "The role of passive leg raise during cardiopulmonary resuscitation in "
+  },
+  "W4320481592": {
+   "doi": "10.33540/1605",
+   "pmid": "",
+   "title": "Selection of animal models for drug efficacy"
+  },
+  "W4385839275": {
+   "doi": "10.1186/s41231-023-00151-x",
+   "pmid": "",
+   "title": "Meta-analysis of preclinical measures of efficacy in immune checkpoint"
+  },
+  "W4412701211": {
+   "doi": "10.1101/2025.07.25.666577",
+   "pmid": "",
+   "title": "Identification, Purification and Characterization of Mast Cells in Mur"
+  },
+  "W4416765314": {
+   "doi": "10.1101/2025.11.21.25340585",
+   "pmid": "",
+   "title": "The efficacy of candidate HIV vaccines in non-human primates and human"
+  }
+ }
+}

@@ -1,6 +1,6 @@
 # Dog and cat drug pairs: summary v2 (after quality pass)
 
-Built 2026-09-14 by `analysis/v04/d4_quality.py`.
+Built 2026-09-16 by `analysis/v04/d4_quality.py`.
 
 Concordance = concordant / (concordant + discordant), exact 95% CI. Mixed and indeterminate are counted, never dropped.
 

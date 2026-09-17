@@ -1,0 +1,152 @@
+{
+ "built": "2026-09-16",
+ "definition": "Concordance = concordant / (concordant + discordant), exact 95% CI. Mixed and indeterminate are counted, never dropped.",
+ "strata": [
+  {
+   "stratum": "Primary (drugs, biologics, vaccines, cell/gene therapies)",
+   "n": 586,
+   "concordant": 152,
+   "discordant": 33,
+   "mixed": 62,
+   "indeterminate": 339,
+   "classifiable": 185,
+   "concordance": 0.8216216216216217,
+   "ci95": [
+    0.7587,
+    0.8739
+   ]
+  },
+  {
+   "stratum": "Primary: disease-modifying use",
+   "n": 407,
+   "concordant": 96,
+   "discordant": 20,
+   "mixed": 39,
+   "indeterminate": 252,
+   "classifiable": 116,
+   "concordance": 0.8275862068965517,
+   "ci95": [
+    0.7464,
+    0.8914
+   ]
+  },
+  {
+   "stratum": "Primary: symptomatic or preventive use",
+   "n": 179,
+   "concordant": 56,
+   "discordant": 13,
+   "mixed": 23,
+   "indeterminate": 87,
+   "classifiable": 69,
+   "concordance": 0.8115942028985508,
+   "ci95": [
+    0.6994,
+    0.8957
+   ]
+  },
+  {
+   "stratum": "Primary: human approval before the veterinary evidence",
+   "n": 440,
+   "concordant": 124,
+   "discordant": 25,
+   "mixed": 46,
+   "indeterminate": 245,
+   "classifiable": 149,
+   "concordance": 0.8322147651006712,
+   "ci95": [
+    0.7624,
+    0.8884
+   ]
+  },
+  {
+   "stratum": "Primary: human approval after the veterinary evidence",
+   "n": 19,
+   "concordant": 7,
+   "discordant": 0,
+   "mixed": 2,
+   "indeterminate": 10,
+   "classifiable": 7,
+   "concordance": 1.0,
+   "ci95": [
+    0.5904,
+    1.0
+   ]
+  },
+  {
+   "stratum": "Primary: no US human approval",
+   "n": 127,
+   "concordant": 21,
+   "discordant": 8,
+   "mixed": 14,
+   "indeterminate": 84,
+   "classifiable": 29,
+   "concordance": 0.7241379310344828,
+   "ci95": [
+    0.5276,
+    0.8727
+   ]
+  },
+  {
+   "stratum": "Primary, disease-modifying: dog",
+   "n": 316,
+   "concordant": 65,
+   "discordant": 14,
+   "mixed": 27,
+   "indeterminate": 210,
+   "classifiable": 79,
+   "concordance": 0.8227848101265823,
+   "ci95": [
+    0.7206,
+    0.8996
+   ]
+  },
+  {
+   "stratum": "Primary, disease-modifying: cat",
+   "n": 63,
+   "concordant": 19,
+   "discordant": 5,
+   "mixed": 7,
+   "indeterminate": 32,
+   "classifiable": 24,
+   "concordance": 0.7916666666666666,
+   "ci95": [
+    0.5785,
+    0.9287
+   ]
+  },
+  {
+   "stratum": "Excluded from primary: supplements, minerals, devices, regimens, non-treatments",
+   "n": 201,
+   "concordant": 38,
+   "discordant": 14,
+   "mixed": 46,
+   "indeterminate": 103,
+   "classifiable": 52,
+   "concordance": 0.7307692307692307,
+   "ci95": [
+    0.5898,
+    0.8443
+   ]
+  },
+  {
+   "stratum": "Class analogues (separate)",
+   "n": 15,
+   "concordant": 3,
+   "discordant": 1,
+   "mixed": 1,
+   "indeterminate": 10,
+   "classifiable": 4,
+   "concordance": 0.75,
+   "ci95": [
+    0.1941,
+    0.9937
+   ]
+  }
+ ],
+ "reliability": {
+  "judge": "google/gemini-2.5-pro",
+  "pairs": 40,
+  "agreement": 0.875,
+  "kappa": 0.764
+ }
+}
