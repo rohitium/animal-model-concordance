@@ -16,7 +16,7 @@ Each row is one comparison a paper drew between an animal and a human. **A** tre
 {{level_table}}
 
 ::: note Caveats
-Mostly level C: how similar the biology looks, not what happened when a disease was treated. The
+Mostly level C — how similar the biology looks, not what happened when a disease was treated. The
 quantities differ and are never pooled. Publishing favours positive findings.
 :::
 
@@ -31,14 +31,10 @@ biology corresponds leaves **{{n_candidates}} candidates**.
 ## Evidence map {#map}
 
 Studies per disease area and species; the superscript is the highest level in that cell. Companion
-and laboratory dogs and cats are counted separately.
+and laboratory dogs and cats are counted separately. {{n_unresolved}} results name their animals
+only as "animals" or "rodents", so totals are lower bounds.
 
 {{heatmap}}
-
-::: note
-{{n_unresolved}} results name their animals only as "animals" or "rodents", so species totals are
-lower bounds.
-:::
 
 ## The results {#results}
 
@@ -69,35 +65,34 @@ positive, so agreement is near-automatic. On the 4 negative-human pairs, laborat
 
 ## Methods {#methods}
 
-Eligible: a finding in live animals reported alongside the human one. Citation chasing and PubMed
-queries as two independent mechanisms; two screening stages; extraction from open-access full text
-with sentence and page; verification by a second model; then adjudication of every result, including
-those verification rejected. Counts are computed from the records, not summarised by a model.
+Eligible: a finding in live animals reported alongside the human one. Two independent retrieval
+mechanisms, two screening stages, extraction from open-access full text with sentence and page,
+verification by a second model, then adjudication of every result — including those verification
+rejected. Counts are computed from the records, not summarised by a model.
 
 {{recall}}
 
 Of results verification accepted, 34% were later dropped or corrected; of those it rejected, 10%
-were reinstated. {{n_single_reviewer}} of {{n_results}} had a single unblinded adjudicator — the
-ones the [spot-check](spotcheck.html) oversamples.
+were reinstated. {{n_single_reviewer}} of {{n_results}} had a single unblinded adjudicator,
+oversampled by the [spot-check](spotcheck.html).
 
 ## Limitations {#limits}
 
-- Sample, not census: ~33% coverage (CI 26–46%), itself an upper bound.
-- Open-access full text only; the veterinary side is largely from abstracts.
+- ~33% coverage (CI 26–46%), itself an upper bound.
+- Open-access full text only; veterinary side largely from abstracts.
 - Rows sharing a sentence are not independent evidence.
-- Different quantities, grouped only where metric and unit match.
+- Quantities grouped only where metric and unit match.
 - Selective publishing inflates apparent agreement.
 - Agreement is not prediction.
-- Part of the adjudication was single-reviewer and unblinded.
-- {{n_unresolved}} results could not be resolved to one species.
+- Adjudication partly single-reviewer and unblinded.
+- {{n_unresolved}} results unresolved to one species.
 
 ::: small
-All {{n_limitations}} limitations, the protocol, the data and the code:
+All {{n_limitations}} limitations, the protocol, data and code:
 [repository](https://github.com/rohitium/animal-model-concordance).
 :::
 
 ## Verify this work {#verify}
 
 Forty seeded results, each with its source, page and sentence.
-
 [**Open the spot-check →**](spotcheck.html)
