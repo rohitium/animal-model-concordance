@@ -11,7 +11,7 @@ then collected the evidence.
 
 ## Summary {#summary}
 
-Each row is one comparison a paper drew between an animal and a human. 
+Each row is one finding: a sentence in which a paper compared an animal with a human. 
 **A**: treatment outcomes,
 **B**: toxicity and safety, 
 **C**: disease biology.
@@ -89,7 +89,7 @@ oversampled by the [spot-check](spotcheck.html).
 
 - ~33% coverage (CI 26–46%), itself an upper bound.
 - Open-access full text only; veterinary side largely from abstracts.
-- Rows sharing a sentence are not independent evidence.
+- Findings within a paper are not independent of one another.
 - Quantities grouped only where metric and unit match.
 - Selective publishing inflates apparent agreement.
 - Agreement is not prediction.

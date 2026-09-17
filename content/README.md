@@ -38,9 +38,8 @@ tokens exist to prevent. To see what a token currently resolves to, build the si
 
 | Token | Meaning |
 |---|---|
-| `{{n_results}}` | results kept after adjudication |
+| `{{n_results}}` | findings kept after adjudication, one per quoted sentence |
 | `{{n_studies}}` | studies those results come from |
-| `{{n_distinct_findings}}` | distinct findings, counting rows that share a quote once |
 | `{{n_level_a}}` `{{n_level_b}}` `{{n_level_c}}` | results per evidence level |
 | `{{n_corresponded}}` `{{n_not_corresponded}}` `{{n_mixed}}` | results by direction |
 | `{{n_no_species}}` | results that name no species, kept off the evidence map |

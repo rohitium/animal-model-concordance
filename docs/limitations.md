@@ -647,7 +647,7 @@ distinct findings rather than 1,494 independent ones. Collapsing to one row per 
 direction tallies from 1,032 / 348 / 110 to 797 / 284 / 81 — the ratio barely shifts, so the balance
 of the corpus is not an artefact of the splitting, but any count of "results" overstates how many
 separate observations the review rests on, and no statistic here should be read as though the rows
-were independent samples.
+were independent samples. **Implemented (A29).** The figures above are from an earlier corpus; the current one holds 1,520 extracted rows in 1,193 quoted sentences, with 229 sentences carrying more than one row and covering 566 of them. The site now counts the sentence, not the row: `n_results` is 1,193. Merging is not a silent pick of the first row - 33 of those clusters disagree internally on direction and are recorded as mixed, 22 disagree on species and are counted toward each, 3 disagree on disease area and take the most common, and 1 disagrees on level and keeps the strongest. Findings within a paper still share authors, samples and analyses, so this removes the double counting of one sentence and does not make the remaining findings independent.
 
 **L90 — The companion-versus-laboratory split is contaminated by unfilled model_type.** 51 dog and
 cat results across 20 studies carry `model_type: mixed-or-not-stated`, which the species rule routes

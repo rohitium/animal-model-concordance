@@ -890,3 +890,35 @@ the visible cells do not sum to. The off-map count goes from 244 to 248.
 The records are unchanged - `species: hamster` is still what they carry, and the study still has its
 own page. Only the map's columns change. As under A26, the frozen extraction vocabulary in
 common.py keeps the term.
+
+## A29 — The unit of analysis is the quoted sentence, not the extracted value (2026-09-16)
+
+The extractor emitted one row per reported value. A sentence reading "the identity rates of Pde cDNA
+sequences between guinea pig and human ranged from 83.8% to 94.3%" therefore became two results, one
+for each end of the range, and a paper reporting a single cross-species analysis gene by gene became
+one result per gene. Those rows are not separate observations of anything. L89 measured this and
+recorded it as a limitation; it is now fixed rather than noted.
+
+The site counts the quoted sentence. The corpus holds 1,520 extracted rows in 1,193 sentences: 229
+sentences carry more than one row and cover 566 of them. `n_results` becomes 1,193, and every count
+derived from it - the level table, the direction tallies, the evidence map, the browsers, the study
+pages and the API summary - follows from the same collapse, which runs once at load.
+
+Merging never silently adopts the first row's answer. Where the rows under one sentence disagree,
+direction becomes "mixed" (33 clusters), species are counted toward each animal named (22), disease
+area takes the most common (3), and the strongest evidence level is kept (1). Multiple values fold
+into the range they span, so the guinea-pig sentence above now reads 83.8-94.3 percent instead of
+appearing twice. A row carrying no quote is never merged: with no sentence to group on, every
+quote-less row in a study would otherwise fuse into one.
+
+**What this deliberately does not do.** The study that prompted the change reports four separate
+sentences - a cDNA range, an amino-acid range, and an average for each - and still contributes four
+findings, not one. Reaching one would mean grouping by study, species and area, and that rule also
+merges findings that are genuinely distinct: the separate gene-overlap counts for MEF2C, MEF2A,
+NR3C1, JUND and ZEB1 in 42078895 would become a single result, as would the sensitivity, specificity,
+PPV and NPV of one screen in 28945830. That trades real evidence for a tidier count, so the collapse
+stops at the sentence.
+
+Findings within a paper remain non-independent - they share authors, samples and analyses. This
+removes the double counting of a single sentence; it does not make what is left an independent
+sample, and L89 continues to say so.

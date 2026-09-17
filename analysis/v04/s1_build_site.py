@@ -139,6 +139,9 @@ def species_of(r):
     statement are passing prose, not the result's subject. Returns an empty set when no species is
     named, which keeps the result off the map entirely.
     """
+    pre = r.get("_species")
+    if pre is not None:
+        return set(pre)
     one = sp_display(r)
     if one not in NON_SPECIES:
         return set() if one in OFF_MAP_SPECIES else {one}
@@ -451,11 +454,7 @@ tr.hi td{background:#fcf9ef}
   gap:4px 18px}
 
 .routes{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin:22px 0}
-.rcard{background:var(--card);padding:16px 18px;display:grid;
-  grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start}
-.rcard .rn{font-family:var(--sans);font-size:27px;font-weight:600;letter-spacing:-.02em;
-  font-variant-numeric:tabular-nums;line-height:1.1;color:var(--accent)}
-.rcard.held .rn{color:var(--dim)}
+.rcard{background:var(--card);padding:16px 18px}
 .rcard h3{margin:0 0 3px;font-size:15px;font-family:var(--sans)}
 .rcard p{margin:0;font-family:var(--sans);font-size:13.5px;color:var(--dim);line-height:1.5;
   max-width:72ch}
@@ -472,7 +471,6 @@ tr.hi td{background:#fcf9ef}
 
 @media (max-width:900px){
   .brow{grid-template-columns:minmax(80px,130px) minmax(0,1fr) 44px;font-size:12.5px}
-  .rcard{grid-template-columns:52px minmax(0,1fr);gap:12px}
   .wrap{grid-template-columns:1fr;gap:0}
   .rail{position:static;padding:22px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px;
     border-bottom:1px solid var(--line);padding-bottom:12px}
@@ -943,6 +941,57 @@ def ramp(ratio):
     return f"rgb({c[0]},{c[1]},{c[2]})", ("#fff" if ratio > 0.55 else "#15181c")
 
 
+LEVEL_RANK = {"A-outcome-concordance": 0, "B-toxicity-safety-concordance": 1,
+              "C-biological-similarity": 2}
+
+
+def collapse_quotes(fin):
+    """One finding per sentence (A29).
+
+    The extractor emits one row per reported value, so a sentence reading "identity rates ranged
+    from 83.8% to 94.3%" becomes two rows and a paper reporting one analysis gene by gene becomes
+    one row per gene. Those rows are not separate observations, and counting them as results
+    overstates how much the review rests on. The unit here is the quoted sentence.
+
+    Collapsing must not silently pick a winner where members disagree: direction becomes "mixed"
+    rather than the first row's verdict, species are unioned, and the strongest level is kept. A
+    row carrying no quote is never merged - without a sentence to group on, every quote-less row
+    in a study would otherwise fuse into one.
+
+    This deliberately stops at the sentence. Grouping instead by study, species and area would
+    merge findings that are genuinely distinct - separate gene-overlap counts for MEF2C and MEF2A,
+    or a sensitivity and a specificity from the same screen - and lose real evidence to tidy a
+    presentation problem.
+    """
+    groups = collections.OrderedDict()
+    for i, r in enumerate(fin):
+        q = (r.get("quote") or "").strip()
+        groups.setdefault((r["pmid"], q) if q else ("", i), []).append(r)
+    out = []
+    for rs in groups.values():
+        rep = dict(rs[0])
+        if len(rs) > 1:
+            dirs = {r.get("direction") for r in rs}
+            rep["direction"] = next(iter(dirs)) if len(dirs) == 1 else "mixed"
+            rep["level"] = min((r["level"] for r in rs),
+                               key=lambda l: LEVEL_RANK.get(l, 9))
+            rep["disease_area"] = collections.Counter(
+                r.get("disease_area") for r in rs).most_common(1)[0][0]
+            sp = set()
+            for r in rs:
+                sp |= species_of(r)
+            rep["_species"] = sorted(sp)
+            vals = [r["value"] for r in rs if isinstance(r.get("value"), (int, float))]
+            if vals:
+                unit = "" if rep.get("unit") in (None, "none") else f" {rep['unit']}"
+                lo, hi = min(vals), max(vals)
+                rep["_value_display"] = f"{lo:g}{unit}" if lo == hi else f"{lo:g}\u2013{hi:g}{unit}"
+                rep["value"] = lo
+        rep["_n_rows"] = len(rs)
+        out.append(rep)
+    return out
+
+
 def heatmap(fin):
     grid = collections.defaultdict(lambda: {"s": set(), "lv": set()})
     for r in fin:
@@ -1386,6 +1435,10 @@ def main():
         ov = mt_over.get(r["pmid"])
         if ov and r.get("model_type") == "mixed-or-not-stated":
             r["model_type"] = ov["model_type"]
+    # Amendment A29: the unit of analysis is the quoted sentence, not the extracted value. This
+    # runs after the model_type overrides above, because the companion/laboratory column feeds the
+    # species union, and before every count below, so nothing downstream counts split rows.
+    fin = collapse_quotes(fin)
     studies = collections.defaultdict(list)
     for r in fin:
         studies[r["pmid"]].append(r)
@@ -1445,10 +1498,7 @@ def main():
                "n_extracted": f"{n_extracted:,}", "n_extraction_studies": f"{n_extraction_studies:,}",
                "n_eligible": f"{n_eligible:,}",
                "n_limitations": f"{n_limits:,}", "built_date": today(),
-               # Results sharing one quote are the same finding split across rows (one per gene,
-               # per cell type, per tissue). Counting distinct quotes says how many findings there
-               # actually are, so the prose need not imply that every row is a separate one.
-               "n_distinct_findings": f"{len({(r['pmid'], (r.get('quote') or '')[:120]) for r in fin}):,}"}
+               }
 
     # Program-selection scalars. The timing counts and the median lag come from the pair
     # attributes computed by d4, never recomputed here.
@@ -1523,8 +1573,8 @@ def main():
     # ---------------- results browser ----------------
     rows = []
     for r in fin:
-        val = ""
-        if r.get("value") is not None:
+        val = r.get("_value_display") or ""
+        if not val and r.get("value") is not None:
             unit = "" if r.get("unit") in (None, "none") else f" {r['unit']}"
             val = f"{r['value']:g}{unit}" if isinstance(r["value"], (int, float)) else f"{r['value']}{unit}"
         rows.append({"st": (r["statement"] or "").replace("*", ""), "ti": (r.get("title") or "")[:140],
@@ -1798,7 +1848,9 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
         for r in rs:
             meta = [dirtag(r["direction"]), f'level {e((r["level"] or "?")[:1])}',
                     e(sp_label(r)), e(area_display(r))]
-            if r.get("value") is not None:
+            if r.get("_value_display"):
+                meta.append(f"<strong>{e(r['_value_display'])}</strong>")
+            elif r.get("value") is not None:
                 unit = "" if r.get("unit") in (None, "none") else f" {e(r['unit'])}"
                 meta.append(f"<strong>{e(r.get('value'))}{unit}</strong>")
             if r.get("denominator"):
