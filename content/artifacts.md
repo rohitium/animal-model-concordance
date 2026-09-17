@@ -119,7 +119,6 @@ areas_levela :: are intervention outcomes
 areas_studies :: studies
 areas_cands :: candidates
 crowding_caption :: Companion-animal programs per indication
-crowding_note :: The most crowded indications are the validated ones.
 noun :: molecules
 placeholder :: Search by molecule, target, company or indication…
 empty :: Nothing matches those filters.
