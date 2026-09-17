@@ -9,7 +9,7 @@ legend is the largest cell count.
 
 ## figures
 
-n_results :: Results
+n_results :: Findings
 n_studies :: Studies
 n_level_a :: Intervention outcomes (Evidence Level A)
 n_level_b :: Toxicity and safety (Evidence Level B)
@@ -17,10 +17,10 @@ n_level_c :: Disease biology (Evidence Level C)
 
 ## level_table
 
-caption :: Results
+caption :: Findings by evidence level
 level :: Evidence level
 studies :: Studies
-results :: Results
+results :: Findings
 corresponded :: Concordant
 did_not :: Discordant
 mixed :: Mixed
@@ -34,7 +34,7 @@ row_header :: Disease area
 total :: All
 legend_low :: Fewer studies
 legend_high :: More ({{max}} at most)
-legend_note :: Superscript = highest evidence level in the cell (click a cell to see those results)
+legend_note :: Superscript = highest evidence level in the cell (click a cell to see those findings)
 cell_title :: {{area}} · {{species}}: {{n}} studies, highest evidence level {{level}}
 
 ## directions
@@ -112,7 +112,7 @@ route3_name :: Route 3 · Shelved for a verified non-clinical reason
 route3_desc :: Stopped for supply, portfolio or corporate reasons.
 watch_name :: Held back · Human pipeline, not yet approved
 watch_desc :: Phase 2 and Phase 3 assets, still active. No approval yet.
-areas_conc :: dog results corresponded
+areas_conc :: dog findings corresponded
 areas_levela :: are intervention outcomes
 areas_studies :: studies
 areas_cands :: candidates

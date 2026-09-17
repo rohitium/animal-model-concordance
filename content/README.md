@@ -94,7 +94,7 @@ parts you cannot write by hand.
 | `{{pairs_table}}` | the searchable pair browser | pairs |
 | `{{cand_figures}}` | a row of headline figures | available, not currently used |
 | `{{cand_routes}}` | the route cards | caninisation |
-| `{{cand_presence}}` | what the presence checks found | caninisation |
+| `{{cand_presence}}` | what the presence checks found | available, not currently used |
 | `{{cand_lag}}` | the human-to-veterinary lag histogram | available, not currently used |
 | `{{cand_areas}}` | condition areas ranked on dog evidence | caninisation |
 | `{{cand_crowding}}` | companion-animal programs per indication | available, not currently used |

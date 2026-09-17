@@ -275,8 +275,8 @@ main{max-width:1180px;margin:0 auto;padding:0 22px 80px}
 .rail a.on{color:var(--accent);border-left-color:var(--accent);font-weight:600}
 .doc{padding-top:34px;min-width:0}
 h1{font-size:34px;line-height:1.18;margin:.1em 0 .3em;letter-spacing:-.015em;font-weight:600;
-  text-wrap:balance;max-width:20ch}
-.page h1{max-width:28ch}
+  text-wrap:balance;max-width:34ch}
+.page h1{max-width:44ch}
 h2{font-size:23px;margin:2.4em 0 .5em;font-weight:600;letter-spacing:-.01em;scroll-margin-top:72px}
 h3{font-size:18px;margin:1.8em 0 .4em;font-weight:600}
 h4{font-size:15px;margin:1.4em 0 .3em;font-weight:600;font-family:var(--sans)}

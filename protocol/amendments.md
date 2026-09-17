@@ -922,3 +922,22 @@ stops at the sentence.
 Findings within a paper remain non-independent - they share authors, samples and analyses. This
 removes the double counting of a single sentence; it does not make what is left an independent
 sample, and L89 continues to say so.
+
+## A30 — The program-selection page no longer explains what "no companion-animal program" means (2026-09-17)
+
+The section carrying that heading was removed from caninisation.md by hand, together with the
+{{cand_presence}} block, the five-way description of how each molecule is checked, and the
+anti-IL-4Ra walkthrough - the concrete case, recorded under A20 and L97, where a mechanism looked
+unoccupied until it was searched and four companies had already filed.
+
+The underlying checks are unchanged: companion-animal presence is still established from the curated
+mechanism map, patents and halted programs, the mapped companion condition, the veterinary
+literature and this review's pair records, and companion_evidence.json still carries a status per
+molecule. What changed is what the page tells a reader about them. The candidate browser continues
+to report those statuses - "mechanism unoccupied" on 80 candidates and "no program, and no
+veterinary literature found" on 6 - and the page no longer says anywhere that these describe four
+named sources rather than the world.
+
+This is recorded rather than quietly absorbed because L95 asserted the opposite, in those words, and
+has been corrected to match what the site now does. The gap is a presentation choice, not a change
+in evidence: nothing about what was searched, or found, has moved.

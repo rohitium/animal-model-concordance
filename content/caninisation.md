@@ -91,38 +91,6 @@ evidence behind it.
 
 {{cand_table}}
 
-## What "no companion-animal program" means {#presence}
-
-It means no marketed product works that mechanism. It does not mean dogs never get the drug. It does
-not mean the condition is untreated. It does not mean the mechanism is free to use.
-
-Anti-IL-4Rα shows the gap. No IL-4R product is sold for dogs. But Merck Animal Health holds a
-[granted patent on anti-canine IL-4Rα](https://patents.google.com/patent/JP7854420B2/en) from 2015,
-[Vetoquinol](https://patents.google.com/patent/WO2025114614A1/en) and
-[Kindred Biosciences](https://patents.google.com/patent/CN113164593A/en) have filed their own, and
-Elanco [wrote off its IL-4R pet asset in 2024](https://www.prnewswire.com/news-releases/elanco-animal-health-reports-second-quarter-2024-results-302217343.html)
-for commercial reasons.
-
-We check each molecule five ways: the mechanism, patents and dropped programs against it, the
-matching condition in dogs or cats, the veterinary literature, and our own drug-pair records.
-
-{{cand_presence}}
-
-Only **{{n_nothing_found}}** of {{n_candidates}} candidates come back empty on all five.
-{{n_mech_open}} have an open mechanism inside a crowded condition. **An open mechanism is not an open
-market.**
-
-::: note What we do not check
-There is no machine-readable list of approved veterinary drugs. The FDA Green Book and the EMA
-dataset both lack one. A drug approved for dogs outside our supplied list shows here as "not found".
-
-Patents are searched by hand, mechanism by mechanism. Google Patents blocks automated queries, and
-the alternatives need registered credentials.
-
-**A mechanism with no patent entry was never searched. It is not clear ground.** Anti-IL-4Rα looked
-open until we looked, and four companies had already filed.
-:::
-
 ## How the list was cut {#funnel}
 
 {{cand_funnel}}
