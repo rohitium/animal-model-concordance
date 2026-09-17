@@ -110,8 +110,12 @@ def recovered_species(r):
     return from_title or from_text
 SPECIES_ORDER = ["mouse", "rat", "other-rodent", "rabbit", "pig-minipig", "sheep-goat",
                  "non-human-primate", "laboratory-dog", "companion-dog", "laboratory-cat",
-                 "companion-cat", "horse", "zebrafish", "drosophila", "c-elegans", "other-species",
-                 "not resolved"]
+                 "companion-cat", "horse", "zebrafish", "drosophila", "c-elegans"]
+# Columns that name no species. Most of what lands here are meta-analyses whose finding is about
+# animal models as a class, so there is no species in the paper to use; the rest are records whose
+# species field holds the human side of the comparison. They are counted and reported, not shown as
+# a column pretending to be a species (A25).
+NON_SPECIES = {"not resolved", "other-species"}
 AREA_ORDER = ["oncology", "neurology", "immunology-inflammation", "cross-cutting-toxicology",
               "cardiovascular", "liver-gi", "infectious-disease", "pain-musculoskeletal",
               "psychiatry-addiction", "metabolic-endocrine", "ophthalmology", "respiratory",
@@ -336,6 +340,25 @@ text.sl{font-family:var(--sans);font-size:11px;fill:var(--dim);paint-order:strok
   padding:11px 14px;font-family:var(--sans);font-size:13.5px}
 .pres .p b{font-size:19px;font-variant-numeric:tabular-nums;margin-right:8px;color:var(--accent)}
 .pres .p.none{border-left-color:var(--mid)}
+.strata{margin:18px 0}
+.srow{display:grid;grid-template-columns:minmax(150px,2fr) minmax(120px,3fr) 130px 68px;gap:14px;
+  align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-family:var(--sans);
+  font-size:13.5px}
+.srow.sub .sname{padding-left:16px;color:var(--dim)}
+.sbar{display:flex;height:16px;background:#f0f2f4;overflow:hidden;border-radius:2px}
+.sbar i{display:block;height:100%}
+.sbar i.ok{background:var(--accent)}
+.sbar i.no{background:var(--no)}
+.sbar i.mid{background:var(--mid)}
+.sbar i.ind{background:#dde2e7}
+.sval{text-align:right;font-variant-numeric:tabular-nums}
+.sval .ci{color:var(--dim);font-size:12.5px}
+.snum{text-align:right;font-variant-numeric:tabular-nums;color:var(--dim)}
+.legend .key{width:11px;height:11px;display:inline-block;margin-right:5px;vertical-align:-1px}
+.legend .key.ok{background:var(--accent)}
+.legend .key.no{background:var(--no)}
+.legend .key.mid{background:var(--mid)}
+.legend .key.ind{background:#dde2e7}
 .q4{margin:18px 0}
 .q4 .figs{margin:14px 0}
 table.q4m th{font-weight:500;color:var(--dim);background:var(--card)}
@@ -842,6 +865,7 @@ def ramp(ratio):
 
 def heatmap(fin):
     grid = collections.defaultdict(lambda: {"s": set(), "lv": set()})
+    fin = [r for r in fin if sp_display(r) not in NON_SPECIES]
     for r in fin:
         g = grid[(area_display(r), sp_display(r))]
         g["s"].add(r["pmid"]); g["lv"].add((r["level"] or "?")[:1])
@@ -1076,6 +1100,52 @@ def q4_block(d):
     return "\n".join(h)
 
 
+def strata_block(d):
+    """Drug-pair strata, drawn from the numbers d4 computed.
+
+    The old table put "pairs" and "concordance" in the same row with different denominators: a
+    stratum reading 586 pairs and 82% was 152/185, with the 339 indeterminate and 62 mixed excluded
+    from the percentage while dominating the row. Each row now shows what the pairs are made of and
+    states the denominator the percentage is actually taken over.
+    """
+    if not d or not d.get("strata"):
+        return ""
+    A_ = lambda k, dflt="": A("strata", k, dflt)
+    SEG = [("concordant", "ok"), ("discordant", "no"), ("mixed", "mid"), ("indeterminate", "ind")]
+    h = ['<div class="strata">']
+    h.append(f'<p class="cnote">{e(A_("definition", d.get("definition", "")))}</p>')
+    for row in d["strata"]:
+        name = row["stratum"]
+        sub = name.startswith("Primary:") or name.startswith("Primary,")
+        n = row["n"] or 1
+        bar = "".join(
+            f'<i class="{cls}" style="width:{row.get(k, 0) / n * 100:.2f}%" '
+            f'title="{row.get(k, 0)} {k}"></i>' for k, cls in SEG)
+        call = (f'{row["concordance"]:.0%}' if row.get("concordance") is not None else "—")
+        ci = (f' <span class="ci">({row["ci95"][0]:.0%}–{row["ci95"][1]:.0%})</span>'
+              if row.get("ci95") and row["ci95"][0] is not None else "")
+        of = A_("of", "of {c} that could be called").replace("{c}", str(row.get("classifiable", 0)))
+        h.append(
+            f'<div class="srow{" sub" if sub else ""}">'
+            f'<div class="sname">{e(name)}</div>'
+            f'<div class="sbar">{bar}</div>'
+            f'<div class="sval"><strong>{call}</strong>{ci}<br><span class="src">{e(of)}</span></div>'
+            f'<div class="snum">{row["n"]:,}<br><span class="src">{e(A_("pairs", "pairs"))}</span></div>'
+            "</div>")
+    h.append('<div class="legend">'
+             + "".join(f'<span><i class="key {cls}"></i>{e(A_(k, k))}</span>' for k, cls in SEG)
+             + "</div>")
+    rel = d.get("reliability")
+    if rel:
+        h.append('<p class="cnote">'
+                 + e(A_("reliability", "Blind re-judgement of {p} random primary pairs by a second "
+                                       "model: {a} agreement, Cohen's kappa {k}.")
+                     .replace("{p}", str(rel["pairs"])).replace("{a}", f'{rel["agreement"]:.0%}')
+                     .replace("{k}", str(rel["kappa"]))) + "</p>")
+    h.append("</div>")
+    return "\n".join(h)
+
+
 def hbars(rows, caption="", note="", alt_before=None):
     """Horizontal bar chart. rows are (label, n); alt_before shades the first n bars differently."""
     mx = max([n for _, n in rows] or [1])
@@ -1287,6 +1357,8 @@ def main():
                "n_corresponded": f"{by_dir['animal-corresponded']:,}",
                "n_not_corresponded": f"{by_dir['animal-did-not-correspond']:,}",
                "n_mixed": f"{by_dir['mixed']:,}", "n_unresolved": f"{unresolved:,}",
+               "n_no_species": f"{sum(1 for r in fin if sp_display(r) in NON_SPECIES):,}",
+               "n_species_results": f"{sum(1 for r in fin if sp_display(r) not in NON_SPECIES):,}",
                "n_pairs": f"{len(classified):,}", "n_single_reviewer": f"{n_single:,}",
                "n_extracted": f"{n_extracted:,}", "n_extraction_studies": f"{n_extraction_studies:,}",
                "n_eligible": f"{n_eligible:,}",
@@ -1359,7 +1431,7 @@ def main():
             (f"{by_level['C-biological-similarity']}", A("figures", "n_level_c", "level C · disease biology"))]),
         "level_table": "\n".join(lt),
         "heatmap": heatmap(fin),
-        "pairs_strata": report_md(os.path.join(V04, "part2", "summary_v2.md")),
+        "pairs_strata": strata_block(load("part2/strata.json")),
         "q4_tables": q4_block(load("part2/q4_summary.json")),
         "recall": report_md(os.path.join(V04, "retrieval", "recall.md")),
     }

@@ -187,3 +187,14 @@ all :: All
 pubmed :: PubMed
 doi :: DOI
 openalex :: OpenAlex record
+
+## strata
+
+definition :: Concordance counts only pairs that could be called either way. Mixed and indeterminate pairs are shown but excluded from the percentage.
+of :: of {c} that could be called
+pairs :: pairs
+concordant :: Concordant
+discordant :: Discordant
+mixed :: Mixed
+indeterminate :: Indeterminate
+reliability :: A second model re-judged {p} random primary pairs blind: {a} agreement, Cohen's kappa {k}.

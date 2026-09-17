@@ -29,9 +29,9 @@ Publications generally biased toward positive findings.
 ## Evidence map {#map}
 
 Studies per disease area and species; the superscript is the highest level in that cell. Companion
-and laboratory dogs and cats are counted separately. {{n_unresolved}} results sit outside the grid:
-most are meta-analyses whose finding is about animal models as a class, with no one species to
-assign. A minority name several species at once, and those are missing from each of them.
+and laboratory dogs and cats are counted separately. The grid holds the {{n_species_results}}
+results that name a species. The other {{n_no_species}} are not on it: most are meta-analyses whose
+finding is about animal models as a class, so there is no species in the paper to use.
 
 {{heatmap}}
 
@@ -94,9 +94,9 @@ oversampled by the [spot-check](spotcheck.html).
 - Selective publishing inflates apparent agreement.
 - Agreement is not prediction.
 - Adjudication partly single-reviewer and unblinded.
-- {{n_unresolved}} results are not assigned to a species. 73% are findings about animal models as a
-  class; 16% name several species at once and our parser takes a species only when exactly one is
-  named; 6% are the human side of a comparison stored in the animal field.
+- {{n_no_species}} results name no species and are kept off the evidence map. 73% are findings about
+  animal models as a class; 16% name several species at once, which our parser does not yet assign;
+  6% are the human side of a comparison stored in the animal field.
 
 ::: small
 All {{n_limitations}} limitations, the protocol, data and code:
