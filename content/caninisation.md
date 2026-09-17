@@ -71,7 +71,7 @@ the most evidence and the weakest kind. Cardiovascular has the least and the bes
 
 {{cand_crowding}}
 
-## BTK: the dogs came first {#btk}
+## Curious case of BTK inhibitors {#btk}
 
 | Molecule | Canine study | Human |
 |---|---|---|
@@ -79,12 +79,12 @@ the most evidence and the weakest kind. Cardiovascular has the least and the bes
 | Acalabrutinib | 2016, 20 dogs, 25% response, median PFS 22.5 days | Approved 2017 |
 | Rilzabrutinib | 2021, canine pemphigus | Phase 3 missed its endpoint |
 
-The paper that introduced ibrutinib ends on dogs: "PCI-32765 induced objective clinical responses in
+The paper that introduced ibrutinib stated: "PCI-32765 induced objective clinical responses in
 dogs with spontaneous B-cell non-Hodgkin lymphoma. These findings support Btk inhibition as a
 therapeutic approach for the treatment of human diseases associated with activation of the BCR
-pathway." Human trials had already started, so the dogs did not launch the program. They carried it.
+pathway." Human trials had already started, so technically the dogs did not launch the program.
 
-The acalabrutinib trial says so in its title: "Preclinical Evaluation of the Novel BTK Inhibitor
+The acalabrutinib trial: "Preclinical Evaluation of the Novel BTK Inhibitor
 Acalabrutinib in Canine Models of B-Cell Non-Hodgkin Lymphoma." It ran a year before human approval
 and reported doses, tolerability and efficacy "comparable with that observed in ibrutinib-treated
 DLBCL patients."
@@ -94,6 +94,33 @@ development. Untreated survival is about six weeks, which is why the model reads
 
 Three of this review's 22 veterinary-first pairs are BTK inhibitors. No companion-animal BTK product
 exists.
+
+### Why no dog drug came of it
+
+No paper gives a reason. These are the obstacles the literature does record.
+
+**The trial was never aimed at a dog drug.** It was designed to inform human development, and the
+authors argue the case for the model, not for a product.
+
+**The dogs were the hardest cases.** Two-thirds were chemotherapy-refractory, where "survival in
+these relapsed patients is often as short as 28 days". A 22.5-day median PFS sits against that.
+
+**The dose may have been too low.** "Because acalabrutinib was well-tolerated, higher doses may be
+better suited to use in follow up studies."
+
+**Nobody could tell which dogs would respond.** In humans, ABC/GCB subtype and MYD88, CD79, CARD11
+and TNFAIP3 mutations predict ibrutinib response. The authors were "currently pursuing additional
+studies to determine whether such molecular differences exist" in dogs.
+
+**The field moved to combinations.** Work since 2021 pairs BTK with PI3K inhibition in canine DLBCL
+rather than pushing BTK alone.
+
+**Canine DLBCL is not human DLBCL.** The same drivers recur — TRAF3, SETD2, POT1, TP53, FBXW7 — at
+different frequencies. Whether that explains the weaker BTK response has not been tested.
+
+Then there is the ceiling. Only four cancer drugs have ever been approved for dogs: Palladia,
+Stelfonta, Tanovea and Laverdia, the last of which took four annual renewals of a conditional
+approval before reaching full approval in January 2026.
 
 ## Every candidate {#browse}
 
