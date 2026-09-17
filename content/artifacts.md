@@ -198,3 +198,7 @@ discordant :: Discordant
 mixed :: Mixed
 indeterminate :: Indeterminate
 reliability :: A second model re-judged {p} random primary pairs blind: {a} agreement, Cohen's kappa {k}.
+
+## species
+
+none :: no species named

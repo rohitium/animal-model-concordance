@@ -1,93 +1,96 @@
 {
-  "_README": [
-    "Corrections to model_type for dog and cat studies whose extracted value was",
-    "'mixed-or-not-stated' (amendment A10, limitation L90). The field decides whether a result",
-    "appears in the companion or the laboratory column, and an unfilled value was defaulting all of",
-    "them to laboratory. Each study below was resolved by reading its own full text; the quoted",
-    "phrase is the evidence. 'spontaneous-companion' = client-owned animals with naturally occurring",
-    "disease; 'induced' / 'healthy' = purpose-bred or laboratory animals, or a regulatory-database",
-    "analysis of preclinical safety studies.",
-    "Applied at build time, per study. The stored records keep what the extractor recorded."
-  ],
-
-  "19675678": {
-    "model_type": "spontaneous-companion",
-    "why": "'Naturally occurring cancers in canines and humans share many [features]' — comparative study of spontaneous canine and human mammary tumours."
-  },
-  "25075523": {
-    "model_type": "spontaneous-companion",
-    "why": "'blood was collected for diagnostic purposes from healthy dogs (n = 26) or mammary tumor-bearing [dogs]' — clinical canine patients, and the paper calls for 'clinical investigations using spontaneous tumor models'."
-  },
-  "25671556": {
-    "model_type": "induced",
-    "why": "'Spontaneous canine models exist for several inherited retinal dystrophies' — but these are maintained research colonies of affected dogs used for gene-therapy dosing, not client-owned patients. Laboratory column, as the dog side of the RPE65 comparison."
-  },
-  "26753942": {
-    "model_type": "induced",
-    "why": "Analysis of regulatory preclinical toxicity testing across species: 'Preclinical trials or animal tests on new drugs are required by regulatory agencies worldwide'. Laboratory animals by definition."
-  },
-  "29730448": {
-    "model_type": "induced",
-    "why": "PharmaPendium analysis of 'preclinical safety-related observations' in regulatory submissions over 70 years. Laboratory toxicology studies."
-  },
-  "30188888": {
-    "model_type": "spontaneous-companion",
-    "why": "'Naturally-occurring canine cancers'; 'Spontaneous canine malignant melanomas'; explicitly about 'improving lives of pet dogs'."
-  },
-  "30364994": {
-    "model_type": "induced",
-    "why": "Compounds 'tested in 1-month toxicity studies' under the 'current nonclinical testing paradigm'. Regulatory laboratory studies."
-  },
-  "30823899": {
-    "model_type": "induced",
-    "why": "Argues about 'the current regulatory paradigm of animal testing', drawing on 'the largest database of animal and human toxicity studies yet compiled'. Laboratory toxicology."
-  },
-  "30837603": {
-    "model_type": "spontaneous-companion",
-    "why": "'Forty-one tumor-bearing, 37 inflammatory, and 31 healthy dogs were recruited at the RVC' — clinical patients at veterinary hospitals, with 'dogs with spontaneous tumors' as the stated subject."
-  },
-  "30925701": {
-    "model_type": "spontaneous-companion",
-    "why": "'the first study that has evaluated genomic imbalances in a cohort of dogs with spontaneous PC'."
-  },
-  "33282730": {
-    "model_type": "spontaneous-companion",
-    "why": "'Canine mammary tumors are a naturally occurring heterogeneous group of cancers'; dogs described as 'powerful spontaneous models of cancer'."
-  },
-  "33304937": {
-    "model_type": "spontaneous-companion",
-    "why": "Meta-analysis of studies in 'Naturally occurring canine invasive urothelial carcinoma' and 'naturally occurring canine cancer', including a case-control study 'In pet dogs'."
-  },
-  "37391533": {
-    "model_type": "spontaneous-companion",
-    "why": "'stromal reprogramming in benign and malignant naturally occurring [canine mammary tumours]'; 'canine spontaneous' tumours throughout."
-  },
-  "38166662": {
-    "model_type": "spontaneous-companion",
-    "why": "'this canine disease as a naturally occurring model for human PTCL'; 'the dog as a naturally occurring preclinical model of this disease'."
-  },
-  "40443661": {
-    "model_type": "spontaneous-companion",
-    "why": "'samples were obtained with owner consent from residual tissues of canine patients'; 'Companion dogs with spontaneous cancer have been validated as models of human disease'."
-  },
-  "41208961": {
-    "model_type": "spontaneous-companion",
-    "why": "'Dogs develop spontaneous cancers with striking similarities to human [cancers]'; soft tissue sarcoma in dogs compared with healthy tissue."
-  },
-  "41279656": {
-    "model_type": "spontaneous-companion",
-    "why": "'sampling was performed with informed owner consent where applicable'; canine cruciate ligament rupture is naturally occurring, compared against human ACL and TKA patients."
-  },
-  "41395361": {
-    "model_type": "spontaneous-companion",
-    "why": "'dogs spontaneously develop mucosal melanomas that resemble the clinical, histological [features of human melanoma]'; a clinical canine eyelid melanoma case."
-  },
-  "42218196": {
-    "model_type": "spontaneous-companion",
-    "why": "'veterinarians — with informed consent from their owners — collected opportunistic samples of spontaneously occurring mammary [tumours]' at a university small animal clinic."
-  },
-  "W4241628985": {
-    "model_type": "spontaneous-companion",
-    "why": "Canine inflammatory bowel disease as 'the spontaneous model for studying mechanisms'; clinical cases contrasted with healthy Beagles and Greyhounds."
-  }
+ "_README": [
+  "Corrections to model_type for dog and cat studies whose extracted value was",
+  "'mixed-or-not-stated' (amendment A10, limitation L90). The field decides whether a result",
+  "appears in the companion or the laboratory column, and an unfilled value was defaulting all of",
+  "them to laboratory. Each study below was resolved by reading its own full text; the quoted",
+  "phrase is the evidence. 'spontaneous-companion' = client-owned animals with naturally occurring",
+  "disease; 'induced' / 'healthy' = purpose-bred or laboratory animals, or a regulatory-database",
+  "analysis of preclinical safety studies.",
+  "Applied at build time, per study. The stored records keep what the extractor recorded."
+ ],
+ "19675678": {
+  "model_type": "spontaneous-companion",
+  "why": "'Naturally occurring cancers in canines and humans share many [features]' — comparative study of spontaneous canine and human mammary tumours."
+ },
+ "25075523": {
+  "model_type": "spontaneous-companion",
+  "why": "'blood was collected for diagnostic purposes from healthy dogs (n = 26) or mammary tumor-bearing [dogs]' — clinical canine patients, and the paper calls for 'clinical investigations using spontaneous tumor models'."
+ },
+ "25671556": {
+  "model_type": "induced",
+  "why": "'Spontaneous canine models exist for several inherited retinal dystrophies' — but these are maintained research colonies of affected dogs used for gene-therapy dosing, not client-owned patients. Laboratory column, as the dog side of the RPE65 comparison."
+ },
+ "26753942": {
+  "model_type": "induced",
+  "why": "Analysis of regulatory preclinical toxicity testing across species: 'Preclinical trials or animal tests on new drugs are required by regulatory agencies worldwide'. Laboratory animals by definition."
+ },
+ "29730448": {
+  "model_type": "induced",
+  "why": "PharmaPendium analysis of 'preclinical safety-related observations' in regulatory submissions over 70 years. Laboratory toxicology studies."
+ },
+ "30188888": {
+  "model_type": "spontaneous-companion",
+  "why": "'Naturally-occurring canine cancers'; 'Spontaneous canine malignant melanomas'; explicitly about 'improving lives of pet dogs'."
+ },
+ "30364994": {
+  "model_type": "induced",
+  "why": "Compounds 'tested in 1-month toxicity studies' under the 'current nonclinical testing paradigm'. Regulatory laboratory studies."
+ },
+ "30823899": {
+  "model_type": "induced",
+  "why": "Argues about 'the current regulatory paradigm of animal testing', drawing on 'the largest database of animal and human toxicity studies yet compiled'. Laboratory toxicology."
+ },
+ "30837603": {
+  "model_type": "spontaneous-companion",
+  "why": "'Forty-one tumor-bearing, 37 inflammatory, and 31 healthy dogs were recruited at the RVC' — clinical patients at veterinary hospitals, with 'dogs with spontaneous tumors' as the stated subject."
+ },
+ "30925701": {
+  "model_type": "spontaneous-companion",
+  "why": "'the first study that has evaluated genomic imbalances in a cohort of dogs with spontaneous PC'."
+ },
+ "33282730": {
+  "model_type": "spontaneous-companion",
+  "why": "'Canine mammary tumors are a naturally occurring heterogeneous group of cancers'; dogs described as 'powerful spontaneous models of cancer'."
+ },
+ "33304937": {
+  "model_type": "spontaneous-companion",
+  "why": "Meta-analysis of studies in 'Naturally occurring canine invasive urothelial carcinoma' and 'naturally occurring canine cancer', including a case-control study 'In pet dogs'."
+ },
+ "37391533": {
+  "model_type": "spontaneous-companion",
+  "why": "'stromal reprogramming in benign and malignant naturally occurring [canine mammary tumours]'; 'canine spontaneous' tumours throughout."
+ },
+ "38166662": {
+  "model_type": "spontaneous-companion",
+  "why": "'this canine disease as a naturally occurring model for human PTCL'; 'the dog as a naturally occurring preclinical model of this disease'."
+ },
+ "40443661": {
+  "model_type": "spontaneous-companion",
+  "why": "'samples were obtained with owner consent from residual tissues of canine patients'; 'Companion dogs with spontaneous cancer have been validated as models of human disease'."
+ },
+ "41208961": {
+  "model_type": "spontaneous-companion",
+  "why": "'Dogs develop spontaneous cancers with striking similarities to human [cancers]'; soft tissue sarcoma in dogs compared with healthy tissue."
+ },
+ "41279656": {
+  "model_type": "spontaneous-companion",
+  "why": "'sampling was performed with informed owner consent where applicable'; canine cruciate ligament rupture is naturally occurring, compared against human ACL and TKA patients."
+ },
+ "41395361": {
+  "model_type": "spontaneous-companion",
+  "why": "'dogs spontaneously develop mucosal melanomas that resemble the clinical, histological [features of human melanoma]'; a clinical canine eyelid melanoma case."
+ },
+ "42218196": {
+  "model_type": "spontaneous-companion",
+  "why": "'veterinarians — with informed consent from their owners — collected opportunistic samples of spontaneously occurring mammary [tumours]' at a university small animal clinic."
+ },
+ "W4241628985": {
+  "model_type": "spontaneous-companion",
+  "why": "Canine inflammatory bowel disease as 'the spontaneous model for studying mechanisms'; clinical cases contrasted with healthy Beagles and Greyhounds."
+ },
+ "W2887131306": {
+  "model_type": "induced",
+  "why": "'validation and comparison of two animal models for Duchenne Muscular Dystrophy (mdx mouse and GRMD dog)' — GRMD is a maintained research colony and mdx a laboratory strain, not client-owned animals."
+ }
 }

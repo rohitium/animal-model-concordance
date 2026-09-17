@@ -122,6 +122,30 @@ AREA_ORDER = ["oncology", "neurology", "immunology-inflammation", "cross-cutting
               "reproductive-developmental", "hematology", "renal", "dermatology", "other"]
 
 
+def species_of(r):
+    """Every species column this result belongs in (A25).
+
+    A result whose own species_as_reported label names several animals belongs in each of them: a
+    record reading "dogs, rats, mice, rabbits and monkeys" is evidence about five species, and
+    resolving it to none put it nowhere. Only the label is used - species mentioned in a title or a
+    statement are passing prose, not the result's subject. Returns an empty set when no species is
+    named, which keeps the result off the map entirely.
+    """
+    one = sp_display(r)
+    if one not in NON_SPECIES:
+        return {one}
+    named = animals_named(str(r.get("species_as_reported") or ""))
+    if len(named) < 2:
+        return set()
+    return {species_column(SPECIES_FIX.get(a, a), r.get("model_type")) for a in named}
+
+
+def sp_label(r):
+    """What a single row calls itself: one species, or the several it names."""
+    cols = sorted(species_of(r))
+    return ", ".join(cols) if cols else A("species", "none", "no species named")
+
+
 def sp_display(r):
     """Species column for display: frozen vocabulary, with unresolved labels kept visible."""
     s = r.get("species")
@@ -469,7 +493,14 @@ window.initTable = function (cfg) {
   selects.forEach(function (sel) {
     var key = sel.dataset.key;
     var vals = {};
-    data.forEach(function (r) { if (r[key]) vals[r[key]] = (vals[r[key]] || 0) + 1; });
+    // A result can belong to several species, so a filter value may be an array. Count each
+    // membership separately, or the dropdown lists "mouse, zebrafish" as its own option and the
+    // "mouse" option silently misses those rows.
+    data.forEach(function (r) {
+      var v = r[key];
+      if (Array.isArray(v)) { v.forEach(function (x) { vals[x] = (vals[x] || 0) + 1; }); }
+      else if (v) { vals[v] = (vals[v] || 0) + 1; }
+    });
     Object.keys(vals).sort().forEach(function (v) {
       var o = document.createElement('option');
       o.value = v; o.textContent = v + ' (' + vals[v] + ')';
@@ -487,7 +518,11 @@ window.initTable = function (cfg) {
   function matches(r) {
     for (var i = 0; i < selects.length; i++) {
       var sel = selects[i];
-      if (sel.value && r[sel.dataset.key] !== sel.value) return false;
+      var rv = r[sel.dataset.key];
+      if (sel.value) {
+        if (Array.isArray(rv)) { if (rv.indexOf(sel.value) < 0) return false; }
+        else if (rv !== sel.value) return false;
+      }
     }
     var q = search.value.trim().toLowerCase();
     if (!q) return true;
@@ -865,10 +900,10 @@ def ramp(ratio):
 
 def heatmap(fin):
     grid = collections.defaultdict(lambda: {"s": set(), "lv": set()})
-    fin = [r for r in fin if sp_display(r) not in NON_SPECIES]
     for r in fin:
-        g = grid[(area_display(r), sp_display(r))]
-        g["s"].add(r["pmid"]); g["lv"].add((r["level"] or "?")[:1])
+        for col in species_of(r):
+            g = grid[(area_display(r), col)]
+            g["s"].add(r["pmid"]); g["lv"].add((r["level"] or "?")[:1])
     areas = [a for a in AREA_ORDER if any(k[0] == a for k in grid)]
     cols = [c for c in SPECIES_ORDER if any(k[1] == c for k in grid)]
     mx = max(len(g["s"]) for g in grid.values())
@@ -892,11 +927,11 @@ def heatmap(fin):
                                               "evidence level {{level}}")
                    .replace("{{area}}", a).replace("{{species}}", c)
                    .replace("{{n}}", str(n)).replace("{{level}}", lv))
-            h.append(f'<td><a href="results.html?ar={e(a)}&amp;sp={e(c)}" '
+            h.append(f'<td><a href="results.html?ar={e(a)}&amp;spf={e(c)}" '
                      f'style="background:{bg};color:{fg}" title="{e(ttl)}">{n}<sup>{lv}</sup></a></td>')
         h.append(f'<td class="tot"><a href="results.html?ar={e(a)}">{rowtot[a]}</a></td></tr>')
     h.append('<tr><th class="rowh">all</th>'
-             + "".join(f'<td class="tot"><a href="results.html?sp={e(c)}">{coltot[c]}</a></td>' for c in cols)
+             + "".join(f'<td class="tot"><a href="results.html?spf={e(c)}">{coltot[c]}</a></td>' for c in cols)
              + f'<td class="tot">{len({r["pmid"] for r in fin})}</td></tr>')
     h.append("</tbody></table></div>")
     steps = "".join(f'<i style="background:{ramp(i / 5)[0]}"></i>' for i in range(6))
@@ -1357,8 +1392,8 @@ def main():
                "n_corresponded": f"{by_dir['animal-corresponded']:,}",
                "n_not_corresponded": f"{by_dir['animal-did-not-correspond']:,}",
                "n_mixed": f"{by_dir['mixed']:,}", "n_unresolved": f"{unresolved:,}",
-               "n_no_species": f"{sum(1 for r in fin if sp_display(r) in NON_SPECIES):,}",
-               "n_species_results": f"{sum(1 for r in fin if sp_display(r) not in NON_SPECIES):,}",
+               "n_no_species": f"{sum(1 for r in fin if not species_of(r)):,}",
+               "n_species_results": f"{sum(1 for r in fin if species_of(r)):,}",
                "n_pairs": f"{len(classified):,}", "n_single_reviewer": f"{n_single:,}",
                "n_extracted": f"{n_extracted:,}", "n_extraction_studies": f"{n_extraction_studies:,}",
                "n_eligible": f"{n_eligible:,}",
@@ -1447,7 +1482,7 @@ def main():
             val = f"{r['value']:g}{unit}" if isinstance(r["value"], (int, float)) else f"{r['value']}{unit}"
         rows.append({"st": (r["statement"] or "").replace("*", ""), "ti": (r.get("title") or "")[:140],
                      "pm": r["pmid"], "y": r.get("year") or 0, "lv": (r["level"] or "?")[:1],
-                     "sp": sp_display(r), "ar": area_display(r),
+                     "sp": sp_label(r), "spf": sorted(species_of(r)), "ar": area_display(r),
                      "dr": dir_label(r.get("direction")),
                      "dc": DIR_CLASS.get(r.get("direction"), ""), "v": val,
                      "ru": record_link(r["pmid"])[0], "rl": record_link(r["pmid"])[1],
@@ -1469,7 +1504,7 @@ def main():
     body, _, title = compose("results.md", scalars, {
         "results_table": browser("results", "resultdata", json.dumps(rows, separators=(",", ":")), cols,
                                  [("lv", A("results_table", "filter_lv", "Level")),
-                                  ("sp", A("results_table", "filter_sp", "Species")),
+                                  ("spf", A("results_table", "filter_sp", "Species")),
                                   ("ar", A("results_table", "filter_ar", "Disease area")),
                                   ("dr", A("results_table", "filter_dr", "Direction"))],
                                  A("results_table", "noun", "results"), ["st", "ti", "sp", "ar"], row_js,
@@ -1715,7 +1750,7 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
         rblocks = []
         for r in rs:
             meta = [dirtag(r["direction"]), f'level {e((r["level"] or "?")[:1])}',
-                    e(sp_display(r)), e(area_display(r))]
+                    e(sp_label(r)), e(area_display(r))]
             if r.get("value") is not None:
                 unit = "" if r.get("unit") in (None, "none") else f" {e(r['unit'])}"
                 meta.append(f"<strong>{e(r.get('value'))}{unit}</strong>")

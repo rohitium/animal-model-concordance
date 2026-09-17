@@ -768,3 +768,39 @@ evidence for the class, which is what the sources support, and no more.
 The wider lesson repeats A19 and A20: the page kept asking whether a veterinary PRODUCT exists, when
 the question that mattered was what the evidence was for. A study can be a success at its own purpose
 and still leave the veterinary market empty.
+
+## A25 — The evidence map holds species, and a result counts in every species it names (2026-09-16)
+
+The map carried two columns that name no species. "not resolved" held 254 results and
+"other-species" three, and the page explained them by saying the papers "name their animals only as
+'animals' or 'rodents'". Classifying all of them showed that was wrong in both directions: 73% are
+meta-analyses and translatability reviews whose unit of analysis is animal models as a class, so
+there is no species in the paper to recover and no species total being depressed by them; a quarter
+was our own parsing and labelling.
+
+Two changes follow.
+
+**Results that name no species leave the map.** The grid now holds the results that name a species;
+the rest are counted beside it with the reason given. A column called "not resolved" reads as a
+lookup failure, which for most of its contents it was not.
+
+**A result counts in every species its own label names.** `_one_animal()` returned a species only
+when exactly one was found, so a record whose `species_as_reported` reads "dogs, rats, mice, rabbits
+and monkeys" resolved to nothing at all. 16 results are assigned this way, each counted in every
+species it names: mouse +13, zebrafish +7, rat +4, laboratory-dog +3, non-human-primate +2, horse
++2, pig-minipig +2, rabbit +1, companion-dog +1. A study naming five species now appears in five
+cells, which is what the study reports. Only the `species_as_reported` label is used; species
+mentioned in a title or a statement are not, because a passing mention is not the result's species -
+"human genes" and "nonrodent studies" both yielded animals from surrounding prose that the result
+was not about.
+
+Assignment is label-only for a second reason. The pig pattern matched the "pig" inside "guinea pig",
+so five guinea-pig results would have been counted as pigs as well. Animal matching now masks the
+compound term first, which is why this amendment assigns 16 results rather than the 21 counted
+before that fix.
+
+Dog and cat were held back until `model_type` was read from full text, since that field decides the
+companion or laboratory column and an unread value defaults to laboratory. Three of the four studies
+were already corrected under A10 and an independent reading of each agreed; the fourth
+(W2887131306, "mdx mouse vs GRMD dog") is a maintained research colony and is now recorded as
+induced. The dog results therefore route on evidence: three laboratory, one companion.

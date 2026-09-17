@@ -43,7 +43,8 @@ tokens exist to prevent. To see what a token currently resolves to, build the si
 | `{{n_distinct_findings}}` | distinct findings, counting rows that share a quote once |
 | `{{n_level_a}}` `{{n_level_b}}` `{{n_level_c}}` | results per evidence level |
 | `{{n_corresponded}}` `{{n_not_corresponded}}` `{{n_mixed}}` | results by direction |
-| `{{n_unresolved}}` | results whose species could not be resolved |
+| `{{n_no_species}}` | results that name no species, kept off the evidence map |
+| `{{n_species_results}}` | results that name a species and appear on the map |
 | `{{n_single_reviewer}}` | results adjudicated by the single unblinded reviewer |
 | `{{n_extracted}}` | candidate results extracted from full text |
 | `{{n_extraction_studies}}` | studies whose full text was read |
