@@ -1860,7 +1860,7 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
                            f"<blockquote>“{e(r.get('quote'))}”<br><span class='small'>page "
                            f"{e(r.get('pdf_page'))}</span></blockquote>")
         body, _, _ = compose("study.md", {**scalars, "n_results": str(len(rs)),
-                                          "result_word": "result" if len(rs) == 1 else "results"},
+                                          "result_word": "finding" if len(rs) == 1 else "findings"},
                              {"study_header": header, "study_results": "\n".join(rblocks)})
         page(f"study/{pm}.html", (r0.get("title") or pm)[:80], body, depth=1)
 

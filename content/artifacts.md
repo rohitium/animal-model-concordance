@@ -49,7 +49,7 @@ not-applicable :: Not applicable
 placeholder :: Search findings, studies, species…
 empty :: Nothing matches those filters.
 reset :: Reset
-noun :: results
+noun :: findings
 col_st :: Finding
 col_lv :: Level
 col_sp :: Species

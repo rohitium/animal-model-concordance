@@ -1,6 +1,7 @@
 {{study_header}}
 
-{{n_results}} {{result_word}} kept from this study. Each was extracted from the full text, checked
+{{n_results}} {{result_word}} kept from this study. Each is one sentence comparing an animal with
+a human, extracted from the full text, checked
 against the located page, and adjudicated against the review's definition of an
 animal-versus-human comparison.
 
