@@ -449,7 +449,9 @@ def main():
     # Active Phase 2/3 assets have no approval behind them, so they are a watch list, not candidates.
     def route_of(c):
         if c["human_status"] == "active" and c["human_stage"] == "Approved":
-            return "route2" if c["competitor_count"] else "route1"
+            # A mechanism a companion-animal product already works is not a licensing opportunity,
+            # so what used to be route2 is an exclusion rather than a presented route (A31).
+            return None if c["competitor_count"] else "route1"
         if (c["human_status"] == "discontinued" and c.get("discontinuation_verified")
                 and c.get("discontinuation_reason") == "non-clinical"
                 and STAGE_RANK[c["human_stage"]] <= 2):
@@ -465,7 +467,6 @@ def main():
     # much stronger claim - paclitaxel has 156 veterinary publications and no branded program (A19).
     ROUTE_LABEL = {
         "route1": "Approved, mechanism unclaimed in dogs or cats",
-        "route2": "Approved, mechanism already worked",
         "route3": "Shelved for a verified non-clinical reason",
         "watch": "Human pipeline, not yet approved",
     }
@@ -473,7 +474,10 @@ def main():
         c["route_label"] = ROUTE_LABEL.get(c["route"])
     held = [c for c in best.values() if c["route"] is None]
     for c in held:
-        skipped["discontinued on clinical performance, or reason not established"] += 1
+        if c["human_status"] == "active" and c["human_stage"] == "Approved":
+            skipped["a companion-animal product already works this mechanism"] += 1
+        else:
+            skipped["discontinued on clinical performance, or reason not established"] += 1
 
     # Companion-animal crowding, computed here and stored, because the two program CSVs live
     # outside the repository and the site build in CI reads only committed data.
@@ -505,9 +509,9 @@ def main():
             grouped[c["area"]].append(c)
     # Phase 1 and preclinical assets have no human efficacy yet, which is the whole premise, so they
     # are carried in the data as a watch list rather than presented as candidates.
-    PRESENTED_ROUTES = {"route1", "route2", "route3"}
+    PRESENTED_ROUTES = {"route1", "route3"}
     is_presented = lambda c: c["route"] in PRESENTED_ROUTES
-    ROUTE_ORDER = {"route1": 0, "route2": 1, "route3": 2}
+    ROUTE_ORDER = {"route1": 0, "route3": 1}
     areas = [{"area": a, "evidence_rank": area_rank(a),
               "candidates": len([c for c in v if is_presented(c)]),
               "watch_list": len([c for c in v if c["route"] == "watch"]),
@@ -532,7 +536,7 @@ def main():
         "molecules_after_dedup": len(best),
         "deduplicated": n_rows_surviving - len(best),
         "route_labels": ROUTE_LABEL,
-        "route_counts": {k: route_counts.get(k, 0) for k in ("route1", "route2", "route3")},
+        "route_counts": {k: route_counts.get(k, 0) for k in ("route1", "route3")},
         "watch_count": len(watch),
         "watch": watch,
         "crowding": crowding,

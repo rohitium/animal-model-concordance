@@ -67,7 +67,7 @@ tokens exist to prevent. To see what a token currently resolves to, build the si
 |---|---|
 | `{{n_human_programs}}` `{{n_pet_programs}}` | programs in the two supplied lists |
 | `{{n_candidates}}` | candidates presented |
-| `{{n_route1}}` `{{n_route2}}` `{{n_route3}}` | candidates per route |
+| `{{n_route1}}` `{{n_route3}}` | candidates per route |
 | `{{n_watch}}` | pipeline assets held back for want of an approval |
 | `{{n_formulary}}` | route-1 molecules already in routine veterinary use as generics |
 | `{{n_occupied}}` | candidates whose mechanism a companion-animal program works |
@@ -96,7 +96,7 @@ parts you cannot write by hand.
 | `{{cand_routes}}` | the route cards | caninisation |
 | `{{cand_presence}}` | what the presence checks found | available, not currently used |
 | `{{cand_lag}}` | the human-to-veterinary lag histogram | available, not currently used |
-| `{{cand_areas}}` | condition areas ranked on dog evidence | caninisation |
+| `{{cand_indications}}` | programs grouped by the dog condition they target | caninisation |
 | `{{cand_crowding}}` | companion-animal programs per indication | available, not currently used |
 | `{{cand_funnel}}` | how the candidate list was cut | caninisation |
 | `{{cand_table}}` | the searchable candidate browser | caninisation |

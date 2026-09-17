@@ -1,0 +1,231 @@
+{
+ "_README": [
+  "Curated crosswalk from a human candidate indication to the dog or cat condition a companion-animal",
+  "program would actually target, and from that condition to the veterinary_indication strings in the",
+  "classified pair corpus (amendment A31).",
+  "",
+  "Why this is hand-written: candidate indications are human-phrased and the veterinary corpus is not.",
+  "Exact string matching links only 3 of 40. 'Breast cancer' has no dog equivalent - the analogue is",
+  "mammary carcinoma. 'Rheumatoid arthritis' is NOT canine osteoarthritis; it is immune-mediated",
+  "polyarthritis, and mapping it to the 42 osteoarthritis pairs would have been the headline error of",
+  "this section.",
+  "",
+  "ASSIGN is ordered and first match wins, following indication_areas.json (A13) - whose own README",
+  "records an ordered-regex bug where 'myopath' fired before 'cardiomyopath' and silently filed 11",
+  "cardiomyopathies under musculoskeletal. Patterns here are anchored where a general word would",
+  "otherwise swallow a specific one.",
+  "",
+  "An indication with no bucket, or a bucket whose pattern matches no pair, is rendered as 'no",
+  "veterinary evidence retrieved at this indication'. It is NEVER rendered as absence of evidence:",
+  "pulmonary arterial hypertension is the largest surviving candidate cluster and carries 2 pairs.",
+  "",
+  "Pair counts are literature attention, not prevalence and not market size. x1's missing_inputs says",
+  "so explicitly and that warning governs how these numbers may be read.",
+  "",
+  "Glioma, thyroid carcinoma and shock were added after checking the corpus for dog analogues of the initially unmapped candidates. Renal cell carcinoma has none (0 pairs) and stays unmapped; a bare indication of 'cancer' stays unmapped by design, because it names no dog condition."
+ ],
+ "buckets": {
+  "lymphoma": {
+   "label": "Lymphoma",
+   "area": "oncology",
+   "vet": "^lymphoma$|^multicentric lymphoma$|lymphomatous",
+   "why": "Canine multicentric lymphoma is the dog analogue and the indication behind the BTK work (A21)."
+  },
+  "mammary carcinoma": {
+   "label": "Mammary carcinoma",
+   "area": "oncology",
+   "vet": "mammary",
+   "why": "Dogs do not get human breast cancer; the analogue is mammary carcinoma. All HER2/ESR1/BRCA/CDK4-6 breast programs map here."
+  },
+  "urothelial carcinoma": {
+   "label": "Urothelial carcinoma",
+   "area": "oncology",
+   "vet": "urothelial|transitional cell|bladder",
+   "why": "Canine urothelial (transitional cell) carcinoma of the bladder."
+  },
+  "melanoma": {
+   "label": "Melanoma",
+   "area": "oncology",
+   "vet": "^melanoma$|oral melanoma|malignant melanoma",
+   "why": "Canine oral melanoma."
+  },
+  "osteosarcoma": {
+   "label": "Osteosarcoma",
+   "area": "oncology",
+   "vet": "osteosarcoma",
+   "why": "Canine osteosarcoma. Carried here because it is the largest dog oncology literature, though no surviving candidate names it."
+  },
+  "mast cell tumor": {
+   "label": "Mast cell tumor",
+   "area": "oncology",
+   "vet": "mast cell",
+   "why": "Canine mast cell tumour, the indication of the only approved canine oncology drugs."
+  },
+  "pulmonary hypertension": {
+   "label": "Pulmonary hypertension",
+   "area": "cardiovascular",
+   "vet": "pulmonary hypertens",
+   "why": "Canine pulmonary hypertension, usually secondary to mitral valve disease."
+  },
+  "heart failure": {
+   "label": "Congestive heart failure",
+   "area": "cardiovascular",
+   "vet": "heart failure|congestive",
+   "why": "Congestive heart failure in dogs, the endpoint of myxomatous mitral valve disease."
+  },
+  "cardiomyopathy": {
+   "label": "Cardiomyopathy",
+   "area": "cardiovascular",
+   "vet": "cardiomyopath",
+   "why": "Feline hypertrophic and canine dilated cardiomyopathy."
+  },
+  "hypertension": {
+   "label": "Systemic hypertension",
+   "area": "cardiovascular",
+   "vet": "^hypertension$|systemic hypertension",
+   "why": "Systemic hypertension, most often secondary to chronic kidney disease in cats."
+  },
+  "mitral valve disease": {
+   "label": "Mitral valve disease",
+   "area": "cardiovascular",
+   "vet": "mitral valve",
+   "why": "Myxomatous mitral valve disease, the commonest canine cardiac condition."
+  },
+  "atrial fibrillation": {
+   "label": "Atrial fibrillation",
+   "area": "cardiovascular",
+   "vet": "atrial fibrillation|thromboembol",
+   "why": "Atrial fibrillation and feline arterial thromboembolism."
+  },
+  "atopic dermatitis": {
+   "label": "Atopic dermatitis",
+   "area": "immunology-inflammation",
+   "vet": "atopic dermatitis|pruritus",
+   "why": "Canine atopic dermatitis and records labelled pruritus (5 pairs) - the commercial centre of companion-animal immunology and the IL-4Ra battleground (A20)."
+  },
+  "immune-mediated disease": {
+   "label": "Immune-mediated disease",
+   "area": "immunology-inflammation",
+   "vet": "immune-mediated|pemphigus|^lupus",
+   "why": "Immune-mediated haemolytic anaemia, polyarthritis and pemphigus."
+  },
+  "inflammatory bowel disease": {
+   "label": "Chronic enteropathy",
+   "area": "immunology-inflammation",
+   "vet": "inflammatory bowel|chronic enteropath",
+   "why": "Canine chronic enteropathy / inflammatory bowel disease."
+  },
+  "osteoarthritis": {
+   "label": "Osteoarthritis",
+   "area": "musculoskeletal",
+   "vet": "osteoarthrit|degenerative joint",
+   "why": "Canine osteoarthritis, including records labelled degenerative joint disease (3 pairs). NOT the analogue of rheumatoid arthritis, which is immune-mediated polyarthritis."
+  },
+  "immune-mediated polyarthritis": {
+   "label": "Immune-mediated polyarthritis",
+   "area": "musculoskeletal",
+   "vet": "polyarthrit",
+   "why": "The dog analogue of rheumatoid arthritis. Deliberately separate from osteoarthritis."
+  },
+  "glioma": {
+   "label": "Brain tumor",
+   "area": "oncology",
+   "vet": "^glioma$|brain tumor|meningioma",
+   "why": "Canine glioma and other intracranial tumours. Brachycephalic breeds are a recognised spontaneous glioma model."
+  },
+  "thyroid carcinoma": {
+   "label": "Thyroid carcinoma",
+   "area": "oncology",
+   "vet": "thyroid carcinoma",
+   "why": "Canine thyroid carcinoma. Anchored to exclude hyperthyroidism (11 pairs), which is a different disease - the same trap as osteoarthritis standing in for rheumatoid arthritis."
+  },
+  "shock": {
+   "label": "Shock and hypotension",
+   "area": "cardiovascular",
+   "vet": "^shock$|hypotension|septic shock|hemorrhagic shock|vasodilat",
+   "why": "Vasopressor use in canine and feline hypotension and shock."
+  }
+ },
+ "assign": [
+  {
+   "pattern": "glioma|brain tumou?r",
+   "bucket": "glioma"
+  },
+  {
+   "pattern": "medullary thyroid|thyroid cancer",
+   "bucket": "thyroid carcinoma"
+  },
+  {
+   "pattern": "vasodilatory shock|septic shock",
+   "bucket": "shock"
+  },
+  {
+   "pattern": "lymphoma|cll|mantle cell|cutaneous t-cell|hodgkin|lymphomatous",
+   "bucket": "lymphoma"
+  },
+  {
+   "pattern": "breast",
+   "bucket": "mammary carcinoma"
+  },
+  {
+   "pattern": "bladder",
+   "bucket": "urothelial carcinoma"
+  },
+  {
+   "pattern": "melanoma",
+   "bucket": "melanoma"
+  },
+  {
+   "pattern": "osteosarcoma",
+   "bucket": "osteosarcoma"
+  },
+  {
+   "pattern": "mast cell",
+   "bucket": "mast cell tumor"
+  },
+  {
+   "pattern": "pulmonary (arterial )?hypertension|pulmonary hypertension",
+   "bucket": "pulmonary hypertension"
+  },
+  {
+   "pattern": "heart failure|edema / heart failure",
+   "bucket": "heart failure"
+  },
+  {
+   "pattern": "cardiomyopath",
+   "bucket": "cardiomyopathy"
+  },
+  {
+   "pattern": "^hypertension",
+   "bucket": "hypertension"
+  },
+  {
+   "pattern": "mitral",
+   "bucket": "mitral valve disease"
+  },
+  {
+   "pattern": "atrial fibrillation|vte",
+   "bucket": "atrial fibrillation"
+  },
+  {
+   "pattern": "type 2 inflammatory|atopic",
+   "bucket": "atopic dermatitis"
+  },
+  {
+   "pattern": "autoimmune|inflammatory, allergic|corticotropin",
+   "bucket": "immune-mediated disease"
+  },
+  {
+   "pattern": "inflammatory bowel|enteropath",
+   "bucket": "inflammatory bowel disease"
+  },
+  {
+   "pattern": "osteoarthritis",
+   "bucket": "osteoarthritis"
+  },
+  {
+   "pattern": "rheumatoid",
+   "bucket": "immune-mediated polyarthritis"
+  }
+ ]
+}

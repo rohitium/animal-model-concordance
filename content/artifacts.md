@@ -101,13 +101,10 @@ ev_note :: A US label means the FDA reviewed controlled trials.
 
 fig_candidates :: Candidates
 fig_route1 :: Approved, mechanism unclaimed in dogs or cats
-fig_route2 :: Approved, mechanism already worked
 fig_route3 :: Shelved for a verified non-clinical reason
 fig_watch :: Pipeline watch list
 route1_name :: Route 1 · Approved, mechanism unclaimed in dogs or cats
 route1_desc :: Approved in humans. No companion-animal product works this mechanism.
-route2_name :: Route 2 · Approved, mechanism already worked
-route2_desc :: Approved in humans, but a companion-animal product already works this mechanism.
 route3_name :: Route 3 · Shelved for a verified non-clinical reason
 route3_desc :: Stopped for supply, portfolio or corporate reasons.
 watch_name :: Held back · Human pipeline, not yet approved
@@ -116,6 +113,16 @@ areas_conc :: dog findings corresponded
 areas_levela :: are intervention outcomes
 areas_studies :: studies
 areas_cands :: candidates
+ind_programs :: programs
+ind_pairs :: drug pairs in dogs or cats
+ind_conc :: concordant
+ind_disc :: discordant
+ind_mixed :: mixed
+ind_indet :: indeterminate
+ind_none :: No veterinary evidence retrieved at this condition.
+ind_allindet :: Every pair at this condition is indeterminate, so the corpus does not yet say whether dog and human agree.
+ind_unmapped :: No dog condition mapped
+ind_unmapped_note :: These name no condition a dog gets, so no veterinary evidence was looked up for them.
 noun :: molecules
 placeholder :: Search by molecule, target, company or indication…
 empty :: Nothing matches those filters.

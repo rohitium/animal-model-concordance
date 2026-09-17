@@ -450,6 +450,14 @@ tr.hi td{background:#fcf9ef}
 .acard .bar i{display:block;height:100%}
 .acard .bar i.ok{background:var(--accent)}
 .acard .bar i.no{background:var(--no)}
+.areah{font-size:19px;margin:26px 0 2px;font-family:var(--sans)}
+.areasub{font-family:var(--sans);font-size:12.5px;color:var(--dim);margin:0 0 10px;max-width:72ch}
+.acard .bar i.mx{background:var(--mid)}
+.acard .bar i.ind{background:var(--line)}
+.proglist{list-style:none;margin:11px 0 0;padding:0;font-family:var(--sans);font-size:13px}
+.proglist li{padding:4px 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:3px 10px}
+.proglist li:first-child{border-top:0}
+.proglist span{color:var(--dim)}
 .alegend{font-family:var(--sans);font-size:12.5px;color:var(--dim);display:flex;flex-wrap:wrap;
   gap:4px 18px}
 
@@ -1330,7 +1338,7 @@ def cand_routes(d):
     below and on the funnel, where a reader can act on them."""
     labels = d.get("route_labels") or {}
     h = ['<div class="routes">']
-    for k in ("route1", "route2", "route3"):
+    for k in ("route1", "route3"):
         h.append(f'<div class="rcard"><div>'
                  f'<h3>{e(A("caninisation", f"{k}_name", labels.get(k, k)))}</h3>'
                  f'<p>{e(A("caninisation", f"{k}_desc", ""))}</p></div></div>')
@@ -1341,24 +1349,117 @@ def cand_routes(d):
     return "\n".join(h)
 
 
-def cand_areas(d):
+def _vet_evidence(pairs_by_ind, pattern):
+    """Verdict split for a dog condition, summed over the veterinary indications it covers."""
+    tot = collections.Counter()
+    for ind, verdicts in pairs_by_ind.items():
+        if re.search(pattern, ind):
+            tot.update(verdicts)
+    return tot
+
+
+def _pairs_by_indication(classified):
+    """Verdict counts per veterinary indication, spelling-canonicalised.
+
+    British and American spellings split the same condition otherwise - 'tumour'/'tumor' and
+    'haemolytic'/'hemolytic' both occur in the corpus, and a bucket matching only one would
+    silently report half its evidence.
+    """
+    out = collections.defaultdict(collections.Counter)
+    for v in classified.values():
+        ind = (v.get("veterinary_indication") or "").lower().strip()
+        for a, b in (("haemo", "hemo"), ("tumour", "tumor"), ("anaemia", "anemia"),
+                     ("immune mediated", "immune-mediated"), ("oedema", "edema")):
+            ind = ind.replace(a, b)
+        out[re.sub(r"\s+", " ", ind)][(v.get("judgement") or {}).get("pair")] += 1
+    return out
+
+
+def cand_indications(d, xmap, pairs_by_ind):
+    """Programs grouped by the dog condition they would target, with the veterinary evidence at
+    that condition (A31).
+
+    The area cards this replaces showed one set of numbers per disease area, repeated for every
+    molecule in it, which said nothing about which indications hold promising programs. Dog
+    evidence in the review resolves only to a disease area - results carry no indication - so the
+    evidence shown here is the veterinary pair corpus, which does carry one.
+
+    Two things this must never do. It must not print a bare pair count: osteosarcoma is 22 pairs
+    of which 19 are indeterminate, and a lone "22" reads as 22 supporting findings. And it must
+    not render an unmapped condition as zero evidence - pulmonary arterial hypertension is the
+    largest surviving cluster and carries 2 pairs, which is thin, not absent.
+    """
+    buckets, rules = xmap.get("buckets") or {}, xmap.get("assign") or []
+
+    def bucket_of(ind):
+        for r in rules:
+            if re.search(r["pattern"], ind):
+                return r["bucket"]
+        return None
+
+    def norm(x):
+        t = (x.get("indication") or "?").lower()
+        return re.sub(r"\s+", " ", re.split(r"[;(]", t)[0].strip())
+
+    grouped = collections.defaultdict(lambda: collections.defaultdict(list))
+    for c in d.get("candidates", []):
+        grouped[c.get("area")][bucket_of(norm(c))].append(c)
+
     h = ['<div class="areas">']
     for a in d.get("areas", []):
+        area = a["area"]
+        if area not in grouped:
+            continue
         ev = a["evidence"]
         det = ev["corresponded"] + ev["did_not"]
-        h.append(
-            f'<div class="acard"><div class="atop"><h3>{e(area_name(a["area"]))}</h3>'
-            f'<span class="rank">{a["candidates"]} '
-            f'{e(A("caninisation", "areas_cands", "candidates"))}</span></div>'
-            f'<div class="bar"><i class="ok" style="flex:{ev["corresponded"]}"></i>'
-            f'<i class="no" style="flex:{ev["did_not"]}"></i></div>'
-            f'<div class="alegend">'
-            f'<span>{ev["corresponded"]} of {det} '
-            f'{e(A("caninisation", "areas_conc", "of dog results corresponded"))}</span>'
-            f'<span><strong>{ev["level_A"]} of {ev["results"]}</strong> '
-            f'{e(A("caninisation", "areas_levela", "are intervention outcomes"))}</span>'
-            f'<span>{ev["studies"]} {e(A("caninisation", "areas_studies", "studies"))}</span>'
-            f"</div></div>")
+        h.append(f'<h3 class="areah">{e(area_name(area))}</h3>'
+                 f'<p class="areasub">{ev["corresponded"]} of {det} '
+                 f'{e(A("caninisation", "areas_conc", "dog findings corresponded"))} · '
+                 f'{ev["level_A"]} of {ev["results"]} '
+                 f'{e(A("caninisation", "areas_levela", "are intervention outcomes"))} · '
+                 f'{ev["studies"]} {e(A("caninisation", "areas_studies", "studies"))}</p>')
+        keyed = sorted(grouped[area].items(),
+                       key=lambda kv: (kv[0] is None, -len(kv[1]), kv[0] or ""))
+        for bkey, progs in keyed:
+            b = buckets.get(bkey) or {}
+            label = b.get("label") or A("caninisation", "ind_unmapped",
+                                        "No dog condition mapped")
+            h.append(f'<div class="acard"><div class="atop"><h3>{e(label)}</h3>'
+                     f'<span class="rank">{len(progs)} '
+                     f'{e(A("caninisation", "ind_programs", "programs"))}</span></div>')
+            if bkey is None:
+                h.append(f'<p class="cnote">'
+                         f'{e(A("caninisation", "ind_unmapped_note", "These name no condition a dog gets, so no veterinary evidence was looked up for them."))}</p>')
+            else:
+                v = _vet_evidence(pairs_by_ind, b.get("vet") or r"(?!)")
+                n = sum(v.values())
+                dt = v["concordant"] + v["discordant"] + v["mixed"]
+                if not n:
+                    h.append(f'<p class="cnote">'
+                             f'{e(A("caninisation", "ind_none", "No veterinary evidence retrieved at this condition."))}</p>')
+                else:
+                    h.append(f'<div class="bar"><i class="ok" style="flex:{v["concordant"]}"></i>'
+                             f'<i class="no" style="flex:{v["discordant"]}"></i>'
+                             f'<i class="mx" style="flex:{v["mixed"]}"></i>'
+                             f'<i class="ind" style="flex:{v["indeterminate"]}"></i></div>'
+                             f'<div class="alegend"><span><strong>{n}</strong> '
+                             f'{e(A("caninisation", "ind_pairs", "drug pairs in dogs or cats"))}</span>'
+                             f'<span>{v["concordant"]} {e(A("caninisation", "ind_conc", "concordant"))}</span>'
+                             f'<span>{v["discordant"]} {e(A("caninisation", "ind_disc", "discordant"))}</span>'
+                             f'<span>{v["mixed"]} {e(A("caninisation", "ind_mixed", "mixed"))}</span>'
+                             f'<span>{v["indeterminate"]} {e(A("caninisation", "ind_indet", "indeterminate"))}</span>'
+                             f'</div>')
+                    if not dt:
+                        h.append(f'<p class="cnote">'
+                                 f'{e(A("caninisation", "ind_allindet", "Every pair at this condition is indeterminate, so the corpus does not yet say whether dog and human agree."))}</p>')
+            h.append('<ul class="proglist">')
+            for c in sorted(progs, key=lambda c: (c.get("drug") or "").lower()):
+                name = c.get("drug") or c.get("ingredient") or "?"
+                bits = [x for x in (c.get("target"),
+                                    f"approved {c['first_us_approval']}" if c.get("first_us_approval") else None,
+                                    c.get("company")) if x]
+                h.append(f'<li><strong>{e(name)}</strong> <span>{e(" · ".join(bits))}</span></li>')
+            h.append("</ul></div>")
     h.append("</div>")
     return "\n".join(h)
 
@@ -1379,6 +1480,8 @@ def cand_funnel(d):
          "Oncology indication too unspecific to place in a dog"),
         ("dog evidence says biology does not correspond",
          "Dog evidence says the biology does not correspond"),
+        ("human vaccine or adjuvant, not a licensing candidate",
+         "A human vaccine or adjuvant, not a licensing candidate"),
         ("discontinued over safety or withdrawn", "Discontinued over safety, or withdrawn"),
         ("known species toxicity", "Known toxicity in the target species"),
         ("diagnostic or imaging agent, not a therapeutic", "Diagnostic or imaging agent"),
@@ -1394,6 +1497,10 @@ def cand_funnel(d):
     if d.get("deduplicated"):
         h.append(f'<div><span>The same molecule listed more than once (biosimilars, repeat '
                  f'listings)</span><span>−{d["deduplicated"]:,}</span></div>')
+    occupied = sk.get("a companion-animal product already works this mechanism")
+    if occupied:
+        h.append(f'<div><span>A companion-animal product already works this '
+                 f'mechanism</span><span>−{occupied:,}</span></div>')
     held = sk.get("discontinued on clinical performance, or reason not established")
     if held:
         h.append(f'<div><span>Stopped on clinical performance, or the reason could not be '
@@ -1529,7 +1636,7 @@ def main():
         "n_human_programs": f"{(_cand.get('inputs') or {}).get('human_programs', 0):,}",
         "n_pet_programs": f"{(_cand.get('inputs') or {}).get('pet_programs', 0):,}",
         "n_candidates": f"{len(_cand.get('candidates') or []):,}",
-        "n_route1": f"{_rc.get('route1', 0):,}", "n_route2": f"{_rc.get('route2', 0):,}",
+        "n_route1": f"{_rc.get('route1', 0):,}",
         "n_route3": f"{_rc.get('route3', 0):,}",
         "n_watch": f"{_cand.get('watch_count', 0):,}",
         "n_formulary": f"{sum(1 for c in (_cand.get('candidates') or []) if c.get('route') == 'route1' and c.get('in_veterinary_formulary')):,}",
@@ -1829,14 +1936,14 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
         "cand_figures": figures_block([
             (scalars["n_candidates"], A("caninisation", "fig_candidates", "candidates")),
             (scalars["n_route1"], A("caninisation", "fig_route1", "approved, no companion program")),
-            (scalars["n_route2"], A("caninisation", "fig_route2", "approved, target claimed")),
             (scalars["n_route3"], A("caninisation", "fig_route3", "shelved, non-clinical")),
             (scalars["n_watch"], A("caninisation", "fig_watch", "pipeline watch list"))]),
         "cand_routes": cand_routes(_cand),
         "cand_presence": cand_presence(_pcounts),
         "pairs_flow": pairs_flow(classified, attrs),
         "cand_lag": cand_lag(attrs),
-        "cand_areas": cand_areas(_cand),
+        "cand_indications": cand_indications(_cand, load("part2/candidate_indication_map.json") or {},
+                                            _pairs_by_indication(classified)),
         "cand_crowding": cand_crowding(_cand),
         "cand_funnel": cand_funnel(_cand),
         "cand_table": browser("cands", "canddata", json.dumps(crow, separators=(",", ":")), ccols,

@@ -17,12 +17,16 @@ evidence on where dog biology matches human.
 
 {{cand_routes}}
 
-## Where the evidence is {#areas}
+## Where the programs are {#areas}
 
-Areas ranked by how often dog and human findings agreed, weighted by evidence level. Oncology has
-the most evidence and the weakest kind. Cardiovascular has the least and the best.
+Every candidate, grouped by the dog or cat condition it would be developed for. Under each
+condition: the veterinary drug pairs this review classified at that condition, and what they
+found.
 
-{{cand_areas}}
+A pair count is not an opportunity. It counts what the veterinary literature has studied, not how
+many animals have the disease, and prevalence is not in this data at all.
+
+{{cand_indications}}
 
 ## Curious case of BTK inhibitors {#btk}
 

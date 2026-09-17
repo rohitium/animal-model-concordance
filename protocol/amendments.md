@@ -941,3 +941,49 @@ named sources rather than the world.
 This is recorded rather than quietly absorbed because L95 asserted the opposite, in those words, and
 has been corrected to match what the site now does. The gap is a presentation choice, not a change
 in evidence: nothing about what was searched, or found, has moved.
+
+## A31 — Route 2 is an exclusion, and programs are shown by the dog condition they target (2026-09-17)
+
+**Route 2 is dropped.** A molecule whose mechanism a companion-animal product already works is not a
+licensing opportunity, so the 24 candidates that carried that route are now excluded rather than
+presented. The cut is made in route_of, where an approved molecule with a competitor returns no
+route, and the funnel carries a named line - "a companion-animal product already works this
+mechanism" - because the funnel's claim is that its column accounts for every supplied program.
+It still reconciles exactly: 1,949 supplied, 1,563 per-row gates, 386 surviving, 25 deduplicated,
+361 molecules, less 24 here and 208 whose stop reason is unestablished, leaves 129 = 54 candidates
+plus 75 watch-list assets. Candidates go from 78 to 54; route counts are now route1 53, route3 1.
+
+An alternative reading was considered and rejected: excluding Route 2 molecules whose *human* drug
+is off-patent. The data holds no patent or generic field, and approval age is a poor proxy - only 5
+of the 24 predate 2000, while 7 carry no approval year at all, so that rule would have cut the old
+cardiology drugs and kept the CAR-T and checkpoint-inhibitor programs, which is the opposite of the
+intent.
+
+**The area cards are replaced by dog conditions.** The cards showed one set of evidence numbers per
+disease area, repeated identically for every molecule in that area, and said nothing about which
+indications hold promising programs. Programs are now grouped by the dog or cat condition a
+companion-animal product would treat, with the veterinary drug pairs classified at that condition.
+
+The grouping is hand-written, in data/v04/part2/candidate_indication_map.json, because the
+vocabularies do not meet: candidate indications are human-phrased and exact matching links only 3 of
+40. Dogs do not get human breast cancer - the analogue is mammary carcinoma, which gathers the
+HER2, ESR1, BRCA and CDK4/6 programs. Rheumatoid arthritis is **not** canine osteoarthritis; it is
+immune-mediated polyarthritis, and mapping it to the 42 osteoarthritis pairs would have been this
+section's headline error. Thyroid carcinoma is anchored so it cannot swallow hyperthyroidism, a
+different disease carrying 11 pairs. The assign rules are ordered and first-match-wins, following
+A13, whose own register entry records an ordered-regex bug that silently filed 11 cardiomyopathies
+under musculoskeletal.
+
+46 of the 54 candidates map to a dog condition. The 8 that do not are shown under a heading saying
+so: six name only "cancer", and lung cancer and renal cell carcinoma have no dog analogue in the
+pair corpus.
+
+**Evidence is shown as a verdict split, never as a count.** Osteosarcoma carries 22 pairs of which
+19 are indeterminate, and mast cell tumour 11 of which 10 are; a bare number would read as that many
+supporting findings. Each condition shows concordant, discordant, mixed and indeterminate, and a
+condition whose every pair is indeterminate says so in words. A condition with no pairs reads "no
+veterinary evidence retrieved at this condition" and never as absence of evidence - pulmonary
+hypertension is the largest surviving cluster, at 7 programs, and carries 2 pairs.
+
+These counts are literature attention. They are not prevalence and not market size, which x1 already
+states are absent from this analysis and are probably the largest determinant of program value.
