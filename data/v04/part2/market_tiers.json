@@ -1,0 +1,172 @@
+{
+ "_README": [
+  "Amendment A32. Human market scale per mechanism class, hand-curated with a source for each.",
+  "",
+  "WHY A CLASS AND NOT A PRODUCT. A per-molecule pass was attempted and abandoned: 9 searches",
+  "yielded ~4 citable company-reported figures, the rest returning market-research projections,",
+  "CAGR forecasts or prior-year numbers, none of which meet this site's sourcing standard.",
+  "Classes are tiered instead, and a molecule inherits its class.",
+  "",
+  "WHY A PROXY AND NOT A MEASURE. Two earlier attempts failed and are recorded so they are not",
+  "retried. Counting human programs per target measured how GENERIC the target string is, not market",
+  "value: Dupixent scored 1 (the floor) and inhaled treprostinil topped the list at 14. Approval age",
+  "as a generic proxy was equally wrong: only 5 of the 24 dropped route-2 molecules predate 2000.",
+  "",
+  "WHAT A TIER IS A CLAIM ABOUT. The HUMAN franchise for that mechanism. It is NOT a claim about the",
+  "companion-animal opportunity, which this repository holds no data on at all. Dupixent's $14.15B is",
+  "human atopic dermatitis; that canine atopic dermatitis is also commercially large is a separate",
+  "fact this review has not established. Opsumit's PAH revenue says nothing about dog PAH, which is",
+  "rare. Read the tier as 'how big is this mechanism in people', nothing more.",
+  "",
+  "INHERITANCE HAS A KNOWN FAILURE. Under the franchise rule a small product inside a large franchise",
+  "inherits the large tier. Cometriq is the clearest case: Exelixis reports $1,809.4M for Cabometyx",
+  "plus Cometriq combined, but Cometriq alone is $2.4M. Where a product-level figure was found and it",
+  "contradicts its class, the molecule carries an override below rather than the class tier."
+ ],
+ "tiers": {
+  "blockbuster": ">= $5B annual human sales",
+  "large": "$1B - $5B",
+  "mid": "$250M - $1B",
+  "small": "< $250M",
+  "not established": "no company-reported product figure found; never guessed"
+ },
+ "classes": {
+  "anti-TNF": {
+   "tier": "blockbuster",
+   "basis": "Humira $8.993B FY2024; Enbrel $4.527B 2023",
+   "source": "https://www.biospace.com/business/10-best-selling-drugs-of-2024-rake-in-billions-amid-exclusivity-threats"
+  },
+  "IL-4R / type 2 inflammation": {
+   "tier": "blockbuster",
+   "basis": "Dupixent $14.15B FY2024",
+   "source": "https://newsroom.regeneron.com/news-releases/news-release-details/regeneron-reports-fourth-quarter-and-full-year-2024-financial"
+  },
+  "checkpoint inhibitor (oncology)": {
+   "tier": "blockbuster",
+   "basis": "Keytruda $29.5B FY2024 anchors the class",
+   "source": "https://www.biospace.com/business/10-best-selling-drugs-of-2024-rake-in-billions-amid-exclusivity-threats"
+  },
+  "CDK4/6 inhibitor": {
+   "tier": "blockbuster",
+   "basis": "Verzenio $5.3B FY2024, up 37%; Ibrance ~$2.2B",
+   "source": "https://druganddeviceworld.com/2025/02/06/lilly-2024-revenue-stock-increase/"
+  },
+  "TTR stabilizer / silencer": {
+   "tier": "blockbuster",
+   "basis": "tafamidis (Vyndaqel/Vyndamax) >$5B FY2024",
+   "source": "https://amyloidosis.org/pfizer-mounts-defense-of-cardiac-blockbuster-as-alnylam-bridgebio-enter-market/"
+  },
+  "CTLA-4-Ig (immunology)": {
+   "tier": "large",
+   "basis": "Orencia $3.682B FY2024 (BMS 10-K)",
+   "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427225000039/bmy-20241231.htm"
+  },
+  "BTK inhibitor": {
+   "tier": "large",
+   "basis": "Imbruvica ~$3.0-3.35B FY2024",
+   "source": "https://www.globaldata.com/data-insights/healthcare/the-global-drug-sales-of-imbruvica-1127422/"
+  },
+  "VEGF / VEGFR": {
+   "tier": "large",
+   "basis": "Lenvima \u00a5328.5B FY2024; Mvasi $173M in Q4 2024",
+   "source": "https://www.fiercepharma.com/marketing/eisai-s-lenvima-posts-big-growth-numbers-as-merck-collab-rolls-into-action"
+  },
+  "PARP inhibitor": {
+   "tier": "large",
+   "basis": "Lynparza $2.811B 2023, growing 9% in 2024",
+   "source": "https://www.fiercepharma.com/marketing/astrazeneca-and-mercks-lynparza-set-dominate-parp-market-it-looks-grow-cancer-offerings"
+  },
+  "HER2-targeted": {
+   "tier": "large",
+   "basis": "Perjeta $1.9B FY2024; trastuzumab franchise large but biosimilar-eroded",
+   "source": "https://www.creativebiomart.net/blog/top30-best-selling-oncology-drugs-worldwide-in-2024"
+  },
+  "ADC": {
+   "tier": "large",
+   "basis": "Adcetris $1.089B FY2024 (Pfizer), plus Takeda ex-US",
+   "source": "https://www.biochempeg.com/article/427.html"
+  },
+  "PAH vasodilator": {
+   "tier": "large",
+   "basis": "Opsumit $894M H1 2024; Uptravi $1.582B 2023",
+   "source": "https://www.jnj.com/media-center/press-releases/johnson-johnson-reports-q4-2024-and-full-year-2024-results"
+  },
+  "Factor Xa anticoagulant": {
+   "tier": "blockbuster",
+   "basis": "Eliquis is among the largest cardiovascular franchises worldwide",
+   "source": "https://www.biospace.com/business/10-best-selling-drugs-of-2024-rake-in-billions-amid-exclusivity-threats"
+  },
+  "cardiac myosin inhibitor": {
+   "tier": "mid",
+   "basis": "Camzyos $602M FY2024, up from $231M",
+   "source": "https://www.pharmalive.com/bristol-myers-squibb-2025-rewiring-the-company/"
+  },
+  "ACTH": {
+   "tier": "mid",
+   "basis": "Cortrophin Gel $198.1M FY2024",
+   "source": "https://investor.anipharmaceuticals.com/news-releases/news-release-details/ani-pharmaceuticals-reports-record-fourth-quarter-and-full-0"
+  },
+  "BRAF / MEK / RAF": {
+   "tier": "mid",
+   "basis": "Braftovi/Mektovi $437M over 9M 2024",
+   "source": "https://www.precisionmedicineonline.com/business-news/pfizer-oncology-product-revenues-jump-26-percent-q2"
+  },
+  "IL-2 / IL-15 cytokine": {
+   "tier": "small",
+   "basis": "Proleukin $60.5M FY2024; ANKTIVA +$14.1M in 2024",
+   "source": "https://www.sec.gov/Archives/edgar/data/1425205/000155837025001834/iova-20241231x10k.htm"
+  },
+  "cytotoxic chemotherapy": {
+   "tier": "small",
+   "basis": "paclitaxel, cytarabine and gemcitabine are long-established multi-source generics; no branded franchise remains",
+   "source": "https://www.drugs.com/availability/generic-taxol.html"
+  },
+  "cardiovascular generic": {
+   "tier": "small",
+   "basis": "losartan, furosemide, ivabradine, vasopressin and esaxerenone are off-patent or regionally-marketed commodities",
+   "source": "https://www.drugs.com/availability/generic-letairis.html"
+  },
+  "corticosteroid": {
+   "tier": "small",
+   "basis": "betamethasone and triamcinolone are long-established generics; Zilretta is a formulation play",
+   "source": "https://www.drugs.com/availability/generic-taxol.html"
+  },
+  "IL-6R": {
+   "tier": "not established",
+   "basis": "Kevzara $94.1M in Q1 2024 only; Sanofi books global sales and Regeneron books profit share, so no clean product-level annual figure",
+   "source": "https://newsroom.regeneron.com/news-releases/news-release-details/regeneron-reports-fourth-quarter-and-full-year-2024-financial"
+  },
+  "FGFR inhibitor": {
+   "tier": "not established",
+   "basis": "J&J does not break out Balversa revenue",
+   "source": "https://www.jnj.com/media-center/press-releases/johnson-johnson-reports-q4-2024-and-full-year-2024-results"
+  },
+  "SERD / ER-targeted": {
+   "tier": "not established",
+   "basis": "Inluriyo and vepdegestrant are not yet commercially established; any figure would be a forecast",
+   "source": "https://www.creativebiomart.net/blog/top30-best-selling-oncology-drugs-worldwide-in-2024"
+  },
+  "oncolytic virus": {
+   "tier": "not established",
+   "basis": "Amgen does not break out Imlygic revenue",
+   "source": "https://www.amgen.com/newsroom/press-releases/2025/02/amgen-reports-fourth-quarter-and-full-year-2024-financial-results"
+  }
+ },
+ "molecule_overrides": {
+  "Cometriq (cabozantinib)": {
+   "tier": "small",
+   "basis": "Cometriq alone is $2.4M FY2024; the $1,809.4M Exelixis reports is Cabometyx plus Cometriq combined, and Cabometyx is not this candidate",
+   "source": "https://ir.exelixis.com/news-releases/news-release-details/exelixis-announces-fourth-quarter-and-fiscal-year-2024-financial"
+  },
+  "Attruby (acoramidis)": {
+   "tier": "not established",
+   "basis": "approved 22 Nov 2024; $2.9M FY2024 is a launch stub, not a market scale",
+   "source": "https://www.biopharmadive.com/news/bridgebio-attruby-2024-sales-prescriptions-ttr-cardiomyopathy/740469/"
+  },
+  "MYQORZO (aficamten)": {
+   "tier": "not established",
+   "basis": "not yet commercially established; Camzyos anchors the class but this asset has no sales history",
+   "source": "https://www.biopharmadive.com/news/bristol-myers-camzyos-study-failure-non-obstructive-hypertrophic-cardiomyopathy/745356/"
+  }
+ }
+}

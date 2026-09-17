@@ -562,8 +562,13 @@ window.initTable = function (cfg) {
   var params = new URLSearchParams(location.search);
   if (params.get('q')) search.value = params.get('q');
   selects.forEach(function (sel) {
+    // A default narrows the opening view without removing rows: every row is still in the table
+    // and clearing the filter shows them. An explicit URL parameter always wins, so a link into
+    // the table means what it says.
+    var d = sel.dataset.default;
+    if (d) { sel.value = d; }
     var v = params.get(sel.dataset.key);
-    if (v) sel.value = v;
+    if (v !== null) sel.value = v;
   });
 
   function matches(r) {
@@ -1518,8 +1523,12 @@ def browser(tid, data_id, rows_json, columns, filters, noun, search_keys, row_js
     ctl = [f'<div id="{tid}" data-empty="{e(empty or "Nothing matches those filters.")}">'
            '<div class="controls">',
            f'<input type="search" placeholder="{e(ph)}" aria-label="{e(ph)}">']
-    for key, label in filters:
-        ctl.append(f'<select data-key="{key}" aria-label="{e(label)}"><option value="">{e(label)}: all</option></select>')
+    for f in filters:
+        key, label = f[0], f[1]
+        dflt = f[2] if len(f) > 2 else ""
+        da = f' data-default="{e(dflt)}"' if dflt else ""
+        ctl.append(f'<select data-key="{key}"{da} aria-label="{e(label)}">'
+                   f'<option value="">{e(label)}: all</option></select>')
     ctl.append(f'<button class="reset" type="button">{e(reset)}</button>'
                f'<label class="psz">{e(A("tables", "rows", "Rows"))} '
                '<select class="psize">'
@@ -1830,6 +1839,8 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
             "dr": c.get("drug") or "", "ing": c.get("ingredient") or "",
             "tg": c.get("target") or "", "ar": area_name(c.get("area") or ""),
             "rt": c.get("route_label") or "", "st": c.get("human_stage") or "",
+            "cd": (A("caninisation", "kind_candidate", "Candidate") if c.get("priority")
+                   else A("caninisation", "kind_watch", "Watch list")),
             "cn": c.get("competitor_count") or 0, "co": c.get("company") or "",
             "ind": c.get("indication") or "", "yr": c.get("first_us_approval"),
             "ev": (f'{ev.get("corresponded", 0)} of {det} dog results corresponded · '
@@ -1838,6 +1849,13 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
             "cp": [h.get("drug") for h in (c.get("competitors") or [])][:14],
             "sf": [f'{f.get("effect")}' for f in (c.get("safety_flags") or [])],
             "pr": c.get("precedent") or "", "dn": c.get("discontinuation_note") or "",
+            **(lambda q: {"rk": q.get("rank"), "sc": q.get("score"),
+                          "mt": q.get("market_tier") or "", "mb": q.get("market_basis") or "",
+                          "ms": q.get("market_source") or "", "mq": q.get("market_class") or "",
+                          "uc": q.get("unmet_score"), "ub": q.get("unmet_bucket") or "",
+                          "up": q.get("unmet_programs"), "uv": q.get("unmet_via") or "",
+                          "co_sc": q.get("concordance_score"),
+                          "pt": bool(q.get("score_is_partial"))})(c.get("priority") or {}),
             "fm": bool(c.get("in_veterinary_formulary")),
             "vg": bool(c.get("indication_is_vague")),
             "src": c.get("source") or "",
@@ -1858,7 +1876,7 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
                 "pc": p.get("pair_corpus") or [],
                 "ps": p.get("status") or "",
             })(_cev.get(c.get("drug")) or {})})
-    crow.sort(key=lambda r: r["dr"].lower())
+    crow.sort(key=lambda r: (r.get("rk") is None, r.get("rk") or 0, r["dr"].lower()))
     CL = {k: A("caninisation", k, d) for k, d in (
         ("detail_ind", "Human indication"),
         ("detail_ev", "Dog evidence for this condition area"),
@@ -1869,6 +1887,13 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
         ("detail_disc", "Why the human program stopped"),
         ("detail_formulary", "Already in routine veterinary use as a generic."),
         ("detail_vague", "The human indication is too general to place a tumor type."),
+        ("detail_priority", "How this candidate ranks"),
+        ("detail_conc", "Concordance evidence for the area"),
+        ("detail_unmet", "Unmet need"),
+        ("detail_market", "Human market scale"),
+        ("detail_programs", "companion-animal programs"),
+        ("detail_byarea", "matched at area level"),
+        ("detail_partial", "Market scale is not established for this molecule."),
         ("detail_presence", "What is known about companion-animal presence"),
         ("detail_mechanism", "Mechanism in companion animals"),
         ("detail_mechanism_none", "No companion-animal program works this mechanism."),
@@ -1885,6 +1910,12 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
 var L=""" + json.dumps(CL) + """;
 var d='<div class="pd">';
 d+='<h4>'+L.detail_ind+'</h4><p>'+esc(r.ind)+(r.co?' · '+esc(r.co):'')+'</p>';
+if(r.rk){d+='<h4>'+L.detail_priority+'</h4><p class="src">'
+ +L.detail_conc+': '+r.co_sc+' · '+L.detail_unmet+': '+(r.uc==null?'—':r.uc)
+ +(r.ub?' ('+esc(r.ub)+', '+r.up+' '+L.detail_programs+(r.uv==='area'?', '+L.detail_byarea:'')+')':'')
+ +' · '+L.detail_market+': '+esc(r.mt)
+ +(r.mb?' — '+esc(r.mb):'')+(r.ms?' <a href="'+esc(r.ms)+'">source</a>':'')+'</p>';
+ if(r.pt){d+='<p class="src">'+L.detail_partial+'</p>';}}
 if(r.vg){d+='<p class="src">'+L.detail_vague+'</p>';}
 d+='<h4>'+L.detail_ev+'</h4><p class="src">'+esc(r.ev)+'</p>';
 d+='<h4>'+L.detail_presence+'</h4>';
@@ -1923,8 +1954,9 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
 +'<td>'+esc(r.tg)+'</td><td>'+esc(r.ind)+'</td><td>'+esc(r.ar)+'</td><td>'+esc(r.rt)+'</td>'
 +'<td>'+esc(r.st)+(r.yr?' <span class="src">'+r.yr+'</span>':'')+'</td>'
 +'<td class="num">'+((r.mh&&r.mh.length)||r.ch.length?((r.mh?r.mh.length:0)+r.ch.length):'—')+'</td></tr>'
-+'<tr class="det" hidden><td colspan="7">'+d+'</td></tr>';}""")
-    ccols = [{"key": "dr", "label": A("caninisation", "col_drug", "Molecule")},
++'<tr class="det" hidden><td colspan="8">'+d+'</td></tr>';}""")
+    ccols = [{"key": "rk", "label": A("caninisation", "col_rank", "Rank"), "num": True},
+             {"key": "dr", "label": A("caninisation", "col_drug", "Molecule")},
              {"key": "tg", "label": A("caninisation", "col_target", "Target")},
              {"key": "ind", "label": A("caninisation", "col_ind", "Human indication")},
              {"key": "ar", "label": A("caninisation", "col_area", "Condition area")},
@@ -1947,7 +1979,9 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
         "cand_crowding": cand_crowding(_cand),
         "cand_funnel": cand_funnel(_cand),
         "cand_table": browser("cands", "canddata", json.dumps(crow, separators=(",", ":")), ccols,
-                              [("ar", A("caninisation", "filter_area", "Condition area")),
+                              [("cd", A("caninisation", "filter_kind", "Show"),
+                                A("caninisation", "kind_candidate", "Candidate")),
+                               ("ar", A("caninisation", "filter_area", "Condition area")),
                                ("rt", A("caninisation", "filter_route", "Route")),
                                ("st", A("caninisation", "filter_stage", "Human stage"))],
                               A("caninisation", "noun", "candidates"),

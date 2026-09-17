@@ -512,6 +512,107 @@ def main():
     PRESENTED_ROUTES = {"route1", "route3"}
     is_presented = lambda c: c["route"] in PRESENTED_ROUTES
     ROUTE_ORDER = {"route1": 0, "route3": 1}
+
+    # ---- Prioritisation (A32). Three legs, kept separate and never pre-blended, so the page can
+    # say WHY a candidate ranks where it does instead of showing one opaque number.
+    #
+    #   concordance  this review's own evidence for the area, weighted by level (area_rank above)
+    #   unmet need   inverted companion-animal crowding: fewer products for the condition scores higher
+    #   market       hand-curated human franchise scale per mechanism class, each with a source
+    #
+    # The market leg is a PROXY, and a coarse one. It says how big the mechanism is in PEOPLE. It is
+    # not a claim about the companion-animal opportunity: prevalence, market size and willingness to
+    # pay are absent from this repository entirely and are probably the largest determinant of
+    # programme value. Two cheaper proxies were tried and rejected - counting human programs per
+    # target measured how generic the target STRING is (Dupixent scored the floor), and approval age
+    # mis-sorted the route-2 molecules. market_tiers.json records both so neither is retried.
+    TIERS = load("part2/market_tiers.json") or {}
+    TIER_CLASSES, TIER_OVERRIDE = TIERS.get("classes") or {}, TIERS.get("molecule_overrides") or {}
+    MARKET_CLASS = [
+        ("anti-TNF", r"\btnf\b"), ("IL-4R / type 2 inflammation", r"il-4r"), ("IL-6R", r"il-6r"),
+        # CTLA-4-Ig (Orencia, immunology) is tested before the CTLA-4 antibody (Yervoy, oncology):
+        # they share a target name and are different products in different markets.
+        ("CTLA-4-Ig (immunology)", r"ctla-4-ig|abatacept"),
+        ("checkpoint inhibitor (oncology)", r"ipilimumab|pd-1|pd-l1|ctla-4"),
+        ("BTK inhibitor", r"\bbtk\b"), ("CDK4/6 inhibitor", r"cdk4/6"), ("PARP inhibitor", r"parp"),
+        ("HER2-targeted", r"her2|trastuzumab|pertuzumab"), ("VEGF / VEGFR", r"vegf"),
+        ("ADC", r"\badc\b|vedotin|diftitox"), ("FGFR inhibitor", r"fgfr"),
+        ("BRAF / MEK / RAF", r"braf|\bmek\b|\braf\b"),
+        ("SERD / ER-targeted", r"estrogen receptor|protac er"),
+        ("IL-2 / IL-15 cytokine", r"il-2|il-15"), ("oncolytic virus", r"oncolytic|laherparepvec"),
+        ("cytotoxic chemotherapy", r"paclitaxel|cytarabine|gemcitabine"),
+        ("PAH vasodilator", r"endothelin|prostacyclin|pde5|guanylate|ip receptor"),
+        ("TTR stabilizer / silencer", r"\bttr\b"), ("cardiac myosin inhibitor", r"cardiac myosin"),
+        ("Factor Xa anticoagulant", r"factor xa"),
+        ("cardiovascular generic", r"angiotensin|loop diuretic|mineralocorticoid|hcn/if|vasopressin"),
+        ("corticosteroid", r"corticosteroid|glucocorticoid"), ("ACTH", r"melanocortin|acth"),
+    ]
+    TIER_SCORE = {"blockbuster": 100, "large": 70, "mid": 40, "small": 15}
+
+    def market_class(c):
+        hay = " ".join(str(c.get(k) or "") for k in ("target", "ingredient", "drug")).lower()
+        for label, pat in MARKET_CLASS:
+            if re.search(pat, hay):
+                return label
+        return None
+
+    crowd_by_label = {r["indication"]: r["programs"] for r in crowding}
+    max_crowd = max(crowd_by_label.values()) if crowd_by_label else 0
+
+    # The crowding vocabulary is written around companion-animal indications, so human labels miss
+    # it even when the area is unambiguous: "melanoma" and "glioma" are not in the Oncology pattern,
+    # and the anti-TNFs read "Autoimmune disease". Falling back to the area rescues all 12 that the
+    # patterns stranded. The fallback is AREA-level and therefore coarse - every immunology
+    # candidate lands on atopic dermatitis, which is right for Dupixent and the anti-TNFs and is an
+    # approximation for Cortrophin Gel. It is used only to size crowding, never to claim the
+    # candidate treats that condition.
+    AREA_CROWD = {"oncology": "Oncology", "cardiovascular": "Cardiac",
+                  "musculoskeletal": "Osteoarthritis and joints",
+                  "immunology-inflammation": "Atopic dermatitis and pruritus"}
+
+    def crowd_bucket(c):
+        hay = ((c.get("indication") or "") + " " + (c.get("area") or "")).lower()
+        for label, pat in CROWD:
+            if re.search(pat, hay):
+                return label, "indication"
+        a = AREA_CROWD.get(c.get("area"))
+        return (a, "area") if a else (None, None)
+
+    for c in best.values():
+        if not is_presented(c):
+            continue
+        klass = market_class(c)
+        # A product-level figure that contradicts its class wins. Cometriq is why this exists: it
+        # would inherit cabozantinib's $1.8B franchise, but Cometriq itself is $2.4M.
+        ov = TIER_OVERRIDE.get(c.get("drug") or "")
+        entry = ov or (TIER_CLASSES.get(klass) if klass else None) or {}
+        tier = entry.get("tier", "not established")
+        bucket, bucket_via = crowd_bucket(c)
+        # No crowding bucket means UNKNOWN, not uncrowded. Scoring it zero would sink a candidate
+        # for missing data rather than for a saturated market.
+        unmet = round(100 * (1 - crowd_by_label[bucket] / max_crowd), 1) if bucket and max_crowd else None
+        market_score = TIER_SCORE.get(tier)
+        legs = [x for x in (area_rank(c["area"]), unmet, market_score) if x is not None]
+        c["priority"] = {
+            "market_tier": tier, "market_class": klass,
+            "market_basis": entry.get("basis"), "market_source": entry.get("source"),
+            "market_is_override": bool(ov),
+            "unmet_bucket": bucket, "unmet_programs": crowd_by_label.get(bucket),
+            "unmet_via": bucket_via, "unmet_score": unmet,
+            "concordance_score": area_rank(c["area"]),
+            # Fixed denominator of three. A mean over only the PRESENT legs rewards having fewer,
+            # better ones: it put two assets with no market evidence at all (Attruby, aficamten)
+            # third and fourth, above Dupixent and its sourced blockbuster tier. Filling the gap
+            # was worse in both directions - the corpus median still floated them into the top ten,
+            # and zero penalised a molecule for evidence nobody has looked up, which is the
+            # "absence of a finding is not absence of the thing" error the register warns about.
+            # Dividing by three regardless caps an incomplete candidate below a complete one by
+            # construction, while the row still reads "market not established" rather than "small".
+            "score": round(sum(legs) / 3, 1),
+            "legs_present": len(legs),
+            "score_is_partial": len(legs) < 3,
+        }
+
     areas = [{"area": a, "evidence_rank": area_rank(a),
               "candidates": len([c for c in v if is_presented(c)]),
               "watch_list": len([c for c in v if c["route"] == "watch"]),
@@ -524,7 +625,14 @@ def main():
                               key=lambda c: (c["drug"] or "").lower())}
              for a, v in grouped.items()]
     areas.sort(key=lambda x: -x["evidence_rank"])
-    candidates = [c for a in areas for c in a["molecules"]]
+    candidates = sorted([c for a in areas for c in a["molecules"]],
+                        key=lambda c: (-(c.get("priority") or {}).get("score", 0),
+                                       -(c.get("priority") or {}).get("legs_present", 0),
+                                       (c.get("drug") or "").lower()))
+    # Rank is assigned after the sort, because it is a position in this ordering rather than a
+    # property of the molecule. The site reads it directly instead of re-deriving the order.
+    for i, c in enumerate(candidates, 1):
+        c["priority"]["rank"] = i
     watch = [c for a in areas for c in a["watch"]]
     route_counts = collections.Counter(c["route"] for c in candidates)
     out = {

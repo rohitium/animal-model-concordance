@@ -105,7 +105,7 @@ fig_route3 :: Shelved for a verified non-clinical reason
 fig_watch :: Pipeline watch list
 route1_name :: Route 1 · Approved, mechanism unclaimed in dogs or cats
 route1_desc :: Approved in humans. No companion-animal product works this mechanism.
-route3_name :: Route 3 · Shelved for a verified non-clinical reason
+route3_name :: Route 2 · Shelved for a verified non-clinical reason
 route3_desc :: Stopped for supply, portfolio or corporate reasons.
 watch_name :: Held back · Human pipeline, not yet approved
 watch_desc :: Phase 2 and Phase 3 assets, still active. No approval yet.
@@ -113,16 +113,6 @@ areas_conc :: dog findings corresponded
 areas_levela :: are intervention outcomes
 areas_studies :: studies
 areas_cands :: candidates
-ind_programs :: programs
-ind_pairs :: drug pairs in dogs or cats
-ind_conc :: concordant
-ind_disc :: discordant
-ind_mixed :: mixed
-ind_indet :: indeterminate
-ind_none :: No veterinary evidence retrieved at this condition.
-ind_allindet :: Every pair at this condition is indeterminate, so the corpus does not yet say whether dog and human agree.
-ind_unmapped :: No dog condition mapped
-ind_unmapped_note :: These name no condition a dog gets, so no veterinary evidence was looked up for them.
 noun :: molecules
 placeholder :: Search by molecule, target, company or indication…
 empty :: Nothing matches those filters.
@@ -137,6 +127,17 @@ filter_area :: Condition area
 filter_route :: Route
 filter_stage :: Human stage
 col_ind :: Human indication
+col_rank :: Rank
+filter_kind :: Show
+kind_candidate :: Candidate
+kind_watch :: Watch list
+detail_priority :: How this candidate ranks
+detail_conc :: Concordance evidence for the area
+detail_unmet :: Unmet need
+detail_market :: Human market scale
+detail_programs :: companion-animal programs
+detail_byarea :: matched at area level
+detail_partial :: Ranked on the legs that could be established. Market scale is not established for this molecule, and the score is divided by three regardless, so an incomplete candidate never outranks a complete one.
 detail_presence :: What is known about companion-animal presence
 detail_mechanism :: Mechanism in companion animals
 detail_mechanism_none :: No companion-animal program works this mechanism.

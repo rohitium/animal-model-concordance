@@ -48,6 +48,7 @@ data/v04/**
 !data/v04/part2/discontinuation_reasons.json
 !data/v04/part2/companion_presence_map.json
 !data/v04/part2/candidate_indication_map.json
+!data/v04/part2/market_tiers.json
 !data/v04/part2/companion_evidence.json
 !data/v04/part2/pet_target_holders.json
 !data/v04/part2/quality.json

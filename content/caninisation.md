@@ -17,17 +17,6 @@ evidence on where dog biology matches human.
 
 {{cand_routes}}
 
-## Where the programs are {#areas}
-
-Every candidate, grouped by the dog or cat condition it would be developed for. Under each
-condition: the veterinary drug pairs this review classified at that condition, and what they
-found.
-
-A pair count is not an opportunity. It counts what the veterinary literature has studied, not how
-many animals have the disease, and prevalence is not in this data at all.
-
-{{cand_indications}}
-
 ## Curious case of BTK inhibitors {#btk}
 
 | Molecule | Canine study | Human |
@@ -90,8 +79,23 @@ in January 2026.
 
 ## Every candidate {#browse}
 
-{{n_candidates}} candidates plus {{n_watch}} pipeline assets. Filter by route. Click a row to see the
-evidence behind it.
+{{n_candidates}} candidates, ranked. The {{n_watch}} pipeline assets are in the table too — switch
+"Show" to see them. Click a row for the evidence behind it.
+
+Rank combines three things: how well dog and human findings agreed in that condition area, how
+little the companion-animal market is already crowded, and how large the mechanism is in human
+medicine.
+
+::: note What the market leg is, and is not
+Human market scale is hand-curated per mechanism class, with a source for each, because no
+per-molecule figure could be sourced to this site's standard. It says how big the mechanism is **in
+people**. It is not a measure of the companion-animal opportunity.
+
+Prevalence, market size and willingness to pay for dogs and cats are absent from this analysis
+entirely, and are probably the largest determinant of what a program is worth. Seven molecules have
+no established market figure; they are ranked on the legs that could be established and can never
+outrank a molecule with all three.
+:::
 
 {{cand_table}}
 

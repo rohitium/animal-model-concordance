@@ -987,3 +987,49 @@ hypertension is the largest surviving cluster, at 7 programs, and carries 2 pair
 
 These counts are literature attention. They are not prevalence and not market size, which x1 already
 states are absent from this analysis and are probably the largest determinant of program value.
+
+## A32 — Candidates are ranked, on three legs, one of which is a proxy (2026-09-17)
+
+The candidate list is ordered rather than alphabetical. Rank combines the review's own concordance
+evidence for the condition area, an unmet-need leg from companion-animal crowding, and a
+hand-curated human market scale. The three legs are stored separately on every candidate and shown
+in the expanded row, so a reader can see why something ranks where it does instead of being handed
+one number.
+
+**The market leg is a proxy, and it is class-level.** A per-molecule pass was attempted and
+abandoned: nine searches produced roughly four citable company-reported figures, the rest returning
+market-research projections, CAGR forecasts or prior-year numbers, none of which meet this site's
+sourcing standard. Mechanism classes are tiered instead, each with a source, and a molecule inherits
+its class. Where a product-level figure contradicts the class it overrides: Cometriq would inherit
+cabozantinib's $1,809.4M franchise but is itself $2.4M, and Attruby's $2.9M is a launch stub rather
+than a market scale.
+
+**Two cheaper proxies were tried and rejected, and are recorded so neither is retried.** Counting
+human programs against the same target measured how generic the target STRING is, not commercial
+value: Dupixent scored 1, the floor, while inhaled treprostinil topped the list at 14, and 23 of 54
+tied at 1. Approval age as a stand-in for off-patent status was equally wrong: only 5 of the 24
+dropped route-2 molecules predate 2000 and 7 carry no approval year at all.
+
+**The scoring rule took four attempts and the failures matter.** A mean over the legs that exist
+rewards having fewer, better legs: it put Attruby and aficamten - neither with any market evidence -
+third and fourth, above Dupixent and its sourced blockbuster tier. Filling the gap with the corpus
+median still floated them into the top ten. Filling it with zero sank Dupixent to 38 and penalised
+molecules for evidence nobody has looked up, which is the "absence of a finding is not absence of
+the thing" error this register warns about elsewhere. The score is now a sum over a fixed
+denominator of three, so an incomplete candidate is capped below a complete one by construction
+while its row still reads "market not established" rather than "small".
+
+**A crowding bug was fixed in passing.** The crowding vocabulary is written around companion-animal
+indications, so human labels missed it even where the area was unambiguous - "melanoma" and "glioma"
+are not in the Oncology pattern, and the anti-TNFs read "Autoimmune disease". Twelve candidates had
+no unmet-need leg for that reason alone. They now fall back to their condition area, which is
+coarse - every immunology candidate lands on atopic dermatitis, right for Dupixent and the anti-TNFs
+and an approximation for Cortrophin Gel - and is used only to size crowding, never to claim the
+candidate treats that condition.
+
+**What the ranking cannot tell you.** Prevalence, market size and willingness to pay in dogs and
+cats are absent from this repository. The market leg describes human medicine; that canine atopic
+dermatitis is commercially large, or that canine pulmonary hypertension is rare, are facts this
+review has not established and does not encode. Cardiovascular dominates the top of the list because
+its area concordance is 78.0 against oncology's 56.5 and immunology's 47.0 - that is this review's
+evidence, not a market judgement.
