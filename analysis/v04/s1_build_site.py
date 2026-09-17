@@ -232,6 +232,14 @@ table.hm td.tot a,table.hm td.tot{background:#f7f8f9;color:var(--dim);font-weigh
   background:var(--card);color:var(--ink)}
 .controls input[type=search]:focus,.controls select:focus{outline:2px solid var(--accent);outline-offset:1px}
 .count{font-family:var(--sans);font-size:13.5px;color:var(--dim);margin-left:auto}
+.psz{font-family:var(--sans);font-size:13.5px;color:var(--dim);display:flex;align-items:center;gap:6px}
+.psz select{padding:6px 8px;border:1px solid var(--line);border-radius:3px;font:inherit;
+  background:var(--card);color:var(--ink)}
+.pager{display:flex;align-items:center;gap:10px;justify-content:flex-end;margin:10px 0 0;
+  font-family:var(--sans);font-size:13.5px;color:var(--dim)}
+.pager button{border:1px solid var(--line);background:var(--card);color:var(--accent);
+  border-radius:3px;cursor:pointer;font-size:16px;line-height:1;padding:4px 12px}
+.pager button:disabled{color:#c2c8cf;cursor:default}
 .reset{font-family:var(--sans);font-size:13.5px;background:none;border:0;color:var(--accent);
   cursor:pointer;padding:6px 2px}
 th.s{cursor:pointer;user-select:none}
@@ -278,6 +286,14 @@ text.sl{font-family:var(--sans);font-size:11px;fill:var(--dim);paint-order:strok
   padding:11px 14px;font-family:var(--sans);font-size:13.5px}
 .pres .p b{font-size:19px;font-variant-numeric:tabular-nums;margin-right:8px;color:var(--accent)}
 .pres .p.none{border-left-color:var(--mid)}
+.q4{margin:18px 0}
+.q4 .figs{margin:14px 0}
+table.q4m th{font-weight:500;color:var(--dim);background:var(--card)}
+table.q4m td.num{font-variant-numeric:tabular-nums;font-size:15px}
+table.q4m td.hi{font-weight:600;color:var(--accent);background:var(--accent-soft)}
+tr.hi td{background:#fcf9ef}
+.q4s{font-family:var(--sans);font-size:14.5px;color:var(--ink);border-left:3px solid var(--accent);
+  padding:8px 0 8px 14px;margin:16px 0;max-width:72ch}
 
 .areas{display:grid;gap:14px;margin:20px 0}
 .acard{background:var(--card);border:1px solid var(--line);padding:16px 18px}
@@ -361,12 +377,21 @@ window.initTable = function (cfg) {
   var data = JSON.parse(document.getElementById(cfg.dataId).textContent);
   var root = document.getElementById(cfg.id);
   var search = root.querySelector('input[type=search]');
-  var selects = [].slice.call(root.querySelectorAll('select'));
+  // Only selects carrying a data-key are filters. The page-size control is a select too, and
+  // picking up every select swept it into matches(), where r[undefined] !== '10' rejected
+  // every row and rendered an empty table.
+  var selects = [].slice.call(root.querySelectorAll('select[data-key]'));
   var tbody = root.querySelector('tbody');
   var count = root.querySelector('.count');
   var reset = root.querySelector('.reset');
   var heads = [].slice.call(root.querySelectorAll('th.s'));
+  var psize = root.querySelector('.psize');
+  var pager = root.querySelector('.pager');
+  var pinfo = root.querySelector('.pinfo');
+  var prevB = root.querySelector('.prev');
+  var nextB = root.querySelector('.next');
   var sort = { key: null, dir: 1 };
+  var page = 1;
 
   selects.forEach(function (sel) {
     var key = sel.dataset.key;
@@ -416,13 +441,29 @@ window.initTable = function (cfg) {
         return String(x).localeCompare(String(y)) * sort.dir;
       });
     }
-    tbody.innerHTML = rows.length
-      ? rows.map(cfg.row).join('')
+    // Slice the DATA, never the DOM: rows carrying an evidence panel emit two <tr> each, so
+    // slicing rendered rows would separate a row from its own detail panel.
+    var total = rows.length;
+    var size = (psize && psize.value === 'all') ? (total || 1) : parseInt((psize && psize.value) || '10', 10);
+    var pages = Math.max(1, Math.ceil(total / size));
+    if (page > pages) page = pages;
+    var from = (page - 1) * size;
+    var shown = rows.slice(from, from + size);
+    tbody.innerHTML = total
+      ? shown.map(cfg.row).join('')
       : '<tr><td class="empty-state" colspan="' + cfg.cols + '">'
         + (root.dataset.empty || 'Nothing matches those filters.') + '</td></tr>';
-    count.textContent = rows.length === data.length
-      ? data.length.toLocaleString() + ' ' + cfg.noun
-      : rows.length.toLocaleString() + ' of ' + data.length.toLocaleString() + ' ' + cfg.noun;
+    count.textContent = total
+      ? (from + 1).toLocaleString() + '\u2013' + Math.min(from + size, total).toLocaleString()
+        + ' of ' + total.toLocaleString() + ' ' + cfg.noun
+        + (total === data.length ? '' : ' (filtered from ' + data.length.toLocaleString() + ')')
+      : '0 ' + cfg.noun;
+    if (pager) {
+      pager.hidden = pages < 2;
+      pinfo.textContent = 'Page ' + page + ' of ' + pages.toLocaleString();
+      prevB.disabled = page <= 1;
+      nextB.disabled = page >= pages;
+    }
     var p = new URLSearchParams();
     if (search.value.trim()) p.set('q', search.value.trim());
     selects.forEach(function (sel) { if (sel.value) p.set(sel.dataset.key, sel.value); });
@@ -444,12 +485,19 @@ window.initTable = function (cfg) {
 
   var timer;
   search.addEventListener('input', function () {
-    clearTimeout(timer); timer = setTimeout(render, 120);
+    clearTimeout(timer); timer = setTimeout(function () { page = 1; render(); }, 120);
   });
-  selects.forEach(function (sel) { sel.addEventListener('change', render); });
+  selects.forEach(function (sel) {
+    sel.addEventListener('change', function () { page = 1; render(); });
+  });
+  if (psize) psize.addEventListener('change', function () { page = 1; render(); });
+  if (prevB) prevB.addEventListener('click', function () { if (page > 1) { page--; render(); } });
+  if (nextB) nextB.addEventListener('click', function () { page++; render(); });
   reset.addEventListener('click', function () {
     search.value = ''; selects.forEach(function (s) { s.value = ''; });
     sort = { key: null, dir: 1 };
+    page = 1;
+    if (psize) psize.value = '10';
     heads.forEach(function (h) { h.classList.remove('asc', 'desc'); });
     render();
   });
@@ -457,6 +505,7 @@ window.initTable = function (cfg) {
     th.addEventListener('click', function () {
       var key = th.dataset.sort;
       sort = { key: key, dir: sort.key === key ? -sort.dir : 1 };
+      page = 1;
       heads.forEach(function (h) { h.classList.remove('asc', 'desc'); });
       th.classList.add(sort.dir === 1 ? 'asc' : 'desc');
       render();
@@ -466,7 +515,7 @@ window.initTable = function (cfg) {
 };
 """
 
-NAV = [("index.html", "Report"), ("results.html", "Results"), ("pairs.html", "Drug pairs"),
+NAV = [("index.html", "Report"), ("results.html", "Detailed evidence"), ("pairs.html", "Drug pairs"),
        ("caninisation.html", "Program selection"), ("spotcheck.html", "Verify")]
 
 
@@ -580,7 +629,19 @@ def render(src):
         if listtag:
             out.append(f"</{listtag}>"); listtag = None
 
-    for line in src.splitlines():
+    # Each line is passed through inline() separately, so a markdown link wrapped across a line
+    # break never matched: the first line leaves "[" unclosed and the second carries an orphan
+    # "](url)". Join lines while a link bracket is still open, before anything else looks at them.
+    joined, raw_lines, i = [], src.splitlines(), 0
+    while i < len(raw_lines):
+        ln = raw_lines[i]
+        while (ln.count("[") > ln.count("]") or ln.rstrip().endswith("](")) and i + 1 < len(raw_lines):
+            i += 1
+            ln = ln.rstrip() + " " + raw_lines[i].lstrip()
+        joined.append(ln)
+        i += 1
+
+    for line in joined:
         if line.startswith("|"):
             rows.append(line); continue
         flush_table()
@@ -878,6 +939,93 @@ def pairs_flow(classified, attrs):
                   A("caninisation", "pairsflow_note", ""))
 
 
+def q4_block(d):
+    """Companion animals vs laboratory models, drawn from the numbers d5 computed.
+
+    Previously this piped d5's working draft through the markdown renderer. That draft's "##"
+    headings became page-level <h2>s sitting beside Methods and Limitations, its intermediate counts
+    arrived as bare bullet lists, and the sensitivity analysis was given the same weight as the
+    primary rule while stating the opposite conclusion. Nothing is recomputed here: every figure
+    comes from part2/q4_summary.json, written by the same function that writes the report (A22).
+    """
+    if not d:
+        return ""
+    rules = {r["rule"]: r for r in d.get("rules", [])}
+    p = rules.get("lab_side")
+    if not p:
+        return ""
+    A_ = lambda k, dflt="": A("q4", k, dflt)
+    h = ['<div class="q4">']
+
+    # The 2x2, as a labelled matrix rather than a bare contingency table.
+    h.append('<figure class="chart"><figcaption>'
+             + e(A_("matrix_caption", "Where companion animals and laboratory models agreed with the "
+                                      "human outcome, for the {n} pairs where all three sides are "
+                                      "positive or negative").replace("{n}", f'{p["n"]}'))
+             + "</figcaption>")
+    h.append('<div class="scroll"><table class="q4m"><thead><tr>'
+             f'<th></th><th>{e(A_("lab_yes", "laboratory matched"))}</th>'
+             f'<th>{e(A_("lab_no", "laboratory did not"))}</th></tr></thead><tbody>'
+             f'<tr><th>{e(A_("comp_yes", "companion matched"))}</th>'
+             f'<td class="num hi">{p["both_matched"]}</td><td class="num">{p["companion_only"]}</td></tr>'
+             f'<tr><th>{e(A_("comp_no", "companion did not"))}</th>'
+             f'<td class="num">{p["laboratory_only"]}</td><td class="num">{p["neither"]}</td></tr>'
+             "</tbody></table></div></figure>")
+
+    # The two rates, then the only comparison that carries information: the discordant corner.
+    h.append('<div class="figs">'
+             f'<div><div class="n">{p["companion_rate"]:.0%}</div><div class="l">'
+             f'{e(A_("rate_comp", "companion animals matched humans"))}</div></div>'
+             f'<div><div class="n">{p["laboratory_rate"]:.0%}</div><div class="l">'
+             f'{e(A_("rate_lab", "laboratory models matched humans"))}</div></div>'
+             f'<div><div class="n">{p["discordant"]}</div><div class="l">'
+             f'{e(A_("rate_disc", "pairs where only one agreed"))}</div></div></div>')
+    if p.get("companion_share_of_discordant") is not None:
+        h.append('<p class="cnote">'
+                 + e(A_("disc_note", "Of those, companion animals were right in {b} ({pct}, 95% CI "
+                                     "{lo}–{hi}).")
+                     .replace("{b}", str(p["companion_only"]))
+                     .replace("{pct}", f'{p["companion_share_of_discordant"]:.0%}')
+                     .replace("{lo}", f'{p["ci_lo"]:.0%}').replace("{hi}", f'{p["ci_hi"]:.0%}'))
+                 + "</p>")
+    if p.get("statement"):
+        h.append(f'<p class="q4s">{e(p["statement"])}</p>')
+
+    # Breakdown: the human-negative row is the only one that tests prediction, and says so.
+    rows = d.get("breakdown") or []
+    if rows:
+        h.append('<figure class="chart"><figcaption>'
+                 + e(A_("breakdown_caption", "Where the comparison is informative")) + "</figcaption>"
+                 '<div class="scroll"><table><thead><tr>'
+                 f'<th>{e(A_("col_subset", "Subset"))}</th>'
+                 f'<th class="num">{e(A_("col_pairs", "Pairs"))}</th>'
+                 f'<th class="num">{e(A_("col_comp", "Companion matched"))}</th>'
+                 f'<th class="num">{e(A_("col_lab", "Laboratory matched"))}</th></tr></thead><tbody>')
+        for r in rows:
+            n = r["pairs"]
+            pc = f'{r["companion_matched"]}/{n} ({r["companion_matched"] / n:.0%})' if n else "—"
+            pl = f'{r["laboratory_matched"]}/{n} ({r["laboratory_matched"] / n:.0%})' if n else "—"
+            mark = ' <span class="chip">' + e(A_("tests", "tests prediction")) + "</span>" if r.get("tests_prediction") else ""
+            cls = ' class="hi"' if r.get("tests_prediction") else ""
+            h.append(f"<tr{cls}><td>{e(r['subset'])}{mark}</td><td class='num'>{n}</td>"
+                     f"<td class='num'>{pc}</td><td class='num'>{pl}</td></tr>")
+        h.append("</tbody></table></div></figure>")
+
+    s = rules.get("lab_side_unanimous")
+    if s and s.get("n"):
+        h.append('<p class="cnote">'
+                 + e(A_("sensitivity", "Sensitivity, counting a laboratory side only when every study "
+                                       "agrees: {n} pairs, companion {c}, laboratory {l}. {st}")
+                     .replace("{n}", str(s["n"])).replace("{c}", f'{s["companion_rate"]:.0%}')
+                     .replace("{l}", f'{s["laboratory_rate"]:.0%}').replace("{st}", s.get("statement") or ""))
+                 + "</p>")
+    if d.get("reader"):
+        h.append(f'<p class="cnote">{e(A_("reader", "Laboratory side read from abstracts by"))} '
+                 f'{e(d["reader"])}.</p>')
+    h.append("</div>")
+    return "\n".join(h)
+
+
 def hbars(rows, caption="", note="", alt_before=None):
     """Horizontal bar chart. rows are (label, n); alt_before shades the first n bars differently."""
     mx = max([n for _, n in rows] or [1])
@@ -1000,7 +1148,15 @@ def browser(tid, data_id, rows_json, columns, filters, noun, search_keys, row_js
            f'<input type="search" placeholder="{e(ph)}" aria-label="{e(ph)}">']
     for key, label in filters:
         ctl.append(f'<select data-key="{key}" aria-label="{e(label)}"><option value="">{e(label)}: all</option></select>')
-    ctl.append(f'<button class="reset" type="button">{e(reset)}</button><span class="count"></span></div>')
+    ctl.append(f'<button class="reset" type="button">{e(reset)}</button>'
+               f'<label class="psz">{e(A("tables", "rows", "Rows"))} '
+               '<select class="psize">'
+               '<option>10</option><option>25</option><option>50</option><option>100</option>'
+               f'<option value="all">{e(A("tables", "all", "All"))}</option></select></label>'
+               '<span class="count"></span></div>')
+    ctl.append('<div class="pager"><button class="prev" type="button">&#8249;</button>'
+               '<span class="pinfo"></span>'
+               '<button class="next" type="button">&#8250;</button></div>')
     ctl.append('<div class="scroll"><table><thead><tr>')
     for c in columns:
         cls = "s" + (" num" if c.get("num") else "")
@@ -1153,7 +1309,7 @@ def main():
         "level_table": "\n".join(lt),
         "heatmap": heatmap(fin),
         "pairs_strata": report_md(os.path.join(V04, "part2", "summary_v2.md")),
-        "q4_tables": report_md(os.path.join(V04, "part2", "q4_report.md")),
+        "q4_tables": q4_block(load("part2/q4_summary.json")),
         "recall": report_md(os.path.join(V04, "retrieval", "recall.md")),
     }
     body, sections, title = compose("report.md", scalars, blocks)

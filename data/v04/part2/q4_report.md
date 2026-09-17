@@ -1,6 +1,6 @@
 # Q4: companion animals vs laboratory models, within drug (draft)
 
-Built 2026-09-14 by `analysis/v04/d5_lab_models.py`.
+Built 2026-09-16 by `analysis/v04/d5_lab_models.py`.
 
 - primary pairs with a classifiable human side: 343
 - laboratory side (primary rule): {'mixed': 41, 'indeterminate': 88, 'positive': 205, 'negative': 9}

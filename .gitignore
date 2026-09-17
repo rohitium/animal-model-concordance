@@ -54,6 +54,7 @@ data/v04/**
 !data/v04/part2/summary_v2.md
 !data/v04/part2/pairs_report.md
 !data/v04/part2/q4_report.md
+!data/v04/part2/q4_summary.json
 !data/v04/part2/q4_reader_audit.md
 !data/v04/retrieval/
 !data/v04/retrieval/recall.md

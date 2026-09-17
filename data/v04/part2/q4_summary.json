@@ -1,0 +1,76 @@
+{
+ "built": "2026-09-16",
+ "targets": 343,
+ "rules": [
+  {
+   "rule": "lab_side",
+   "rule_name": "primary rule: laboratory side positive/negative when at least 75% of studies agree",
+   "n": 108,
+   "both_matched": 86,
+   "companion_only": 4,
+   "laboratory_only": 14,
+   "neither": 4,
+   "companion_rate": 0.8333333333333334,
+   "laboratory_rate": 0.9259259259259259,
+   "discordant": 18,
+   "companion_share_of_discordant": 0.2222222222222222,
+   "ci_lo": 0.0641,
+   "ci_hi": 0.4764,
+   "statement": "where the two disagreed, laboratory models matched the human outcome more often than companion animals."
+  },
+  {
+   "rule": "lab_side_unanimous",
+   "rule_name": "sensitivity: laboratory side positive/negative only when every study agrees",
+   "n": 65,
+   "both_matched": 54,
+   "companion_only": 1,
+   "laboratory_only": 7,
+   "neither": 3,
+   "companion_rate": 0.8461538461538461,
+   "laboratory_rate": 0.9384615384615385,
+   "discordant": 8,
+   "companion_share_of_discordant": 0.125,
+   "ci_lo": 0.0032,
+   "ci_hi": 0.5265,
+   "statement": "concordance with human outcomes did not differ detectably between companion animals with naturally occurring disease and laboratory models of the same drug and condition."
+  }
+ ],
+ "breakdown": [
+  {
+   "subset": "human result positive",
+   "pairs": 104,
+   "companion_matched": 89,
+   "laboratory_matched": 100,
+   "tests_prediction": false
+  },
+  {
+   "subset": "human result negative",
+   "pairs": 4,
+   "companion_matched": 1,
+   "laboratory_matched": 0,
+   "tests_prediction": true
+  },
+  {
+   "subset": "approved in humans before the veterinary evidence",
+   "pairs": 90,
+   "companion_matched": 78,
+   "laboratory_matched": 84,
+   "tests_prediction": false
+  },
+  {
+   "subset": "approved in humans after the veterinary evidence",
+   "pairs": 2,
+   "companion_matched": 2,
+   "laboratory_matched": 2,
+   "tests_prediction": false
+  },
+  {
+   "subset": "no US human approval",
+   "pairs": 16,
+   "companion_matched": 10,
+   "laboratory_matched": 14,
+   "tests_prediction": false
+  }
+ ],
+ "reader": "gemini-2.5-flash, audited 79% correct (42 of 53 reads)"
+}

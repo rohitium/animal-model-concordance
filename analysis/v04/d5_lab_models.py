@@ -113,23 +113,27 @@ def main():
     out.update({k: r for k, r in res.items() if "error" not in r})
     save(out, "part2/lab_models.json")
 
-    rules_out = []
+    rules_out, q4 = [], []
     for rule_key, rule_name in (("lab_side", "primary rule: laboratory side positive/negative when at least 75% of studies agree"),
                                 ("lab_side_unanimous", "sensitivity: laboratory side positive/negative only when every study agrees")):
-        rules_out.append(compare(targets, pairs, out, rule_key, rule_name))
+        rules_out.append(compare(targets, pairs, out, rule_key, rule_name, q4))
     L = ["# Q4: companion animals vs laboratory models, within drug (draft)", "", f"Built {today()} by `analysis/v04/d5_lab_models.py`.", "",
          f"- primary pairs with a classifiable human side: {len(targets)}",
          f"- laboratory side (primary rule): {dict(collections.Counter(out[k]['lab_side'] for k in targets if k in out))}",
          f"- laboratory side (unanimous rule): {dict(collections.Counter(out[k].get('lab_side_unanimous') for k in targets if k in out))}", ""]
     for block in rules_out:
         L += block
-    L += breakdown(targets, pairs, out)
+    q4_rows = []
+    L += breakdown(targets, pairs, out, q4_rows)
+    save({"built": today(), "targets": len(targets), "rules": q4, "breakdown": q4_rows,
+          "reader": "gemini-2.5-flash, audited 79% correct (42 of 53 reads)"},
+         "part2/q4_summary.json")
     L += ["", "Caveat: laboratory efficacy literature is biased towards positive results, which inflates laboratory agreement "
           "whenever the human result is positive; laboratory sides are read from abstracts."]
     open(os.path.join(V04, "part2", "q4_report.md"), "w").write("\n".join(L) + "\n")
     print("\n".join(L))
 
-def breakdown(targets, pairs, out):
+def breakdown(targets, pairs, out, rows_out=None):
     """Where the comparison is informative. A laboratory literature that is almost always positive agrees with a
     positive human result automatically; predictive value shows only where the human result is negative."""
     attrs = load("part2/pair_attributes.json")
@@ -147,6 +151,19 @@ def breakdown(targets, pairs, out):
         if not n:
             return f"| {title} | 0 | — | — |"
         return f"| {title} | {n} | {sum(r[1] for r in rs)}/{n} ({sum(r[1] for r in rs)/n:.0%}) | {sum(r[2] for r in rs)}/{n} ({sum(r[2] for r in rs)/n:.0%}) |"
+    if rows_out is not None:
+        for title, rs in (("human result positive", [r for r in rows if r[0] == "positive"]),
+                          ("human result negative", [r for r in rows if r[0] == "negative"]),
+                          ("approved in humans before the veterinary evidence",
+                           [r for r in rows if r[3] == "human-approval-before-veterinary-evidence"]),
+                          ("approved in humans after the veterinary evidence",
+                           [r for r in rows if r[3] == "human-approval-after-veterinary-evidence"]),
+                          ("no US human approval", [r for r in rows if r[3] == "no-us-approval"])):
+            n = len(rs)
+            rows_out.append({"subset": title, "pairs": n,
+                             "companion_matched": sum(r[1] for r in rs) if n else 0,
+                             "laboratory_matched": sum(r[2] for r in rs) if n else 0,
+                             "tests_prediction": title == "human result negative"})
     L = ["## Breakdown (primary rule): where the comparison is informative", "",
          "| subset | pairs | companion animals matched humans | laboratory models matched humans |", "|---|---|---|---|",
          line("human result positive", [r for r in rows if r[0] == "positive"]),
@@ -159,7 +176,7 @@ def breakdown(targets, pairs, out):
          "Laboratory reader: gemini-2.5-flash, audited 79% correct (42/53 reads; q4_reader_audit.md).", ""]
     return L
 
-def compare(targets, pairs, out, rule_key, rule_name):
+def compare(targets, pairs, out, rule_key, rule_name, summary=None):
     def label(side, human):
         if side not in ("positive", "negative") or human not in ("positive", "negative"):
             return None
@@ -192,6 +209,15 @@ def compare(targets, pairs, out, rule_key, rule_name):
             L.append("**F1 statement:** where the two disagreed, companion animals matched the human outcome more often than laboratory models.")
         else:
             L.append("**F1 statement:** where the two disagreed, laboratory models matched the human outcome more often than companion animals.")
+    # The site renders these numbers rather than re-deriving them, so the same computation that
+    # writes the report also emits it as data (A22).
+    if summary is not None:
+        summary.append({"rule": rule_key, "rule_name": rule_name, "n": n,
+                        "both_matched": a, "companion_only": b, "laboratory_only": c_, "neither": d,
+                        "companion_rate": comp_rate, "laboratory_rate": lab_rate,
+                        "discordant": b + c_, "companion_share_of_discordant": share,
+                        "ci_lo": lo, "ci_hi": hi,
+                        "statement": L[-1].replace("**F1 statement:** ", "") if n else None})
     return L + [""]
 
 if __name__ == "__main__":

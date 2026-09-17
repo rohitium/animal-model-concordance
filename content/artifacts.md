@@ -156,3 +156,28 @@ detail_disc :: Why the human program stopped
 detail_formulary :: Already in routine veterinary use as a generic.
 detail_vague :: The human indication is too general to place a specific companion-animal tumor type.
 detail_source :: Program source
+
+## q4
+
+matrix_caption :: Where companion animals and laboratory models agreed with the human outcome, across the {n} pairs with a clear answer on all three sides
+comp_yes :: Companion matched
+comp_no :: Companion did not
+lab_yes :: Laboratory matched
+lab_no :: Laboratory did not
+rate_comp :: companion animals matched humans
+rate_lab :: laboratory models matched humans
+rate_disc :: pairs where only one agreed
+disc_note :: Of those, companion animals were right in {b} ({pct}, 95% CI {lo}–{hi}).
+breakdown_caption :: Where the comparison is informative
+col_subset :: Subset
+col_pairs :: Pairs
+col_comp :: Companion matched
+col_lab :: Laboratory matched
+tests :: tests prediction
+sensitivity :: Counting a laboratory side only when every study agrees: {n} pairs, companion {c}, laboratory {l}. {st}
+reader :: Laboratory side read from abstracts by
+
+## tables
+
+rows :: Rows
+all :: All
