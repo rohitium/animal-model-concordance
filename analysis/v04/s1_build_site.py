@@ -1176,7 +1176,9 @@ def main():
 +'<td>'+r.lv+'</td><td>'+esc(r.sp)+'</td><td>'+esc(r.ar)+'</td>'
 +'<td><span class="tag '+r.dc+'">'+r.dr+'</span></td>'
 +'<td class="num">'+esc(r.v||'')+'</td>'
-+'<td><a href="study/'+encodeURIComponent(r.pm)+'.html">'+esc(r.ti)+'</a><br><span class="src">'+(r.y||'')+'</span></td></tr>';}""")
++'<td><a href="study/'+encodeURIComponent(r.pm)+'.html">'+esc(r.ti)+'</a><br><span class="src">'
++(r.y||'')+' · <a href="https://pubmed.ncbi.nlm.nih.gov/'+encodeURIComponent(r.pm)+'/">PubMed</a>'
++'</span></td></tr>';}""")
     cols = [{"key": "st", "label": A("results_table", "col_st", "Finding")},
             {"key": "lv", "label": A("results_table", "col_lv", "Level")},
             {"key": "sp", "label": A("results_table", "col_sp", "Species")},
