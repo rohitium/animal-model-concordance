@@ -104,8 +104,6 @@ fig_route1 :: Approved, mechanism unclaimed in dogs or cats
 fig_route2 :: Approved, mechanism already worked
 fig_route3 :: Shelved for a verified non-clinical reason
 fig_watch :: Pipeline watch list
-lag_caption :: Years from human approval to the veterinary evidence, for the 499 pairs with both dates.
-lag_note :: Bars are drugs veterinary medicine took decades to adopt.
 route1_name :: Route 1 · Approved, mechanism unclaimed in dogs or cats
 route1_desc :: Approved in humans. No companion-animal product works this mechanism.
 route2_name :: Route 2 · Approved, mechanism already worked
@@ -118,7 +116,6 @@ areas_conc :: dog results corresponded
 areas_levela :: are intervention outcomes
 areas_studies :: studies
 areas_cands :: candidates
-crowding_caption :: Companion-animal programs per indication
 noun :: molecules
 placeholder :: Search by molecule, target, company or indication…
 empty :: Nothing matches those filters.

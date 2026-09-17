@@ -9,12 +9,6 @@ Which human drugs are the best candidates to develop for dogs and cats, judged a
 evidence on where dog biology matches human.
 :::
 
-## The lag {#pattern}
-
-Drugs are proven in human trials first. Veterinary versions follow, usually decades later.
-
-{{cand_lag}}
-
 ## How we pick candidates {#selection}
 
 1. Demonstrated safety and efficacy in humans
@@ -23,25 +17,12 @@ Drugs are proven in human trials first. Veterinary versions follow, usually deca
 
 {{cand_routes}}
 
-::: note Two cautions
-{{n_formulary}} of the {{n_route1}} route-1 molecules are already veterinary generics. No company is
-developing them, but dogs do receive them.
-
-Route 3 is small because most discontinuations are clinical. One source reads
-["pulls the plug"](https://www.biospace.com/regeneron-pulls-the-plug-on-osteoarthritis-and-cat-allergy-therapies)
-for a program that had a clinical hold and an FDA-halted trial.
-:::
-
 ## Where the evidence is {#areas}
 
 Areas ranked by how often dog and human findings agreed, weighted by evidence level. Oncology has
 the most evidence and the weakest kind. Cardiovascular has the least and the best.
 
 {{cand_areas}}
-
-## Crowding is validation {#crowding}
-
-{{cand_crowding}}
 
 ## Curious case of BTK inhibitors {#btk}
 

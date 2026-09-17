@@ -96,9 +96,9 @@ parts you cannot write by hand.
 | `{{cand_figures}}` | a row of headline figures | available, not currently used |
 | `{{cand_routes}}` | the route cards | caninisation |
 | `{{cand_presence}}` | what the presence checks found | caninisation |
-| `{{cand_lag}}` | the human-to-veterinary lag histogram | caninisation |
+| `{{cand_lag}}` | the human-to-veterinary lag histogram | available, not currently used |
 | `{{cand_areas}}` | condition areas ranked on dog evidence | caninisation |
-| `{{cand_crowding}}` | companion-animal programs per indication | caninisation |
+| `{{cand_crowding}}` | companion-animal programs per indication | available, not currently used |
 | `{{cand_funnel}}` | how the candidate list was cut | caninisation |
 | `{{cand_table}}` | the searchable candidate browser | caninisation |
 | `{{spotcheck_items}}` | the sampled results | spotcheck |

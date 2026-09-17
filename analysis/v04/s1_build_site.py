@@ -112,7 +112,7 @@ def recovered_species(r):
     if from_title and from_text:
         return from_title if from_title == from_text else None
     return from_title or from_text
-SPECIES_ORDER = ["mouse", "rat", "guinea pig", "hamster", "rabbit", "pig", "sheep/goat",
+SPECIES_ORDER = ["mouse", "rat", "guinea pig", "rabbit", "pig", "sheep/goat",
                  "non-human primate", "laboratory dog", "companion dog", "laboratory cat",
                  "companion cat", "horse", "zebrafish"]
 # Columns that name no species. Most of what lands here are meta-analyses whose finding is about
@@ -123,7 +123,7 @@ NON_SPECIES = {"not resolved", "other-species"}
 # Invertebrate models are not shown on the evidence map. They must be removed from the grid itself,
 # not merely from SPECIES_ORDER: row and column totals count every study in the grid, so dropping a
 # column alone leaves visible cells that do not sum to the total printed beside them.
-OFF_MAP_SPECIES = {"drosophila", "c-elegans"}
+OFF_MAP_SPECIES = {"drosophila", "c-elegans", "hamster"}
 AREA_ORDER = ["oncology", "neurology", "immunology/inflammation", "cross-cutting toxicology",
               "cardiovascular", "liver/GI", "infectious disease", "pain/musculoskeletal",
               "psychiatry/addiction", "metabolic/endocrine", "ophthalmology", "respiratory",
@@ -1262,14 +1262,16 @@ def cand_lag(attrs):
 
 
 def cand_routes(d):
-    counts, labels = d.get("route_counts") or {}, d.get("route_labels") or {}
-    items = [(k, counts.get(k, 0)) for k in ("route1", "route2", "route3")]
+    """The routes, stated as bases for selection. The per-route counts are deliberately not
+    shown here: this section is about what each route *is*, and the counts are in the browser
+    below and on the funnel, where a reader can act on them."""
+    labels = d.get("route_labels") or {}
     h = ['<div class="routes">']
-    for k, n in items:
-        h.append(f'<div class="rcard"><div class="rn">{n}</div><div>'
+    for k in ("route1", "route2", "route3"):
+        h.append(f'<div class="rcard"><div>'
                  f'<h3>{e(A("caninisation", f"{k}_name", labels.get(k, k)))}</h3>'
                  f'<p>{e(A("caninisation", f"{k}_desc", ""))}</p></div></div>')
-    h.append(f'<div class="rcard held"><div class="rn">{d.get("watch_count", 0)}</div><div>'
+    h.append(f'<div class="rcard held"><div>'
              f'<h3>{e(A("caninisation", "watch_name", "Held back"))}</h3>'
              f'<p>{e(A("caninisation", "watch_desc", ""))}</p></div></div>')
     h.append("</div>")

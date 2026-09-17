@@ -830,3 +830,63 @@ mapping. The three results move into the off-map count, which goes from 241 to 2
 The frozen extraction vocabulary in common.py still contains other-rodent, drosophila, c-elegans and
 other-species. That is deliberate: it is what the extractor was instructed to emit and what the
 stored records use, and rewriting it would invalidate the records. Only the display columns change.
+
+## A27 — Numbers audit: two false claims on the report page, and counts off the route cards (2026-09-16)
+
+Every figure stated in prose was checked against the records it claims to come from. Two were wrong,
+both on the report page, and both about the results kept off the evidence map.
+
+**"Most are meta-analyses" is false.** The evidence-map paragraph explained the off-map results as
+mostly meta-analyses. By study design, 38 of the 244 are systematic reviews or meta-analyses and 109
+are primary-comparison. The paragraph now rests on what the records carry: these results state a
+finding about animal models as a class rather than about a named species (240 of the 244 carry
+`species: grouped-label`).
+
+**The 73/16/6 split was stale.** The limitations list published the split from L98. That split was
+computed over 259 off-map results, before multi-species assignment (A25); the corpus now holds 244,
+and no off-map result names two or more species. The clause "16% name several species at once, which
+our parser does not yet assign" described behavior that no longer exists. The percentages are
+withdrawn rather than restated: recomputing the same buckets means re-deciding what separates an
+aggregate finding from a generic label, and that judgement has not been made.
+
+**Checked and correct:** 104 of 108 Q4 pairs human-positive, and lab 0 / companion 1 on the four
+human-negative pairs; recall 33% (CI 26-46%); verifier false accepts 34% and false exclusions 10%
+(169/498 and 101/968 in part1_quality.md); three of the 22 veterinary-first pairs are BTK
+inhibitors; 499 pairs carry both dates.
+
+**Right by coincidence, not construction.** `n_human_first` (477) is counted over pair_attributes,
+which holds 803 entries, while its denominator `n_pairs` (799) counts classified pairs after four
+overrides drop. The four dropped pairs are all `no-us-approval`, so 477 and the 499 lag pairs are
+identical over either population and the published sentence is correct. It would stop being correct
+the moment an override dropped a dated pair.
+
+**A hardcoded number removed.** `artifacts.md` captioned the lag histogram "for the 499 pairs with
+both dates" - a literal duplicating `{{n_lag_pairs}}`. It went with the block it captioned.
+
+**Retracted during the audit.** `species_of` appeared to drop records naming exactly one animal,
+which would have stranded two guinea-pig results off the map. It does not: `sp_display` resolves
+them first, and both "guinea pigs" and "Dunkin Hartley guinea pig model" land on guinea pig. The
+three `other-species` records still off the map report "human" in the animal field and name no
+animal. No fix was needed and none was made.
+
+**Counts off the route cards.** The route cards printed 53 / 24 / 1 / 75 above each description. The
+section states what each route is; the counts are in the funnel and the candidate browser, where a
+reader can act on them. The lag section, the crowding section and the "Two cautions" note are
+removed from the program-selection page.
+
+## A28 — Hamster leaves the evidence map (2026-09-16)
+
+The hamster column was given its own heading under A26, when "other-rodent" was resolved into the
+animals it actually held. Seeing it standing alone made the weakness of its contents plain: all four
+results come from a single study, whose "humanised-hamster" and "original hamster" rows are two arms
+of a transcriptomic transform rather than two species. A column that reads as four hamster results
+across the corpus is carried entirely by one study and one manipulation.
+
+Hamster is therefore removed from the map, on the same terms as drosophila and C. elegans under A26:
+excluded from the grid itself, not merely from the column order, because row and column totals count
+every study present in the grid and dropping a column while leaving its results would print totals
+the visible cells do not sum to. The off-map count goes from 244 to 248.
+
+The records are unchanged - `species: hamster` is still what they carry, and the study still has its
+own page. Only the map's columns change. As under A26, the frozen extraction vocabulary in
+common.py keeps the term.

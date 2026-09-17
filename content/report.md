@@ -30,8 +30,8 @@ Publications generally biased toward positive findings.
 
 Studies per disease area and species; the superscript is the highest level in that cell. Companion
 and laboratory dogs and cats are counted separately. The grid holds the {{n_species_results}}
-results that name a species. The other {{n_no_species}} are not on it: most are meta-analyses whose
-finding is about animal models as a class, so there is no species in the paper to use.
+results that name a species. The other {{n_no_species}} are not on it: they state a finding about
+animal models as a class rather than about a named species, so there is no species to place.
 
 {{heatmap}}
 
@@ -94,9 +94,9 @@ oversampled by the [spot-check](spotcheck.html).
 - Selective publishing inflates apparent agreement.
 - Agreement is not prediction.
 - Adjudication partly single-reviewer and unblinded.
-- {{n_no_species}} results name no species and are kept off the evidence map. 73% are findings about
-  animal models as a class; 16% name several species at once, which our parser does not yet assign;
-  6% are the human side of a comparison stored in the animal field.
+- {{n_no_species}} results are kept off the evidence map: nearly all carry a grouped label
+  ("animals", "rodents") rather than a species. A minority record the human side of the
+  comparison in the animal field. Results naming several species now count toward each.
 
 ::: small
 All {{n_limitations}} limitations, the protocol, data and code:
