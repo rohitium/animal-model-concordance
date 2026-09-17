@@ -670,6 +670,20 @@ NAV = [("index.html", "Report"), ("results.html", "Detailed evidence"), ("pairs.
        ("caninisation.html", "Program selection"), ("spotcheck.html", "Verify")]
 
 
+def asset_url(up, name):
+    """Asset URL carrying a hash of its own contents.
+
+    GitHub Pages serves assets/site.css with a short max-age and no version in the path, so a
+    browser holding the previous build's stylesheet keeps using it after a deploy: a CSS fix then
+    appears to have done nothing until the cache expires, and the page renders with old rules
+    against new markup. Hashing the contents into the query string means a changed file is a
+    changed URL, and an unchanged one stays cached.
+    """
+    import hashlib
+    src = CSS if name.endswith(".css") else JS
+    return f"{up}assets/{name}?v={hashlib.sha1(src.encode()).hexdigest()[:8]}"
+
+
 def page(fname, title, body, depth=0, rail=None, cls="page"):
     up = "../" * depth
     here = fname if depth == 0 else ""
@@ -685,7 +699,7 @@ def page(fname, title, body, depth=0, rail=None, cls="page"):
 <title>{e(title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<link rel="stylesheet" href="{up}assets/site.css">
+<link rel="stylesheet" href="{asset_url(up, 'site.css')}">
 </head><body>
 <header class="top"><div class="in"><a class="brand" href="{up}index.html">Animal-model concordance</a>
 <nav>{nav}</nav></div></header>
@@ -693,7 +707,7 @@ def page(fname, title, body, depth=0, rail=None, cls="page"):
 <footer><div class="in">A systematic review of studies comparing findings in live non-human animals
 with the corresponding findings in humans. Protocol frozen before data collection; every figure
 reproducible from the public data and code. Built {today()}.</div></footer>
-<script src="{up}assets/site.js" defer></script></body></html>"""
+<script src="{asset_url(up, 'site.js')}" defer></script></body></html>"""
     p = os.path.join(OUT, fname)
     os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w").write(doc)
