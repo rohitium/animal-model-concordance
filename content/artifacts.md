@@ -95,7 +95,7 @@ ev_phase-3-or-meta-analysis :: Phase 3 trial or meta-analysis
 ev_phase-2 :: Phase 2 trial
 ev_earlier :: Earlier-phase or observational
 ev_none :: No human evidence retrieved
-ev_note :: A US label means the FDA reviewed controlled trials. Labels only ever say a drug worked, so these pairs can disagree in one direction only.
+ev_note :: A US label means the FDA reviewed controlled trials.
 
 ## caninisation
 
@@ -107,13 +107,13 @@ fig_watch :: Pipeline watch list
 lag_caption :: Years from human approval to the veterinary evidence, for the 499 pairs with both dates.
 lag_note :: Bars are drugs veterinary medicine took decades to adopt.
 route1_name :: Route 1 · Approved, mechanism unclaimed in dogs or cats
-route1_desc :: Approved in humans. No companion-animal product works this mechanism, which is not the same as untried in dogs.
+route1_desc :: Approved in humans. No companion-animal product works this mechanism.
 route2_name :: Route 2 · Approved, mechanism already worked
-route2_desc :: Approved in humans, but a companion-animal product already works this mechanism. Each row names the incumbents.
+route2_desc :: Approved in humans, but a companion-animal product already works this mechanism.
 route3_name :: Route 3 · Shelved for a verified non-clinical reason
-route3_desc :: Stopped for supply, portfolio or corporate reasons. We read the source, not the headline.
+route3_desc :: Stopped for supply, portfolio or corporate reasons.
 watch_name :: Held back · Human pipeline, not yet approved
-watch_desc :: Phase 2 and Phase 3 assets, still active. No approval yet, so efficacy is unproven.
+watch_desc :: Phase 2 and Phase 3 assets, still active. No approval yet.
 areas_conc :: dog results corresponded
 areas_levela :: are intervention outcomes
 areas_studies :: studies
@@ -144,7 +144,7 @@ detail_halted :: Halted or written-off companion-animal programs on this mechani
 detail_vetlit :: Veterinary literature (PubMed)
 detail_vetlit_none :: No veterinary publications found under this molecule's name.
 detail_corpus :: This review's own drug-pair records
-detail_notchecked :: No registry of approved veterinary drugs is machine-readable. A drug approved for dogs outside our list shows as not found.
+detail_notchecked :: No registry of approved veterinary drugs is machine-readable. A drug approved for dogs outside our list shows as not found (for now).
 pairsflow_caption :: Which species got there first, and how the evidence came out.
 pairsflow_note :: Most pairs are human medicines adopted into veterinary practice later.
 detail_ind :: Human indication
