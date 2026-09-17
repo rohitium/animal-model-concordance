@@ -83,7 +83,7 @@ parts you cannot write by hand.
 
 | Token | What appears | Page |
 |---|---|---|
-| `{{figures}}` | the row of headline figures | report |
+| `{{figures}}` | a row of headline figures | available, not currently used |
 | `{{level_table}}` | results by evidence level | report |
 | `{{heatmap}}` | the evidence map | report |
 | `{{pairs_strata}}` | the drug-pair strata table with confidence intervals | report |
@@ -92,7 +92,7 @@ parts you cannot write by hand.
 | `{{results_table}}` | the searchable results browser | results |
 | `{{pairs_flow}}` | the flow diagram of timing against verdict | pairs |
 | `{{pairs_table}}` | the searchable pair browser | pairs |
-| `{{cand_figures}}` | headline figures for programme selection | caninisation |
+| `{{cand_figures}}` | a row of headline figures | available, not currently used |
 | `{{cand_routes}}` | the route cards | caninisation |
 | `{{cand_presence}}` | what the presence checks found | caninisation |
 | `{{cand_lag}}` | the human-to-veterinary lag histogram | caninisation |
