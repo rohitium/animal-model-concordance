@@ -804,3 +804,29 @@ companion or laboratory column and an unread value defaults to laboratory. Three
 were already corrected under A10 and an independent reading of each agreed; the fourth
 (W2887131306, "mdx mouse vs GRMD dog") is a maintained research colony and is now recorded as
 induced. The dog results therefore route on evidence: three laboratory, one companion.
+
+## A26 — "other-rodent" resolved into its actual animals; invertebrate models leave the map (2026-09-16)
+
+The evidence map carried a column called "other-rodent" holding 21 results across 6 studies. The
+name described the vocabulary rather than the animals, and the vocabulary was wider than its
+contents: there are no gerbils in the corpus at all. The column held exactly two animals, guinea pig
+(17 results) and hamster (4), and each now has its own column.
+
+One record in that column reads `species_as_reported: 'Verapamil and zatebradine'` - drug names in
+the species field - but carries `species: guinea pig`, so it routes correctly off the species field
+rather than the label.
+
+The hamster column rests entirely on one study (PMID 39317638), whose "humanised-hamster" and
+"original hamster" rows are two arms of a transcriptomic transform rather than two species. They are
+hamster results and belong in the column, but four results from a single study is what the column
+is, and the map should not be read as four hamster studies.
+
+Drosophila (1 result) and C. elegans (2) are removed from the map. They are excluded from the grid
+itself, not merely from the column order: row and column totals count every study present in the
+grid, so dropping a column while leaving its results in place would print totals that the visible
+cells do not sum to - the same defect that silently hid the hematology row under A-series display
+mapping. The three results move into the off-map count, which goes from 241 to 244.
+
+The frozen extraction vocabulary in common.py still contains other-rodent, drosophila, c-elegans and
+other-species. That is deliberate: it is what the extractor was instructed to emit and what the
+stored records use, and rewriting it would invalidate the records. Only the display columns change.

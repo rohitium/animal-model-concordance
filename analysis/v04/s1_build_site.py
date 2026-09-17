@@ -41,12 +41,14 @@ DIR_LABEL = {"animal-corresponded": "corresponded", "animal-did-not-correspond":
              "mixed": "mixed", "not-applicable": "not applicable"}
 DIR_CLASS = {"animal-corresponded": "ok", "animal-did-not-correspond": "no", "mixed": "mid"}
 
-SPECIES_FIX = {"guinea pig": "other-rodent", "cynomolgus monkey": "non-human-primate",
-               "Macaca fascicularis": "non-human-primate", "sheep": "sheep-goat"}
+SPECIES_FIX = {"guinea pig": "guinea pig", "cynomolgus monkey": "non-human primate",
+               "Macaca fascicularis": "non-human primate", "sheep": "sheep/goat",
+               "pig-minipig": "pig", "sheep-goat": "sheep/goat",
+               "non-human-primate": "non-human primate", "other-rodent": "guinea pig"}
 # "other-species" is not a category, it is whatever the extractor could not place. Where the
 # reported label names an animal the vocabulary does have, use it; what is left keeps the honest
 # catch-all name rather than being quietly assigned somewhere.
-OTHER_FIX = {r"guinea ?pig": "other-rodent", r"hamster|gerbil": "other-rodent",
+OTHER_FIX = {r"guinea ?pig": "guinea pig", r"hamster": "hamster", r"gerbil": "gerbil",
              r"ferret": "other-species", r"chicken|chick\b|avian": "other-species"}
 UNRESOLVED = {"grouped-label", "human"}
 
@@ -68,7 +70,9 @@ ANIMAL_WORDS = {
     "sheep-goat": r"\b(sheep|ovine|goats?|caprine)\b", "zebrafish": r"\b(zebrafish|danio)\b",
     "drosophila": r"\b(drosophila|fruit fly|fruit flies)\b",
     "c-elegans": r"\b(c\.? ?elegans|nematode)\b", "horse": r"\b(horses?|equine)\b",
-    "other-rodent": r"\b(guinea pigs?|hamsters?|gerbils?)\b",
+    "guinea pig": r"\b(guinea[ -]?pigs?|cavia porcellus)\b",
+    "hamster": r"\b(hamsters?|mesocricetus|cricetulus)\b",
+    "gerbil": r"\b(gerbils?|meriones)\b",
 }
 ANIMAL_WORDS["mouse"] += r"|\bGEMMs?\b"
 
@@ -83,7 +87,7 @@ def animals_named(text):
     t = GUINEA.sub("GUINEAPIG", text or "")
     found = {k for k, pat in ANIMAL_WORDS.items() if re.search(pat, t, re.I)}
     if GUINEA.search(text or ""):
-        found.add("other-rodent")
+        found.add("guinea pig")
     return found
 
 
@@ -108,18 +112,22 @@ def recovered_species(r):
     if from_title and from_text:
         return from_title if from_title == from_text else None
     return from_title or from_text
-SPECIES_ORDER = ["mouse", "rat", "other-rodent", "rabbit", "pig-minipig", "sheep-goat",
-                 "non-human-primate", "laboratory-dog", "companion-dog", "laboratory-cat",
-                 "companion-cat", "horse", "zebrafish", "drosophila", "c-elegans"]
+SPECIES_ORDER = ["mouse", "rat", "guinea pig", "hamster", "rabbit", "pig", "sheep/goat",
+                 "non-human primate", "laboratory dog", "companion dog", "laboratory cat",
+                 "companion cat", "horse", "zebrafish"]
 # Columns that name no species. Most of what lands here are meta-analyses whose finding is about
 # animal models as a class, so there is no species in the paper to use; the rest are records whose
 # species field holds the human side of the comparison. They are counted and reported, not shown as
 # a column pretending to be a species (A25).
 NON_SPECIES = {"not resolved", "other-species"}
-AREA_ORDER = ["oncology", "neurology", "immunology-inflammation", "cross-cutting-toxicology",
-              "cardiovascular", "liver-gi", "infectious-disease", "pain-musculoskeletal",
-              "psychiatry-addiction", "metabolic-endocrine", "ophthalmology", "respiratory",
-              "reproductive-developmental", "hematology", "renal", "dermatology", "other"]
+# Invertebrate models are not shown on the evidence map. They must be removed from the grid itself,
+# not merely from SPECIES_ORDER: row and column totals count every study in the grid, so dropping a
+# column alone leaves visible cells that do not sum to the total printed beside them.
+OFF_MAP_SPECIES = {"drosophila", "c-elegans"}
+AREA_ORDER = ["oncology", "neurology", "immunology/inflammation", "cross-cutting toxicology",
+              "cardiovascular", "liver/GI", "infectious disease", "pain/musculoskeletal",
+              "psychiatry/addiction", "metabolic/endocrine", "ophthalmology", "respiratory",
+              "reproductive/developmental", "hematology", "renal", "dermatology", "other"]
 
 
 def species_of(r):
@@ -133,17 +141,28 @@ def species_of(r):
     """
     one = sp_display(r)
     if one not in NON_SPECIES:
-        return {one}
+        return set() if one in OFF_MAP_SPECIES else {one}
     named = animals_named(str(r.get("species_as_reported") or ""))
     if len(named) < 2:
         return set()
-    return {species_column(SPECIES_FIX.get(a, a), r.get("model_type")) for a in named}
+    cols = {_col(species_column(SPECIES_FIX.get(a, a), r.get("model_type"))) for a in named}
+    return cols - OFF_MAP_SPECIES
 
 
 def sp_label(r):
     """What a single row calls itself: one species, or the several it names."""
     cols = sorted(species_of(r))
     return ", ".join(cols) if cols else A("species", "none", "no species named")
+
+
+DOGCAT = {"laboratory-dog": "laboratory dog", "companion-dog": "companion dog",
+          "laboratory-cat": "laboratory cat", "companion-cat": "companion cat",
+          "pig-minipig": "pig", "sheep-goat": "sheep/goat",
+          "non-human-primate": "non-human primate", "other-rodent": "guinea pig"}
+
+
+def _col(name):
+    return DOGCAT.get(name, name)
 
 
 def sp_display(r):
@@ -159,13 +178,39 @@ def sp_display(r):
             if re.search(pat, rep, re.I):
                 s = to
                 break
-    return species_column(SPECIES_FIX.get(s, s), r.get("model_type"))
+    return _col(species_column(SPECIES_FIX.get(s, s), r.get("model_type")))
 
 
 # The records store a British spelling for one area. Normalize it BEFORE the vocabulary test:
 # mapping afterwards produced a value that was no longer in AREA_ORDER, so the heatmap dropped the
 # row and its 10 studies without a word. A display map has to run before whatever matches on it.
-AREA_FIX = {"haematology": "hematology"}
+# Display names for condition areas, covering both vocabularies: the results records and the
+# indication rules used by the pair and candidate pages. A hyphen joining one compound idea becomes
+# a space ("infectious disease"); a hyphen joining two different things becomes a slash
+# ("immunology/inflammation"). Applied BEFORE the AREA_ORDER test, never after - mapping afterwards
+# produced a value no longer in the vocabulary and silently dropped a row from the map.
+AREA_FIX = {
+    "haematology": "hematology",
+    "immunology-inflammation": "immunology/inflammation",
+    "psychiatry-addiction": "psychiatry/addiction",
+    "pain-musculoskeletal": "pain/musculoskeletal",
+    "metabolic-endocrine": "metabolic/endocrine",
+    "reproductive-developmental": "reproductive/developmental",
+    "liver-gi": "liver/GI",
+    "infectious-disease": "infectious disease",
+    "cross-cutting-toxicology": "cross-cutting toxicology",
+    # vocabularies used by the pair and candidate pages only
+    "infectious-parasitic": "infectious/parasitic",
+    "anaesthesia-analgesia": "anesthesia/analgesia",
+    "dental-oral": "dental/oral",
+    "nutrition-supportive": "nutrition/supportive",
+    "behaviour": "behavior",
+}
+
+
+def area_name(a):
+    """Display name for a condition area, from either vocabulary."""
+    return AREA_FIX.get(a, a)
 
 
 # 21 of the 419 studies are keyed by an OpenAlex work id rather than a PubMed id, because that is
@@ -1237,7 +1282,7 @@ def cand_areas(d):
         ev = a["evidence"]
         det = ev["corresponded"] + ev["did_not"]
         h.append(
-            f'<div class="acard"><div class="atop"><h3>{e(a["area"])}</h3>'
+            f'<div class="acard"><div class="atop"><h3>{e(area_name(a["area"]))}</h3>'
             f'<span class="rank">{a["candidates"]} '
             f'{e(A("caninisation", "areas_cands", "candidates"))}</span></div>'
             f'<div class="bar"><i class="ok" style="flex:{ev["corresponded"]}"></i>'
@@ -1538,7 +1583,7 @@ def main():
                  for rec in (v.get("records") or []) if rec.startswith("PMID:")]
         prow.append({"ag": v.get("ingredient") or "", "sp": ", ".join(sp) if isinstance(sp, list) else str(sp or ""),
                      "ind": v.get("veterinary_indication") or "",
-                     "ar": indication_area(area_rules, v.get("veterinary_indication")),
+                     "ar": area_name(indication_area(area_rules, v.get("veterinary_indication"))),
                      "ev": A("pairs_table", f"ev_{j.get('human_top_level') or 'none'}",
                              j.get("human_top_level") or "none"),
                      "vd": j["pair"],
@@ -1610,7 +1655,7 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
         det = ev.get("corresponded", 0) + ev.get("did_not", 0)
         crow.append({
             "dr": c.get("drug") or "", "ing": c.get("ingredient") or "",
-            "tg": c.get("target") or "", "ar": c.get("area") or "",
+            "tg": c.get("target") or "", "ar": area_name(c.get("area") or ""),
             "rt": c.get("route_label") or "", "st": c.get("human_stage") or "",
             "cn": c.get("competitor_count") or 0, "co": c.get("company") or "",
             "ind": c.get("indication") or "", "yr": c.get("first_us_approval"),
