@@ -143,6 +143,19 @@ If the heading is too long for the rail, give the rail a shorter label after a p
 ## Companion animals vs laboratory models {#q4|Companion vs laboratory}
 ```
 
+## Always link the source
+
+Every paper, trial, patent, label or news story named on a page gets an inline link, every time. A
+quote without a link is the worst case: the reader cannot check it.
+
+```
+[The paper that introduced ibrutinib](https://pubmed.ncbi.nlm.nih.gov/20615965/) stated: "..."
+```
+
+Papers go to `https://pubmed.ncbi.nlm.nih.gov/<pmid>/`, patents to Google Patents, labels to
+DailyMed, approvals to the FDA page. Resolve the identifier before writing the sentence. If a claim
+cannot be linked, drop it or say plainly that no source was found.
+
 ## The one rule
 
 The site's claim is that every figure on it is traceable to the data, and every statement of absence
