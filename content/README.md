@@ -8,7 +8,7 @@ site changes. You never need to touch Python to change wording, add a section, o
 | `report.md` | the main report at `/` |
 | `results.md` | the results browser |
 | `pairs.md` | the drug-pair browser |
-| `caninisation.md` | programme selection — licensing human molecules for dogs and cats |
+| `caninisation.md` | program selection — licensing human molecules for dogs and cats |
 | `spotcheck.md` | the spot-check page |
 | `study.md` | the wrapper around every per-study page |
 | `artifacts.md` | the wording *inside* generated tables, charts and browsers |
@@ -61,18 +61,18 @@ tokens exist to prevent. To see what a token currently resolves to, build the si
 | `{{median_lag}}` | median years between human approval and veterinary evidence |
 | `{{n_lag_pairs}}` | pairs where both dates are known |
 
-**Programme selection**
+**Program selection**
 
 | Token | Meaning |
 |---|---|
-| `{{n_human_programs}}` `{{n_pet_programs}}` | programmes in the two supplied lists |
+| `{{n_human_programs}}` `{{n_pet_programs}}` | programs in the two supplied lists |
 | `{{n_candidates}}` | candidates presented |
 | `{{n_route1}}` `{{n_route2}}` `{{n_route3}}` | candidates per route |
 | `{{n_watch}}` | pipeline assets held back for want of an approval |
 | `{{n_formulary}}` | route-1 molecules already in routine veterinary use as generics |
-| `{{n_occupied}}` | candidates whose mechanism a companion-animal programme works |
+| `{{n_occupied}}` | candidates whose mechanism a companion-animal program works |
 | `{{n_mech_open}}` | candidates with an open mechanism inside a contested condition |
-| `{{n_used_no_programme}}` | candidates used or studied in dogs with no branded programme |
+| `{{n_used_no_programme}}` | candidates used or studied in dogs with no branded program |
 | `{{n_nothing_found}}` | candidates returning nothing on any presence check |
 | `{{n_unclassified}}` | candidates whose mechanism is not in the curated map |
 
@@ -97,7 +97,7 @@ parts you cannot write by hand.
 | `{{cand_presence}}` | what the presence checks found | caninisation |
 | `{{cand_lag}}` | the human-to-veterinary lag histogram | caninisation |
 | `{{cand_areas}}` | condition areas ranked on dog evidence | caninisation |
-| `{{cand_crowding}}` | companion-animal programmes per indication | caninisation |
+| `{{cand_crowding}}` | companion-animal programs per indication | caninisation |
 | `{{cand_funnel}}` | how the candidate list was cut | caninisation |
 | `{{cand_table}}` | the searchable candidate browser | caninisation |
 | `{{spotcheck_items}}` | the sampled results | spotcheck |

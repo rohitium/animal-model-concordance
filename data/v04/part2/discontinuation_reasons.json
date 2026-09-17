@@ -1,13 +1,13 @@
 {
   "_README": [
-    "Amendment A18. Why each discontinued human programme was actually stopped, read from its own",
+    "Amendment A18. Why each discontinued human program was actually stopped, read from its own",
     "source link rather than inferred from the headline's verb.",
     "",
     "WHY THIS FILE EXISTS. The reason was previously classified by regex over the source URL, the",
     "phase note and the indication. That classifier reads journalistic framing, not causation, and it",
     "was wrong on the molecule it mattered most for: fasinumab's source slug says",
     "'regeneron-pulls-the-plug', which the regex scored 'commercial or strategic', when the anti-NGF",
-    "programme carried an FDA partial clinical hold (2012), an FDA-halted Phase IIb after an",
+    "program carried an FDA partial clinical hold (2012), an FDA-halted Phase IIb after an",
     "adjudicated arthropathy (2016), and IDMC-halted high-dose arms (2018). A headline verb is not a",
     "reason. Only hand-verified entries here are eligible for the shelved-asset route; everything",
     "else is held as unverified and is not presented as licensable inventory.",
@@ -29,13 +29,13 @@
     "Fasinumab": {
       "reason": "safety",
       "verified": true,
-      "note": "Regeneron gave no official reason for the final discontinuation, but the programme's history is a safety history: FDA partial clinical hold in 2012 over sympathetic nervous system toxicity; FDA halted a Phase IIb in 2016 after an adjudicated arthropathy; the Independent Data Monitoring Committee halted high-dose arms in 2018 on risk-benefit. The anti-NGF class carries rapidly progressive osteoarthritis and osteonecrosis signals, dose-related for both fasinumab and tanezumab, and an FDA advisory committee rejected tanezumab 19-1 on joint-destruction risk.",
+      "note": "Regeneron gave no official reason for the final discontinuation, but the program's history is a safety history: FDA partial clinical hold in 2012 over sympathetic nervous system toxicity; FDA halted a Phase IIb in 2016 after an adjudicated arthropathy; the Independent Data Monitoring Committee halted high-dose arms in 2018 on risk-benefit. The anti-NGF class carries rapidly progressive osteoarthritis and osteonecrosis signals, dose-related for both fasinumab and tanezumab, and an FDA advisory committee rejected tanezumab 19-1 on joint-destruction risk.",
       "source": "https://www.biospace.com/regeneron-pulls-the-plug-on-osteoarthritis-and-cat-allergy-therapies"
     },
     "glembatumumab vedotin (CDX-011)": {
       "reason": "efficacy",
       "verified": true,
-      "note": "The randomised Phase 2b METRIC study in gpNMB-overexpressing metastatic triple-negative breast cancer missed its primary endpoint of progression-free survival (HR 0.95; median PFS 2.9 months vs capecitabine 2.8; p=0.76), with no advantage on response rate, duration of response or overall survival. Celldex then discontinued the programme across all indications and cut staff. The pipeline cut followed the trial failure; it did not cause it.",
+      "note": "The randomised Phase 2b METRIC study in gpNMB-overexpressing metastatic triple-negative breast cancer missed its primary endpoint of progression-free survival (HR 0.95; median PFS 2.9 months vs capecitabine 2.8; p=0.76), with no advantage on response rate, duration of response or overall survival. Celldex then discontinued the program across all indications and cut staff. The pipeline cut followed the trial failure; it did not cause it.",
       "source": "https://ir.celldex.com/news-releases/news-release-details/celldexs-metric-study-metastatic-triple-negative-breast-cancer-0"
     },
     "DepoCyt (cytarabine liposome injection)": {

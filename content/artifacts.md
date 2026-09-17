@@ -109,9 +109,9 @@ lag_before :: Veterinary evidence came first
 lag_note :: Each bar counts drug-and-indication pairs. Bars to the right are drugs veterinary medicine took decades to adopt.
 routes_caption :: How each candidate qualifies
 route1_name :: Route 1 · Approved, mechanism unclaimed in dogs or cats
-route1_desc :: Both legs of human evidence established by the approval itself, and no branded companion-animal programme works this mechanism. That is not the same as untried in dogs — see what each of the four presence checks found, per molecule, in the table below.
+route1_desc :: Both legs of human evidence established by the approval itself, and no branded companion-animal program works this mechanism. That is not the same as untried in dogs — see what each of the four presence checks found, per molecule, in the table below.
 route2_name :: Route 2 · Approved, mechanism already worked
-route2_desc :: The same evidence, but a companion-animal programme already works this mechanism. Crowding is market validation, and the incumbents are named for each.
+route2_desc :: The same evidence, but a companion-animal program already works this mechanism. Crowding is market validation, and the incumbents are named for each.
 route3_name :: Route 3 · Shelved for a verified non-clinical reason
 route3_desc :: Stopped for supply, portfolio or corporate reasons with clinical performance not the stated cause, verified by reading the source rather than the headline.
 watch_name :: Held back · Human pipeline, not yet approved
@@ -121,9 +121,9 @@ areas_conc :: dog results corresponded
 areas_levela :: are intervention outcomes
 areas_studies :: studies
 areas_cands :: candidates
-crowding_caption :: Companion-animal programmes per indication, from the supplied programme list
+crowding_caption :: Companion-animal programs per indication, from the supplied program list
 crowding_note :: The most crowded indications are the validated ones. An entrant needs a better asset, not an empty field.
-funnel_caption :: From supplied programmes to presented candidates
+funnel_caption :: From supplied programs to presented candidates
 table_caption :: Every presented candidate
 noun :: molecules
 placeholder :: Search by molecule, target, company or indication…
@@ -134,34 +134,34 @@ col_target :: Target
 col_area :: Condition area
 col_route :: Route
 col_stage :: Human stage
-col_comp :: Companion-animal programmes
+col_comp :: Companion-animal programs
 filter_area :: Condition area
 filter_route :: Route
 filter_stage :: Human stage
 col_ind :: Human indication
 detail_presence :: What is known about companion-animal presence
 detail_mechanism :: Mechanism in companion animals
-detail_mechanism_none :: No companion-animal programme in the supplied list works this mechanism.
+detail_mechanism_none :: No companion-animal program in the supplied list works this mechanism.
 detail_condition :: Corresponding condition in dogs or cats
 detail_condition_none :: No corresponding companion-animal condition was mapped for this indication.
 detail_patents :: Patent filings on this mechanism in companion animals
-detail_halted :: Halted or written-off companion-animal programmes on this mechanism
+detail_halted :: Halted or written-off companion-animal programs on this mechanism
 detail_vetlit :: Veterinary literature (PubMed)
 detail_vetlit_none :: No veterinary publications found under this molecule's name.
 detail_corpus :: This review's own drug-pair records
 detail_notchecked :: Not checked: no approved-animal-drug registry is machine-readable, so a drug approved for dogs or cats outside the supplied list would not appear here. Absence of a finding is not evidence of absence.
-sankey_caption :: From supplied human programmes to candidates
-sankey_note :: Width is proportional to the number of programmes. Every branch that leaves the flow is an exclusion the page names.
+sankey_caption :: From supplied human programs to candidates
+sankey_note :: Width is proportional to the number of programs. Every branch that leaves the flow is an exclusion the page names.
 pairsflow_caption :: How the classified drug pairs divide, by which species got there first and how the evidence came out
 pairsflow_note :: Most pairs are human medicines adopted into veterinary practice later, so agreement mostly records adoption rather than prediction.
 levelflow_caption :: Results by evidence level and how the animal finding came out
 detail_ind :: Human indication
 detail_ev :: Dog evidence for this condition area
-detail_comp :: Companion-animal programmes on this target
-detail_comp_none :: No programme in the supplied list targets this in dogs or cats.
+detail_comp :: Companion-animal programs on this target
+detail_comp_none :: No program in the supplied list targets this in dogs or cats.
 detail_safety :: Species safety caution
 detail_precedent :: Class precedent in companion animals
-detail_disc :: Why the human programme stopped
-detail_formulary :: Already in routine veterinary use as a generic, so the absence of a company programme does not mean an open field.
-detail_vague :: The human indication is too general to place a specific companion-animal tumour type.
-detail_source :: Programme source
+detail_disc :: Why the human program stopped
+detail_formulary :: Already in routine veterinary use as a generic, so the absence of a company program does not mean an open field.
+detail_vague :: The human indication is too general to place a specific companion-animal tumor type.
+detail_source :: Program source

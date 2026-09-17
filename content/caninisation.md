@@ -1,65 +1,69 @@
 ::: dek
-Programme selection
+Program selection
 :::
 
-# Licensing human molecules for dogs and cats
+# Licensing human molecules for companion animals
 
 ::: lede
-Which human molecules are the best candidates to develop for companion animals, judged against this
-review's evidence on where dog biology corresponds to human.
+Which human drugs are the best candidates to develop for dogs and cats, judged against this review's
+evidence on where dog biology matches human.
 :::
 
 ## The lag {#pattern}
 
-{{n_human_first}} of {{n_pairs}} pairs run human approval first, {{n_vet_first}} the reverse; median
-gap **{{median_lag}} years**. The opportunity is adoption, not prediction.
+Drugs are proven in human trials first. Veterinary versions follow, usually decades later.
 
 {{cand_lag}}
 
-## How candidates are selected {#selection}
+## How we pick candidates {#selection}
 
-Both legs of human evidence — safety and efficacy — plus either no companion-animal programme on the
-mechanism, or a stop unrelated to clinical performance. An efficacy failure disqualifies.
+1. Demonstrated safety and efficacy in humans
+2. Comparative biology in companion animals
+3. Unmet need in animals
 
 {{cand_routes}}
 
 ::: note Two cautions
-{{n_formulary}} of the {{n_route1}} route-1 molecules are already veterinary generics: no *company
-programme*, which is not the same as no dog receiving them. Route 3 is small because most
-discontinuations are clinical — one source reads "pulls the plug" for a programme that carried a
-clinical hold and an FDA-halted trial.
+{{n_formulary}} of the {{n_route1}} route-1 molecules are already veterinary generics. No company is
+developing them, but dogs do receive them.
+
+Route 3 is small because most discontinuations are clinical. One source reads "pulls the plug" for a
+program that had a clinical hold and an FDA-halted trial.
 :::
 
-## What "no companion-animal programme" means {#presence}
+## What "no companion-animal program" means {#presence}
 
-A route says whether a *marketed product* works the mechanism — not whether dogs already receive the
-drug, nor whether competitors hold patents and have simply not launched.
+It means no marketed product works that mechanism. It does not mean dogs never get the drug. It does
+not mean the condition is untreated. It does not mean the mechanism is free to use.
 
-No IL-4R product is marketed for dogs, yet Merck Animal Health holds a granted patent on anti-canine
-IL-4Rα (2015 priority), Vetoquinol and Kindred Biosciences have their own filings, and Elanco wrote
-off its IL-4R pet asset in 2024 for commercial reasons.
+Anti-IL-4Rα shows the gap. No IL-4R product is sold for dogs. But Merck Animal Health holds a granted
+patent on anti-canine IL-4Rα from 2015, Vetoquinol and Kindred Biosciences have filed their own, and
+Elanco wrote off its IL-4R pet asset in 2024 for commercial reasons.
 
-Each molecule is checked against the mechanism, patents and halted programmes against it, the
-companion condition, the veterinary literature, and this review's pair records.
+We check each molecule five ways: the mechanism, patents and dropped programs against it, the
+matching condition in dogs or cats, the veterinary literature, and our own drug-pair records.
 
 {{cand_presence}}
 
-Only **{{n_nothing_found}}** of {{n_candidates}} return nothing on any check. {{n_mech_open}} have an
-open mechanism inside a contested condition. **An open mechanism is not an open market.**
+Only **{{n_nothing_found}}** of {{n_candidates}} candidates come back empty on all five.
+{{n_mech_open}} have an open mechanism inside a crowded condition. **An open mechanism is not an open
+market.**
 
-::: note What is not checked
-No register of approved veterinary medicines — no machine-readable Green Book or EMA export, so a
-drug approved for dogs outside the supplied list shows as "not found".
+::: note What we do not check
+There is no machine-readable list of approved veterinary drugs. The FDA Green Book and the EMA
+dataset both lack one. A drug approved for dogs outside our supplied list shows here as "not found".
 
-Patents and halted programmes are searched by hand, only where someone looked. **A mechanism with no
-patent entry has not been searched, not found free of intellectual property** — anti-IL-4Rα read as
-open until someone looked, and four companies had filed.
+Patents are searched by hand, mechanism by mechanism. Google Patents blocks automated queries, and
+the alternatives need registered credentials.
+
+**A mechanism with no patent entry was never searched. It is not clear ground.** Anti-IL-4Rα looked
+open until we looked, and four companies had already filed.
 :::
 
 ## Where the evidence is {#areas}
 
-Areas ranked on agreement, weighted by evidence level and by how much is treatment outcomes.
-Oncology has the most evidence and the weakest kind; cardiovascular the least and the best.
+Areas ranked by how often dog and human findings agreed, weighted by evidence level. Oncology has
+the most evidence and the weakest kind. Cardiovascular has the least and the best.
 
 {{cand_areas}}
 
@@ -67,22 +71,22 @@ Oncology has the most evidence and the weakest kind; cardiovascular the least an
 
 {{cand_crowding}}
 
-## BTK: evidence without a programme {#btk}
+## BTK: evidence without a program {#btk}
 
 | Molecule | Canine evidence | Human |
 |---|---|---|
-| Ibrutinib | Spontaneous canine B-cell NHL; single dose-finding study | Approved 2013 |
+| Ibrutinib | Spontaneous canine B-cell lymphoma; one dose-finding study | Approved 2013 |
 | Acalabrutinib | n=20, 25% response, median progression-free survival **22.5 days** | Approved 2017 |
-| Rilzabrutinib | Canine pemphigus; a review sentence, no trial | Phase 3 **missed** |
+| Rilzabrutinib | Canine pemphigus; one sentence in a review, no trial | Phase 3 **missed** |
 
-Three reached dogs at or before human approval and no companion-animal BTK programme exists. But
-three weeks of progression-free survival is not a product: these are early signals nobody has taken
-to a registrational trial.
+All three reached dogs at or before human approval. No companion-animal BTK program exists. But
+three weeks of progression-free survival is not a product. These are early signals that nobody has
+taken to a registrational trial.
 
 ## Every candidate {#browse}
 
-{{n_candidates}} candidates plus {{n_watch}} pipeline assets. Filter by route; click a row for its
-evidence.
+{{n_candidates}} candidates plus {{n_watch}} pipeline assets. Filter by route. Click a row to see the
+evidence behind it.
 
 {{cand_table}}
 
@@ -92,9 +96,10 @@ evidence.
 
 ## What this cannot tell you {#limits}
 
-- No prevalence, market size or willingness to pay — probably the largest determinant of value.
-- "Not found" describes the checks above; the supplied list is branded programmes, not the formulary.
-- Patent status recorded only where searched.
-- Target-animal safety not systematically checked.
-- Molecules within an area are not ranked.
-- Formulation, route and dosing not assessed.
+- No prevalence, market size, or willingness to pay. Probably the largest driver of value, and we do
+  not have it.
+- "Not found" describes the checks above. The supplied list covers branded programs, not the formulary.
+- Patent status is recorded only where we searched.
+- Target-animal safety is not systematically checked.
+- Molecules within an area are not ranked against each other.
+- Formulation, route, and dosing are not assessed.

@@ -1,9 +1,9 @@
 {
   "_README": [
     "Amendment A19. Curated map from a human molecule's target class, and from its human indication,",
-    "to the companion-animal programmes that already occupy that space.",
+    "to the companion-animal programs that already occupy that space.",
     "",
-    "WHY THIS FILE EXISTS. Competitor detection previously joined a human programme to a",
+    "WHY THIS FILE EXISTS. Competitor detection previously joined a human program to a",
     "companion-animal one by sharing word tokens between their free-text `target` fields. That method",
     "fails in both directions and cannot be tuned out of failing:",
     "  - FALSE NEGATIVES: dupilumab (target 'IL-4Ralpha') matched nothing, so the page reported no",
@@ -21,15 +21,15 @@
     "map below. Every entry names the companion-animal products it asserts, so a wrong entry is visible",
     "and correctable rather than emergent from a regex.",
     "",
-    "target_classes: `match` is tested against the human programme's target, ingredient and brand.",
+    "target_classes: `match` is tested against the human program's target, ingredient and brand.",
     "  `holders` are the companion-animal products occupying that mechanism, from the supplied list.",
     "  An empty `holders` list is a POSITIVE FINDING: the mechanism is named, checked, and unoccupied.",
     "",
     "indication_map: `match` is tested against the human indication. `companion_condition` is the",
-    "  corresponding condition in dogs or cats, and `holders` are the programmes treating it. This is",
+    "  corresponding condition in dogs or cats, and `holders` are the programs treating it. This is",
     "  the crowding a developer actually faces, which is not the same question as who holds the target.",
     "",
-    "SCOPE. Holders are drawn from the supplied 328-programme list only. Absence here means absent from",
+    "SCOPE. Holders are drawn from the supplied 328-program list only. Absence here means absent from",
     "that list, never absent from veterinary practice; the veterinary-literature and pair-corpus checks",
     "in x2_companion_evidence.py exist because this list alone cannot support a claim of absence."
   ],
@@ -44,7 +44,7 @@
     {"class": "IL-4 receptor alpha / type 2 cytokine", "match": "il-?4r|il-?4 receptor|il-?13\\b|dupilumab|tralokinumab|lebrikizumab",
      "holders": [],
      "halted": [
-       {"company": "Elanco Animal Health", "programme": "pet health IL-4R asset",
+       {"company": "Elanco Animal Health", "program": "pet health IL-4R asset",
         "what": "Terminated. Elanco recorded a $53 million impairment charge on a pet-health IPR&D asset (IL-4R) in Q2 2024, stating that management terminated future R&D activities over concerns about the asset's future commercial viability — not efficacy and not safety.",
         "source": "https://www.prnewswire.com/news-releases/elanco-animal-health-reports-second-quarter-2024-results-302217343.html"}
      ],
@@ -62,7 +62,7 @@
         "what": "Veterinary anti-IL-4 receptor antibodies, filed 2019-09-14.",
         "source": "https://patents.google.com/patent/CN113164593A/en"}
      ],
-     "note": "This mechanism is contested in dogs even though no product has reached the market. At least four companies have filed on anti-canine IL-4Ralpha - Merck Animal Health (Intervet) holds a granted patent with 2015 priority, plus caninized anti-IL-4Ralpha and an atopic-dermatitis fusion protein; Vetoquinol and Kindred Biosciences have their own filings - and Elanco terminated its own IL-4R pet asset in 2024 for commercial reasons. A mechanism can be crowded with intellectual property and abandoned assets while the marketed-product column stays empty, which is why patents and halted programmes are recorded separately from holders."},
+     "note": "This mechanism is contested in dogs even though no product has reached the market. At least four companies have filed on anti-canine IL-4Ralpha - Merck Animal Health (Intervet) holds a granted patent with 2015 priority, plus caninized anti-IL-4Ralpha and an atopic-dermatitis fusion protein; Vetoquinol and Kindred Biosciences have their own filings - and Elanco terminated its own IL-4R pet asset in 2024 for commercial reasons. A mechanism can be crowded with intellectual property and abandoned assets while the marketed-product column stays empty, which is why patents and halted programs are recorded separately from holders."},
 
     {"class": "nerve growth factor", "match": "\\bngf\\b|nerve growth factor|tanezumab|fasinumab",
      "holders": ["Librela (bedinvetmab), Zoetis", "Solensia (frunevetmab), Zoetis", "Lenivia (izenivetmab)", "Portela (relfovetmab)"]},
@@ -96,7 +96,7 @@
 
     {"class": "PDE5", "match": "\\bpde-?5\\b|sildenafil|tadalafil|vardenafil",
      "holders": [],
-     "note": "No companion-animal company programme, but sildenafil is standard off-label therapy for canine pulmonary hypertension and tadalafil carries veterinary literature. Unoccupied as a branded programme only."},
+     "note": "No companion-animal company program, but sildenafil is standard off-label therapy for canine pulmonary hypertension and tadalafil carries veterinary literature. Unoccupied as a branded program only."},
 
     {"class": "endothelin receptor antagonist", "match": "endothelin|bosentan|macitentan|ambrisentan",
      "holders": []},
@@ -109,7 +109,7 @@
 
     {"class": "cardiac myosin", "match": "cardiac myosin|myosin inhibitor|mavacamten|aficamten",
      "holders": [],
-     "note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal programme addresses it. Mavacamten and aficamten both carry canine and feline literature."},
+     "note": "Feline hypertrophic cardiomyopathy is the obvious target indication and no companion-animal program addresses it. Mavacamten and aficamten both carry canine and feline literature."},
 
     {"class": "transthyretin", "match": "\\bttr\\b|transthyretin|tafamidis|acoramidis|vutrisiran|patisiran",
      "holders": []},
@@ -122,13 +122,13 @@
 
     {"class": "BTK", "match": "\\bbtk\\b|bruton|ibrutinib|acalabrutinib|zanubrutinib|pirtobrutinib|rilzabrutinib",
      "holders": [],
-     "note": "No companion-animal BTK programme exists in the supplied list. Canine lymphoma is held by Laverdia-CA1 (verdinexor, XPO1)."},
+     "note": "No companion-animal BTK program exists in the supplied list. Canine lymphoma is held by Laverdia-CA1 (verdinexor, XPO1)."},
 
     {"class": "XPO1", "match": "\\bxpo1\\b|exportin|selinexor|verdinexor",
      "holders": ["Laverdia-CA1 (verdinexor), Dechra — dog"]},
 
     {"class": "multi-target receptor tyrosine kinase (VEGFR/PDGFR/KIT)", "match": "vegfr|\\bvegf\\b|pdgfr|\\bkit\\b|\\bmet/|\\baxl\\b|\\bret\\b|sunitinib|toceranib|masitinib|lenvatinib|cabozantinib|ramucirumab|axitinib|sorafenib|regorafenib",
-     "holders": ["Palladia (toceranib), Zoetis — dog, mast cell tumour"],
+     "holders": ["Palladia (toceranib), Zoetis — dog, mast cell tumor"],
      "note": "Toceranib is a VEGFR/PDGFR/KIT inhibitor, so multi-kinase oncology assets face an approved companion-animal incumbent even where their precise target list differs."},
 
     {"class": "CTLA-4 checkpoint", "match": "ctla-?4|ipilimumab|tremelimumab",
@@ -146,7 +146,7 @@
 
     {"class": "TNF", "match": "\\btnf\\b|etanercept|infliximab|adalimumab|golimumab|certolizumab",
      "holders": [],
-     "note": "No companion-animal anti-TNF programme. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition."},
+     "note": "No companion-animal anti-TNF program. Canine immune-mediated disease is managed with corticosteroids, cyclosporine and JAK inhibition."},
 
     {"class": "IL-6 receptor", "match": "il-?6r|il-?6 receptor|tocilizumab|sarilumab",
      "holders": []},
@@ -173,8 +173,8 @@
     {"class": "IL-2 / IL-15 cytokine therapy", "match": "\\bil-?2\\b|\\bil-?15\\b|aldesleukin|nogapendekin|denileukin",
      "holders": []},
 
-    {"class": "oncolytic virus / cancer vaccine", "match": "oncolytic|talimogene|vusolimogene|autologous whole-cell|tumor vaccine|tumour vaccine|\\bcar-?t\\b|lifileucel|tumor infiltrating",
-     "holders": ["VetiVax (VVax-001) autologous tumour vaccine", "ECI (ELIAS Cancer Immunotherapy), osteosarcoma", "Undisclosed oncolytic immunotherapy candidate", "Adoptive T-cell therapy (canine oral melanoma pilot)"]},
+    {"class": "oncolytic virus / cancer vaccine", "match": "oncolytic|talimogene|vusolimogene|autologous whole-cell|tumor vaccine|tumor vaccine|\\bcar-?t\\b|lifileucel|tumor infiltrating",
+     "holders": ["VetiVax (VVax-001) autologous tumor vaccine", "ECI (ELIAS Cancer Immunotherapy), osteosarcoma", "Undisclosed oncolytic immunotherapy candidate", "Adoptive T-cell therapy (canine oral melanoma pilot)"]},
 
     {"class": "corticosteroid", "match": "corticosteroid|glucocorticoid|triamcinolone|betamethasone|dexamethasone|prednisolone|prednisone|methylprednisolone|hydrocortisone|budesonide|\\bacth\\b|corticotropin|melanocortin",
      "holders": ["GENESIS Topical Spray (triamcinolone), Virbac", "Animax ointment (triamcinolone)", "Isaderm gel / Betafuse (betamethasone)", "Recicort / Dermanolon (betamethasone)", "Osurnia (betamethasone)", "Petflogin Flavour (prednisolone)", "Prednisolone Kela", "EASOTIC (hydrocortisone aceponate)", "Surolan (prednisolone)"]},
@@ -196,11 +196,11 @@
 
     {"class": "vasopressin / catecholamine", "match": "vasopressin|desmopressin|epinephrine|adrenaline|norepinephrine|dopamine agonist|ropinirole",
      "holders": ["Clevor (ropinirole), Vetoquinol — emesis induction"],
-     "note": "Epinephrine and vasopressin are emergency drugs in routine veterinary use with large veterinary literatures; they are not branded companion-animal programmes."},
+     "note": "Epinephrine and vasopressin are emergency drugs in routine veterinary use with large veterinary literatures; they are not branded companion-animal programs."},
 
     {"class": "cytotoxic chemotherapy", "match": "paclitaxel|docetaxel|doxorubicin|cytarabine|gemcitabine|carboplatin|cisplatin|vincristine|vinblastine|cyclophosphamide|lomustine|mitoxantrone|chlorambucil",
      "holders": [],
-     "note": "No branded companion-animal programme, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a programme here is emphatically not absence of use."},
+     "note": "No branded companion-animal program, but conventional cytotoxics are the backbone of veterinary oncology and carry large veterinary literatures. Absence of a program here is emphatically not absence of use."},
 
     {"class": "antibody-drug conjugate", "match": "vedotin|deruxtecan|govitecan|emtansine|ravtansine|\\badc\\b|brentuximab",
      "holders": []},
@@ -220,13 +220,13 @@
 
     {"class": "calcium channel blocker", "match": "calcium channel|amlodipine|diltiazem|verapamil|nifedipine|felodipine",
      "holders": [],
-     "note": "Amlodipine is the standard first-line agent for feline systemic hypertension in practice, but as a generic it is not a branded companion-animal programme."},
+     "note": "Amlodipine is the standard first-line agent for feline systemic hypertension in practice, but as a generic it is not a branded companion-animal program."},
 
     {"class": "activin / TGF-beta signalling", "match": "activin|\\btgf-?beta\\b|sotatercept|luspatercept",
      "holders": ["RJB-01 (FGF21 + sTGFbetaR2 AAV gene therapy) — canine mitral valve disease"]},
 
     {"class": "TLR agonist / immune adjuvant", "match": "\\btlr-?[0-9]\\b|toll-like receptor|\\bcpg\\b|imiquimod",
-     "holders": ["VetiVax (VVax-001) autologous tumour vaccine with adjuvant"]}
+     "holders": ["VetiVax (VVax-001) autologous tumor vaccine with adjuvant"]}
   ],
 
   "indication_map": [
@@ -240,7 +240,7 @@
 
     {"companion_condition": "canine and feline rheumatoid / immune-mediated polyarthritis",
      "match": "rheumatoid arthritis|ankylosing spondylitis|psoriatic arthritis|dermatomyositis|lupus|autoimmune disease",
-     "holders": ["VGS-003 (anti-canine CD19)", "corticosteroids and cyclosporine (formulary, not branded programmes)"]},
+     "holders": ["VGS-003 (anti-canine CD19)", "corticosteroids and cyclosporine (formulary, not branded programs)"]},
 
     {"companion_condition": "canine myxomatous mitral valve disease and DCM; feline HCM",
      "match": "heart failure|cardiomyopathy|\\bhfref\\b|\\bhfpef\\b|cardiac amyloid|attr-cm",
@@ -248,20 +248,20 @@
 
     {"companion_condition": "canine and feline systemic hypertension",
      "match": "hypertension(?!.*pulmonary)|blood pressure",
-     "holders": ["Semintra (telmisartan) — cat", "Fortekor (benazepril)", "amlodipine (formulary, not a branded programme)"]},
+     "holders": ["Semintra (telmisartan) — cat", "Fortekor (benazepril)", "amlodipine (formulary, not a branded program)"]},
 
     {"companion_condition": "canine and feline pulmonary hypertension",
      "match": "pulmonary (arterial )?hypertension|\\bpah\\b",
      "holders": [],
-     "note": "Recognised in dogs secondary to mitral valve disease and heartworm, and managed off-label with sildenafil. No branded companion-animal programme."},
+     "note": "Recognised in dogs secondary to mitral valve disease and heartworm, and managed off-label with sildenafil. No branded companion-animal program."},
 
     {"companion_condition": "canine lymphoma and leukaemia",
      "match": "lymphoma|\\bcll\\b|\\bnhl\\b|\\bdlbcl\\b|leukemia|leukaemia|lymphomatous",
      "holders": ["Laverdia-CA1 (verdinexor)", "conventional CHOP chemotherapy (formulary)"]},
 
-    {"companion_condition": "canine mast cell tumour and solid tumours",
-     "match": "solid tumor|solid tumour|mast cell|melanoma|sarcoma|osteosarcoma|carcinoma|\\bcancer\\b|neoplas",
-     "holders": ["Palladia (toceranib)", "STELFONTA (tigilanol tiglate)", "Laverdia-CA1 (verdinexor)", "VGS-001 / VGS-002 (checkpoint antibodies)", "VetiVax (VVax-001)", "ECI (ELIAS Cancer Immunotherapy)", "eBAT (hemangiosarcoma)", "Immunocidin (mammary tumour)"]},
+    {"companion_condition": "canine mast cell tumor and solid tumors",
+     "match": "solid tumor|solid tumor|mast cell|melanoma|sarcoma|osteosarcoma|carcinoma|\\bcancer\\b|neoplas",
+     "holders": ["Palladia (toceranib)", "STELFONTA (tigilanol tiglate)", "Laverdia-CA1 (verdinexor)", "VGS-001 / VGS-002 (checkpoint antibodies)", "VetiVax (VVax-001)", "ECI (ELIAS Cancer Immunotherapy)", "eBAT (hemangiosarcoma)", "Immunocidin (mammary tumor)"]},
 
     {"companion_condition": "canine urothelial / bladder carcinoma",
      "match": "bladder cancer|urothelial|\\bnmibc\\b",
@@ -287,7 +287,7 @@
      "match": "epilep|seizure|convuls",
      "holders": ["Pexion (imepitoin)", "Epityl (phenobarbital)"]},
 
-    {"companion_condition": "canine and feline anxiety and behaviour",
+    {"companion_condition": "canine and feline anxiety and behavior",
      "match": "anxiety|depress|noise aversion|behavio|insomnia",
      "holders": ["Sileo (dexmedetomidine)", "Tessie (tasipimidine)", "CLOMICALM (clomipramine)", "ZM-011 (transdermal fluoxetine)", "ADAPTIL / FELIWAY (pheromones)", "Zylkene (alpha-casozepine)"]},
 
@@ -302,17 +302,17 @@
     {"companion_condition": "feline arterial thromboembolism and canine thromboprophylaxis",
      "match": "atrial fibrillation|thromboembol|\\bvte\\b|deep vein|stroke prevention|anticoagul|thrombosis|thromboprophylaxis",
      "holders": [],
-     "note": "Feline arterial thromboembolism secondary to hypertrophic cardiomyopathy is a common, devastating and poorly served feline condition, managed with clopidogrel off-label. No branded companion-animal programme addresses it."},
+     "note": "Feline arterial thromboembolism secondary to hypertrophic cardiomyopathy is a common, devastating and poorly served feline condition, managed with clopidogrel off-label. No branded companion-animal program addresses it."},
 
-    {"companion_condition": "canine glioma and intracranial tumours",
-     "match": "glioma|glioblastoma|astrocytoma|meningioma|brain tumor|brain tumour|cns lymphoma|intracranial",
+    {"companion_condition": "canine glioma and intracranial tumors",
+     "match": "glioma|glioblastoma|astrocytoma|meningioma|brain tumor|brain tumor|cns lymphoma|intracranial",
      "holders": [],
-     "note": "Canine glioma occurs spontaneously, notably in brachycephalic breeds, and is a recognised comparative model. No companion-animal programme addresses it."},
+     "note": "Canine glioma occurs spontaneously, notably in brachycephalic breeds, and is a recognized comparative model. No companion-animal program addresses it."},
 
     {"companion_condition": "critical care and shock in dogs and cats",
      "match": "septic shock|vasodilatory shock|anaphylaxis|cardiac arrest|resuscitation|hypotension",
      "holders": [],
-     "note": "Emergency drugs used routinely in veterinary critical care as generics; no branded companion-animal programme."},
+     "note": "Emergency drugs used routinely in veterinary critical care as generics; no branded companion-animal program."},
 
     {"companion_condition": "canine and feline immune-mediated inflammatory disease",
      "match": "inflammatory, allergic|immune-mediated|rheumatic disorder|multiple inflammatory|corticotropin",

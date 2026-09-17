@@ -5,28 +5,26 @@ Systematic review
 # Brief survey of animal-to-human concordance in the biomedical literature
 
 ::: lede
-Studies comparing a finding in live animals against the same finding in humans, and what they found.
+We reviewed studies directly comparing a finding in live animals against the same finding in humans,
+then collected the evidence.
 :::
 
 ## Summary {#summary}
 
-Each row is one comparison a paper drew between an animal and a human. **A** treatment outcomes,
-**B** toxicity, **C** disease biology.
+Each row is one comparison a paper drew between an animal and a human. 
+**A**: treatment outcomes,
+**B**: toxicity and safety, 
+**C**: disease biology.
 
 {{level_table}}
 
 ::: note Caveats
-Mostly level C — how similar the biology looks, not what happened when a disease was treated. The
-quantities differ and are never pooled. Publishing favours positive findings.
+Dominated by evidence level C — how similar the biology looks, not what happened when a disease was treated. 
+
+Quantities reported across multiple studies are not pooled, in general. 
+
+Publications generally biased toward positive findings.
 :::
-
-## Choosing the next programme {#selection|Programme selection}
-
-{{n_human_first}} of {{n_pairs}} drug pairs run human approval first, {{n_vet_first}} the reverse,
-median gap **{{median_lag}} years**. Filtering {{n_human_programs}} human programmes on where dog
-biology corresponds leaves **{{n_candidates}} candidates**.
-
-[**Programme selection →**](caninisation.html)
 
 ## Evidence map {#map}
 
@@ -36,31 +34,41 @@ only as "animals" or "rodents", so totals are lower bounds.
 
 {{heatmap}}
 
-## The results {#results}
-
 [**Browse all {{n_results}} results →**](results.html)
 
-## Drug pairs {#pairs}
+## Choosing Nori's first program {#selection|Program selection}
 
-Agents used in both companion animals and people: does the veterinary evidence agree?
+How can this collection of concordance evidence help us select our first candidate? We collected pairs
+of drugs with similar mechanisms targeted toward both human and companion animals, then asked whether
+the clinical outcomes pointed in the same direction.
 
 {{pairs_strata}}
 
 ::: note How to read this
 Most are human medicines adopted later in veterinary practice, so agreement records adoption, not
-prediction. "Discordant" means all evidence points the opposite way.
+prediction. 
+
+"Discordant" means all evidence points the opposite way.
 :::
 
 [**Browse all pairs →**](pairs.html)
+
+We found that {{n_human_first}} of {{n_pairs}} drug pairs were approved for humans first, {{n_vet_first}} the reverse,
+and a median gap **{{median_lag}} years** between human drug approval and vet drug approval. 
+
+Filtering {{n_human_programs}} human programs on where dog biology corresponds leaves **{{n_candidates}} candidates**.
+
+[**Program selection →**](caninisation.html)
 
 ## Companion animals vs laboratory models {#q4|Companion vs laboratory}
 
 {{q4_tables}}
 
-::: note What this cannot tell you
+::: note Extreme class imbalance
 104 of 108 pairs have a positive human result and the laboratory literature is almost uniformly
-positive, so agreement is near-automatic. On the 4 negative-human pairs, laboratory models matched
-0 and companion animals 1.
+positive, so agreement is near-automatic. 
+
+On the 4 negative-human pairs, laboratory models matched 0 and companion animals 1.
 :::
 
 ## Methods {#methods}
@@ -68,7 +76,7 @@ positive, so agreement is near-automatic. On the 4 negative-human pairs, laborat
 Eligible: a finding in live animals reported alongside the human one. Two independent retrieval
 mechanisms, two screening stages, extraction from open-access full text with sentence and page,
 verification by a second model, then adjudication of every result — including those verification
-rejected. Counts are computed from the records, not summarised by a model.
+rejected. Counts are computed from the records, not summarized by a model.
 
 {{recall}}
 

@@ -1,7 +1,7 @@
 """Establish, per candidate molecule, what is actually known about companion-animal presence.
 
 Amendment A19. The caninisation page previously answered "is this target claimed in dogs or cats?"
-from one supplied spreadsheet of 328 branded programmes, and printed "No programme in the supplied
+from one supplied spreadsheet of 328 branded programs, and printed "No program in the supplied
 list targets this in dogs or cats" when the join found nothing. That sentence was doing two
 dishonest jobs at once: it reported the limits of one file as though it were a fact about the world,
 and the join underneath it was broken, so it also fired when the answer was in the file.
@@ -24,7 +24,7 @@ Absence is now asserted only after four named checks, and the page prints what e
                         question from who holds the target: a mechanism can be wide open inside an
                         indication with fifteen incumbents.
   3. Veterinary literature  deterministic PubMed search, cached, no model involved. Names are
-                        normalised first: querying the salt form returned zero for ivabradine,
+                        normalized first: querying the salt form returned zero for ivabradine,
                         cabozantinib, lenvatinib and trastuzumab, all of which have canine
                         literature under their base name.
   4. This review's own pair corpus  drug-and-indication pairs with companion-animal evidence.
@@ -112,7 +112,7 @@ def main():
         key = norm(c.get("ingredient")) or norm(c.get("drug"))
         in_corpus = corpus.get(key) or corpus.get(norm(c.get("drug"))) or []
 
-        # Patents and halted programmes are separate evidence from marketed products, and they
+        # Patents and halted programs are separate evidence from marketed products, and they
         # change the answer. Elanco wrote off a pet-health IL-4R asset in 2024 and at least four
         # companies have filed on anti-canine IL-4Ralpha, yet no IL-4R product is marketed for dogs,
         # so a marketed-products-only view called that mechanism unoccupied.
@@ -121,15 +121,15 @@ def main():
 
         # The verdict is a summary of the checks, never a claim beyond them.
         if klass and klass["holders"]:
-            status = "a companion-animal programme works this mechanism"
+            status = "a companion-animal program works this mechanism"
         elif patents or halted:
             status = "no marketed product, but the mechanism is claimed or was attempted"
         elif ind and ind["holders"]:
             status = "mechanism unoccupied, but the condition is contested"
         elif (lit and lit.get("clinical")) or in_corpus:
-            status = "no programme found, but used or studied in dogs or cats"
+            status = "no program found, but used or studied in dogs or cats"
         elif klass or ind:
-            status = "no programme, and no veterinary literature found"
+            status = "no program, and no veterinary literature found"
         else:
             status = "not classified"
         counts[status] = counts.get(status, 0) + 1
@@ -155,11 +155,11 @@ def main():
     save({
         "built": today(),
         "sources_checked": [
-            "Curated target-mechanism map over the supplied companion-animal programme list",
+            "Curated target-mechanism map over the supplied companion-animal program list",
             "Curated human-indication to companion-condition map over the same list",
             "PubMed veterinary literature search, deterministic and cached",
             "This review's own classified drug-pair corpus",
-            "Curated patent filings and halted or written-off companion-animal programmes, for the "
+            "Curated patent filings and halted or written-off companion-animal programs, for the "
             "mechanisms where these were searched by hand, each carrying its source",
         ],
         "sources_not_checked": [
@@ -171,7 +171,7 @@ def main():
             "automated querying, so patent evidence is hand-curated per mechanism rather than swept "
             "across every candidate. A mechanism with no patent entry has not been searched, and "
             "must not be read as free of intellectual property.",
-            "No systematic sweep of discontinued or written-off companion-animal programmes. These "
+            "No systematic sweep of discontinued or written-off companion-animal programs. These "
             "surface in company results and press releases rather than in any register, and are "
             "recorded per mechanism as they are found.",
         ],

@@ -1,4 +1,4 @@
-"""Score human-approved molecules as candidates for a companion-animal (caninisation) programme.
+"""Score human-approved molecules as candidates for a companion-animal (caninisation) program.
 
 The question: which human molecules, already shown to work in people, are the best candidates to
 license and develop for dogs or cats?
@@ -8,7 +8,7 @@ later; 22 run the other way, at a median gap of 30 years. Companion-animal medic
 drugs, and adopts them late. This selects what to adopt next.
 
 A candidate needs both legs of human evidence - safety AND efficacy - and then either no
-companion-animal programme against its target, or a stop unrelated to clinical performance. An
+companion-animal program against its target, or a stop unrelated to clinical performance. An
 approval carries both legs by definition. A discontinued asset carries them only if it reached a
 stage where efficacy could show and was stopped for some other reason; an efficacy failure is
 disqualifying, because demonstrated efficacy is the premise of the approach.
@@ -50,7 +50,7 @@ PRECEDENT = {
     "sglt2": "bexagliflozin was approved for cats and for humans within months of each other",
     "gliflozin": "same SGLT2 class: bexagliflozin was approved for cats and humans months apart",
     "anti-ngf": "bedinvetmab (Librela) and frunevetmab reached companion animals before the human "
-                "anti-NGF programmes cleared safety",
+                "anti-NGF programs cleared safety",
     "ngf": "bedinvetmab (Librela) and frunevetmab reached companion animals first",
 }
 
@@ -80,12 +80,12 @@ NOT_A_DOG_DISEASE = re.compile(
     # patient is a person. REGN1908-1909 (anti-Fel d 1, for people allergic to cats) reached the
     # candidate list because the area rules read "cat allergy" as immunology.
     r"cat allergy|allergy to cats|peanut allergy|allergic rhinitis", re.I)
-# Not excluded, deliberately: pulmonary hypertension is a recognised and common canine condition,
+# Not excluded, deliberately: pulmonary hypertension is a recognized and common canine condition,
 # secondary to mitral valve disease and to heartworm, so the PAH agents stay in.
 
 # Dogs and cats get a specific set of cancers, and it is not the human set. Lymphoma,
-# osteosarcoma, haemangiosarcoma, mast cell tumour, oral melanoma, urothelial carcinoma, mammary
-# carcinoma and soft-tissue sarcoma are common and well characterised; multiple myeloma, prostate
+# osteosarcoma, haemangiosarcoma, mast cell tumor, oral melanoma, urothelial carcinoma, mammary
+# carcinoma and soft-tissue sarcoma are common and well characterized; multiple myeloma, prostate
 # adenocarcinoma, NSCLC and cervical cancer are rare, absent, or biologically different. Without
 # this gate the oncology list leads with myeloma bispecifics and prostate antiandrogens, which
 # would be wrong on the biology and obviously wrong to any veterinary oncologist.
@@ -93,8 +93,8 @@ CANINE_CANCER = re.compile(
     r"lymphoma|leukae?mia|osteosarcoma|h[ae]mangiosarcoma|mast cell|melanoma|urothelial|"
     r"bladder|mammary|breast|soft tissue sarcoma|sarcoma|glioma|histiocytic|"
     r"solid tumou?r|\bcancer\b|carcinoma|neoplas|oral tumou?r|nasal", re.I)
-# Human tumour types that dogs do not get, or get too rarely and too differently to build a
-# programme on. Thyroid carcinoma and hepatocellular carcinoma are NOT here: both are real canine
+# Human tumor types that dogs do not get, or get too rarely and too differently to build a
+# program on. Thyroid carcinoma and hepatocellular carcinoma are NOT here: both are real canine
 # indications carried by the drug-pair corpus (5 and 3 pairs), so excluding them would drop
 # evidence this review actually holds.
 HUMAN_ONLY_CANCER = re.compile(
@@ -146,7 +146,7 @@ def dog_evidence(results):
 
     Weighted so that intervention outcomes dominate biology similarity: a level-A result counts 3,
     level B 2, level C 1. An area where the biology merely looks similar is a weaker basis for a
-    development programme than one where treating the disease actually worked.
+    development program than one where treating the disease actually worked.
     """
     AREA = {"pain-musculoskeletal": "musculoskeletal", "cross-cutting-toxicology": "toxicology"}
     W = {"A": 3, "B": 2, "C": 1}
@@ -196,7 +196,7 @@ def main():
                 return r["area"]
         return "other"
 
-    # Every programme, not only the approved ones. A human asset shelved after Phase 3 carries a
+    # Every program, not only the approved ones. A human asset shelved after Phase 3 carries a
     # safety package - the expensive part - and usually failed on efficacy against a human
     # comparator or on commercial grounds, neither of which need apply in a dog.
     human = list(csv.DictReader(open(HUMAN_CSV)))
@@ -259,9 +259,9 @@ def main():
 
     # Amendment A18. The signal above reads a headline's framing, not a cause, and it was wrong on
     # the molecule that mattered most: fasinumab's slug says "pulls-the-plug", scored commercial,
-    # for a programme that carried an FDA partial clinical hold, an FDA-halted Phase IIb after an
+    # for a program that carried an FDA partial clinical hold, an FDA-halted Phase IIb after an
     # adjudicated arthropathy, and IDMC-halted high-dose arms. Only hand-verified reasons decide
-    # eligibility; the regex signal is kept for display and labelled as unverified.
+    # eligibility; the regex signal is kept for display and labeled as unverified.
     REASONS = (load("part2/discontinuation_reasons.json") or {}).get("reasons") or {}
 
     def verified_reason(r):
@@ -271,7 +271,7 @@ def main():
     for r in human:
         target, indication = r.get("target") or "", r.get("indication") or ""
         # A target already worked in companion animals is NOT excluded. It means the indication has
-        # a validated market: atopic dermatitis carries 9 companion-animal programmes and
+        # a validated market: atopic dermatitis carries 9 companion-animal programs and
         # osteoarthritis 25, and Elanco entered atopic dermatitis against Zoetis's Apoquel and
         # Cytopoint. Crowding is recorded so a two-player field can be told from a twenty-player
         # commodity, and the holders are named.
@@ -317,7 +317,7 @@ def main():
             area_override = "liver-gi"
         else:
             area_override = None
-        # An oncology indication has to name a tumour type dogs actually get. A canine tumour type
+        # An oncology indication has to name a tumor type dogs actually get. A canine tumor type
         # named anywhere in the indication wins over a human-only term in the same string: killing
         # pirtobrutinib for the words "mantle cell" would drop the canine BTK opportunity, which is
         # the best-evidenced one in the whole list, over a phrase that also says "CLL and lymphoma".
@@ -330,7 +330,7 @@ def main():
                     r"lymphoma|leukae?mia|osteosarcoma|h[ae]mangiosarcoma|mast cell|melanoma|"
                     r"urothelial|bladder|mammary|breast|soft tissue sarcoma|glioma|histiocytic",
                     indication, re.I):
-                skipped["human tumour type dogs do not get"] += 1
+                skipped["human tumor type dogs do not get"] += 1
                 continue
         area = area_override or area_of(indication)
         e = ev.get(area)
@@ -378,7 +378,7 @@ def main():
             "evidence": {k: e[k] for k in ("results", "studies", "corresponded", "did_not",
                                            "level_A", "weighted_concordance")},
             # "Cancer" or "Solid tumors" as an indication places nothing in a dog: the molecule
-            # passes the tumour gate on a word, and which canine tumour it might treat is unknown.
+            # passes the tumor gate on a word, and which canine tumor it might treat is unknown.
             "indication_is_vague": bool(re.fullmatch(
                 r"\s*(cancer|solid tumou?rs?|advanced cancer|oncology)\s*", indication, re.I)),
             "human_stage": stage_of(r),
@@ -394,11 +394,11 @@ def main():
                       else "me-too into a claimed target" if competitors
                       else "white space"),
             "competitor_count": len(competitors),
-            # "White space" means absent from the 328 branded companion-animal programmes supplied,
+            # "White space" means absent from the 328 branded companion-animal programs supplied,
             # NOT absent from veterinary practice. Furosemide is the standard diuretic in canine
             # heart failure and sildenafil is standard for canine pulmonary hypertension; both look
             # unclaimed here because a generic in the veterinary formulary is not a company
-            # programme. Molecules already in routine veterinary use are flagged so the white-space
+            # program. Molecules already in routine veterinary use are flagged so the white-space
             # route cannot be read as an open field.
             "in_veterinary_formulary": bool(re.search(
                 r"furosemide|frusemide|sildenafil|tadalafil|enalapril|benazepril|amlodipine|"
@@ -410,11 +410,11 @@ def main():
                 r"cytarabine|doxorubicin|vincristine|cyclophosphamide|carboplatin|lomustine",
                 (ingredient or "") + " " + (r.get("drug_name") or ""), re.I)),
             # "License and caninise" assumes a molecule that can be licensed and reformulated.
-            # Cell and gene therapies are a different programme shape entirely.
+            # Cell and gene therapies are a different program shape entirely.
             "not_a_licensing_shape": bool(re.search(
                 r"\bCAR-?T\b|autologous|multicellular|cell therapy|gene therapy|oncolytic|"
                 r"\bsiRNA\b|vaccine", (target or "") + " " + (r.get("drug_name") or ""), re.I)),
-            # Why a programme was dropped decides whether it is a candidate at all, and it is
+            # Why a program was dropped decides whether it is a candidate at all, and it is
             # partly recoverable from the source link rather than unknowable: a molecule withdrawn
             # over a survival detriment is not licensable inventory. Safety withdrawals are
             # excluded outright below; the rest carry their signal so a reader can weigh it.
@@ -425,7 +425,7 @@ def main():
             "source": r.get("source_link"),
         })
 
-    # Row-level gates above are applied per supplied programme; the gates below are applied per
+    # Row-level gates above are applied per supplied program; the gates below are applied per
     # molecule, after dedup. The funnel has to show the dedup step between them or its arithmetic
     # cannot reconcile: subtracting molecule-level counts from a row-level total does not work.
     n_rows_surviving = len(candidates)
@@ -441,7 +441,7 @@ def main():
         best[key] = c
 
     # Routes. A candidate needs BOTH legs of human evidence - safety and efficacy - and then either
-    # no companion-animal programme against its target, or a stop unrelated to clinical performance.
+    # no companion-animal program against its target, or a stop unrelated to clinical performance.
     #
     # An approval carries both legs by definition. A discontinued asset carries them only if it
     # reached a stage where efficacy could show AND was stopped for some other reason: an efficacy
@@ -460,9 +460,9 @@ def main():
 
     for c in best.values():
         c["route"] = route_of(c)
-    # Route names say what was actually established: that no branded programme works the molecule's
-    # MECHANISM. "No companion-animal programme" read as "untried in dogs", which is a different and
-    # much stronger claim - paclitaxel has 156 veterinary publications and no branded programme (A19).
+    # Route names say what was actually established: that no branded program works the molecule's
+    # MECHANISM. "No companion-animal program" read as "untried in dogs", which is a different and
+    # much stronger claim - paclitaxel has 156 veterinary publications and no branded program (A19).
     ROUTE_LABEL = {
         "route1": "Approved, mechanism unclaimed in dogs or cats",
         "route2": "Approved, mechanism already worked",
@@ -475,7 +475,7 @@ def main():
     for c in held:
         skipped["discontinued on clinical performance, or reason not established"] += 1
 
-    # Companion-animal crowding, computed here and stored, because the two programme CSVs live
+    # Companion-animal crowding, computed here and stored, because the two program CSVs live
     # outside the repository and the site build in CI reads only committed data.
     CROWD = [("Parasites", r"flea|tick|worm|mite|parasit"),
              ("Infection", r"bacterial|infection|otitis"),
@@ -484,14 +484,14 @@ def main():
              ("Endocrine and metabolic", r"diabet|thyroid|addison|cushing|obesity|weight"),
              ("Atopic dermatitis and pruritus", r"atopic|pruritus|allerg"),
              ("Cardiac", r"heart failure|cardi|mmvd|\bdcm\b"),
-             ("Behaviour and anxiety", r"anxiet|noise|behavio|stress"),
+             ("Behavior and anxiety", r"anxiet|noise|behavio|stress"),
              ("Gastrointestinal", r"diarrh|vomit|nausea"),
              ("Renal", r"kidney|renal|\bckd\b")]
     crowding = sorted(
         [{"indication": lab,
-          "programmes": sum(1 for r in pet if re.search(pat, r.get("indication") or "", re.I))}
+          "programs": sum(1 for r in pet if re.search(pat, r.get("indication") or "", re.I))}
          for lab, pat in CROWD],
-        key=lambda x: -x["programmes"])
+        key=lambda x: -x["programs"])
 
     # Areas ranked on the review's evidence; candidates grouped under the area they belong to.
     def area_rank(a):
@@ -539,7 +539,7 @@ def main():
         "missing_inputs": [
             "Canine and feline disease prevalence: no epidemiological source is held in this "
             "repository, so no candidate is weighted by how many animals have the disease. This is "
-            "probably the largest single determinant of programme value and it is absent. The "
+            "probably the largest single determinant of program value and it is absent. The "
             "veterinary literature's attention (osteoarthritis 42 pairs, atopic dermatitis 31, "
             "lymphoma 25) measures what researchers study, not what dogs get, and is deliberately "
             "NOT used as a substitute.",
@@ -555,7 +555,7 @@ def main():
         "candidates": candidates,
     }
     save(out, "part2/caninisation_candidates.json")
-    print(f"candidates: {len(candidates)} molecules (from {len(human)} human programmes)")
+    print(f"candidates: {len(candidates)} molecules (from {len(human)} human programs)")
     print("routes:", dict(route_counts), "| watch list:", len(watch))
     print("skipped:", dict(skipped))
     for a in areas:

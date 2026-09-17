@@ -18,10 +18,10 @@ are the ones computed by d3/d4/d5/r3 and are embedded from their reports verbati
 provenance stripped. Quotes are reproduced byte-exact, so an asterisk inside a quotation is the
 paper's own significance marker and stays.
 
-Species and disease-area labels are normalised for display only (the records keep what the
+Species and disease-area labels are normalized for display only (the records keep what the
 extractor recorded): stray species spellings fold onto the frozen vocabulary, off-vocabulary
 disease areas fold into one "other" row, and results whose species could not be resolved to one
-animal are shown in their own labelled column rather than dropped.
+animal are shown in their own labeled column rather than dropped.
 """
 import sys, os, re, json, html, collections
 sys.path.insert(0, os.path.dirname(__file__))
@@ -109,9 +109,14 @@ def sp_display(r):
     return species_column(SPECIES_FIX.get(s, s), r.get("model_type"))
 
 
+# The stored vocabulary keeps its own spelling so records still match; display is American.
+AREA_FIX = {"haematology": "hematology"}
+
+
 def area_display(r):
     a = r.get("disease_area") or "other"
-    return a if a in AREA_ORDER else "other"
+    a = a if a in AREA_ORDER else "other"
+    return AREA_FIX.get(a, a)
 
 
 CSS = """
@@ -460,7 +465,7 @@ window.initTable = function (cfg) {
 """
 
 NAV = [("index.html", "Report"), ("results.html", "Results"), ("pairs.html", "Drug pairs"),
-       ("caninisation.html", "Programme selection"), ("spotcheck.html", "Verify")]
+       ("caninisation.html", "Program selection"), ("spotcheck.html", "Verify")]
 
 
 def page(fname, title, body, depth=0, rail=None, cls="page"):
@@ -816,11 +821,11 @@ def sankey(stages, links, caption="", note="", height=330):
 
 
 PRESENCE_ORDER = [
-    ("a companion-animal programme works this mechanism", False),
+    ("a companion-animal program works this mechanism", False),
     ("no marketed product, but the mechanism is claimed or was attempted", False),
     ("mechanism unoccupied, but the condition is contested", False),
-    ("no programme found, but used or studied in dogs or cats", False),
-    ("no programme, and no veterinary literature found", True),
+    ("no program found, but used or studied in dogs or cats", False),
+    ("no program, and no veterinary literature found", True),
     ("not classified", True),
 ]
 
@@ -841,7 +846,7 @@ def pairs_flow(classified, attrs):
     """799 pairs, by which species got there first and how the evidence came out.
 
     Drawn because every pair lands in exactly one timing and one verdict, so the ribbon widths are
-    complete. The equivalent flow over all 1,949 human programmes is NOT drawn: three quarters of
+    complete. The equivalent flow over all 1,949 human programs is NOT drawn: three quarters of
     them fall outside the curated mechanism map, so the chart would render the map's coverage as
     though it were a finding (L96)."""
     TL = {"human-approval-before-veterinary-evidence": "Human approval first",
@@ -944,7 +949,7 @@ def cand_areas(d):
 
 
 def cand_crowding(d):
-    rows = [(c["indication"], c["programmes"]) for c in d.get("crowding", [])]
+    rows = [(c["indication"], c["programs"]) for c in d.get("crowding", [])]
     return hbars(rows, A("caninisation", "crowding_caption", ""),
                  A("caninisation", "crowding_note", ""))
 
@@ -954,7 +959,7 @@ def cand_funnel(d):
     order = [
         ("no dog evidence for this area", "No dog evidence in the review for that condition area"),
         ("disease dogs do not get", "A disease dogs do not get, or a human-only indication"),
-        ("human tumour type dogs do not get", "A human tumour type dogs do not get"),
+        ("human tumor type dogs do not get", "A human tumor type dogs do not get"),
         ("oncology indication too unspecific to place in a dog",
          "Oncology indication too unspecific to place in a dog"),
         ("dog evidence says biology does not correspond",
@@ -963,10 +968,10 @@ def cand_funnel(d):
         ("known species toxicity", "Known toxicity in the target species"),
         ("diagnostic or imaging agent, not a therapeutic", "Diagnostic or imaging agent"),
     ]
-    # The gates above are per supplied programme; the gates below are per molecule. The dedup step
+    # The gates above are per supplied program; the gates below are per molecule. The dedup step
     # sits between them, and without it the column does not add up.
     h = ['<div class="funnel">',
-         f'<div><span>Human programmes supplied</span>'
+         f'<div><span>Human programs supplied</span>'
          f'<span>{inp.get("human_programs", 0):,}</span></div>']
     for key, label in order:
         if sk.get(key):
@@ -1082,7 +1087,7 @@ def main():
                # actually are, so the prose need not imply that every row is a separate one.
                "n_distinct_findings": f"{len({(r['pmid'], (r.get('quote') or '')[:120]) for r in fin}):,}"}
 
-    # Programme-selection scalars. The timing counts and the median lag come from the pair
+    # Program-selection scalars. The timing counts and the median lag come from the pair
     # attributes computed by d4, never recomputed here.
     _timing = collections.Counter(v.get("timing") for v in attrs.values())
     _lags = sorted(v["vet_year"] - v["approval_year"] for v in attrs.values()
@@ -1109,10 +1114,10 @@ def main():
     _pcounts = collections.Counter(v.get("status") for k, v in (_cevf.get("molecules") or {}).items()
                                    if k in _cnames)
     scalars.update({
-        "n_occupied": f"{_pcounts.get('a companion-animal programme works this mechanism', 0):,}",
+        "n_occupied": f"{_pcounts.get('a companion-animal program works this mechanism', 0):,}",
         "n_mech_open": f"{_pcounts.get('mechanism unoccupied, but the condition is contested', 0):,}",
-        "n_used_no_programme": f"{_pcounts.get('no programme found, but used or studied in dogs or cats', 0):,}",
-        "n_nothing_found": f"{_pcounts.get('no programme, and no veterinary literature found', 0):,}",
+        "n_used_no_programme": f"{_pcounts.get('no program found, but used or studied in dogs or cats', 0):,}",
+        "n_nothing_found": f"{_pcounts.get('no program, and no veterinary literature found', 0):,}",
         "n_unclassified": f"{_pcounts.get('not classified', 0):,}",
     })
 
@@ -1272,7 +1277,7 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
                                empty=A("pairs_table", "empty", ""), reset=A("pairs_table", "reset", "Reset"))})
     page("pairs.html", title or "Dog and cat drug pairs", body)
 
-    # ---------------- programme selection ----------------
+    # ---------------- program selection ----------------
     crow = []
     # Companion-animal presence, established from four named sources rather than from one supplied
     # spreadsheet joined on shared word tokens (A19). Each row carries what every check found, so
@@ -1305,7 +1310,7 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
                 "mp": [{"a": x.get("assignee"), "w": x.get("what"), "u": x.get("source"),
                         "p": x.get("publication")} for x in (p.get("target_patents") or [])],
                 "mx": [{"a": x.get("company"), "w": x.get("what"), "u": x.get("source"),
-                        "p": x.get("programme")} for x in (p.get("target_halted") or [])],
+                        "p": x.get("program")} for x in (p.get("target_halted") or [])],
                 "mn": p.get("target_note") or "",
                 "cc": p.get("companion_condition") or "",
                 "ch": p.get("condition_holders") or [],
@@ -1320,25 +1325,25 @@ return '<tr class="row"><td><strong>'+esc(r.ag)+'</strong></td><td>'+esc(r.sp)+'
     CL = {k: A("caninisation", k, d) for k, d in (
         ("detail_ind", "Human indication"),
         ("detail_ev", "Dog evidence for this condition area"),
-        ("detail_comp", "Companion-animal programmes on this target"),
-        ("detail_comp_none", "No programme in the supplied list targets this in dogs or cats."),
+        ("detail_comp", "Companion-animal programs on this target"),
+        ("detail_comp_none", "No program in the supplied list targets this in dogs or cats."),
         ("detail_safety", "Species safety caution"),
         ("detail_precedent", "Class precedent in companion animals"),
-        ("detail_disc", "Why the human programme stopped"),
+        ("detail_disc", "Why the human program stopped"),
         ("detail_formulary", "Already in routine veterinary use as a generic."),
-        ("detail_vague", "The human indication is too general to place a tumour type."),
+        ("detail_vague", "The human indication is too general to place a tumor type."),
         ("detail_presence", "What is known about companion-animal presence"),
         ("detail_mechanism", "Mechanism in companion animals"),
-        ("detail_mechanism_none", "No companion-animal programme works this mechanism."),
+        ("detail_mechanism_none", "No companion-animal program works this mechanism."),
         ("detail_patents", "Patent filings on this mechanism in companion animals"),
-        ("detail_halted", "Halted or written-off companion-animal programmes on this mechanism"),
+        ("detail_halted", "Halted or written-off companion-animal programs on this mechanism"),
         ("detail_condition", "Corresponding condition in dogs or cats"),
         ("detail_condition_none", "No corresponding companion-animal condition was mapped."),
         ("detail_vetlit", "Veterinary literature (PubMed)"),
         ("detail_vetlit_none", "No veterinary publications found under this molecule's name."),
         ("detail_corpus", "This review's own drug-pair records"),
         ("detail_notchecked", "Not checked: no approved-animal-drug registry is machine-readable."),
-        ("detail_source", "Programme source"))}
+        ("detail_source", "Program source"))}
     crow_js = ("""function(r){
 var L=""" + json.dumps(CL) + """;
 var d='<div class="pd">';
@@ -1388,12 +1393,12 @@ return '<tr class="row"><td><strong>'+esc(r.dr)+'</strong>'
              {"key": "ar", "label": A("caninisation", "col_area", "Condition area")},
              {"key": "rt", "label": A("caninisation", "col_route", "Route")},
              {"key": "st", "label": A("caninisation", "col_stage", "Human stage")},
-             {"key": "cn", "label": A("caninisation", "col_comp", "Companion-animal programmes"),
+             {"key": "cn", "label": A("caninisation", "col_comp", "Companion-animal programs"),
               "num": True}]
     body, sections, title = compose("caninisation.md", scalars, {
         "cand_figures": figures_block([
             (scalars["n_candidates"], A("caninisation", "fig_candidates", "candidates")),
-            (scalars["n_route1"], A("caninisation", "fig_route1", "approved, no companion programme")),
+            (scalars["n_route1"], A("caninisation", "fig_route1", "approved, no companion program")),
             (scalars["n_route2"], A("caninisation", "fig_route2", "approved, target claimed")),
             (scalars["n_route3"], A("caninisation", "fig_route3", "shelved, non-clinical")),
             (scalars["n_watch"], A("caninisation", "fig_watch", "pipeline watch list"))]),

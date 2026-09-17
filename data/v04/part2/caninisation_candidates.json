@@ -9,7 +9,7 @@
   "no dog evidence for this area": 867,
   "disease dogs do not get": 389,
   "oncology indication too unspecific to place in a dog": 68,
-  "human tumour type dogs do not get": 124,
+  "human tumor type dogs do not get": 124,
   "dog evidence says biology does not correspond": 58,
   "human vaccine or adjuvant, not a licensing candidate": 40,
   "discontinued over safety or withdrawn": 12,
@@ -3134,47 +3134,47 @@
  "crowding": [
   {
    "indication": "Parasites",
-   "programmes": 78
+   "programs": 78
   },
   {
    "indication": "Infection",
-   "programmes": 55
+   "programs": 55
   },
   {
    "indication": "Osteoarthritis and joints",
-   "programmes": 27
+   "programs": 27
   },
   {
    "indication": "Endocrine and metabolic",
-   "programmes": 15
+   "programs": 15
   },
   {
    "indication": "Oncology",
-   "programmes": 13
+   "programs": 13
   },
   {
    "indication": "Atopic dermatitis and pruritus",
-   "programmes": 12
+   "programs": 12
   },
   {
    "indication": "Cardiac",
-   "programmes": 10
+   "programs": 10
   },
   {
-   "indication": "Behaviour and anxiety",
-   "programmes": 10
+   "indication": "Behavior and anxiety",
+   "programs": 10
   },
   {
    "indication": "Gastrointestinal",
-   "programmes": 8
+   "programs": 8
   },
   {
    "indication": "Renal",
-   "programmes": 7
+   "programs": 7
   }
  ],
  "missing_inputs": [
-  "Canine and feline disease prevalence: no epidemiological source is held in this repository, so no candidate is weighted by how many animals have the disease. This is probably the largest single determinant of programme value and it is absent. The veterinary literature's attention (osteoarthritis 42 pairs, atopic dermatitis 31, lymphoma 25) measures what researchers study, not what dogs get, and is deliberately NOT used as a substitute.",
+  "Canine and feline disease prevalence: no epidemiological source is held in this repository, so no candidate is weighted by how many animals have the disease. This is probably the largest single determinant of program value and it is absent. The veterinary literature's attention (osteoarthritis 42 pairs, atopic dermatitis 31, lymphoma 25) measures what researchers study, not what dogs get, and is deliberately NOT used as a substitute.",
   "Willingness to pay and market size by indication.",
   "Patent and exclusivity status: years since first approval is a crude proxy for whether a molecule can be licensed cheaply, and says nothing about who controls it now.",
   "Target animal safety: the exclusion list is reviewer-supplied and incomplete. An absent flag means not checked, never safe.",
