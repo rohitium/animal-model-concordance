@@ -96,7 +96,7 @@ SPECIES_ORDER = ["mouse", "rat", "other-rodent", "rabbit", "pig-minipig", "sheep
 AREA_ORDER = ["oncology", "neurology", "immunology-inflammation", "cross-cutting-toxicology",
               "cardiovascular", "liver-gi", "infectious-disease", "pain-musculoskeletal",
               "psychiatry-addiction", "metabolic-endocrine", "ophthalmology", "respiratory",
-              "reproductive-developmental", "haematology", "renal", "dermatology", "other"]
+              "reproductive-developmental", "hematology", "renal", "dermatology", "other"]
 
 
 def sp_display(r):
@@ -109,14 +109,16 @@ def sp_display(r):
     return species_column(SPECIES_FIX.get(s, s), r.get("model_type"))
 
 
-# The stored vocabulary keeps its own spelling so records still match; display is American.
+# The records store a British spelling for one area. Normalize it BEFORE the vocabulary test:
+# mapping afterwards produced a value that was no longer in AREA_ORDER, so the heatmap dropped the
+# row and its 10 studies without a word. A display map has to run before whatever matches on it.
 AREA_FIX = {"haematology": "hematology"}
 
 
 def area_display(r):
     a = r.get("disease_area") or "other"
-    a = a if a in AREA_ORDER else "other"
-    return AREA_FIX.get(a, a)
+    a = AREA_FIX.get(a, a)
+    return a if a in AREA_ORDER else "other"
 
 
 CSS = """
